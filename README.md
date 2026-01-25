@@ -11,6 +11,14 @@
 
 > 注意：本项目仍处于开发阶段，可能存在一些 bug 和功能缺陷。目前 Slimefun 配方和图标收录不全，欢迎提交 PR 帮助补充。
 
+## 数据来源与致谢
+
+本项目的核心合成配方数据，基于 [FlyCloudC/Utils-and-Games](https://github.com/FlyCloudC/Utils-and-Games) 的开源工作。
+
+- **基础数据**：原始的配方数据文件（[table.js](https://github.com/FlyCloudC/Utils-and-Games/blob/master/utils/crafting_helper/table.js)）来源于该项目。我们对此表示诚挚的感谢。
+- **数据处理**：我们对该数据文件进行了格式转换，以适配本计算器的引擎。
+- **内容扩展**：在原始数据集的基础上，我们手动审核并添加了原项目中未包含的配方，扩展了计算器的覆盖范围。
+
 ## 功能特点
 
 - 🔍 物品搜索与自动补全

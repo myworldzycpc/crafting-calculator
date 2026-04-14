@@ -2,9105 +2,9125 @@
 
 let recipes = {
     "奶奶的拐杖": {
-        "type": "增强型工作台",
-        "map": [[null, "橡木原木", null], [null, "橡木原木", null], [null, "橡木原木", null]],
-        "ingredients": [["橡木原木", 3]]
+        type: "增强型工作台",
+        map: [[null, "橡木原木", null], [null, "橡木原木", null], [null, "橡木原木", null]],
+        ingredients: [["橡木原木", 3]]
     },
     "爷爷的拐杖": {
-        "type": "增强型工作台",
-        "map": [["皮革", "橡木原木", "皮革"], [null, "橡木原木", null], [null, "橡木原木", null]],
-        "ingredients": [["皮革", 2], ["橡木原木", 3]]
+        type: "增强型工作台",
+        map: [["皮革", "橡木原木", "皮革"], [null, "橡木原木", null], [null, "橡木原木", null]],
+        ingredients: [["皮革", 2], ["橡木原木", 3]]
     },
     "处决之剑": {
-        "type": "增强型工作台",
-        "map": [[null, "绿宝石", null], ["魔法结晶-II", "绿宝石", "魔法结晶-II"], [null, "烈焰棒", null]],
-        "ingredients": [["绿宝石", 2], ["魔法结晶-II", 2], ["烈焰棒"]]
+        type: "增强型工作台",
+        map: [[null, "绿宝石", null], ["魔法结晶-II", "绿宝石", "魔法结晶-II"], [null, "烈焰棒", null]],
+        ingredients: [["绿宝石", 2], ["魔法结晶-II", 2], ["烈焰棒"]]
     },
     "吸血鬼之刀": {
-        "type": "魔法工作台",
-        "map": [[null, "凋灵骷髅头颅", null], [null, "凋灵骷髅头颅", null], [null, "烈焰棒", null]],
-        "ingredients": [["凋灵骷髅头颅", 2], ["烈焰棒"]]
+        type: "魔法工作台",
+        map: [[null, "凋灵骷髅头颅", null], [null, "凋灵骷髅头颅", null], [null, "烈焰棒", null]],
+        ingredients: [["凋灵骷髅头颅", 2], ["烈焰棒"]]
     },
     "地震斧": {
-        "type": "魔法工作台",
-        "map": [["硬化金属", "硬化金属", null], ["硬化金属", "元素法杖", null], [null, "元素法杖", null]],
-        "ingredients": [["硬化金属", 3], ["元素法杖", 2]]
+        type: "魔法工作台",
+        map: [["硬化金属", "硬化金属", null], ["硬化金属", "元素法杖", null], [null, "元素法杖", null]],
+        ingredients: [["硬化金属", 3], ["元素法杖", 2]]
     },
     "灵魂绑定剑": {
-        "type": "魔法工作台",
-        "map": [[null, "来世精华", null], [null, "钻石剑", null], [null, "来世精华", null]],
-        "ingredients": [["来世精华", 2], ["钻石剑"]]
+        type: "魔法工作台",
+        map: [[null, "来世精华", null], [null, "钻石剑", null], [null, "来世精华", null]],
+        ingredients: [["来世精华", 2], ["钻石剑"]]
     },
     "灵魂绑定三叉戟": {
-        "type": "魔法工作台",
-        "map": [[null, "来世精华", null], [null, "三叉戟", null], [null, "来世精华", null]],
-        "ingredients": [["来世精华", 2], ["三叉戟"]]
+        type: "魔法工作台",
+        map: [[null, "来世精华", null], [null, "三叉戟", null], [null, "来世精华", null]],
+        ingredients: [["来世精华", 2], ["三叉戟"]]
     },
     "灵魂绑定弓": {
-        "type": "魔法工作台",
-        "map": [[null, "来世精华", null], [null, "弓", null], [null, "来世精华", null]],
-        "ingredients": [["来世精华", 2], ["弓"]]
+        type: "魔法工作台",
+        map: [[null, "来世精华", null], [null, "弓", null], [null, "来世精华", null]],
+        ingredients: [["来世精华", 2], ["弓"]]
     },
     "爆裂之弓": {
-        "type": "魔法工作台",
-        "map": [[null, "木棍", "火药"], ["元素法杖-火", null, "硫酸盐"], [null, "木棍", "火药"]],
-        "ingredients": [["木棍", 2], ["火药", 2], ["元素法杖-火"], ["硫酸盐"]]
+        type: "魔法工作台",
+        map: [[null, "木棍", "火药"], ["元素法杖-火", null, "硫酸盐"], [null, "木棍", "火药"]],
+        ingredients: [["木棍", 2], ["火药", 2], ["元素法杖-火"], ["硫酸盐"]]
     },
     "冰封之弓": {
-        "type": "魔法工作台",
-        "map": [[null, "木棍", "冰"], ["元素法杖-水", null, "浮冰"], [null, "木棍", "冰"]],
-        "ingredients": [["木棍", 2], ["冰", 2], ["元素法杖-水"], ["浮冰"]]
+        type: "魔法工作台",
+        map: [[null, "木棍", "冰"], ["元素法杖-水", null, "浮冰"], [null, "木棍", "冰"]],
+        ingredients: [["木棍", 2], ["冰", 2], ["元素法杖-水"], ["浮冰"]]
     },
     "便携工作台": {
-        "type": "增强型工作台",
-        "map": [["书", "工作台", null], [null, null, null], [null, null, null]],
-        "ingredients": [["书"], ["工作台"]]
+        type: "增强型工作台",
+        map: [["书", "工作台", null], [null, null, null], [null, null, null]],
+        ingredients: [["书"], ["工作台"]]
     },
     "便携垃圾箱": {
-        "type": "增强型工作台",
-        "map": [["铁锭", "铁锭", "铁锭"], ["铁锭", null, "铁锭"], ["铁锭", "铁锭", "铁锭"]],
-        "ingredients": [["铁锭", 8]]
+        type: "增强型工作台",
+        map: [["铁锭", "铁锭", "铁锭"], ["铁锭", null, "铁锭"], ["铁锭", "铁锭", "铁锭"]],
+        ingredients: [["铁锭", 8]]
     },
     "破布": {
-        "type": "增强型工作台",
-        "map": [["布", "布", "布"], ["线", null, "线"], ["布", "布", "布"]],
-        "ingredients": [["布", 6], ["线", 2]]
+        type: "增强型工作台",
+        map: [["布", "布", "布"], ["线", null, "线"], ["布", "布", "布"]],
+        ingredients: [["布", 6], ["线", 2]]
     },
     "绷带": {
-        "type": "增强型工作台",
-        "map": [["破布", "线", "破布"], [null, null, null], [null, null, null]],
-        "ingredients": [["破布", 2], ["线"]]
+        type: "增强型工作台",
+        map: [["破布", "线", "破布"], [null, null, null], [null, null, null]],
+        ingredients: [["破布", 2], ["线"]]
     },
     "夹板": {
-        "type": "增强型工作台",
-        "map": [[null, "铁锭", null], ["木棍", "木棍", "木棍"], [null, "铁锭", null]],
-        "ingredients": [["铁锭", 2], ["木棍", 3]],
-        "count": 4
+        type: "增强型工作台",
+        map: [[null, "铁锭", null], ["木棍", "木棍", "木棍"], [null, "铁锭", null]],
+        ingredients: [["铁锭", 2], ["木棍", 3]],
+        count: 4
     },
     "维他命": {
-        "type": "增强型工作台",
-        "map": [["锡罐", "苹果", "红色蘑菇"], ["糖", null, null], [null, null, null]],
-        "ingredients": [["锡罐"], ["苹果"], ["红色蘑菇"], ["糖"]]
+        type: "增强型工作台",
+        map: [["锡罐", "苹果", "红色蘑菇"], ["糖", null, null], [null, null, null]],
+        ingredients: [["锡罐"], ["苹果"], ["红色蘑菇"], ["糖"]]
     },
     "药物": {
-        "type": "增强型工作台",
-        "map": [["维他命", "玻璃瓶", "浓奶油"], [null, null, null], [null, null, null]],
-        "ingredients": [["维他命"], ["玻璃瓶"], ["浓奶油"]]
+        type: "增强型工作台",
+        map: [["维他命", "玻璃瓶", "浓奶油"], [null, null, null], [null, null, null]],
+        ingredients: [["维他命"], ["玻璃瓶"], ["浓奶油"]]
     },
     "小型背包": {
-        "type": "增强型工作台",
-        "map": [["皮革", null, "皮革"], ["金锭(6克拉)", "箱子", "金锭(6克拉)"], ["皮革", "皮革", "皮革"]],
-        "ingredients": [["皮革", 5], ["金锭(6克拉)", 2], ["箱子"]]
+        type: "增强型工作台",
+        map: [["皮革", null, "皮革"], ["金锭(6克拉)", "箱子", "金锭(6克拉)"], ["皮革", "皮革", "皮革"]],
+        ingredients: [["皮革", 5], ["金锭(6克拉)", 2], ["箱子"]]
     },
     "普通背包": {
-        "type": "增强型工作台",
-        "map": [["皮革", null, "皮革"], ["金锭(10克拉)", "小型背包", "金锭(10克拉)"], ["皮革", "皮革", "皮革"]],
-        "ingredients": [["皮革", 5], ["金锭(10克拉)", 2], ["小型背包"]]
+        type: "增强型工作台",
+        map: [["皮革", null, "皮革"], ["金锭(10克拉)", "小型背包", "金锭(10克拉)"], ["皮革", "皮革", "皮革"]],
+        ingredients: [["皮革", 5], ["金锭(10克拉)", 2], ["小型背包"]]
     },
     "中型背包": {
-        "type": "增强型工作台",
-        "map": [["皮革", null, "皮革"], ["金锭(14克拉)", "普通背包", "金锭(14克拉)"], ["皮革", "皮革", "皮革"]],
-        "ingredients": [["皮革", 5], ["金锭(14克拉)", 2], ["普通背包"]]
+        type: "增强型工作台",
+        map: [["皮革", null, "皮革"], ["金锭(14克拉)", "普通背包", "金锭(14克拉)"], ["皮革", "皮革", "皮革"]],
+        ingredients: [["皮革", 5], ["金锭(14克拉)", 2], ["普通背包"]]
     },
     "编织背包": {
-        "type": "增强型工作台",
-        "map": [["布", null, "布"], ["金锭(16克拉)", "中型背包", "金锭(16克拉)"], ["布", "布", "布"]],
-        "ingredients": [["布", 5], ["金锭(16克拉)", 2], ["中型背包"]]
+        type: "增强型工作台",
+        map: [["布", null, "布"], ["金锭(16克拉)", "中型背包", "金锭(16克拉)"], ["布", "布", "布"]],
+        ingredients: [["布", 5], ["金锭(16克拉)", 2], ["中型背包"]]
     },
     "镀金背包": {
-        "type": "增强型工作台",
-        "map": [["金锭(22克拉)", null, "金锭(22克拉)"], ["皮革", "编织背包", "皮革"], ["金锭(22克拉)", null, "金锭(22克拉)"]],
-        "ingredients": [["金锭(22克拉)", 4], ["皮革", 2], ["编织背包"]]
+        type: "增强型工作台",
+        map: [["金锭(22克拉)", null, "金锭(22克拉)"], ["皮革", "编织背包", "皮革"], ["金锭(22克拉)", null, "金锭(22克拉)"]],
+        ingredients: [["金锭(22克拉)", 4], ["皮革", 2], ["编织背包"]]
     },
     "金光闪闪的背包": {
-        "type": "增强型工作台",
-        "map": [["金锭(24克拉)", null, "金锭(24克拉)"], ["皮革", "镀金背包", "皮革"], ["金锭(24克拉)", null, "金锭(24克拉)"]],
-        "ingredients": [["金锭(24克拉)", 4], ["皮革", 2], ["镀金背包"]]
+        type: "增强型工作台",
+        map: [["金锭(24克拉)", null, "金锭(24克拉)"], ["皮革", "镀金背包", "皮革"], ["金锭(24克拉)", null, "金锭(24克拉)"]],
+        ingredients: [["金锭(24克拉)", 4], ["皮革", 2], ["镀金背包"]]
     },
     "灵魂绑定背包": {
-        "type": "魔法工作台",
-        "map": [["末影结晶-II", null, "末影结晶-II"], ["来世精华", "编织背包", "来世精华"], ["末影结晶-II", null, "末影结晶-II"]],
-        "ingredients": [["末影结晶-II", 4], ["来世精华", 2], ["编织背包"]]
+        type: "魔法工作台",
+        map: [["末影结晶-II", null, "末影结晶-II"], ["来世精华", "编织背包", "来世精华"], ["末影结晶-II", null, "末影结晶-II"]],
+        ingredients: [["末影结晶-II", 4], ["来世精华", 2], ["编织背包"]]
     },
     "小冰柜": {
-        "type": "增强型工作台",
-        "map": [["布", "布", "布"], ["铝锭", "冷却装置", "铝锭"], ["铝锭", "铝锭", "铝锭"]],
-        "ingredients": [["布", 3], ["铝锭", 5], ["冷却装置"]]
+        type: "增强型工作台",
+        map: [["布", "布", "布"], ["铝锭", "冷却装置", "铝锭"], ["铝锭", "铝锭", "铝锭"]],
+        ingredients: [["布", 3], ["铝锭", 5], ["冷却装置"]]
     },
-    "高级工作台": {"type": "多方块结构", "ingredients": [["工作台"], ["发射器"]]},
+    "高级工作台": {type: "多方块结构", ingredients: [["工作台"], ["发射器"]]},
     "磨石": {
-        "type": "多方块结构",
-        "map": [[null, null, null], [null, "橡木栅栏", null], [null, "发射器 (朝上)", null]],
-        "ingredients": [["橡木栅栏"], ["发射器 (朝上)"]]
+        type: "多方块结构",
+        map: [[null, null, null], [null, "橡木栅栏", null], [null, "发射器 (朝上)", null]],
+        ingredients: [["橡木栅栏"], ["发射器 (朝上)"]]
     },
     "盔甲锻造台": {
-        "type": "多方块结构",
-        "map": [[null, null, null], [null, "铁砧", null], [null, "发射器 (朝上)", null]],
-        "ingredients": [["铁砧"], ["发射器 (朝上)"]]
+        type: "多方块结构",
+        map: [[null, null, null], [null, "铁砧", null], [null, "发射器 (朝上)", null]],
+        ingredients: [["铁砧"], ["发射器 (朝上)"]]
     },
     "矿石粉碎机": {
-        "type": "多方块结构",
-        "map": [[null, null, null], [null, "下界砖栅栏", null], ["铁栏杆", "发射器 (朝上)", "铁栏杆"]],
-        "ingredients": [["下界砖栅栏"], ["铁栏杆", 2], ["发射器 (朝上)"]]
+        type: "多方块结构",
+        map: [[null, null, null], [null, "下界砖栅栏", null], ["铁栏杆", "发射器 (朝上)", "铁栏杆"]],
+        ingredients: [["下界砖栅栏"], ["铁栏杆", 2], ["发射器 (朝上)"]]
     },
     "压缩机": {
-        "type": "增强型工作台",
-        "map": [["活塞", "电动马达", "活塞"], [null, "中型储能电容", null], ["大马士革钢锭", "大马士革钢锭", "大马士革钢锭"]],
-        "ingredients": [["活塞", 2], ["电动马达"], ["中型储能电容"], ["大马士革钢锭", 3]]
+        type: "增强型工作台",
+        map: [["活塞", "电动马达", "活塞"], [null, "中型储能电容", null], ["大马士革钢锭", "大马士革钢锭", "大马士革钢锭"]],
+        ingredients: [["活塞", 2], ["电动马达"], ["中型储能电容"], ["大马士革钢锭", 3]]
     },
     "冶炼炉": {
-        "type": "多方块结构",
-        "map": [[null, "下界砖栅栏", null], ["下界砖块", "发射器 (朝上)", "下界砖块"], [null, "打火石", null]],
-        "ingredients": [["下界砖栅栏"], ["下界砖块", 2], ["发射器 (朝上)"], ["打火石"]]
+        type: "多方块结构",
+        map: [[null, "下界砖栅栏", null], ["下界砖块", "发射器 (朝上)", "下界砖块"], [null, "打火石", null]],
+        ingredients: [["下界砖栅栏"], ["下界砖块", 2], ["发射器 (朝上)"], ["打火石"]]
     },
     "压力机": {
-        "type": "多方块结构",
-        "map": [["平滑石头台阶", "发射器 (朝下)", "平滑石头台阶"], ["活塞", "玻璃", "活塞"], ["活塞", "炼药锅", "活塞"]],
-        "ingredients": [["平滑石头台阶", 2], ["发射器 (朝下)"], ["活塞", 4], ["玻璃"], ["炼药锅"]]
+        type: "多方块结构",
+        map: [["平滑石头台阶", "发射器 (朝下)", "平滑石头台阶"], ["活塞", "玻璃", "活塞"], ["活塞", "炼药锅", "活塞"]],
+        ingredients: [["平滑石头台阶", 2], ["发射器 (朝下)"], ["活塞", 4], ["玻璃"], ["炼药锅"]]
     },
     "魔法工作台": {
-        "type": "多方块结构",
-        "map": [[null, null, null], [null, null, null], ["书架", "工作台", "发射器"]],
-        "ingredients": [["书架"], ["工作台"], ["发射器"]]
+        type: "多方块结构",
+        map: [[null, null, null], [null, null, null], ["书架", "工作台", "发射器"]],
+        ingredients: [["书架"], ["工作台"], ["发射器"]]
     },
     "洗矿机": {
-        "type": "多方块结构",
-        "map": [[null, "发射器", null], [null, "橡木栅栏", null], [null, "炼药锅", null]],
-        "ingredients": [["发射器"], ["橡木栅栏"], ["炼药锅"]]
+        type: "多方块结构",
+        map: [[null, "发射器", null], [null, "橡木栅栏", null], [null, "炼药锅", null]],
+        ingredients: [["发射器"], ["橡木栅栏"], ["炼药锅"]]
     },
     "台锯": {
-        "type": "多方块结构",
-        "map": [[null, null, null], ["平滑石头台阶", "切石机", "平滑石头台阶"], [null, "铁块", null]],
-        "ingredients": [["平滑石头台阶", 2], ["切石机"], ["铁块"]]
+        type: "多方块结构",
+        map: [[null, null, null], ["平滑石头台阶", "切石机", "平滑石头台阶"], [null, "铁块", null]],
+        ingredients: [["平滑石头台阶", 2], ["切石机"], ["铁块"]]
     },
-    "挖矿机": {"type": "多方块结构", "ingredients": [["铁块", 4], ["太阳能板", 2], ["箱子"], ["漏斗"], ["发射器"]]},
+    "挖矿机": {type: "多方块结构", ingredients: [["铁块", 4], ["太阳能板", 2], ["箱子"], ["漏斗"], ["发射器"]]},
     "高级挖矿机": {
-        "type": "多方块结构",
-        "ingredients": [["金块(24克拉)", 4], ["太阳能板", 2], ["箱子"], ["漏斗"], ["发射器"]]
+        type: "多方块结构",
+        ingredients: [["金块(24克拉)", 4], ["太阳能板", 2], ["箱子"], ["漏斗"], ["发射器"]]
     },
     "自动淘金机": {
-        "type": "多方块结构",
-        "map": [[null, null, null], [null, "橡木活板门", null], [null, "炼药锅", null]],
-        "ingredients": [["橡木活板门"], ["炼药锅"]]
+        type: "多方块结构",
+        map: [[null, null, null], [null, "橡木活板门", null], [null, "炼药锅", null]],
+        ingredients: [["橡木活板门"], ["炼药锅"]]
     },
     "榨汁机": {
-        "type": "多方块结构",
-        "map": [[null, "玻璃", null], [null, "下界砖栅栏", null], [null, "发射器 (朝上)", null]],
-        "ingredients": [["玻璃"], ["下界砖栅栏"], ["发射器 (朝上)"]]
+        type: "多方块结构",
+        map: [[null, "玻璃", null], [null, "下界砖栅栏", null], [null, "发射器 (朝上)", null]],
+        ingredients: [["玻璃"], ["下界砖栅栏"], ["发射器 (朝上)"]]
     },
     "物品输出箱": {
-        "type": "增强型工作台",
-        "map": [["铅锭", "漏斗", "铅锭"], ["铅锭", "箱子", "铅锭"], [null, "铅锭", null]],
-        "ingredients": [["铅锭", 5], ["漏斗"], ["箱子"]]
+        type: "增强型工作台",
+        map: [["铅锭", "漏斗", "铅锭"], ["铅锭", "箱子", "铅锭"], [null, "铅锭", null]],
+        ingredients: [["铅锭", 5], ["漏斗"], ["箱子"]]
     },
     "自动点火机": {
-        "type": "增强型工作台",
-        "map": [["铁锭", "打火石", "铁锭"], ["铁锭", "基础电路板", "铁锭"], [null, "侦测器", null]],
-        "ingredients": [["铁锭", 4], ["打火石"], ["基础电路板"], ["侦测器"]]
+        type: "增强型工作台",
+        map: [["铁锭", "打火石", "铁锭"], ["铁锭", "基础电路板", "铁锭"], [null, "侦测器", null]],
+        ingredients: [["铁锭", 4], ["打火石"], ["基础电路板"], ["侦测器"]]
     },
     "搅拌机": {
-        "type": "增强型工作台",
-        "map": [["橡木台阶", null, "橡木台阶"], ["橡木台阶", null, "橡木台阶"], ["橡木台阶", "炼药锅", "橡木台阶"]],
-        "ingredients": [["橡木台阶", 6], ["炼药锅"]]
+        type: "增强型工作台",
+        map: [["橡木台阶", null, "橡木台阶"], ["橡木台阶", null, "橡木台阶"], ["橡木台阶", "炼药锅", "橡木台阶"]],
+        ingredients: [["橡木台阶", 6], ["炼药锅"]]
     },
     "坩埚": {
-        "type": "增强型工作台",
-        "map": [["陶瓦", null, "陶瓦"], ["陶瓦", null, "陶瓦"], ["陶瓦", "打火石", "陶瓦"]],
-        "ingredients": [["陶瓦", 6], ["打火石"]]
+        type: "增强型工作台",
+        map: [["陶瓦", null, "陶瓦"], ["陶瓦", null, "陶瓦"], ["陶瓦", "打火石", "陶瓦"]],
+        ingredients: [["陶瓦", 6], ["打火石"]]
     },
     "强化熔炉-I": {
-        "type": "增强型工作台",
-        "map": [[null, "钢锭", null], ["基础电路板", "熔炉", "加热线圈"], [null, "电动马达", null]],
-        "ingredients": [["钢锭"], ["基础电路板"], ["熔炉"], ["加热线圈"], ["电动马达"]]
+        type: "增强型工作台",
+        map: [[null, "钢锭", null], ["基础电路板", "熔炉", "加热线圈"], [null, "电动马达", null]],
+        ingredients: [["钢锭"], ["基础电路板"], ["熔炉"], ["加热线圈"], ["电动马达"]]
     },
     "强化熔炉-II": {
-        "type": "增强型工作台",
-        "map": [[null, "钢锭", null], ["基础电路板", "强化熔炉-I", "加热线圈"], [null, "电动马达", null]],
-        "ingredients": [["钢锭"], ["基础电路板"], ["强化熔炉-I"], ["加热线圈"], ["电动马达"]]
+        type: "增强型工作台",
+        map: [[null, "钢锭", null], ["基础电路板", "强化熔炉-I", "加热线圈"], [null, "电动马达", null]],
+        ingredients: [["钢锭"], ["基础电路板"], ["强化熔炉-I"], ["加热线圈"], ["电动马达"]]
     },
     "强化熔炉-III": {
-        "type": "增强型工作台",
-        "map": [[null, "钢锭", null], ["基础电路板", "强化熔炉-II", "加热线圈"], [null, "电动马达", null]],
-        "ingredients": [["钢锭"], ["基础电路板"], ["强化熔炉-II"], ["加热线圈"], ["电动马达"]]
+        type: "增强型工作台",
+        map: [[null, "钢锭", null], ["基础电路板", "强化熔炉-II", "加热线圈"], [null, "电动马达", null]],
+        ingredients: [["钢锭"], ["基础电路板"], ["强化熔炉-II"], ["加热线圈"], ["电动马达"]]
     },
     "强化熔炉-IV": {
-        "type": "增强型工作台",
-        "map": [[null, "钢锭", null], ["基础电路板", "强化熔炉-III", "加热线圈"], [null, "电动马达", null]],
-        "ingredients": [["钢锭"], ["基础电路板"], ["强化熔炉-III"], ["加热线圈"], ["电动马达"]]
+        type: "增强型工作台",
+        map: [[null, "钢锭", null], ["基础电路板", "强化熔炉-III", "加热线圈"], [null, "电动马达", null]],
+        ingredients: [["钢锭"], ["基础电路板"], ["强化熔炉-III"], ["加热线圈"], ["电动马达"]]
     },
     "强化熔炉-V": {
-        "type": "增强型工作台",
-        "map": [[null, "钢锭", null], ["基础电路板", "强化熔炉-IV", "加热线圈"], [null, "电动马达", null]],
-        "ingredients": [["钢锭"], ["基础电路板"], ["强化熔炉-IV"], ["加热线圈"], ["电动马达"]]
+        type: "增强型工作台",
+        map: [[null, "钢锭", null], ["基础电路板", "强化熔炉-IV", "加热线圈"], [null, "电动马达", null]],
+        ingredients: [["钢锭"], ["基础电路板"], ["强化熔炉-IV"], ["加热线圈"], ["电动马达"]]
     },
     "强化熔炉-VI": {
-        "type": "增强型工作台",
-        "map": [[null, "钢锭", null], ["基础电路板", "强化熔炉-V", "加热线圈"], [null, "电动马达", null]],
-        "ingredients": [["钢锭"], ["基础电路板"], ["强化熔炉-V"], ["加热线圈"], ["电动马达"]]
+        type: "增强型工作台",
+        map: [[null, "钢锭", null], ["基础电路板", "强化熔炉-V", "加热线圈"], [null, "电动马达", null]],
+        ingredients: [["钢锭"], ["基础电路板"], ["强化熔炉-V"], ["加热线圈"], ["电动马达"]]
     },
     "强化熔炉-VII": {
-        "type": "增强型工作台",
-        "map": [[null, "钢锭", null], ["基础电路板", "强化熔炉-VI", "加热线圈"], [null, "电动马达", null]],
-        "ingredients": [["钢锭"], ["基础电路板"], ["强化熔炉-VI"], ["加热线圈"], ["电动马达"]]
+        type: "增强型工作台",
+        map: [[null, "钢锭", null], ["基础电路板", "强化熔炉-VI", "加热线圈"], [null, "电动马达", null]],
+        ingredients: [["钢锭"], ["基础电路板"], ["强化熔炉-VI"], ["加热线圈"], ["电动马达"]]
     },
     "强化熔炉-VIII": {
-        "type": "增强型工作台",
-        "map": [[null, "钢锭", null], ["基础电路板", "强化熔炉-VII", "加热线圈"], [null, "电动马达", null]],
-        "ingredients": [["钢锭"], ["基础电路板"], ["强化熔炉-VII"], ["加热线圈"], ["电动马达"]]
+        type: "增强型工作台",
+        map: [[null, "钢锭", null], ["基础电路板", "强化熔炉-VII", "加热线圈"], [null, "电动马达", null]],
+        ingredients: [["钢锭"], ["基础电路板"], ["强化熔炉-VII"], ["加热线圈"], ["电动马达"]]
     },
     "强化熔炉-IX": {
-        "type": "增强型工作台",
-        "map": [[null, "钢锭", null], ["基础电路板", "强化熔炉-VIII", "加热线圈"], [null, "电动马达", null]],
-        "ingredients": [["钢锭"], ["基础电路板"], ["强化熔炉-VIII"], ["加热线圈"], ["电动马达"]]
+        type: "增强型工作台",
+        map: [[null, "钢锭", null], ["基础电路板", "强化熔炉-VIII", "加热线圈"], [null, "电动马达", null]],
+        ingredients: [["钢锭"], ["基础电路板"], ["强化熔炉-VIII"], ["加热线圈"], ["电动马达"]]
     },
     "强化熔炉-X": {
-        "type": "增强型工作台",
-        "map": [[null, "钢锭", null], ["基础电路板", "强化熔炉-IX", "加热线圈"], [null, "电动马达", null]],
-        "ingredients": [["钢锭"], ["基础电路板"], ["强化熔炉-IX"], ["加热线圈"], ["电动马达"]]
+        type: "增强型工作台",
+        map: [[null, "钢锭", null], ["基础电路板", "强化熔炉-IX", "加热线圈"], [null, "电动马达", null]],
+        ingredients: [["钢锭"], ["基础电路板"], ["强化熔炉-IX"], ["加热线圈"], ["电动马达"]]
     },
     "强化熔炉-XI": {
-        "type": "增强型工作台",
-        "map": [[null, "钢锭", null], ["基础电路板", "强化熔炉-X", "加热线圈"], [null, "电动马达", null]],
-        "ingredients": [["钢锭"], ["基础电路板"], ["强化熔炉-X"], ["加热线圈"], ["电动马达"]]
+        type: "增强型工作台",
+        map: [[null, "钢锭", null], ["基础电路板", "强化熔炉-X", "加热线圈"], [null, "电动马达", null]],
+        ingredients: [["钢锭"], ["基础电路板"], ["强化熔炉-X"], ["加热线圈"], ["电动马达"]]
     },
     "强化合金熔炉": {
-        "type": "增强型工作台",
-        "map": [["强化合金锭", "基础电路板", "强化合金锭"], ["加热线圈", "强化熔炉-XI", "加热线圈"], ["强化合金锭", "电动马达", "强化合金锭"]],
-        "ingredients": [["强化合金锭", 4], ["基础电路板"], ["加热线圈", 2], ["强化熔炉-XI"], ["电动马达"]]
+        type: "增强型工作台",
+        map: [["强化合金锭", "基础电路板", "强化合金锭"], ["加热线圈", "强化熔炉-XI", "加热线圈"], ["强化合金锭", "电动马达", "强化合金锭"]],
+        ingredients: [["强化合金锭", 4], ["基础电路板"], ["加热线圈", 2], ["强化熔炉-XI"], ["电动马达"]]
     },
     "黑金刚石镶边熔炉": {
-        "type": "增强型工作台",
-        "map": [["黑金刚石", "基础电路板", "黑金刚石"], ["加热线圈", "强化合金熔炉", "加热线圈"], ["黑金刚石", "电动马达", "黑金刚石"]],
-        "ingredients": [["黑金刚石", 4], ["基础电路板"], ["加热线圈", 2], ["强化合金熔炉"], ["电动马达"]]
+        type: "增强型工作台",
+        map: [["黑金刚石", "基础电路板", "黑金刚石"], ["加热线圈", "强化合金熔炉", "加热线圈"], ["黑金刚石", "电动马达", "黑金刚石"]],
+        ingredients: [["黑金刚石", 4], ["基础电路板"], ["加热线圈", 2], ["强化合金熔炉"], ["电动马达"]]
     },
     "方块放置机": {
-        "type": "增强型工作台",
-        "map": [["金锭(4克拉)", "活塞", "金锭(4克拉)"], ["铁锭", "电动马达", "铁锭"], ["金锭(4克拉)", "活塞", "金锭(4克拉)"]],
-        "ingredients": [["金锭(4克拉)", 4], ["活塞", 2], ["铁锭", 2], ["电动马达"]]
+        type: "增强型工作台",
+        map: [["金锭(4克拉)", "活塞", "金锭(4克拉)"], ["铁锭", "电动马达", "铁锭"], ["金锭(4克拉)", "活塞", "金锭(4克拉)"]],
+        ingredients: [["金锭(4克拉)", 4], ["活塞", 2], ["铁锭", 2], ["电动马达"]]
     },
     "淘金盘": {
-        "type": "增强型工作台",
-        "map": [[null, null, null], ["石头", "碗", "石头"], ["石头", "石头", "石头"]],
-        "ingredients": [["石头", 5], ["碗"]]
+        type: "增强型工作台",
+        map: [[null, null, null], ["石头", "碗", "石头"], ["石头", "石头", "石头"]],
+        ingredients: [["石头", 5], ["碗"]]
     },
     "下界淘金盘": {
-        "type": "增强型工作台",
-        "map": [[null, null, null], ["下界砖", "淘金盘", "下界砖"], ["下界砖", "下界砖", "下界砖"]],
-        "ingredients": [["下界砖", 5], ["淘金盘"]]
+        type: "增强型工作台",
+        map: [[null, null, null], ["下界砖", "淘金盘", "下界砖"], ["下界砖", "下界砖", "下界砖"]],
+        ingredients: [["下界砖", 5], ["淘金盘"]]
     },
     "抓钩": {
-        "type": "增强型工作台",
-        "map": [[null, null, "钩子"], [null, "锁链", null], ["锁链", null, null]],
-        "ingredients": [["钩子"], ["锁链", 2]]
+        type: "增强型工作台",
+        map: [[null, null, "钩子"], [null, "锁链", null], ["锁链", null, null]],
+        ingredients: [["钩子"], ["锁链", 2]]
     },
     "熔炉镐": {
-        "type": "增强型工作台",
-        "map": [["岩浆水晶", "岩浆水晶", "岩浆水晶"], [null, "硅铁", null], [null, "硅铁", null]],
-        "ingredients": [["岩浆水晶", 3], ["硅铁", 2]]
+        type: "增强型工作台",
+        map: [["岩浆水晶", "岩浆水晶", "岩浆水晶"], [null, "硅铁", null], [null, "硅铁", null]],
+        ingredients: [["岩浆水晶", 3], ["硅铁", 2]]
     },
     "伐木斧": {
-        "type": "魔法工作台",
-        "map": [["人造钻石", "人造钻石", null], ["人造绿宝石", "镀金铁锭", null], [null, "镀金铁锭", null]],
-        "ingredients": [["人造钻石", 2], ["人造绿宝石"], ["镀金铁锭", 2]]
+        type: "魔法工作台",
+        map: [["人造钻石", "人造钻石", null], ["人造绿宝石", "镀金铁锭", null], [null, "镀金铁锭", null]],
+        ingredients: [["人造钻石", 2], ["人造绿宝石"], ["镀金铁锭", 2]]
     },
     "刷怪笼之镐": {
-        "type": "魔法工作台",
-        "map": [["硅铁", "硅铁", "硅铁"], [null, "镀金铁锭", null], [null, "镀金铁锭", null]],
-        "ingredients": [["硅铁", 3], ["镀金铁锭", 2]]
+        type: "魔法工作台",
+        map: [["硅铁", "硅铁", "硅铁"], [null, "镀金铁锭", null], [null, "镀金铁锭", null]],
+        ingredients: [["硅铁", 3], ["镀金铁锭", 2]]
     },
-    "赫拉克勒斯之镐": {"type": "魔法工作台", "ingredients": [["硬化金属", 3], ["硅铁", 2]]},
+    "赫拉克勒斯之镐": {type: "魔法工作台", ingredients: [["硬化金属", 3], ["硅铁", 2]]},
     "爆炸镐": {
-        "type": "魔法工作台",
-        "map": [["TNT", "人造钻石", "TNT"], [null, "硅铁", null], [null, "硅铁", null]],
-        "ingredients": [["TNT", 2], ["人造钻石"], ["硅铁", 2]]
+        type: "魔法工作台",
+        map: [["TNT", "人造钻石", "TNT"], [null, "硅铁", null], [null, "硅铁", null]],
+        ingredients: [["TNT", 2], ["人造钻石"], ["硅铁", 2]]
     },
     "爆炸铲": {
-        "type": "魔法工作台",
-        "map": [[null, "人造钻石", null], [null, "TNT", null], [null, "硅铁", null]],
-        "ingredients": [["人造钻石"], ["TNT"], ["硅铁"]]
+        type: "魔法工作台",
+        map: [[null, "人造钻石", null], [null, "TNT", null], [null, "硅铁", null]],
+        ingredients: [["人造钻石"], ["TNT"], ["硅铁"]]
     },
     "寻矿镐": {
-        "type": "魔法工作台",
-        "map": [["指南针", "人造钻石", "指南针"], [null, "硅铁", null], [null, "硅铁", null]],
-        "ingredients": [["指南针", 2], ["人造钻石"], ["硅铁", 2]]
+        type: "魔法工作台",
+        map: [["指南针", "人造钻石", "指南针"], [null, "硅铁", null], [null, "硅铁", null]],
+        ingredients: [["指南针", 2], ["人造钻石"], ["硅铁", 2]]
     },
     "钴镐": {
-        "type": "增强型工作台",
-        "map": [["钴锭", "钴锭", "钴锭"], [null, "镍锭", null], [null, "镍锭", null]],
-        "ingredients": [["钴锭", 3], ["镍锭", 2]]
+        type: "增强型工作台",
+        map: [["钴锭", "钴锭", "钴锭"], [null, "镍锭", null], [null, "镍锭", null]],
+        ingredients: [["钴锭", 3], ["镍锭", 2]]
     },
     "矿脉镐": {
-        "type": "魔法工作台",
-        "map": [["绿宝石矿石", "人造钻石", "绿宝石矿石"], [null, "镀金铁锭", null], [null, "镀金铁锭", null]],
-        "ingredients": [["绿宝石矿石", 2], ["人造钻石"], ["镀金铁锭", 2]]
+        type: "魔法工作台",
+        map: [["绿宝石矿石", "人造钻石", "绿宝石矿石"], [null, "镀金铁锭", null], [null, "镀金铁锭", null]],
+        ingredients: [["绿宝石矿石", 2], ["人造钻石"], ["镀金铁锭", 2]]
     },
     "灵魂绑定镐": {
-        "type": "魔法工作台",
-        "map": [[null, "来世精华", null], [null, "钻石镐", null], [null, "来世精华", null]],
-        "ingredients": [["来世精华", 2], ["钻石镐"]]
+        type: "魔法工作台",
+        map: [[null, "来世精华", null], [null, "钻石镐", null], [null, "来世精华", null]],
+        ingredients: [["来世精华", 2], ["钻石镐"]]
     },
     "灵魂绑定斧": {
-        "type": "魔法工作台",
-        "map": [[null, "来世精华", null], [null, "钻石斧", null], [null, "来世精华", null]],
-        "ingredients": [["来世精华", 2], ["钻石斧"]]
+        type: "魔法工作台",
+        map: [[null, "来世精华", null], [null, "钻石斧", null], [null, "来世精华", null]],
+        ingredients: [["来世精华", 2], ["钻石斧"]]
     },
     "灵魂绑定铲": {
-        "type": "魔法工作台",
-        "map": [[null, "来世精华", null], [null, "钻石锹", null], [null, "来世精华", null]],
-        "ingredients": [["来世精华", 2], ["钻石锹"]]
+        type: "魔法工作台",
+        map: [[null, "来世精华", null], [null, "钻石锹", null], [null, "来世精华", null]],
+        ingredients: [["来世精华", 2], ["钻石锹"]]
     },
     "灵魂绑定锄": {
-        "type": "魔法工作台",
-        "map": [[null, "来世精华", null], [null, "钻石锄", null], [null, "来世精华", null]],
-        "ingredients": [["来世精华", 2], ["钻石锄"]]
+        type: "魔法工作台",
+        map: [[null, "来世精华", null], [null, "钻石锄", null], [null, "来世精华", null]],
+        ingredients: [["来世精华", 2], ["钻石锄"]]
     },
     "强化合金锭": {
-        "type": "冶炼炉",
-        "map": [["大马士革钢锭", "硬化金属", "科林斯青铜锭"], ["焊锡锭", "银铜合金锭", "金锭(24克拉)"], [null, null, null]],
-        "ingredients": [["大马士革钢锭"], ["硬化金属"], ["科林斯青铜锭"], ["焊锡锭"], ["银铜合金锭"], ["金锭(24克拉)"]]
+        type: "冶炼炉",
+        map: [["大马士革钢锭", "硬化金属", "科林斯青铜锭"], ["焊锡锭", "银铜合金锭", "金锭(24克拉)"], [null, null, null]],
+        ingredients: [["大马士革钢锭"], ["硬化金属"], ["科林斯青铜锭"], ["焊锡锭"], ["银铜合金锭"], ["金锭(24克拉)"]]
     },
     "硬化金属": {
-        "type": "冶炼炉",
-        "map": [["大马士革钢锭", "硬铝锭", "压缩碳"], ["铝青铜锭", null, null], [null, null, null]],
-        "ingredients": [["大马士革钢锭"], ["硬铝锭"], ["压缩碳"], ["铝青铜锭"]]
+        type: "冶炼炉",
+        map: [["大马士革钢锭", "硬铝锭", "压缩碳"], ["铝青铜锭", null, null], [null, null, null]],
+        ingredients: [["大马士革钢锭"], ["硬铝锭"], ["压缩碳"], ["铝青铜锭"]]
     },
     "大马士革钢锭": {
-        "type": "冶炼炉",
-        "map": [["钢锭", "铁粉", "碳"], ["铁锭", null, null], [null, null, null]],
-        "ingredients": [["钢锭"], ["铁粉"], ["碳"], ["铁锭"]]
+        type: "冶炼炉",
+        map: [["钢锭", "铁粉", "碳"], ["铁锭", null, null], [null, null, null]],
+        ingredients: [["钢锭"], ["铁粉"], ["碳"], ["铁锭"]]
     },
     "钢锭": {
-        "type": "冶炼炉",
-        "map": [["铁粉", "碳", "铁锭"], [null, null, null], [null, null, null]],
-        "ingredients": [["铁粉"], ["碳"], ["铁锭"]]
+        type: "冶炼炉",
+        map: [["铁粉", "碳", "铁锭"], [null, null, null], [null, null, null]],
+        ingredients: [["铁粉"], ["碳"], ["铁锭"]]
     },
     "青铜锭": {
-        "type": "冶炼炉",
-        "map": [["铜粉", "锡粉", "铜锭"], [null, null, null], [null, null, null]],
-        "ingredients": [["铜粉"], ["锡粉"], ["铜锭"]]
+        type: "冶炼炉",
+        map: [["铜粉", "锡粉", "铜锭"], [null, null, null], [null, null, null]],
+        ingredients: [["铜粉"], ["锡粉"], ["铜锭"]]
     },
     "硬铝锭": {
-        "type": "冶炼炉",
-        "map": [["铝粉", "铜粉", "铝锭"], [null, null, null], [null, null, null]],
-        "ingredients": [["铝粉"], ["铜粉"], ["铝锭"]]
+        type: "冶炼炉",
+        map: [["铝粉", "铜粉", "铝锭"], [null, null, null], [null, null, null]],
+        ingredients: [["铝粉"], ["铜粉"], ["铝锭"]]
     },
     "银铜合金锭": {
-        "type": "冶炼炉",
-        "map": [["银粉", "铜粉", "银锭"], [null, null, null], [null, null, null]],
-        "ingredients": [["银粉"], ["铜粉"], ["银锭"]]
+        type: "冶炼炉",
+        map: [["银粉", "铜粉", "银锭"], [null, null, null], [null, null, null]],
+        ingredients: [["银粉"], ["铜粉"], ["银锭"]]
     },
     "黄铜锭": {
-        "type": "冶炼炉",
-        "map": [["铜粉", "锌粉", "铜锭"], [null, null, null], [null, null, null]],
-        "ingredients": [["铜粉"], ["锌粉"], ["铜锭"]]
+        type: "冶炼炉",
+        map: [["铜粉", "锌粉", "铜锭"], [null, null, null], [null, null, null]],
+        ingredients: [["铜粉"], ["锌粉"], ["铜锭"]]
     },
     "铝黄铜锭": {
-        "type": "冶炼炉",
-        "map": [["铝粉", "黄铜锭", "铝锭"], [null, null, null], [null, null, null]],
-        "ingredients": [["铝粉"], ["黄铜锭"], ["铝锭"]]
+        type: "冶炼炉",
+        map: [["铝粉", "黄铜锭", "铝锭"], [null, null, null], [null, null, null]],
+        ingredients: [["铝粉"], ["黄铜锭"], ["铝锭"]]
     },
     "铝青铜锭": {
-        "type": "冶炼炉",
-        "map": [["铝粉", "青铜锭", "铝锭"], [null, null, null], [null, null, null]],
-        "ingredients": [["铝粉"], ["青铜锭"], ["铝锭"]]
+        type: "冶炼炉",
+        map: [["铝粉", "青铜锭", "铝锭"], [null, null, null], [null, null, null]],
+        ingredients: [["铝粉"], ["青铜锭"], ["铝锭"]]
     },
     "科林斯青铜锭": {
-        "type": "冶炼炉",
-        "map": [["银粉", "金粉", "铜粉"], ["青铜锭", null, null], [null, null, null]],
-        "ingredients": [["银粉"], ["金粉"], ["铜粉"], ["青铜锭"]]
+        type: "冶炼炉",
+        map: [["银粉", "金粉", "铜粉"], ["青铜锭", null, null], [null, null, null]],
+        ingredients: [["银粉"], ["金粉"], ["铜粉"], ["青铜锭"]]
     },
     "焊锡锭": {
-        "type": "冶炼炉",
-        "map": [["铅粉", "锡粉", "铅锭"], [null, null, null], [null, null, null]],
-        "ingredients": [["铅粉"], ["锡粉"], ["铅锭"]]
+        type: "冶炼炉",
+        map: [["铅粉", "锡粉", "铅锭"], [null, null, null], [null, null, null]],
+        ingredients: [["铅粉"], ["锡粉"], ["铅锭"]]
     },
     "人造蓝宝石": {
-        "type": "冶炼炉",
-        "map": [["铝粉", "玻璃", "玻璃板"], ["铝锭", "青金石", null], [null, null, null]],
-        "ingredients": [["铝粉"], ["玻璃"], ["玻璃板"], ["铝锭"], ["青金石"]]
+        type: "冶炼炉",
+        map: [["铝粉", "玻璃", "玻璃板"], ["铝锭", "青金石", null], [null, null, null]],
+        ingredients: [["铝粉"], ["玻璃"], ["玻璃板"], ["铝锭"], ["青金石"]]
     },
     "黑金刚石原矿": {
-        "type": "冶炼炉",
-        "map": [["人造钻石", "碳块", "玻璃板"], [null, null, null], [null, null, null]],
-        "ingredients": [["人造钻石"], ["碳块"], ["玻璃板"]]
+        type: "冶炼炉",
+        map: [["人造钻石", "碳块", "玻璃板"], [null, null, null], [null, null, null]],
+        ingredients: [["人造钻石"], ["碳块"], ["玻璃板"]]
     },
     "镍锭": {
-        "type": "冶炼炉",
-        "map": [["铁粉", "铁锭", "铜粉"], [null, null, null], [null, null, null]],
-        "ingredients": [["铁粉"], ["铁锭"], ["铜粉"]]
+        type: "冶炼炉",
+        map: [["铁粉", "铁锭", "铜粉"], [null, null, null], [null, null, null]],
+        ingredients: [["铁粉"], ["铁锭"], ["铜粉"]]
     },
     "钴锭": {
-        "type": "冶炼炉",
-        "map": [["铁粉", "铜粉", "镍锭"], [null, null, null], [null, null, null]],
-        "ingredients": [["铁粉"], ["铜粉"], ["镍锭"]]
+        type: "冶炼炉",
+        map: [["铁粉", "铜粉", "镍锭"], [null, null, null], [null, null, null]],
+        ingredients: [["铁粉"], ["铜粉"], ["镍锭"]]
     },
     "硅铁": {
-        "type": "冶炼炉",
-        "map": [["铁锭", "铁粉", "硅"], [null, null, null], [null, null, null]],
-        "ingredients": [["铁锭"], ["铁粉"], ["硅"]]
+        type: "冶炼炉",
+        map: [["铁锭", "铁粉", "硅"], [null, null, null], [null, null, null]],
+        ingredients: [["铁锭"], ["铁粉"], ["硅"]]
     },
     "镀金铁锭": {
-        "type": "冶炼炉",
-        "map": [["金锭(24克拉)", "铁粉", null], [null, null, null], [null, null, null]],
-        "ingredients": [["金锭(24克拉)"], ["铁粉"]]
+        type: "冶炼炉",
+        map: [["金锭(24克拉)", "铁粉", null], [null, null, null], [null, null, null]],
+        ingredients: [["金锭(24克拉)"], ["铁粉"]]
     },
     "人造绿宝石": {
-        "type": "冶炼炉",
-        "map": [["人造蓝宝石", "铝粉", "铝锭"], ["玻璃板", null, null], [null, null, null]],
-        "ingredients": [["人造蓝宝石"], ["铝粉"], ["铝锭"], ["玻璃板"]]
+        type: "冶炼炉",
+        map: [["人造蓝宝石", "铝粉", "铝锭"], ["玻璃板", null, null], [null, null, null]],
+        ingredients: [["人造蓝宝石"], ["铝粉"], ["铝锭"], ["玻璃板"]]
     },
     "红石合金锭": {
-        "type": "冶炼炉",
-        "map": [["红石粉", "红石块", "硅铁"], ["硬化金属", null, null], [null, null, null]],
-        "ingredients": [["红石粉"], ["红石块"], ["硅铁"], ["硬化金属"]]
+        type: "冶炼炉",
+        map: [["红石粉", "红石块", "硅铁"], ["硬化金属", null, null], [null, null, null]],
+        ingredients: [["红石粉"], ["红石块"], ["硅铁"], ["硬化金属"]]
     },
     "人造钻石": {
-        "type": "压力机",
-        "map": [["碳块", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["碳块"]]
+        type: "压力机",
+        map: [["碳块", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["碳块"]]
     },
     "黑金刚石": {
-        "type": "压力机",
-        "map": [["黑金刚石原矿", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["黑金刚石原矿"]]
+        type: "压力机",
+        map: [["黑金刚石原矿", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["黑金刚石原矿"]]
     },
     "铜锭": {
-        "type": "冶炼炉",
-        "map": [["铜粉", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["铜粉"]]
+        type: "冶炼炉",
+        map: [["铜粉", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["铜粉"]]
     },
     "锡锭": {
-        "type": "冶炼炉",
-        "map": [["锡粉", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["锡粉"]]
+        type: "冶炼炉",
+        map: [["锡粉", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["锡粉"]]
     },
     "银锭": {
-        "type": "冶炼炉",
-        "map": [["银粉", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["银粉"]]
+        type: "冶炼炉",
+        map: [["银粉", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["银粉"]]
     },
     "铅锭": {
-        "type": "冶炼炉",
-        "map": [["铅粉", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["铅粉"]]
+        type: "冶炼炉",
+        map: [["铅粉", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["铅粉"]]
     },
     "铝锭": {
-        "type": "冶炼炉",
-        "map": [["铝粉", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["铝粉"]]
+        type: "冶炼炉",
+        map: [["铝粉", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["铝粉"]]
     },
     "锌锭": {
-        "type": "冶炼炉",
-        "map": [["锌粉", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["锌粉"]]
+        type: "冶炼炉",
+        map: [["锌粉", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["锌粉"]]
     },
     "镁锭": {
-        "type": "冶炼炉",
-        "map": [["镁粉", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["镁粉"]]
+        type: "冶炼炉",
+        map: [["镁粉", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["镁粉"]]
     },
     "硫酸盐": {
-        "type": "矿石粉碎机",
-        "map": [["下界岩", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["下界岩", 16]]
+        type: "矿石粉碎机",
+        map: [["下界岩", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["下界岩", 16]]
     },
     "碳": {
-        "type": "压缩机",
-        "map": [["煤炭", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["煤炭", 8]]
+        type: "压缩机",
+        map: [["煤炭", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["煤炭", 8]]
     },
     "压缩碳": {
-        "type": "压缩机",
-        "map": [["碳", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["碳", 4]]
+        type: "压缩机",
+        map: [["碳", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["碳", 4]]
     },
     "碳块": {
-        "type": "增强型工作台",
-        "map": [["压缩碳", "压缩碳", "压缩碳"], ["压缩碳", "燧石", "压缩碳"], ["压缩碳", "压缩碳", "压缩碳"]],
-        "ingredients": [["压缩碳", 8], ["燧石"]]
+        type: "增强型工作台",
+        map: [["压缩碳", "压缩碳", "压缩碳"], ["压缩碳", "燧石", "压缩碳"], ["压缩碳", "压缩碳", "压缩碳"]],
+        ingredients: [["压缩碳", 8], ["燧石"]]
     },
     "金锭(24克拉)": {
-        "type": "冶炼炉",
-        "map": [["金粉", "金锭(22克拉)", null], [null, null, null], [null, null, null]],
-        "ingredients": [["金粉"], ["金锭(22克拉)"]]
+        type: "冶炼炉",
+        map: [["金粉", "金锭(22克拉)", null], [null, null, null], [null, null, null]],
+        ingredients: [["金粉"], ["金锭(22克拉)"]]
     },
     "金锭(22克拉)": {
-        "type": "冶炼炉",
-        "map": [["金粉", "金锭(20克拉)", null], [null, null, null], [null, null, null]],
-        "ingredients": [["金粉"], ["金锭(20克拉)"]]
+        type: "冶炼炉",
+        map: [["金粉", "金锭(20克拉)", null], [null, null, null], [null, null, null]],
+        ingredients: [["金粉"], ["金锭(20克拉)"]]
     },
     "金锭(20克拉)": {
-        "type": "冶炼炉",
-        "map": [["金粉", "金锭(18克拉)", null], [null, null, null], [null, null, null]],
-        "ingredients": [["金粉"], ["金锭(18克拉)"]]
+        type: "冶炼炉",
+        map: [["金粉", "金锭(18克拉)", null], [null, null, null], [null, null, null]],
+        ingredients: [["金粉"], ["金锭(18克拉)"]]
     },
     "金锭(18克拉)": {
-        "type": "冶炼炉",
-        "map": [["金粉", "金锭(16克拉)", null], [null, null, null], [null, null, null]],
-        "ingredients": [["金粉"], ["金锭(16克拉)"]]
+        type: "冶炼炉",
+        map: [["金粉", "金锭(16克拉)", null], [null, null, null], [null, null, null]],
+        ingredients: [["金粉"], ["金锭(16克拉)"]]
     },
     "金锭(16克拉)": {
-        "type": "冶炼炉",
-        "map": [["金粉", "金锭(14克拉)", null], [null, null, null], [null, null, null]],
-        "ingredients": [["金粉"], ["金锭(14克拉)"]]
+        type: "冶炼炉",
+        map: [["金粉", "金锭(14克拉)", null], [null, null, null], [null, null, null]],
+        ingredients: [["金粉"], ["金锭(14克拉)"]]
     },
     "金锭(14克拉)": {
-        "type": "冶炼炉",
-        "map": [["金粉", "金锭(12克拉)", null], [null, null, null], [null, null, null]],
-        "ingredients": [["金粉"], ["金锭(12克拉)"]]
+        type: "冶炼炉",
+        map: [["金粉", "金锭(12克拉)", null], [null, null, null], [null, null, null]],
+        ingredients: [["金粉"], ["金锭(12克拉)"]]
     },
     "金锭(12克拉)": {
-        "type": "冶炼炉",
-        "map": [["金粉", "金锭(10克拉)", null], [null, null, null], [null, null, null]],
-        "ingredients": [["金粉"], ["金锭(10克拉)"]]
+        type: "冶炼炉",
+        map: [["金粉", "金锭(10克拉)", null], [null, null, null], [null, null, null]],
+        ingredients: [["金粉"], ["金锭(10克拉)"]]
     },
     "金锭(10克拉)": {
-        "type": "冶炼炉",
-        "map": [["金粉", "金锭(8克拉)", null], [null, null, null], [null, null, null]],
-        "ingredients": [["金粉"], ["金锭(8克拉)"]]
+        type: "冶炼炉",
+        map: [["金粉", "金锭(8克拉)", null], [null, null, null], [null, null, null]],
+        ingredients: [["金粉"], ["金锭(8克拉)"]]
     },
     "金锭(8克拉)": {
-        "type": "冶炼炉",
-        "map": [["金粉", "金锭(6克拉)", null], [null, null, null], [null, null, null]],
-        "ingredients": [["金粉"], ["金锭(6克拉)"]]
+        type: "冶炼炉",
+        map: [["金粉", "金锭(6克拉)", null], [null, null, null], [null, null, null]],
+        ingredients: [["金粉"], ["金锭(6克拉)"]]
     },
     "金锭(6克拉)": {
-        "type": "冶炼炉",
-        "map": [["金粉", "金锭(4克拉)", null], [null, null, null], [null, null, null]],
-        "ingredients": [["金粉"], ["金锭(4克拉)"]]
+        type: "冶炼炉",
+        map: [["金粉", "金锭(4克拉)", null], [null, null, null], [null, null, null]],
+        ingredients: [["金粉"], ["金锭(4克拉)"]]
     },
     "金锭(4克拉)": {
-        "type": "冶炼炉",
-        "map": [["金粉", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["金粉"]]
+        type: "冶炼炉",
+        map: [["金粉", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["金粉"]]
     },
     "硅": {
-        "type": "冶炼炉",
-        "map": [["石英块", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["石英块"]]
+        type: "冶炼炉",
+        map: [["石英块", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["石英块"]]
     },
     "铀": {
-        "type": "增强型工作台",
-        "map": [["一小块铀", "一小块铀", null], ["一小块铀", "一小块铀", null], [null, null, null]],
-        "ingredients": [["一小块铀", 4]]
+        type: "增强型工作台",
+        map: [["一小块铀", "一小块铀", null], ["一小块铀", "一小块铀", null], [null, null, null]],
+        ingredients: [["一小块铀", 4]]
     },
     "镁盐": {
-        "type": "加热压力舱",
-        "map": [["镁粉", "盐", null], [null, null, null], [null, null, null]],
-        "ingredients": [["镁粉"], ["盐"]]
+        type: "加热压力舱",
+        map: [["镁粉", "盐", null], [null, null, null], [null, null, null]],
+        ingredients: [["镁粉"], ["盐"]]
     },
     "原油桶": {
-        "type": "原油泵",
-        "map": [[null, null, null], [null, "铁桶", null], [null, null, null]],
-        "ingredients": [["铁桶"]]
+        type: "原油泵",
+        map: [[null, null, null], [null, "铁桶", null], [null, null, null]],
+        ingredients: [["铁桶"]]
     },
     "燃料桶": {
-        "type": "炼油机",
-        "map": [[null, null, null], [null, "原油桶", null], [null, null, null]],
-        "ingredients": [["原油桶"]]
+        type: "炼油机",
+        map: [[null, null, null], [null, "原油桶", null], [null, null, null]],
+        ingredients: [["原油桶"]]
     },
     "起泡锭(33%)": {
-        "type": "加热压力舱",
-        "map": [["金锭(24克拉)", "铀", null], [null, null, null], [null, null, null]],
-        "ingredients": [["金锭(24克拉)"], ["铀"]]
+        type: "加热压力舱",
+        map: [["金锭(24克拉)", "铀", null], [null, null, null], [null, null, null]],
+        ingredients: [["金锭(24克拉)"], ["铀"]]
     },
     "起泡锭(66%)": {
-        "type": "加热压力舱",
-        "map": [["起泡锭(33%)", "黑金刚石", null], [null, null, null], [null, null, null]],
-        "ingredients": [["起泡锭(33%)"], ["黑金刚石"]]
+        type: "加热压力舱",
+        map: [["起泡锭(33%)", "黑金刚石", null], [null, null, null], [null, null, null]],
+        ingredients: [["起泡锭(33%)"], ["黑金刚石"]]
     },
     "起泡锭": {
-        "type": "加热压力舱",
-        "map": [["起泡锭(66%)", "下界之星", null], [null, null, null], [null, null, null]],
-        "ingredients": [["起泡锭(66%)"], ["下界之星"]]
+        type: "加热压力舱",
+        map: [["起泡锭(66%)", "下界之星", null], [null, null, null], [null, null, null]],
+        ingredients: [["起泡锭(66%)"], ["下界之星"]]
     },
     "浓缩下界冰": {
-        "type": "加热压力舱",
-        "map": [["下界冰", "钚", null], [null, null, null], [null, null, null]],
-        "ingredients": [["下界冰"], ["钚"]]
+        type: "加热压力舱",
+        map: [["下界冰", "钚", null], [null, null, null], [null, null, null]],
+        ingredients: [["下界冰"], ["钚"]]
     },
     "镎": {
-        "type": "核反应堆",
-        "map": [["铀", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["铀"]]
+        type: "核反应堆",
+        map: [["铀", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["铀"]]
     },
     "钚": {
-        "type": "核反应堆",
-        "map": [["镎", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["镎"]]
+        type: "核反应堆",
+        map: [["镎", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["镎"]]
     },
-    "高纯度铀": {"type": "加热压力仓", "ingredients": [["钚"], ["铀"]]},
+    "高纯度铀": {type: "加热压力仓", ingredients: [["钚"], ["铀"]]},
     "幸运饼干": {
-        "type": "增强型工作台",
-        "map": [["曲奇", "纸", null], [null, null, null], [null, null, null]],
-        "ingredients": [["曲奇"], ["纸"]]
+        type: "增强型工作台",
+        map: [["曲奇", "纸", null], [null, null, null], [null, null, null]],
+        ingredients: [["曲奇"], ["纸"]]
     },
     "减肥曲奇": {
-        "type": "魔法工作台",
-        "map": [["曲奇", "鞘翅鳞片", null], [null, null, null], [null, null, null]],
-        "ingredients": [["曲奇"], ["鞘翅鳞片"]]
+        type: "魔法工作台",
+        map: [["曲奇", "鞘翅鳞片", null], [null, null, null], [null, null, null]],
+        ingredients: [["曲奇"], ["鞘翅鳞片"]]
     },
     "牛肉干": {
-        "type": "增强型工作台",
-        "map": [["盐", "牛排", null], [null, null, null], [null, null, null]],
-        "ingredients": [["盐"], ["牛排"]]
+        type: "增强型工作台",
+        map: [["盐", "牛排", null], [null, null, null], [null, null, null]],
+        ingredients: [["盐"], ["牛排"]]
     },
     "猪肉干": {
-        "type": "增强型工作台",
-        "map": [["盐", "熟猪排", null], [null, null, null], [null, null, null]],
-        "ingredients": [["盐"], ["熟猪排"]]
+        type: "增强型工作台",
+        map: [["盐", "熟猪排", null], [null, null, null], [null, null, null]],
+        ingredients: [["盐"], ["熟猪排"]]
     },
     "鸡肉干": {
-        "type": "增强型工作台",
-        "map": [["盐", "熟鸡肉", null], [null, null, null], [null, null, null]],
-        "ingredients": [["盐"], ["熟鸡肉"]]
+        type: "增强型工作台",
+        map: [["盐", "熟鸡肉", null], [null, null, null], [null, null, null]],
+        ingredients: [["盐"], ["熟鸡肉"]]
     },
     "羊肉干": {
-        "type": "增强型工作台",
-        "map": [["盐", "熟羊肉", null], [null, null, null], [null, null, null]],
-        "ingredients": [["盐"], ["熟羊肉"]]
+        type: "增强型工作台",
+        map: [["盐", "熟羊肉", null], [null, null, null], [null, null, null]],
+        ingredients: [["盐"], ["熟羊肉"]]
     },
     "兔肉干": {
-        "type": "增强型工作台",
-        "map": [["盐", "熟兔肉", null], [null, null, null], [null, null, null]],
-        "ingredients": [["盐"], ["熟兔肉"]]
+        type: "增强型工作台",
+        map: [["盐", "熟兔肉", null], [null, null, null], [null, null, null]],
+        ingredients: [["盐"], ["熟兔肉"]]
     },
     "鱼干": {
-        "type": "增强型工作台",
-        "map": [["盐", "熟鳕鱼", null], [null, null, null], [null, null, null]],
-        "ingredients": [["盐"], ["熟鳕鱼"]]
+        type: "增强型工作台",
+        map: [["盐", "熟鳕鱼", null], [null, null, null], [null, null, null]],
+        ingredients: [["盐"], ["熟鳕鱼"]]
     },
     "魔法糖": {
-        "type": "增强型工作台",
-        "map": [["糖", "红石粉", "荧石粉"], [null, null, null], [null, null, null]],
-        "ingredients": [["糖"], ["红石粉"], ["荧石粉"]]
+        type: "增强型工作台",
+        map: [["糖", "红石粉", "荧石粉"], [null, null, null], [null, null, null]],
+        ingredients: [["糖"], ["红石粉"], ["荧石粉"]]
     },
     "怪物肉干": {
-        "type": "增强型工作台",
-        "map": [["盐", "腐肉", null], [null, null, null], [null, null, null]],
-        "ingredients": [["盐"], ["腐肉"]]
+        type: "增强型工作台",
+        map: [["盐", "腐肉", null], [null, null, null], [null, null, null]],
+        ingredients: [["盐"], ["腐肉"]]
     },
     "苹果汁": {
-        "type": "榨汁机",
-        "map": [["苹果", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["苹果"]]
+        type: "榨汁机",
+        map: [["苹果", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["苹果"]]
     },
     "胡萝卜汁": {
-        "type": "榨汁机",
-        "map": [["胡萝卜", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["胡萝卜"]]
+        type: "榨汁机",
+        map: [["胡萝卜", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["胡萝卜"]]
     },
     "西瓜汁": {
-        "type": "榨汁机",
-        "map": [["西瓜片", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["西瓜片"]]
+        type: "榨汁机",
+        map: [["西瓜片", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["西瓜片"]]
     },
     "南瓜汁": {
-        "type": "榨汁机",
-        "map": [["南瓜", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["南瓜"]]
+        type: "榨汁机",
+        map: [["南瓜", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["南瓜"]]
     },
     "浆果汁": {
-        "type": "榨汁机",
-        "map": [["甜浆果", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["甜浆果"]]
+        type: "榨汁机",
+        map: [["甜浆果", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["甜浆果"]]
     },
     "金苹果汁": {
-        "type": "榨汁机",
-        "map": [["金苹果", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["金苹果"]]
+        type: "榨汁机",
+        map: [["金苹果", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["金苹果"]]
     },
-    "魔法因子-I": {"type": "磨石", "ingredients": [["地狱疣"]], "count": 2},
-    "魔法因子-II": {"type": "高级工作台", "ingredients": [["魔法因子-I", 4]]},
-    "魔法因子-III": {"type": "高级工作台", "ingredients": [["魔法因子-II", 4]]},
-    "末影因子-I": {"type": "高级工作台", "ingredients": [["末影之眼"]], "count": 2},
-    "末影因子-II": {"type": "高级工作台", "ingredients": [["末影因子-I", 4]]},
-    "末影因子-III": {"type": "高级工作台", "ingredients": [["末影因子-II", 4]]},
+    "魔法因子-I": {type: "磨石", ingredients: [["地狱疣"]], count: 2},
+    "魔法因子-II": {type: "高级工作台", ingredients: [["魔法因子-I", 4]]},
+    "魔法因子-III": {type: "高级工作台", ingredients: [["魔法因子-II", 4]]},
+    "末影因子-I": {type: "高级工作台", ingredients: [["末影之眼"]], count: 2},
+    "末影因子-II": {type: "高级工作台", ingredients: [["末影因子-I", 4]]},
+    "末影因子-III": {type: "高级工作台", ingredients: [["末影因子-II", 4]]},
     "魔法书皮": {
-        "type": "增强型工作台",
-        "map": [[null, "魔法结晶-II", null], ["魔法结晶-II", "书", "魔法结晶-II"], [null, "魔法结晶-II", null]],
-        "ingredients": [["魔法结晶-II", 4], ["书"]]
+        type: "增强型工作台",
+        map: [[null, "魔法结晶-II", null], ["魔法结晶-II", "书", "魔法结晶-II"], [null, "魔法结晶-II", null]],
+        ingredients: [["魔法结晶-II", 4], ["书"]]
     },
     "岩浆水晶": {
-        "type": "增强型工作台",
-        "map": [["魔法结晶-I", "烈焰粉", "魔法结晶-I"], ["烈焰粉", "古代符文[火]", "烈焰粉"], ["魔法结晶-I", "烈焰粉", "魔法结晶-I"]],
-        "ingredients": [["魔法结晶-I", 4], ["烈焰粉", 4], ["古代符文[火]"]]
+        type: "增强型工作台",
+        map: [["魔法结晶-I", "烈焰粉", "魔法结晶-I"], ["烈焰粉", "古代符文[火]", "烈焰粉"], ["魔法结晶-I", "烈焰粉", "魔法结晶-I"]],
+        ingredients: [["魔法结晶-I", 4], ["烈焰粉", 4], ["古代符文[火]"]]
     },
     "普通护身符": {
-        "type": "魔法工作台",
-        "map": [["魔法结晶-II", "金锭(8克拉)", "魔法结晶-II"], [null, "绿宝石", null], ["魔法结晶-II", "金锭(8克拉)", "魔法结晶-II"]],
-        "ingredients": [["魔法结晶-II", 4], ["金锭(8克拉)", 2], ["绿宝石"]]
+        type: "魔法工作台",
+        map: [["魔法结晶-II", "金锭(8克拉)", "魔法结晶-II"], [null, "绿宝石", null], ["魔法结晶-II", "金锭(8克拉)", "魔法结晶-II"]],
+        ingredients: [["魔法结晶-II", 4], ["金锭(8克拉)", 2], ["绿宝石"]]
     },
     "坏死颅骨": {
-        "type": "魔法工作台",
-        "map": [["魔法结晶-III", null, "魔法结晶-III"], [null, "凋灵骷髅头颅", null], ["魔法结晶-III", null, "魔法结晶-III"]],
-        "ingredients": [["魔法结晶-III", 4], ["凋灵骷髅头颅"]]
+        type: "魔法工作台",
+        map: [["魔法结晶-III", null, "魔法结晶-III"], [null, "凋灵骷髅头颅", null], ["魔法结晶-III", null, "魔法结晶-III"]],
+        ingredients: [["魔法结晶-III", 4], ["凋灵骷髅头颅"]]
     },
     "来世精华": {
-        "type": "古代祭坛",
-        "map": [["末影结晶-III", "古代符文[气]", "末影结晶-III"], ["古代符文[地]", "坏死颅骨", "古代符文[火]"], ["末影结晶-III", "古代符文[水]", "末影结晶-III"]],
-        "ingredients": [["末影结晶-III", 4], ["古代符文[气]"], ["古代符文[地]"], ["坏死颅骨"], ["古代符文[火]"], ["古代符文[水]"]]
+        type: "古代祭坛",
+        map: [["末影结晶-III", "古代符文[气]", "末影结晶-III"], ["古代符文[地]", "坏死颅骨", "古代符文[火]"], ["末影结晶-III", "古代符文[水]", "末影结晶-III"]],
+        ingredients: [["末影结晶-III", 4], ["古代符文[气]"], ["古代符文[地]"], ["坏死颅骨"], ["古代符文[火]"], ["古代符文[水]"]]
     },
     "古代基座": {
-        "type": "魔法工作台",
-        "map": [["黑曜石", "金锭(8克拉)", "黑曜石"], [null, "石头", null], ["黑曜石", "金锭(8克拉)", "黑曜石"]],
-        "ingredients": [["黑曜石", 4], ["金锭(8克拉)", 2], ["石头"]],
-        "count": 4
+        type: "魔法工作台",
+        map: [["黑曜石", "金锭(8克拉)", "黑曜石"], [null, "石头", null], ["黑曜石", "金锭(8克拉)", "黑曜石"]],
+        ingredients: [["黑曜石", 4], ["金锭(8克拉)", 2], ["石头"]],
+        count: 4
     },
     "空白符文": {
-        "type": "古代祭坛",
-        "map": [["石头", "魔法结晶-I", "石头"], ["魔法结晶-I", "黑曜石", "魔法结晶-I"], ["石头", "魔法结晶-I", "石头"]],
-        "ingredients": [["石头", 4], ["魔法结晶-I", 4], ["黑曜石"]]
+        type: "古代祭坛",
+        map: [["石头", "魔法结晶-I", "石头"], ["魔法结晶-I", "黑曜石", "魔法结晶-I"], ["石头", "魔法结晶-I", "石头"]],
+        ingredients: [["石头", 4], ["魔法结晶-I", 4], ["黑曜石"]]
     },
     "古代符文[气]": {
-        "type": "古代祭坛",
-        "map": [["羽毛", "魔法结晶-I", "羽毛"], ["恶魂之泪", "空白符文", "恶魂之泪"], ["羽毛", "魔法结晶-I", "羽毛"]],
-        "ingredients": [["羽毛", 4], ["魔法结晶-I", 2], ["恶魂之泪", 2], ["空白符文"]],
-        "count": 4
+        type: "古代祭坛",
+        map: [["羽毛", "魔法结晶-I", "羽毛"], ["恶魂之泪", "空白符文", "恶魂之泪"], ["羽毛", "魔法结晶-I", "羽毛"]],
+        ingredients: [["羽毛", 4], ["魔法结晶-I", 2], ["恶魂之泪", 2], ["空白符文"]],
+        count: 4
     },
     "古代符文[地]": {
-        "type": "古代祭坛",
-        "map": [["泥土", "魔法结晶-I", "石头"], ["黑曜石", "空白符文", "黑曜石"], ["石头", "魔法结晶-I", "泥土"]],
-        "ingredients": [["泥土", 2], ["魔法结晶-I", 2], ["石头", 2], ["黑曜石", 2], ["空白符文"]],
-        "count": 4
+        type: "古代祭坛",
+        map: [["泥土", "魔法结晶-I", "石头"], ["黑曜石", "空白符文", "黑曜石"], ["石头", "魔法结晶-I", "泥土"]],
+        ingredients: [["泥土", 2], ["魔法结晶-I", 2], ["石头", 2], ["黑曜石", 2], ["空白符文"]],
+        count: 4
     },
     "古代符文[火]": {
-        "type": "古代祭坛",
-        "map": [["火焰弹", "魔法结晶-II", "火焰弹"], ["烈焰粉", "古代符文[地]", "打火石"], ["火焰弹", "魔法结晶-II", "火焰弹"]],
-        "ingredients": [["火焰弹", 4], ["魔法结晶-II", 2], ["烈焰粉"], ["古代符文[地]"], ["打火石"]],
-        "count": 4
+        type: "古代祭坛",
+        map: [["火焰弹", "魔法结晶-II", "火焰弹"], ["烈焰粉", "古代符文[地]", "打火石"], ["火焰弹", "魔法结晶-II", "火焰弹"]],
+        ingredients: [["火焰弹", 4], ["魔法结晶-II", 2], ["烈焰粉"], ["古代符文[地]"], ["打火石"]],
+        count: 4
     },
     "古代符文[水]": {
-        "type": "古代祭坛",
-        "map": [["生鲑鱼", "魔法结晶-II", "水桶"], ["沙子", "空白符文", "沙子"], ["水桶", "魔法结晶-II", "生鳕鱼"]],
-        "ingredients": [["生鲑鱼"], ["魔法结晶-II", 2], ["水桶", 2], ["沙子", 2], ["空白符文"], ["生鳕鱼"]],
-        "count": 4
+        type: "古代祭坛",
+        map: [["生鲑鱼", "魔法结晶-II", "水桶"], ["沙子", "空白符文", "沙子"], ["水桶", "魔法结晶-II", "生鳕鱼"]],
+        ingredients: [["生鲑鱼"], ["魔法结晶-II", 2], ["水桶", 2], ["沙子", 2], ["空白符文"], ["生鳕鱼"]],
+        count: 4
     },
     "古代符文[末影]": {
-        "type": "古代祭坛",
-        "map": [["末影珍珠", "末影结晶-III", "末影珍珠"], ["末影之眼", "空白符文", "末影之眼"], ["末影珍珠", "末影结晶-III", "末影珍珠"]],
-        "ingredients": [["末影珍珠", 4], ["末影结晶-III", 2], ["末影之眼", 2], ["空白符文"]],
-        "count": 6
+        type: "古代祭坛",
+        map: [["末影珍珠", "末影结晶-III", "末影珍珠"], ["末影之眼", "空白符文", "末影之眼"], ["末影珍珠", "末影结晶-III", "末影珍珠"]],
+        ingredients: [["末影珍珠", 4], ["末影结晶-III", 2], ["末影之眼", 2], ["空白符文"]],
+        count: 6
     },
     "古代符文[雷]": {
-        "type": "古代祭坛",
-        "map": [["铁锭", "魔法结晶-III", "铁锭"], ["古代符文[气]", "幻翼膜", "古代符文[水]"], ["铁锭", "魔法结晶-III", "铁锭"]],
-        "ingredients": [["铁锭", 4], ["魔法结晶-III", 2], ["古代符文[气]"], ["幻翼膜"], ["古代符文[水]"]],
-        "count": 4
+        type: "古代祭坛",
+        map: [["铁锭", "魔法结晶-III", "铁锭"], ["古代符文[气]", "幻翼膜", "古代符文[水]"], ["铁锭", "魔法结晶-III", "铁锭"]],
+        ingredients: [["铁锭", 4], ["魔法结晶-III", 2], ["古代符文[气]"], ["幻翼膜"], ["古代符文[水]"]],
+        count: 4
     },
     "古代符文[虹]": {
-        "type": "古代祭坛",
-        "map": [["红色染料", "魔法结晶-III", "青色染料"], ["白色羊毛", "古代符文[末影]", "白色羊毛"], ["黄色染料", "末影结晶-III", "品红色染料"]],
-        "ingredients": [["红色染料"], ["魔法结晶-III"], ["青色染料"], ["白色羊毛", 2], ["古代符文[末影]"], ["黄色染料"], ["末影结晶-III"], ["品红色染料"]]
+        type: "古代祭坛",
+        map: [["红色染料", "魔法结晶-III", "青色染料"], ["白色羊毛", "古代符文[末影]", "白色羊毛"], ["黄色染料", "末影结晶-III", "品红色染料"]],
+        ingredients: [["红色染料"], ["魔法结晶-III"], ["青色染料"], ["白色羊毛", 2], ["古代符文[末影]"], ["黄色染料"], ["末影结晶-III"], ["品红色染料"]]
     },
     "古代符文[灵魂绑定]": {
-        "type": "古代祭坛",
-        "map": [["魔法结晶-III", "来世精华", "魔法结晶-III"], ["末影结晶-III", "古代符文[末影]", "末影结晶-III"], ["魔法结晶-III", "来世精华", "魔法结晶-III"]],
-        "ingredients": [["魔法结晶-III", 4], ["来世精华", 2], ["末影结晶-III", 2], ["古代符文[末影]"]]
+        type: "古代祭坛",
+        map: [["魔法结晶-III", "来世精华", "魔法结晶-III"], ["末影结晶-III", "古代符文[末影]", "末影结晶-III"], ["魔法结晶-III", "来世精华", "魔法结晶-III"]],
+        ingredients: [["魔法结晶-III", 4], ["来世精华", 2], ["末影结晶-III", 2], ["古代符文[末影]"]]
     },
     "末影头盔": {
-        "type": "盔甲锻造台",
-        "map": [["末影结晶-I", "末影之眼", "末影结晶-I"], ["黑曜石", null, "黑曜石"], [null, null, null]],
-        "ingredients": [["末影结晶-I", 2], ["末影之眼"], ["黑曜石", 2]]
+        type: "盔甲锻造台",
+        map: [["末影结晶-I", "末影之眼", "末影结晶-I"], ["黑曜石", null, "黑曜石"], [null, null, null]],
+        ingredients: [["末影结晶-I", 2], ["末影之眼"], ["黑曜石", 2]]
     },
     "末影胸甲": {
-        "type": "盔甲锻造台",
-        "map": [["末影结晶-I", null, "末影结晶-I"], ["黑曜石", "末影之眼", "黑曜石"], ["黑曜石", "黑曜石", "黑曜石"]],
-        "ingredients": [["末影结晶-I", 2], ["黑曜石", 5], ["末影之眼"]]
+        type: "盔甲锻造台",
+        map: [["末影结晶-I", null, "末影结晶-I"], ["黑曜石", "末影之眼", "黑曜石"], ["黑曜石", "黑曜石", "黑曜石"]],
+        ingredients: [["末影结晶-I", 2], ["黑曜石", 5], ["末影之眼"]]
     },
     "末影护腿": {
-        "type": "盔甲锻造台",
-        "map": [["末影结晶-I", "末影之眼", "末影结晶-I"], ["黑曜石", null, "黑曜石"], ["黑曜石", null, "黑曜石"]],
-        "ingredients": [["末影结晶-I", 2], ["末影之眼"], ["黑曜石", 4]]
+        type: "盔甲锻造台",
+        map: [["末影结晶-I", "末影之眼", "末影结晶-I"], ["黑曜石", null, "黑曜石"], ["黑曜石", null, "黑曜石"]],
+        ingredients: [["末影结晶-I", 2], ["末影之眼"], ["黑曜石", 4]]
     },
     "末影靴子": {
-        "type": "盔甲锻造台",
-        "map": [[null, null, null], ["末影结晶-I", null, "末影结晶-I"], ["黑曜石", null, "黑曜石"]],
-        "ingredients": [["末影结晶-I", 2], ["黑曜石", 2]]
+        type: "盔甲锻造台",
+        map: [[null, null, null], ["末影结晶-I", null, "末影结晶-I"], ["黑曜石", null, "黑曜石"]],
+        ingredients: [["末影结晶-I", 2], ["黑曜石", 2]]
     },
     "史莱姆头盔": {
-        "type": "盔甲锻造台",
-        "map": [["黏液球", "钢板", "黏液球"], ["黏液球", null, "黏液球"], [null, null, null]],
-        "ingredients": [["黏液球", 4], ["钢板"]]
+        type: "盔甲锻造台",
+        map: [["黏液球", "钢板", "黏液球"], ["黏液球", null, "黏液球"], [null, null, null]],
+        ingredients: [["黏液球", 4], ["钢板"]]
     },
     "史莱姆胸甲": {
-        "type": "盔甲锻造台",
-        "map": [["黏液球", null, "黏液球"], ["黏液球", "钢板", "黏液球"], ["黏液球", "黏液球", "黏液球"]],
-        "ingredients": [["黏液球", 7], ["钢板"]]
+        type: "盔甲锻造台",
+        map: [["黏液球", null, "黏液球"], ["黏液球", "钢板", "黏液球"], ["黏液球", "黏液球", "黏液球"]],
+        ingredients: [["黏液球", 7], ["钢板"]]
     },
     "史莱姆护腿": {
-        "type": "盔甲锻造台",
-        "map": [["黏液球", "钢板", "黏液球"], ["黏液球", null, "黏液球"], ["黏液球", null, "黏液球"]],
-        "ingredients": [["黏液球", 6], ["钢板"]]
+        type: "盔甲锻造台",
+        map: [["黏液球", "钢板", "黏液球"], ["黏液球", null, "黏液球"], ["黏液球", null, "黏液球"]],
+        ingredients: [["黏液球", 6], ["钢板"]]
     },
     "史莱姆靴子": {
-        "type": "盔甲锻造台",
-        "map": [[null, null, null], ["黏液球", null, "黏液球"], ["黏液球", "钢板", "黏液球"]],
-        "ingredients": [["黏液球", 4], ["钢板"]]
+        type: "盔甲锻造台",
+        map: [[null, null, null], ["黏液球", null, "黏液球"], ["黏液球", "钢板", "黏液球"]],
+        ingredients: [["黏液球", 4], ["钢板"]]
     },
     "萤石头盔": {
-        "type": "盔甲锻造台",
-        "map": [["荧石", "荧石", "荧石"], ["荧石", null, "荧石"], [null, null, null]],
-        "ingredients": [["荧石", 5]]
+        type: "盔甲锻造台",
+        map: [["荧石", "荧石", "荧石"], ["荧石", null, "荧石"], [null, null, null]],
+        ingredients: [["荧石", 5]]
     },
     "萤石胸甲": {
-        "type": "盔甲锻造台",
-        "map": [["荧石", null, "荧石"], ["荧石", "荧石", "荧石"], ["荧石", "荧石", "荧石"]],
-        "ingredients": [["荧石", 8]]
+        type: "盔甲锻造台",
+        map: [["荧石", null, "荧石"], ["荧石", "荧石", "荧石"], ["荧石", "荧石", "荧石"]],
+        ingredients: [["荧石", 8]]
     },
     "萤石护腿": {
-        "type": "盔甲锻造台",
-        "map": [["荧石", "荧石", "荧石"], ["荧石", null, "荧石"], ["荧石", null, "荧石"]],
-        "ingredients": [["荧石", 7]]
+        type: "盔甲锻造台",
+        map: [["荧石", "荧石", "荧石"], ["荧石", null, "荧石"], ["荧石", null, "荧石"]],
+        ingredients: [["荧石", 7]]
     },
     "萤石靴子": {
-        "type": "盔甲锻造台",
-        "map": [[null, null, null], ["荧石", null, "荧石"], ["荧石", null, "荧石"]],
-        "ingredients": [["荧石", 4]]
+        type: "盔甲锻造台",
+        map: [[null, null, null], ["荧石", null, "荧石"], ["荧石", null, "荧石"]],
+        ingredients: [["荧石", 4]]
     },
     "农夫的靴子": {
-        "type": "盔甲锻造台",
-        "map": [[null, null, null], ["干草捆", null, "干草捆"], ["干草捆", null, "干草捆"]],
-        "ingredients": [["干草捆", 4]]
+        type: "盔甲锻造台",
+        map: [[null, null, null], ["干草捆", null, "干草捆"], ["干草捆", null, "干草捆"]],
+        ingredients: [["干草捆", 4]]
     },
     "践踏者之靴": {
-        "type": "盔甲锻造台",
-        "map": [[null, null, null], ["黄色羊毛", null, "黄色羊毛"], ["活塞", null, "活塞"]],
-        "ingredients": [["黄色羊毛", 2], ["活塞", 2]]
+        type: "盔甲锻造台",
+        map: [[null, null, null], ["黄色羊毛", null, "黄色羊毛"], ["活塞", null, "活塞"]],
+        ingredients: [["黄色羊毛", 2], ["活塞", 2]]
     },
     "灵魂绑定头盔": {
-        "type": "魔法工作台",
-        "map": [[null, "来世精华", null], [null, "钻石头盔", null], [null, "来世精华", null]],
-        "ingredients": [["来世精华", 2], ["钻石头盔"]]
+        type: "魔法工作台",
+        map: [[null, "来世精华", null], [null, "钻石头盔", null], [null, "来世精华", null]],
+        ingredients: [["来世精华", 2], ["钻石头盔"]]
     },
     "灵魂绑定胸甲": {
-        "type": "魔法工作台",
-        "map": [[null, "来世精华", null], [null, "钻石胸甲", null], [null, "来世精华", null]],
-        "ingredients": [["来世精华", 2], ["钻石胸甲"]]
+        type: "魔法工作台",
+        map: [[null, "来世精华", null], [null, "钻石胸甲", null], [null, "来世精华", null]],
+        ingredients: [["来世精华", 2], ["钻石胸甲"]]
     },
     "灵魂绑定护腿": {
-        "type": "魔法工作台",
-        "map": [[null, "来世精华", null], [null, "钻石护腿", null], [null, "来世精华", null]],
-        "ingredients": [["来世精华", 2], ["钻石护腿"]]
+        type: "魔法工作台",
+        map: [[null, "来世精华", null], [null, "钻石护腿", null], [null, "来世精华", null]],
+        ingredients: [["来世精华", 2], ["钻石护腿"]]
     },
     "灵魂绑定靴子": {
-        "type": "魔法工作台",
-        "map": [[null, "来世精华", null], [null, "钻石靴子", null], [null, "来世精华", null]],
-        "ingredients": [["来世精华", 2], ["钻石靴子"]]
+        type: "魔法工作台",
+        map: [[null, "来世精华", null], [null, "钻石靴子", null], [null, "来世精华", null]],
+        ingredients: [["来世精华", 2], ["钻石靴子"]]
     },
     "磁铁": {
-        "type": "冶炼炉",
-        "map": [["镍锭", "铝粉", "铁粉"], ["钴锭", null, null], [null, null, null]],
-        "ingredients": [["镍锭"], ["铝粉"], ["铁粉"], ["钴锭"]]
+        type: "冶炼炉",
+        map: [["镍锭", "铝粉", "铁粉"], ["钴锭", null, null], [null, null, null]],
+        ingredients: [["镍锭"], ["铝粉"], ["铁粉"], ["钴锭"]]
     },
-    "高级电路板": {"type": "高级工作台", "ingredients": [["红石块", 2], ["青金石块", 6], ["基础电路板"]]},
+    "高级电路板": {type: "高级工作台", ingredients: [["红石块", 2], ["青金石块", 6], ["基础电路板"]]},
     "电池": {
-        "type": "增强型工作台",
-        "map": [[null, "红石粉", null], ["锌锭", "硫酸盐", "铜锭"], ["锌锭", "硫酸盐", "铜锭"]],
-        "ingredients": [["红石粉"], ["锌锭", 2], ["硫酸盐", 2], ["铜锭", 2]]
+        type: "增强型工作台",
+        map: [[null, "红石粉", null], ["锌锭", "硫酸盐", "铜锭"], ["锌锭", "硫酸盐", "铜锭"]],
+        ingredients: [["红石粉"], ["锌锭", 2], ["硫酸盐", 2], ["铜锭", 2]]
     },
     "钢推进器": {
-        "type": "增强型工作台",
-        "map": [[null, "红石粉", null], ["铝青铜锭", "铝青铜锭", "铝青铜锭"], ["钢板", "火焰弹", "钢板"]],
-        "ingredients": [["红石粉"], ["铝青铜锭", 3], ["钢板", 2], ["火焰弹"]]
+        type: "增强型工作台",
+        map: [[null, "红石粉", null], ["铝青铜锭", "铝青铜锭", "铝青铜锭"], ["钢板", "火焰弹", "钢板"]],
+        ingredients: [["红石粉"], ["铝青铜锭", 3], ["钢板", 2], ["火焰弹"]]
     },
     "能量水晶": {
-        "type": "增强型工作台",
-        "map": [["红石粉", "人造蓝宝石", "红石粉"], ["人造蓝宝石", "人造钻石", "人造蓝宝石"], ["红石粉", "人造蓝宝石", "红石粉"]],
-        "ingredients": [["红石粉", 4], ["人造蓝宝石", 4], ["人造钻石"]]
+        type: "增强型工作台",
+        map: [["红石粉", "人造蓝宝石", "红石粉"], ["人造蓝宝石", "人造钻石", "人造蓝宝石"], ["红石粉", "人造蓝宝石", "红石粉"]],
+        ingredients: [["红石粉", 4], ["人造蓝宝石", 4], ["人造钻石"]]
     },
-    "太阳能板": {"type": "高级工作台", "ingredients": [["玻璃", 3], ["硅", 3], ["硅铁", 3]]},
+    "太阳能板": {type: "高级工作台", ingredients: [["玻璃", 3], ["硅", 3], ["硅铁", 3]]},
     "电磁铁": {
-        "type": "增强型工作台",
-        "map": [["镍锭", "磁铁", "钴锭"], [null, "电池", null], [null, null, null]],
-        "ingredients": [["镍锭"], ["磁铁"], ["钴锭"], ["电池"]]
+        type: "增强型工作台",
+        map: [["镍锭", "磁铁", "钴锭"], [null, "电池", null], [null, null, null]],
+        ingredients: [["镍锭"], ["磁铁"], ["钴锭"], ["电池"]]
     },
     "电动马达": {
-        "type": "增强型工作台",
-        "map": [["铜线", "铜线", "铜线"], [null, "电磁铁", null], ["铜线", "铜线", "铜线"]],
-        "ingredients": [["铜线", 6], ["电磁铁"]]
+        type: "增强型工作台",
+        map: [["铜线", "铜线", "铜线"], [null, "电磁铁", null], ["铜线", "铜线", "铜线"]],
+        ingredients: [["铜线", 6], ["电磁铁"]]
     },
     "加热线圈": {
-        "type": "增强型工作台",
-        "map": [["铜线", "铜线", "铜线"], ["铜线", "电动马达", "铜线"], ["铜线", "铜线", "铜线"]],
-        "ingredients": [["铜线", 8], ["电动马达"]]
+        type: "增强型工作台",
+        map: [["铜线", "铜线", "铜线"], ["铜线", "电动马达", "铜线"], ["铜线", "铜线", "铜线"]],
+        ingredients: [["铜线", 8], ["电动马达"]]
     },
     "铜线": {
-        "type": "增强型工作台",
-        "map": [[null, null, null], ["铜锭", "铜锭", "铜锭"], [null, null, null]],
-        "ingredients": [["铜锭", 3]],
-        "count": 8
+        type: "增强型工作台",
+        map: [[null, null, null], ["铜锭", "铜锭", "铜锭"], [null, null, null]],
+        ingredients: [["铜锭", 3]],
+        count: 8
     },
     "钢化玻璃": {
-        "type": "增强型工作台",
-        "map": [["玻璃", "玻璃", "玻璃"], ["玻璃", "钢筋板", "玻璃"], ["玻璃", "玻璃", "玻璃"]],
-        "ingredients": [["玻璃", 8], ["钢筋板"]],
-        "count": 16
+        type: "增强型工作台",
+        map: [["玻璃", "玻璃", "玻璃"], ["玻璃", "钢筋板", "玻璃"], ["玻璃", "玻璃", "玻璃"]],
+        ingredients: [["玻璃", 8], ["钢筋板"]],
+        count: 16
     },
-    "太阳能阵列": {"type": "高级工作台", "ingredients": [["钢化玻璃", 6], ["太阳能板", 3]]},
+    "太阳能阵列": {type: "高级工作台", ingredients: [["钢化玻璃", 6], ["太阳能板", 3]]},
     "冷却装置": {
-        "type": "增强型工作台",
-        "map": [["冰", "冰", "冰"], ["铝锭", "电动马达", "铝锭"], ["冰", "冰", "冰"]],
-        "ingredients": [["冰", 6], ["铝锭", 2], ["电动马达"]]
+        type: "增强型工作台",
+        map: [["冰", "冰", "冰"], ["铝锭", "电动马达", "铝锭"], ["冰", "冰", "冰"]],
+        ingredients: [["冰", 6], ["铝锭", 2], ["电动马达"]]
     },
     "防凋灵黑曜石": {
-        "type": "增强型工作台",
-        "map": [["铅锭", "黑曜石", "铅锭"], ["黑曜石", "钢化玻璃", "黑曜石"], ["铅锭", "黑曜石", "铅锭"]],
-        "ingredients": [["铅锭", 4], ["黑曜石", 4], ["钢化玻璃"]],
-        "count": 4
+        type: "增强型工作台",
+        map: [["铅锭", "黑曜石", "铅锭"], ["黑曜石", "钢化玻璃", "黑曜石"], ["铅锭", "黑曜石", "铅锭"]],
+        ingredients: [["铅锭", 4], ["黑曜石", 4], ["钢化玻璃"]],
+        count: 4
     },
     "防凋灵玻璃": {
-        "type": "增强型工作台",
-        "map": [["铅锭", "防凋灵黑曜石", "铅锭"], ["防凋灵黑曜石", "钢化玻璃", "防凋灵黑曜石"], ["铅锭", "防凋灵黑曜石", "铅锭"]],
-        "ingredients": [["铅锭", 4], ["防凋灵黑曜石", 4], ["钢化玻璃"]],
-        "count": 4
+        type: "增强型工作台",
+        map: [["铅锭", "防凋灵黑曜石", "铅锭"], ["防凋灵黑曜石", "钢化玻璃", "防凋灵黑曜石"], ["铅锭", "防凋灵黑曜石", "铅锭"]],
+        ingredients: [["铅锭", 4], ["防凋灵黑曜石", 4], ["钢化玻璃"]],
+        count: 4
     },
     "反应堆冷却剂": {
-        "type": "冰箱",
-        "map": [["蓝冰", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["蓝冰"]]
+        type: "冰箱",
+        map: [["蓝冰", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["蓝冰"]]
     },
     "下界冰冷却剂": {
-        "type": "加热压力舱",
-        "map": [["浓缩下界冰", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["浓缩下界冰"]]
+        type: "加热压力舱",
+        map: [["浓缩下界冰", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["浓缩下界冰"]]
     },
     "小麦粉": {
-        "type": "磨石",
-        "map": [["小麦", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["小麦"]]
+        type: "磨石",
+        map: [["小麦", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["小麦"]]
     },
     "钢板": {
-        "type": "压缩机",
-        "map": [["钢锭", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["钢锭", 8]]
+        type: "压缩机",
+        map: [["钢锭", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["钢锭", 8]]
     },
     "锁链": {
-        "type": "增强型工作台",
-        "map": [[null, null, "钢锭"], [null, "钢锭", null], ["钢锭", null, null]],
-        "ingredients": [["钢锭", 3]],
-        "count": 8
+        type: "增强型工作台",
+        map: [[null, null, "钢锭"], [null, "钢锭", null], ["钢锭", null, null]],
+        ingredients: [["钢锭", 3]],
+        count: 8
     },
     "钩子": {
-        "type": "增强型工作台",
-        "map": [[null, "钢锭", null], ["钢锭", null, "钢锭"], [null, null, null]],
-        "ingredients": [["钢锭", 3]]
+        type: "增强型工作台",
+        map: [[null, "钢锭", null], ["钢锭", null, "钢锭"], [null, null, null]],
+        ingredients: [["钢锭", 3]]
     },
     "石块": {
-        "type": "洗矿机",
-        "map": [["筛矿", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["筛矿"]]
+        type: "洗矿机",
+        map: [["筛矿", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["筛矿"]]
     },
     "盐": {
-        "type": "洗矿机",
-        "map": [["沙子", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["沙子", 2]]
+        type: "洗矿机",
+        map: [["沙子", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["沙子", 2]]
     },
     "浓奶油": {
-        "type": "增强型工作台",
-        "map": [["奶桶", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["奶桶"]]
+        type: "增强型工作台",
+        map: [["奶桶", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["奶桶"]]
     },
     "黄油": {
-        "type": "增强型工作台",
-        "map": [["浓奶油", "盐", null], [null, null, null], [null, null, null]],
-        "ingredients": [["浓奶油"], ["盐"]]
+        type: "增强型工作台",
+        map: [["浓奶油", "盐", null], [null, null, null], [null, null, null]],
+        ingredients: [["浓奶油"], ["盐"]]
     },
     "奶酪": {
-        "type": "增强型工作台",
-        "map": [["奶桶", "盐", null], [null, null, null], [null, null, null]],
-        "ingredients": [["奶桶"], ["盐"]]
+        type: "增强型工作台",
+        map: [["奶桶", "盐", null], [null, null, null], [null, null, null]],
+        ingredients: [["奶桶"], ["盐"]]
     },
     "已粉碎的矿石": {
-        "type": "矿石粉碎机",
-        "map": [["筛矿", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["筛矿"]]
+        type: "矿石粉碎机",
+        map: [["筛矿", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["筛矿"]]
     },
     "粉末状的矿石": {
-        "type": "矿石粉碎机",
-        "map": [["已粉碎的矿石", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["已粉碎的矿石"]]
+        type: "矿石粉碎机",
+        map: [["已粉碎的矿石", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["已粉碎的矿石"]]
     },
     "纯矿簇": {
-        "type": "洗矿机",
-        "map": [["粉末状的矿石", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["粉末状的矿石"]]
+        type: "洗矿机",
+        map: [["粉末状的矿石", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["粉末状的矿石"]]
     },
     "一小块铀": {
-        "type": "增强型工作台",
-        "map": [["一小撮铀", "一小撮铀", "一小撮铀"], ["一小撮铀", "一小撮铀", "一小撮铀"], ["一小撮铀", "一小撮铀", "一小撮铀"]],
-        "ingredients": [["一小撮铀", 9]]
+        type: "增强型工作台",
+        map: [["一小撮铀", "一小撮铀", "一小撮铀"], ["一小撮铀", "一小撮铀", "一小撮铀"], ["一小撮铀", "一小撮铀", "一小撮铀"]],
+        ingredients: [["一小撮铀", 9]]
     },
-    "一小堆铀": {"type": "高级工作台", "ingredients": [["一小块铀", 9]]},
+    "一小堆铀": {type: "高级工作台", ingredients: [["一小块铀", 9]]},
     "布": {
-        "type": "增强型工作台",
-        "map": [["白色羊毛", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["白色羊毛"]],
-        "count": 8
+        type: "增强型工作台",
+        map: [["白色羊毛", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["白色羊毛"]],
+        count: 8
     },
     "锡罐": {
-        "type": "增强型工作台",
-        "map": [["锡锭", "锡锭", "锡锭"], ["锡锭", null, "锡锭"], ["锡锭", "锡锭", "锡锭"]],
-        "ingredients": [["锡锭", 8]],
-        "count": 8
+        type: "增强型工作台",
+        map: [["锡锭", "锡锭", "锡锭"], ["锡锭", null, "锡锭"], ["锡锭", "锡锭", "锡锭"]],
+        ingredients: [["锡锭", 8]],
+        count: 8
     },
     "金块(24克拉)": {
-        "type": "增强型工作台",
-        "map": [["金锭(24克拉)", "金锭(24克拉)", "金锭(24克拉)"], ["金锭(24克拉)", "金锭(24克拉)", "金锭(24克拉)"], ["金锭(24克拉)", "金锭(24克拉)", "金锭(24克拉)"]],
-        "ingredients": [["金锭(24克拉)", 9]]
+        type: "增强型工作台",
+        map: [["金锭(24克拉)", "金锭(24克拉)", "金锭(24克拉)"], ["金锭(24克拉)", "金锭(24克拉)", "金锭(24克拉)"], ["金锭(24克拉)", "金锭(24克拉)", "金锭(24克拉)"]],
+        ingredients: [["金锭(24克拉)", 9]]
     },
     "钢筋板": {
-        "type": "压缩机",
-        "map": [["强化合金锭", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["强化合金锭", 8]]
+        type: "压缩机",
+        map: [["强化合金锭", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["强化合金锭", 8]]
     },
     "强力胶布": {
-        "type": "增强型工作台",
-        "map": [["铝粉", "铝粉", "铝粉"], ["黏液球", "白色羊毛", "黏液球"], ["纸", "纸", "纸"]],
-        "ingredients": [["铝粉", 3], ["黏液球", 2], ["白色羊毛"], ["纸", 3]],
-        "count": 2
+        type: "增强型工作台",
+        map: [["铝粉", "铝粉", "铝粉"], ["黏液球", "白色羊毛", "黏液球"], ["纸", "纸", "纸"]],
+        ingredients: [["铝粉", 3], ["黏液球", 2], ["白色羊毛"], ["纸", 3]],
+        count: 2
     },
     "塑料纸": {
-        "type": "加热压力舱",
-        "map": [[null, null, null], [null, "原油桶", null], [null, null, null]],
-        "ingredients": [["原油桶"]],
-        "count": 8
+        type: "加热压力舱",
+        map: [[null, null, null], [null, "原油桶", null], [null, null, null]],
+        ingredients: [["原油桶"]],
+        count: 8
     },
     "机器人内存核心": {
-        "type": "增强型工作台",
-        "map": [["黄铜锭", "橙色染色玻璃", "黄铜锭"], ["能量水晶", "锡粉", "能量水晶"], ["黄铜锭", "橙色染色玻璃", "黄铜锭"]],
-        "ingredients": [["黄铜锭", 4], ["橙色染色玻璃", 2], ["能量水晶", 2], ["锡粉"]]
+        type: "增强型工作台",
+        map: [["黄铜锭", "橙色染色玻璃", "黄铜锭"], ["能量水晶", "锡粉", "能量水晶"], ["黄铜锭", "橙色染色玻璃", "黄铜锭"]],
+        ingredients: [["黄铜锭", 4], ["橙色染色玻璃", 2], ["能量水晶", 2], ["锡粉"]]
     },
     "有机肥料": {
-        "type": "食品堆肥器",
-        "map": [["有机食物(小麦)", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["有机食物(小麦)"]]
+        type: "食品堆肥器",
+        map: [["有机食物(小麦)", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["有机食物(小麦)"]]
     },
     "大马士革钢头盔": {
-        "type": "盔甲锻造台",
-        "map": [["大马士革钢锭", "大马士革钢锭", "大马士革钢锭"], ["大马士革钢锭", null, "大马士革钢锭"], [null, null, null]],
-        "ingredients": [["大马士革钢锭", 5]]
+        type: "盔甲锻造台",
+        map: [["大马士革钢锭", "大马士革钢锭", "大马士革钢锭"], ["大马士革钢锭", null, "大马士革钢锭"], [null, null, null]],
+        ingredients: [["大马士革钢锭", 5]]
     },
     "大马士革钢胸甲": {
-        "type": "盔甲锻造台",
-        "map": [["大马士革钢锭", null, "大马士革钢锭"], ["大马士革钢锭", "大马士革钢锭", "大马士革钢锭"], ["大马士革钢锭", "大马士革钢锭", "大马士革钢锭"]],
-        "ingredients": [["大马士革钢锭", 8]]
+        type: "盔甲锻造台",
+        map: [["大马士革钢锭", null, "大马士革钢锭"], ["大马士革钢锭", "大马士革钢锭", "大马士革钢锭"], ["大马士革钢锭", "大马士革钢锭", "大马士革钢锭"]],
+        ingredients: [["大马士革钢锭", 8]]
     },
     "大马士革钢护腿": {
-        "type": "盔甲锻造台",
-        "map": [["大马士革钢锭", "大马士革钢锭", "大马士革钢锭"], ["大马士革钢锭", null, "大马士革钢锭"], ["大马士革钢锭", null, "大马士革钢锭"]],
-        "ingredients": [["大马士革钢锭", 7]]
+        type: "盔甲锻造台",
+        map: [["大马士革钢锭", "大马士革钢锭", "大马士革钢锭"], ["大马士革钢锭", null, "大马士革钢锭"], ["大马士革钢锭", null, "大马士革钢锭"]],
+        ingredients: [["大马士革钢锭", 7]]
     },
     "大马士革钢靴子": {
-        "type": "盔甲锻造台",
-        "map": [[null, null, null], ["大马士革钢锭", null, "大马士革钢锭"], ["大马士革钢锭", null, "大马士革钢锭"]],
-        "ingredients": [["大马士革钢锭", 4]]
+        type: "盔甲锻造台",
+        map: [[null, null, null], ["大马士革钢锭", null, "大马士革钢锭"], ["大马士革钢锭", null, "大马士革钢锭"]],
+        ingredients: [["大马士革钢锭", 4]]
     },
     "强化合金头盔": {
-        "type": "盔甲锻造台",
-        "map": [["强化合金锭", "强化合金锭", "强化合金锭"], ["强化合金锭", null, "强化合金锭"], [null, null, null]],
-        "ingredients": [["强化合金锭", 5]]
+        type: "盔甲锻造台",
+        map: [["强化合金锭", "强化合金锭", "强化合金锭"], ["强化合金锭", null, "强化合金锭"], [null, null, null]],
+        ingredients: [["强化合金锭", 5]]
     },
     "强化合金胸甲": {
-        "type": "盔甲锻造台",
-        "map": [["强化合金锭", null, "强化合金锭"], ["强化合金锭", "强化合金锭", "强化合金锭"], ["强化合金锭", "强化合金锭", "强化合金锭"]],
-        "ingredients": [["强化合金锭", 8]]
+        type: "盔甲锻造台",
+        map: [["强化合金锭", null, "强化合金锭"], ["强化合金锭", "强化合金锭", "强化合金锭"], ["强化合金锭", "强化合金锭", "强化合金锭"]],
+        ingredients: [["强化合金锭", 8]]
     },
     "强化合金护腿": {
-        "type": "盔甲锻造台",
-        "map": [["强化合金锭", "强化合金锭", "强化合金锭"], ["强化合金锭", null, "强化合金锭"], ["强化合金锭", null, "强化合金锭"]],
-        "ingredients": [["强化合金锭", 7]]
+        type: "盔甲锻造台",
+        map: [["强化合金锭", "强化合金锭", "强化合金锭"], ["强化合金锭", null, "强化合金锭"], ["强化合金锭", null, "强化合金锭"]],
+        ingredients: [["强化合金锭", 7]]
     },
     "强化合金靴子": {
-        "type": "盔甲锻造台",
-        "map": [[null, null, null], ["强化合金锭", null, "强化合金锭"], ["强化合金锭", null, "强化合金锭"]],
-        "ingredients": [["强化合金锭", 4]]
+        type: "盔甲锻造台",
+        map: [[null, null, null], ["强化合金锭", null, "强化合金锭"], ["强化合金锭", null, "强化合金锭"]],
+        ingredients: [["强化合金锭", 4]]
     },
     "仙人掌头盔": {
-        "type": "盔甲锻造台",
-        "map": [["仙人掌", "仙人掌", "仙人掌"], ["仙人掌", null, "仙人掌"], [null, null, null]],
-        "ingredients": [["仙人掌", 5]]
+        type: "盔甲锻造台",
+        map: [["仙人掌", "仙人掌", "仙人掌"], ["仙人掌", null, "仙人掌"], [null, null, null]],
+        ingredients: [["仙人掌", 5]]
     },
     "仙人掌胸甲": {
-        "type": "盔甲锻造台",
-        "map": [["仙人掌", null, "仙人掌"], ["仙人掌", "仙人掌", "仙人掌"], ["仙人掌", "仙人掌", "仙人掌"]],
-        "ingredients": [["仙人掌", 8]]
+        type: "盔甲锻造台",
+        map: [["仙人掌", null, "仙人掌"], ["仙人掌", "仙人掌", "仙人掌"], ["仙人掌", "仙人掌", "仙人掌"]],
+        ingredients: [["仙人掌", 8]]
     },
     "仙人掌护腿": {
-        "type": "盔甲锻造台",
-        "map": [["仙人掌", "仙人掌", "仙人掌"], ["仙人掌", null, "仙人掌"], ["仙人掌", null, "仙人掌"]],
-        "ingredients": [["仙人掌", 7]]
+        type: "盔甲锻造台",
+        map: [["仙人掌", "仙人掌", "仙人掌"], ["仙人掌", null, "仙人掌"], ["仙人掌", null, "仙人掌"]],
+        ingredients: [["仙人掌", 7]]
     },
     "仙人掌靴子": {
-        "type": "盔甲锻造台",
-        "map": [[null, null, null], ["仙人掌", null, "仙人掌"], ["仙人掌", null, "仙人掌"]],
-        "ingredients": [["仙人掌", 4]]
+        type: "盔甲锻造台",
+        map: [[null, null, null], ["仙人掌", null, "仙人掌"], ["仙人掌", null, "仙人掌"]],
+        ingredients: [["仙人掌", 4]]
     },
     "锁链头盔": {
-        "type": "盔甲锻造台",
-        "map": [["锁链", "锁链", "锁链"], ["锁链", null, "锁链"], [null, null, null]],
-        "ingredients": [["锁链", 5]]
+        type: "盔甲锻造台",
+        map: [["锁链", "锁链", "锁链"], ["锁链", null, "锁链"], [null, null, null]],
+        ingredients: [["锁链", 5]]
     },
     "锁链胸甲": {
-        "type": "盔甲锻造台",
-        "map": [["锁链", null, "锁链"], ["锁链", "锁链", "锁链"], ["锁链", "锁链", "锁链"]],
-        "ingredients": [["锁链", 8]]
+        type: "盔甲锻造台",
+        map: [["锁链", null, "锁链"], ["锁链", "锁链", "锁链"], ["锁链", "锁链", "锁链"]],
+        ingredients: [["锁链", 8]]
     },
     "锁链护腿": {
-        "type": "盔甲锻造台",
-        "map": [["锁链", "锁链", "锁链"], ["锁链", null, "锁链"], ["锁链", null, "锁链"]],
-        "ingredients": [["锁链", 7]]
+        type: "盔甲锻造台",
+        map: [["锁链", "锁链", "锁链"], ["锁链", null, "锁链"], ["锁链", null, "锁链"]],
+        ingredients: [["锁链", 7]]
     },
     "锁链靴子": {
-        "type": "盔甲锻造台",
-        "map": [[null, null, null], ["锁链", null, "锁链"], ["锁链", null, "锁链"]],
-        "ingredients": [["锁链", 4]]
+        type: "盔甲锻造台",
+        map: [[null, null, null], ["锁链", null, "锁链"], ["锁链", null, "锁链"]],
+        ingredients: [["锁链", 4]]
     },
     "镀金铁头盔": {
-        "type": "盔甲锻造台",
-        "map": [["镀金铁锭", "镀金铁锭", "镀金铁锭"], ["镀金铁锭", null, "镀金铁锭"], [null, null, null]],
-        "ingredients": [["镀金铁锭", 5]]
+        type: "盔甲锻造台",
+        map: [["镀金铁锭", "镀金铁锭", "镀金铁锭"], ["镀金铁锭", null, "镀金铁锭"], [null, null, null]],
+        ingredients: [["镀金铁锭", 5]]
     },
     "镀金铁胸甲": {
-        "type": "盔甲锻造台",
-        "map": [["镀金铁锭", null, "镀金铁锭"], ["镀金铁锭", "镀金铁锭", "镀金铁锭"], ["镀金铁锭", "镀金铁锭", "镀金铁锭"]],
-        "ingredients": [["镀金铁锭", 8]]
+        type: "盔甲锻造台",
+        map: [["镀金铁锭", null, "镀金铁锭"], ["镀金铁锭", "镀金铁锭", "镀金铁锭"], ["镀金铁锭", "镀金铁锭", "镀金铁锭"]],
+        ingredients: [["镀金铁锭", 8]]
     },
     "镀金铁护腿": {
-        "type": "盔甲锻造台",
-        "map": [["镀金铁锭", "镀金铁锭", "镀金铁锭"], ["镀金铁锭", null, "镀金铁锭"], ["镀金铁锭", null, "镀金铁锭"]],
-        "ingredients": [["镀金铁锭", 7]]
+        type: "盔甲锻造台",
+        map: [["镀金铁锭", "镀金铁锭", "镀金铁锭"], ["镀金铁锭", null, "镀金铁锭"], ["镀金铁锭", null, "镀金铁锭"]],
+        ingredients: [["镀金铁锭", 7]]
     },
     "镀金铁靴子": {
-        "type": "盔甲锻造台",
-        "map": [[null, null, null], ["镀金铁锭", null, "镀金铁锭"], ["镀金铁锭", null, "镀金铁锭"]],
-        "ingredients": [["镀金铁锭", 4]]
+        type: "盔甲锻造台",
+        map: [[null, null, null], ["镀金铁锭", null, "镀金铁锭"], ["镀金铁锭", null, "镀金铁锭"]],
+        ingredients: [["镀金铁锭", 4]]
     },
     "潜水头盔": {
-        "type": "盔甲锻造台",
-        "map": [["橙色羊毛", "强化布料", "橙色羊毛"], ["强化布料", "玻璃板", "强化布料"], [null, null, null]],
-        "ingredients": [["强化布料", 3], ["橙色羊毛", 2], ["玻璃板"]]
+        type: "盔甲锻造台",
+        map: [["橙色羊毛", "强化布料", "橙色羊毛"], ["强化布料", "玻璃板", "强化布料"], [null, null, null]],
+        ingredients: [["强化布料", 3], ["橙色羊毛", 2], ["玻璃板"]]
     },
     "防化服": {
-        "type": "盔甲锻造台",
-        "map": [["橙色羊毛", null, "橙色羊毛"], ["强化布料", "强化布料", "强化布料"], ["黑色羊毛", "强化布料", "黑色羊毛"]],
-        "ingredients": [["橙色羊毛", 2], ["黑色羊毛", 2], ["强化布料", 4]]
+        type: "盔甲锻造台",
+        map: [["橙色羊毛", null, "橙色羊毛"], ["强化布料", "强化布料", "强化布料"], ["黑色羊毛", "强化布料", "黑色羊毛"]],
+        ingredients: [["橙色羊毛", 2], ["黑色羊毛", 2], ["强化布料", 4]]
     },
     "防化护腿": {
-        "type": "盔甲锻造台",
-        "map": [["黑色羊毛", "强化布料", "黑色羊毛"], ["强化布料", null, "强化布料"], ["强化布料", null, "强化布料"]],
-        "ingredients": [["强化布料", 5], ["黑色羊毛", 2]]
+        type: "盔甲锻造台",
+        map: [["黑色羊毛", "强化布料", "黑色羊毛"], ["强化布料", null, "强化布料"], ["强化布料", null, "强化布料"]],
+        ingredients: [["强化布料", 5], ["黑色羊毛", 2]]
     },
     "防化靴": {
-        "type": "盔甲锻造台",
-        "map": [["强化布料", null, "强化布料"], ["强化布料", null, "强化布料"], ["黑色羊毛", null, "黑色羊毛"]],
-        "ingredients": [["强化布料", 4], ["黑色羊毛", 2]]
+        type: "盔甲锻造台",
+        map: [["强化布料", null, "强化布料"], ["强化布料", null, "强化布料"], ["黑色羊毛", null, "黑色羊毛"]],
+        ingredients: [["强化布料", 4], ["黑色羊毛", 2]]
     },
     "橡胶靴": {
-        "type": "盔甲锻造台",
-        "ingredients": [["黑色羊毛", 4]]
+        type: "盔甲锻造台",
+        ingredients: [["黑色羊毛", 4]]
     },
     "金头盔": {
-        "type": "盔甲锻造台",
-        "map": [["金锭(12克拉)", "金锭(12克拉)", "金锭(12克拉)"], ["金锭(12克拉)", null, "金锭(12克拉)"], [null, null, null]],
-        "ingredients": [["金锭(12克拉)", 5]]
+        type: "盔甲锻造台",
+        map: [["金锭(12克拉)", "金锭(12克拉)", "金锭(12克拉)"], ["金锭(12克拉)", null, "金锭(12克拉)"], [null, null, null]],
+        ingredients: [["金锭(12克拉)", 5]]
     },
     "金胸甲": {
-        "type": "盔甲锻造台",
-        "map": [["金锭(12克拉)", null, "金锭(12克拉)"], ["金锭(12克拉)", "金锭(12克拉)", "金锭(12克拉)"], ["金锭(12克拉)", "金锭(12克拉)", "金锭(12克拉)"]],
-        "ingredients": [["金锭(12克拉)", 8]]
+        type: "盔甲锻造台",
+        map: [["金锭(12克拉)", null, "金锭(12克拉)"], ["金锭(12克拉)", "金锭(12克拉)", "金锭(12克拉)"], ["金锭(12克拉)", "金锭(12克拉)", "金锭(12克拉)"]],
+        ingredients: [["金锭(12克拉)", 8]]
     },
     "金护腿": {
-        "type": "盔甲锻造台",
-        "map": [["金锭(12克拉)", "金锭(12克拉)", "金锭(12克拉)"], ["金锭(12克拉)", null, "金锭(12克拉)"], ["金锭(12克拉)", null, "金锭(12克拉)"]],
-        "ingredients": [["金锭(12克拉)", 7]]
+        type: "盔甲锻造台",
+        map: [["金锭(12克拉)", "金锭(12克拉)", "金锭(12克拉)"], ["金锭(12克拉)", null, "金锭(12克拉)"], ["金锭(12克拉)", null, "金锭(12克拉)"]],
+        ingredients: [["金锭(12克拉)", 7]]
     },
     "金靴子": {
-        "type": "盔甲锻造台",
-        "map": [[null, null, null], ["金锭(12克拉)", null, "金锭(12克拉)"], ["金锭(12克拉)", null, "金锭(12克拉)"]],
-        "ingredients": [["金锭(12克拉)", 4]]
+        type: "盔甲锻造台",
+        map: [[null, null, null], ["金锭(12克拉)", null, "金锭(12克拉)"], ["金锭(12克拉)", null, "金锭(12克拉)"]],
+        ingredients: [["金锭(12克拉)", 4]]
     },
     "铁砧护身符": {
-        "type": "魔法工作台",
-        "map": [["魔法结晶-III", null, "魔法结晶-III"], ["铁砧", "普通护身符", "铁砧"], ["魔法结晶-III", null, "魔法结晶-III"]],
-        "ingredients": [["魔法结晶-III", 4], ["铁砧", 2], ["普通护身符"]],
-        "count": 4
+        type: "魔法工作台",
+        map: [["魔法结晶-III", null, "魔法结晶-III"], ["铁砧", "普通护身符", "铁砧"], ["魔法结晶-III", null, "魔法结晶-III"]],
+        ingredients: [["魔法结晶-III", 4], ["铁砧", 2], ["普通护身符"]],
+        count: 4
     },
     "矿工护身符": {
-        "type": "魔法工作台",
-        "map": [["魔法结晶-III", null, "魔法结晶-III"], ["人造蓝宝石", "普通护身符", "筛矿"], ["魔法结晶-III", null, "魔法结晶-III"]],
-        "ingredients": [["魔法结晶-III", 4], ["人造蓝宝石"], ["普通护身符"], ["筛矿"]]
+        type: "魔法工作台",
+        map: [["魔法结晶-III", null, "魔法结晶-III"], ["人造蓝宝石", "普通护身符", "筛矿"], ["魔法结晶-III", null, "魔法结晶-III"]],
+        ingredients: [["魔法结晶-III", 4], ["人造蓝宝石"], ["普通护身符"], ["筛矿"]]
     },
     "猎人护身符": {
-        "type": "魔法工作台",
-        "map": [["魔法结晶-III", null, "魔法结晶-III"], ["人造蓝宝石", "普通护身符", "怪物肉干"], ["魔法结晶-III", null, "魔法结晶-III"]],
-        "ingredients": [["魔法结晶-III", 4], ["人造蓝宝石"], ["普通护身符"], ["怪物肉干"]]
+        type: "魔法工作台",
+        map: [["魔法结晶-III", null, "魔法结晶-III"], ["人造蓝宝石", "普通护身符", "怪物肉干"], ["魔法结晶-III", null, "魔法结晶-III"]],
+        ingredients: [["魔法结晶-III", 4], ["人造蓝宝石"], ["普通护身符"], ["怪物肉干"]]
     },
     "岩浆行者护身符": {
-        "type": "魔法工作台",
-        "map": [["魔法结晶-III", null, "魔法结晶-III"], ["岩浆水晶", "普通护身符", "熔岩桶"], ["魔法结晶-III", null, "魔法结晶-III"]],
-        "ingredients": [["魔法结晶-III", 4], ["岩浆水晶"], ["普通护身符"], ["熔岩桶"]],
-        "count": 4
+        type: "魔法工作台",
+        map: [["魔法结晶-III", null, "魔法结晶-III"], ["岩浆水晶", "普通护身符", "熔岩桶"], ["魔法结晶-III", null, "魔法结晶-III"]],
+        ingredients: [["魔法结晶-III", 4], ["岩浆水晶"], ["普通护身符"], ["熔岩桶"]],
+        count: 4
     },
     "潜水者护身符": {
-        "type": "魔法工作台",
-        "map": [["魔法结晶-III", null, "魔法结晶-III"], ["水桶", "普通护身符", "钓鱼竿"], ["魔法结晶-III", null, "魔法结晶-III"]],
-        "ingredients": [["魔法结晶-III", 4], ["水桶"], ["普通护身符"], ["钓鱼竿"]],
-        "count": 4
+        type: "魔法工作台",
+        map: [["魔法结晶-III", null, "魔法结晶-III"], ["水桶", "普通护身符", "钓鱼竿"], ["魔法结晶-III", null, "魔法结晶-III"]],
+        ingredients: [["魔法结晶-III", 4], ["水桶"], ["普通护身符"], ["钓鱼竿"]],
+        count: 4
     },
     "天使护身符": {
-        "type": "魔法工作台",
-        "map": [["魔法结晶-III", null, "魔法结晶-III"], ["羽毛", "普通护身符", "羽毛"], ["魔法结晶-III", null, "魔法结晶-III"]],
-        "ingredients": [["魔法结晶-III", 4], ["羽毛", 2], ["普通护身符"]]
+        type: "魔法工作台",
+        map: [["魔法结晶-III", null, "魔法结晶-III"], ["羽毛", "普通护身符", "羽毛"], ["魔法结晶-III", null, "魔法结晶-III"]],
+        ingredients: [["魔法结晶-III", 4], ["羽毛", 2], ["普通护身符"]]
     },
     "消防员护身符": {
-        "type": "魔法工作台",
-        "map": [["魔法结晶-III", null, "魔法结晶-III"], ["岩浆水晶", "普通护身符", "岩浆水晶"], ["魔法结晶-III", null, "魔法结晶-III"]],
-        "ingredients": [["魔法结晶-III", 4], ["岩浆水晶", 2], ["普通护身符"]],
-        "count": 4
+        type: "魔法工作台",
+        map: [["魔法结晶-III", null, "魔法结晶-III"], ["岩浆水晶", "普通护身符", "岩浆水晶"], ["魔法结晶-III", null, "魔法结晶-III"]],
+        ingredients: [["魔法结晶-III", 4], ["岩浆水晶", 2], ["普通护身符"]],
+        count: 4
     },
     "魔法师护身符": {
-        "type": "魔法工作台",
-        "map": [["末影结晶-III", null, "末影结晶-III"], ["附魔台", "普通护身符", "附魔台"], ["末影结晶-III", null, "末影结晶-III"]],
-        "ingredients": [["末影结晶-III", 4], ["附魔台", 2], ["普通护身符"]]
+        type: "魔法工作台",
+        map: [["末影结晶-III", null, "末影结晶-III"], ["附魔台", "普通护身符", "附魔台"], ["末影结晶-III", null, "末影结晶-III"]],
+        ingredients: [["末影结晶-III", 4], ["附魔台", 2], ["普通护身符"]]
     },
     "旅行者护身符": {
-        "type": "魔法工作台",
-        "map": [["魔法结晶-III", null, "魔法结晶-III"], ["元素法杖-风", "天使护身符", "元素法杖-风"], ["魔法结晶-III", null, "魔法结晶-III"]],
-        "ingredients": [["魔法结晶-III", 4], ["元素法杖-风", 2], ["天使护身符"]]
+        type: "魔法工作台",
+        map: [["魔法结晶-III", null, "魔法结晶-III"], ["元素法杖-风", "天使护身符", "元素法杖-风"], ["魔法结晶-III", null, "魔法结晶-III"]],
+        ingredients: [["魔法结晶-III", 4], ["元素法杖-风", 2], ["天使护身符"]]
     },
     "战士护身符": {
-        "type": "魔法工作台",
-        "map": [["魔法结晶-III", null, "魔法结晶-III"], ["强化合金锭", "普通护身符", "强化合金锭"], ["魔法结晶-III", null, "魔法结晶-III"]],
-        "ingredients": [["魔法结晶-III", 4], ["强化合金锭", 2], ["普通护身符"]],
-        "count": 4
+        type: "魔法工作台",
+        map: [["魔法结晶-III", null, "魔法结晶-III"], ["强化合金锭", "普通护身符", "强化合金锭"], ["魔法结晶-III", null, "魔法结晶-III"]],
+        ingredients: [["魔法结晶-III", 4], ["强化合金锭", 2], ["普通护身符"]],
+        count: 4
     },
     "骑士护身符": {
-        "type": "魔法工作台",
-        "map": [["魔法结晶-III", null, "魔法结晶-III"], ["镀金铁锭", "战士护身符", "镀金铁锭"], ["魔法结晶-III", null, "魔法结晶-III"]],
-        "ingredients": [["魔法结晶-III", 4], ["镀金铁锭", 2], ["战士护身符"]],
-        "count": 4
+        type: "魔法工作台",
+        map: [["魔法结晶-III", null, "魔法结晶-III"], ["镀金铁锭", "战士护身符", "镀金铁锭"], ["魔法结晶-III", null, "魔法结晶-III"]],
+        ingredients: [["魔法结晶-III", 4], ["镀金铁锭", 2], ["战士护身符"]],
+        count: 4
     },
     "旋风护身符": {
-        "type": "魔法工作台",
-        "map": [["魔法结晶-III", null, "魔法结晶-III"], ["元素法杖-风", "旅行者护身符", "元素法杖-风"], ["魔法结晶-III", null, "魔法结晶-III"]],
-        "ingredients": [["魔法结晶-III", 4], ["元素法杖-风", 2], ["旅行者护身符"]]
+        type: "魔法工作台",
+        map: [["魔法结晶-III", null, "魔法结晶-III"], ["元素法杖-风", "旅行者护身符", "元素法杖-风"], ["魔法结晶-III", null, "魔法结晶-III"]],
+        ingredients: [["魔法结晶-III", 4], ["元素法杖-风", 2], ["旅行者护身符"]]
     },
     "巫师护身符": {
-        "type": "魔法工作台",
-        "map": [["末影结晶-III", null, "末影结晶-III"], ["魔法末影之眼", "魔法师护身符", "魔法末影之眼"], ["末影结晶-III", null, "末影结晶-III"]],
-        "ingredients": [["末影结晶-III", 4], ["魔法末影之眼", 2], ["魔法师护身符"]]
+        type: "魔法工作台",
+        map: [["末影结晶-III", null, "末影结晶-III"], ["魔法末影之眼", "魔法师护身符", "魔法末影之眼"], ["末影结晶-III", null, "末影结晶-III"]],
+        ingredients: [["末影结晶-III", 4], ["魔法末影之眼", 2], ["魔法师护身符"]]
     },
     "末影背包": {
-        "type": "魔法工作台",
-        "map": [["末影结晶-II", "皮革", "末影结晶-II"], ["皮革", "箱子", "皮革"], ["末影结晶-II", "皮革", "末影结晶-II"]],
-        "ingredients": [["末影结晶-II", 4], ["皮革", 4], ["箱子"]]
+        type: "魔法工作台",
+        map: [["末影结晶-II", "皮革", "末影结晶-II"], ["皮革", "箱子", "皮革"], ["末影结晶-II", "皮革", "末影结晶-II"]],
+        ingredients: [["末影结晶-II", 4], ["皮革", 4], ["箱子"]]
     },
     "魔法末影之眼": {
-        "type": "魔法工作台",
-        "map": [["末影结晶-II", "末影珍珠", "末影结晶-II"], ["末影珍珠", "末影之眼", "末影珍珠"], ["末影结晶-II", "末影珍珠", "末影结晶-II"]],
-        "ingredients": [["末影结晶-II", 4], ["末影珍珠", 4], ["末影之眼"]]
+        type: "魔法工作台",
+        map: [["末影结晶-II", "末影珍珠", "末影结晶-II"], ["末影珍珠", "末影之眼", "末影珍珠"], ["末影结晶-II", "末影珍珠", "末影结晶-II"]],
+        ingredients: [["末影结晶-II", 4], ["末影珍珠", 4], ["末影之眼"]]
     },
     "元素法杖": {
-        "type": "魔法工作台",
-        "map": [[null, "魔法书皮", "魔法结晶-III"], [null, "木棍", "魔法书皮"], ["魔法结晶-III", null, null]],
-        "ingredients": [["魔法书皮", 2], ["魔法结晶-III", 2], ["木棍"]]
+        type: "魔法工作台",
+        map: [[null, "魔法书皮", "魔法结晶-III"], [null, "木棍", "魔法书皮"], ["魔法结晶-III", null, null]],
+        ingredients: [["魔法书皮", 2], ["魔法结晶-III", 2], ["木棍"]]
     },
     "元素法杖-风": {
-        "type": "魔法工作台",
-        "map": [[null, "羽毛", "末影结晶-III"], [null, "元素法杖", "羽毛"], ["元素法杖", null, null]],
-        "ingredients": [["羽毛", 2], ["末影结晶-III"], ["元素法杖", 2]]
+        type: "魔法工作台",
+        map: [[null, "羽毛", "末影结晶-III"], [null, "元素法杖", "羽毛"], ["元素法杖", null, null]],
+        ingredients: [["羽毛", 2], ["末影结晶-III"], ["元素法杖", 2]]
     },
     "元素法杖-水": {
-        "type": "魔法工作台",
-        "map": [[null, "睡莲", "魔法结晶-II"], [null, "元素法杖", "睡莲"], ["元素法杖", null, null]],
-        "ingredients": [["睡莲", 2], ["魔法结晶-II"], ["元素法杖", 2]]
+        type: "魔法工作台",
+        map: [[null, "睡莲", "魔法结晶-II"], [null, "元素法杖", "睡莲"], ["元素法杖", null, null]],
+        ingredients: [["睡莲", 2], ["魔法结晶-II"], ["元素法杖", 2]]
     },
     "元素法杖-火": {
-        "type": "魔法工作台",
-        "map": [[null, null, "岩浆水晶"], [null, "元素法杖", null], ["元素法杖", null, null]],
-        "ingredients": [["岩浆水晶"], ["元素法杖", 2]]
+        type: "魔法工作台",
+        map: [[null, null, "岩浆水晶"], [null, "元素法杖", null], ["元素法杖", null, null]],
+        ingredients: [["岩浆水晶"], ["元素法杖", 2]]
     },
     "元素法杖-雷": {
-        "type": "古代祭坛",
-        "map": [["古代符文[雷]", "末影结晶-III", "古代符文[雷]"], ["元素法杖-水", "魔法糖", "元素法杖-风"], ["古代符文[雷]", "末影结晶-III", "古代符文[雷]"]],
-        "ingredients": [["古代符文[雷]", 4], ["末影结晶-III", 2], ["元素法杖-水"], ["魔法糖"], ["元素法杖-风"]]
+        type: "古代祭坛",
+        map: [["古代符文[雷]", "末影结晶-III", "古代符文[雷]"], ["元素法杖-水", "魔法糖", "元素法杖-风"], ["古代符文[雷]", "末影结晶-III", "古代符文[雷]"]],
+        ingredients: [["古代符文[雷]", 4], ["末影结晶-III", 2], ["元素法杖-水"], ["魔法糖"], ["元素法杖-风"]]
     },
     "吸入磁铁": {
-        "type": "魔法工作台",
-        "map": [["魔法结晶-III", null, "魔法结晶-III"], ["末影结晶-II", "磁铁", "末影结晶-II"], ["魔法结晶-III", null, "魔法结晶-III"]],
-        "ingredients": [["魔法结晶-III", 4], ["末影结晶-II", 2], ["磁铁"]]
+        type: "魔法工作台",
+        map: [["魔法结晶-III", null, "魔法结晶-III"], ["末影结晶-II", "磁铁", "末影结晶-II"], ["魔法结晶-III", null, "魔法结晶-III"]],
+        ingredients: [["魔法结晶-III", 4], ["末影结晶-II", 2], ["磁铁"]]
     },
     "已修复的刷怪笼": {
-        "type": "古代祭坛",
-        "map": [["古代符文[末影]", "学识之瓶(满)", "来世精华"], ["学识之瓶(满)", "已损坏的刷怪笼", "学识之瓶(满)"], ["来世精华", "学识之瓶(满)", "古代符文[末影]"]],
-        "ingredients": [["古代符文[末影]", 2], ["学识之瓶(满)", 4], ["来世精华", 2], ["已损坏的刷怪笼"]]
+        type: "古代祭坛",
+        map: [["古代符文[末影]", "学识之瓶(满)", "来世精华"], ["学识之瓶(满)", "已损坏的刷怪笼", "学识之瓶(满)"], ["来世精华", "学识之瓶(满)", "古代符文[末影]"]],
+        ingredients: [["古代符文[末影]", 2], ["学识之瓶(满)", 4], ["来世精华", 2], ["已损坏的刷怪笼"]]
     },
     "维度传送卷轴": {
-        "type": "魔法工作台",
-        "map": [[null, "末影结晶-III", "魔法末影之眼"], ["末影结晶-III", "魔法书皮", "末影结晶-III"], ["魔法末影之眼", "末影结晶-III", null]],
-        "ingredients": [["末影结晶-III", 4], ["魔法末影之眼", 2], ["魔法书皮"]]
+        type: "魔法工作台",
+        map: [[null, "末影结晶-III", "魔法末影之眼"], ["末影结晶-III", "魔法书皮", "末影结晶-III"], ["魔法末影之眼", "末影结晶-III", null]],
+        ingredients: [["末影结晶-III", 4], ["魔法末影之眼", 2], ["魔法书皮"]]
     },
-    "知识共享之书": {"type": "魔法工作台", "ingredients": [["羽毛"], ["玻璃瓶"], ["墨囊"], ["书与笔"], ["魔法书皮"]]},
+    "知识共享之书": {type: "魔法工作台", ingredients: [["羽毛"], ["玻璃瓶"], ["墨囊"], ["书与笔"], ["魔法书皮"]]},
     "学识之瓶": {
-        "type": "魔法工作台",
-        "map": [[null, null, null], ["魔法结晶-II", "玻璃板", "魔法结晶-II"], [null, "魔法结晶-II", null]],
-        "ingredients": [["魔法结晶-II", 3], ["玻璃板"]],
-        "count": 8
+        type: "魔法工作台",
+        map: [[null, null, null], ["魔法结晶-II", "玻璃板", "魔法结晶-II"], [null, "魔法结晶-II", null]],
+        ingredients: [["魔法结晶-II", 3], ["玻璃板"]],
+        count: 8
     },
     "古代祭坛": {
-        "type": "魔法工作台",
-        "map": [[null, "附魔台", null], ["魔法结晶-III", "金锭(8克拉)", "魔法结晶-III"], ["黑曜石", "金锭(8克拉)", "黑曜石"]],
-        "ingredients": [["附魔台"], ["魔法结晶-III", 2], ["金锭(8克拉)", 2], ["黑曜石", 2]]
+        type: "魔法工作台",
+        map: [[null, "附魔台", null], ["魔法结晶-III", "金锭(8克拉)", "魔法结晶-III"], ["黑曜石", "金锭(8克拉)", "黑曜石"]],
+        ingredients: [["附魔台"], ["魔法结晶-III", 2], ["金锭(8克拉)", 2], ["黑曜石", 2]]
     },
     "地狱骨粉": {
-        "type": "古代祭坛",
-        "map": [["下界疣", "古代符文[地]", "下界疣"], ["魔法结晶-II", "骨粉", "魔法结晶-II"], ["下界疣", "烈焰粉", "下界疣"]],
-        "ingredients": [["下界疣", 4], ["古代符文[地]"], ["魔法结晶-II", 2], ["骨粉"], ["烈焰粉"]],
-        "count": 8
+        type: "古代祭坛",
+        map: [["下界疣", "古代符文[地]", "下界疣"], ["魔法结晶-II", "骨粉", "魔法结晶-II"], ["下界疣", "烈焰粉", "下界疣"]],
+        ingredients: [["下界疣", 4], ["古代符文[地]"], ["魔法结晶-II", 2], ["骨粉"], ["烈焰粉"]],
+        count: 8
     },
     "鞘翅鳞片": {
-        "type": "古代祭坛",
-        "map": [["末影结晶-III", "古代符文[气]", "末影结晶-III"], ["幻翼膜", "羽毛", "幻翼膜"], ["末影结晶-III", "古代符文[气]", "末影结晶-III"]],
-        "ingredients": [["末影结晶-III", 4], ["古代符文[气]", 2], ["幻翼膜", 2], ["羽毛"]]
+        type: "古代祭坛",
+        map: [["末影结晶-III", "古代符文[气]", "末影结晶-III"], ["幻翼膜", "羽毛", "幻翼膜"], ["末影结晶-III", "古代符文[气]", "末影结晶-III"]],
+        ingredients: [["末影结晶-III", 4], ["古代符文[气]", 2], ["幻翼膜", 2], ["羽毛"]]
     },
     "鞘翅": {
-        "type": "古代祭坛",
-        "map": [["鞘翅鳞片", "古代符文[气]", "鞘翅鳞片"], ["古代符文[气]", "皮革外套", "古代符文[气]"], ["鞘翅鳞片", "古代符文[气]", "鞘翅鳞片"]],
-        "ingredients": [["鞘翅鳞片", 4], ["古代符文[气]", 4], ["皮革外套"]]
+        type: "古代祭坛",
+        map: [["鞘翅鳞片", "古代符文[气]", "鞘翅鳞片"], ["古代符文[气]", "皮革外套", "古代符文[气]"], ["鞘翅鳞片", "古代符文[气]", "鞘翅鳞片"]],
+        ingredients: [["鞘翅鳞片", 4], ["古代符文[气]", 4], ["皮革外套"]]
     },
-    "经验修补鞘翅": {"type": "古代祭坛", "ingredients": [["学识之瓶", 6], ["鞘翅鳞片", 2], ["鞘翅"]]},
-    "灵魂绑定鞘翅": {"type": "古代祭坛", "ingredients": [["学识之瓶", 4], ["鞘翅鳞片", 2], ["来世精华"], ["鞘翅"]]},
+    "经验修补鞘翅": {type: "古代祭坛", ingredients: [["学识之瓶", 6], ["鞘翅鳞片", 2], ["鞘翅"]]},
+    "灵魂绑定鞘翅": {type: "古代祭坛", ingredients: [["学识之瓶", 4], ["鞘翅鳞片", 2], ["来世精华"], ["鞘翅"]]},
     "不死图腾": {
-        "type": "古代祭坛",
-        "map": [["来世精华", "绿宝石块", "来世精华"], ["魔法结晶-III", "普通护身符", "魔法结晶-III"], ["来世精华", "绿宝石块", "来世精华"]],
-        "ingredients": [["来世精华", 4], ["绿宝石块", 2], ["魔法结晶-III", 2], ["普通护身符"]]
+        type: "古代祭坛",
+        map: [["来世精华", "绿宝石块", "来世精华"], ["魔法结晶-III", "普通护身符", "魔法结晶-III"], ["来世精华", "绿宝石块", "来世精华"]],
+        ingredients: [["来世精华", 4], ["绿宝石块", 2], ["魔法结晶-III", 2], ["普通护身符"]]
     },
     "彩虹羊毛": {
-        "type": "古代祭坛",
-        "map": [["白色羊毛", "白色羊毛", "白色羊毛"], ["白色羊毛", "古代符文[虹]", "白色羊毛"], ["白色羊毛", "白色羊毛", "白色羊毛"]],
-        "ingredients": [["白色羊毛", 8], ["古代符文[虹]"]],
-        "count": 8
+        type: "古代祭坛",
+        map: [["白色羊毛", "白色羊毛", "白色羊毛"], ["白色羊毛", "古代符文[虹]", "白色羊毛"], ["白色羊毛", "白色羊毛", "白色羊毛"]],
+        ingredients: [["白色羊毛", 8], ["古代符文[虹]"]],
+        count: 8
     },
     "彩虹玻璃": {
-        "type": "古代祭坛",
-        "map": [["白色染色玻璃", "白色染色玻璃", "白色染色玻璃"], ["白色染色玻璃", "古代符文[虹]", "白色染色玻璃"], ["白色染色玻璃", "白色染色玻璃", "白色染色玻璃"]],
-        "ingredients": [["白色染色玻璃", 8], ["古代符文[虹]"]],
-        "count": 8
+        type: "古代祭坛",
+        map: [["白色染色玻璃", "白色染色玻璃", "白色染色玻璃"], ["白色染色玻璃", "古代符文[虹]", "白色染色玻璃"], ["白色染色玻璃", "白色染色玻璃", "白色染色玻璃"]],
+        ingredients: [["白色染色玻璃", 8], ["古代符文[虹]"]],
+        count: 8
     },
     "彩虹玻璃板": {
-        "type": "古代祭坛",
-        "map": [["白色染色玻璃板", "白色染色玻璃板", "白色染色玻璃板"], ["白色染色玻璃板", "古代符文[虹]", "白色染色玻璃板"], ["白色染色玻璃板", "白色染色玻璃板", "白色染色玻璃板"]],
-        "ingredients": [["白色染色玻璃板", 8], ["古代符文[虹]"]],
-        "count": 8
+        type: "古代祭坛",
+        map: [["白色染色玻璃板", "白色染色玻璃板", "白色染色玻璃板"], ["白色染色玻璃板", "古代符文[虹]", "白色染色玻璃板"], ["白色染色玻璃板", "白色染色玻璃板", "白色染色玻璃板"]],
+        ingredients: [["白色染色玻璃板", 8], ["古代符文[虹]"]],
+        count: 8
     },
     "彩虹粘土块": {
-        "type": "古代祭坛",
-        "map": [["白色陶瓦", "白色陶瓦", "白色陶瓦"], ["白色陶瓦", "古代符文[虹]", "白色陶瓦"], ["白色陶瓦", "白色陶瓦", "白色陶瓦"]],
-        "ingredients": [["白色陶瓦", 8], ["古代符文[虹]"]],
-        "count": 8
+        type: "古代祭坛",
+        map: [["白色陶瓦", "白色陶瓦", "白色陶瓦"], ["白色陶瓦", "古代符文[虹]", "白色陶瓦"], ["白色陶瓦", "白色陶瓦", "白色陶瓦"]],
+        ingredients: [["白色陶瓦", 8], ["古代符文[虹]"]],
+        count: 8
     },
     "吸入漏斗": {
-        "type": "古代祭坛",
-        "map": [["黑曜石", "古代符文[地]", "漏斗"], ["古代符文[末影]", "吸入磁铁", "古代符文[末影]"], ["漏斗", "古代符文[地]", "黑曜石"]],
-        "ingredients": [["黑曜石", 2], ["古代符文[地]", 2], ["漏斗", 2], ["古代符文[末影]", 2], ["吸入磁铁"]]
+        type: "古代祭坛",
+        map: [["黑曜石", "古代符文[地]", "漏斗"], ["古代符文[末影]", "吸入磁铁", "古代符文[末影]"], ["漏斗", "古代符文[地]", "黑曜石"]],
+        ingredients: [["黑曜石", 2], ["古代符文[地]", 2], ["漏斗", 2], ["古代符文[末影]", 2], ["吸入磁铁"]]
     },
     "电力喷射背包-I": {
-        "type": "高级工作台",
-        "ingredients": [["硬铝锭", 4], ["钢推进器", 2], ["能量水晶"], ["小型储能电容"]]
+        type: "高级工作台",
+        ingredients: [["硬铝锭", 4], ["钢推进器", 2], ["能量水晶"], ["小型储能电容"]]
     },
     "电力喷射背包-II": {
-        "type": "高级工作台",
-        "ingredients": [["焊锡锭", 4], ["钢推进器", 2], ["能量水晶"], ["小型储能电容"]]
+        type: "高级工作台",
+        ingredients: [["焊锡锭", 4], ["钢推进器", 2], ["能量水晶"], ["小型储能电容"]]
     },
     "电力喷射背包-III": {
-        "type": "高级工作台",
-        "ingredients": [["银铜合金锭", 4], ["钢推进器", 2], ["能量水晶"], ["小型储能电容"]]
+        type: "高级工作台",
+        ingredients: [["银铜合金锭", 4], ["钢推进器", 2], ["能量水晶"], ["小型储能电容"]]
     },
     "电力喷射背包-IV": {
-        "type": "高级工作台",
-        "ingredients": [["钢锭", 4], ["钢推进器", 2], ["能量水晶"], ["小型储能电容"]]
+        type: "高级工作台",
+        ingredients: [["钢锭", 4], ["钢推进器", 2], ["能量水晶"], ["小型储能电容"]]
     },
     "电力喷射背包-V": {
-        "type": "高级工作台",
-        "ingredients": [["大马士革钢锭", 4], ["钢推进器", 2], ["能量水晶"], ["小型储能电容"]]
+        type: "高级工作台",
+        ingredients: [["大马士革钢锭", 4], ["钢推进器", 2], ["能量水晶"], ["小型储能电容"]]
     },
     "电力喷射背包-VI": {
-        "type": "高级工作台",
-        "ingredients": [["强化合金锭", 4], ["钢推进器", 2], ["能量水晶"], ["中型储能电容"]]
+        type: "高级工作台",
+        ingredients: [["强化合金锭", 4], ["钢推进器", 2], ["能量水晶"], ["中型储能电容"]]
     },
     "电力喷射背包-VII": {
-        "type": "高级工作台",
-        "ingredients": [["黑金刚石", 4], ["钢推进器", 2], ["能量水晶"], ["巨型储能电容"]]
+        type: "高级工作台",
+        ingredients: [["黑金刚石", 4], ["钢推进器", 2], ["能量水晶"], ["巨型储能电容"]]
     },
     "降落伞": {
-        "type": "增强型工作台",
-        "map": [["布", "布", "布"], ["锁链", null, "锁链"], [null, null, null]],
-        "ingredients": [["布", 3], ["锁链", 2]]
+        type: "增强型工作台",
+        map: [["布", "布", "布"], ["锁链", null, "锁链"], [null, null, null]],
+        ingredients: [["布", 3], ["锁链", 2]]
     },
     "全息投影仪": {
-        "type": "增强型工作台",
-        "map": [[null, "能量水晶", null], ["铝黄铜锭", "电动马达", "铝黄铜锭"], [null, "铝黄铜锭", null]],
-        "ingredients": [["能量水晶"], ["铝黄铜锭", 3], ["电动马达"]],
-        "count": 3
+        type: "增强型工作台",
+        map: [[null, "能量水晶", null], ["铝黄铜锭", "电动马达", "铝黄铜锭"], [null, "铝黄铜锭", null]],
+        ingredients: [["能量水晶"], ["铝黄铜锭", 3], ["电动马达"]],
+        count: 3
     },
     "多功能工具-I": {
-        "type": "增强型工作台",
-        "map": [["硬铝锭", null, "硬铝锭"], ["硬铝锭", "小型储能电容", "硬铝锭"], [null, "硬铝锭", null]],
-        "ingredients": [["硬铝锭", 5], ["小型储能电容"]]
+        type: "增强型工作台",
+        map: [["硬铝锭", null, "硬铝锭"], ["硬铝锭", "小型储能电容", "硬铝锭"], [null, "硬铝锭", null]],
+        ingredients: [["硬铝锭", 5], ["小型储能电容"]]
     },
     "多功能工具-II": {
-        "type": "增强型工作台",
-        "map": [["焊锡锭", null, "焊锡锭"], ["焊锡锭", "小型储能电容", "焊锡锭"], [null, "焊锡锭", null]],
-        "ingredients": [["焊锡锭", 5], ["小型储能电容"]]
+        type: "增强型工作台",
+        map: [["焊锡锭", null, "焊锡锭"], ["焊锡锭", "小型储能电容", "焊锡锭"], [null, "焊锡锭", null]],
+        ingredients: [["焊锡锭", 5], ["小型储能电容"]]
     },
     "多功能工具-III": {
-        "type": "增强型工作台",
-        "map": [["银铜合金锭", null, "银铜合金锭"], ["银铜合金锭", "小型储能电容", "银铜合金锭"], [null, "银铜合金锭", null]],
-        "ingredients": [["银铜合金锭", 5], ["小型储能电容"]]
+        type: "增强型工作台",
+        map: [["银铜合金锭", null, "银铜合金锭"], ["银铜合金锭", "小型储能电容", "银铜合金锭"], [null, "银铜合金锭", null]],
+        ingredients: [["银铜合金锭", 5], ["小型储能电容"]]
     },
     "多功能工具-IV": {
-        "type": "增强型工作台",
-        "map": [["钢锭", null, "钢锭"], ["钢锭", "小型储能电容", "钢锭"], [null, "钢锭", null]],
-        "ingredients": [["钢锭", 5], ["小型储能电容"]]
+        type: "增强型工作台",
+        map: [["钢锭", null, "钢锭"], ["钢锭", "小型储能电容", "钢锭"], [null, "钢锭", null]],
+        ingredients: [["钢锭", 5], ["小型储能电容"]]
     },
     "多功能工具-V": {
-        "type": "增强型工作台",
-        "map": [["大马士革钢锭", null, "大马士革钢锭"], ["大马士革钢锭", "小型储能电容", "大马士革钢锭"], [null, "大马士革钢锭", null]],
-        "ingredients": [["大马士革钢锭", 5], ["小型储能电容"]]
+        type: "增强型工作台",
+        map: [["大马士革钢锭", null, "大马士革钢锭"], ["大马士革钢锭", "小型储能电容", "大马士革钢锭"], [null, "大马士革钢锭", null]],
+        ingredients: [["大马士革钢锭", 5], ["小型储能电容"]]
     },
     "多功能工具-VI": {
-        "type": "增强型工作台",
-        "map": [["强化合金锭", null, "强化合金锭"], ["强化合金锭", "中型储能电容", "强化合金锭"], [null, "强化合金锭", null]],
-        "ingredients": [["强化合金锭", 5], ["中型储能电容"]]
+        type: "增强型工作台",
+        map: [["强化合金锭", null, "强化合金锭"], ["强化合金锭", "中型储能电容", "强化合金锭"], [null, "强化合金锭", null]],
+        ingredients: [["强化合金锭", 5], ["中型储能电容"]]
     },
     "多功能工具-VII": {
-        "type": "增强型工作台",
-        "map": [["黑金刚石", null, "黑金刚石"], ["黑金刚石", "巨型储能电容", "黑金刚石"], [null, "黑金刚石", null]],
-        "ingredients": [["黑金刚石", 5], ["巨型储能电容"]]
+        type: "增强型工作台",
+        map: [["黑金刚石", null, "黑金刚石"], ["黑金刚石", "巨型储能电容", "黑金刚石"], [null, "黑金刚石", null]],
+        ingredients: [["黑金刚石", 5], ["巨型储能电容"]]
     },
     "太阳能头盔": {
-        "type": "增强型工作台",
-        "map": [["强化合金锭", "光伏电池", "强化合金锭"], ["强化合金锭", null, "强化合金锭"], ["中型储能电容", null, "中型储能电容"]],
-        "ingredients": [["强化合金锭", 4], ["光伏电池"], ["中型储能电容", 2]]
+        type: "增强型工作台",
+        map: [["强化合金锭", "光伏电池", "强化合金锭"], ["强化合金锭", null, "强化合金锭"], ["中型储能电容", null, "中型储能电容"]],
+        ingredients: [["强化合金锭", 4], ["光伏电池"], ["中型储能电容", 2]]
     },
     "夜视眼镜": {
-        "type": "盔甲锻造台",
-        "map": [["煤炭块", "煤炭块", "煤炭块"], ["黄绿色染色玻璃板", "煤炭块", "黄绿色染色玻璃板"], ["煤炭块", null, "煤炭块"]],
-        "ingredients": [["煤炭块", 6], ["黄绿色染色玻璃板", 2]]
+        type: "盔甲锻造台",
+        map: [["煤炭块", "煤炭块", "煤炭块"], ["黄绿色染色玻璃板", "煤炭块", "黄绿色染色玻璃板"], ["煤炭块", null, "煤炭块"]],
+        ingredients: [["煤炭块", 6], ["黄绿色染色玻璃板", 2]]
     },
     "喷气靴-I": {
-        "type": "增强型工作台",
-        "map": [[null, null, null], ["硬铝锭", "能量水晶", "硬铝锭"], ["钢推进器", "小型储能电容", "钢推进器"]],
-        "ingredients": [["硬铝锭", 2], ["能量水晶"], ["钢推进器", 2], ["小型储能电容"]]
+        type: "增强型工作台",
+        map: [[null, null, null], ["硬铝锭", "能量水晶", "硬铝锭"], ["钢推进器", "小型储能电容", "钢推进器"]],
+        ingredients: [["硬铝锭", 2], ["能量水晶"], ["钢推进器", 2], ["小型储能电容"]]
     },
     "喷气靴-II": {
-        "type": "增强型工作台",
-        "map": [[null, null, null], ["焊锡锭", "能量水晶", "焊锡锭"], ["钢推进器", "小型储能电容", "钢推进器"]],
-        "ingredients": [["焊锡锭", 2], ["能量水晶"], ["钢推进器", 2], ["小型储能电容"]]
+        type: "增强型工作台",
+        map: [[null, null, null], ["焊锡锭", "能量水晶", "焊锡锭"], ["钢推进器", "小型储能电容", "钢推进器"]],
+        ingredients: [["焊锡锭", 2], ["能量水晶"], ["钢推进器", 2], ["小型储能电容"]]
     },
     "喷气靴-III": {
-        "type": "增强型工作台",
-        "map": [[null, null, null], ["银铜合金锭", "能量水晶", "银铜合金锭"], ["钢推进器", "小型储能电容", "钢推进器"]],
-        "ingredients": [["银铜合金锭", 2], ["能量水晶"], ["钢推进器", 2], ["小型储能电容"]]
+        type: "增强型工作台",
+        map: [[null, null, null], ["银铜合金锭", "能量水晶", "银铜合金锭"], ["钢推进器", "小型储能电容", "钢推进器"]],
+        ingredients: [["银铜合金锭", 2], ["能量水晶"], ["钢推进器", 2], ["小型储能电容"]]
     },
     "喷气靴-IV": {
-        "type": "增强型工作台",
-        "map": [[null, null, null], ["钢锭", "能量水晶", "钢锭"], ["钢推进器", "小型储能电容", "钢推进器"]],
-        "ingredients": [["钢锭", 2], ["能量水晶"], ["钢推进器", 2], ["小型储能电容"]]
+        type: "增强型工作台",
+        map: [[null, null, null], ["钢锭", "能量水晶", "钢锭"], ["钢推进器", "小型储能电容", "钢推进器"]],
+        ingredients: [["钢锭", 2], ["能量水晶"], ["钢推进器", 2], ["小型储能电容"]]
     },
     "喷气靴-V": {
-        "type": "增强型工作台",
-        "map": [[null, null, null], ["大马士革钢锭", "能量水晶", "大马士革钢锭"], ["钢推进器", "小型储能电容", "钢推进器"]],
-        "ingredients": [["大马士革钢锭", 2], ["能量水晶"], ["钢推进器", 2], ["小型储能电容"]]
+        type: "增强型工作台",
+        map: [[null, null, null], ["大马士革钢锭", "能量水晶", "大马士革钢锭"], ["钢推进器", "小型储能电容", "钢推进器"]],
+        ingredients: [["大马士革钢锭", 2], ["能量水晶"], ["钢推进器", 2], ["小型储能电容"]]
     },
     "喷气靴-VI": {
-        "type": "增强型工作台",
-        "map": [[null, null, null], ["强化合金锭", "能量水晶", "强化合金锭"], ["钢推进器", "中型储能电容", "钢推进器"]],
-        "ingredients": [["强化合金锭", 2], ["能量水晶"], ["钢推进器", 2], ["中型储能电容"]]
+        type: "增强型工作台",
+        map: [[null, null, null], ["强化合金锭", "能量水晶", "强化合金锭"], ["钢推进器", "中型储能电容", "钢推进器"]],
+        ingredients: [["强化合金锭", 2], ["能量水晶"], ["钢推进器", 2], ["中型储能电容"]]
     },
     "喷气靴-VII": {
-        "type": "增强型工作台",
-        "map": [[null, null, null], ["黑金刚石", "能量水晶", "黑金刚石"], ["钢推进器", "巨型储能电容", "钢推进器"]],
-        "ingredients": [["黑金刚石", 2], ["能量水晶"], ["钢推进器", 2], ["巨型储能电容"]]
+        type: "增强型工作台",
+        map: [[null, null, null], ["黑金刚石", "能量水晶", "黑金刚石"], ["钢推进器", "巨型储能电容", "钢推进器"]],
+        ingredients: [["黑金刚石", 2], ["能量水晶"], ["钢推进器", 2], ["巨型储能电容"]]
     },
     "装甲喷气靴": {
-        "type": "增强型工作台",
-        "map": [[null, null, null], ["钢板", "能量水晶", "钢板"], ["钢推进器", "中型储能电容", "钢推进器"]],
-        "ingredients": [["钢板", 2], ["能量水晶"], ["钢推进器", 2], ["中型储能电容"]]
+        type: "增强型工作台",
+        map: [[null, null, null], ["钢板", "能量水晶", "钢板"], ["钢推进器", "中型储能电容", "钢推进器"]],
+        ingredients: [["钢板", 2], ["能量水晶"], ["钢推进器", 2], ["中型储能电容"]]
     },
     "末影铁砧护身符": {
-        "type": "魔法工作台",
-        "map": [["末影结晶-III", null, "末影结晶-III"], [null, "铁砧护身符", null], ["末影结晶-III", null, "末影结晶-III"]],
-        "ingredients": [["末影结晶-III", 4], ["铁砧护身符"]],
-        "count": 4
+        type: "魔法工作台",
+        map: [["末影结晶-III", null, "末影结晶-III"], [null, "铁砧护身符", null], ["末影结晶-III", null, "末影结晶-III"]],
+        ingredients: [["末影结晶-III", 4], ["铁砧护身符"]],
+        count: 4
     },
     "末影矿工护身符": {
-        "type": "魔法工作台",
-        "map": [["末影结晶-III", null, "末影结晶-III"], [null, "矿工护身符", null], ["末影结晶-III", null, "末影结晶-III"]],
-        "ingredients": [["末影结晶-III", 4], ["矿工护身符"]]
+        type: "魔法工作台",
+        map: [["末影结晶-III", null, "末影结晶-III"], [null, "矿工护身符", null], ["末影结晶-III", null, "末影结晶-III"]],
+        ingredients: [["末影结晶-III", 4], ["矿工护身符"]]
     },
     "末影猎人护身符": {
-        "type": "魔法工作台",
-        "map": [["末影结晶-III", null, "末影结晶-III"], [null, "猎人护身符", null], ["末影结晶-III", null, "末影结晶-III"]],
-        "ingredients": [["末影结晶-III", 4], ["猎人护身符"]]
+        type: "魔法工作台",
+        map: [["末影结晶-III", null, "末影结晶-III"], [null, "猎人护身符", null], ["末影结晶-III", null, "末影结晶-III"]],
+        ingredients: [["末影结晶-III", 4], ["猎人护身符"]]
     },
     "末影岩浆行者护身符": {
-        "type": "魔法工作台",
-        "map": [["末影结晶-III", null, "末影结晶-III"], [null, "岩浆行者护身符", null], ["末影结晶-III", null, "末影结晶-III"]],
-        "ingredients": [["末影结晶-III", 4], ["岩浆行者护身符"]],
-        "count": 4
+        type: "魔法工作台",
+        map: [["末影结晶-III", null, "末影结晶-III"], [null, "岩浆行者护身符", null], ["末影结晶-III", null, "末影结晶-III"]],
+        ingredients: [["末影结晶-III", 4], ["岩浆行者护身符"]],
+        count: 4
     },
     "末影潜水者护身符": {
-        "type": "魔法工作台",
-        "map": [["末影结晶-III", null, "末影结晶-III"], [null, "潜水者护身符", null], ["末影结晶-III", null, "末影结晶-III"]],
-        "ingredients": [["末影结晶-III", 4], ["潜水者护身符"]],
-        "count": 4
+        type: "魔法工作台",
+        map: [["末影结晶-III", null, "末影结晶-III"], [null, "潜水者护身符", null], ["末影结晶-III", null, "末影结晶-III"]],
+        ingredients: [["末影结晶-III", 4], ["潜水者护身符"]],
+        count: 4
     },
     "末影天使护身符": {
-        "type": "魔法工作台",
-        "map": [["末影结晶-III", null, "末影结晶-III"], [null, "天使护身符", null], ["末影结晶-III", null, "末影结晶-III"]],
-        "ingredients": [["末影结晶-III", 4], ["天使护身符"]]
+        type: "魔法工作台",
+        map: [["末影结晶-III", null, "末影结晶-III"], [null, "天使护身符", null], ["末影结晶-III", null, "末影结晶-III"]],
+        ingredients: [["末影结晶-III", 4], ["天使护身符"]]
     },
     "末影消防员护身符": {
-        "type": "魔法工作台",
-        "map": [["末影结晶-III", null, "末影结晶-III"], [null, "消防员护身符", null], ["末影结晶-III", null, "末影结晶-III"]],
-        "ingredients": [["末影结晶-III", 4], ["消防员护身符"]],
-        "count": 4
+        type: "魔法工作台",
+        map: [["末影结晶-III", null, "末影结晶-III"], [null, "消防员护身符", null], ["末影结晶-III", null, "末影结晶-III"]],
+        ingredients: [["末影结晶-III", 4], ["消防员护身符"]],
+        count: 4
     },
     "末影魔法师护身符": {
-        "type": "魔法工作台",
-        "map": [["末影结晶-III", null, "末影结晶-III"], [null, "魔法师护身符", null], ["末影结晶-III", null, "末影结晶-III"]],
-        "ingredients": [["末影结晶-III", 4], ["魔法师护身符"]]
+        type: "魔法工作台",
+        map: [["末影结晶-III", null, "末影结晶-III"], [null, "魔法师护身符", null], ["末影结晶-III", null, "末影结晶-III"]],
+        ingredients: [["末影结晶-III", 4], ["魔法师护身符"]]
     },
     "末影旅行者护身符": {
-        "type": "魔法工作台",
-        "map": [["末影结晶-III", null, "末影结晶-III"], [null, "旅行者护身符", null], ["末影结晶-III", null, "末影结晶-III"]],
-        "ingredients": [["末影结晶-III", 4], ["旅行者护身符"]]
+        type: "魔法工作台",
+        map: [["末影结晶-III", null, "末影结晶-III"], [null, "旅行者护身符", null], ["末影结晶-III", null, "末影结晶-III"]],
+        ingredients: [["末影结晶-III", 4], ["旅行者护身符"]]
     },
     "末影战士护身符": {
-        "type": "魔法工作台",
-        "map": [["末影结晶-III", null, "末影结晶-III"], [null, "战士护身符", null], ["末影结晶-III", null, "末影结晶-III"]],
-        "ingredients": [["末影结晶-III", 4], ["战士护身符"]],
-        "count": 4
+        type: "魔法工作台",
+        map: [["末影结晶-III", null, "末影结晶-III"], [null, "战士护身符", null], ["末影结晶-III", null, "末影结晶-III"]],
+        ingredients: [["末影结晶-III", 4], ["战士护身符"]],
+        count: 4
     },
     "末影骑士护身符": {
-        "type": "魔法工作台",
-        "map": [["末影结晶-III", null, "末影结晶-III"], [null, "骑士护身符", null], ["末影结晶-III", null, "末影结晶-III"]],
-        "ingredients": [["末影结晶-III", 4], ["骑士护身符"]],
-        "count": 4
+        type: "魔法工作台",
+        map: [["末影结晶-III", null, "末影结晶-III"], [null, "骑士护身符", null], ["末影结晶-III", null, "末影结晶-III"]],
+        ingredients: [["末影结晶-III", 4], ["骑士护身符"]],
+        count: 4
     },
     "末影旋风护身符": {
-        "type": "魔法工作台",
-        "map": [["末影结晶-III", null, "末影结晶-III"], [null, "旋风护身符", null], ["末影结晶-III", null, "末影结晶-III"]],
-        "ingredients": [["末影结晶-III", 4], ["旋风护身符"]]
+        type: "魔法工作台",
+        map: [["末影结晶-III", null, "末影结晶-III"], [null, "旋风护身符", null], ["末影结晶-III", null, "末影结晶-III"]],
+        ingredients: [["末影结晶-III", 4], ["旋风护身符"]]
     },
     "末影巫师护身符": {
-        "type": "魔法工作台",
-        "map": [["末影结晶-III", null, "末影结晶-III"], [null, "巫师护身符", null], ["末影结晶-III", null, "末影结晶-III"]],
-        "ingredients": [["末影结晶-III", 4], ["巫师护身符"]]
+        type: "魔法工作台",
+        map: [["末影结晶-III", null, "末影结晶-III"], [null, "巫师护身符", null], ["末影结晶-III", null, "末影结晶-III"]],
+        ingredients: [["末影结晶-III", 4], ["巫师护身符"]]
     },
     "能源调节器": {
-        "type": "增强型工作台",
-        "map": [["银锭", "大马士革钢锭", "银锭"], ["大马士革钢锭", "电动马达", "大马士革钢锭"], ["银锭", "大马士革钢锭", "银锭"]],
-        "ingredients": [["银锭", 4], ["大马士革钢锭", 4], ["电动马达"]]
+        type: "增强型工作台",
+        map: [["银锭", "大马士革钢锭", "银锭"], ["大马士革钢锭", "电动马达", "大马士革钢锭"], ["银锭", "大马士革钢锭", "银锭"]],
+        ingredients: [["银锭", 4], ["大马士革钢锭", 4], ["电动马达"]]
     },
     "小型储能电容": {
-        "type": "增强型工作台",
-        "map": [["硬铝锭", "硫酸盐", "硬铝锭"], ["红石合金锭", "能源连接器", "红石合金锭"], ["硬铝锭", "红石粉", "硬铝锭"]],
-        "ingredients": [["硬铝锭", 4], ["硫酸盐"], ["红石合金锭", 2], ["能源连接器"], ["红石粉"]]
+        type: "增强型工作台",
+        map: [["硬铝锭", "硫酸盐", "硬铝锭"], ["红石合金锭", "能源连接器", "红石合金锭"], ["硬铝锭", "红石粉", "硬铝锭"]],
+        ingredients: [["硬铝锭", 4], ["硫酸盐"], ["红石合金锭", 2], ["能源连接器"], ["红石粉"]]
     },
     "中型储能电容": {
-        "type": "增强型工作台",
-        "map": [["银铜合金锭", "红石合金锭", "银铜合金锭"], ["红石粉", "小型储能电容", "红石粉"], ["银铜合金锭", "红石合金锭", "银铜合金锭"]],
-        "ingredients": [["银铜合金锭", 4], ["红石合金锭", 2], ["红石粉", 2], ["小型储能电容"]]
+        type: "增强型工作台",
+        map: [["银铜合金锭", "红石合金锭", "银铜合金锭"], ["红石粉", "小型储能电容", "红石粉"], ["银铜合金锭", "红石合金锭", "银铜合金锭"]],
+        ingredients: [["银铜合金锭", 4], ["红石合金锭", 2], ["红石粉", 2], ["小型储能电容"]]
     },
     "大型储能电容": {
-        "type": "增强型工作台",
-        "map": [["钢锭", "红石合金锭", "钢锭"], ["红石粉", "中型储能电容", "红石粉"], ["钢锭", "红石合金锭", "钢锭"]],
-        "ingredients": [["钢锭", 4], ["红石合金锭", 2], ["红石粉", 2], ["中型储能电容"]]
+        type: "增强型工作台",
+        map: [["钢锭", "红石合金锭", "钢锭"], ["红石粉", "中型储能电容", "红石粉"], ["钢锭", "红石合金锭", "钢锭"]],
+        ingredients: [["钢锭", 4], ["红石合金锭", 2], ["红石粉", 2], ["中型储能电容"]]
     },
     "巨型储能电容": {
-        "type": "增强型工作台",
-        "map": [["强化合金锭", "红石合金锭", "强化合金锭"], ["红石粉", "大型储能电容", "红石粉"], ["强化合金锭", "红石合金锭", "强化合金锭"]],
-        "ingredients": [["强化合金锭", 4], ["红石合金锭", 2], ["红石粉", 2], ["大型储能电容"]]
+        type: "增强型工作台",
+        map: [["强化合金锭", "红石合金锭", "强化合金锭"], ["红石粉", "大型储能电容", "红石粉"], ["强化合金锭", "红石合金锭", "强化合金锭"]],
+        ingredients: [["强化合金锭", 4], ["红石合金锭", 2], ["红石粉", 2], ["大型储能电容"]]
     },
     "黑金刚石镶边储能电容": {
-        "type": "增强型工作台",
-        "map": [["黑金刚石", "红石合金锭", "黑金刚石"], ["红石粉", "巨型储能电容", "红石粉"], ["黑金刚石", "红石合金锭", "黑金刚石"]],
-        "ingredients": [["黑金刚石", 4], ["红石合金锭", 2], ["红石粉", 2], ["巨型储能电容"]]
+        type: "增强型工作台",
+        map: [["黑金刚石", "红石合金锭", "黑金刚石"], ["红石粉", "巨型储能电容", "红石粉"], ["黑金刚石", "红石合金锭", "黑金刚石"]],
+        ingredients: [["黑金刚石", 4], ["红石合金锭", 2], ["红石粉", 2], ["巨型储能电容"]]
     },
-    "太阳能发电机": {"type": "高级工作台", "ingredients": [["太阳能板", 3], ["铝锭", 3], ["电动马达"]]},
-    "高级太阳能发电机": {"type": "高级工作台", "ingredients": [["太阳能发电机", 4], ["铝锭", 4], ["红石粉"]]},
-    "黑金刚石太阳能发电机": {"type": "高级工作台", "ingredients": [["高级太阳能发电机", 4], ["铝锭", 4], ["黑金刚石"]]},
-    "充能太阳能发电机": {"type": "高级工作台", "ingredients": [["黑金刚石太阳能发电机", 4], ["起泡锭", 4], ["电磁铁"]]},
+    "太阳能发电机": {type: "高级工作台", ingredients: [["太阳能板", 3], ["铝锭", 3], ["电动马达"]]},
+    "高级太阳能发电机": {type: "高级工作台", ingredients: [["太阳能发电机", 4], ["铝锭", 4], ["红石粉"]]},
+    "黑金刚石太阳能发电机": {type: "高级工作台", ingredients: [["高级太阳能发电机", 4], ["铝锭", 4], ["黑金刚石"]]},
+    "充能太阳能发电机": {type: "高级工作台", ingredients: [["黑金刚石太阳能发电机", 4], ["起泡锭", 4], ["电磁铁"]]},
     "充电台": {
-        "type": "增强型工作台",
-        "map": [[null, "电磁铁", null], ["电池", "工作台", "电池"], [null, "小型储能电容", null]],
-        "ingredients": [["电磁铁"], ["电池", 2], ["工作台"], ["小型储能电容"]]
+        type: "增强型工作台",
+        map: [[null, "电磁铁", null], ["电池", "工作台", "电池"], [null, "小型储能电容", null]],
+        ingredients: [["电磁铁"], ["电池", 2], ["工作台"], ["小型储能电容"]]
     },
     "电炉": {
-        "type": "增强型工作台",
-        "map": [[null, "熔炉", null], ["镀金铁锭", "加热线圈", "镀金铁锭"], ["镀金铁锭", "电动马达", "镀金铁锭"]],
-        "ingredients": [["熔炉"], ["镀金铁锭", 4], ["加热线圈"], ["电动马达"]]
+        type: "增强型工作台",
+        map: [[null, "熔炉", null], ["镀金铁锭", "加热线圈", "镀金铁锭"], ["镀金铁锭", "电动马达", "镀金铁锭"]],
+        ingredients: [["熔炉"], ["镀金铁锭", 4], ["加热线圈"], ["电动马达"]]
     },
     "电炉-II": {
-        "type": "增强型工作台",
-        "map": [[null, "电动马达", null], ["镀金铁锭", "电炉", "镀金铁锭"], ["镀金铁锭", "加热线圈", "镀金铁锭"]],
-        "ingredients": [["电动马达"], ["镀金铁锭", 4], ["电炉"], ["加热线圈"]]
+        type: "增强型工作台",
+        map: [[null, "电动马达", null], ["镀金铁锭", "电炉", "镀金铁锭"], ["镀金铁锭", "加热线圈", "镀金铁锭"]],
+        ingredients: [["电动马达"], ["镀金铁锭", 4], ["电炉"], ["加热线圈"]]
     },
     "电炉-III": {
-        "type": "增强型工作台",
-        "map": [[null, "电动马达", null], ["钢锭", "电炉-II", "钢锭"], ["镀金铁锭", "加热线圈", "镀金铁锭"]],
-        "ingredients": [["电动马达"], ["钢锭", 2], ["电炉-II"], ["镀金铁锭", 2], ["加热线圈"]]
+        type: "增强型工作台",
+        map: [[null, "电动马达", null], ["钢锭", "电炉-II", "钢锭"], ["镀金铁锭", "加热线圈", "镀金铁锭"]],
+        ingredients: [["电动马达"], ["钢锭", 2], ["电炉-II"], ["镀金铁锭", 2], ["加热线圈"]]
     },
     "电动淘金机": {
-        "type": "增强型工作台",
-        "map": [[null, "淘金盘", null], ["燧石", "电动马达", "燧石"], ["铝锭", "铝锭", "铝锭"]],
-        "ingredients": [["淘金盘"], ["燧石", 2], ["电动马达"], ["铝锭", 3]]
+        type: "增强型工作台",
+        map: [[null, "淘金盘", null], ["燧石", "电动马达", "燧石"], ["铝锭", "铝锭", "铝锭"]],
+        ingredients: [["淘金盘"], ["燧石", 2], ["电动马达"], ["铝锭", 3]]
     },
-    "电动淘金机-II": {"type": "高级工作台", "ingredients": [["硬铝锭", 3], ["铁锭", 2], ["淘金盘"], ["电动淘金机"]]},
+    "电动淘金机-II": {type: "高级工作台", ingredients: [["硬铝锭", 3], ["铁锭", 2], ["淘金盘"], ["电动淘金机"]]},
     "电动淘金机-III": {
-        "type": "高级工作台",
-        "ingredients": [["钴锭", 2], ["电动马达", 2], ["起泡锭"], ["淘金盘"], ["电动淘金机-II"]]
+        type: "高级工作台",
+        ingredients: [["钴锭", 2], ["电动马达", 2], ["起泡锭"], ["淘金盘"], ["电动淘金机-II"]]
     },
     "电动洗矿机": {
-        "type": "增强型工作台",
-        "map": [[null, "水桶", null], ["电磁铁", "电动淘金机", "电磁铁"], ["铜锭", "铜锭", "铜锭"]],
-        "ingredients": [["水桶"], ["电磁铁", 2], ["电动淘金机"], ["铜锭", 3]]
+        type: "增强型工作台",
+        map: [[null, "水桶", null], ["电磁铁", "电动淘金机", "电磁铁"], ["铜锭", "铜锭", "铜锭"]],
+        ingredients: [["水桶"], ["电磁铁", 2], ["电动淘金机"], ["铜锭", 3]]
     },
     "电动洗矿机-II": {
-        "type": "高级工作台",
-        "ingredients": [["大马士革钢锭", 3], ["电磁铁", 2], ["水桶"], ["电动洗矿机"]]
+        type: "高级工作台",
+        ingredients: [["大马士革钢锭", 3], ["电磁铁", 2], ["水桶"], ["电动洗矿机"]]
     },
     "电动洗矿机-III": {
-        "type": "高级工作台",
-        "ingredients": [["科林斯青铜锭", 2], ["电磁铁", 2], ["水桶"], ["起泡锭"], ["电动洗矿机-II"]]
+        type: "高级工作台",
+        ingredients: [["科林斯青铜锭", 2], ["电磁铁", 2], ["水桶"], ["起泡锭"], ["电动洗矿机-II"]]
     },
     "电动铸锭机": {
-        "type": "增强型工作台",
-        "map": [[null, "打火石", null], ["加热线圈", "电动洗矿机", "加热线圈"], ["大马士革钢锭", "电动马达", "大马士革钢锭"]],
-        "ingredients": [["打火石"], ["加热线圈", 2], ["电动洗矿机"], ["大马士革钢锭", 2], ["电动马达"]]
+        type: "增强型工作台",
+        map: [[null, "打火石", null], ["加热线圈", "电动洗矿机", "加热线圈"], ["大马士革钢锭", "电动马达", "大马士革钢锭"]],
+        ingredients: [["打火石"], ["加热线圈", 2], ["电动洗矿机"], ["大马士革钢锭", 2], ["电动马达"]]
     },
     "电动铸锭机-II": {
-        "type": "高级工作台",
-        "ingredients": [["镀金铁锭", 2], ["黄铜锭", 2], ["加热线圈", 2], ["电动马达"], ["打火石"], ["电动铸锭机"]]
+        type: "高级工作台",
+        ingredients: [["镀金铁锭", 2], ["黄铜锭", 2], ["加热线圈", 2], ["电动马达"], ["打火石"], ["电动铸锭机"]]
     },
     "电动铸锭机-III": {
-        "type": "高级工作台",
-        "ingredients": [["镀金铁锭", 2], ["黄铜锭", 2], ["加热线圈", 2], ["起泡锭"], ["打火石"], ["电动铸锭机-II"]]
+        type: "高级工作台",
+        ingredients: [["镀金铁锭", 2], ["黄铜锭", 2], ["加热线圈", 2], ["起泡锭"], ["打火石"], ["电动铸锭机-II"]]
     },
     "电动坩埚": {
-        "type": "增强型工作台",
-        "map": [["铅锭", "坩埚", "铅锭"], ["大马士革钢锭", "加热线圈", "大马士革钢锭"], ["铅锭", "巨型储能电容", "铅锭"]],
-        "ingredients": [["铅锭", 4], ["坩埚"], ["大马士革钢锭", 2], ["加热线圈"], ["巨型储能电容"]]
+        type: "增强型工作台",
+        map: [["铅锭", "坩埚", "铅锭"], ["大马士革钢锭", "加热线圈", "大马士革钢锭"], ["铅锭", "巨型储能电容", "铅锭"]],
+        ingredients: [["铅锭", 4], ["坩埚"], ["大马士革钢锭", 2], ["加热线圈"], ["巨型储能电容"]]
     },
     "电动坩埚-II": {
-        "type": "增强型工作台",
-        "map": [["科林斯青铜锭", "电动坩埚", "科林斯青铜锭"], ["大马士革钢锭", "电动马达", "大马士革钢锭"], ["铅锭", "加热线圈", "铅锭"]],
-        "ingredients": [["科林斯青铜锭", 2], ["电动坩埚"], ["大马士革钢锭", 2], ["电动马达"], ["铅锭", 2], ["加热线圈"]]
+        type: "增强型工作台",
+        map: [["科林斯青铜锭", "电动坩埚", "科林斯青铜锭"], ["大马士革钢锭", "电动马达", "大马士革钢锭"], ["铅锭", "加热线圈", "铅锭"]],
+        ingredients: [["科林斯青铜锭", 2], ["电动坩埚"], ["大马士革钢锭", 2], ["电动马达"], ["铅锭", 2], ["加热线圈"]]
     },
     "电动坩埚-III": {
-        "type": "增强型工作台",
-        "map": [["科林斯青铜锭", "电动坩埚-II", "科林斯青铜锭"], ["钢板", "能量水晶", "钢板"], ["铅锭", "铅锭", "铅锭"]],
-        "ingredients": [["科林斯青铜锭", 2], ["电动坩埚-II"], ["钢板", 2], ["能量水晶"], ["铅锭", 3]]
+        type: "增强型工作台",
+        map: [["科林斯青铜锭", "电动坩埚-II", "科林斯青铜锭"], ["钢板", "能量水晶", "钢板"], ["铅锭", "铅锭", "铅锭"]],
+        ingredients: [["科林斯青铜锭", 2], ["电动坩埚-II"], ["钢板", 2], ["能量水晶"], ["铅锭", 3]]
     },
     "电力碎矿机": {
-        "type": "增强型工作台",
-        "map": [[null, "钻石镐", null], ["镀金铁锭", "加热线圈", "镀金铁锭"], ["镀金铁锭", "电动马达", "镀金铁锭"]],
-        "ingredients": [["钻石镐"], ["镀金铁锭", 4], ["加热线圈"], ["电动马达"]]
+        type: "增强型工作台",
+        map: [[null, "钻石镐", null], ["镀金铁锭", "加热线圈", "镀金铁锭"], ["镀金铁锭", "电动马达", "镀金铁锭"]],
+        ingredients: [["钻石镐"], ["镀金铁锭", 4], ["加热线圈"], ["电动马达"]]
     },
     "电力碎矿机-II": {
-        "type": "高级工作台",
-        "ingredients": [["镀金铁锭", 2], ["加热线圈", 2], ["起泡锭"], ["钻石镐"], ["电力碎矿机"]]
+        type: "高级工作台",
+        ingredients: [["镀金铁锭", 2], ["加热线圈", 2], ["起泡锭"], ["钻石镐"], ["电力碎矿机"]]
     },
-    "加热压力仓": {"type": "高级工作台", "ingredients": [["铅锭", 6], ["加热线圈"], ["电动马达"], ["玻璃"]]},
+    "加热压力仓": {type: "高级工作台", ingredients: [["铅锭", 6], ["加热线圈"], ["电动马达"], ["玻璃"]]},
     "加热压力仓-II": {
-        "type": "高级工作台",
-        "ingredients": [["铅锭", 4], ["强化合金锭", 2], ["加热线圈"], ["电动马达"], ["加热压力仓"]]
+        type: "高级工作台",
+        ingredients: [["铅锭", 4], ["强化合金锭", 2], ["加热线圈"], ["电动马达"], ["加热压力仓"]]
     },
     "电力打粉机": {
-        "type": "增强型工作台",
-        "map": [[null, "电力碎矿机", null], ["铅锭", "中型储能电容", "铅锭"], ["铅锭", "加热线圈", "铅锭"]],
-        "ingredients": [["电力碎矿机"], ["铅锭", 4], ["中型储能电容"], ["加热线圈"]]
+        type: "增强型工作台",
+        map: [[null, "电力碎矿机", null], ["铅锭", "中型储能电容", "铅锭"], ["铅锭", "加热线圈", "铅锭"]],
+        ingredients: [["电力碎矿机"], ["铅锭", 4], ["中型储能电容"], ["加热线圈"]]
     },
     "煤发电机": {
-        "type": "增强型工作台",
-        "map": [["加热线圈", "熔炉", "加热线圈"], ["镍锭", "电动马达", "镍锭"], [null, "镍锭", null]],
-        "ingredients": [["加热线圈", 2], ["熔炉"], ["镍锭", 3], ["电动马达"]]
+        type: "增强型工作台",
+        map: [["加热线圈", "熔炉", "加热线圈"], ["镍锭", "电动马达", "镍锭"], [null, "镍锭", null]],
+        ingredients: [["加热线圈", 2], ["熔炉"], ["镍锭", 3], ["电动马达"]]
     },
     "煤发电机-II": {
-        "type": "高级工作台",
-        "ingredients": [["硬化金属", 2], ["岩浆块", 2], ["电动马达"], ["加热线圈"], ["煤发电机"]]
+        type: "高级工作台",
+        ingredients: [["硬化金属", 2], ["岩浆块", 2], ["电动马达"], ["加热线圈"], ["煤发电机"]]
     },
-    "生物反应器": {"type": "高级工作台", "ingredients": [["铝黄铜锭", 3], ["加热线圈", 2], ["电动马达"], ["搅拌机"]]},
+    "生物反应器": {type: "高级工作台", ingredients: [["铝黄铜锭", 3], ["加热线圈", 2], ["电动马达"], ["搅拌机"]]},
     "自动烘干机": {
-        "type": "增强型工作台",
-        "map": [[null, null, null], ["加热线圈", "烟熏炉", "加热线圈"], [null, "营火", null]],
-        "ingredients": [["加热线圈", 2], ["烟熏炉"], ["营火"]]
+        type: "增强型工作台",
+        map: [[null, null, null], ["加热线圈", "烟熏炉", "加热线圈"], [null, "营火", null]],
+        ingredients: [["加热线圈", 2], ["烟熏炉"], ["营火"]]
     },
     "电力碳压机": {
-        "type": "高级工作台",
-        "ingredients": [["大马士革钢锭", 3], ["活塞", 2], ["电动马达"], ["中型储能电容"]]
+        type: "高级工作台",
+        ingredients: [["大马士革钢锭", 3], ["活塞", 2], ["电动马达"], ["中型储能电容"]]
     },
     "电力碳压机-II": {
-        "type": "高级工作台",
-        "ingredients": [["大马士革钢锭", 5], ["粘性活塞", 2], ["电力碳压机"], ["大型储能电容"]]
+        type: "高级工作台",
+        ingredients: [["大马士革钢锭", 5], ["粘性活塞", 2], ["电力碳压机"], ["大型储能电容"]]
     },
-    "镁盐发电机": {"type": "高级工作台", "ingredients": [["硬铝锭", 3], ["压缩碳", 2], ["电动马达"], ["水桶"]]},
+    "镁盐发电机": {type: "高级工作台", ingredients: [["硬铝锭", 3], ["压缩碳", 2], ["电动马达"], ["水桶"]]},
     "自动附魔机": {
-        "type": "增强型工作台",
-        "map": [[null, "附魔台", null], ["黑金刚石", "电动马达", "黑金刚石"], ["防凋灵黑曜石", "防凋灵黑曜石", "防凋灵黑曜石"]],
-        "ingredients": [["附魔台"], ["黑金刚石", 2], ["电动马达"], ["防凋灵黑曜石", 3]]
+        type: "增强型工作台",
+        map: [[null, "附魔台", null], ["黑金刚石", "电动马达", "黑金刚石"], ["防凋灵黑曜石", "防凋灵黑曜石", "防凋灵黑曜石"]],
+        ingredients: [["附魔台"], ["黑金刚石", 2], ["电动马达"], ["防凋灵黑曜石", 3]]
     },
     "自动袪魔机": {
-        "type": "高级工作台",
-        "ingredients": [["防凋灵黑曜石", 3], ["黑金刚石", 2], ["红石粉", 2], ["铁砧"], ["自动附魔机"]]
+        type: "高级工作台",
+        ingredients: [["防凋灵黑曜石", 3], ["黑金刚石", 2], ["红石粉", 2], ["铁砧"], ["自动附魔机"]]
     },
     "自动铁砧": {
-        "type": "增强型工作台",
-        "map": [[null, "铁砧", null], ["强化合金锭", "电动马达", "强化合金锭"], ["铁块", "铁块", "铁块"]],
-        "ingredients": [["铁砧"], ["强化合金锭", 2], ["电动马达"], ["铁块", 3]]
+        type: "增强型工作台",
+        map: [[null, "铁砧", null], ["强化合金锭", "电动马达", "强化合金锭"], ["铁块", "铁块", "铁块"]],
+        ingredients: [["铁砧"], ["强化合金锭", 2], ["电动马达"], ["铁块", 3]]
     },
-    "自动铁砧-II": {"type": "高级工作台", "ingredients": [["铁块", 3], ["钢板", 2], ["加热线圈"], ["自动铁砧"]]},
+    "自动铁砧-II": {type: "高级工作台", ingredients: [["铁块", 3], ["钢板", 2], ["加热线圈"], ["自动铁砧"]]},
     "万用表": {
-        "type": "增强型工作台",
-        "map": [["铜锭", null, "铜锭"], [null, "红石合金锭", null], [null, "金锭(6克拉)", null]],
-        "ingredients": [["铜锭", 2], ["红石合金锭"], ["金锭(6克拉)"]]
+        type: "增强型工作台",
+        map: [["铜锭", null, "铜锭"], [null, "红石合金锭", null], [null, "金锭(6克拉)", null]],
+        ingredients: [["铜锭", 2], ["红石合金锭"], ["金锭(6克拉)"]]
     },
     "可编程式机器人(普通)": {
-        "type": "增强型工作台",
-        "map": [["塑料纸", "机器人内存核心", "塑料纸"], ["煤发电机", "电动马达", "箱子"], ["塑料纸", "塑料纸", "塑料纸"]],
-        "ingredients": [["塑料纸", 5], ["机器人内存核心"], ["煤发电机"], ["电动马达"], ["箱子"]]
+        type: "增强型工作台",
+        map: [["塑料纸", "机器人内存核心", "塑料纸"], ["煤发电机", "电动马达", "箱子"], ["塑料纸", "塑料纸", "塑料纸"]],
+        ingredients: [["塑料纸", 5], ["机器人内存核心"], ["煤发电机"], ["电动马达"], ["箱子"]]
     },
     "可编程式机器人(矿工)": {
-        "type": "增强型工作台",
-        "map": [[null, null, null], ["钻石镐", "可编程式机器人(普通)", "钻石镐"], [null, "电动马达", null]],
-        "ingredients": [["钻石镐", 2], ["可编程式机器人(普通)"], ["电动马达"]]
+        type: "增强型工作台",
+        map: [[null, null, null], ["钻石镐", "可编程式机器人(普通)", "钻石镐"], [null, "电动马达", null]],
+        ingredients: [["钻石镐", 2], ["可编程式机器人(普通)"], ["电动马达"]]
     },
     "可编程式机器人(农夫)": {
-        "type": "增强型工作台",
-        "map": [[null, null, null], ["钻石锄", "可编程式机器人(普通)", "钻石锄"], [null, "电动马达", null]],
-        "ingredients": [["钻石锄", 2], ["可编程式机器人(普通)"], ["电动马达"]]
+        type: "增强型工作台",
+        map: [[null, null, null], ["钻石锄", "可编程式机器人(普通)", "钻石锄"], [null, "电动马达", null]],
+        ingredients: [["钻石锄", 2], ["可编程式机器人(普通)"], ["电动马达"]]
     },
     "可编程式机器人(樵夫)": {
-        "type": "增强型工作台",
-        "map": [[null, null, null], ["钻石斧", "可编程式机器人(普通)", "钻石斧"], [null, "电动马达", null]],
-        "ingredients": [["钻石斧", 2], ["可编程式机器人(普通)"], ["电动马达"]]
+        type: "增强型工作台",
+        map: [[null, null, null], ["钻石斧", "可编程式机器人(普通)", "钻石斧"], [null, "电动马达", null]],
+        ingredients: [["钻石斧", 2], ["可编程式机器人(普通)"], ["电动马达"]]
     },
     "可编程式机器人(渔夫)": {
-        "type": "增强型工作台",
-        "map": [[null, null, null], ["钓鱼竿", "可编程式机器人(普通)", "钓鱼竿"], [null, "电动马达", null]],
-        "ingredients": [["钓鱼竿", 2], ["可编程式机器人(普通)"], ["电动马达"]]
+        type: "增强型工作台",
+        map: [[null, null, null], ["钓鱼竿", "可编程式机器人(普通)", "钓鱼竿"], [null, "电动马达", null]],
+        ingredients: [["钓鱼竿", 2], ["可编程式机器人(普通)"], ["电动马达"]]
     },
     "可编程式机器人(屠夫)": {
-        "type": "增强型工作台",
-        "map": [[null, "GPS发射器", null], ["钻石剑", "可编程式机器人(普通)", "钻石剑"], [null, "电动马达", null]],
-        "ingredients": [["GPS发射器"], ["钻石剑", 2], ["可编程式机器人(普通)"], ["电动马达"]]
+        type: "增强型工作台",
+        map: [[null, "GPS发射器", null], ["钻石剑", "可编程式机器人(普通)", "钻石剑"], [null, "电动马达", null]],
+        ingredients: [["GPS发射器"], ["钻石剑", 2], ["可编程式机器人(普通)"], ["电动马达"]]
     },
     "机器人交互接口(物品)": {
-        "type": "增强型工作台",
-        "map": [["塑料纸", "钢锭", "塑料纸"], ["钢锭", "基础电路板", "蓝色染色玻璃"], ["塑料纸", "钢锭", "塑料纸"]],
-        "ingredients": [["塑料纸", 4], ["钢锭", 3], ["基础电路板"], ["蓝色染色玻璃"]]
+        type: "增强型工作台",
+        map: [["塑料纸", "钢锭", "塑料纸"], ["钢锭", "基础电路板", "蓝色染色玻璃"], ["塑料纸", "钢锭", "塑料纸"]],
+        ingredients: [["塑料纸", 4], ["钢锭", 3], ["基础电路板"], ["蓝色染色玻璃"]]
     },
     "机器人交互接口(燃料)": {
-        "type": "增强型工作台",
-        "map": [["塑料纸", "钢锭", "塑料纸"], ["红色染色玻璃", "基础电路板", "钢锭"], ["塑料纸", "钢锭", "塑料纸"]],
-        "ingredients": [["塑料纸", 4], ["钢锭", 3], ["红色染色玻璃"], ["基础电路板"]]
+        type: "增强型工作台",
+        map: [["塑料纸", "钢锭", "塑料纸"], ["红色染色玻璃", "基础电路板", "钢锭"], ["塑料纸", "钢锭", "塑料纸"]],
+        ingredients: [["塑料纸", 4], ["钢锭", 3], ["红色染色玻璃"], ["基础电路板"]]
     },
     "高级可编程式机器人(普通)": {
-        "type": "增强型工作台",
-        "map": [["塑料纸", "机器人内存核心", "塑料纸"], ["燃烧反应机", "可编程式机器人(普通)", "箱子"], ["塑料纸", "能量水晶", "塑料纸"]],
-        "ingredients": [["塑料纸", 4], ["机器人内存核心"], ["燃烧反应机"], ["可编程式机器人(普通)"], ["箱子"], ["能量水晶"]]
+        type: "增强型工作台",
+        map: [["塑料纸", "机器人内存核心", "塑料纸"], ["燃烧反应机", "可编程式机器人(普通)", "箱子"], ["塑料纸", "能量水晶", "塑料纸"]],
+        ingredients: [["塑料纸", 4], ["机器人内存核心"], ["燃烧反应机"], ["可编程式机器人(普通)"], ["箱子"], ["能量水晶"]]
     },
     "高级可编程式机器人(渔夫)": {
-        "type": "增强型工作台",
-        "map": [[null, null, null], ["钓鱼竿", "高级可编程式机器人(普通)", "钓鱼竿"], [null, "电动马达", null]],
-        "ingredients": [["钓鱼竿", 2], ["高级可编程式机器人(普通)"], ["电动马达"]]
+        type: "增强型工作台",
+        map: [[null, null, null], ["钓鱼竿", "高级可编程式机器人(普通)", "钓鱼竿"], [null, "电动马达", null]],
+        ingredients: [["钓鱼竿", 2], ["高级可编程式机器人(普通)"], ["电动马达"]]
     },
     "高级可编程式机器人(屠夫)": {
-        "type": "增强型工作台",
-        "map": [[null, "GPS发射器", null], ["钻石剑", "高级可编程式机器人(普通)", "钻石剑"], [null, "电动马达", null]],
-        "ingredients": [["GPS发射器"], ["钻石剑", 2], ["高级可编程式机器人(普通)"], ["电动马达"]]
+        type: "增强型工作台",
+        map: [[null, "GPS发射器", null], ["钻石剑", "高级可编程式机器人(普通)", "钻石剑"], [null, "电动马达", null]],
+        ingredients: [["GPS发射器"], ["钻石剑", 2], ["高级可编程式机器人(普通)"], ["电动马达"]]
     },
     "高级可编程式机器人(农夫)": {
-        "type": "增强型工作台",
-        "map": [[null, "GPS发射器", null], ["钻石锄", "高级可编程式机器人(普通)", "钻石锄"], [null, "电动马达", null]],
-        "ingredients": [["GPS发射器"], ["钻石锄", 2], ["高级可编程式机器人(普通)"], ["电动马达"]]
+        type: "增强型工作台",
+        map: [[null, "GPS发射器", null], ["钻石锄", "高级可编程式机器人(普通)", "钻石锄"], [null, "电动马达", null]],
+        ingredients: [["GPS发射器"], ["钻石锄", 2], ["高级可编程式机器人(普通)"], ["电动马达"]]
     },
     "可授权式可编程式机器人(普通)": {
-        "type": "增强型工作台",
-        "map": [["塑料纸", "机器人内存核心", "塑料纸"], ["核反应堆", "高级可编程式机器人(普通)", "箱子"], ["起泡锭", "能量水晶", "起泡锭"]],
-        "ingredients": [["塑料纸", 2], ["机器人内存核心"], ["核反应堆"], ["高级可编程式机器人(普通)"], ["箱子"], ["起泡锭", 2], ["能量水晶"]]
+        type: "增强型工作台",
+        map: [["塑料纸", "机器人内存核心", "塑料纸"], ["核反应堆", "高级可编程式机器人(普通)", "箱子"], ["起泡锭", "能量水晶", "起泡锭"]],
+        ingredients: [["塑料纸", 2], ["机器人内存核心"], ["核反应堆"], ["高级可编程式机器人(普通)"], ["箱子"], ["起泡锭", 2], ["能量水晶"]]
     },
     "可授权式可编程式机器人(渔夫)": {
-        "type": "增强型工作台",
-        "map": [[null, null, null], ["钓鱼竿", "可授权式可编程式机器人(普通)", "钓鱼竿"], [null, "电动马达", null]],
-        "ingredients": [["钓鱼竿", 2], ["可授权式可编程式机器人(普通)"], ["电动马达"]]
+        type: "增强型工作台",
+        map: [[null, null, null], ["钓鱼竿", "可授权式可编程式机器人(普通)", "钓鱼竿"], [null, "电动马达", null]],
+        ingredients: [["钓鱼竿", 2], ["可授权式可编程式机器人(普通)"], ["电动马达"]]
     },
     "可授权式可编程式机器人(屠夫)": {
-        "type": "增强型工作台",
-        "map": [[null, "黑金刚石GPS发射器", null], ["钻石剑", "可授权式可编程式机器人(普通)", "钻石剑"], [null, "电动马达", null]],
-        "ingredients": [["黑金刚石GPS发射器"], ["钻石剑", 2], ["可授权式可编程式机器人(普通)"], ["电动马达"]]
+        type: "增强型工作台",
+        map: [[null, "黑金刚石GPS发射器", null], ["钻石剑", "可授权式可编程式机器人(普通)", "钻石剑"], [null, "电动马达", null]],
+        ingredients: [["黑金刚石GPS发射器"], ["钻石剑", 2], ["可授权式可编程式机器人(普通)"], ["电动马达"]]
     },
-    "炼油厂": {"type": "高级工作台", "ingredients": [["钢化玻璃", 4], ["红石合金锭", 2], ["活塞", 2], ["电动马达"]]},
+    "炼油厂": {type: "高级工作台", ingredients: [["钢化玻璃", 4], ["红石合金锭", 2], ["活塞", 2], ["电动马达"]]},
     "岩浆发电机": {
-        "type": "增强型工作台",
-        "map": [[null, "金锭(16克拉)", null], ["大马士革钢锭", "电动马达", "大马士革钢锭"], ["加热线圈", "大马士革钢锭", "加热线圈"]],
-        "ingredients": [["金锭(16克拉)"], ["大马士革钢锭", 3], ["电动马达"], ["加热线圈", 2]]
+        type: "增强型工作台",
+        map: [[null, "金锭(16克拉)", null], ["大马士革钢锭", "电动马达", "大马士革钢锭"], ["加热线圈", "大马士革钢锭", "加热线圈"]],
+        ingredients: [["金锭(16克拉)"], ["大马士革钢锭", 3], ["电动马达"], ["加热线圈", 2]]
     },
     "岩浆发电机-II": {
-        "type": "高级工作台",
-        "ingredients": [["科林斯青铜锭", 3], ["压缩碳", 3], ["加热线圈", 2], ["岩浆发电机"]]
+        type: "高级工作台",
+        ingredients: [["科林斯青铜锭", 3], ["压缩碳", 3], ["加热线圈", 2], ["岩浆发电机"]]
     },
     "燃烧反应机": {
-        "type": "增强型工作台",
-        "map": [[null, "钢锭", null], ["钢锭", "电动马达", "钢锭"], ["加热线圈", "钢锭", "加热线圈"]],
-        "ingredients": [["钢锭", 4], ["电动马达"], ["加热线圈", 2]]
+        type: "增强型工作台",
+        map: [[null, "钢锭", null], ["钢锭", "电动马达", "钢锭"], ["加热线圈", "钢锭", "加热线圈"]],
+        ingredients: [["钢锭", 4], ["电动马达"], ["加热线圈", 2]]
     },
     "食品加工机": {
-        "type": "增强型工作台",
-        "map": [["银铜合金锭", "银锭", "银铜合金锭"], ["锡罐", "小型储能电容", "锡罐"], [null, "电动马达", null]],
-        "ingredients": [["银铜合金锭", 2], ["银锭"], ["锡罐", 2], ["小型储能电容"], ["电动马达"]]
+        type: "增强型工作台",
+        map: [["银铜合金锭", "银锭", "银铜合金锭"], ["锡罐", "小型储能电容", "锡罐"], [null, "电动马达", null]],
+        ingredients: [["银铜合金锭", 2], ["银锭"], ["锡罐", 2], ["小型储能电容"], ["电动马达"]]
     },
     "自动喂食机": {
-        "type": "增强型工作台",
-        "map": [["金锭(18克拉)", "锡罐", "金锭(18克拉)"], ["电动马达", "干草捆", "电动马达"], ["铅锭", "食品加工机", "铅锭"]],
-        "ingredients": [["金锭(18克拉)", 2], ["锡罐"], ["电动马达", 2], ["干草捆"], ["铅锭", 2], ["食品加工机"]]
+        type: "增强型工作台",
+        map: [["金锭(18克拉)", "锡罐", "金锭(18克拉)"], ["电动马达", "干草捆", "电动马达"], ["铅锭", "食品加工机", "铅锭"]],
+        ingredients: [["金锭(18克拉)", 2], ["锡罐"], ["电动马达", 2], ["干草捆"], ["铅锭", 2], ["食品加工机"]]
     },
     "动物生长加速器": {
-        "type": "增强型工作台",
-        "map": [[null, "起泡锭", null], ["电动马达", "有机食物(小麦)", "电动马达"], ["强化合金锭", "自动喂食机", "强化合金锭"]],
-        "ingredients": [["起泡锭"], ["电动马达", 2], ["有机食物(小麦)"], ["强化合金锭", 2], ["自动喂食机"]]
+        type: "增强型工作台",
+        map: [[null, "起泡锭", null], ["电动马达", "有机食物(小麦)", "电动马达"], ["强化合金锭", "自动喂食机", "强化合金锭"]],
+        ingredients: [["起泡锭"], ["电动马达", 2], ["有机食物(小麦)"], ["强化合金锭", 2], ["自动喂食机"]]
     },
     "经验收集器": {
-        "type": "增强型工作台",
-        "map": [[null, "起泡锭", null], ["防凋灵黑曜石", "自动附魔机", "防凋灵黑曜石"], ["铝青铜锭", "电动马达", "铝青铜锭"]],
-        "ingredients": [["起泡锭"], ["防凋灵黑曜石", 2], ["自动附魔机"], ["铝青铜锭", 2], ["电动马达"]]
+        type: "增强型工作台",
+        map: [[null, "起泡锭", null], ["防凋灵黑曜石", "自动附魔机", "防凋灵黑曜石"], ["铝青铜锭", "电动马达", "铝青铜锭"]],
+        ingredients: [["起泡锭"], ["防凋灵黑曜石", 2], ["自动附魔机"], ["铝青铜锭", 2], ["电动马达"]]
     },
     "食品堆肥器": {
-        "type": "增强型工作台",
-        "map": [["大马士革钢锭", "食品加工机", "大马士革钢锭"], ["锡罐", "中型储能电容", "锡罐"], [null, "电动马达", null]],
-        "ingredients": [["大马士革钢锭", 2], ["食品加工机"], ["锡罐", 2], ["中型储能电容"], ["电动马达"]]
+        type: "增强型工作台",
+        map: [["大马士革钢锭", "食品加工机", "大马士革钢锭"], ["锡罐", "中型储能电容", "锡罐"], [null, "电动马达", null]],
+        ingredients: [["大马士革钢锭", 2], ["食品加工机"], ["锡罐", 2], ["中型储能电容"], ["电动马达"]]
     },
     "食品堆肥器-II": {
-        "type": "高级工作台",
-        "ingredients": [["硬化金属", 2], ["电动马达", 2], ["强化合金锭"], ["电磁铁"], ["食品堆肥器"]]
+        type: "高级工作台",
+        ingredients: [["硬化金属", 2], ["电动马达", 2], ["强化合金锭"], ["电磁铁"], ["食品堆肥器"]]
     },
     "作物生长加速器": {
-        "type": "增强型工作台",
-        "map": [[null, "起泡锭", null], ["电动马达", "可编程式机器人(农夫)", "电动马达"], ["电磁铁", "动物生长加速器", "电磁铁"]],
-        "ingredients": [["起泡锭"], ["电动马达", 2], ["可编程式机器人(农夫)"], ["电磁铁", 2], ["动物生长加速器"]]
+        type: "增强型工作台",
+        map: [[null, "起泡锭", null], ["电动马达", "可编程式机器人(农夫)", "电动马达"], ["电磁铁", "动物生长加速器", "电磁铁"]],
+        ingredients: [["起泡锭"], ["电动马达", 2], ["可编程式机器人(农夫)"], ["电磁铁", 2], ["动物生长加速器"]]
     },
     "作物生长加速器-II": {
-        "type": "高级工作台",
-        "ingredients": [["电动马达", 2], ["电磁铁", 2], ["起泡锭"], ["高级电路板"], ["作物生长加速器"]]
+        type: "高级工作台",
+        ingredients: [["电动马达", 2], ["电磁铁", 2], ["起泡锭"], ["高级电路板"], ["作物生长加速器"]]
     },
     "冰箱": {
-        "type": "增强型工作台",
-        "map": [[null, "银锭", null], ["电动马达", "浮冰", "电动马达"], ["冷却装置", "中型储能电容", "冷却装置"]],
-        "ingredients": [["银锭"], ["电动马达", 2], ["浮冰"], ["冷却装置", 2], ["中型储能电容"]]
+        type: "增强型工作台",
+        map: [[null, "银锭", null], ["电动马达", "浮冰", "电动马达"], ["冷却装置", "中型储能电容", "冷却装置"]],
+        ingredients: [["银锭"], ["电动马达", 2], ["浮冰"], ["冷却装置", 2], ["中型储能电容"]]
     },
     "冰箱-II": {
-        "type": "高级工作台",
-        "ingredients": [["冷却装置", 2], ["电磁铁", 2], ["银锭"], ["铝黄铜锭"], ["冰箱"]]
+        type: "高级工作台",
+        ingredients: [["冷却装置", 2], ["电磁铁", 2], ["银锭"], ["铝黄铜锭"], ["冰箱"]]
     },
     "核反应堆": {
-        "type": "增强型工作台",
-        "map": [["起泡锭", "黑金刚石镶边储能电容", "起泡锭"], ["钢筋板", "冷却装置", "钢筋板"], ["铅锭", "钢筋板", "铅锭"]],
-        "ingredients": [["起泡锭", 2], ["黑金刚石镶边储能电容"], ["钢筋板", 3], ["冷却装置"], ["铅锭", 2]]
+        type: "增强型工作台",
+        map: [["起泡锭", "黑金刚石镶边储能电容", "起泡锭"], ["钢筋板", "冷却装置", "钢筋板"], ["铅锭", "钢筋板", "铅锭"]],
+        ingredients: [["起泡锭", 2], ["黑金刚石镶边储能电容"], ["钢筋板", 3], ["冷却装置"], ["铅锭", 2]]
     },
     "下界之星反应堆": {
-        "type": "增强型工作台",
-        "map": [["钚铀混合氧化物核燃料", "黑金刚石镶边储能电容", "钚铀混合氧化物核燃料"], ["钢筋板", "下界之星", "钢筋板"], ["科林斯青铜锭", "钢筋板", "科林斯青铜锭"]],
-        "ingredients": [["钚铀混合氧化物核燃料", 2], ["黑金刚石镶边储能电容"], ["钢筋板", 3], ["下界之星"], ["科林斯青铜锭", 2]]
+        type: "增强型工作台",
+        map: [["钚铀混合氧化物核燃料", "黑金刚石镶边储能电容", "钚铀混合氧化物核燃料"], ["钢筋板", "下界之星", "钢筋板"], ["科林斯青铜锭", "钢筋板", "科林斯青铜锭"]],
+        ingredients: [["钚铀混合氧化物核燃料", 2], ["黑金刚石镶边储能电容"], ["钢筋板", 3], ["下界之星"], ["科林斯青铜锭", 2]]
     },
-    "自动合成机": {"type": "高级工作台", "ingredients": [["货运马达", 2], ["起泡锭"], ["电动马达"], ["工作台"]]},
+    "自动合成机": {type: "高级工作台", ingredients: [["货运马达", 2], ["起泡锭"], ["电动马达"], ["工作台"]]},
     "反应堆访问接口": {
-        "type": "增强型工作台",
-        "map": [[null, "起泡锭", null], ["铅锭", "货运马达", "铅锭"], [null, "电动马达", null]],
-        "ingredients": [["起泡锭"], ["铅锭", 2], ["货运马达"], ["电动马达"]]
+        type: "增强型工作台",
+        map: [[null, "起泡锭", null], ["铅锭", "货运马达", "铅锭"], [null, "电动马达", null]],
+        ingredients: [["起泡锭"], ["铅锭", 2], ["货运马达"], ["电动马达"]]
     },
     "流体泵": {
-        "type": "增强型工作台",
-        "map": [[null, "中型储能电容", null], ["铁桶", "货运马达", "铁桶"], [null, "原油泵", null]],
-        "ingredients": [["中型储能电容"], ["铁桶", 2], ["货运马达"], ["原油泵"]]
+        type: "增强型工作台",
+        map: [[null, "中型储能电容", null], ["铁桶", "货运马达", "铁桶"], [null, "原油泵", null]],
+        ingredients: [["中型储能电容"], ["铁桶", 2], ["货运马达"], ["原油泵"]]
     },
     "碳压机": {
-        "type": "增强型工作台",
-        "map": [["碳", "电动马达", "碳"], ["碳", "加热压力舱", "碳"], ["加热线圈", "黑金刚石", "加热线圈"]],
-        "ingredients": [["碳", 4], ["电动马达"], ["加热压力舱"], ["加热线圈", 2], ["黑金刚石"]]
+        type: "增强型工作台",
+        map: [["碳", "电动马达", "碳"], ["碳", "加热压力舱", "碳"], ["加热线圈", "黑金刚石", "加热线圈"]],
+        ingredients: [["碳", 4], ["电动马达"], ["加热压力舱"], ["加热线圈", 2], ["黑金刚石"]]
     },
     "碳压机-II": {
-        "type": "增强型工作台",
-        "map": [["黑金刚石", "电动马达", "黑金刚石"], ["碳", "碳压机", "碳"], ["加热线圈", "电磁铁", "加热线圈"]],
-        "ingredients": [["黑金刚石", 2], ["电动马达"], ["碳", 2], ["碳压机"], ["加热线圈", 2], ["电磁铁"]]
+        type: "增强型工作台",
+        map: [["黑金刚石", "电动马达", "黑金刚石"], ["碳", "碳压机", "碳"], ["加热线圈", "电磁铁", "加热线圈"]],
+        ingredients: [["黑金刚石", 2], ["电动马达"], ["碳", 2], ["碳压机"], ["加热线圈", 2], ["电磁铁"]]
     },
     "碳压机-III": {
-        "type": "增强型工作台",
-        "map": [["黑金刚石", "电动马达", "黑金刚石"], ["强化合金锭", "碳压机-II", "强化合金锭"], ["加热线圈", "电磁铁", "加热线圈"]],
-        "ingredients": [["黑金刚石", 2], ["电动马达"], ["强化合金锭", 2], ["碳压机-II"], ["加热线圈", 2], ["电磁铁"]]
+        type: "增强型工作台",
+        map: [["黑金刚石", "电动马达", "黑金刚石"], ["强化合金锭", "碳压机-II", "强化合金锭"], ["加热线圈", "电磁铁", "加热线圈"]],
+        ingredients: [["黑金刚石", 2], ["电动马达"], ["强化合金锭", 2], ["碳压机-II"], ["加热线圈", 2], ["电磁铁"]]
     },
     "电力冶炼机": {
-        "type": "高级工作台",
-        "ingredients": [["地狱砖块", 2], ["镀金铁锭", 2], ["加热线圈", 2], ["电动马达", 2], ["电动铸锭机"]]
+        type: "高级工作台",
+        ingredients: [["地狱砖块", 2], ["镀金铁锭", 2], ["加热线圈", 2], ["电动马达", 2], ["电动铸锭机"]]
     },
     "电力冶炼机-II": {
-        "type": "高级工作台",
-        "ingredients": [["大马士革钢锭", 2], ["镀金铁锭", 2], ["加热线圈", 2], ["电动马达"], ["能量水晶"], ["电力冶炼机"]]
+        type: "高级工作台",
+        ingredients: [["大马士革钢锭", 2], ["镀金铁锭", 2], ["加热线圈", 2], ["电动马达"], ["能量水晶"], ["电力冶炼机"]]
     },
     "凋灵汇编器": {
-        "type": "高级工作台",
-        "ingredients": [["起泡锭", 2], ["防凋灵黑曜石", 2], ["强化合金锭"], ["机器人内存核心"], ["电动马达"], ["下界之星"], ["黑金刚石镶边储能电容"]]
+        type: "高级工作台",
+        ingredients: [["起泡锭", 2], ["防凋灵黑曜石", 2], ["强化合金锭"], ["机器人内存核心"], ["电动马达"], ["下界之星"], ["黑金刚石镶边储能电容"]]
     },
     "GPS发射器": {
-        "type": "增强型工作台",
-        "map": [[null, null, "电磁铁"], ["钢锭", "高级电路板", "钢锭"], ["钢锭", "电动马达", "钢锭"]],
-        "ingredients": [["电磁铁"], ["钢锭", 4], ["高级电路板"], ["电动马达"]]
+        type: "增强型工作台",
+        map: [[null, null, "电磁铁"], ["钢锭", "高级电路板", "钢锭"], ["钢锭", "电动马达", "钢锭"]],
+        ingredients: [["电磁铁"], ["钢锭", 4], ["高级电路板"], ["电动马达"]]
     },
     "高级GPS发射器": {
-        "type": "增强型工作台",
-        "map": [["GPS发射器", "青铜锭", "GPS发射器"], ["青铜锭", "碳", "青铜锭"], ["GPS发射器", "青铜锭", "GPS发射器"]],
-        "ingredients": [["GPS发射器", 4], ["青铜锭", 4], ["碳"]]
+        type: "增强型工作台",
+        map: [["GPS发射器", "青铜锭", "GPS发射器"], ["青铜锭", "碳", "青铜锭"], ["GPS发射器", "青铜锭", "GPS发射器"]],
+        ingredients: [["GPS发射器", 4], ["青铜锭", 4], ["碳"]]
     },
     "充能GPS发射器": {
-        "type": "增强型工作台",
-        "map": [["黑金刚石GPS发射器", "起泡锭", "黑金刚石GPS发射器"], ["镍锭", "黑金刚石", "镍锭"], ["黑金刚石GPS发射器", "起泡锭", "黑金刚石GPS发射器"]],
-        "ingredients": [["黑金刚石GPS发射器", 4], ["起泡锭", 2], ["镍锭", 2], ["黑金刚石"]]
+        type: "增强型工作台",
+        map: [["黑金刚石GPS发射器", "起泡锭", "黑金刚石GPS发射器"], ["镍锭", "黑金刚石", "镍锭"], ["黑金刚石GPS发射器", "起泡锭", "黑金刚石GPS发射器"]],
+        ingredients: [["黑金刚石GPS发射器", 4], ["起泡锭", 2], ["镍锭", 2], ["黑金刚石"]]
     },
     "GPS控制面板": {
-        "type": "增强型工作台",
-        "map": [[null, null, "电磁铁"], ["钴锭", "高级电路板", "钴锭"], ["铝黄铜锭", "铝黄铜锭", "铝黄铜锭"]],
-        "ingredients": [["电磁铁"], ["钴锭", 2], ["高级电路板"], ["铝黄铜锭", 3]]
+        type: "增强型工作台",
+        map: [[null, null, "电磁铁"], ["钴锭", "高级电路板", "钴锭"], ["铝黄铜锭", "铝黄铜锭", "铝黄铜锭"]],
+        ingredients: [["电磁铁"], ["钴锭", 2], ["高级电路板"], ["铝黄铜锭", 3]]
     },
     "GPS设置路径点工具": {
-        "type": "增强型工作台",
-        "map": [[null, "电磁铁", null], ["青金石", "基础电路板", "青金石"], ["红石粉", "红石合金锭", "红石粉"]],
-        "ingredients": [["电磁铁"], ["青金石", 2], ["基础电路板"], ["红石粉", 2], ["红石合金锭"]]
+        type: "增强型工作台",
+        map: [[null, "电磁铁", null], ["青金石", "基础电路板", "青金石"], ["红石粉", "红石合金锭", "红石粉"]],
+        ingredients: [["电磁铁"], ["青金石", 2], ["基础电路板"], ["红石粉", 2], ["红石合金锭"]]
     },
     "GPS应急发射器": {
-        "type": "增强型工作台",
-        "map": [[null, "电磁铁", null], [null, "GPS发射器", null], [null, "来世精华", null]],
-        "ingredients": [["电磁铁"], ["GPS发射器"], ["来世精华"]]
+        type: "增强型工作台",
+        map: [[null, "电磁铁", null], [null, "GPS发射器", null], [null, "来世精华", null]],
+        ingredients: [["电磁铁"], ["GPS发射器"], ["来世精华"]]
     },
     "GPS地形扫描器": {
-        "type": "增强型工作台",
-        "map": [[null, null, "电磁铁"], [null, "钢锭", "钢锭"], ["电磁铁", "电动马达", "电磁铁"]],
-        "ingredients": [["电磁铁", 3], ["钢锭", 2], ["电动马达"]]
+        type: "增强型工作台",
+        map: [[null, null, "电磁铁"], [null, "钢锭", "钢锭"], ["电磁铁", "电动马达", "电磁铁"]],
+        ingredients: [["电磁铁", 3], ["钢锭", 2], ["电动马达"]]
     },
     "便携式资源扫描器": {
-        "type": "增强型工作台",
-        "map": [["电磁铁", "指南针", "电磁铁"], ["钢锭", "GPS设置路径点工具", "钢锭"], ["焊锡锭", "电动马达", "焊锡锭"]],
-        "ingredients": [["电磁铁", 2], ["指南针"], ["钢锭", 2], ["GPS设置路径点工具"], ["焊锡锭", 2], ["电动马达"]]
+        type: "增强型工作台",
+        map: [["电磁铁", "指南针", "电磁铁"], ["钢锭", "GPS设置路径点工具", "钢锭"], ["焊锡锭", "电动马达", "焊锡锭"]],
+        ingredients: [["电磁铁", 2], ["指南针"], ["钢锭", 2], ["GPS设置路径点工具"], ["焊锡锭", 2], ["电动马达"]]
     },
     "原油泵": {
-        "type": "增强型工作台",
-        "map": [["钢锭", "中型储能电容", "钢锭"], ["钢锭", "电动马达", "钢锭"], [null, "铁桶", null]],
-        "ingredients": [["钢锭", 4], ["中型储能电容"], ["电动马达"], ["铁桶"]]
+        type: "增强型工作台",
+        map: [["钢锭", "中型储能电容", "钢锭"], ["钢锭", "电动马达", "钢锭"], [null, "铁桶", null]],
+        ingredients: [["钢锭", 4], ["中型储能电容"], ["电动马达"], ["铁桶"]]
     },
     "GEO矿机": {
-        "type": "高级工作台",
-        "ingredients": [["钻石镐", 2], ["强化合金锭", 2], ["电动马达"], ["原油泵"], ["中型储能电容"]]
+        type: "高级工作台",
+        ingredients: [["钻石镐", 2], ["强化合金锭", 2], ["电动马达"], ["原油泵"], ["中型储能电容"]]
     },
-    "GPS传送塔": {"type": "高级工作台", "ingredients": [["锌锭", 4], ["玻璃", 4], ["加热线圈"]], "count": 8},
+    "GPS传送塔": {type: "高级工作台", ingredients: [["锌锭", 4], ["玻璃", 4], ["加热线圈"]], count: 8},
     "GPS传送矩阵": {
-        "type": "增强型工作台",
-        "map": [["GPS信号塔", "强化合金锭", "GPS信号塔"], ["电磁铁", "GPS控制面板", "电磁铁"], ["GPS信号塔", "强化合金锭", "GPS信号塔"]],
-        "ingredients": [["GPS信号塔", 4], ["强化合金锭", 2], ["电磁铁", 2], ["GPS控制面板"]]
+        type: "增强型工作台",
+        map: [["GPS信号塔", "强化合金锭", "GPS信号塔"], ["电磁铁", "GPS控制面板", "电磁铁"], ["GPS信号塔", "强化合金锭", "GPS信号塔"]],
+        ingredients: [["GPS信号塔", 4], ["强化合金锭", 2], ["电磁铁", 2], ["GPS控制面板"]]
     },
     "GPS激活设备(公共)": {
-        "type": "增强型工作台",
-        "map": [[null, "石头压力板", null], ["红石粉", "GPS发射器", "红石粉"], ["银铜合金锭", "银铜合金锭", "银铜合金锭"]],
-        "ingredients": [["石头压力板"], ["红石粉", 2], ["GPS发射器"], ["银铜合金锭", 3]]
+        type: "增强型工作台",
+        map: [[null, "石头压力板", null], ["红石粉", "GPS发射器", "红石粉"], ["银铜合金锭", "银铜合金锭", "银铜合金锭"]],
+        ingredients: [["石头压力板"], ["红石粉", 2], ["GPS发射器"], ["银铜合金锭", 3]]
     },
     "GPS激活设备(私人)": {
-        "type": "增强型工作台",
-        "map": [[null, "铅锭", null], ["钴锭", "GPS激活设备(公共)", "钴锭"], [null, "铅锭", null]],
-        "ingredients": [["铅锭", 2], ["钴锭", 2], ["GPS激活设备(公共)"]]
+        type: "增强型工作台",
+        map: [[null, "铅锭", null], ["钴锭", "GPS激活设备(公共)", "钴锭"], [null, "铅锭", null]],
+        ingredients: [["铅锭", 2], ["钴锭", 2], ["GPS激活设备(公共)"]]
     },
     "电梯板": {
-        "type": "增强型工作台",
-        "map": [[null, "石头压力板", null], ["活塞", "电动马达", "活塞"], ["铝青铜锭", "铝青铜锭", "铝青铜锭"]],
-        "ingredients": [["石头压力板"], ["活塞", 2], ["电动马达"], ["铝青铜锭", 3]],
-        "count": 2
+        type: "增强型工作台",
+        map: [[null, "石头压力板", null], ["活塞", "电动马达", "活塞"], ["铝青铜锭", "铝青铜锭", "铝青铜锭"]],
+        ingredients: [["石头压力板"], ["活塞", 2], ["电动马达"], ["铝青铜锭", 3]],
+        count: 2
     },
     "货运马达": {
-        "type": "增强型工作台",
-        "map": [["钢化玻璃", "电磁铁", "钢化玻璃"], ["银锭", "电动马达", "银锭"], ["钢化玻璃", "电磁铁", "钢化玻璃"]],
-        "ingredients": [["钢化玻璃", 4], ["电磁铁", 2], ["银锭", 2], ["电动马达"]],
-        "count": 4
+        type: "增强型工作台",
+        map: [["钢化玻璃", "电磁铁", "钢化玻璃"], ["银锭", "电动马达", "银锭"], ["钢化玻璃", "电磁铁", "钢化玻璃"]],
+        ingredients: [["钢化玻璃", 4], ["电磁铁", 2], ["银锭", 2], ["电动马达"]],
+        count: 4
     },
     "货运管理器": {
-        "type": "增强型工作台",
-        "map": [[null, "全息投影仪", null], ["钢筋板", "货运马达", "钢筋板"], ["铝青铜锭", "机器人内存核心", "铝青铜锭"]],
-        "ingredients": [["全息投影仪"], ["钢筋板", 2], ["货运马达"], ["铝青铜锭", 2], ["机器人内存核心"]]
+        type: "增强型工作台",
+        map: [[null, "全息投影仪", null], ["钢筋板", "货运马达", "钢筋板"], ["铝青铜锭", "机器人内存核心", "铝青铜锭"]],
+        ingredients: [["全息投影仪"], ["钢筋板", 2], ["货运马达"], ["铝青铜锭", 2], ["机器人内存核心"]]
     },
     "货运节点(连接器)": {
-        "type": "增强型工作台",
-        "map": [["青铜锭", "银锭", "青铜锭"], ["银锭", "货运马达", "银锭"], ["青铜锭", "银锭", "青铜锭"]],
-        "ingredients": [["青铜锭", 4], ["银锭", 4], ["货运马达"]],
-        "count": 4
+        type: "增强型工作台",
+        map: [["青铜锭", "银锭", "青铜锭"], ["银锭", "货运马达", "银锭"], ["青铜锭", "银锭", "青铜锭"]],
+        ingredients: [["青铜锭", 4], ["银锭", 4], ["货运马达"]],
+        count: 4
     },
     "货运节点(输入)": {
-        "type": "增强型工作台",
-        "map": [[null, "漏斗", null], ["银铜合金锭", "货运节点(连接器)", "银铜合金锭"], [null, "漏斗", null]],
-        "ingredients": [["漏斗", 2], ["银铜合金锭", 2], ["货运节点(连接器)"]],
-        "count": 2
+        type: "增强型工作台",
+        map: [[null, "漏斗", null], ["银铜合金锭", "货运节点(连接器)", "银铜合金锭"], [null, "漏斗", null]],
+        ingredients: [["漏斗", 2], ["银铜合金锭", 2], ["货运节点(连接器)"]],
+        count: 2
     },
     "货运节点(输出)": {
-        "type": "增强型工作台",
-        "map": [[null, "漏斗", null], ["黄铜锭", "货运节点(连接器)", "黄铜锭"], [null, "漏斗", null]],
-        "ingredients": [["漏斗", 2], ["黄铜锭", 2], ["货运节点(连接器)"]],
-        "count": 2
+        type: "增强型工作台",
+        map: [[null, "漏斗", null], ["黄铜锭", "货运节点(连接器)", "黄铜锭"], [null, "漏斗", null]],
+        ingredients: [["漏斗", 2], ["黄铜锭", 2], ["货运节点(连接器)"]],
+        count: 2
     },
     "高级货运节点(输出)": {
-        "type": "增强型工作台",
-        "map": [[null, "货运马达", null], ["钴锭", "货运节点(输出)", "钴锭"], [null, "货运马达", null]],
-        "ingredients": [["货运马达", 2], ["钴锭", 2], ["货运节点(输出)"]]
+        type: "增强型工作台",
+        map: [[null, "货运马达", null], ["钴锭", "货运节点(输出)", "钴锭"], [null, "货运马达", null]],
+        ingredients: [["货运马达", 2], ["钴锭", 2], ["货运节点(输出)"]]
     },
     "垃圾箱": {
-        "type": "增强型工作台",
-        "map": [[null, "便携垃圾箱", null], ["铅锭", "货运马达", "铅锭"], ["铝锭", "铅锭", "铝锭"]],
-        "ingredients": [["便携垃圾箱"], ["铅锭", 3], ["货运马达"], ["铝锭", 2]]
+        type: "增强型工作台",
+        map: [[null, "便携垃圾箱", null], ["铅锭", "货运马达", "铅锭"], ["铝锭", "铅锭", "铝锭"]],
+        ingredients: [["便携垃圾箱"], ["铅锭", 3], ["货运马达"], ["铝锭", 2]]
     },
     "增强型工作台": {
-        "type": "多方块结构",
-        "map": [[null, null, null], [null, "工作台", null], [null, "发射器", null]],
-        "ingredients": [["工作台"], ["发射器"]]
+        type: "多方块结构",
+        map: [[null, null, null], [null, "工作台", null], [null, "发射器", null]],
+        ingredients: [["工作台"], ["发射器"]]
     },
     "海带曲奇": {
-        "type": "增强型工作台",
-        "map": [[null, "干海带", null], ["干海带", "糖", "干海带"], [null, "干海带", null]],
-        "ingredients": [["干海带", 4], ["糖"]]
+        type: "增强型工作台",
+        map: [[null, "干海带", null], ["干海带", "糖", "干海带"], [null, "干海带", null]],
+        ingredients: [["干海带", 4], ["糖"]]
     },
     "魔法结晶-I": {
-        "type": "磨石",
-        "map": [["下界疣", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["下界疣"]],
-        "count": 2
+        type: "磨石",
+        map: [["下界疣", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["下界疣"]],
+        count: 2
     },
     "魔法结晶-II": {
-        "type": "增强型工作台",
-        "map": [["魔法结晶-I", "魔法结晶-I", null], ["魔法结晶-I", "魔法结晶-I", null], [null, null, null]],
-        "ingredients": [["魔法结晶-I", 4]]
+        type: "增强型工作台",
+        map: [["魔法结晶-I", "魔法结晶-I", null], ["魔法结晶-I", "魔法结晶-I", null], [null, null, null]],
+        ingredients: [["魔法结晶-I", 4]]
     },
     "魔法结晶-III": {
-        "type": "增强型工作台",
-        "map": [["魔法结晶-II", "魔法结晶-II", null], ["魔法结晶-II", "魔法结晶-II", null], [null, null, null]],
-        "ingredients": [["魔法结晶-II", 4]]
+        type: "增强型工作台",
+        map: [["魔法结晶-II", "魔法结晶-II", null], ["魔法结晶-II", "魔法结晶-II", null], [null, null, null]],
+        ingredients: [["魔法结晶-II", 4]]
     },
     "末影结晶-I": {
-        "type": "磨石",
-        "map": [["末影之眼", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["末影之眼"]],
-        "count": 2
+        type: "磨石",
+        map: [["末影之眼", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["末影之眼"]],
+        count: 2
     },
     "末影结晶-II": {
-        "type": "增强型工作台",
-        "map": [["末影结晶-I", "末影结晶-I", null], ["末影结晶-I", "末影结晶-I", null], [null, null, null]],
-        "ingredients": [["末影结晶-I", 4]]
+        type: "增强型工作台",
+        map: [["末影结晶-I", "末影结晶-I", null], ["末影结晶-I", "末影结晶-I", null], [null, null, null]],
+        ingredients: [["末影结晶-I", 4]]
     },
     "末影结晶-III": {
-        "type": "增强型工作台",
-        "map": [["末影结晶-II", "末影结晶-II", null], ["末影结晶-II", "末影结晶-II", null], [null, null, null]],
-        "ingredients": [["末影结晶-II", 4]]
+        type: "增强型工作台",
+        map: [["末影结晶-II", "末影结晶-II", null], ["末影结晶-II", "末影结晶-II", null], [null, null, null]],
+        ingredients: [["末影结晶-II", 4]]
     },
     "魔法玻璃": {
-        "type": "魔法工作台",
-        "map": [["魔法结晶-II", "金粉", "魔法结晶-II"], ["学识之瓶(满)", "玻璃板", "学识之瓶(满)"], ["魔法结晶-II", "学识之瓶(满)", "魔法结晶-II"]],
-        "ingredients": [["魔法结晶-II", 4], ["金粉"], ["学识之瓶(满)", 3], ["玻璃板"]]
+        type: "魔法工作台",
+        map: [["魔法结晶-II", "金粉", "魔法结晶-II"], ["学识之瓶(满)", "玻璃板", "学识之瓶(满)"], ["魔法结晶-II", "学识之瓶(满)", "魔法结晶-II"]],
+        ingredients: [["魔法结晶-II", 4], ["金粉"], ["学识之瓶(满)", 3], ["玻璃板"]]
     },
     "简易冶炼炉": {
-        "type": "多方块结构",
-        "map": [[null, "橡木栅栏", null], ["红砖块", "发射器 (朝上)", "红砖块"], [null, "打火石", null]],
-        "ingredients": [["橡木栅栏"], ["红砖块", 2], ["发射器 (朝上)"], ["打火石"]]
+        type: "多方块结构",
+        map: [[null, "橡木栅栏", null], ["红砖块", "发射器 (朝上)", "红砖块"], [null, "打火石", null]],
+        ingredients: [["橡木栅栏"], ["红砖块", 2], ["发射器 (朝上)"], ["打火石"]]
     },
     "彩虹头盔": {
-        "type": "盔甲锻造台",
-        "map": [["彩虹皮革", "彩虹皮革", "彩虹皮革"], ["彩虹皮革", null, "彩虹皮革"], [null, null, null]],
-        "ingredients": [["彩虹皮革", 5]]
+        type: "盔甲锻造台",
+        map: [["彩虹皮革", "彩虹皮革", "彩虹皮革"], ["彩虹皮革", null, "彩虹皮革"], [null, null, null]],
+        ingredients: [["彩虹皮革", 5]]
     },
     "彩虹胸甲": {
-        "type": "盔甲锻造台",
-        "map": [["彩虹皮革", null, "彩虹皮革"], ["彩虹皮革", "彩虹皮革", "彩虹皮革"], ["彩虹皮革", "彩虹皮革", "彩虹皮革"]],
-        "ingredients": [["彩虹皮革", 8]]
+        type: "盔甲锻造台",
+        map: [["彩虹皮革", null, "彩虹皮革"], ["彩虹皮革", "彩虹皮革", "彩虹皮革"], ["彩虹皮革", "彩虹皮革", "彩虹皮革"]],
+        ingredients: [["彩虹皮革", 8]]
     },
     "彩虹护腿": {
-        "type": "盔甲锻造台",
-        "map": [["彩虹皮革", "彩虹皮革", "彩虹皮革"], ["彩虹皮革", null, "彩虹皮革"], ["彩虹皮革", null, "彩虹皮革"]],
-        "ingredients": [["彩虹皮革", 7]]
+        type: "盔甲锻造台",
+        map: [["彩虹皮革", "彩虹皮革", "彩虹皮革"], ["彩虹皮革", null, "彩虹皮革"], ["彩虹皮革", null, "彩虹皮革"]],
+        ingredients: [["彩虹皮革", 7]]
     },
     "彩虹靴子": {
-        "type": "盔甲锻造台",
-        "map": [[null, null, null], ["彩虹皮革", null, "彩虹皮革"], ["彩虹皮革", null, "彩虹皮革"]],
-        "ingredients": [["彩虹皮革", 4]]
+        type: "盔甲锻造台",
+        map: [[null, null, null], ["彩虹皮革", null, "彩虹皮革"], ["彩虹皮革", null, "彩虹皮革"]],
+        ingredients: [["彩虹皮革", 4]]
     },
     "电力喷气背包-I": {
-        "type": "增强型工作台",
-        "map": [["硬铝锭", null, "硬铝锭"], ["硬铝锭", "能量水晶", "硬铝锭"], ["钢推进器", "小型储能电容", "钢推进器"]],
-        "ingredients": [["硬铝锭", 4], ["能量水晶"], ["钢推进器", 2], ["小型储能电容"]]
+        type: "增强型工作台",
+        map: [["硬铝锭", null, "硬铝锭"], ["硬铝锭", "能量水晶", "硬铝锭"], ["钢推进器", "小型储能电容", "钢推进器"]],
+        ingredients: [["硬铝锭", 4], ["能量水晶"], ["钢推进器", 2], ["小型储能电容"]]
     },
     "电力喷气背包-II": {
-        "type": "增强型工作台",
-        "map": [["焊锡锭", null, "焊锡锭"], ["焊锡锭", "能量水晶", "焊锡锭"], ["钢推进器", "小型储能电容", "钢推进器"]],
-        "ingredients": [["焊锡锭", 4], ["能量水晶"], ["钢推进器", 2], ["小型储能电容"]]
+        type: "增强型工作台",
+        map: [["焊锡锭", null, "焊锡锭"], ["焊锡锭", "能量水晶", "焊锡锭"], ["钢推进器", "小型储能电容", "钢推进器"]],
+        ingredients: [["焊锡锭", 4], ["能量水晶"], ["钢推进器", 2], ["小型储能电容"]]
     },
     "电力喷气背包-III": {
-        "type": "增强型工作台",
-        "map": [["银铜合金锭", null, "银铜合金锭"], ["银铜合金锭", "能量水晶", "银铜合金锭"], ["钢推进器", "小型储能电容", "钢推进器"]],
-        "ingredients": [["银铜合金锭", 4], ["能量水晶"], ["钢推进器", 2], ["小型储能电容"]]
+        type: "增强型工作台",
+        map: [["银铜合金锭", null, "银铜合金锭"], ["银铜合金锭", "能量水晶", "银铜合金锭"], ["钢推进器", "小型储能电容", "钢推进器"]],
+        ingredients: [["银铜合金锭", 4], ["能量水晶"], ["钢推进器", 2], ["小型储能电容"]]
     },
     "电力喷气背包-IV": {
-        "type": "增强型工作台",
-        "map": [["钢锭", null, "钢锭"], ["钢锭", "能量水晶", "钢锭"], ["钢推进器", "小型储能电容", "钢推进器"]],
-        "ingredients": [["钢锭", 4], ["能量水晶"], ["钢推进器", 2], ["小型储能电容"]]
+        type: "增强型工作台",
+        map: [["钢锭", null, "钢锭"], ["钢锭", "能量水晶", "钢锭"], ["钢推进器", "小型储能电容", "钢推进器"]],
+        ingredients: [["钢锭", 4], ["能量水晶"], ["钢推进器", 2], ["小型储能电容"]]
     },
     "电力喷气背包-V": {
-        "type": "增强型工作台",
-        "map": [["大马士革钢锭", null, "大马士革钢锭"], ["大马士革钢锭", "能量水晶", "大马士革钢锭"], ["钢推进器", "小型储能电容", "钢推进器"]],
-        "ingredients": [["大马士革钢锭", 4], ["能量水晶"], ["钢推进器", 2], ["小型储能电容"]]
+        type: "增强型工作台",
+        map: [["大马士革钢锭", null, "大马士革钢锭"], ["大马士革钢锭", "能量水晶", "大马士革钢锭"], ["钢推进器", "小型储能电容", "钢推进器"]],
+        ingredients: [["大马士革钢锭", 4], ["能量水晶"], ["钢推进器", 2], ["小型储能电容"]]
     },
     "电力喷气背包-VI": {
-        "type": "增强型工作台",
-        "map": [["强化合金锭", null, "强化合金锭"], ["强化合金锭", "能量水晶", "强化合金锭"], ["钢推进器", "中型储能电容", "钢推进器"]],
-        "ingredients": [["强化合金锭", 4], ["能量水晶"], ["钢推进器", 2], ["中型储能电容"]]
+        type: "增强型工作台",
+        map: [["强化合金锭", null, "强化合金锭"], ["强化合金锭", "能量水晶", "强化合金锭"], ["钢推进器", "中型储能电容", "钢推进器"]],
+        ingredients: [["强化合金锭", 4], ["能量水晶"], ["钢推进器", 2], ["中型储能电容"]]
     },
     "电力喷气背包-VII": {
-        "type": "增强型工作台",
-        "map": [["碳块", null, "碳块"], ["黑金刚石", "能量水晶", "黑金刚石"], ["钢推进器", "巨型储能电容", "钢推进器"]],
-        "ingredients": [["碳块", 2], ["黑金刚石", 2], ["能量水晶"], ["钢推进器", 2], ["巨型储能电容"]]
+        type: "增强型工作台",
+        map: [["碳块", null, "碳块"], ["黑金刚石", "能量水晶", "黑金刚石"], ["钢推进器", "巨型储能电容", "钢推进器"]],
+        ingredients: [["碳块", 2], ["黑金刚石", 2], ["能量水晶"], ["钢推进器", 2], ["巨型储能电容"]]
     },
     "装甲喷气背包": {
-        "type": "增强型工作台",
-        "map": [["钢板", null, "钢板"], ["钢板", "能量水晶", "钢板"], ["钢推进器", "中型储能电容", "钢推进器"]],
-        "ingredients": [["钢板", 4], ["能量水晶"], ["钢推进器", 2], ["中型储能电容"]]
+        type: "增强型工作台",
+        map: [["钢板", null, "钢板"], ["钢板", "能量水晶", "钢板"], ["钢推进器", "中型储能电容", "钢推进器"]],
+        ingredients: [["钢板", 4], ["能量水晶"], ["钢推进器", 2], ["中型储能电容"]]
     },
     "光伏电池": {
-        "type": "增强型工作台",
-        "map": [["玻璃", "玻璃", "玻璃"], ["硅", "硅", "硅"], ["硅铁", "硅铁", "硅铁"]],
-        "ingredients": [["玻璃", 3], ["硅", 3], ["硅铁", 3]]
+        type: "增强型工作台",
+        map: [["玻璃", "玻璃", "玻璃"], ["硅", "硅", "硅"], ["硅铁", "硅铁", "硅铁"]],
+        ingredients: [["玻璃", 3], ["硅", 3], ["硅铁", 3]]
     },
     "还魂丹": {
-        "type": "魔法工作台",
-        "map": [["金锭", "魔法结晶-II", "金锭"], ["苹果", "虚弱药水", "苹果"], ["金锭", "魔法结晶-II", "金锭"]],
-        "ingredients": [["金锭", 4], ["魔法结晶-II", 2], ["苹果", 2], ["虚弱药水"]],
-        "count": 2
+        type: "魔法工作台",
+        map: [["金锭", "魔法结晶-II", "金锭"], ["苹果", "虚弱药水", "苹果"], ["金锭", "魔法结晶-II", "金锭"]],
+        ingredients: [["金锭", 4], ["魔法结晶-II", 2], ["苹果", 2], ["虚弱药水"]],
+        count: 2
     },
     "农夫护身符": {
-        "type": "魔法工作台",
-        "map": [["魔法结晶-III", null, "魔法结晶-III"], ["钻石锄", "普通护身符", "钻石锄"], ["魔法结晶-III", null, "魔法结晶-III"]],
-        "ingredients": [["魔法结晶-III", 4], ["钻石锄", 2], ["普通护身符"]]
+        type: "魔法工作台",
+        map: [["魔法结晶-III", null, "魔法结晶-III"], ["钻石锄", "普通护身符", "钻石锄"], ["魔法结晶-III", null, "魔法结晶-III"]],
+        ingredients: [["魔法结晶-III", 4], ["钻石锄", 2], ["普通护身符"]]
     },
     "末影农夫护身符": {
-        "type": "魔法工作台",
-        "map": [["末影结晶-III", null, "末影结晶-III"], [null, "农夫护身符", null], ["末影结晶-III", null, "末影结晶-III"]],
-        "ingredients": [["末影结晶-III", 4], ["农夫护身符"]]
+        type: "魔法工作台",
+        map: [["末影结晶-III", null, "末影结晶-III"], [null, "农夫护身符", null], ["末影结晶-III", null, "末影结晶-III"]],
+        ingredients: [["末影结晶-III", 4], ["农夫护身符"]]
     },
     "穴居人护身符": {
-        "type": "魔法工作台",
-        "map": [["魔法结晶-III", null, "魔法结晶-III"], ["金镐", "矿工护身符", "古代符文[地]"], ["魔法结晶-III", null, "魔法结晶-III"]],
-        "ingredients": [["魔法结晶-III", 4], ["金镐"], ["矿工护身符"], ["古代符文[地]"]]
+        type: "魔法工作台",
+        map: [["魔法结晶-III", null, "魔法结晶-III"], ["金镐", "矿工护身符", "古代符文[地]"], ["魔法结晶-III", null, "魔法结晶-III"]],
+        ingredients: [["魔法结晶-III", 4], ["金镐"], ["矿工护身符"], ["古代符文[地]"]]
     },
     "末影穴居人护身符": {
-        "type": "魔法工作台",
-        "map": [["末影结晶-III", null, "末影结晶-III"], [null, "穴居人护身符", null], ["末影结晶-III", null, "末影结晶-III"]],
-        "ingredients": [["末影结晶-III", 4], ["穴居人护身符"]]
+        type: "魔法工作台",
+        map: [["末影结晶-III", null, "末影结晶-III"], [null, "穴居人护身符", null], ["末影结晶-III", null, "末影结晶-III"]],
+        ingredients: [["末影结晶-III", 4], ["穴居人护身符"]]
     },
     "智者的护身符": {
-        "type": "魔法工作台",
-        "map": [["魔法结晶-III", "魔法玻璃", "魔法结晶-III"], ["学识之瓶(满)", "魔法师护身符", "学识之瓶(满)"], ["魔法结晶-III", "魔法玻璃", "魔法结晶-III"]],
-        "ingredients": [["魔法结晶-III", 4], ["魔法玻璃", 2], ["学识之瓶(满)", 2], ["魔法师护身符"]]
+        type: "魔法工作台",
+        map: [["魔法结晶-III", "魔法玻璃", "魔法结晶-III"], ["学识之瓶(满)", "魔法师护身符", "学识之瓶(满)"], ["魔法结晶-III", "魔法玻璃", "魔法结晶-III"]],
+        ingredients: [["魔法结晶-III", 4], ["魔法玻璃", 2], ["学识之瓶(满)", 2], ["魔法师护身符"]]
     },
     "末影智者的护身符": {
-        "type": "魔法工作台",
-        "map": [["末影结晶-III", null, "末影结晶-III"], [null, "智者的护身符", null], ["末影结晶-III", null, "末影结晶-III"]],
-        "ingredients": [["末影结晶-III", 4], ["智者的护身符"]]
+        type: "魔法工作台",
+        map: [["末影结晶-III", null, "末影结晶-III"], [null, "智者的护身符", null], ["末影结晶-III", null, "末影结晶-III"]],
+        ingredients: [["末影结晶-III", 4], ["智者的护身符"]]
     },
     "强化布料": {
-        "type": "增强型工作台",
-        "map": [[null, "布", null], ["布", "铅锭", "布"], [null, "布", null]],
-        "ingredients": [["布", 4], ["铅锭"]],
-        "count": 2
+        type: "增强型工作台",
+        map: [[null, "布", null], ["布", "铅锭", "布"], [null, "布", null]],
+        ingredients: [["布", 4], ["铅锭"]],
+        count: 2
     },
     "一小撮铀": {
-        "type": "矿石粉碎机",
-        "map": [["纯矿簇", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["纯矿簇"]]
+        type: "矿石粉碎机",
+        map: [["纯矿簇", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["纯矿簇"]]
     },
     "工业矿机": {
-        "type": "多方块结构",
-        "map": [[null, null, null], ["活塞 (朝上)", "箱子", "活塞 (朝上)"], ["铁块", "高炉", "铁块"]],
-        "ingredients": [["活塞 (朝上)", 2], ["箱子"], ["铁块", 2], ["高炉"]]
+        type: "多方块结构",
+        map: [[null, null, null], ["活塞 (朝上)", "箱子", "活塞 (朝上)"], ["铁块", "高炉", "铁块"]],
+        ingredients: [["活塞 (朝上)", 2], ["箱子"], ["铁块", 2], ["高炉"]]
     },
     "进阶工业矿机": {
-        "type": "多方块结构",
-        "map": [[null, null, null], ["活塞 (朝上)", "箱子", "活塞 (朝上)"], ["钻石块", "高炉", "钻石块"]],
-        "ingredients": [["活塞 (朝上)", 2], ["箱子"], ["钻石块", 2], ["高炉"]]
+        type: "多方块结构",
+        map: [[null, null, null], ["活塞 (朝上)", "箱子", "活塞 (朝上)"], ["钻石块", "高炉", "钻石块"]],
+        ingredients: [["活塞 (朝上)", 2], ["箱子"], ["钻石块", 2], ["高炉"]]
     },
     "人造潜影壳": {
-        "type": "古代祭坛",
-        "map": [["末影结晶-III", "古代符文[末影]", "末影结晶-III"], ["钢筋板", "海龟壳", "钢筋板"], ["末影结晶-III", "古代符文[末影]", "末影结晶-III"]],
-        "ingredients": [["末影结晶-III", 4], ["古代符文[末影]", 2], ["钢筋板", 2], ["海龟壳"]]
+        type: "古代祭坛",
+        map: [["末影结晶-III", "古代符文[末影]", "末影结晶-III"], ["钢筋板", "海龟壳", "钢筋板"], ["末影结晶-III", "古代符文[末影]", "末影结晶-III"]],
+        ingredients: [["末影结晶-III", 4], ["古代符文[末影]", 2], ["钢筋板", 2], ["海龟壳"]]
     },
     "攀岩镐": {
-        "type": "增强型工作台",
-        "map": [["钢锭", "硬化金属", "钢锭"], [null, "木棍", null], [null, "木棍", null]],
-        "ingredients": [["钢锭", 2], ["硬化金属"], ["木棍", 2]]
+        type: "增强型工作台",
+        map: [["钢锭", "硬化金属", "钢锭"], [null, "木棍", null], [null, "木棍", null]],
+        ingredients: [["钢锭", 2], ["硬化金属"], ["木棍", 2]]
     },
     "附魔金苹果": {
-        "type": "增强型工作台",
-        "map": [["金块(24克拉)", "金块(24克拉)", "金块(24克拉)"], ["金块(24克拉)", "苹果", "金块(24克拉)"], ["金块(24克拉)", "金块(24克拉)", "金块(24克拉)"]],
-        "ingredients": [["金块(24克拉)", 8], ["苹果"]]
+        type: "增强型工作台",
+        map: [["金块(24克拉)", "金块(24克拉)", "金块(24克拉)"], ["金块(24克拉)", "苹果", "金块(24克拉)"], ["金块(24克拉)", "金块(24克拉)", "金块(24克拉)"]],
+        ingredients: [["金块(24克拉)", 8], ["苹果"]]
     },
     "已损坏的刷怪笼": {
-        "type": "刷怪笼之镐",
-        "map": [[null, null, null], [null, "刷怪笼", null], [null, null, null]],
-        "ingredients": [["刷怪笼"]]
+        type: "刷怪笼之镐",
+        map: [[null, null, null], [null, "刷怪笼", null], [null, null, null]],
+        ingredients: [["刷怪笼"]]
     },
     "学识巨著": {
-        "type": "魔法工作台",
-        "map": [[null, "羽毛", null], ["墨囊", "魔法书皮", "玻璃瓶"], [null, "书与笔", null]],
-        "ingredients": [["羽毛"], ["墨囊"], ["魔法书皮"], ["玻璃瓶"], ["书与笔"]]
+        type: "魔法工作台",
+        map: [[null, "羽毛", null], ["墨囊", "魔法书皮", "玻璃瓶"], [null, "书与笔", null]],
+        ingredients: [["羽毛"], ["墨囊"], ["魔法书皮"], ["玻璃瓶"], ["书与笔"]]
     },
     "学识之瓶(满)": {
-        "type": "使用",
-        "map": [["学识之瓶", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["学识之瓶"]]
+        type: "使用",
+        map: [["学识之瓶", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["学识之瓶"]]
     },
     "生日蛋糕": {
-        "type": "增强型工作台",
-        "map": [[null, "火把", null], ["糖", "蛋糕", "糖"], [null, null, null]],
-        "ingredients": [["火把"], ["糖", 2], ["蛋糕"]]
+        type: "增强型工作台",
+        map: [[null, "火把", null], ["糖", "蛋糕", "糖"], [null, null, null]],
+        ingredients: [["火把"], ["糖", 2], ["蛋糕"]]
     },
     "一杯牛奶": {
-        "type": "增强型工作台",
-        "map": [["奶桶", "玻璃瓶", null], [null, null, null], [null, null, null]],
-        "ingredients": [["奶桶"], ["玻璃瓶"]]
+        type: "增强型工作台",
+        map: [["奶桶", "玻璃瓶", null], [null, null, null], [null, null, null]],
+        ingredients: [["奶桶"], ["玻璃瓶"]]
     },
     "巧克力牛奶": {
-        "type": "增强型工作台",
-        "map": [["一杯牛奶", "可可豆", null], [null, null, null], [null, null, null]],
-        "ingredients": [["一杯牛奶"], ["可可豆"]]
+        type: "增强型工作台",
+        map: [["一杯牛奶", "可可豆", null], [null, null, null], [null, null, null]],
+        ingredients: [["一杯牛奶"], ["可可豆"]]
     },
     "蛋酒": {
-        "type": "增强型工作台",
-        "map": [["一杯牛奶", "鸡蛋", null], [null, null, null], [null, null, null]],
-        "ingredients": [["一杯牛奶"], ["鸡蛋"]]
+        type: "增强型工作台",
+        map: [["一杯牛奶", "鸡蛋", null], [null, null, null], [null, null, null]],
+        ingredients: [["一杯牛奶"], ["鸡蛋"]]
     },
     "苹果酒": {
-        "type": "增强型工作台",
-        "map": [["苹果汁", "糖", null], [null, null, null], [null, null, null]],
-        "ingredients": [["苹果汁"], ["糖"]]
+        type: "增强型工作台",
+        map: [["苹果汁", "糖", null], [null, null, null], [null, null, null]],
+        ingredients: [["苹果汁"], ["糖"]]
     },
     "圣诞曲奇": {
-        "type": "增强型工作台",
-        "map": [["曲奇", "糖", "黄绿色染料"], [null, null, null], [null, null, null]],
-        "ingredients": [["曲奇"], ["糖"], ["黄绿色染料"]]
+        type: "增强型工作台",
+        map: [["曲奇", "糖", "黄绿色染料"], [null, null, null], [null, null, null]],
+        ingredients: [["曲奇"], ["糖"], ["黄绿色染料"]]
     },
     "水果蛋糕": {
-        "type": "增强型工作台",
-        "map": [["鸡蛋", "苹果", "西瓜"], ["糖", null, null], [null, null, null]],
-        "ingredients": [["鸡蛋"], ["苹果"], ["西瓜"], ["糖"]]
+        type: "增强型工作台",
+        map: [["鸡蛋", "苹果", "西瓜"], ["糖", null, null], [null, null, null]],
+        ingredients: [["鸡蛋"], ["苹果"], ["西瓜"], ["糖"]]
     },
     "苹果派": {
-        "type": "增强型工作台",
-        "map": [["糖", "苹果", "鸡蛋"], [null, null, null], [null, null, null]],
-        "ingredients": [["糖"], ["苹果"], ["鸡蛋"]]
+        type: "增强型工作台",
+        map: [["糖", "苹果", "鸡蛋"], [null, null, null], [null, null, null]],
+        ingredients: [["糖"], ["苹果"], ["鸡蛋"]]
     },
     "热可可": {
-        "type": "冶炼炉",
-        "map": [["巧克力牛奶", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["巧克力牛奶"]]
+        type: "冶炼炉",
+        map: [["巧克力牛奶", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["巧克力牛奶"]]
     },
     "圣诞蛋糕": {
-        "type": "增强型工作台",
-        "map": [["鸡蛋", "糖", "小麦粉"], ["奶桶", null, null], [null, null, null]],
-        "ingredients": [["鸡蛋"], ["糖"], ["小麦粉"], ["奶桶"]]
+        type: "增强型工作台",
+        map: [["鸡蛋", "糖", "小麦粉"], ["奶桶", null, null], [null, null, null]],
+        ingredients: [["鸡蛋"], ["糖"], ["小麦粉"], ["奶桶"]]
     },
     "焦糖": {
-        "type": "冶炼炉",
-        "map": [["糖", "糖", null], [null, null, null], [null, null, null]],
-        "ingredients": [["糖", 2]]
+        type: "冶炼炉",
+        map: [["糖", "糖", null], [null, null, null], [null, null, null]],
+        ingredients: [["糖", 2]]
     },
     "焦糖苹果": {
-        "type": "增强型工作台",
-        "map": [[null, "焦糖", null], [null, "苹果", null], [null, "木棍", null]],
-        "ingredients": [["焦糖"], ["苹果"], ["木棍"]]
+        type: "增强型工作台",
+        map: [[null, "焦糖", null], [null, "苹果", null], [null, "木棍", null]],
+        ingredients: [["焦糖"], ["苹果"], ["木棍"]]
     },
     "巧克力苹果": {
-        "type": "增强型工作台",
-        "map": [[null, "可可豆", null], [null, "苹果", null], [null, "木棍", null]],
-        "ingredients": [["可可豆"], ["苹果"], ["木棍"]]
+        type: "增强型工作台",
+        map: [[null, "可可豆", null], [null, "苹果", null], [null, "木棍", null]],
+        ingredients: [["可可豆"], ["苹果"], ["木棍"]]
     },
     "圣诞礼物": {
-        "type": "魔法工作台",
-        "map": [[null, "命名牌", null], ["红色羊毛", "绿色羊毛", "红色羊毛"], ["红色羊毛", "绿色羊毛", "红色羊毛"]],
-        "ingredients": [["命名牌"], ["红色羊毛", 4], ["绿色羊毛", 2]]
+        type: "魔法工作台",
+        map: [[null, "命名牌", null], ["红色羊毛", "绿色羊毛", "红色羊毛"], ["红色羊毛", "绿色羊毛", "红色羊毛"]],
+        ingredients: [["命名牌"], ["红色羊毛", 4], ["绿色羊毛", 2]]
     },
     "胡萝卜派": {
-        "type": "增强型工作台",
-        "map": [["糖", "胡萝卜", "鸡蛋"], [null, null, null], [null, null, null]],
-        "ingredients": [["糖"], ["胡萝卜"], ["鸡蛋"]]
+        type: "增强型工作台",
+        map: [["糖", "胡萝卜", "鸡蛋"], [null, null, null], [null, null, null]],
+        ingredients: [["糖"], ["胡萝卜"], ["鸡蛋"]]
     },
     "复活节彩蛋": {
-        "type": "增强型工作台",
-        "map": [[null, null, null], ["黄绿色染料", "鸡蛋", "紫色染料"], [null, null, null]],
-        "ingredients": [["黄绿色染料"], ["鸡蛋"], ["紫色染料"]]
+        type: "增强型工作台",
+        map: [[null, null, null], ["黄绿色染料", "鸡蛋", "紫色染料"], [null, null, null]],
+        ingredients: [["黄绿色染料"], ["鸡蛋"], ["紫色染料"]]
     },
     "能源连接器": {
-        "type": "增强型工作台",
-        "map": [["碳", "铜线", "碳"], ["铜线", "红石块", "铜线"], ["碳", "铜线", "碳"]],
-        "ingredients": [["碳", 4], ["铜线", 4], ["红石块"]],
-        "count": 8
+        type: "增强型工作台",
+        map: [["碳", "铜线", "碳"], ["铜线", "红石块", "铜线"], ["碳", "铜线", "碳"]],
+        ingredients: [["碳", 4], ["铜线", 4], ["红石块"]],
+        count: 8
     },
     "终极储能电容": {
-        "type": "增强型工作台",
-        "map": [["黑金刚石", "红石合金锭", "黑金刚石"], ["下界之星", "黑金刚石镶边储能电容", "下界之星"], ["黑金刚石", "红石合金锭", "黑金刚石"]],
-        "ingredients": [["黑金刚石", 4], ["红石合金锭", 2], ["下界之星", 2], ["黑金刚石镶边储能电容"]]
+        type: "增强型工作台",
+        map: [["黑金刚石", "红石合金锭", "黑金刚石"], ["下界之星", "黑金刚石镶边储能电容", "下界之星"], ["黑金刚石", "红石合金锭", "黑金刚石"]],
+        ingredients: [["黑金刚石", 4], ["红石合金锭", 2], ["下界之星", 2], ["黑金刚石镶边储能电容"]]
     },
     "电动淘金机(II)": {
-        "type": "增强型工作台",
-        "map": [[null, "淘金盘", null], ["铁锭", "电动淘金机", "铁锭"], ["硬铝锭", "硬铝锭", "硬铝锭"]],
-        "ingredients": [["淘金盘"], ["铁锭", 2], ["电动淘金机"], ["硬铝锭", 3]]
+        type: "增强型工作台",
+        map: [[null, "淘金盘", null], ["铁锭", "电动淘金机", "铁锭"], ["硬铝锭", "硬铝锭", "硬铝锭"]],
+        ingredients: [["淘金盘"], ["铁锭", 2], ["电动淘金机"], ["硬铝锭", 3]]
     },
     "电动淘金机(III)": {
-        "type": "增强型工作台",
-        "map": [[null, "淘金盘", null], ["电动马达", "电动淘金机(II)", "电动马达"], ["钴锭", "起泡锭", "钴锭"]],
-        "ingredients": [["淘金盘"], ["电动马达", 2], ["电动淘金机(II)"], ["钴锭", 2], ["起泡锭"]]
+        type: "增强型工作台",
+        map: [[null, "淘金盘", null], ["电动马达", "电动淘金机(II)", "电动马达"], ["钴锭", "起泡锭", "钴锭"]],
+        ingredients: [["淘金盘"], ["电动马达", 2], ["电动淘金机(II)"], ["钴锭", 2], ["起泡锭"]]
     },
     "电动洗矿机(II)": {
-        "type": "增强型工作台",
-        "map": [[null, "水桶", null], ["电磁铁", "电动洗矿机", "电磁铁"], ["大马士革钢锭", "大马士革钢锭", "大马士革钢锭"]],
-        "ingredients": [["水桶"], ["电磁铁", 2], ["电动洗矿机"], ["大马士革钢锭", 3]]
+        type: "增强型工作台",
+        map: [[null, "水桶", null], ["电磁铁", "电动洗矿机", "电磁铁"], ["大马士革钢锭", "大马士革钢锭", "大马士革钢锭"]],
+        ingredients: [["水桶"], ["电磁铁", 2], ["电动洗矿机"], ["大马士革钢锭", 3]]
     },
     "电动洗矿机(III)": {
-        "type": "增强型工作台",
-        "map": [[null, "水桶", null], ["电磁铁", "电动洗矿机(II)", "电磁铁"], ["科林斯青铜锭", "起泡锭", "科林斯青铜锭"]],
-        "ingredients": [["水桶"], ["电磁铁", 2], ["电动洗矿机(II)"], ["科林斯青铜锭", 2], ["起泡锭"]]
+        type: "增强型工作台",
+        map: [[null, "水桶", null], ["电磁铁", "电动洗矿机(II)", "电磁铁"], ["科林斯青铜锭", "起泡锭", "科林斯青铜锭"]],
+        ingredients: [["水桶"], ["电磁铁", 2], ["电动洗矿机(II)"], ["科林斯青铜锭", 2], ["起泡锭"]]
     },
     "电动铸锭机(II)": {
-        "type": "增强型工作台",
-        "map": [["镀金铁锭", "打火石", "镀金铁锭"], ["加热线圈", "电动铸锭机", "加热线圈"], ["黄铜锭", "电动马达", "黄铜锭"]],
-        "ingredients": [["镀金铁锭", 2], ["打火石"], ["加热线圈", 2], ["电动铸锭机"], ["黄铜锭", 2], ["电动马达"]]
+        type: "增强型工作台",
+        map: [["镀金铁锭", "打火石", "镀金铁锭"], ["加热线圈", "电动铸锭机", "加热线圈"], ["黄铜锭", "电动马达", "黄铜锭"]],
+        ingredients: [["镀金铁锭", 2], ["打火石"], ["加热线圈", 2], ["电动铸锭机"], ["黄铜锭", 2], ["电动马达"]]
     },
     "电动铸锭机(III)": {
-        "type": "增强型工作台",
-        "map": [["镀金铁锭", "打火石", "镀金铁锭"], ["加热线圈", "电动铸锭机(II)", "加热线圈"], ["黄铜锭", "起泡锭", "黄铜锭"]],
-        "ingredients": [["镀金铁锭", 2], ["打火石"], ["加热线圈", 2], ["电动铸锭机(II)"], ["黄铜锭", 2], ["起泡锭"]]
+        type: "增强型工作台",
+        map: [["镀金铁锭", "打火石", "镀金铁锭"], ["加热线圈", "电动铸锭机(II)", "加热线圈"], ["黄铜锭", "起泡锭", "黄铜锭"]],
+        ingredients: [["镀金铁锭", 2], ["打火石"], ["加热线圈", 2], ["电动铸锭机(II)"], ["黄铜锭", 2], ["起泡锭"]]
     },
     "电力碎矿机(II)": {
-        "type": "增强型工作台",
-        "map": [[null, "钻石镐", null], ["加热线圈", "电力碎矿机", "加热线圈"], ["镀金铁锭", "起泡锭", "镀金铁锭"]],
-        "ingredients": [["钻石镐"], ["加热线圈", 2], ["电力碎矿机"], ["镀金铁锭", 2], ["起泡锭"]]
+        type: "增强型工作台",
+        map: [[null, "钻石镐", null], ["加热线圈", "电力碎矿机", "加热线圈"], ["镀金铁锭", "起泡锭", "镀金铁锭"]],
+        ingredients: [["钻石镐"], ["加热线圈", 2], ["电力碎矿机"], ["镀金铁锭", 2], ["起泡锭"]]
     },
     "电力碎矿机(III)": {
-        "type": "增强型工作台",
-        "map": [["钢筋板", "加热线圈", "钢筋板"], [null, "电力碎矿机(II)", null], ["钢筋板", "起泡锭", "钢筋板"]],
-        "ingredients": [["钢筋板", 4], ["加热线圈"], ["电力碎矿机(II)"], ["起泡锭"]]
+        type: "增强型工作台",
+        map: [["钢筋板", "加热线圈", "钢筋板"], [null, "电力碎矿机(II)", null], ["钢筋板", "起泡锭", "钢筋板"]],
+        ingredients: [["钢筋板", 4], ["加热线圈"], ["电力碎矿机(II)"], ["起泡锭"]]
     },
     "加热压力舱": {
-        "type": "增强型工作台",
-        "map": [["铅锭", "电动马达", "铅锭"], ["铅锭", "玻璃", "铅锭"], ["铅锭", "加热线圈", "铅锭"]],
-        "ingredients": [["铅锭", 6], ["电动马达"], ["玻璃"], ["加热线圈"]]
+        type: "增强型工作台",
+        map: [["铅锭", "电动马达", "铅锭"], ["铅锭", "玻璃", "铅锭"], ["铅锭", "加热线圈", "铅锭"]],
+        ingredients: [["铅锭", 6], ["电动马达"], ["玻璃"], ["加热线圈"]]
     },
     "加热压力舱-II": {
-        "type": "增强型工作台",
-        "map": [["铅锭", "电动马达", "铅锭"], ["铅锭", "加热压力舱", "铅锭"], ["强化合金锭", "加热线圈", "强化合金锭"]],
-        "ingredients": [["铅锭", 4], ["电动马达"], ["加热压力舱"], ["强化合金锭", 2], ["加热线圈"]]
+        type: "增强型工作台",
+        map: [["铅锭", "电动马达", "铅锭"], ["铅锭", "加热压力舱", "铅锭"], ["强化合金锭", "加热线圈", "强化合金锭"]],
+        ingredients: [["铅锭", 4], ["电动马达"], ["加热压力舱"], ["强化合金锭", 2], ["加热线圈"]]
     },
     "煤发电机(II)": {
-        "type": "增强型工作台",
-        "map": [["岩浆块", "加热线圈", "岩浆块"], ["硬化金属", "煤发电机", "硬化金属"], [null, "电动马达", null]],
-        "ingredients": [["岩浆块", 2], ["加热线圈"], ["硬化金属", 2], ["煤发电机"], ["电动马达"]]
+        type: "增强型工作台",
+        map: [["岩浆块", "加热线圈", "岩浆块"], ["硬化金属", "煤发电机", "硬化金属"], [null, "电动马达", null]],
+        ingredients: [["岩浆块", 2], ["加热线圈"], ["硬化金属", 2], ["煤发电机"], ["电动马达"]]
     },
     "生物发电机": {
-        "type": "增强型工作台",
-        "map": [["加热线圈", "搅拌机", "加热线圈"], ["铝黄铜锭", "电动马达", "铝黄铜锭"], [null, "铝黄铜锭", null]],
-        "ingredients": [["加热线圈", 2], ["搅拌机"], ["铝黄铜锭", 3], ["电动马达"]]
+        type: "增强型工作台",
+        map: [["加热线圈", "搅拌机", "加热线圈"], ["铝黄铜锭", "电动马达", "铝黄铜锭"], [null, "铝黄铜锭", null]],
+        ingredients: [["加热线圈", 2], ["搅拌机"], ["铝黄铜锭", 3], ["电动马达"]]
     },
     "自动酿造机": {
-        "type": "增强型工作台",
-        "map": [[null, "加热线圈", null], ["钢筋板", "酿造台", "钢筋板"], [null, "电动马达", null]],
-        "ingredients": [["加热线圈"], ["钢筋板", 2], ["酿造台"], ["电动马达"]]
+        type: "增强型工作台",
+        map: [[null, "加热线圈", null], ["钢筋板", "酿造台", "钢筋板"], [null, "电动马达", null]],
+        ingredients: [["加热线圈"], ["钢筋板", 2], ["酿造台"], ["电动马达"]]
     },
     "压缩机-II": {
-        "type": "增强型工作台",
-        "map": [["黏性活塞", "压缩机", "黏性活塞"], ["大马士革钢锭", "大型储能电容", "大马士革钢锭"], ["大马士革钢锭", "大马士革钢锭", "大马士革钢锭"]],
-        "ingredients": [["黏性活塞", 2], ["压缩机"], ["大马士革钢锭", 5], ["大型储能电容"]]
+        type: "增强型工作台",
+        map: [["黏性活塞", "压缩机", "黏性活塞"], ["大马士革钢锭", "大型储能电容", "大马士革钢锭"], ["大马士革钢锭", "大马士革钢锭", "大马士革钢锭"]],
+        ingredients: [["黏性活塞", 2], ["压缩机"], ["大马士革钢锭", 5], ["大型储能电容"]]
     },
     "镁发电机": {
-        "type": "增强型工作台",
-        "map": [[null, "电动马达", null], ["压缩碳", "水桶", "压缩碳"], ["硬铝锭", "硬铝锭", "硬铝锭"]],
-        "ingredients": [["电动马达"], ["压缩碳", 2], ["水桶"], ["硬铝锭", 3]]
+        type: "增强型工作台",
+        map: [[null, "电动马达", null], ["压缩碳", "水桶", "压缩碳"], ["硬铝锭", "硬铝锭", "硬铝锭"]],
+        ingredients: [["电动马达"], ["压缩碳", 2], ["水桶"], ["硬铝锭", 3]]
     },
     "自动附魔机-II": {
-        "type": "增强型工作台",
-        "map": [["钢筋板", "大型储能电容", "钢筋板"], ["起泡锭", "自动附魔机", "起泡锭"], ["防凋灵黑曜石", "人造钻石", "防凋灵黑曜石"]],
-        "ingredients": [["钢筋板", 2], ["大型储能电容"], ["起泡锭", 2], ["自动附魔机"], ["防凋灵黑曜石", 2], ["人造钻石"]]
+        type: "增强型工作台",
+        map: [["钢筋板", "大型储能电容", "钢筋板"], ["起泡锭", "自动附魔机", "起泡锭"], ["防凋灵黑曜石", "人造钻石", "防凋灵黑曜石"]],
+        ingredients: [["钢筋板", 2], ["大型储能电容"], ["起泡锭", 2], ["自动附魔机"], ["防凋灵黑曜石", 2], ["人造钻石"]]
     },
     "自动祛魔机": {
-        "type": "增强型工作台",
-        "map": [["红石粉", "铁砧", "红石粉"], ["黑金刚石", "自动附魔机", "黑金刚石"], ["防凋灵黑曜石", "防凋灵黑曜石", "防凋灵黑曜石"]],
-        "ingredients": [["红石粉", 2], ["铁砧"], ["黑金刚石", 2], ["自动附魔机"], ["防凋灵黑曜石", 3]]
+        type: "增强型工作台",
+        map: [["红石粉", "铁砧", "红石粉"], ["黑金刚石", "自动附魔机", "黑金刚石"], ["防凋灵黑曜石", "防凋灵黑曜石", "防凋灵黑曜石"]],
+        ingredients: [["红石粉", 2], ["铁砧"], ["黑金刚石", 2], ["自动附魔机"], ["防凋灵黑曜石", 3]]
     },
     "自动祛魔机-II": {
-        "type": "增强型工作台",
-        "map": [["钢筋板", "铁砧", "钢筋板"], ["起泡锭", "自动祛魔机", "起泡锭"], ["防凋灵黑曜石", "大型储能电容", "防凋灵黑曜石"]],
-        "ingredients": [["钢筋板", 2], ["铁砧"], ["起泡锭", 2], ["自动祛魔机"], ["防凋灵黑曜石", 2], ["大型储能电容"]]
+        type: "增强型工作台",
+        map: [["钢筋板", "铁砧", "钢筋板"], ["起泡锭", "自动祛魔机", "起泡锭"], ["防凋灵黑曜石", "大型储能电容", "防凋灵黑曜石"]],
+        ingredients: [["钢筋板", 2], ["铁砧"], ["起泡锭", 2], ["自动祛魔机"], ["防凋灵黑曜石", 2], ["大型储能电容"]]
     },
     "自动铁砧Mk.II": {
-        "type": "增强型工作台",
-        "map": [[null, "自动铁砧", null], ["钢板", "加热线圈", "钢板"], ["铁块", "铁块", "铁块"]],
-        "ingredients": [["自动铁砧"], ["钢板", 2], ["加热线圈"], ["铁块", 3]]
+        type: "增强型工作台",
+        map: [[null, "自动铁砧", null], ["钢板", "加热线圈", "钢板"], ["铁块", "铁块", "铁块"]],
+        ingredients: [["自动铁砧"], ["钢板", 2], ["加热线圈"], ["铁块", 3]]
     },
     "附魔书整合机": {
-        "type": "增强型工作台",
-        "map": [[null, "附魔台", null], ["书架", "硬化金属", "书架"], ["人造蓝宝石", "小型储能电容", "人造蓝宝石"]],
-        "ingredients": [["附魔台"], ["书架", 2], ["硬化金属"], ["人造蓝宝石", 2], ["小型储能电容"]]
+        type: "增强型工作台",
+        map: [[null, "附魔台", null], ["书架", "硬化金属", "书架"], ["人造蓝宝石", "小型储能电容", "人造蓝宝石"]],
+        ingredients: [["附魔台"], ["书架", 2], ["硬化金属"], ["人造蓝宝石", 2], ["小型储能电容"]]
     },
     "黑金刚石GPS发射器": {
-        "type": "增强型工作台",
-        "map": [["高级GPS发射器", "科林斯青铜锭", "高级GPS发射器"], ["科林斯青铜锭", "黑金刚石", "科林斯青铜锭"], ["高级GPS发射器", "科林斯青铜锭", "高级GPS发射器"]],
-        "ingredients": [["高级GPS发射器", 4], ["科林斯青铜锭", 4], ["黑金刚石"]]
+        type: "增强型工作台",
+        map: [["高级GPS发射器", "科林斯青铜锭", "高级GPS发射器"], ["科林斯青铜锭", "黑金刚石", "科林斯青铜锭"], ["高级GPS发射器", "科林斯青铜锭", "高级GPS发射器"]],
+        ingredients: [["高级GPS发射器", 4], ["科林斯青铜锭", 4], ["黑金刚石"]]
     },
     "古代符文[附魔]": {
-        "type": "古代祭坛",
-        "map": [["魔法结晶-III", "魔法玻璃", "魔法结晶-III"], ["魔法玻璃", "古代符文[雷]", "魔法玻璃"], ["魔法结晶-III", "魔法玻璃", "魔法结晶-III"]],
-        "ingredients": [["魔法结晶-III", 4], ["魔法玻璃", 4], ["古代符文[雷]"]]
+        type: "古代祭坛",
+        map: [["魔法结晶-III", "魔法玻璃", "魔法结晶-III"], ["魔法玻璃", "古代符文[雷]", "魔法玻璃"], ["魔法结晶-III", "魔法玻璃", "魔法结晶-III"]],
+        ingredients: [["魔法结晶-III", 4], ["魔法玻璃", 4], ["古代符文[雷]"]]
     },
     "鞘翅(经验修补)": {
-        "type": "古代祭坛",
-        "map": [["学识之瓶", "鞘翅鳞片", "学识之瓶"], ["学识之瓶", "鞘翅", "学识之瓶"], ["学识之瓶", "鞘翅鳞片", "学识之瓶"]],
-        "ingredients": [["学识之瓶", 6], ["鞘翅鳞片", 2], ["鞘翅"]]
+        type: "古代祭坛",
+        map: [["学识之瓶", "鞘翅鳞片", "学识之瓶"], ["学识之瓶", "鞘翅", "学识之瓶"], ["学识之瓶", "鞘翅鳞片", "学识之瓶"]],
+        ingredients: [["学识之瓶", 6], ["鞘翅鳞片", 2], ["鞘翅"]]
     },
     "鞘翅(灵魂绑定)": {
-        "type": "古代祭坛",
-        "map": [["学识之瓶", "来世精华", "学识之瓶"], ["鞘翅鳞片", "鞘翅", "鞘翅鳞片"], ["学识之瓶", "来世精华", "学识之瓶"]],
-        "ingredients": [["学识之瓶", 4], ["来世精华", 2], ["鞘翅鳞片", 2], ["鞘翅"]]
+        type: "古代祭坛",
+        map: [["学识之瓶", "来世精华", "学识之瓶"], ["鞘翅鳞片", "鞘翅", "鞘翅鳞片"], ["学识之瓶", "来世精华", "学识之瓶"]],
+        ingredients: [["学识之瓶", 4], ["来世精华", 2], ["鞘翅鳞片", 2], ["鞘翅"]]
     },
     "三叉戟": {
-        "type": "古代祭坛",
-        "map": [["鹦鹉螺壳", "强化合金锭", "鹦鹉螺壳"], ["元素法杖-水", "钻石剑", "元素法杖-水"], ["魔法结晶-III", "下界之星", "魔法结晶-III"]],
-        "ingredients": [["鹦鹉螺壳", 2], ["强化合金锭"], ["元素法杖-水", 2], ["钻石剑"], ["魔法结晶-III", 2], ["下界之星"]]
+        type: "古代祭坛",
+        map: [["鹦鹉螺壳", "强化合金锭", "鹦鹉螺壳"], ["元素法杖-水", "钻石剑", "元素法杖-水"], ["魔法结晶-III", "下界之星", "魔法结晶-III"]],
+        ingredients: [["鹦鹉螺壳", 2], ["强化合金锭"], ["元素法杖-水", 2], ["钻石剑"], ["魔法结晶-III", 2], ["下界之星"]]
     },
     "彩虹混凝土": {
-        "type": "古代祭坛",
-        "map": [["白色混凝土", "白色混凝土", "白色混凝土"], ["白色混凝土", "古代符文[虹]", "白色混凝土"], ["白色混凝土", "白色混凝土", "白色混凝土"]],
-        "ingredients": [["白色混凝土", 8], ["古代符文[虹]"]]
+        type: "古代祭坛",
+        map: [["白色混凝土", "白色混凝土", "白色混凝土"], ["白色混凝土", "古代符文[虹]", "白色混凝土"], ["白色混凝土", "白色混凝土", "白色混凝土"]],
+        ingredients: [["白色混凝土", 8], ["古代符文[虹]"]]
     },
     "彩虹带釉陶瓦": {
-        "type": "古代祭坛",
-        "map": [["白色带釉陶瓦", "白色带釉陶瓦", "白色带釉陶瓦"], ["白色带釉陶瓦", "古代符文[虹]", "白色带釉陶瓦"], ["白色带釉陶瓦", "白色带釉陶瓦", "白色带釉陶瓦"]],
-        "ingredients": [["白色带釉陶瓦", 8], ["古代符文[虹]"]]
+        type: "古代祭坛",
+        map: [["白色带釉陶瓦", "白色带釉陶瓦", "白色带釉陶瓦"], ["白色带釉陶瓦", "古代符文[虹]", "白色带釉陶瓦"], ["白色带釉陶瓦", "白色带釉陶瓦", "白色带釉陶瓦"]],
+        ingredients: [["白色带釉陶瓦", 8], ["古代符文[虹]"]]
     },
     "彩虹羊毛(圣诞节版)": {
-        "type": "古代祭坛",
-        "map": [["红色染料", "圣诞曲奇", "绿色染料"], ["白色羊毛", "古代符文[虹]", "白色羊毛"], ["绿色染料", "圣诞曲奇", "红色染料"]],
-        "ingredients": [["红色染料", 2], ["圣诞曲奇", 2], ["绿色染料", 2], ["白色羊毛", 2], ["古代符文[虹]"]]
+        type: "古代祭坛",
+        map: [["红色染料", "圣诞曲奇", "绿色染料"], ["白色羊毛", "古代符文[虹]", "白色羊毛"], ["绿色染料", "圣诞曲奇", "红色染料"]],
+        ingredients: [["红色染料", 2], ["圣诞曲奇", 2], ["绿色染料", 2], ["白色羊毛", 2], ["古代符文[虹]"]]
     },
     "彩虹玻璃(圣诞节版)": {
-        "type": "古代祭坛",
-        "map": [["红色染料", "圣诞曲奇", "绿色染料"], ["白色染色玻璃", "古代符文[虹]", "白色染色玻璃"], ["绿色染料", "圣诞曲奇", "红色染料"]],
-        "ingredients": [["红色染料", 2], ["圣诞曲奇", 2], ["绿色染料", 2], ["白色染色玻璃", 2], ["古代符文[虹]"]]
+        type: "古代祭坛",
+        map: [["红色染料", "圣诞曲奇", "绿色染料"], ["白色染色玻璃", "古代符文[虹]", "白色染色玻璃"], ["绿色染料", "圣诞曲奇", "红色染料"]],
+        ingredients: [["红色染料", 2], ["圣诞曲奇", 2], ["绿色染料", 2], ["白色染色玻璃", 2], ["古代符文[虹]"]]
     },
     "彩虹玻璃板(圣诞节版)": {
-        "type": "古代祭坛",
-        "map": [["红色染料", "圣诞曲奇", "绿色染料"], ["白色染色玻璃板", "古代符文[虹]", "白色染色玻璃板"], ["绿色染料", "圣诞曲奇", "红色染料"]],
-        "ingredients": [["红色染料", 2], ["圣诞曲奇", 2], ["绿色染料", 2], ["白色染色玻璃板", 2], ["古代符文[虹]"]]
+        type: "古代祭坛",
+        map: [["红色染料", "圣诞曲奇", "绿色染料"], ["白色染色玻璃板", "古代符文[虹]", "白色染色玻璃板"], ["绿色染料", "圣诞曲奇", "红色染料"]],
+        ingredients: [["红色染料", 2], ["圣诞曲奇", 2], ["绿色染料", 2], ["白色染色玻璃板", 2], ["古代符文[虹]"]]
     },
     "彩虹粘土块(圣诞节版)": {
-        "type": "古代祭坛",
-        "map": [["红色染料", "圣诞曲奇", "绿色染料"], ["白色陶瓦", "古代符文[虹]", "白色陶瓦"], ["绿色染料", "圣诞曲奇", "红色染料"]],
-        "ingredients": [["红色染料", 2], ["圣诞曲奇", 2], ["绿色染料", 2], ["白色陶瓦", 2], ["古代符文[虹]"]]
+        type: "古代祭坛",
+        map: [["红色染料", "圣诞曲奇", "绿色染料"], ["白色陶瓦", "古代符文[虹]", "白色陶瓦"], ["绿色染料", "圣诞曲奇", "红色染料"]],
+        ingredients: [["红色染料", 2], ["圣诞曲奇", 2], ["绿色染料", 2], ["白色陶瓦", 2], ["古代符文[虹]"]]
     },
     "彩虹混凝土(圣诞节版)": {
-        "type": "古代祭坛",
-        "map": [["红色染料", "圣诞曲奇", "绿色染料"], ["白色混凝土", "古代符文[虹]", "白色混凝土"], ["绿色染料", "圣诞曲奇", "红色染料"]],
-        "ingredients": [["红色染料", 2], ["圣诞曲奇", 2], ["绿色染料", 2], ["白色混凝土", 2], ["古代符文[虹]"]]
+        type: "古代祭坛",
+        map: [["红色染料", "圣诞曲奇", "绿色染料"], ["白色混凝土", "古代符文[虹]", "白色混凝土"], ["绿色染料", "圣诞曲奇", "红色染料"]],
+        ingredients: [["红色染料", 2], ["圣诞曲奇", 2], ["绿色染料", 2], ["白色混凝土", 2], ["古代符文[虹]"]]
     },
     "彩虹带釉陶瓦(圣诞节版)": {
-        "type": "古代祭坛",
-        "map": [["红色染料", "圣诞曲奇", "绿色染料"], ["白色带釉陶瓦", "古代符文[虹]", "白色带釉陶瓦"], ["绿色染料", "圣诞曲奇", "红色染料"]],
-        "ingredients": [["红色染料", 2], ["圣诞曲奇", 2], ["绿色染料", 2], ["白色带釉陶瓦", 2], ["古代符文[虹]"]]
+        type: "古代祭坛",
+        map: [["红色染料", "圣诞曲奇", "绿色染料"], ["白色带釉陶瓦", "古代符文[虹]", "白色带釉陶瓦"], ["绿色染料", "圣诞曲奇", "红色染料"]],
+        ingredients: [["红色染料", 2], ["圣诞曲奇", 2], ["绿色染料", 2], ["白色带釉陶瓦", 2], ["古代符文[虹]"]]
     },
     "彩虹羊毛(情人节版)": {
-        "type": "古代祭坛",
-        "map": [["红色染料", "虞美人", "粉红色染料"], ["白色羊毛", "古代符文[虹]", "白色羊毛"], ["粉红色染料", "虞美人", "红色染料"]],
-        "ingredients": [["红色染料", 2], ["虞美人", 2], ["粉红色染料", 2], ["白色羊毛", 2], ["古代符文[虹]"]]
+        type: "古代祭坛",
+        map: [["红色染料", "虞美人", "粉红色染料"], ["白色羊毛", "古代符文[虹]", "白色羊毛"], ["粉红色染料", "虞美人", "红色染料"]],
+        ingredients: [["红色染料", 2], ["虞美人", 2], ["粉红色染料", 2], ["白色羊毛", 2], ["古代符文[虹]"]]
     },
     "彩虹玻璃(情人节版)": {
-        "type": "古代祭坛",
-        "map": [["红色染料", "虞美人", "粉红色染料"], ["白色染色玻璃", "古代符文[虹]", "白色染色玻璃"], ["粉红色染料", "虞美人", "红色染料"]],
-        "ingredients": [["红色染料", 2], ["虞美人", 2], ["粉红色染料", 2], ["白色染色玻璃", 2], ["古代符文[虹]"]]
+        type: "古代祭坛",
+        map: [["红色染料", "虞美人", "粉红色染料"], ["白色染色玻璃", "古代符文[虹]", "白色染色玻璃"], ["粉红色染料", "虞美人", "红色染料"]],
+        ingredients: [["红色染料", 2], ["虞美人", 2], ["粉红色染料", 2], ["白色染色玻璃", 2], ["古代符文[虹]"]]
     },
     "彩虹玻璃板(情人节版)": {
-        "type": "古代祭坛",
-        "map": [["红色染料", "虞美人", "粉红色染料"], ["白色染色玻璃板", "古代符文[虹]", "白色染色玻璃板"], ["粉红色染料", "虞美人", "红色染料"]],
-        "ingredients": [["红色染料", 2], ["虞美人", 2], ["粉红色染料", 2], ["白色染色玻璃板", 2], ["古代符文[虹]"]]
+        type: "古代祭坛",
+        map: [["红色染料", "虞美人", "粉红色染料"], ["白色染色玻璃板", "古代符文[虹]", "白色染色玻璃板"], ["粉红色染料", "虞美人", "红色染料"]],
+        ingredients: [["红色染料", 2], ["虞美人", 2], ["粉红色染料", 2], ["白色染色玻璃板", 2], ["古代符文[虹]"]]
     },
     "彩虹粘土块(情人节版)": {
-        "type": "古代祭坛",
-        "map": [["红色染料", "虞美人", "粉红色染料"], ["白色陶瓦", "古代符文[虹]", "白色陶瓦"], ["粉红色染料", "虞美人", "红色染料"]],
-        "ingredients": [["红色染料", 2], ["虞美人", 2], ["粉红色染料", 2], ["白色陶瓦", 2], ["古代符文[虹]"]]
+        type: "古代祭坛",
+        map: [["红色染料", "虞美人", "粉红色染料"], ["白色陶瓦", "古代符文[虹]", "白色陶瓦"], ["粉红色染料", "虞美人", "红色染料"]],
+        ingredients: [["红色染料", 2], ["虞美人", 2], ["粉红色染料", 2], ["白色陶瓦", 2], ["古代符文[虹]"]]
     },
     "彩虹混凝土(情人节版)": {
-        "type": "古代祭坛",
-        "map": [["红色染料", "虞美人", "粉红色染料"], ["白色混凝土", "古代符文[虹]", "白色混凝土"], ["粉红色染料", "虞美人", "红色染料"]],
-        "ingredients": [["红色染料", 2], ["虞美人", 2], ["粉红色染料", 2], ["白色混凝土", 2], ["古代符文[虹]"]]
+        type: "古代祭坛",
+        map: [["红色染料", "虞美人", "粉红色染料"], ["白色混凝土", "古代符文[虹]", "白色混凝土"], ["粉红色染料", "虞美人", "红色染料"]],
+        ingredients: [["红色染料", 2], ["虞美人", 2], ["粉红色染料", 2], ["白色混凝土", 2], ["古代符文[虹]"]]
     },
     "彩虹带釉陶瓦(情人节版)": {
-        "type": "古代祭坛",
-        "map": [["红色染料", "虞美人", "粉红色染料"], ["白色带釉陶瓦", "古代符文[虹]", "白色带釉陶瓦"], ["粉红色染料", "虞美人", "红色染料"]],
-        "ingredients": [["红色染料", 2], ["虞美人", 2], ["粉红色染料", 2], ["白色带釉陶瓦", 2], ["古代符文[虹]"]]
+        type: "古代祭坛",
+        map: [["红色染料", "虞美人", "粉红色染料"], ["白色带釉陶瓦", "古代符文[虹]", "白色带釉陶瓦"], ["粉红色染料", "虞美人", "红色染料"]],
+        ingredients: [["红色染料", 2], ["虞美人", 2], ["粉红色染料", 2], ["白色带釉陶瓦", 2], ["古代符文[虹]"]]
     },
     "彩虹羊毛(万圣节版)": {
-        "type": "古代祭坛",
-        "map": [["橙色染料", "南瓜", "黑色染料"], ["白色羊毛", "古代符文[虹]", "白色羊毛"], ["黑色染料", "南瓜", "橙色染料"]],
-        "ingredients": [["橙色染料", 2], ["南瓜", 2], ["黑色染料", 2], ["白色羊毛", 2], ["古代符文[虹]"]]
+        type: "古代祭坛",
+        map: [["橙色染料", "南瓜", "黑色染料"], ["白色羊毛", "古代符文[虹]", "白色羊毛"], ["黑色染料", "南瓜", "橙色染料"]],
+        ingredients: [["橙色染料", 2], ["南瓜", 2], ["黑色染料", 2], ["白色羊毛", 2], ["古代符文[虹]"]]
     },
     "彩虹玻璃(万圣节版)": {
-        "type": "古代祭坛",
-        "map": [["橙色染料", "南瓜", "黑色染料"], ["白色染色玻璃", "古代符文[虹]", "白色染色玻璃"], ["黑色染料", "南瓜", "橙色染料"]],
-        "ingredients": [["橙色染料", 2], ["南瓜", 2], ["黑色染料", 2], ["白色染色玻璃", 2], ["古代符文[虹]"]]
+        type: "古代祭坛",
+        map: [["橙色染料", "南瓜", "黑色染料"], ["白色染色玻璃", "古代符文[虹]", "白色染色玻璃"], ["黑色染料", "南瓜", "橙色染料"]],
+        ingredients: [["橙色染料", 2], ["南瓜", 2], ["黑色染料", 2], ["白色染色玻璃", 2], ["古代符文[虹]"]]
     },
     "彩虹玻璃板(万圣节版)": {
-        "type": "古代祭坛",
-        "map": [["橙色染料", "南瓜", "黑色染料"], ["白色染色玻璃板", "古代符文[虹]", "白色染色玻璃板"], ["黑色染料", "南瓜", "橙色染料"]],
-        "ingredients": [["橙色染料", 2], ["南瓜", 2], ["黑色染料", 2], ["白色染色玻璃板", 2], ["古代符文[虹]"]]
+        type: "古代祭坛",
+        map: [["橙色染料", "南瓜", "黑色染料"], ["白色染色玻璃板", "古代符文[虹]", "白色染色玻璃板"], ["黑色染料", "南瓜", "橙色染料"]],
+        ingredients: [["橙色染料", 2], ["南瓜", 2], ["黑色染料", 2], ["白色染色玻璃板", 2], ["古代符文[虹]"]]
     },
     "彩虹粘土块(万圣节版)": {
-        "type": "古代祭坛",
-        "map": [["橙色染料", "南瓜", "黑色染料"], ["白色陶瓦", "古代符文[虹]", "白色陶瓦"], ["黑色染料", "南瓜", "橙色染料"]],
-        "ingredients": [["橙色染料", 2], ["南瓜", 2], ["黑色染料", 2], ["白色陶瓦", 2], ["古代符文[虹]"]]
+        type: "古代祭坛",
+        map: [["橙色染料", "南瓜", "黑色染料"], ["白色陶瓦", "古代符文[虹]", "白色陶瓦"], ["黑色染料", "南瓜", "橙色染料"]],
+        ingredients: [["橙色染料", 2], ["南瓜", 2], ["黑色染料", 2], ["白色陶瓦", 2], ["古代符文[虹]"]]
     },
     "彩虹混凝土(万圣节版)": {
-        "type": "古代祭坛",
-        "map": [["橙色染料", "南瓜", "黑色染料"], ["白色混凝土", "古代符文[虹]", "白色混凝土"], ["黑色染料", "南瓜", "橙色染料"]],
-        "ingredients": [["橙色染料", 2], ["南瓜", 2], ["黑色染料", 2], ["白色混凝土", 2], ["古代符文[虹]"]]
+        type: "古代祭坛",
+        map: [["橙色染料", "南瓜", "黑色染料"], ["白色混凝土", "古代符文[虹]", "白色混凝土"], ["黑色染料", "南瓜", "橙色染料"]],
+        ingredients: [["橙色染料", 2], ["南瓜", 2], ["黑色染料", 2], ["白色混凝土", 2], ["古代符文[虹]"]]
     },
     "彩虹带釉陶瓦(万圣节版)": {
-        "type": "古代祭坛",
-        "map": [["橙色染料", "南瓜", "黑色染料"], ["白色带釉陶瓦", "古代符文[虹]", "白色带釉陶瓦"], ["黑色染料", "南瓜", "橙色染料"]],
-        "ingredients": [["橙色染料", 2], ["南瓜", 2], ["黑色染料", 2], ["白色带釉陶瓦", 2], ["古代符文[虹]"]]
+        type: "古代祭坛",
+        map: [["橙色染料", "南瓜", "黑色染料"], ["白色带釉陶瓦", "古代符文[虹]", "白色带釉陶瓦"], ["黑色染料", "南瓜", "橙色染料"]],
+        ingredients: [["橙色染料", 2], ["南瓜", 2], ["黑色染料", 2], ["白色带釉陶瓦", 2], ["古代符文[虹]"]]
     },
     "自然资源开采机": {
-        "type": "增强型工作台",
-        "map": [["钻石镐", "中型储能电容", "钻石镐"], ["强化合金锭", "原油泵", "强化合金锭"], [null, "电动马达", null]],
-        "ingredients": [["钻石镐", 2], ["中型储能电容"], ["强化合金锭", 2], ["原油泵"], ["电动马达"]]
+        type: "增强型工作台",
+        map: [["钻石镐", "中型储能电容", "钻石镐"], ["强化合金锭", "原油泵", "强化合金锭"], [null, "电动马达", null]],
+        ingredients: [["钻石镐", 2], ["中型储能电容"], ["强化合金锭", 2], ["原油泵"], ["电动马达"]]
     },
     "下界冰": {
-        "type": "自然资源开采机",
-        "map": [[null, null, null], [null, null, null], [null, null, null]],
-        "ingredients": []
+        type: "自然资源开采机",
+        map: [[null, null, null], [null, null, null], [null, null, null]],
+        ingredients: []
     },
     "炼油机": {
-        "type": "增强型工作台",
-        "map": [["钢化玻璃", "红石合金锭", "钢化玻璃"], ["钢化玻璃", "红石合金锭", "钢化玻璃"], ["活塞", "电动马达", "活塞"]],
-        "ingredients": [["钢化玻璃", 4], ["红石合金锭", 2], ["活塞", 2], ["电动马达"]]
+        type: "增强型工作台",
+        map: [["钢化玻璃", "红石合金锭", "钢化玻璃"], ["钢化玻璃", "红石合金锭", "钢化玻璃"], ["活塞", "电动马达", "活塞"]],
+        ingredients: [["钢化玻璃", 4], ["红石合金锭", 2], ["活塞", 2], ["电动马达"]]
     },
     "岩浆发电机(II)": {
-        "type": "增强型工作台",
-        "map": [["科林斯青铜锭", "科林斯青铜锭", "科林斯青铜锭"], ["压缩碳", "岩浆发电机", "压缩碳"], ["加热线圈", "压缩碳", "加热线圈"]],
-        "ingredients": [["科林斯青铜锭", 3], ["压缩碳", 3], ["岩浆发电机"], ["加热线圈", 2]]
+        type: "增强型工作台",
+        map: [["科林斯青铜锭", "科林斯青铜锭", "科林斯青铜锭"], ["压缩碳", "岩浆发电机", "压缩碳"], ["加热线圈", "压缩碳", "加热线圈"]],
+        ingredients: [["科林斯青铜锭", 3], ["压缩碳", 3], ["岩浆发电机"], ["加热线圈", 2]]
     },
     "GPS信号塔": {
-        "type": "增强型工作台",
-        "map": [["锌锭", "玻璃", "锌锭"], ["玻璃", "加热线圈", "玻璃"], ["锌锭", "玻璃", "锌锭"]],
-        "ingredients": [["锌锭", 4], ["玻璃", 4], ["加热线圈"]]
+        type: "增强型工作台",
+        map: [["锌锭", "玻璃", "锌锭"], ["玻璃", "加热线圈", "玻璃"], ["锌锭", "玻璃", "锌锭"]],
+        ingredients: [["锌锭", 4], ["玻璃", 4], ["加热线圈"]]
     },
     "便携式传送器": {
-        "type": "增强型工作台",
-        "map": [["电磁铁", "黑金刚石GPS发射器", "电磁铁"], ["钢筋板", "GPS传送矩阵", "钢筋板"], ["起泡锭", "中型储能电容", "起泡锭"]],
-        "ingredients": [["电磁铁", 2], ["黑金刚石GPS发射器"], ["钢筋板", 2], ["GPS传送矩阵"], ["起泡锭", 2], ["中型储能电容"]]
+        type: "增强型工作台",
+        map: [["电磁铁", "黑金刚石GPS发射器", "电磁铁"], ["钢筋板", "GPS传送矩阵", "钢筋板"], ["起泡锭", "中型储能电容", "起泡锭"]],
+        ingredients: [["电磁铁", 2], ["黑金刚石GPS发射器"], ["钢筋板", 2], ["GPS传送矩阵"], ["起泡锭", 2], ["中型储能电容"]]
     },
     "食品加工机(II)": {
-        "type": "增强型工作台",
-        "map": [["硬化金属", "强化合金锭", "硬化金属"], ["电动马达", "食品加工机", "电动马达"], [null, "电磁铁", null]],
-        "ingredients": [["硬化金属", 2], ["强化合金锭"], ["电动马达", 2], ["食品加工机"], ["电磁铁"]]
+        type: "增强型工作台",
+        map: [["硬化金属", "强化合金锭", "硬化金属"], ["电动马达", "食品加工机", "电动马达"], [null, "电磁铁", null]],
+        ingredients: [["硬化金属", 2], ["强化合金锭"], ["电动马达", 2], ["食品加工机"], ["电磁铁"]]
     },
     "有机食物(小麦)": {
-        "type": "食品加工机",
-        "map": [["锡罐", "海草", null], [null, null, null], [null, null, null]],
-        "ingredients": [["锡罐"], ["小麦"]],
-        "count": 2
+        type: "食品加工机",
+        map: [["锡罐", "海草", null], [null, null, null], [null, null, null]],
+        ingredients: [["锡罐"], ["小麦"]],
+        count: 2
     },
     "树木生长加速器": {
-        "type": "增强型工作台",
-        "map": [[null, "黑金刚石", null], ["电动马达", "钻石斧", "电动马达"], ["镁盐", "大型储能电容", "镁盐"]],
-        "ingredients": [["黑金刚石"], ["电动马达", 2], ["钻石斧"], ["镁盐", 2], ["大型储能电容"]]
+        type: "增强型工作台",
+        map: [[null, "黑金刚石", null], ["电动马达", "钻石斧", "电动马达"], ["镁盐", "大型储能电容", "镁盐"]],
+        ingredients: [["黑金刚石"], ["电动马达", 2], ["钻石斧"], ["镁盐", 2], ["大型储能电容"]]
     },
     "食品堆肥器(II)": {
-        "type": "增强型工作台",
-        "map": [["硬化金属", "强化合金锭", "硬化金属"], ["电动马达", "食品堆肥器", "电动马达"], [null, "电磁铁", null]],
-        "ingredients": [["硬化金属", 2], ["强化合金锭"], ["电动马达", 2], ["食品堆肥器"], ["电磁铁"]]
+        type: "增强型工作台",
+        map: [["硬化金属", "强化合金锭", "硬化金属"], ["电动马达", "食品堆肥器", "电动马达"], [null, "电磁铁", null]],
+        ingredients: [["硬化金属", 2], ["强化合金锭"], ["电动马达", 2], ["食品堆肥器"], ["电磁铁"]]
     },
     "作物生长加速器(II)": {
-        "type": "增强型工作台",
-        "map": [[null, "起泡锭", null], ["电动马达", "作物生长加速器", "电动马达"], ["电磁铁", "高级电路板", "电磁铁"]],
-        "ingredients": [["起泡锭"], ["电动马达", 2], ["作物生长加速器"], ["电磁铁", 2], ["高级电路板"]]
+        type: "增强型工作台",
+        map: [[null, "起泡锭", null], ["电动马达", "作物生长加速器", "电动马达"], ["电磁铁", "高级电路板", "电磁铁"]],
+        ingredients: [["起泡锭"], ["电动马达", 2], ["作物生长加速器"], ["电磁铁", 2], ["高级电路板"]]
     },
     "冰箱(II)": {
-        "type": "增强型工作台",
-        "map": [[null, "银锭", null], ["电磁铁", "冰箱", "电磁铁"], ["冷却装置", "铝黄铜锭", "冷却装置"]],
-        "ingredients": [["银锭"], ["电磁铁", 2], ["冰箱"], ["冷却装置", 2], ["铝黄铜锭"]]
+        type: "增强型工作台",
+        map: [[null, "银锭", null], ["电磁铁", "冰箱", "电磁铁"], ["冷却装置", "铝黄铜锭", "冷却装置"]],
+        ingredients: [["银锭"], ["电磁铁", 2], ["冰箱"], ["冷却装置", 2], ["铝黄铜锭"]]
     },
     "冰箱(III)": {
-        "type": "增强型工作台",
-        "map": [["强化合金锭", "强化合金锭", "强化合金锭"], ["电磁铁", "冰箱(II)", "电磁铁"], ["冷却装置", "冷却装置", "冷却装置"]],
-        "ingredients": [["强化合金锭", 3], ["电磁铁", 2], ["冰箱(II)"], ["冷却装置", 3]]
+        type: "增强型工作台",
+        map: [["强化合金锭", "强化合金锭", "强化合金锭"], ["电磁铁", "冰箱(II)", "电磁铁"], ["冷却装置", "冷却装置", "冷却装置"]],
+        ingredients: [["强化合金锭", 3], ["电磁铁", 2], ["冰箱(II)"], ["冷却装置", 3]]
     },
     "钚铀混合氧化物核燃料": {
-        "type": "加热压力舱",
-        "map": [["钚", "铀", null], [null, null, null], [null, null, null]],
-        "ingredients": [["钚"], ["铀"]]
+        type: "加热压力舱",
+        map: [["钚", "铀", null], [null, null, null], [null, null, null]],
+        ingredients: [["钚"], ["铀"]]
     },
     "电力冶炼炉": {
-        "type": "增强型工作台",
-        "map": [["下界砖块", "电动马达", "下界砖块"], ["加热线圈", "电动铸锭机", "加热线圈"], ["镀金铁锭", "电动马达", "镀金铁锭"]],
-        "ingredients": [["下界砖块", 2], ["电动马达", 2], ["加热线圈", 2], ["电动铸锭机"], ["镀金铁锭", 2]]
+        type: "增强型工作台",
+        map: [["下界砖块", "电动马达", "下界砖块"], ["加热线圈", "电动铸锭机", "加热线圈"], ["镀金铁锭", "电动马达", "镀金铁锭"]],
+        ingredients: [["下界砖块", 2], ["电动马达", 2], ["加热线圈", 2], ["电动铸锭机"], ["镀金铁锭", 2]]
     },
     "电力冶炼炉-II": {
-        "type": "增强型工作台",
-        "map": [["大马士革钢锭", "能量水晶", "大马士革钢锭"], ["加热线圈", "电力冶炼炉", "加热线圈"], ["镀金铁锭", "电动马达", "镀金铁锭"]],
-        "ingredients": [["大马士革钢锭", 2], ["能量水晶"], ["加热线圈", 2], ["电力冶炼炉"], ["镀金铁锭", 2], ["电动马达"]]
+        type: "增强型工作台",
+        map: [["大马士革钢锭", "能量水晶", "大马士革钢锭"], ["加热线圈", "电力冶炼炉", "加热线圈"], ["镀金铁锭", "电动马达", "镀金铁锭"]],
+        ingredients: [["大马士革钢锭", 2], ["能量水晶"], ["加热线圈", 2], ["电力冶炼炉"], ["镀金铁锭", 2], ["电动马达"]]
     },
     "铁傀儡装配机": {
-        "type": "增强型工作台",
-        "map": [["起泡锭", "高级电路板", "起泡锭"], ["铁块", "机器人内存核心", "铁块"], ["电动马达", "强化合金锭", "黑金刚石镶边储能电容"]],
-        "ingredients": [["起泡锭", 2], ["高级电路板"], ["铁块", 2], ["机器人内存核心"], ["电动马达"], ["强化合金锭"], ["黑金刚石镶边储能电容"]]
+        type: "增强型工作台",
+        map: [["起泡锭", "高级电路板", "起泡锭"], ["铁块", "机器人内存核心", "铁块"], ["电动马达", "强化合金锭", "黑金刚石镶边储能电容"]],
+        ingredients: [["起泡锭", 2], ["高级电路板"], ["铁块", 2], ["机器人内存核心"], ["电动马达"], ["强化合金锭"], ["黑金刚石镶边储能电容"]]
     },
     "凋灵装配机": {
-        "type": "增强型工作台",
-        "map": [["起泡锭", "下界之星", "起泡锭"], ["防凋灵黑曜石", "机器人内存核心", "防凋灵黑曜石"], ["电动马达", "强化合金锭", "黑金刚石镶边储能电容"]],
-        "ingredients": [["起泡锭", 2], ["下界之星"], ["防凋灵黑曜石", 2], ["机器人内存核心"], ["电动马达"], ["强化合金锭"], ["黑金刚石镶边储能电容"]]
+        type: "增强型工作台",
+        map: [["起泡锭", "下界之星", "起泡锭"], ["防凋灵黑曜石", "机器人内存核心", "防凋灵黑曜石"], ["电动马达", "强化合金锭", "黑金刚石镶边储能电容"]],
+        ingredients: [["起泡锭", 2], ["下界之星"], ["防凋灵黑曜石", 2], ["机器人内存核心"], ["电动马达"], ["强化合金锭"], ["黑金刚石镶边储能电容"]]
     },
     "卷尺": {
-        "type": "增强型工作台",
-        "map": [["硅", "黄色染料", "硅"], ["黄色染料", "线", "黄色染料"], ["镀金铁锭", "黄色染料", "硅"]],
-        "ingredients": [["硅", 3], ["黄色染料", 4], ["线"], ["镀金铁锭"]]
+        type: "增强型工作台",
+        map: [["硅", "黄色染料", "硅"], ["黄色染料", "线", "黄色染料"], ["镀金铁锭", "黄色染料", "硅"]],
+        ingredients: [["硅", 3], ["黄色染料", 4], ["线"], ["镀金铁锭"]]
     },
     "蜜蜂头盔": {
-        "type": "盔甲锻造台",
-        "map": [["金锭(8克拉)", "蜂蜜块", "金锭(8克拉)"], ["蜜脾块", null, "蜜脾块"], [null, null, null]],
-        "ingredients": [["金锭(8克拉)", 2], ["蜂蜜块"], ["蜜脾块", 2]]
+        type: "盔甲锻造台",
+        map: [["金锭(8克拉)", "蜂蜜块", "金锭(8克拉)"], ["蜜脾块", null, "蜜脾块"], [null, null, null]],
+        ingredients: [["金锭(8克拉)", 2], ["蜂蜜块"], ["蜜脾块", 2]]
     },
     "蜂翅": {
-        "type": "盔甲锻造台",
-        "map": [["金锭(8克拉)", null, "金锭(8克拉)"], ["蜜脾块", "鞘翅", "蜜脾块"], ["蜂蜜块", "金锭(8克拉)", "蜂蜜块"]],
-        "ingredients": [["金锭(8克拉)", 3], ["蜜脾块", 2], ["鞘翅"], ["蜂蜜块", 2]]
+        type: "盔甲锻造台",
+        map: [["金锭(8克拉)", null, "金锭(8克拉)"], ["蜜脾块", "鞘翅", "蜜脾块"], ["蜂蜜块", "金锭(8克拉)", "蜂蜜块"]],
+        ingredients: [["金锭(8克拉)", 3], ["蜜脾块", 2], ["鞘翅"], ["蜂蜜块", 2]]
     },
     "蜜蜂护腿": {
-        "type": "盔甲锻造台",
-        "map": [["金锭(8克拉)", "蜂蜜块", "金锭(8克拉)"], ["蜜脾块", null, "蜜脾块"], ["蜜脾块", null, "蜜脾块"]],
-        "ingredients": [["金锭(8克拉)", 2], ["蜂蜜块"], ["蜜脾块", 4]]
+        type: "盔甲锻造台",
+        map: [["金锭(8克拉)", "蜂蜜块", "金锭(8克拉)"], ["蜜脾块", null, "蜜脾块"], ["蜜脾块", null, "蜜脾块"]],
+        ingredients: [["金锭(8克拉)", 2], ["蜂蜜块"], ["蜜脾块", 4]]
     },
     "蜜蜂护靴": {
-        "type": "盔甲锻造台",
-        "map": [[null, null, null], ["金锭(8克拉)", null, "金锭(8克拉)"], ["蜂蜜块", null, "蜂蜜块"]],
-        "ingredients": [["金锭(8克拉)", 2], ["蜂蜜块", 2]]
+        type: "盔甲锻造台",
+        map: [[null, null, null], ["金锭(8克拉)", null, "金锭(8克拉)"], ["蜂蜜块", null, "蜂蜜块"]],
+        ingredients: [["金锭(8克拉)", 2], ["蜂蜜块", 2]]
     },
     "古代符文[村民]": {
-        "type": "古代祭坛",
-        "map": [["魔法结晶-III", "魔法玻璃", "哭泣的黑曜石"], ["奇怪的下界粘液", "古代符文[火]", "奇怪的下界粘液"], ["哭泣的黑曜石", "魔法玻璃", "魔法结晶-III"]],
-        "ingredients": [["魔法结晶-III", 2], ["魔法玻璃", 2], ["哭泣的黑曜石", 2], ["奇怪的下界粘液", 2], ["古代符文[火]"]]
+        type: "古代祭坛",
+        map: [["魔法结晶-III", "魔法玻璃", "哭泣的黑曜石"], ["奇怪的下界粘液", "古代符文[火]", "奇怪的下界粘液"], ["哭泣的黑曜石", "魔法玻璃", "魔法结晶-III"]],
+        ingredients: [["魔法结晶-III", 2], ["魔法玻璃", 2], ["哭泣的黑曜石", 2], ["奇怪的下界粘液", 2], ["古代符文[火]"]]
     },
     "奇怪的下界粘液": {
-        "type": "交易",
-        "map": [[null, null, null], [null, "Piglin", null], [null, null, null]],
-        "ingredients": [["Piglin"]]
+        type: "交易",
+        map: [[null, null, null], [null, "Piglin", null], [null, null, null]],
+        ingredients: [["Piglin"]]
     },
     "发光浆果汁": {
-        "type": "榨汁机",
-        "map": [["发光浆果", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["发光浆果"]]
+        type: "榨汁机",
+        map: [["发光浆果", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["发光浆果"]]
     },
     "鞘翅帽": {
-        "type": "盔甲锻造台",
-        "map": [["黏液球", "黏液球", "黏液球"], ["鞘翅鳞片", "鞘翅鳞片", "鞘翅鳞片"], ["黏液球", "皮革帽子", "黏液球"]],
-        "ingredients": [["黏液球", 5], ["鞘翅鳞片", 3], ["皮革帽子"]]
+        type: "盔甲锻造台",
+        map: [["黏液球", "黏液球", "黏液球"], ["鞘翅鳞片", "鞘翅鳞片", "鞘翅鳞片"], ["黏液球", "皮革帽子", "黏液球"]],
+        ingredients: [["黏液球", 5], ["鞘翅鳞片", 3], ["皮革帽子"]]
     },
     "彩虹皮革": {
-        "type": "古代祭坛",
-        "map": [["绿宝石", "皮革", "魔法结晶-II"], ["兔子皮", "古代符文[虹]", "兔子皮"], ["魔法结晶-II", "皮革", "绿宝石"]],
-        "ingredients": [["绿宝石", 2], ["皮革", 2], ["魔法结晶-II", 2], ["兔子皮", 2], ["古代符文[虹]"]],
-        "count": 4
+        type: "古代祭坛",
+        map: [["绿宝石", "皮革", "魔法结晶-II"], ["兔子皮", "古代符文[虹]", "兔子皮"], ["魔法结晶-II", "皮革", "绿宝石"]],
+        ingredients: [["绿宝石", 2], ["皮革", 2], ["魔法结晶-II", 2], ["兔子皮", 2], ["古代符文[虹]"]],
+        count: 4
     },
     "合成机马达": {
-        "type": "增强型工作台",
-        "map": [["工作台", "起泡锭", "工作台"], ["红石合金锭", "货运马达", "红石合金锭"], ["工作台", "起泡锭", "工作台"]],
-        "ingredients": [["工作台", 4], ["起泡锭", 2], ["红石合金锭", 2], ["货运马达"]],
-        "count": 2
+        type: "增强型工作台",
+        map: [["工作台", "起泡锭", "工作台"], ["红石合金锭", "货运马达", "红石合金锭"], ["工作台", "起泡锭", "工作台"]],
+        ingredients: [["工作台", 4], ["起泡锭", 2], ["红石合金锭", 2], ["货运马达"]],
+        count: 2
     },
     "自动合成机(原版)": {
-        "type": "增强型工作台",
-        "map": [[null, "货运马达", null], ["工作台", "合成机马达", "工作台"], [null, "电动马达", null]],
-        "ingredients": [["货运马达"], ["工作台", 2], ["合成机马达"], ["电动马达"]]
+        type: "增强型工作台",
+        map: [[null, "货运马达", null], ["工作台", "合成机马达", "工作台"], [null, "电动马达", null]],
+        ingredients: [["货运马达"], ["工作台", 2], ["合成机马达"], ["电动马达"]]
     },
     "自动合成机(高级)": {
-        "type": "增强型工作台",
-        "map": [[null, "合成机马达", null], ["工作台", "发射器", "工作台"], [null, "货运马达", null]],
-        "ingredients": [["合成机马达"], ["工作台", 2], ["发射器"], ["货运马达"]]
+        type: "增强型工作台",
+        map: [[null, "合成机马达", null], ["工作台", "发射器", "工作台"], [null, "货运马达", null]],
+        ingredients: [["合成机马达"], ["工作台", 2], ["发射器"], ["货运马达"]]
     },
     "自动合成机(盔甲锻造)": {
-        "type": "增强型工作台",
-        "map": [[null, "合成机马达", null], ["发射器", "铁砧", "发射器"], ["工作台", "电动马达", "工作台"]],
-        "ingredients": [["合成机马达"], ["发射器", 2], ["铁砧"], ["工作台", 2], ["电动马达"]]
+        type: "增强型工作台",
+        map: [[null, "合成机马达", null], ["发射器", "铁砧", "发射器"], ["工作台", "电动马达", "工作台"]],
+        ingredients: [["合成机马达"], ["发射器", 2], ["铁砧"], ["工作台", 2], ["电动马达"]]
     },
     "全自动收集机": {
-        "type": "增强型工作台",
-        "map": [[null, "干草捆", null], ["铁桶", "中型储能电容", "铁桶"], ["铝黄铜锭", "电动马达", "铝黄铜锭"]],
-        "ingredients": [["干草捆"], ["铁桶", 2], ["中型储能电容"], ["铝黄铜锭", 2], ["电动马达"]]
+        type: "增强型工作台",
+        map: [[null, "干草捆", null], ["铁桶", "中型储能电容", "铁桶"], ["铝黄铜锭", "电动马达", "铝黄铜锭"]],
+        ingredients: [["干草捆"], ["铁桶", 2], ["中型储能电容"], ["铝黄铜锭", 2], ["电动马达"]]
     },
     "合成机智能交互接口": {
-        "type": "增强型工作台",
-        "map": [[null, "货运马达", null], ["箱子", "合成机马达", "箱子"], [null, "电动马达", null]],
-        "ingredients": [["货运马达"], ["箱子", 2], ["合成机马达"], ["电动马达"]]
+        type: "增强型工作台",
+        map: [[null, "货运马达", null], ["箱子", "合成机马达", "箱子"], [null, "电动马达", null]],
+        ingredients: [["货运马达"], ["箱子", 2], ["合成机马达"], ["电动马达"]]
     },
     "一阶便携充电器": {
-        "type": "增强型工作台",
-        "map": [["钢锭", "铜线", "钢锭"], ["钢锭", "小型储能电容", "钢锭"], ["红砖", "钢板", "红砖"]],
-        "ingredients": [["钢锭", 4], ["铜线"], ["小型储能电容"], ["红砖", 2], ["钢板"]]
+        type: "增强型工作台",
+        map: [["钢锭", "铜线", "钢锭"], ["钢锭", "小型储能电容", "钢锭"], ["红砖", "钢板", "红砖"]],
+        ingredients: [["钢锭", 4], ["铜线"], ["小型储能电容"], ["红砖", 2], ["钢板"]]
     },
     "二阶便携充电器": {
-        "type": "增强型工作台",
-        "map": [["钢锭", "铜线", "钢锭"], ["钢锭", "中型储能电容", "钢锭"], ["铁锭", "钢板", "铁锭"]],
-        "ingredients": [["钢锭", 4], ["铜线"], ["中型储能电容"], ["铁锭", 2], ["钢板"]]
+        type: "增强型工作台",
+        map: [["钢锭", "铜线", "钢锭"], ["钢锭", "中型储能电容", "钢锭"], ["铁锭", "钢板", "铁锭"]],
+        ingredients: [["钢锭", 4], ["铜线"], ["中型储能电容"], ["铁锭", 2], ["钢板"]]
     },
     "三阶便携充电器": {
-        "type": "增强型工作台",
-        "map": [["钢锭", "铜线", "钢锭"], ["钢锭", "大型储能电容", "钢锭"], ["金锭", "钢板", "金锭"]],
-        "ingredients": [["钢锭", 4], ["铜线"], ["大型储能电容"], ["金锭", 2], ["钢板"]]
+        type: "增强型工作台",
+        map: [["钢锭", "铜线", "钢锭"], ["钢锭", "大型储能电容", "钢锭"], ["金锭", "钢板", "金锭"]],
+        ingredients: [["钢锭", 4], ["铜线"], ["大型储能电容"], ["金锭", 2], ["钢板"]]
     },
     "四阶便携充电器": {
-        "type": "增强型工作台",
-        "map": [["钢锭", "铜线", "钢锭"], ["钢锭", "巨型储能电容", "钢锭"], ["下界砖", "钢板", "下界砖"]],
-        "ingredients": [["钢锭", 4], ["铜线"], ["巨型储能电容"], ["下界砖", 2], ["钢板"]]
+        type: "增强型工作台",
+        map: [["钢锭", "铜线", "钢锭"], ["钢锭", "巨型储能电容", "钢锭"], ["下界砖", "钢板", "下界砖"]],
+        ingredients: [["钢锭", 4], ["铜线"], ["巨型储能电容"], ["下界砖", 2], ["钢板"]]
     },
     "五阶便携充电器": {
-        "type": "增强型工作台",
-        "map": [["钢锭", "铜线", "钢锭"], ["钢锭", "黑金刚石镶边储能电容", "钢锭"], ["下界合金锭", "钢板", "下界合金锭"]],
-        "ingredients": [["钢锭", 4], ["铜线"], ["黑金刚石镶边储能电容"], ["下界合金锭", 2], ["钢板"]]
+        type: "增强型工作台",
+        map: [["钢锭", "铜线", "钢锭"], ["钢锭", "黑金刚石镶边储能电容", "钢锭"], ["下界合金锭", "钢板", "下界合金锭"]],
+        ingredients: [["钢锭", 4], ["铜线"], ["黑金刚石镶边储能电容"], ["下界合金锭", 2], ["钢板"]]
     },
     "手摇发电机": {
-        "type": "多方块结构",
-        "map": [[null, null, null], [null, "拉杆", null], [null, "发电机芯", null]],
-        "ingredients": [["拉杆"], ["发电机芯"]]
+        type: "多方块结构",
+        map: [[null, null, null], [null, "拉杆", null], [null, "发电机芯", null]],
+        ingredients: [["拉杆"], ["发电机芯"]]
     },
     "铸造厂": {
-        "type": "多方块结构",
-        "map": [["下界合金块", "超热炉", "下界合金块"], ["下界合金块", "玻璃", "下界合金块"], ["下界合金块", "炼药锅", "下界合金块"]],
-        "ingredients": [["下界合金块", 6], ["超热炉"], ["玻璃"], ["炼药锅"]]
+        type: "多方块结构",
+        map: [["下界合金块", "超热炉", "下界合金块"], ["下界合金块", "玻璃", "下界合金块"], ["下界合金块", "炼药锅", "下界合金块"]],
+        ingredients: [["下界合金块", 6], ["超热炉"], ["玻璃"], ["炼药锅"]]
     },
     "经验收集器(蓬松机器)": {
-        "type": "多方块结构",
-        "map": [[null, null, null], [null, "砂轮", null], [null, "发射器", null]],
-        "ingredients": [["砂轮"], ["发射器"]]
+        type: "多方块结构",
+        map: [[null, null, null], [null, "砂轮", null], [null, "发射器", null]],
+        ingredients: [["砂轮"], ["发射器"]]
     },
     "喷壶": {
-        "type": "增强型工作台",
-        "map": [["铁锭", null, "铁锭"], ["铁锭", "铁桶", "铁锭"], [null, "铁锭", null]],
-        "ingredients": [["铁锭", 5], ["铁桶"]]
+        type: "增强型工作台",
+        map: [["铁锭", null, "铁锭"], ["铁锭", "铁桶", "铁锭"], [null, "铁锭", null]],
+        ingredients: [["铁锭", 5], ["铁桶"]]
     },
     "镰刀": {
-        "type": "增强型工作台",
-        "map": [[null, "铁锭", "铁锭"], [null, "铁锄", null], [null, "木棍", null]],
-        "ingredients": [["铁锭", 2], ["铁锄"], ["木棍"]]
+        type: "增强型工作台",
+        map: [[null, "铁锭", "铁锭"], [null, "铁锄", null], [null, "木棍", null]],
+        ingredients: [["铁锭", 2], ["铁锄"], ["木棍"]]
     },
     "扳手": {
-        "type": "增强型工作台",
-        "map": [["铜锭", null, "铜锭"], ["铜锭", "铜锭", "铜锭"], [null, "铜锭", null]],
-        "ingredients": [["铜锭", 6]]
+        type: "增强型工作台",
+        map: [["铜锭", null, "铜锭"], ["铜锭", "铜锭", "铜锭"], [null, "铜锭", null]],
+        ingredients: [["铜锭", 6]]
     },
     "改进扳手": {
-        "type": "增强型工作台",
-        "map": [["强化合金锭", null, "强化合金锭"], ["强化合金锭", "扳手", "强化合金锭"], [null, "人造钻石", null]],
-        "ingredients": [["强化合金锭", 4], ["扳手"], ["人造钻石"]]
+        type: "增强型工作台",
+        map: [["强化合金锭", null, "强化合金锭"], ["强化合金锭", "扳手", "强化合金锭"], [null, "人造钻石", null]],
+        ingredients: [["强化合金锭", 4], ["扳手"], ["人造钻石"]]
     },
     "精制扳手": {
-        "type": "增强型工作台",
-        "map": [["黑金刚石", null, "黑金刚石"], ["黑金刚石", "改进扳手", "黑金刚石"], [null, "黑金刚石镶边储能电容", null]],
-        "ingredients": [["黑金刚石", 4], ["改进扳手"], ["黑金刚石镶边储能电容"]]
+        type: "增强型工作台",
+        map: [["黑金刚石", null, "黑金刚石"], ["黑金刚石", "改进扳手", "黑金刚石"], [null, "黑金刚石镶边储能电容", null]],
+        ingredients: [["黑金刚石", 4], ["改进扳手"], ["黑金刚石镶边储能电容"]]
     },
     "改进伐木斧": {
-        "type": "增强型工作台",
-        "map": [[null, "钻石", "钻石"], [null, "伐木斧", null], [null, "黑曜石", null]],
-        "ingredients": [["钻石", 2], ["伐木斧"], ["黑曜石"]]
+        type: "增强型工作台",
+        map: [[null, "钻石", "钻石"], [null, "伐木斧", null], [null, "黑曜石", null]],
+        ingredients: [["钻石", 2], ["伐木斧"], ["黑曜石"]]
     },
     "改进爆破镐": {
-        "type": "增强型工作台",
-        "map": [["人造绿宝石", "人造绿宝石", "人造绿宝石"], ["TNT", "爆炸镐", "TNT"], [null, "黑曜石", null]],
-        "ingredients": [["人造绿宝石", 3], ["TNT", 2], ["爆炸镐"], ["黑曜石"]]
+        type: "增强型工作台",
+        map: [["人造绿宝石", "人造绿宝石", "人造绿宝石"], ["TNT", "爆炸镐", "TNT"], [null, "黑曜石", null]],
+        ingredients: [["人造绿宝石", 3], ["TNT", 2], ["爆炸镐"], ["黑曜石"]]
     },
     "改进爆破铲": {
-        "type": "增强型工作台",
-        "map": [["人造绿宝石", "人造绿宝石", "人造绿宝石"], ["TNT", "爆炸铲", "TNT"], [null, "黑曜石", null]],
-        "ingredients": [["人造绿宝石", 3], ["TNT", 2], ["爆炸铲"], ["黑曜石"]]
+        type: "增强型工作台",
+        map: [["人造绿宝石", "人造绿宝石", "人造绿宝石"], ["TNT", "爆炸铲", "TNT"], [null, "黑曜石", null]],
+        ingredients: [["人造绿宝石", 3], ["TNT", 2], ["爆炸铲"], ["黑曜石"]]
     },
     "多功能工具": {
-        "type": "增强型工作台",
-        "map": [["人造绿宝石", "钻石镐", "人造绿宝石"], ["强化合金锭", "钻石斧", "强化合金锭"], ["人造钻石", "钻石锹", "人造钻石"]],
-        "ingredients": [["人造绿宝石", 2], ["钻石镐"], ["强化合金锭", 2], ["钻石斧"], ["人造钻石", 2], ["钻石锹"]]
+        type: "增强型工作台",
+        map: [["人造绿宝石", "钻石镐", "人造绿宝石"], ["强化合金锭", "钻石斧", "强化合金锭"], ["人造钻石", "钻石锹", "人造钻石"]],
+        ingredients: [["人造绿宝石", 2], ["钻石镐"], ["强化合金锭", 2], ["钻石斧"], ["人造钻石", 2], ["钻石锹"]]
     },
     "洒水机": {
-        "type": "增强型工作台",
-        "map": [["铁锭", "电动马达", "铁锭"], ["铁桶", "发射器", "铁桶"], ["铁锭", "小型储能电容", "铁锭"]],
-        "ingredients": [["铁锭", 4], ["电动马达"], ["铁桶", 2], ["发射器"], ["小型储能电容"]]
+        type: "增强型工作台",
+        map: [["铁锭", "电动马达", "铁锭"], ["铁桶", "发射器", "铁桶"], ["铁锭", "小型储能电容", "铁锭"]],
+        ingredients: [["铁锭", 4], ["电动马达"], ["铁桶", 2], ["发射器"], ["小型储能电容"]]
     },
     "全自动工作台(原版)": {
-        "type": "增强型工作台",
-        "map": [["工作台", "基础电路板", "工作台"], ["货运马达", "起泡锭", "货运马达"], ["工作台", "电动马达", "工作台"]],
-        "ingredients": [["工作台", 4], ["基础电路板"], ["货运马达", 2], ["起泡锭"], ["电动马达"]]
+        type: "增强型工作台",
+        map: [["工作台", "基础电路板", "工作台"], ["货运马达", "起泡锭", "货运马达"], ["工作台", "电动马达", "工作台"]],
+        ingredients: [["工作台", 4], ["基础电路板"], ["货运马达", 2], ["起泡锭"], ["电动马达"]]
     },
     "全自动远古祭坛": {
-        "type": "增强型工作台",
-        "map": [["古代基座", "中型储能电容", "古代基座"], ["古代基座", "古代祭坛", "古代基座"], ["古代基座", "电动马达", "古代基座"]],
-        "ingredients": [["古代基座", 6], ["中型储能电容"], ["古代祭坛"], ["电动马达"]]
+        type: "增强型工作台",
+        map: [["古代基座", "中型储能电容", "古代基座"], ["古代基座", "古代祭坛", "古代基座"], ["古代基座", "电动马达", "古代基座"]],
+        ingredients: [["古代基座", 6], ["中型储能电容"], ["古代祭坛"], ["电动马达"]]
     },
     "自动增强型工作台": {
-        "type": "增强型工作台",
-        "map": [["工作台", "高级电路板", "工作台"], ["货运马达", "起泡锭", "货运马达"], ["工作台", "电动马达", "工作台"]],
-        "ingredients": [["工作台", 4], ["高级电路板"], ["货运马达", 2], ["起泡锭"], ["电动马达"]]
+        type: "增强型工作台",
+        map: [["工作台", "高级电路板", "工作台"], ["货运马达", "起泡锭", "货运马达"], ["工作台", "电动马达", "工作台"]],
+        ingredients: [["工作台", 4], ["高级电路板"], ["货运马达", 2], ["起泡锭"], ["电动马达"]]
     },
     "全自动台锯": {
-        "type": "增强型工作台",
-        "map": [["高级电路板", "中型储能电容", "高级电路板"], ["平滑石头台阶", "切石机", "平滑石头台阶"], ["电动马达", "铁块", "电动马达"]],
-        "ingredients": [["高级电路板", 2], ["中型储能电容"], ["平滑石头台阶", 2], ["切石机"], ["电动马达", 2], ["铁块"]]
+        type: "增强型工作台",
+        map: [["高级电路板", "中型储能电容", "高级电路板"], ["平滑石头台阶", "切石机", "平滑石头台阶"], ["电动马达", "铁块", "电动马达"]],
+        ingredients: [["高级电路板", 2], ["中型储能电容"], ["平滑石头台阶", 2], ["切石机"], ["电动马达", 2], ["铁块"]]
     },
     "自动魔法工作台": {
-        "type": "增强型工作台",
-        "map": [["书架", "高级电路板", "书架"], ["书架", "工作台", "发射器"], ["书架", "全自动工作台(原版)", "书架"]],
-        "ingredients": [["书架", 5], ["高级电路板"], ["工作台"], ["发射器"], ["全自动工作台(原版)"]]
+        type: "增强型工作台",
+        map: [["书架", "高级电路板", "书架"], ["书架", "工作台", "发射器"], ["书架", "全自动工作台(原版)", "书架"]],
+        ingredients: [["书架", 5], ["高级电路板"], ["工作台"], ["发射器"], ["全自动工作台(原版)"]]
     },
     "全自动盔甲锻造机": {
-        "type": "增强型工作台",
-        "map": [["铁砧", "铁砧", "铁砧"], ["高级电路板", "发射器", "高级电路板"], ["铁砧", "全自动工作台(原版)", "铁砧"]],
-        "ingredients": [["铁砧", 5], ["高级电路板", 2], ["发射器"], ["全自动工作台(原版)"]]
+        type: "增强型工作台",
+        map: [["铁砧", "铁砧", "铁砧"], ["高级电路板", "发射器", "高级电路板"], ["铁砧", "全自动工作台(原版)", "铁砧"]],
+        ingredients: [["铁砧", 5], ["高级电路板", 2], ["发射器"], ["全自动工作台(原版)"]]
     },
     "高级全自动祛魔机": {
-        "type": "增强型工作台",
-        "map": [["红石合金锭", "自动铁砧Mk.II", "红石合金锭"], ["起泡锭", "自动祛魔机", "起泡锭"], ["防凋灵黑曜石", "防凋灵黑曜石", "防凋灵黑曜石"]],
-        "ingredients": [["红石合金锭", 2], ["自动铁砧Mk.II"], ["起泡锭", 2], ["自动祛魔机"], ["防凋灵黑曜石", 3]]
+        type: "增强型工作台",
+        map: [["红石合金锭", "自动铁砧Mk.II", "红石合金锭"], ["起泡锭", "自动祛魔机", "起泡锭"], ["防凋灵黑曜石", "防凋灵黑曜石", "防凋灵黑曜石"]],
+        ingredients: [["红石合金锭", 2], ["自动铁砧Mk.II"], ["起泡锭", 2], ["自动祛魔机"], ["防凋灵黑曜石", 3]]
     },
     "背包装载机": {
-        "type": "增强型工作台",
-        "map": [["橙色染色玻璃", "橙色染色玻璃", "橙色染色玻璃"], ["铁锭", "漏斗", "铁锭"], ["电动马达", "大型储能电容", "电动马达"]],
-        "ingredients": [["橙色染色玻璃", 3], ["铁锭", 2], ["漏斗"], ["电动马达", 2], ["大型储能电容"]]
+        type: "增强型工作台",
+        map: [["橙色染色玻璃", "橙色染色玻璃", "橙色染色玻璃"], ["铁锭", "漏斗", "铁锭"], ["电动马达", "大型储能电容", "电动马达"]],
+        ingredients: [["橙色染色玻璃", 3], ["铁锭", 2], ["漏斗"], ["电动马达", 2], ["大型储能电容"]]
     },
     "背包卸载机": {
-        "type": "增强型工作台",
-        "map": [["棕色染色玻璃", "棕色染色玻璃", "棕色染色玻璃"], ["铁锭", "发射器", "铁锭"], ["电动马达", "大型储能电容", "电动马达"]],
-        "ingredients": [["棕色染色玻璃", 3], ["铁锭", 2], ["发射器"], ["电动马达", 2], ["大型储能电容"]]
+        type: "增强型工作台",
+        map: [["棕色染色玻璃", "棕色染色玻璃", "棕色染色玻璃"], ["铁锭", "发射器", "铁锭"], ["电动马达", "大型储能电容", "电动马达"]],
+        ingredients: [["棕色染色玻璃", 3], ["铁锭", 2], ["发射器"], ["电动马达", 2], ["大型储能电容"]]
     },
     "发电机芯": {
-        "type": "增强型工作台",
-        "map": [["铁锭", "铁锭", "铁锭"], ["铁锭", "电磁铁", "铁锭"], ["铁锭", "高级电路板", "铁锭"]],
-        "ingredients": [["铁锭", 7], ["电磁铁"], ["高级电路板"]]
+        type: "增强型工作台",
+        map: [["铁锭", "铁锭", "铁锭"], ["铁锭", "电磁铁", "铁锭"], ["铁锭", "高级电路板", "铁锭"]],
+        ingredients: [["铁锭", 7], ["电磁铁"], ["高级电路板"]]
     },
     "超热炉": {
-        "type": "增强型工作台",
-        "map": [["黑曜石", "黑曜石", "黑曜石"], ["熔岩桶", "高炉", "熔岩桶"], ["黑曜石", "黑曜石", "黑曜石"]],
-        "ingredients": [["黑曜石", 6], ["熔岩桶", 2], ["高炉"]]
+        type: "增强型工作台",
+        map: [["黑曜石", "黑曜石", "黑曜石"], ["熔岩桶", "高炉", "熔岩桶"], ["黑曜石", "黑曜石", "黑曜石"]],
+        ingredients: [["黑曜石", 6], ["熔岩桶", 2], ["高炉"]]
     },
     "直升机帽": {
-        "type": "增强型工作台",
-        "map": [["铁锭", "铁锭", "铁锭"], ["高级电路板", "皮革帽子", "高级电路板"], ["压缩碳", "电动马达", "压缩碳"]],
-        "ingredients": [["铁锭", 3], ["高级电路板", 2], ["皮革帽子"], ["压缩碳", 2], ["电动马达"]]
+        type: "增强型工作台",
+        map: [["铁锭", "铁锭", "铁锭"], ["高级电路板", "皮革帽子", "高级电路板"], ["压缩碳", "电动马达", "压缩碳"]],
+        ingredients: [["铁锭", 3], ["高级电路板", 2], ["皮革帽子"], ["压缩碳", 2], ["电动马达"]]
     },
     "古代符文[防火]": {
-        "type": "增强型工作台",
-        "map": [["人造绿宝石", "下界合金锭", "人造绿宝石"], ["黑曜石", "古代符文[火]", "黑曜石"], ["人造绿宝石", "黑曜石", "人造绿宝石"]],
-        "ingredients": [["人造绿宝石", 4], ["下界合金锭"], ["黑曜石", 3], ["古代符文[火]"]]
+        type: "增强型工作台",
+        map: [["人造绿宝石", "下界合金锭", "人造绿宝石"], ["黑曜石", "古代符文[火]", "黑曜石"], ["人造绿宝石", "黑曜石", "人造绿宝石"]],
+        ingredients: [["人造绿宝石", 4], ["下界合金锭"], ["黑曜石", 3], ["古代符文[火]"]]
     },
     "末影货运节点(输入)": {
-        "type": "增强型工作台",
-        "map": [["末影结晶-II", "基础电路板", "末影结晶-II"], ["发射器", "末影珍珠", "漏斗"], ["末影结晶-II", "基础电路板", "末影结晶-II"]],
-        "ingredients": [["末影结晶-II", 4], ["基础电路板", 2], ["发射器"], ["末影珍珠"], ["漏斗"]]
+        type: "增强型工作台",
+        map: [["末影结晶-II", "基础电路板", "末影结晶-II"], ["发射器", "末影珍珠", "漏斗"], ["末影结晶-II", "基础电路板", "末影结晶-II"]],
+        ingredients: [["末影结晶-II", 4], ["基础电路板", 2], ["发射器"], ["末影珍珠"], ["漏斗"]]
     },
     "末影货运节点(输出)": {
-        "type": "增强型工作台",
-        "map": [["末影结晶-II", "基础电路板", "末影结晶-II"], ["漏斗", "末影珍珠", "发射器"], ["末影结晶-II", "基础电路板", "末影结晶-II"]],
-        "ingredients": [["末影结晶-II", 4], ["基础电路板", 2], ["漏斗"], ["末影珍珠"], ["发射器"]]
+        type: "增强型工作台",
+        map: [["末影结晶-II", "基础电路板", "末影结晶-II"], ["漏斗", "末影珍珠", "发射器"], ["末影结晶-II", "基础电路板", "末影结晶-II"]],
+        ingredients: [["末影结晶-II", 4], ["基础电路板", 2], ["漏斗"], ["末影珍珠"], ["发射器"]]
     },
     "箱子搬运车": {
-        "type": "增强型工作台",
-        "map": [["皮革", "皮革", "皮革"], ["铁锭", "矿车", "铁锭"], ["铁锭", "铁锭", "铁锭"]],
-        "ingredients": [["皮革", 3], ["铁锭", 5], ["矿车"]]
+        type: "增强型工作台",
+        map: [["皮革", "皮革", "皮革"], ["铁锭", "矿车", "铁锭"], ["铁锭", "铁锭", "铁锭"]],
+        ingredients: [["皮革", 3], ["铁锭", 5], ["矿车"]]
     },
     "远古之书": {
-        "type": "古代祭坛",
-        "map": [["书", "学识之瓶(满)", "书"], ["学识之瓶(满)", "古代符文[附魔]", "学识之瓶(满)"], ["书", "学识之瓶(满)", "书"]],
-        "ingredients": [["书", 4], ["学识之瓶(满)", 4], ["古代符文[附魔]"]]
+        type: "古代祭坛",
+        map: [["书", "学识之瓶(满)", "书"], ["学识之瓶(满)", "古代符文[附魔]", "学识之瓶(满)"], ["书", "学识之瓶(满)", "书"]],
+        ingredients: [["书", 4], ["学识之瓶(满)", 4], ["古代符文[附魔]"]]
     },
     "传送装置": {
-        "type": "增强型工作台",
-        "map": [["末影之眼", "末影之眼", "末影之眼"], ["末影之眼", "GPS信号塔", "末影之眼"], ["末影之眼", "末影之眼", "末影之眼"]],
-        "ingredients": [["末影之眼", 8], ["GPS信号塔"]]
+        type: "增强型工作台",
+        map: [["末影之眼", "末影之眼", "末影之眼"], ["末影之眼", "GPS信号塔", "末影之眼"], ["末影之眼", "末影之眼", "末影之眼"]],
+        ingredients: [["末影之眼", 8], ["GPS信号塔"]]
     },
     "传送装置配置器": {
-        "type": "增强型工作台",
-        "map": [[null, "末影之眼", null], [null, "镁锭", null], [null, "镁锭", null]],
-        "ingredients": [["末影之眼"], ["镁锭", 2]]
+        type: "增强型工作台",
+        map: [[null, "末影之眼", null], [null, "镁锭", null], [null, "镁锭", null]],
+        ingredients: [["末影之眼"], ["镁锭", 2]]
     },
     "粉尘制造机": {
-        "type": "增强型工作台",
-        "map": [["电力碎矿机(II)", "电力碎矿机(II)", "电力碎矿机(II)"], ["电动淘金机(III)", "起泡锭", "电动淘金机(III)"], ["电动马达", "电动洗矿机(III)", "电动马达"]],
-        "ingredients": [["电力碎矿机(II)", 3], ["电动淘金机(III)", 2], ["起泡锭"], ["电动马达", 2], ["电动洗矿机(III)"]]
+        type: "增强型工作台",
+        map: [["电力碎矿机(II)", "电力碎矿机(II)", "电力碎矿机(II)"], ["电动淘金机(III)", "起泡锭", "电动淘金机(III)"], ["电动马达", "电动洗矿机(III)", "电动马达"]],
+        ingredients: [["电力碎矿机(II)", 3], ["电动淘金机(III)", 2], ["起泡锭"], ["电动马达", 2], ["电动洗矿机(III)"]]
     },
     "粉尘回收机": {
-        "type": "增强型工作台",
-        "map": [["熔岩桶", "活塞", "熔岩桶"], ["熔岩桶", "电动坩埚-III", "熔岩桶"], ["电动马达", "活塞", "电动马达"]],
-        "ingredients": [["熔岩桶", 4], ["活塞", 2], ["电动坩埚-III"], ["电动马达", 2]]
+        type: "增强型工作台",
+        map: [["熔岩桶", "活塞", "熔岩桶"], ["熔岩桶", "电动坩埚-III", "熔岩桶"], ["电动马达", "活塞", "电动马达"]],
+        ingredients: [["熔岩桶", 4], ["活塞", 2], ["电动坩埚-III"], ["电动马达", 2]]
     },
     "备用电梯板": {
-        "type": "增强型工作台",
-        "map": [["石头压力板", "石头压力板", "石头压力板"], ["活塞", "电动马达", "活塞"], ["铝青铜锭", "铝青铜锭", "铝青铜锭"]],
-        "ingredients": [["石头压力板", 3], ["活塞", 2], ["电动马达"], ["铝青铜锭", 3]]
+        type: "增强型工作台",
+        map: [["石头压力板", "石头压力板", "石头压力板"], ["活塞", "电动马达", "活塞"], ["铝青铜锭", "铝青铜锭", "铝青铜锭"]],
+        ingredients: [["石头压力板", 3], ["活塞", 2], ["电动马达"], ["铝青铜锭", 3]]
     },
     "高级充电台": {
-        "type": "增强型工作台",
-        "map": [["科林斯青铜锭", "高级电路板", "科林斯青铜锭"], ["高级电路板", "充电台", "高级电路板"], ["电动马达", "小型储能电容", "电动马达"]],
-        "ingredients": [["科林斯青铜锭", 2], ["高级电路板", 3], ["充电台"], ["电动马达", 2], ["小型储能电容"]]
+        type: "增强型工作台",
+        map: [["科林斯青铜锭", "高级电路板", "科林斯青铜锭"], ["高级电路板", "充电台", "高级电路板"], ["电动马达", "小型储能电容", "电动马达"]],
+        ingredients: [["科林斯青铜锭", 2], ["高级电路板", 3], ["充电台"], ["电动马达", 2], ["小型储能电容"]]
     },
     "高级充电台升级卡": {
-        "type": "增强型工作台",
-        "map": [["科林斯青铜锭", "高级电路板", "科林斯青铜锭"], ["高级电路板", "电动马达", "高级电路板"], ["金锭(24克拉)", "小型储能电容", "金锭(24克拉)"]],
-        "ingredients": [["科林斯青铜锭", 2], ["高级电路板", 3], ["电动马达"], ["金锭(24克拉)", 2], ["小型储能电容"]]
+        type: "增强型工作台",
+        map: [["科林斯青铜锭", "高级电路板", "科林斯青铜锭"], ["高级电路板", "电动马达", "高级电路板"], ["金锭(24克拉)", "小型储能电容", "金锭(24克拉)"]],
+        ingredients: [["科林斯青铜锭", 2], ["高级电路板", 3], ["电动马达"], ["金锭(24克拉)", 2], ["小型储能电容"]]
     },
     "货运配置器": {
-        "type": "增强型工作台",
-        "map": [["货运马达", "末影之眼", "电动马达"], ["末影之眼", "指南针", "末影之眼"], ["电动马达", "末影之眼", "货运马达"]],
-        "ingredients": [["货运马达", 2], ["末影之眼", 4], ["电动马达", 2], ["指南针"]]
+        type: "增强型工作台",
+        map: [["货运马达", "末影之眼", "电动马达"], ["末影之眼", "指南针", "末影之眼"], ["电动马达", "末影之眼", "货运马达"]],
+        ingredients: [["货运马达", 2], ["末影之眼", 4], ["电动马达", 2], ["指南针"]]
     },
     "智能工厂": {
-        "type": "增强型工作台",
-        "map": [["货运马达", "电力冶炼炉-II", "货运马达"], ["自动合成机(高级)", "碳压机-III", "自动合成机(原版)"], ["合成机马达", "电动铸锭机(III)", "合成机马达"]],
-        "ingredients": [["货运马达", 2], ["电力冶炼炉-II"], ["自动合成机(高级)"], ["碳压机-III"], ["自动合成机(原版)"], ["合成机马达", 2], ["电动铸锭机(III)"]]
+        type: "增强型工作台",
+        map: [["货运马达", "电力冶炼炉-II", "货运马达"], ["自动合成机(高级)", "碳压机-III", "自动合成机(原版)"], ["合成机马达", "电动铸锭机(III)", "合成机马达"]],
+        ingredients: [["货运马达", 2], ["电力冶炼炉-II"], ["自动合成机(高级)"], ["碳压机-III"], ["自动合成机(原版)"], ["合成机马达", 2], ["电动铸锭机(III)"]]
     },
     "迷你蓬松箱子": {
-        "type": "增强型工作台",
-        "map": [["橡木台阶", "木桶", "橡木台阶"], ["橡木台阶", "木桶", "橡木台阶"], ["钢板", "钢板", "钢板"]],
-        "ingredients": [["橡木台阶", 4], ["木桶", 2], ["钢板", 3]]
+        type: "增强型工作台",
+        map: [["橡木台阶", "木桶", "橡木台阶"], ["橡木台阶", "木桶", "橡木台阶"], ["钢板", "钢板", "钢板"]],
+        ingredients: [["橡木台阶", 4], ["木桶", 2], ["钢板", 3]]
     },
     "一阶蓬松箱子": {
-        "type": "增强型工作台",
-        "map": [["橡木原木", "木桶", "橡木原木"], ["橡木原木", "木桶", "橡木原木"], ["橡木原木", "钢筋板", "橡木原木"]],
-        "ingredients": [["橡木原木", 6], ["木桶", 2], ["钢筋板"]]
+        type: "增强型工作台",
+        map: [["橡木原木", "木桶", "橡木原木"], ["橡木原木", "木桶", "橡木原木"], ["橡木原木", "钢筋板", "橡木原木"]],
+        ingredients: [["橡木原木", 6], ["木桶", 2], ["钢筋板"]]
     },
     "二阶蓬松箱子": {
-        "type": "增强型工作台",
-        "map": [["平滑石头", "一阶蓬松箱子", "平滑石头"], ["平滑石头", "一阶蓬松箱子", "平滑石头"], ["平滑石头", "钢筋板", "平滑石头"]],
-        "ingredients": [["平滑石头", 6], ["一阶蓬松箱子", 2], ["钢筋板"]]
+        type: "增强型工作台",
+        map: [["平滑石头", "一阶蓬松箱子", "平滑石头"], ["平滑石头", "一阶蓬松箱子", "平滑石头"], ["平滑石头", "钢筋板", "平滑石头"]],
+        ingredients: [["平滑石头", 6], ["一阶蓬松箱子", 2], ["钢筋板"]]
     },
     "三阶蓬松箱子": {
-        "type": "增强型工作台",
-        "map": [["红砖块", "二阶蓬松箱子", "红砖块"], ["红砖块", "二阶蓬松箱子", "红砖块"], ["红砖块", "钢筋板", "红砖块"]],
-        "ingredients": [["红砖块", 6], ["二阶蓬松箱子", 2], ["钢筋板"]]
+        type: "增强型工作台",
+        map: [["红砖块", "二阶蓬松箱子", "红砖块"], ["红砖块", "二阶蓬松箱子", "红砖块"], ["红砖块", "钢筋板", "红砖块"]],
+        ingredients: [["红砖块", 6], ["二阶蓬松箱子", 2], ["钢筋板"]]
     },
     "四阶蓬松箱子": {
-        "type": "增强型工作台",
-        "map": [["铁块", "三阶蓬松箱子", "铁块"], ["铁块", "三阶蓬松箱子", "铁块"], ["铁块", "钢筋板", "铁块"]],
-        "ingredients": [["铁块", 6], ["三阶蓬松箱子", 2], ["钢筋板"]]
+        type: "增强型工作台",
+        map: [["铁块", "三阶蓬松箱子", "铁块"], ["铁块", "三阶蓬松箱子", "铁块"], ["铁块", "钢筋板", "铁块"]],
+        ingredients: [["铁块", 6], ["三阶蓬松箱子", 2], ["钢筋板"]]
     },
     "五阶蓬松箱子": {
-        "type": "增强型工作台",
-        "map": [["黑曜石", "四阶蓬松箱子", "黑曜石"], ["黑曜石", "四阶蓬松箱子", "黑曜石"], ["黑曜石", "钢筋板", "黑曜石"]],
-        "ingredients": [["黑曜石", 6], ["四阶蓬松箱子", 2], ["钢筋板"]]
+        type: "增强型工作台",
+        map: [["黑曜石", "四阶蓬松箱子", "黑曜石"], ["黑曜石", "四阶蓬松箱子", "黑曜石"], ["黑曜石", "钢筋板", "黑曜石"]],
+        ingredients: [["黑曜石", 6], ["四阶蓬松箱子", 2], ["钢筋板"]]
     },
     "六阶蓬松箱子": {
-        "type": "增强型工作台",
-        "map": [["钢筋板", "五阶蓬松箱子", "钢筋板"], ["钢筋板", "五阶蓬松箱子", "钢筋板"], ["钢筋板", "起泡锭", "钢筋板"]],
-        "ingredients": [["钢筋板", 6], ["五阶蓬松箱子", 2], ["起泡锭"]]
+        type: "增强型工作台",
+        map: [["钢筋板", "五阶蓬松箱子", "钢筋板"], ["钢筋板", "五阶蓬松箱子", "钢筋板"], ["钢筋板", "起泡锭", "钢筋板"]],
+        ingredients: [["钢筋板", 6], ["五阶蓬松箱子", 2], ["起泡锭"]]
     },
     "作物架": {
-        "type": "增强型工作台",
-        "map": [["木棍", "木棍", null], ["木棍", "木棍", null], [null, null, null]],
-        "ingredients": [["木棍", 4]]
+        type: "增强型工作台",
+        map: [["木棍", "木棍", null], ["木棍", "木棍", null], [null, null, null]],
+        ingredients: [["木棍", 4]]
     },
     "植物分析仪": {
-        "type": "增强型工作台",
-        "map": [["钻石", "玻璃", null], ["起泡锭(33%)", "作物生长加速器", null], [null, null, null]],
-        "ingredients": [["钻石"], ["玻璃"], ["起泡锭(33%)"], ["作物生长加速器"]]
+        type: "增强型工作台",
+        map: [["钻石", "玻璃", null], ["起泡锭(33%)", "作物生长加速器", null], [null, null, null]],
+        ingredients: [["钻石"], ["玻璃"], ["起泡锭(33%)"], ["作物生长加速器"]]
     },
     "种子袋": {
-        "type": "增强型工作台",
-        "map": [["皮革", "线", "皮革"], ["皮革", null, "皮革"], ["皮革", "皮革", "皮革"]],
-        "ingredients": [["皮革", 7], ["线"]]
+        type: "增强型工作台",
+        map: [["皮革", "线", "皮革"], ["皮革", null, "皮革"], ["皮革", "皮革", "皮革"]],
+        ingredients: [["皮革", 7], ["线"]]
     },
     "园艺玻璃罩": {
-        "type": "增强型工作台",
-        "map": [[null, "钢化玻璃", null], [null, "作物生长加速器", null], [null, "金块(24克拉)", null]],
-        "ingredients": [["钢化玻璃"], ["作物生长加速器"], ["金块(24克拉)"]]
+        type: "增强型工作台",
+        map: [[null, "钢化玻璃", null], [null, "作物生长加速器", null], [null, "金块(24克拉)", null]],
+        ingredients: [["钢化玻璃"], ["作物生长加速器"], ["金块(24克拉)"]]
     },
     "厨房柜台:空": {
-        "type": "增强型工作台",
-        "map": [[null, null, null], ["铁块", "铁块", "铁块"], ["深色橡木原木", "深色橡木原木", "深色橡木原木"]],
-        "ingredients": [["铁块", 3], ["深色橡木原木", 3]]
+        type: "增强型工作台",
+        map: [[null, null, null], ["铁块", "铁块", "铁块"], ["深色橡木原木", "深色橡木原木", "深色橡木原木"]],
+        ingredients: [["铁块", 3], ["深色橡木原木", 3]]
     },
     "厨房柜台:砧板": {
-        "type": "增强型工作台",
-        "map": [[null, "铁剑", null], ["铁块", "磨制黑石", "铁块"], ["深色橡木原木", "深色橡木原木", "深色橡木原木"]],
-        "ingredients": [["铁剑"], ["铁块", 2], ["磨制黑石"], ["深色橡木原木", 3]]
+        type: "增强型工作台",
+        map: [[null, "铁剑", null], ["铁块", "磨制黑石", "铁块"], ["深色橡木原木", "深色橡木原木", "深色橡木原木"]],
+        ingredients: [["铁剑"], ["铁块", 2], ["磨制黑石"], ["深色橡木原木", 3]]
     },
     "厨房柜台:搅拌机": {
-        "type": "增强型工作台",
-        "map": [[null, "玻璃", null], ["铁块", "石英块", "铁块"], ["深色橡木原木", "深色橡木原木", "深色橡木原木"]],
-        "ingredients": [["玻璃"], ["铁块", 2], ["石英块"], ["深色橡木原木", 3]]
+        type: "增强型工作台",
+        map: [[null, "玻璃", null], ["铁块", "石英块", "铁块"], ["深色橡木原木", "深色橡木原木", "深色橡木原木"]],
+        ingredients: [["玻璃"], ["铁块", 2], ["石英块"], ["深色橡木原木", 3]]
     },
     "厨房柜台:切片板": {
-        "type": "增强型工作台",
-        "map": [[null, "剪刀", null], ["铁块", "青金石块", "铁块"], ["深色橡木原木", "深色橡木原木", "深色橡木原木"]],
-        "ingredients": [["剪刀"], ["铁块", 2], ["青金石块"], ["深色橡木原木", 3]]
+        type: "增强型工作台",
+        map: [[null, "剪刀", null], ["铁块", "青金石块", "铁块"], ["深色橡木原木", "深色橡木原木", "深色橡木原木"]],
+        ingredients: [["剪刀"], ["铁块", 2], ["青金石块"], ["深色橡木原木", 3]]
     },
     "厨房柜台:研磨杵和研钵": {
-        "type": "增强型工作台",
-        "map": [[null, "骨头", null], ["铁块", "炼药锅", "铁块"], ["深色橡木原木", "深色橡木原木", "深色橡木原木"]],
-        "ingredients": [["骨头"], ["铁块", 2], ["炼药锅"], ["深色橡木原木", 3]]
+        type: "增强型工作台",
+        map: [[null, "骨头", null], ["铁块", "炼药锅", "铁块"], ["深色橡木原木", "深色橡木原木", "深色橡木原木"]],
+        ingredients: [["骨头"], ["铁块", 2], ["炼药锅"], ["深色橡木原木", 3]]
     },
     "厨房柜台:捣碎碗": {
-        "type": "增强型工作台",
-        "map": [[null, "下界合金锄", null], ["铁块", "堆肥桶", "铁块"], ["深色橡木原木", "深色橡木原木", "深色橡木原木"]],
-        "ingredients": [["下界合金锄"], ["铁块", 2], ["堆肥桶"], ["深色橡木原木", 3]]
+        type: "增强型工作台",
+        map: [[null, "下界合金锄", null], ["铁块", "堆肥桶", "铁块"], ["深色橡木原木", "深色橡木原木", "深色橡木原木"]],
+        ingredients: [["下界合金锄"], ["铁块", 2], ["堆肥桶"], ["深色橡木原木", 3]]
     },
     "厨房柜台:大锅": {
-        "type": "增强型工作台",
-        "map": [[null, "遮光玻璃", "炼药锅"], ["铁块", "营火", "铁块"], ["深色橡木原木", "强化熔炉-I", "深色橡木原木"]],
-        "ingredients": [["遮光玻璃"], ["炼药锅"], ["铁块", 2], ["营火"], ["深色橡木原木", 2], ["强化熔炉-I"]]
+        type: "增强型工作台",
+        map: [[null, "遮光玻璃", "炼药锅"], ["铁块", "营火", "铁块"], ["深色橡木原木", "强化熔炉-I", "深色橡木原木"]],
+        ingredients: [["遮光玻璃"], ["炼药锅"], ["铁块", 2], ["营火"], ["深色橡木原木", 2], ["强化熔炉-I"]]
     },
     "厨房柜台:烤箱": {
-        "type": "增强型工作台",
-        "map": [[null, "铁块", null], ["铁块", "磨制黑石", "铁块"], ["深色橡木原木", "黑金刚石镶边熔炉", "深色橡木原木"]],
-        "ingredients": [["铁块", 3], ["磨制黑石"], ["深色橡木原木", 2], ["黑金刚石镶边熔炉"]]
+        type: "增强型工作台",
+        map: [[null, "铁块", null], ["铁块", "磨制黑石", "铁块"], ["深色橡木原木", "黑金刚石镶边熔炉", "深色橡木原木"]],
+        ingredients: [["铁块", 3], ["磨制黑石"], ["深色橡木原木", 2], ["黑金刚石镶边熔炉"]]
     },
     "厨房柜台:煎锅": {
-        "type": "增强型工作台",
-        "map": [[null, "遮光玻璃", null], ["铁块", "营火", "铁块"], ["深色橡木原木", "黑金刚石镶边熔炉", "深色橡木原木"]],
-        "ingredients": [["遮光玻璃"], ["铁块", 2], ["营火"], ["深色橡木原木", 2], ["黑金刚石镶边熔炉"]]
+        type: "增强型工作台",
+        map: [[null, "遮光玻璃", null], ["铁块", "营火", "铁块"], ["深色橡木原木", "黑金刚石镶边熔炉", "深色橡木原木"]],
+        ingredients: [["遮光玻璃"], ["铁块", 2], ["营火"], ["深色橡木原木", 2], ["黑金刚石镶边熔炉"]]
     },
     "厨房柜台:烤架": {
-        "type": "增强型工作台",
-        "map": [[null, "铁块", null], ["铁块", "雕纹磨制黑石", "铁块"], ["深色橡木原木", "电动马达", "深色橡木原木"]],
-        "ingredients": [["铁块", 3], ["雕纹磨制黑石"], ["深色橡木原木", 2], ["电动马达"]]
+        type: "增强型工作台",
+        map: [[null, "铁块", null], ["铁块", "雕纹磨制黑石", "铁块"], ["深色橡木原木", "电动马达", "深色橡木原木"]],
+        ingredients: [["铁块", 3], ["雕纹磨制黑石"], ["深色橡木原木", 2], ["电动马达"]]
     },
     "厨房柜台:上菜": {
-        "type": "增强型工作台",
-        "map": [[null, null, null], ["铁块", "磨制闪长岩", "铁块"], ["深色橡木原木", "合成机马达", "深色橡木原木"]],
-        "ingredients": [["铁块", 2], ["磨制闪长岩"], ["深色橡木原木", 2], ["合成机马达"]]
+        type: "增强型工作台",
+        map: [[null, null, null], ["铁块", "磨制闪长岩", "铁块"], ["深色橡木原木", "合成机马达", "深色橡木原木"]],
+        ingredients: [["铁块", 2], ["磨制闪长岩"], ["深色橡木原木", 2], ["合成机马达"]]
     },
     "切碎的香蕉": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "香蕉", null], [null, null, null]],
-        "ingredients": [["香蕉"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "香蕉", null], [null, null, null]],
+        ingredients: [["香蕉"]]
     },
     "捣碎的香蕉": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "香蕉", null], [null, null, null]],
-        "ingredients": [["香蕉"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "香蕉", null], [null, null, null]],
+        ingredients: [["香蕉"]]
     },
     "切片的香蕉": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "香蕉", null], [null, null, null]],
-        "ingredients": [["香蕉"]]
+        type: "切片",
+        map: [[null, null, null], [null, "香蕉", null], [null, null, null]],
+        ingredients: [["香蕉"]]
     },
     "剁碎的香蕉": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "香蕉", null], [null, null, null]],
-        "ingredients": [["香蕉"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "香蕉", null], [null, null, null]],
+        ingredients: [["香蕉"]]
     },
     "搅拌的香蕉": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "香蕉", null], [null, null, null]],
-        "ingredients": [["香蕉"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "香蕉", null], [null, null, null]],
+        ingredients: [["香蕉"]]
     },
     "煮熟的香蕉": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "香蕉", null], [null, null, null]],
-        "ingredients": [["香蕉"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "香蕉", null], [null, null, null]],
+        ingredients: [["香蕉"]]
     },
     "油炸的香蕉": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "香蕉", null], [null, null, null]],
-        "ingredients": [["香蕉"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "香蕉", null], [null, null, null]],
+        ingredients: [["香蕉"]]
     },
     "烤制的香蕉": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "香蕉", null], [null, null, null]],
-        "ingredients": [["香蕉"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "香蕉", null], [null, null, null]],
+        ingredients: [["香蕉"]]
     },
     "切碎的柠檬": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "柠檬", null], [null, null, null]],
-        "ingredients": [["柠檬"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "柠檬", null], [null, null, null]],
+        ingredients: [["柠檬"]]
     },
     "捣碎的柠檬": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "柠檬", null], [null, null, null]],
-        "ingredients": [["柠檬"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "柠檬", null], [null, null, null]],
+        ingredients: [["柠檬"]]
     },
     "切片的柠檬": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "柠檬", null], [null, null, null]],
-        "ingredients": [["柠檬"]]
+        type: "切片",
+        map: [[null, null, null], [null, "柠檬", null], [null, null, null]],
+        ingredients: [["柠檬"]]
     },
     "剁碎的柠檬": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "柠檬", null], [null, null, null]],
-        "ingredients": [["柠檬"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "柠檬", null], [null, null, null]],
+        ingredients: [["柠檬"]]
     },
     "搅拌的柠檬": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "柠檬", null], [null, null, null]],
-        "ingredients": [["柠檬"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "柠檬", null], [null, null, null]],
+        ingredients: [["柠檬"]]
     },
     "煮熟的柠檬": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "柠檬", null], [null, null, null]],
-        "ingredients": [["柠檬"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "柠檬", null], [null, null, null]],
+        ingredients: [["柠檬"]]
     },
     "油炸的柠檬": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "柠檬", null], [null, null, null]],
-        "ingredients": [["柠檬"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "柠檬", null], [null, null, null]],
+        ingredients: [["柠檬"]]
     },
     "烤制的柠檬": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "柠檬", null], [null, null, null]],
-        "ingredients": [["柠檬"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "柠檬", null], [null, null, null]],
+        ingredients: [["柠檬"]]
     },
     "切碎的橘子": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "橘子", null], [null, null, null]],
-        "ingredients": [["橘子"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "橘子", null], [null, null, null]],
+        ingredients: [["橘子"]]
     },
     "捣碎的橘子": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "橘子", null], [null, null, null]],
-        "ingredients": [["橘子"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "橘子", null], [null, null, null]],
+        ingredients: [["橘子"]]
     },
     "切片的橘子": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "橘子", null], [null, null, null]],
-        "ingredients": [["橘子"]]
+        type: "切片",
+        map: [[null, null, null], [null, "橘子", null], [null, null, null]],
+        ingredients: [["橘子"]]
     },
     "剁碎的橘子": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "橘子", null], [null, null, null]],
-        "ingredients": [["橘子"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "橘子", null], [null, null, null]],
+        ingredients: [["橘子"]]
     },
     "搅拌的橘子": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "橘子", null], [null, null, null]],
-        "ingredients": [["橘子"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "橘子", null], [null, null, null]],
+        ingredients: [["橘子"]]
     },
     "煮熟的橘子": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "橘子", null], [null, null, null]],
-        "ingredients": [["橘子"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "橘子", null], [null, null, null]],
+        ingredients: [["橘子"]]
     },
     "油炸的橘子": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "橘子", null], [null, null, null]],
-        "ingredients": [["橘子"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "橘子", null], [null, null, null]],
+        ingredients: [["橘子"]]
     },
     "烤制的橘子": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "橘子", null], [null, null, null]],
-        "ingredients": [["橘子"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "橘子", null], [null, null, null]],
+        ingredients: [["橘子"]]
     },
     "切碎的青苹果": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "青苹果", null], [null, null, null]],
-        "ingredients": [["青苹果"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "青苹果", null], [null, null, null]],
+        ingredients: [["青苹果"]]
     },
     "捣碎的青苹果": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "青苹果", null], [null, null, null]],
-        "ingredients": [["青苹果"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "青苹果", null], [null, null, null]],
+        ingredients: [["青苹果"]]
     },
     "切片的青苹果": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "青苹果", null], [null, null, null]],
-        "ingredients": [["青苹果"]]
+        type: "切片",
+        map: [[null, null, null], [null, "青苹果", null], [null, null, null]],
+        ingredients: [["青苹果"]]
     },
     "剁碎的青苹果": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "青苹果", null], [null, null, null]],
-        "ingredients": [["青苹果"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "青苹果", null], [null, null, null]],
+        ingredients: [["青苹果"]]
     },
     "搅拌的青苹果": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "青苹果", null], [null, null, null]],
-        "ingredients": [["青苹果"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "青苹果", null], [null, null, null]],
+        ingredients: [["青苹果"]]
     },
     "煮熟的青苹果": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "青苹果", null], [null, null, null]],
-        "ingredients": [["青苹果"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "青苹果", null], [null, null, null]],
+        ingredients: [["青苹果"]]
     },
     "油炸的青苹果": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "青苹果", null], [null, null, null]],
-        "ingredients": [["青苹果"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "青苹果", null], [null, null, null]],
+        ingredients: [["青苹果"]]
     },
     "烤制的青苹果": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "青苹果", null], [null, null, null]],
-        "ingredients": [["青苹果"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "青苹果", null], [null, null, null]],
+        ingredients: [["青苹果"]]
     },
     "切碎的菠萝": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "菠萝", null], [null, null, null]],
-        "ingredients": [["菠萝"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "菠萝", null], [null, null, null]],
+        ingredients: [["菠萝"]]
     },
     "捣碎的菠萝": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "菠萝", null], [null, null, null]],
-        "ingredients": [["菠萝"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "菠萝", null], [null, null, null]],
+        ingredients: [["菠萝"]]
     },
     "切片的菠萝": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "菠萝", null], [null, null, null]],
-        "ingredients": [["菠萝"]]
+        type: "切片",
+        map: [[null, null, null], [null, "菠萝", null], [null, null, null]],
+        ingredients: [["菠萝"]]
     },
     "剁碎的菠萝": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "菠萝", null], [null, null, null]],
-        "ingredients": [["菠萝"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "菠萝", null], [null, null, null]],
+        ingredients: [["菠萝"]]
     },
     "搅拌的菠萝": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "菠萝", null], [null, null, null]],
-        "ingredients": [["菠萝"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "菠萝", null], [null, null, null]],
+        ingredients: [["菠萝"]]
     },
     "煮熟的菠萝": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "菠萝", null], [null, null, null]],
-        "ingredients": [["菠萝"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "菠萝", null], [null, null, null]],
+        ingredients: [["菠萝"]]
     },
     "油炸的菠萝": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "菠萝", null], [null, null, null]],
-        "ingredients": [["菠萝"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "菠萝", null], [null, null, null]],
+        ingredients: [["菠萝"]]
     },
     "烤制的菠萝": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "菠萝", null], [null, null, null]],
-        "ingredients": [["菠萝"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "菠萝", null], [null, null, null]],
+        ingredients: [["菠萝"]]
     },
     "切碎的芒果": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "芒果", null], [null, null, null]],
-        "ingredients": [["芒果"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "芒果", null], [null, null, null]],
+        ingredients: [["芒果"]]
     },
     "捣碎的芒果": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "芒果", null], [null, null, null]],
-        "ingredients": [["芒果"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "芒果", null], [null, null, null]],
+        ingredients: [["芒果"]]
     },
     "切片的芒果": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "芒果", null], [null, null, null]],
-        "ingredients": [["芒果"]]
+        type: "切片",
+        map: [[null, null, null], [null, "芒果", null], [null, null, null]],
+        ingredients: [["芒果"]]
     },
     "剁碎的芒果": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "芒果", null], [null, null, null]],
-        "ingredients": [["芒果"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "芒果", null], [null, null, null]],
+        ingredients: [["芒果"]]
     },
     "搅拌的芒果": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "芒果", null], [null, null, null]],
-        "ingredients": [["芒果"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "芒果", null], [null, null, null]],
+        ingredients: [["芒果"]]
     },
     "煮熟的芒果": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "芒果", null], [null, null, null]],
-        "ingredients": [["芒果"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "芒果", null], [null, null, null]],
+        ingredients: [["芒果"]]
     },
     "油炸的芒果": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "芒果", null], [null, null, null]],
-        "ingredients": [["芒果"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "芒果", null], [null, null, null]],
+        ingredients: [["芒果"]]
     },
     "烤制的芒果": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "芒果", null], [null, null, null]],
-        "ingredients": [["芒果"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "芒果", null], [null, null, null]],
+        ingredients: [["芒果"]]
     },
     "切碎的桃子": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "桃子", null], [null, null, null]],
-        "ingredients": [["桃子"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "桃子", null], [null, null, null]],
+        ingredients: [["桃子"]]
     },
     "捣碎的桃子": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "桃子", null], [null, null, null]],
-        "ingredients": [["桃子"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "桃子", null], [null, null, null]],
+        ingredients: [["桃子"]]
     },
     "切片的桃子": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "桃子", null], [null, null, null]],
-        "ingredients": [["桃子"]]
+        type: "切片",
+        map: [[null, null, null], [null, "桃子", null], [null, null, null]],
+        ingredients: [["桃子"]]
     },
     "剁碎的桃子": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "桃子", null], [null, null, null]],
-        "ingredients": [["桃子"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "桃子", null], [null, null, null]],
+        ingredients: [["桃子"]]
     },
     "搅拌的桃子": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "桃子", null], [null, null, null]],
-        "ingredients": [["桃子"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "桃子", null], [null, null, null]],
+        ingredients: [["桃子"]]
     },
     "煮熟的桃子": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "桃子", null], [null, null, null]],
-        "ingredients": [["桃子"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "桃子", null], [null, null, null]],
+        ingredients: [["桃子"]]
     },
     "油炸的桃子": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "桃子", null], [null, null, null]],
-        "ingredients": [["桃子"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "桃子", null], [null, null, null]],
+        ingredients: [["桃子"]]
     },
     "烤制的桃子": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "桃子", null], [null, null, null]],
-        "ingredients": [["桃子"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "桃子", null], [null, null, null]],
+        ingredients: [["桃子"]]
     },
     "切碎的杏子": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "杏子", null], [null, null, null]],
-        "ingredients": [["杏子"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "杏子", null], [null, null, null]],
+        ingredients: [["杏子"]]
     },
     "捣碎的杏子": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "杏子", null], [null, null, null]],
-        "ingredients": [["杏子"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "杏子", null], [null, null, null]],
+        ingredients: [["杏子"]]
     },
     "切片的杏子": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "杏子", null], [null, null, null]],
-        "ingredients": [["杏子"]]
+        type: "切片",
+        map: [[null, null, null], [null, "杏子", null], [null, null, null]],
+        ingredients: [["杏子"]]
     },
     "剁碎的杏子": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "杏子", null], [null, null, null]],
-        "ingredients": [["杏子"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "杏子", null], [null, null, null]],
+        ingredients: [["杏子"]]
     },
     "搅拌的杏子": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "杏子", null], [null, null, null]],
-        "ingredients": [["杏子"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "杏子", null], [null, null, null]],
+        ingredients: [["杏子"]]
     },
     "煮熟的杏子": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "杏子", null], [null, null, null]],
-        "ingredients": [["杏子"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "杏子", null], [null, null, null]],
+        ingredients: [["杏子"]]
     },
     "油炸的杏子": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "杏子", null], [null, null, null]],
-        "ingredients": [["杏子"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "杏子", null], [null, null, null]],
+        ingredients: [["杏子"]]
     },
     "烤制的杏子": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "杏子", null], [null, null, null]],
-        "ingredients": [["杏子"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "杏子", null], [null, null, null]],
+        ingredients: [["杏子"]]
     },
     "切碎的梨": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "梨", null], [null, null, null]],
-        "ingredients": [["梨"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "梨", null], [null, null, null]],
+        ingredients: [["梨"]]
     },
     "捣碎的梨": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "梨", null], [null, null, null]],
-        "ingredients": [["梨"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "梨", null], [null, null, null]],
+        ingredients: [["梨"]]
     },
     "切片的梨": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "梨", null], [null, null, null]],
-        "ingredients": [["梨"]]
+        type: "切片",
+        map: [[null, null, null], [null, "梨", null], [null, null, null]],
+        ingredients: [["梨"]]
     },
     "剁碎的梨": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "梨", null], [null, null, null]],
-        "ingredients": [["梨"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "梨", null], [null, null, null]],
+        ingredients: [["梨"]]
     },
     "搅拌的梨": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "梨", null], [null, null, null]],
-        "ingredients": [["梨"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "梨", null], [null, null, null]],
+        ingredients: [["梨"]]
     },
     "煮熟的梨": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "梨", null], [null, null, null]],
-        "ingredients": [["梨"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "梨", null], [null, null, null]],
+        ingredients: [["梨"]]
     },
     "油炸的梨": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "梨", null], [null, null, null]],
-        "ingredients": [["梨"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "梨", null], [null, null, null]],
+        ingredients: [["梨"]]
     },
     "烤制的梨": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "梨", null], [null, null, null]],
-        "ingredients": [["梨"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "梨", null], [null, null, null]],
+        ingredients: [["梨"]]
     },
     "切碎的樱桃": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "樱桃", null], [null, null, null]],
-        "ingredients": [["樱桃"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "樱桃", null], [null, null, null]],
+        ingredients: [["樱桃"]]
     },
     "捣碎的樱桃": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "樱桃", null], [null, null, null]],
-        "ingredients": [["樱桃"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "樱桃", null], [null, null, null]],
+        ingredients: [["樱桃"]]
     },
     "切片的樱桃": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "樱桃", null], [null, null, null]],
-        "ingredients": [["樱桃"]]
+        type: "切片",
+        map: [[null, null, null], [null, "樱桃", null], [null, null, null]],
+        ingredients: [["樱桃"]]
     },
     "剁碎的樱桃": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "樱桃", null], [null, null, null]],
-        "ingredients": [["樱桃"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "樱桃", null], [null, null, null]],
+        ingredients: [["樱桃"]]
     },
     "搅拌的樱桃": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "樱桃", null], [null, null, null]],
-        "ingredients": [["樱桃"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "樱桃", null], [null, null, null]],
+        ingredients: [["樱桃"]]
     },
     "煮熟的樱桃": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "樱桃", null], [null, null, null]],
-        "ingredients": [["樱桃"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "樱桃", null], [null, null, null]],
+        ingredients: [["樱桃"]]
     },
     "油炸的樱桃": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "樱桃", null], [null, null, null]],
-        "ingredients": [["樱桃"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "樱桃", null], [null, null, null]],
+        ingredients: [["樱桃"]]
     },
     "烤制的樱桃": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "樱桃", null], [null, null, null]],
-        "ingredients": [["樱桃"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "樱桃", null], [null, null, null]],
+        ingredients: [["樱桃"]]
     },
     "切碎的奇异果": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "奇异果", null], [null, null, null]],
-        "ingredients": [["奇异果"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "奇异果", null], [null, null, null]],
+        ingredients: [["奇异果"]]
     },
     "捣碎的奇异果": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "奇异果", null], [null, null, null]],
-        "ingredients": [["奇异果"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "奇异果", null], [null, null, null]],
+        ingredients: [["奇异果"]]
     },
     "切片的奇异果": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "奇异果", null], [null, null, null]],
-        "ingredients": [["奇异果"]]
+        type: "切片",
+        map: [[null, null, null], [null, "奇异果", null], [null, null, null]],
+        ingredients: [["奇异果"]]
     },
     "剁碎的奇异果": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "奇异果", null], [null, null, null]],
-        "ingredients": [["奇异果"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "奇异果", null], [null, null, null]],
+        ingredients: [["奇异果"]]
     },
     "搅拌的奇异果": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "奇异果", null], [null, null, null]],
-        "ingredients": [["奇异果"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "奇异果", null], [null, null, null]],
+        ingredients: [["奇异果"]]
     },
     "煮熟的奇异果": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "奇异果", null], [null, null, null]],
-        "ingredients": [["奇异果"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "奇异果", null], [null, null, null]],
+        ingredients: [["奇异果"]]
     },
     "油炸的奇异果": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "奇异果", null], [null, null, null]],
-        "ingredients": [["奇异果"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "奇异果", null], [null, null, null]],
+        ingredients: [["奇异果"]]
     },
     "烤制的奇异果": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "奇异果", null], [null, null, null]],
-        "ingredients": [["奇异果"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "奇异果", null], [null, null, null]],
+        ingredients: [["奇异果"]]
     },
     "切碎的酸橙": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "酸橙", null], [null, null, null]],
-        "ingredients": [["酸橙"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "酸橙", null], [null, null, null]],
+        ingredients: [["酸橙"]]
     },
     "捣碎的酸橙": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "酸橙", null], [null, null, null]],
-        "ingredients": [["酸橙"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "酸橙", null], [null, null, null]],
+        ingredients: [["酸橙"]]
     },
     "切片的酸橙": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "酸橙", null], [null, null, null]],
-        "ingredients": [["酸橙"]]
+        type: "切片",
+        map: [[null, null, null], [null, "酸橙", null], [null, null, null]],
+        ingredients: [["酸橙"]]
     },
     "剁碎的酸橙": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "酸橙", null], [null, null, null]],
-        "ingredients": [["酸橙"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "酸橙", null], [null, null, null]],
+        ingredients: [["酸橙"]]
     },
     "搅拌的酸橙": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "酸橙", null], [null, null, null]],
-        "ingredients": [["酸橙"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "酸橙", null], [null, null, null]],
+        ingredients: [["酸橙"]]
     },
     "煮熟的酸橙": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "酸橙", null], [null, null, null]],
-        "ingredients": [["酸橙"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "酸橙", null], [null, null, null]],
+        ingredients: [["酸橙"]]
     },
     "油炸的酸橙": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "酸橙", null], [null, null, null]],
-        "ingredients": [["酸橙"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "酸橙", null], [null, null, null]],
+        ingredients: [["酸橙"]]
     },
     "烤制的酸橙": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "酸橙", null], [null, null, null]],
-        "ingredients": [["酸橙"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "酸橙", null], [null, null, null]],
+        ingredients: [["酸橙"]]
     },
     "切碎的板栗": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "板栗", null], [null, null, null]],
-        "ingredients": [["板栗"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "板栗", null], [null, null, null]],
+        ingredients: [["板栗"]]
     },
     "捣碎的板栗": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "板栗", null], [null, null, null]],
-        "ingredients": [["板栗"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "板栗", null], [null, null, null]],
+        ingredients: [["板栗"]]
     },
     "切片的板栗": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "板栗", null], [null, null, null]],
-        "ingredients": [["板栗"]]
+        type: "切片",
+        map: [[null, null, null], [null, "板栗", null], [null, null, null]],
+        ingredients: [["板栗"]]
     },
     "剁碎的板栗": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "板栗", null], [null, null, null]],
-        "ingredients": [["板栗"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "板栗", null], [null, null, null]],
+        ingredients: [["板栗"]]
     },
     "搅拌的板栗": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "板栗", null], [null, null, null]],
-        "ingredients": [["板栗"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "板栗", null], [null, null, null]],
+        ingredients: [["板栗"]]
     },
     "煮熟的板栗": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "板栗", null], [null, null, null]],
-        "ingredients": [["板栗"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "板栗", null], [null, null, null]],
+        ingredients: [["板栗"]]
     },
     "油炸的板栗": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "板栗", null], [null, null, null]],
-        "ingredients": [["板栗"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "板栗", null], [null, null, null]],
+        ingredients: [["板栗"]]
     },
     "烤制的板栗": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "板栗", null], [null, null, null]],
-        "ingredients": [["板栗"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "板栗", null], [null, null, null]],
+        ingredients: [["板栗"]]
     },
     "切碎的榛子": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "榛子", null], [null, null, null]],
-        "ingredients": [["榛子"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "榛子", null], [null, null, null]],
+        ingredients: [["榛子"]]
     },
     "捣碎的榛子": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "榛子", null], [null, null, null]],
-        "ingredients": [["榛子"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "榛子", null], [null, null, null]],
+        ingredients: [["榛子"]]
     },
     "切片的榛子": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "榛子", null], [null, null, null]],
-        "ingredients": [["榛子"]]
+        type: "切片",
+        map: [[null, null, null], [null, "榛子", null], [null, null, null]],
+        ingredients: [["榛子"]]
     },
     "剁碎的榛子": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "榛子", null], [null, null, null]],
-        "ingredients": [["榛子"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "榛子", null], [null, null, null]],
+        ingredients: [["榛子"]]
     },
     "搅拌的榛子": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "榛子", null], [null, null, null]],
-        "ingredients": [["榛子"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "榛子", null], [null, null, null]],
+        ingredients: [["榛子"]]
     },
     "煮熟的榛子": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "榛子", null], [null, null, null]],
-        "ingredients": [["榛子"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "榛子", null], [null, null, null]],
+        ingredients: [["榛子"]]
     },
     "油炸的榛子": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "榛子", null], [null, null, null]],
-        "ingredients": [["榛子"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "榛子", null], [null, null, null]],
+        ingredients: [["榛子"]]
     },
     "烤制的榛子": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "榛子", null], [null, null, null]],
-        "ingredients": [["榛子"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "榛子", null], [null, null, null]],
+        ingredients: [["榛子"]]
     },
     "切碎的山核桃": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "山核桃", null], [null, null, null]],
-        "ingredients": [["山核桃"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "山核桃", null], [null, null, null]],
+        ingredients: [["山核桃"]]
     },
     "捣碎的山核桃": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "山核桃", null], [null, null, null]],
-        "ingredients": [["山核桃"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "山核桃", null], [null, null, null]],
+        ingredients: [["山核桃"]]
     },
     "切片的山核桃": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "山核桃", null], [null, null, null]],
-        "ingredients": [["山核桃"]]
+        type: "切片",
+        map: [[null, null, null], [null, "山核桃", null], [null, null, null]],
+        ingredients: [["山核桃"]]
     },
     "剁碎的山核桃": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "山核桃", null], [null, null, null]],
-        "ingredients": [["山核桃"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "山核桃", null], [null, null, null]],
+        ingredients: [["山核桃"]]
     },
     "搅拌的山核桃": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "山核桃", null], [null, null, null]],
-        "ingredients": [["山核桃"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "山核桃", null], [null, null, null]],
+        ingredients: [["山核桃"]]
     },
     "煮熟的山核桃": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "山核桃", null], [null, null, null]],
-        "ingredients": [["山核桃"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "山核桃", null], [null, null, null]],
+        ingredients: [["山核桃"]]
     },
     "油炸的山核桃": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "山核桃", null], [null, null, null]],
-        "ingredients": [["山核桃"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "山核桃", null], [null, null, null]],
+        ingredients: [["山核桃"]]
     },
     "烤制的山核桃": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "山核桃", null], [null, null, null]],
-        "ingredients": [["山核桃"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "山核桃", null], [null, null, null]],
+        ingredients: [["山核桃"]]
     },
     "切碎的葡萄": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "葡萄", null], [null, null, null]],
-        "ingredients": [["葡萄"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "葡萄", null], [null, null, null]],
+        ingredients: [["葡萄"]]
     },
     "捣碎的葡萄": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "葡萄", null], [null, null, null]],
-        "ingredients": [["葡萄"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "葡萄", null], [null, null, null]],
+        ingredients: [["葡萄"]]
     },
     "切片的葡萄": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "葡萄", null], [null, null, null]],
-        "ingredients": [["葡萄"]]
+        type: "切片",
+        map: [[null, null, null], [null, "葡萄", null], [null, null, null]],
+        ingredients: [["葡萄"]]
     },
     "剁碎的葡萄": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "葡萄", null], [null, null, null]],
-        "ingredients": [["葡萄"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "葡萄", null], [null, null, null]],
+        ingredients: [["葡萄"]]
     },
     "搅拌的葡萄": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "葡萄", null], [null, null, null]],
-        "ingredients": [["葡萄"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "葡萄", null], [null, null, null]],
+        ingredients: [["葡萄"]]
     },
     "煮熟的葡萄": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "葡萄", null], [null, null, null]],
-        "ingredients": [["葡萄"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "葡萄", null], [null, null, null]],
+        ingredients: [["葡萄"]]
     },
     "油炸的葡萄": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "葡萄", null], [null, null, null]],
-        "ingredients": [["葡萄"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "葡萄", null], [null, null, null]],
+        ingredients: [["葡萄"]]
     },
     "烤制的葡萄": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "葡萄", null], [null, null, null]],
-        "ingredients": [["葡萄"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "葡萄", null], [null, null, null]],
+        ingredients: [["葡萄"]]
     },
     "切碎的草莓": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "草莓", null], [null, null, null]],
-        "ingredients": [["草莓"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "草莓", null], [null, null, null]],
+        ingredients: [["草莓"]]
     },
     "捣碎的草莓": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "草莓", null], [null, null, null]],
-        "ingredients": [["草莓"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "草莓", null], [null, null, null]],
+        ingredients: [["草莓"]]
     },
     "切片的草莓": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "草莓", null], [null, null, null]],
-        "ingredients": [["草莓"]]
+        type: "切片",
+        map: [[null, null, null], [null, "草莓", null], [null, null, null]],
+        ingredients: [["草莓"]]
     },
     "剁碎的草莓": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "草莓", null], [null, null, null]],
-        "ingredients": [["草莓"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "草莓", null], [null, null, null]],
+        ingredients: [["草莓"]]
     },
     "搅拌的草莓": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "草莓", null], [null, null, null]],
-        "ingredients": [["草莓"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "草莓", null], [null, null, null]],
+        ingredients: [["草莓"]]
     },
     "煮熟的草莓": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "草莓", null], [null, null, null]],
-        "ingredients": [["草莓"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "草莓", null], [null, null, null]],
+        ingredients: [["草莓"]]
     },
     "油炸的草莓": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "草莓", null], [null, null, null]],
-        "ingredients": [["草莓"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "草莓", null], [null, null, null]],
+        ingredients: [["草莓"]]
     },
     "烤制的草莓": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "草莓", null], [null, null, null]],
-        "ingredients": [["草莓"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "草莓", null], [null, null, null]],
+        ingredients: [["草莓"]]
     },
     "切碎的花生": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "花生", null], [null, null, null]],
-        "ingredients": [["花生"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "花生", null], [null, null, null]],
+        ingredients: [["花生"]]
     },
     "捣碎的花生": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "花生", null], [null, null, null]],
-        "ingredients": [["花生"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "花生", null], [null, null, null]],
+        ingredients: [["花生"]]
     },
     "切片的花生": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "花生", null], [null, null, null]],
-        "ingredients": [["花生"]]
+        type: "切片",
+        map: [[null, null, null], [null, "花生", null], [null, null, null]],
+        ingredients: [["花生"]]
     },
     "剁碎的花生": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "花生", null], [null, null, null]],
-        "ingredients": [["花生"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "花生", null], [null, null, null]],
+        ingredients: [["花生"]]
     },
     "搅拌的花生": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "花生", null], [null, null, null]],
-        "ingredients": [["花生"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "花生", null], [null, null, null]],
+        ingredients: [["花生"]]
     },
     "煮熟的花生": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "花生", null], [null, null, null]],
-        "ingredients": [["花生"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "花生", null], [null, null, null]],
+        ingredients: [["花生"]]
     },
     "油炸的花生": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "花生", null], [null, null, null]],
-        "ingredients": [["花生"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "花生", null], [null, null, null]],
+        ingredients: [["花生"]]
     },
     "烤制的花生": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "花生", null], [null, null, null]],
-        "ingredients": [["花生"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "花生", null], [null, null, null]],
+        ingredients: [["花生"]]
     },
     "切碎的大米": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "大米", null], [null, null, null]],
-        "ingredients": [["大米"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "大米", null], [null, null, null]],
+        ingredients: [["大米"]]
     },
     "捣碎的大米": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "大米", null], [null, null, null]],
-        "ingredients": [["大米"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "大米", null], [null, null, null]],
+        ingredients: [["大米"]]
     },
     "切片的大米": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "大米", null], [null, null, null]],
-        "ingredients": [["大米"]]
+        type: "切片",
+        map: [[null, null, null], [null, "大米", null], [null, null, null]],
+        ingredients: [["大米"]]
     },
     "剁碎的大米": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "大米", null], [null, null, null]],
-        "ingredients": [["大米"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "大米", null], [null, null, null]],
+        ingredients: [["大米"]]
     },
     "搅拌的大米": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "大米", null], [null, null, null]],
-        "ingredients": [["大米"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "大米", null], [null, null, null]],
+        ingredients: [["大米"]]
     },
     "煮熟的大米": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "大米", null], [null, null, null]],
-        "ingredients": [["大米"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "大米", null], [null, null, null]],
+        ingredients: [["大米"]]
     },
     "油炸的大米": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "大米", null], [null, null, null]],
-        "ingredients": [["大米"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "大米", null], [null, null, null]],
+        ingredients: [["大米"]]
     },
     "烤制的大米": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "大米", null], [null, null, null]],
-        "ingredients": [["大米"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "大米", null], [null, null, null]],
+        ingredients: [["大米"]]
     },
     "切碎的大蒜": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "大蒜", null], [null, null, null]],
-        "ingredients": [["大蒜"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "大蒜", null], [null, null, null]],
+        ingredients: [["大蒜"]]
     },
     "捣碎的大蒜": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "大蒜", null], [null, null, null]],
-        "ingredients": [["大蒜"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "大蒜", null], [null, null, null]],
+        ingredients: [["大蒜"]]
     },
     "切片的大蒜": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "大蒜", null], [null, null, null]],
-        "ingredients": [["大蒜"]]
+        type: "切片",
+        map: [[null, null, null], [null, "大蒜", null], [null, null, null]],
+        ingredients: [["大蒜"]]
     },
     "剁碎的大蒜": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "大蒜", null], [null, null, null]],
-        "ingredients": [["大蒜"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "大蒜", null], [null, null, null]],
+        ingredients: [["大蒜"]]
     },
     "搅拌的大蒜": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "大蒜", null], [null, null, null]],
-        "ingredients": [["大蒜"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "大蒜", null], [null, null, null]],
+        ingredients: [["大蒜"]]
     },
     "煮熟的大蒜": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "大蒜", null], [null, null, null]],
-        "ingredients": [["大蒜"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "大蒜", null], [null, null, null]],
+        ingredients: [["大蒜"]]
     },
     "油炸的大蒜": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "大蒜", null], [null, null, null]],
-        "ingredients": [["大蒜"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "大蒜", null], [null, null, null]],
+        ingredients: [["大蒜"]]
     },
     "烤制的大蒜": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "大蒜", null], [null, null, null]],
-        "ingredients": [["大蒜"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "大蒜", null], [null, null, null]],
+        ingredients: [["大蒜"]]
     },
     "切碎的卡宴辣椒": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "卡宴辣椒", null], [null, null, null]],
-        "ingredients": [["卡宴辣椒"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "卡宴辣椒", null], [null, null, null]],
+        ingredients: [["卡宴辣椒"]]
     },
     "捣碎的卡宴辣椒": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "卡宴辣椒", null], [null, null, null]],
-        "ingredients": [["卡宴辣椒"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "卡宴辣椒", null], [null, null, null]],
+        ingredients: [["卡宴辣椒"]]
     },
     "切片的卡宴辣椒": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "卡宴辣椒", null], [null, null, null]],
-        "ingredients": [["卡宴辣椒"]]
+        type: "切片",
+        map: [[null, null, null], [null, "卡宴辣椒", null], [null, null, null]],
+        ingredients: [["卡宴辣椒"]]
     },
     "剁碎的卡宴辣椒": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "卡宴辣椒", null], [null, null, null]],
-        "ingredients": [["卡宴辣椒"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "卡宴辣椒", null], [null, null, null]],
+        ingredients: [["卡宴辣椒"]]
     },
     "搅拌的卡宴辣椒": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "卡宴辣椒", null], [null, null, null]],
-        "ingredients": [["卡宴辣椒"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "卡宴辣椒", null], [null, null, null]],
+        ingredients: [["卡宴辣椒"]]
     },
     "煮熟的卡宴辣椒": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "卡宴辣椒", null], [null, null, null]],
-        "ingredients": [["卡宴辣椒"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "卡宴辣椒", null], [null, null, null]],
+        ingredients: [["卡宴辣椒"]]
     },
     "油炸的卡宴辣椒": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "卡宴辣椒", null], [null, null, null]],
-        "ingredients": [["卡宴辣椒"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "卡宴辣椒", null], [null, null, null]],
+        ingredients: [["卡宴辣椒"]]
     },
     "烤制的卡宴辣椒": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "卡宴辣椒", null], [null, null, null]],
-        "ingredients": [["卡宴辣椒"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "卡宴辣椒", null], [null, null, null]],
+        ingredients: [["卡宴辣椒"]]
     },
     "切碎的番茄": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "番茄", null], [null, null, null]],
-        "ingredients": [["番茄"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "番茄", null], [null, null, null]],
+        ingredients: [["番茄"]]
     },
     "捣碎的番茄": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "番茄", null], [null, null, null]],
-        "ingredients": [["番茄"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "番茄", null], [null, null, null]],
+        ingredients: [["番茄"]]
     },
     "切片的番茄": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "番茄", null], [null, null, null]],
-        "ingredients": [["番茄"]]
+        type: "切片",
+        map: [[null, null, null], [null, "番茄", null], [null, null, null]],
+        ingredients: [["番茄"]]
     },
     "剁碎的番茄": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "番茄", null], [null, null, null]],
-        "ingredients": [["番茄"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "番茄", null], [null, null, null]],
+        ingredients: [["番茄"]]
     },
     "搅拌的番茄": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "番茄", null], [null, null, null]],
-        "ingredients": [["番茄"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "番茄", null], [null, null, null]],
+        ingredients: [["番茄"]]
     },
     "煮熟的番茄": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "番茄", null], [null, null, null]],
-        "ingredients": [["番茄"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "番茄", null], [null, null, null]],
+        ingredients: [["番茄"]]
     },
     "油炸的番茄": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "番茄", null], [null, null, null]],
-        "ingredients": [["番茄"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "番茄", null], [null, null, null]],
+        ingredients: [["番茄"]]
     },
     "烤制的番茄": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "番茄", null], [null, null, null]],
-        "ingredients": [["番茄"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "番茄", null], [null, null, null]],
+        ingredients: [["番茄"]]
     },
     "切碎的甜椒": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "甜椒", null], [null, null, null]],
-        "ingredients": [["甜椒"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "甜椒", null], [null, null, null]],
+        ingredients: [["甜椒"]]
     },
     "捣碎的甜椒": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "甜椒", null], [null, null, null]],
-        "ingredients": [["甜椒"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "甜椒", null], [null, null, null]],
+        ingredients: [["甜椒"]]
     },
     "切片的甜椒": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "甜椒", null], [null, null, null]],
-        "ingredients": [["甜椒"]]
+        type: "切片",
+        map: [[null, null, null], [null, "甜椒", null], [null, null, null]],
+        ingredients: [["甜椒"]]
     },
     "剁碎的甜椒": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "甜椒", null], [null, null, null]],
-        "ingredients": [["甜椒"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "甜椒", null], [null, null, null]],
+        ingredients: [["甜椒"]]
     },
     "搅拌的甜椒": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "甜椒", null], [null, null, null]],
-        "ingredients": [["甜椒"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "甜椒", null], [null, null, null]],
+        ingredients: [["甜椒"]]
     },
     "煮熟的甜椒": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "甜椒", null], [null, null, null]],
-        "ingredients": [["甜椒"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "甜椒", null], [null, null, null]],
+        ingredients: [["甜椒"]]
     },
     "油炸的甜椒": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "甜椒", null], [null, null, null]],
-        "ingredients": [["甜椒"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "甜椒", null], [null, null, null]],
+        ingredients: [["甜椒"]]
     },
     "烤制的甜椒": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "甜椒", null], [null, null, null]],
-        "ingredients": [["甜椒"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "甜椒", null], [null, null, null]],
+        ingredients: [["甜椒"]]
     },
     "切碎的洋葱": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "洋葱", null], [null, null, null]],
-        "ingredients": [["洋葱"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "洋葱", null], [null, null, null]],
+        ingredients: [["洋葱"]]
     },
     "捣碎的洋葱": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "洋葱", null], [null, null, null]],
-        "ingredients": [["洋葱"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "洋葱", null], [null, null, null]],
+        ingredients: [["洋葱"]]
     },
     "切片的洋葱": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "洋葱", null], [null, null, null]],
-        "ingredients": [["洋葱"]]
+        type: "切片",
+        map: [[null, null, null], [null, "洋葱", null], [null, null, null]],
+        ingredients: [["洋葱"]]
     },
     "剁碎的洋葱": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "洋葱", null], [null, null, null]],
-        "ingredients": [["洋葱"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "洋葱", null], [null, null, null]],
+        ingredients: [["洋葱"]]
     },
     "搅拌的洋葱": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "洋葱", null], [null, null, null]],
-        "ingredients": [["洋葱"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "洋葱", null], [null, null, null]],
+        ingredients: [["洋葱"]]
     },
     "煮熟的洋葱": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "洋葱", null], [null, null, null]],
-        "ingredients": [["洋葱"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "洋葱", null], [null, null, null]],
+        ingredients: [["洋葱"]]
     },
     "油炸的洋葱": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "洋葱", null], [null, null, null]],
-        "ingredients": [["洋葱"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "洋葱", null], [null, null, null]],
+        ingredients: [["洋葱"]]
     },
     "烤制的洋葱": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "洋葱", null], [null, null, null]],
-        "ingredients": [["洋葱"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "洋葱", null], [null, null, null]],
+        ingredients: [["洋葱"]]
     },
     "切碎的豌豆": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "豌豆", null], [null, null, null]],
-        "ingredients": [["豌豆"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "豌豆", null], [null, null, null]],
+        ingredients: [["豌豆"]]
     },
     "捣碎的豌豆": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "豌豆", null], [null, null, null]],
-        "ingredients": [["豌豆"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "豌豆", null], [null, null, null]],
+        ingredients: [["豌豆"]]
     },
     "切片的豌豆": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "豌豆", null], [null, null, null]],
-        "ingredients": [["豌豆"]]
+        type: "切片",
+        map: [[null, null, null], [null, "豌豆", null], [null, null, null]],
+        ingredients: [["豌豆"]]
     },
     "剁碎的豌豆": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "豌豆", null], [null, null, null]],
-        "ingredients": [["豌豆"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "豌豆", null], [null, null, null]],
+        ingredients: [["豌豆"]]
     },
     "搅拌的豌豆": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "豌豆", null], [null, null, null]],
-        "ingredients": [["豌豆"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "豌豆", null], [null, null, null]],
+        ingredients: [["豌豆"]]
     },
     "煮熟的豌豆": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "豌豆", null], [null, null, null]],
-        "ingredients": [["豌豆"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "豌豆", null], [null, null, null]],
+        ingredients: [["豌豆"]]
     },
     "油炸的豌豆": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "豌豆", null], [null, null, null]],
-        "ingredients": [["豌豆"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "豌豆", null], [null, null, null]],
+        ingredients: [["豌豆"]]
     },
     "烤制的豌豆": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "豌豆", null], [null, null, null]],
-        "ingredients": [["豌豆"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "豌豆", null], [null, null, null]],
+        ingredients: [["豌豆"]]
     },
     "切碎的油菜": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "油菜", null], [null, null, null]],
-        "ingredients": [["油菜"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "油菜", null], [null, null, null]],
+        ingredients: [["油菜"]]
     },
     "捣碎的油菜": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "油菜", null], [null, null, null]],
-        "ingredients": [["油菜"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "油菜", null], [null, null, null]],
+        ingredients: [["油菜"]]
     },
     "切片的油菜": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "油菜", null], [null, null, null]],
-        "ingredients": [["油菜"]]
+        type: "切片",
+        map: [[null, null, null], [null, "油菜", null], [null, null, null]],
+        ingredients: [["油菜"]]
     },
     "剁碎的油菜": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "油菜", null], [null, null, null]],
-        "ingredients": [["油菜"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "油菜", null], [null, null, null]],
+        ingredients: [["油菜"]]
     },
     "搅拌的油菜": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "油菜", null], [null, null, null]],
-        "ingredients": [["油菜"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "油菜", null], [null, null, null]],
+        ingredients: [["油菜"]]
     },
     "煮熟的油菜": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "油菜", null], [null, null, null]],
-        "ingredients": [["油菜"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "油菜", null], [null, null, null]],
+        ingredients: [["油菜"]]
     },
     "油炸的油菜": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "油菜", null], [null, null, null]],
-        "ingredients": [["油菜"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "油菜", null], [null, null, null]],
+        ingredients: [["油菜"]]
     },
     "烤制的油菜": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "油菜", null], [null, null, null]],
-        "ingredients": [["油菜"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "油菜", null], [null, null, null]],
+        ingredients: [["油菜"]]
     },
     "切碎的生菜": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "生菜", null], [null, null, null]],
-        "ingredients": [["生菜"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "生菜", null], [null, null, null]],
+        ingredients: [["生菜"]]
     },
     "捣碎的生菜": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "生菜", null], [null, null, null]],
-        "ingredients": [["生菜"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "生菜", null], [null, null, null]],
+        ingredients: [["生菜"]]
     },
     "切片的生菜": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "生菜", null], [null, null, null]],
-        "ingredients": [["生菜"]]
+        type: "切片",
+        map: [[null, null, null], [null, "生菜", null], [null, null, null]],
+        ingredients: [["生菜"]]
     },
     "剁碎的生菜": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "生菜", null], [null, null, null]],
-        "ingredients": [["生菜"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "生菜", null], [null, null, null]],
+        ingredients: [["生菜"]]
     },
     "搅拌的生菜": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "生菜", null], [null, null, null]],
-        "ingredients": [["生菜"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "生菜", null], [null, null, null]],
+        ingredients: [["生菜"]]
     },
     "煮熟的生菜": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "生菜", null], [null, null, null]],
-        "ingredients": [["生菜"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "生菜", null], [null, null, null]],
+        ingredients: [["生菜"]]
     },
     "油炸的生菜": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "生菜", null], [null, null, null]],
-        "ingredients": [["生菜"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "生菜", null], [null, null, null]],
+        ingredients: [["生菜"]]
     },
     "烤制的生菜": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "生菜", null], [null, null, null]],
-        "ingredients": [["生菜"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "生菜", null], [null, null, null]],
+        ingredients: [["生菜"]]
     },
     "切碎的芥菜种子": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "芥菜种子", null], [null, null, null]],
-        "ingredients": [["芥菜种子"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "芥菜种子", null], [null, null, null]],
+        ingredients: [["芥菜种子"]]
     },
     "捣碎的芥菜种子": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "芥菜种子", null], [null, null, null]],
-        "ingredients": [["芥菜种子"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "芥菜种子", null], [null, null, null]],
+        ingredients: [["芥菜种子"]]
     },
     "切片的芥菜种子": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "芥菜种子", null], [null, null, null]],
-        "ingredients": [["芥菜种子"]]
+        type: "切片",
+        map: [[null, null, null], [null, "芥菜种子", null], [null, null, null]],
+        ingredients: [["芥菜种子"]]
     },
     "剁碎的芥菜种子": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "芥菜种子", null], [null, null, null]],
-        "ingredients": [["芥菜种子"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "芥菜种子", null], [null, null, null]],
+        ingredients: [["芥菜种子"]]
     },
     "搅拌的芥菜种子": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "芥菜种子", null], [null, null, null]],
-        "ingredients": [["芥菜种子"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "芥菜种子", null], [null, null, null]],
+        ingredients: [["芥菜种子"]]
     },
     "煮熟的芥菜种子": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "芥菜种子", null], [null, null, null]],
-        "ingredients": [["芥菜种子"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "芥菜种子", null], [null, null, null]],
+        ingredients: [["芥菜种子"]]
     },
     "油炸的芥菜种子": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "芥菜种子", null], [null, null, null]],
-        "ingredients": [["芥菜种子"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "芥菜种子", null], [null, null, null]],
+        ingredients: [["芥菜种子"]]
     },
     "烤制的芥菜种子": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "芥菜种子", null], [null, null, null]],
-        "ingredients": [["芥菜种子"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "芥菜种子", null], [null, null, null]],
+        ingredients: [["芥菜种子"]]
     },
     "切碎的西兰花": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "西兰花", null], [null, null, null]],
-        "ingredients": [["西兰花"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "西兰花", null], [null, null, null]],
+        ingredients: [["西兰花"]]
     },
     "捣碎的西兰花": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "西兰花", null], [null, null, null]],
-        "ingredients": [["西兰花"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "西兰花", null], [null, null, null]],
+        ingredients: [["西兰花"]]
     },
     "切片的西兰花": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "西兰花", null], [null, null, null]],
-        "ingredients": [["西兰花"]]
+        type: "切片",
+        map: [[null, null, null], [null, "西兰花", null], [null, null, null]],
+        ingredients: [["西兰花"]]
     },
     "剁碎的西兰花": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "西兰花", null], [null, null, null]],
-        "ingredients": [["西兰花"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "西兰花", null], [null, null, null]],
+        ingredients: [["西兰花"]]
     },
     "搅拌的西兰花": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "西兰花", null], [null, null, null]],
-        "ingredients": [["西兰花"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "西兰花", null], [null, null, null]],
+        ingredients: [["西兰花"]]
     },
     "煮熟的西兰花": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "西兰花", null], [null, null, null]],
-        "ingredients": [["西兰花"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "西兰花", null], [null, null, null]],
+        ingredients: [["西兰花"]]
     },
     "油炸的西兰花": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "西兰花", null], [null, null, null]],
-        "ingredients": [["西兰花"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "西兰花", null], [null, null, null]],
+        ingredients: [["西兰花"]]
     },
     "烤制的西兰花": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "西兰花", null], [null, null, null]],
-        "ingredients": [["西兰花"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "西兰花", null], [null, null, null]],
+        ingredients: [["西兰花"]]
     },
     "切碎的肉桂": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "肉桂", null], [null, null, null]],
-        "ingredients": [["肉桂"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "肉桂", null], [null, null, null]],
+        ingredients: [["肉桂"]]
     },
     "捣碎的肉桂": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "肉桂", null], [null, null, null]],
-        "ingredients": [["肉桂"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "肉桂", null], [null, null, null]],
+        ingredients: [["肉桂"]]
     },
     "切片的肉桂": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "肉桂", null], [null, null, null]],
-        "ingredients": [["肉桂"]]
+        type: "切片",
+        map: [[null, null, null], [null, "肉桂", null], [null, null, null]],
+        ingredients: [["肉桂"]]
     },
     "剁碎的肉桂": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "肉桂", null], [null, null, null]],
-        "ingredients": [["肉桂"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "肉桂", null], [null, null, null]],
+        ingredients: [["肉桂"]]
     },
     "搅拌的肉桂": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "肉桂", null], [null, null, null]],
-        "ingredients": [["肉桂"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "肉桂", null], [null, null, null]],
+        ingredients: [["肉桂"]]
     },
     "煮熟的肉桂": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "肉桂", null], [null, null, null]],
-        "ingredients": [["肉桂"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "肉桂", null], [null, null, null]],
+        ingredients: [["肉桂"]]
     },
     "油炸的肉桂": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "肉桂", null], [null, null, null]],
-        "ingredients": [["肉桂"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "肉桂", null], [null, null, null]],
+        ingredients: [["肉桂"]]
     },
     "烤制的肉桂": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "肉桂", null], [null, null, null]],
-        "ingredients": [["肉桂"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "肉桂", null], [null, null, null]],
+        ingredients: [["肉桂"]]
     },
     "切碎的罗勒": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "罗勒", null], [null, null, null]],
-        "ingredients": [["罗勒"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "罗勒", null], [null, null, null]],
+        ingredients: [["罗勒"]]
     },
     "捣碎的罗勒": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "罗勒", null], [null, null, null]],
-        "ingredients": [["罗勒"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "罗勒", null], [null, null, null]],
+        ingredients: [["罗勒"]]
     },
     "切片的罗勒": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "罗勒", null], [null, null, null]],
-        "ingredients": [["罗勒"]]
+        type: "切片",
+        map: [[null, null, null], [null, "罗勒", null], [null, null, null]],
+        ingredients: [["罗勒"]]
     },
     "剁碎的罗勒": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "罗勒", null], [null, null, null]],
-        "ingredients": [["罗勒"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "罗勒", null], [null, null, null]],
+        ingredients: [["罗勒"]]
     },
     "搅拌的罗勒": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "罗勒", null], [null, null, null]],
-        "ingredients": [["罗勒"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "罗勒", null], [null, null, null]],
+        ingredients: [["罗勒"]]
     },
     "煮熟的罗勒": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "罗勒", null], [null, null, null]],
-        "ingredients": [["罗勒"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "罗勒", null], [null, null, null]],
+        ingredients: [["罗勒"]]
     },
     "油炸的罗勒": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "罗勒", null], [null, null, null]],
-        "ingredients": [["罗勒"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "罗勒", null], [null, null, null]],
+        ingredients: [["罗勒"]]
     },
     "烤制的罗勒": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "罗勒", null], [null, null, null]],
-        "ingredients": [["罗勒"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "罗勒", null], [null, null, null]],
+        ingredients: [["罗勒"]]
     },
     "切碎的香叶": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "香叶", null], [null, null, null]],
-        "ingredients": [["香叶"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "香叶", null], [null, null, null]],
+        ingredients: [["香叶"]]
     },
     "捣碎的香叶": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "香叶", null], [null, null, null]],
-        "ingredients": [["香叶"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "香叶", null], [null, null, null]],
+        ingredients: [["香叶"]]
     },
     "切片的香叶": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "香叶", null], [null, null, null]],
-        "ingredients": [["香叶"]]
+        type: "切片",
+        map: [[null, null, null], [null, "香叶", null], [null, null, null]],
+        ingredients: [["香叶"]]
     },
     "剁碎的香叶": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "香叶", null], [null, null, null]],
-        "ingredients": [["香叶"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "香叶", null], [null, null, null]],
+        ingredients: [["香叶"]]
     },
     "搅拌的香叶": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "香叶", null], [null, null, null]],
-        "ingredients": [["香叶"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "香叶", null], [null, null, null]],
+        ingredients: [["香叶"]]
     },
     "煮熟的香叶": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "香叶", null], [null, null, null]],
-        "ingredients": [["香叶"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "香叶", null], [null, null, null]],
+        ingredients: [["香叶"]]
     },
     "油炸的香叶": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "香叶", null], [null, null, null]],
-        "ingredients": [["香叶"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "香叶", null], [null, null, null]],
+        ingredients: [["香叶"]]
     },
     "烤制的香叶": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "香叶", null], [null, null, null]],
-        "ingredients": [["香叶"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "香叶", null], [null, null, null]],
+        ingredients: [["香叶"]]
     },
     "切碎的香菜": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "香菜", null], [null, null, null]],
-        "ingredients": [["香菜"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "香菜", null], [null, null, null]],
+        ingredients: [["香菜"]]
     },
     "捣碎的香菜": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "香菜", null], [null, null, null]],
-        "ingredients": [["香菜"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "香菜", null], [null, null, null]],
+        ingredients: [["香菜"]]
     },
     "切片的香菜": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "香菜", null], [null, null, null]],
-        "ingredients": [["香菜"]]
+        type: "切片",
+        map: [[null, null, null], [null, "香菜", null], [null, null, null]],
+        ingredients: [["香菜"]]
     },
     "剁碎的香菜": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "香菜", null], [null, null, null]],
-        "ingredients": [["香菜"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "香菜", null], [null, null, null]],
+        ingredients: [["香菜"]]
     },
     "搅拌的香菜": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "香菜", null], [null, null, null]],
-        "ingredients": [["香菜"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "香菜", null], [null, null, null]],
+        ingredients: [["香菜"]]
     },
     "煮熟的香菜": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "香菜", null], [null, null, null]],
-        "ingredients": [["香菜"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "香菜", null], [null, null, null]],
+        ingredients: [["香菜"]]
     },
     "油炸的香菜": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "香菜", null], [null, null, null]],
-        "ingredients": [["香菜"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "香菜", null], [null, null, null]],
+        ingredients: [["香菜"]]
     },
     "烤制的香菜": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "香菜", null], [null, null, null]],
-        "ingredients": [["香菜"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "香菜", null], [null, null, null]],
+        ingredients: [["香菜"]]
     },
     "切碎的菊苣": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "菊苣", null], [null, null, null]],
-        "ingredients": [["菊苣"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "菊苣", null], [null, null, null]],
+        ingredients: [["菊苣"]]
     },
     "捣碎的菊苣": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "菊苣", null], [null, null, null]],
-        "ingredients": [["菊苣"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "菊苣", null], [null, null, null]],
+        ingredients: [["菊苣"]]
     },
     "切片的菊苣": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "菊苣", null], [null, null, null]],
-        "ingredients": [["菊苣"]]
+        type: "切片",
+        map: [[null, null, null], [null, "菊苣", null], [null, null, null]],
+        ingredients: [["菊苣"]]
     },
     "剁碎的菊苣": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "菊苣", null], [null, null, null]],
-        "ingredients": [["菊苣"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "菊苣", null], [null, null, null]],
+        ingredients: [["菊苣"]]
     },
     "搅拌的菊苣": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "菊苣", null], [null, null, null]],
-        "ingredients": [["菊苣"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "菊苣", null], [null, null, null]],
+        ingredients: [["菊苣"]]
     },
     "煮熟的菊苣": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "菊苣", null], [null, null, null]],
-        "ingredients": [["菊苣"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "菊苣", null], [null, null, null]],
+        ingredients: [["菊苣"]]
     },
     "油炸的菊苣": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "菊苣", null], [null, null, null]],
-        "ingredients": [["菊苣"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "菊苣", null], [null, null, null]],
+        ingredients: [["菊苣"]]
     },
     "烤制的菊苣": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "菊苣", null], [null, null, null]],
-        "ingredients": [["菊苣"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "菊苣", null], [null, null, null]],
+        ingredients: [["菊苣"]]
     },
     "切碎的韭菜": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "韭菜", null], [null, null, null]],
-        "ingredients": [["韭菜"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "韭菜", null], [null, null, null]],
+        ingredients: [["韭菜"]]
     },
     "捣碎的韭菜": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "韭菜", null], [null, null, null]],
-        "ingredients": [["韭菜"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "韭菜", null], [null, null, null]],
+        ingredients: [["韭菜"]]
     },
     "切片的韭菜": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "韭菜", null], [null, null, null]],
-        "ingredients": [["韭菜"]]
+        type: "切片",
+        map: [[null, null, null], [null, "韭菜", null], [null, null, null]],
+        ingredients: [["韭菜"]]
     },
     "剁碎的韭菜": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "韭菜", null], [null, null, null]],
-        "ingredients": [["韭菜"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "韭菜", null], [null, null, null]],
+        ingredients: [["韭菜"]]
     },
     "搅拌的韭菜": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "韭菜", null], [null, null, null]],
-        "ingredients": [["韭菜"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "韭菜", null], [null, null, null]],
+        ingredients: [["韭菜"]]
     },
     "煮熟的韭菜": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "韭菜", null], [null, null, null]],
-        "ingredients": [["韭菜"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "韭菜", null], [null, null, null]],
+        ingredients: [["韭菜"]]
     },
     "油炸的韭菜": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "韭菜", null], [null, null, null]],
-        "ingredients": [["韭菜"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "韭菜", null], [null, null, null]],
+        ingredients: [["韭菜"]]
     },
     "烤制的韭菜": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "韭菜", null], [null, null, null]],
-        "ingredients": [["韭菜"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "韭菜", null], [null, null, null]],
+        ingredients: [["韭菜"]]
     },
     "切碎的丁香": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "丁香", null], [null, null, null]],
-        "ingredients": [["丁香"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "丁香", null], [null, null, null]],
+        ingredients: [["丁香"]]
     },
     "捣碎的丁香": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "丁香", null], [null, null, null]],
-        "ingredients": [["丁香"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "丁香", null], [null, null, null]],
+        ingredients: [["丁香"]]
     },
     "切片的丁香": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "丁香", null], [null, null, null]],
-        "ingredients": [["丁香"]]
+        type: "切片",
+        map: [[null, null, null], [null, "丁香", null], [null, null, null]],
+        ingredients: [["丁香"]]
     },
     "剁碎的丁香": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "丁香", null], [null, null, null]],
-        "ingredients": [["丁香"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "丁香", null], [null, null, null]],
+        ingredients: [["丁香"]]
     },
     "搅拌的丁香": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "丁香", null], [null, null, null]],
-        "ingredients": [["丁香"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "丁香", null], [null, null, null]],
+        ingredients: [["丁香"]]
     },
     "煮熟的丁香": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "丁香", null], [null, null, null]],
-        "ingredients": [["丁香"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "丁香", null], [null, null, null]],
+        ingredients: [["丁香"]]
     },
     "油炸的丁香": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "丁香", null], [null, null, null]],
-        "ingredients": [["丁香"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "丁香", null], [null, null, null]],
+        ingredients: [["丁香"]]
     },
     "烤制的丁香": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "丁香", null], [null, null, null]],
-        "ingredients": [["丁香"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "丁香", null], [null, null, null]],
+        ingredients: [["丁香"]]
     },
     "切碎的孜然": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "孜然", null], [null, null, null]],
-        "ingredients": [["孜然"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "孜然", null], [null, null, null]],
+        ingredients: [["孜然"]]
     },
     "捣碎的孜然": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "孜然", null], [null, null, null]],
-        "ingredients": [["孜然"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "孜然", null], [null, null, null]],
+        ingredients: [["孜然"]]
     },
     "切片的孜然": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "孜然", null], [null, null, null]],
-        "ingredients": [["孜然"]]
+        type: "切片",
+        map: [[null, null, null], [null, "孜然", null], [null, null, null]],
+        ingredients: [["孜然"]]
     },
     "剁碎的孜然": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "孜然", null], [null, null, null]],
-        "ingredients": [["孜然"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "孜然", null], [null, null, null]],
+        ingredients: [["孜然"]]
     },
     "搅拌的孜然": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "孜然", null], [null, null, null]],
-        "ingredients": [["孜然"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "孜然", null], [null, null, null]],
+        ingredients: [["孜然"]]
     },
     "煮熟的孜然": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "孜然", null], [null, null, null]],
-        "ingredients": [["孜然"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "孜然", null], [null, null, null]],
+        ingredients: [["孜然"]]
     },
     "油炸的孜然": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "孜然", null], [null, null, null]],
-        "ingredients": [["孜然"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "孜然", null], [null, null, null]],
+        ingredients: [["孜然"]]
     },
     "烤制的孜然": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "孜然", null], [null, null, null]],
-        "ingredients": [["孜然"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "孜然", null], [null, null, null]],
+        ingredients: [["孜然"]]
     },
     "切碎的辣椒": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "辣椒", null], [null, null, null]],
-        "ingredients": [["辣椒"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "辣椒", null], [null, null, null]],
+        ingredients: [["辣椒"]]
     },
     "捣碎的辣椒": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "辣椒", null], [null, null, null]],
-        "ingredients": [["辣椒"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "辣椒", null], [null, null, null]],
+        ingredients: [["辣椒"]]
     },
     "切片的辣椒": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "辣椒", null], [null, null, null]],
-        "ingredients": [["辣椒"]]
+        type: "切片",
+        map: [[null, null, null], [null, "辣椒", null], [null, null, null]],
+        ingredients: [["辣椒"]]
     },
     "剁碎的辣椒": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "辣椒", null], [null, null, null]],
-        "ingredients": [["辣椒"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "辣椒", null], [null, null, null]],
+        ingredients: [["辣椒"]]
     },
     "搅拌的辣椒": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "辣椒", null], [null, null, null]],
-        "ingredients": [["辣椒"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "辣椒", null], [null, null, null]],
+        ingredients: [["辣椒"]]
     },
     "煮熟的辣椒": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "辣椒", null], [null, null, null]],
-        "ingredients": [["辣椒"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "辣椒", null], [null, null, null]],
+        ingredients: [["辣椒"]]
     },
     "油炸的辣椒": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "辣椒", null], [null, null, null]],
-        "ingredients": [["辣椒"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "辣椒", null], [null, null, null]],
+        ingredients: [["辣椒"]]
     },
     "烤制的辣椒": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "辣椒", null], [null, null, null]],
-        "ingredients": [["辣椒"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "辣椒", null], [null, null, null]],
+        ingredients: [["辣椒"]]
     },
     "切碎的咖喱叶": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "咖喱叶", null], [null, null, null]],
-        "ingredients": [["咖喱叶"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "咖喱叶", null], [null, null, null]],
+        ingredients: [["咖喱叶"]]
     },
     "捣碎的咖喱叶": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "咖喱叶", null], [null, null, null]],
-        "ingredients": [["咖喱叶"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "咖喱叶", null], [null, null, null]],
+        ingredients: [["咖喱叶"]]
     },
     "切片的咖喱叶": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "咖喱叶", null], [null, null, null]],
-        "ingredients": [["咖喱叶"]]
+        type: "切片",
+        map: [[null, null, null], [null, "咖喱叶", null], [null, null, null]],
+        ingredients: [["咖喱叶"]]
     },
     "剁碎的咖喱叶": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "咖喱叶", null], [null, null, null]],
-        "ingredients": [["咖喱叶"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "咖喱叶", null], [null, null, null]],
+        ingredients: [["咖喱叶"]]
     },
     "搅拌的咖喱叶": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "咖喱叶", null], [null, null, null]],
-        "ingredients": [["咖喱叶"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "咖喱叶", null], [null, null, null]],
+        ingredients: [["咖喱叶"]]
     },
     "煮熟的咖喱叶": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "咖喱叶", null], [null, null, null]],
-        "ingredients": [["咖喱叶"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "咖喱叶", null], [null, null, null]],
+        ingredients: [["咖喱叶"]]
     },
     "油炸的咖喱叶": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "咖喱叶", null], [null, null, null]],
-        "ingredients": [["咖喱叶"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "咖喱叶", null], [null, null, null]],
+        ingredients: [["咖喱叶"]]
     },
     "烤制的咖喱叶": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "咖喱叶", null], [null, null, null]],
-        "ingredients": [["咖喱叶"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "咖喱叶", null], [null, null, null]],
+        ingredients: [["咖喱叶"]]
     },
     "切碎的莳萝": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "莳萝", null], [null, null, null]],
-        "ingredients": [["莳萝"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "莳萝", null], [null, null, null]],
+        ingredients: [["莳萝"]]
     },
     "捣碎的莳萝": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "莳萝", null], [null, null, null]],
-        "ingredients": [["莳萝"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "莳萝", null], [null, null, null]],
+        ingredients: [["莳萝"]]
     },
     "切片的莳萝": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "莳萝", null], [null, null, null]],
-        "ingredients": [["莳萝"]]
+        type: "切片",
+        map: [[null, null, null], [null, "莳萝", null], [null, null, null]],
+        ingredients: [["莳萝"]]
     },
     "剁碎的莳萝": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "莳萝", null], [null, null, null]],
-        "ingredients": [["莳萝"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "莳萝", null], [null, null, null]],
+        ingredients: [["莳萝"]]
     },
     "搅拌的莳萝": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "莳萝", null], [null, null, null]],
-        "ingredients": [["莳萝"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "莳萝", null], [null, null, null]],
+        ingredients: [["莳萝"]]
     },
     "煮熟的莳萝": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "莳萝", null], [null, null, null]],
-        "ingredients": [["莳萝"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "莳萝", null], [null, null, null]],
+        ingredients: [["莳萝"]]
     },
     "油炸的莳萝": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "莳萝", null], [null, null, null]],
-        "ingredients": [["莳萝"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "莳萝", null], [null, null, null]],
+        ingredients: [["莳萝"]]
     },
     "烤制的莳萝": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "莳萝", null], [null, null, null]],
-        "ingredients": [["莳萝"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "莳萝", null], [null, null, null]],
+        ingredients: [["莳萝"]]
     },
     "切碎的茴香": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "茴香", null], [null, null, null]],
-        "ingredients": [["茴香"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "茴香", null], [null, null, null]],
+        ingredients: [["茴香"]]
     },
     "捣碎的茴香": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "茴香", null], [null, null, null]],
-        "ingredients": [["茴香"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "茴香", null], [null, null, null]],
+        ingredients: [["茴香"]]
     },
     "切片的茴香": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "茴香", null], [null, null, null]],
-        "ingredients": [["茴香"]]
+        type: "切片",
+        map: [[null, null, null], [null, "茴香", null], [null, null, null]],
+        ingredients: [["茴香"]]
     },
     "剁碎的茴香": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "茴香", null], [null, null, null]],
-        "ingredients": [["茴香"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "茴香", null], [null, null, null]],
+        ingredients: [["茴香"]]
     },
     "搅拌的茴香": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "茴香", null], [null, null, null]],
-        "ingredients": [["茴香"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "茴香", null], [null, null, null]],
+        ingredients: [["茴香"]]
     },
     "煮熟的茴香": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "茴香", null], [null, null, null]],
-        "ingredients": [["茴香"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "茴香", null], [null, null, null]],
+        ingredients: [["茴香"]]
     },
     "油炸的茴香": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "茴香", null], [null, null, null]],
-        "ingredients": [["茴香"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "茴香", null], [null, null, null]],
+        ingredients: [["茴香"]]
     },
     "烤制的茴香": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "茴香", null], [null, null, null]],
-        "ingredients": [["茴香"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "茴香", null], [null, null, null]],
+        ingredients: [["茴香"]]
     },
     "切碎的姜": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "姜", null], [null, null, null]],
-        "ingredients": [["姜"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "姜", null], [null, null, null]],
+        ingredients: [["姜"]]
     },
     "捣碎的姜": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "姜", null], [null, null, null]],
-        "ingredients": [["姜"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "姜", null], [null, null, null]],
+        ingredients: [["姜"]]
     },
     "切片的姜": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "姜", null], [null, null, null]],
-        "ingredients": [["姜"]]
+        type: "切片",
+        map: [[null, null, null], [null, "姜", null], [null, null, null]],
+        ingredients: [["姜"]]
     },
     "剁碎的姜": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "姜", null], [null, null, null]],
-        "ingredients": [["姜"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "姜", null], [null, null, null]],
+        ingredients: [["姜"]]
     },
     "搅拌的姜": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "姜", null], [null, null, null]],
-        "ingredients": [["姜"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "姜", null], [null, null, null]],
+        ingredients: [["姜"]]
     },
     "煮熟的姜": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "姜", null], [null, null, null]],
-        "ingredients": [["姜"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "姜", null], [null, null, null]],
+        ingredients: [["姜"]]
     },
     "油炸的姜": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "姜", null], [null, null, null]],
-        "ingredients": [["姜"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "姜", null], [null, null, null]],
+        ingredients: [["姜"]]
     },
     "烤制的姜": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "姜", null], [null, null, null]],
-        "ingredients": [["姜"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "姜", null], [null, null, null]],
+        ingredients: [["姜"]]
     },
     "切碎的辣根": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "辣根", null], [null, null, null]],
-        "ingredients": [["辣根"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "辣根", null], [null, null, null]],
+        ingredients: [["辣根"]]
     },
     "捣碎的辣根": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "辣根", null], [null, null, null]],
-        "ingredients": [["辣根"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "辣根", null], [null, null, null]],
+        ingredients: [["辣根"]]
     },
     "切片的辣根": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "辣根", null], [null, null, null]],
-        "ingredients": [["辣根"]]
+        type: "切片",
+        map: [[null, null, null], [null, "辣根", null], [null, null, null]],
+        ingredients: [["辣根"]]
     },
     "剁碎的辣根": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "辣根", null], [null, null, null]],
-        "ingredients": [["辣根"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "辣根", null], [null, null, null]],
+        ingredients: [["辣根"]]
     },
     "搅拌的辣根": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "辣根", null], [null, null, null]],
-        "ingredients": [["辣根"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "辣根", null], [null, null, null]],
+        ingredients: [["辣根"]]
     },
     "煮熟的辣根": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "辣根", null], [null, null, null]],
-        "ingredients": [["辣根"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "辣根", null], [null, null, null]],
+        ingredients: [["辣根"]]
     },
     "油炸的辣根": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "辣根", null], [null, null, null]],
-        "ingredients": [["辣根"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "辣根", null], [null, null, null]],
+        ingredients: [["辣根"]]
     },
     "烤制的辣根": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "辣根", null], [null, null, null]],
-        "ingredients": [["辣根"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "辣根", null], [null, null, null]],
+        ingredients: [["辣根"]]
     },
     "切碎的茉莉": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "茉莉", null], [null, null, null]],
-        "ingredients": [["茉莉"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "茉莉", null], [null, null, null]],
+        ingredients: [["茉莉"]]
     },
     "捣碎的茉莉": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "茉莉", null], [null, null, null]],
-        "ingredients": [["茉莉"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "茉莉", null], [null, null, null]],
+        ingredients: [["茉莉"]]
     },
     "切片的茉莉": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "茉莉", null], [null, null, null]],
-        "ingredients": [["茉莉"]]
+        type: "切片",
+        map: [[null, null, null], [null, "茉莉", null], [null, null, null]],
+        ingredients: [["茉莉"]]
     },
     "剁碎的茉莉": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "茉莉", null], [null, null, null]],
-        "ingredients": [["茉莉"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "茉莉", null], [null, null, null]],
+        ingredients: [["茉莉"]]
     },
     "搅拌的茉莉": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "茉莉", null], [null, null, null]],
-        "ingredients": [["茉莉"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "茉莉", null], [null, null, null]],
+        ingredients: [["茉莉"]]
     },
     "煮熟的茉莉": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "茉莉", null], [null, null, null]],
-        "ingredients": [["茉莉"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "茉莉", null], [null, null, null]],
+        ingredients: [["茉莉"]]
     },
     "油炸的茉莉": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "茉莉", null], [null, null, null]],
-        "ingredients": [["茉莉"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "茉莉", null], [null, null, null]],
+        ingredients: [["茉莉"]]
     },
     "烤制的茉莉": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "茉莉", null], [null, null, null]],
-        "ingredients": [["茉莉"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "茉莉", null], [null, null, null]],
+        ingredients: [["茉莉"]]
     },
     "切碎的杜松子": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "杜松子", null], [null, null, null]],
-        "ingredients": [["杜松子"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "杜松子", null], [null, null, null]],
+        ingredients: [["杜松子"]]
     },
     "捣碎的杜松子": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "杜松子", null], [null, null, null]],
-        "ingredients": [["杜松子"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "杜松子", null], [null, null, null]],
+        ingredients: [["杜松子"]]
     },
     "切片的杜松子": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "杜松子", null], [null, null, null]],
-        "ingredients": [["杜松子"]]
+        type: "切片",
+        map: [[null, null, null], [null, "杜松子", null], [null, null, null]],
+        ingredients: [["杜松子"]]
     },
     "剁碎的杜松子": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "杜松子", null], [null, null, null]],
-        "ingredients": [["杜松子"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "杜松子", null], [null, null, null]],
+        ingredients: [["杜松子"]]
     },
     "搅拌的杜松子": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "杜松子", null], [null, null, null]],
-        "ingredients": [["杜松子"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "杜松子", null], [null, null, null]],
+        ingredients: [["杜松子"]]
     },
     "煮熟的杜松子": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "杜松子", null], [null, null, null]],
-        "ingredients": [["杜松子"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "杜松子", null], [null, null, null]],
+        ingredients: [["杜松子"]]
     },
     "油炸的杜松子": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "杜松子", null], [null, null, null]],
-        "ingredients": [["杜松子"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "杜松子", null], [null, null, null]],
+        ingredients: [["杜松子"]]
     },
     "烤制的杜松子": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "杜松子", null], [null, null, null]],
-        "ingredients": [["杜松子"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "杜松子", null], [null, null, null]],
+        ingredients: [["杜松子"]]
     },
     "切碎的泰国青柠叶": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "泰国青柠叶", null], [null, null, null]],
-        "ingredients": [["泰国青柠叶"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "泰国青柠叶", null], [null, null, null]],
+        ingredients: [["泰国青柠叶"]]
     },
     "捣碎的泰国青柠叶": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "泰国青柠叶", null], [null, null, null]],
-        "ingredients": [["泰国青柠叶"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "泰国青柠叶", null], [null, null, null]],
+        ingredients: [["泰国青柠叶"]]
     },
     "切片的泰国青柠叶": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "泰国青柠叶", null], [null, null, null]],
-        "ingredients": [["泰国青柠叶"]]
+        type: "切片",
+        map: [[null, null, null], [null, "泰国青柠叶", null], [null, null, null]],
+        ingredients: [["泰国青柠叶"]]
     },
     "剁碎的泰国青柠叶": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "泰国青柠叶", null], [null, null, null]],
-        "ingredients": [["泰国青柠叶"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "泰国青柠叶", null], [null, null, null]],
+        ingredients: [["泰国青柠叶"]]
     },
     "搅拌的泰国青柠叶": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "泰国青柠叶", null], [null, null, null]],
-        "ingredients": [["泰国青柠叶"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "泰国青柠叶", null], [null, null, null]],
+        ingredients: [["泰国青柠叶"]]
     },
     "煮熟的泰国青柠叶": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "泰国青柠叶", null], [null, null, null]],
-        "ingredients": [["泰国青柠叶"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "泰国青柠叶", null], [null, null, null]],
+        ingredients: [["泰国青柠叶"]]
     },
     "油炸的泰国青柠叶": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "泰国青柠叶", null], [null, null, null]],
-        "ingredients": [["泰国青柠叶"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "泰国青柠叶", null], [null, null, null]],
+        ingredients: [["泰国青柠叶"]]
     },
     "烤制的泰国青柠叶": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "泰国青柠叶", null], [null, null, null]],
-        "ingredients": [["泰国青柠叶"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "泰国青柠叶", null], [null, null, null]],
+        ingredients: [["泰国青柠叶"]]
     },
     "切碎的薰衣草": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "薰衣草", null], [null, null, null]],
-        "ingredients": [["薰衣草"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "薰衣草", null], [null, null, null]],
+        ingredients: [["薰衣草"]]
     },
     "捣碎的薰衣草": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "薰衣草", null], [null, null, null]],
-        "ingredients": [["薰衣草"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "薰衣草", null], [null, null, null]],
+        ingredients: [["薰衣草"]]
     },
     "切片的薰衣草": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "薰衣草", null], [null, null, null]],
-        "ingredients": [["薰衣草"]]
+        type: "切片",
+        map: [[null, null, null], [null, "薰衣草", null], [null, null, null]],
+        ingredients: [["薰衣草"]]
     },
     "剁碎的薰衣草": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "薰衣草", null], [null, null, null]],
-        "ingredients": [["薰衣草"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "薰衣草", null], [null, null, null]],
+        ingredients: [["薰衣草"]]
     },
     "搅拌的薰衣草": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "薰衣草", null], [null, null, null]],
-        "ingredients": [["薰衣草"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "薰衣草", null], [null, null, null]],
+        ingredients: [["薰衣草"]]
     },
     "煮熟的薰衣草": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "薰衣草", null], [null, null, null]],
-        "ingredients": [["薰衣草"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "薰衣草", null], [null, null, null]],
+        ingredients: [["薰衣草"]]
     },
     "油炸的薰衣草": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "薰衣草", null], [null, null, null]],
-        "ingredients": [["薰衣草"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "薰衣草", null], [null, null, null]],
+        ingredients: [["薰衣草"]]
     },
     "烤制的薰衣草": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "薰衣草", null], [null, null, null]],
-        "ingredients": [["薰衣草"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "薰衣草", null], [null, null, null]],
+        ingredients: [["薰衣草"]]
     },
     "切碎的甘草": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "甘草", null], [null, null, null]],
-        "ingredients": [["甘草"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "甘草", null], [null, null, null]],
+        ingredients: [["甘草"]]
     },
     "捣碎的甘草": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "甘草", null], [null, null, null]],
-        "ingredients": [["甘草"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "甘草", null], [null, null, null]],
+        ingredients: [["甘草"]]
     },
     "切片的甘草": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "甘草", null], [null, null, null]],
-        "ingredients": [["甘草"]]
+        type: "切片",
+        map: [[null, null, null], [null, "甘草", null], [null, null, null]],
+        ingredients: [["甘草"]]
     },
     "剁碎的甘草": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "甘草", null], [null, null, null]],
-        "ingredients": [["甘草"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "甘草", null], [null, null, null]],
+        ingredients: [["甘草"]]
     },
     "搅拌的甘草": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "甘草", null], [null, null, null]],
-        "ingredients": [["甘草"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "甘草", null], [null, null, null]],
+        ingredients: [["甘草"]]
     },
     "煮熟的甘草": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "甘草", null], [null, null, null]],
-        "ingredients": [["甘草"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "甘草", null], [null, null, null]],
+        ingredients: [["甘草"]]
     },
     "油炸的甘草": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "甘草", null], [null, null, null]],
-        "ingredients": [["甘草"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "甘草", null], [null, null, null]],
+        ingredients: [["甘草"]]
     },
     "烤制的甘草": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "甘草", null], [null, null, null]],
-        "ingredients": [["甘草"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "甘草", null], [null, null, null]],
+        ingredients: [["甘草"]]
     },
     "切碎的肉豆蔻": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "肉豆蔻", null], [null, null, null]],
-        "ingredients": [["肉豆蔻"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "肉豆蔻", null], [null, null, null]],
+        ingredients: [["肉豆蔻"]]
     },
     "捣碎的肉豆蔻": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "肉豆蔻", null], [null, null, null]],
-        "ingredients": [["肉豆蔻"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "肉豆蔻", null], [null, null, null]],
+        ingredients: [["肉豆蔻"]]
     },
     "切片的肉豆蔻": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "肉豆蔻", null], [null, null, null]],
-        "ingredients": [["肉豆蔻"]]
+        type: "切片",
+        map: [[null, null, null], [null, "肉豆蔻", null], [null, null, null]],
+        ingredients: [["肉豆蔻"]]
     },
     "剁碎的肉豆蔻": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "肉豆蔻", null], [null, null, null]],
-        "ingredients": [["肉豆蔻"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "肉豆蔻", null], [null, null, null]],
+        ingredients: [["肉豆蔻"]]
     },
     "搅拌的肉豆蔻": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "肉豆蔻", null], [null, null, null]],
-        "ingredients": [["肉豆蔻"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "肉豆蔻", null], [null, null, null]],
+        ingredients: [["肉豆蔻"]]
     },
     "煮熟的肉豆蔻": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "肉豆蔻", null], [null, null, null]],
-        "ingredients": [["肉豆蔻"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "肉豆蔻", null], [null, null, null]],
+        ingredients: [["肉豆蔻"]]
     },
     "油炸的肉豆蔻": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "肉豆蔻", null], [null, null, null]],
-        "ingredients": [["肉豆蔻"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "肉豆蔻", null], [null, null, null]],
+        ingredients: [["肉豆蔻"]]
     },
     "烤制的肉豆蔻": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "肉豆蔻", null], [null, null, null]],
-        "ingredients": [["肉豆蔻"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "肉豆蔻", null], [null, null, null]],
+        ingredients: [["肉豆蔻"]]
     },
     "切碎的马郁兰": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "马郁兰", null], [null, null, null]],
-        "ingredients": [["马郁兰"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "马郁兰", null], [null, null, null]],
+        ingredients: [["马郁兰"]]
     },
     "捣碎的马郁兰": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "马郁兰", null], [null, null, null]],
-        "ingredients": [["马郁兰"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "马郁兰", null], [null, null, null]],
+        ingredients: [["马郁兰"]]
     },
     "切片的马郁兰": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "马郁兰", null], [null, null, null]],
-        "ingredients": [["马郁兰"]]
+        type: "切片",
+        map: [[null, null, null], [null, "马郁兰", null], [null, null, null]],
+        ingredients: [["马郁兰"]]
     },
     "剁碎的马郁兰": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "马郁兰", null], [null, null, null]],
-        "ingredients": [["马郁兰"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "马郁兰", null], [null, null, null]],
+        ingredients: [["马郁兰"]]
     },
     "搅拌的马郁兰": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "马郁兰", null], [null, null, null]],
-        "ingredients": [["马郁兰"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "马郁兰", null], [null, null, null]],
+        ingredients: [["马郁兰"]]
     },
     "煮熟的马郁兰": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "马郁兰", null], [null, null, null]],
-        "ingredients": [["马郁兰"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "马郁兰", null], [null, null, null]],
+        ingredients: [["马郁兰"]]
     },
     "油炸的马郁兰": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "马郁兰", null], [null, null, null]],
-        "ingredients": [["马郁兰"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "马郁兰", null], [null, null, null]],
+        ingredients: [["马郁兰"]]
     },
     "烤制的马郁兰": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "马郁兰", null], [null, null, null]],
-        "ingredients": [["马郁兰"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "马郁兰", null], [null, null, null]],
+        ingredients: [["马郁兰"]]
     },
     "切碎的薄荷": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "薄荷", null], [null, null, null]],
-        "ingredients": [["薄荷"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "薄荷", null], [null, null, null]],
+        ingredients: [["薄荷"]]
     },
     "捣碎的薄荷": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "薄荷", null], [null, null, null]],
-        "ingredients": [["薄荷"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "薄荷", null], [null, null, null]],
+        ingredients: [["薄荷"]]
     },
     "切片的薄荷": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "薄荷", null], [null, null, null]],
-        "ingredients": [["薄荷"]]
+        type: "切片",
+        map: [[null, null, null], [null, "薄荷", null], [null, null, null]],
+        ingredients: [["薄荷"]]
     },
     "剁碎的薄荷": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "薄荷", null], [null, null, null]],
-        "ingredients": [["薄荷"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "薄荷", null], [null, null, null]],
+        ingredients: [["薄荷"]]
     },
     "搅拌的薄荷": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "薄荷", null], [null, null, null]],
-        "ingredients": [["薄荷"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "薄荷", null], [null, null, null]],
+        ingredients: [["薄荷"]]
     },
     "煮熟的薄荷": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "薄荷", null], [null, null, null]],
-        "ingredients": [["薄荷"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "薄荷", null], [null, null, null]],
+        ingredients: [["薄荷"]]
     },
     "油炸的薄荷": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "薄荷", null], [null, null, null]],
-        "ingredients": [["薄荷"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "薄荷", null], [null, null, null]],
+        ingredients: [["薄荷"]]
     },
     "烤制的薄荷": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "薄荷", null], [null, null, null]],
-        "ingredients": [["薄荷"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "薄荷", null], [null, null, null]],
+        ingredients: [["薄荷"]]
     },
     "切碎的牛至": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "牛至", null], [null, null, null]],
-        "ingredients": [["牛至"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "牛至", null], [null, null, null]],
+        ingredients: [["牛至"]]
     },
     "捣碎的牛至": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "牛至", null], [null, null, null]],
-        "ingredients": [["牛至"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "牛至", null], [null, null, null]],
+        ingredients: [["牛至"]]
     },
     "切片的牛至": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "牛至", null], [null, null, null]],
-        "ingredients": [["牛至"]]
+        type: "切片",
+        map: [[null, null, null], [null, "牛至", null], [null, null, null]],
+        ingredients: [["牛至"]]
     },
     "剁碎的牛至": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "牛至", null], [null, null, null]],
-        "ingredients": [["牛至"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "牛至", null], [null, null, null]],
+        ingredients: [["牛至"]]
     },
     "搅拌的牛至": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "牛至", null], [null, null, null]],
-        "ingredients": [["牛至"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "牛至", null], [null, null, null]],
+        ingredients: [["牛至"]]
     },
     "煮熟的牛至": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "牛至", null], [null, null, null]],
-        "ingredients": [["牛至"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "牛至", null], [null, null, null]],
+        ingredients: [["牛至"]]
     },
     "油炸的牛至": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "牛至", null], [null, null, null]],
-        "ingredients": [["牛至"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "牛至", null], [null, null, null]],
+        ingredients: [["牛至"]]
     },
     "烤制的牛至": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "牛至", null], [null, null, null]],
-        "ingredients": [["牛至"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "牛至", null], [null, null, null]],
+        ingredients: [["牛至"]]
     },
     "切碎的欧芹": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "欧芹", null], [null, null, null]],
-        "ingredients": [["欧芹"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "欧芹", null], [null, null, null]],
+        ingredients: [["欧芹"]]
     },
     "捣碎的欧芹": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "欧芹", null], [null, null, null]],
-        "ingredients": [["欧芹"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "欧芹", null], [null, null, null]],
+        ingredients: [["欧芹"]]
     },
     "切片的欧芹": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "欧芹", null], [null, null, null]],
-        "ingredients": [["欧芹"]]
+        type: "切片",
+        map: [[null, null, null], [null, "欧芹", null], [null, null, null]],
+        ingredients: [["欧芹"]]
     },
     "剁碎的欧芹": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "欧芹", null], [null, null, null]],
-        "ingredients": [["欧芹"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "欧芹", null], [null, null, null]],
+        ingredients: [["欧芹"]]
     },
     "搅拌的欧芹": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "欧芹", null], [null, null, null]],
-        "ingredients": [["欧芹"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "欧芹", null], [null, null, null]],
+        ingredients: [["欧芹"]]
     },
     "煮熟的欧芹": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "欧芹", null], [null, null, null]],
-        "ingredients": [["欧芹"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "欧芹", null], [null, null, null]],
+        ingredients: [["欧芹"]]
     },
     "油炸的欧芹": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "欧芹", null], [null, null, null]],
-        "ingredients": [["欧芹"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "欧芹", null], [null, null, null]],
+        ingredients: [["欧芹"]]
     },
     "烤制的欧芹": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "欧芹", null], [null, null, null]],
-        "ingredients": [["欧芹"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "欧芹", null], [null, null, null]],
+        ingredients: [["欧芹"]]
     },
     "切碎的迷迭香": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "迷迭香", null], [null, null, null]],
-        "ingredients": [["迷迭香"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "迷迭香", null], [null, null, null]],
+        ingredients: [["迷迭香"]]
     },
     "捣碎的迷迭香": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "迷迭香", null], [null, null, null]],
-        "ingredients": [["迷迭香"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "迷迭香", null], [null, null, null]],
+        ingredients: [["迷迭香"]]
     },
     "切片的迷迭香": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "迷迭香", null], [null, null, null]],
-        "ingredients": [["迷迭香"]]
+        type: "切片",
+        map: [[null, null, null], [null, "迷迭香", null], [null, null, null]],
+        ingredients: [["迷迭香"]]
     },
     "剁碎的迷迭香": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "迷迭香", null], [null, null, null]],
-        "ingredients": [["迷迭香"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "迷迭香", null], [null, null, null]],
+        ingredients: [["迷迭香"]]
     },
     "搅拌的迷迭香": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "迷迭香", null], [null, null, null]],
-        "ingredients": [["迷迭香"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "迷迭香", null], [null, null, null]],
+        ingredients: [["迷迭香"]]
     },
     "煮熟的迷迭香": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "迷迭香", null], [null, null, null]],
-        "ingredients": [["迷迭香"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "迷迭香", null], [null, null, null]],
+        ingredients: [["迷迭香"]]
     },
     "油炸的迷迭香": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "迷迭香", null], [null, null, null]],
-        "ingredients": [["迷迭香"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "迷迭香", null], [null, null, null]],
+        ingredients: [["迷迭香"]]
     },
     "烤制的迷迭香": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "迷迭香", null], [null, null, null]],
-        "ingredients": [["迷迭香"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "迷迭香", null], [null, null, null]],
+        ingredients: [["迷迭香"]]
     },
     "切碎的黄樟": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "黄樟", null], [null, null, null]],
-        "ingredients": [["黄樟"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "黄樟", null], [null, null, null]],
+        ingredients: [["黄樟"]]
     },
     "捣碎的黄樟": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "黄樟", null], [null, null, null]],
-        "ingredients": [["黄樟"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "黄樟", null], [null, null, null]],
+        ingredients: [["黄樟"]]
     },
     "切片的黄樟": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "黄樟", null], [null, null, null]],
-        "ingredients": [["黄樟"]]
+        type: "切片",
+        map: [[null, null, null], [null, "黄樟", null], [null, null, null]],
+        ingredients: [["黄樟"]]
     },
     "剁碎的黄樟": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "黄樟", null], [null, null, null]],
-        "ingredients": [["黄樟"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "黄樟", null], [null, null, null]],
+        ingredients: [["黄樟"]]
     },
     "搅拌的黄樟": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "黄樟", null], [null, null, null]],
-        "ingredients": [["黄樟"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "黄樟", null], [null, null, null]],
+        ingredients: [["黄樟"]]
     },
     "煮熟的黄樟": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "黄樟", null], [null, null, null]],
-        "ingredients": [["黄樟"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "黄樟", null], [null, null, null]],
+        ingredients: [["黄樟"]]
     },
     "油炸的黄樟": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "黄樟", null], [null, null, null]],
-        "ingredients": [["黄樟"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "黄樟", null], [null, null, null]],
+        ingredients: [["黄樟"]]
     },
     "烤制的黄樟": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "黄樟", null], [null, null, null]],
-        "ingredients": [["黄樟"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "黄樟", null], [null, null, null]],
+        ingredients: [["黄樟"]]
     },
     "切碎的紫苏": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "紫苏", null], [null, null, null]],
-        "ingredients": [["紫苏"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "紫苏", null], [null, null, null]],
+        ingredients: [["紫苏"]]
     },
     "捣碎的紫苏": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "紫苏", null], [null, null, null]],
-        "ingredients": [["紫苏"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "紫苏", null], [null, null, null]],
+        ingredients: [["紫苏"]]
     },
     "切片的紫苏": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "紫苏", null], [null, null, null]],
-        "ingredients": [["紫苏"]]
+        type: "切片",
+        map: [[null, null, null], [null, "紫苏", null], [null, null, null]],
+        ingredients: [["紫苏"]]
     },
     "剁碎的紫苏": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "紫苏", null], [null, null, null]],
-        "ingredients": [["紫苏"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "紫苏", null], [null, null, null]],
+        ingredients: [["紫苏"]]
     },
     "搅拌的紫苏": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "紫苏", null], [null, null, null]],
-        "ingredients": [["紫苏"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "紫苏", null], [null, null, null]],
+        ingredients: [["紫苏"]]
     },
     "煮熟的紫苏": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "紫苏", null], [null, null, null]],
-        "ingredients": [["紫苏"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "紫苏", null], [null, null, null]],
+        ingredients: [["紫苏"]]
     },
     "油炸的紫苏": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "紫苏", null], [null, null, null]],
-        "ingredients": [["紫苏"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "紫苏", null], [null, null, null]],
+        ingredients: [["紫苏"]]
     },
     "烤制的紫苏": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "紫苏", null], [null, null, null]],
-        "ingredients": [["紫苏"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "紫苏", null], [null, null, null]],
+        ingredients: [["紫苏"]]
     },
     "切碎的八角": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "八角", null], [null, null, null]],
-        "ingredients": [["八角"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "八角", null], [null, null, null]],
+        ingredients: [["八角"]]
     },
     "捣碎的八角": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "八角", null], [null, null, null]],
-        "ingredients": [["八角"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "八角", null], [null, null, null]],
+        ingredients: [["八角"]]
     },
     "切片的八角": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "八角", null], [null, null, null]],
-        "ingredients": [["八角"]]
+        type: "切片",
+        map: [[null, null, null], [null, "八角", null], [null, null, null]],
+        ingredients: [["八角"]]
     },
     "剁碎的八角": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "八角", null], [null, null, null]],
-        "ingredients": [["八角"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "八角", null], [null, null, null]],
+        ingredients: [["八角"]]
     },
     "搅拌的八角": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "八角", null], [null, null, null]],
-        "ingredients": [["八角"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "八角", null], [null, null, null]],
+        ingredients: [["八角"]]
     },
     "煮熟的八角": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "八角", null], [null, null, null]],
-        "ingredients": [["八角"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "八角", null], [null, null, null]],
+        ingredients: [["八角"]]
     },
     "油炸的八角": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "八角", null], [null, null, null]],
-        "ingredients": [["八角"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "八角", null], [null, null, null]],
+        ingredients: [["八角"]]
     },
     "烤制的八角": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "八角", null], [null, null, null]],
-        "ingredients": [["八角"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "八角", null], [null, null, null]],
+        ingredients: [["八角"]]
     },
     "切碎的龙蒿": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "龙蒿", null], [null, null, null]],
-        "ingredients": [["龙蒿"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "龙蒿", null], [null, null, null]],
+        ingredients: [["龙蒿"]]
     },
     "捣碎的龙蒿": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "龙蒿", null], [null, null, null]],
-        "ingredients": [["龙蒿"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "龙蒿", null], [null, null, null]],
+        ingredients: [["龙蒿"]]
     },
     "切片的龙蒿": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "龙蒿", null], [null, null, null]],
-        "ingredients": [["龙蒿"]]
+        type: "切片",
+        map: [[null, null, null], [null, "龙蒿", null], [null, null, null]],
+        ingredients: [["龙蒿"]]
     },
     "剁碎的龙蒿": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "龙蒿", null], [null, null, null]],
-        "ingredients": [["龙蒿"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "龙蒿", null], [null, null, null]],
+        ingredients: [["龙蒿"]]
     },
     "搅拌的龙蒿": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "龙蒿", null], [null, null, null]],
-        "ingredients": [["龙蒿"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "龙蒿", null], [null, null, null]],
+        ingredients: [["龙蒿"]]
     },
     "煮熟的龙蒿": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "龙蒿", null], [null, null, null]],
-        "ingredients": [["龙蒿"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "龙蒿", null], [null, null, null]],
+        ingredients: [["龙蒿"]]
     },
     "油炸的龙蒿": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "龙蒿", null], [null, null, null]],
-        "ingredients": [["龙蒿"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "龙蒿", null], [null, null, null]],
+        ingredients: [["龙蒿"]]
     },
     "烤制的龙蒿": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "龙蒿", null], [null, null, null]],
-        "ingredients": [["龙蒿"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "龙蒿", null], [null, null, null]],
+        ingredients: [["龙蒿"]]
     },
     "切碎的百里香": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "百里香", null], [null, null, null]],
-        "ingredients": [["百里香"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "百里香", null], [null, null, null]],
+        ingredients: [["百里香"]]
     },
     "捣碎的百里香": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "百里香", null], [null, null, null]],
-        "ingredients": [["百里香"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "百里香", null], [null, null, null]],
+        ingredients: [["百里香"]]
     },
     "切片的百里香": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "百里香", null], [null, null, null]],
-        "ingredients": [["百里香"]]
+        type: "切片",
+        map: [[null, null, null], [null, "百里香", null], [null, null, null]],
+        ingredients: [["百里香"]]
     },
     "剁碎的百里香": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "百里香", null], [null, null, null]],
-        "ingredients": [["百里香"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "百里香", null], [null, null, null]],
+        ingredients: [["百里香"]]
     },
     "搅拌的百里香": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "百里香", null], [null, null, null]],
-        "ingredients": [["百里香"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "百里香", null], [null, null, null]],
+        ingredients: [["百里香"]]
     },
     "煮熟的百里香": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "百里香", null], [null, null, null]],
-        "ingredients": [["百里香"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "百里香", null], [null, null, null]],
+        ingredients: [["百里香"]]
     },
     "油炸的百里香": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "百里香", null], [null, null, null]],
-        "ingredients": [["百里香"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "百里香", null], [null, null, null]],
+        ingredients: [["百里香"]]
     },
     "烤制的百里香": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "百里香", null], [null, null, null]],
-        "ingredients": [["百里香"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "百里香", null], [null, null, null]],
+        ingredients: [["百里香"]]
     },
     "切碎的姜黄": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "姜黄", null], [null, null, null]],
-        "ingredients": [["姜黄"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "姜黄", null], [null, null, null]],
+        ingredients: [["姜黄"]]
     },
     "捣碎的姜黄": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "姜黄", null], [null, null, null]],
-        "ingredients": [["姜黄"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "姜黄", null], [null, null, null]],
+        ingredients: [["姜黄"]]
     },
     "切片的姜黄": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "姜黄", null], [null, null, null]],
-        "ingredients": [["姜黄"]]
+        type: "切片",
+        map: [[null, null, null], [null, "姜黄", null], [null, null, null]],
+        ingredients: [["姜黄"]]
     },
     "剁碎的姜黄": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "姜黄", null], [null, null, null]],
-        "ingredients": [["姜黄"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "姜黄", null], [null, null, null]],
+        ingredients: [["姜黄"]]
     },
     "搅拌的姜黄": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "姜黄", null], [null, null, null]],
-        "ingredients": [["姜黄"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "姜黄", null], [null, null, null]],
+        ingredients: [["姜黄"]]
     },
     "煮熟的姜黄": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "姜黄", null], [null, null, null]],
-        "ingredients": [["姜黄"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "姜黄", null], [null, null, null]],
+        ingredients: [["姜黄"]]
     },
     "油炸的姜黄": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "姜黄", null], [null, null, null]],
-        "ingredients": [["姜黄"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "姜黄", null], [null, null, null]],
+        ingredients: [["姜黄"]]
     },
     "烤制的姜黄": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "姜黄", null], [null, null, null]],
-        "ingredients": [["姜黄"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "姜黄", null], [null, null, null]],
+        ingredients: [["姜黄"]]
     },
     "切碎的香子兰": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "香子兰", null], [null, null, null]],
-        "ingredients": [["香子兰"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "香子兰", null], [null, null, null]],
+        ingredients: [["香子兰"]]
     },
     "捣碎的香子兰": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "香子兰", null], [null, null, null]],
-        "ingredients": [["香子兰"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "香子兰", null], [null, null, null]],
+        ingredients: [["香子兰"]]
     },
     "切片的香子兰": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "香子兰", null], [null, null, null]],
-        "ingredients": [["香子兰"]]
+        type: "切片",
+        map: [[null, null, null], [null, "香子兰", null], [null, null, null]],
+        ingredients: [["香子兰"]]
     },
     "剁碎的香子兰": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "香子兰", null], [null, null, null]],
-        "ingredients": [["香子兰"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "香子兰", null], [null, null, null]],
+        ingredients: [["香子兰"]]
     },
     "搅拌的香子兰": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "香子兰", null], [null, null, null]],
-        "ingredients": [["香子兰"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "香子兰", null], [null, null, null]],
+        ingredients: [["香子兰"]]
     },
     "煮熟的香子兰": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "香子兰", null], [null, null, null]],
-        "ingredients": [["香子兰"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "香子兰", null], [null, null, null]],
+        ingredients: [["香子兰"]]
     },
     "油炸的香子兰": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "香子兰", null], [null, null, null]],
-        "ingredients": [["香子兰"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "香子兰", null], [null, null, null]],
+        ingredients: [["香子兰"]]
     },
     "烤制的香子兰": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "香子兰", null], [null, null, null]],
-        "ingredients": [["香子兰"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "香子兰", null], [null, null, null]],
+        ingredients: [["香子兰"]]
     },
     "切碎的山萮菜": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "山萮菜", null], [null, null, null]],
-        "ingredients": [["山萮菜"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "山萮菜", null], [null, null, null]],
+        ingredients: [["山萮菜"]]
     },
     "捣碎的山萮菜": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "山萮菜", null], [null, null, null]],
-        "ingredients": [["山萮菜"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "山萮菜", null], [null, null, null]],
+        ingredients: [["山萮菜"]]
     },
     "切片的山萮菜": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "山萮菜", null], [null, null, null]],
-        "ingredients": [["山萮菜"]]
+        type: "切片",
+        map: [[null, null, null], [null, "山萮菜", null], [null, null, null]],
+        ingredients: [["山萮菜"]]
     },
     "剁碎的山萮菜": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "山萮菜", null], [null, null, null]],
-        "ingredients": [["山萮菜"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "山萮菜", null], [null, null, null]],
+        ingredients: [["山萮菜"]]
     },
     "搅拌的山萮菜": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "山萮菜", null], [null, null, null]],
-        "ingredients": [["山萮菜"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "山萮菜", null], [null, null, null]],
+        ingredients: [["山萮菜"]]
     },
     "煮熟的山萮菜": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "山萮菜", null], [null, null, null]],
-        "ingredients": [["山萮菜"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "山萮菜", null], [null, null, null]],
+        ingredients: [["山萮菜"]]
     },
     "油炸的山萮菜": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "山萮菜", null], [null, null, null]],
-        "ingredients": [["山萮菜"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "山萮菜", null], [null, null, null]],
+        ingredients: [["山萮菜"]]
     },
     "烤制的山萮菜": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "山萮菜", null], [null, null, null]],
-        "ingredients": [["山萮菜"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "山萮菜", null], [null, null, null]],
+        ingredients: [["山萮菜"]]
     },
     "切碎的洋蓟": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "洋蓟", null], [null, null, null]],
-        "ingredients": [["洋蓟"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "洋蓟", null], [null, null, null]],
+        ingredients: [["洋蓟"]]
     },
     "捣碎的洋蓟": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "洋蓟", null], [null, null, null]],
-        "ingredients": [["洋蓟"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "洋蓟", null], [null, null, null]],
+        ingredients: [["洋蓟"]]
     },
     "切片的洋蓟": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "洋蓟", null], [null, null, null]],
-        "ingredients": [["洋蓟"]]
+        type: "切片",
+        map: [[null, null, null], [null, "洋蓟", null], [null, null, null]],
+        ingredients: [["洋蓟"]]
     },
     "剁碎的洋蓟": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "洋蓟", null], [null, null, null]],
-        "ingredients": [["洋蓟"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "洋蓟", null], [null, null, null]],
+        ingredients: [["洋蓟"]]
     },
     "搅拌的洋蓟": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "洋蓟", null], [null, null, null]],
-        "ingredients": [["洋蓟"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "洋蓟", null], [null, null, null]],
+        ingredients: [["洋蓟"]]
     },
     "煮熟的洋蓟": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "洋蓟", null], [null, null, null]],
-        "ingredients": [["洋蓟"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "洋蓟", null], [null, null, null]],
+        ingredients: [["洋蓟"]]
     },
     "油炸的洋蓟": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "洋蓟", null], [null, null, null]],
-        "ingredients": [["洋蓟"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "洋蓟", null], [null, null, null]],
+        ingredients: [["洋蓟"]]
     },
     "烤制的洋蓟": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "洋蓟", null], [null, null, null]],
-        "ingredients": [["洋蓟"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "洋蓟", null], [null, null, null]],
+        ingredients: [["洋蓟"]]
     },
     "切碎的茄冰蕉": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "茄冰蕉", null], [null, null, null]],
-        "ingredients": [["茄冰蕉"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "茄冰蕉", null], [null, null, null]],
+        ingredients: [["茄冰蕉"]]
     },
     "捣碎的茄冰蕉": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "茄冰蕉", null], [null, null, null]],
-        "ingredients": [["茄冰蕉"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "茄冰蕉", null], [null, null, null]],
+        ingredients: [["茄冰蕉"]]
     },
     "切片的茄冰蕉": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "茄冰蕉", null], [null, null, null]],
-        "ingredients": [["茄冰蕉"]]
+        type: "切片",
+        map: [[null, null, null], [null, "茄冰蕉", null], [null, null, null]],
+        ingredients: [["茄冰蕉"]]
     },
     "剁碎的茄冰蕉": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "茄冰蕉", null], [null, null, null]],
-        "ingredients": [["茄冰蕉"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "茄冰蕉", null], [null, null, null]],
+        ingredients: [["茄冰蕉"]]
     },
     "搅拌的茄冰蕉": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "茄冰蕉", null], [null, null, null]],
-        "ingredients": [["茄冰蕉"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "茄冰蕉", null], [null, null, null]],
+        ingredients: [["茄冰蕉"]]
     },
     "煮熟的茄冰蕉": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "茄冰蕉", null], [null, null, null]],
-        "ingredients": [["茄冰蕉"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "茄冰蕉", null], [null, null, null]],
+        ingredients: [["茄冰蕉"]]
     },
     "油炸的茄冰蕉": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "茄冰蕉", null], [null, null, null]],
-        "ingredients": [["茄冰蕉"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "茄冰蕉", null], [null, null, null]],
+        ingredients: [["茄冰蕉"]]
     },
     "烤制的茄冰蕉": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "茄冰蕉", null], [null, null, null]],
-        "ingredients": [["茄冰蕉"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "茄冰蕉", null], [null, null, null]],
+        ingredients: [["茄冰蕉"]]
     },
     "切碎的芦笋": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "芦笋", null], [null, null, null]],
-        "ingredients": [["芦笋"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "芦笋", null], [null, null, null]],
+        ingredients: [["芦笋"]]
     },
     "捣碎的芦笋": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "芦笋", null], [null, null, null]],
-        "ingredients": [["芦笋"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "芦笋", null], [null, null, null]],
+        ingredients: [["芦笋"]]
     },
     "切片的芦笋": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "芦笋", null], [null, null, null]],
-        "ingredients": [["芦笋"]]
+        type: "切片",
+        map: [[null, null, null], [null, "芦笋", null], [null, null, null]],
+        ingredients: [["芦笋"]]
     },
     "剁碎的芦笋": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "芦笋", null], [null, null, null]],
-        "ingredients": [["芦笋"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "芦笋", null], [null, null, null]],
+        ingredients: [["芦笋"]]
     },
     "搅拌的芦笋": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "芦笋", null], [null, null, null]],
-        "ingredients": [["芦笋"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "芦笋", null], [null, null, null]],
+        ingredients: [["芦笋"]]
     },
     "煮熟的芦笋": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "芦笋", null], [null, null, null]],
-        "ingredients": [["芦笋"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "芦笋", null], [null, null, null]],
+        ingredients: [["芦笋"]]
     },
     "油炸的芦笋": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "芦笋", null], [null, null, null]],
-        "ingredients": [["芦笋"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "芦笋", null], [null, null, null]],
+        ingredients: [["芦笋"]]
     },
     "烤制的芦笋": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "芦笋", null], [null, null, null]],
-        "ingredients": [["芦笋"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "芦笋", null], [null, null, null]],
+        ingredients: [["芦笋"]]
     },
     "切碎的球芽甘蓝": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "球芽甘蓝", null], [null, null, null]],
-        "ingredients": [["球芽甘蓝"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "球芽甘蓝", null], [null, null, null]],
+        ingredients: [["球芽甘蓝"]]
     },
     "捣碎的球芽甘蓝": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "球芽甘蓝", null], [null, null, null]],
-        "ingredients": [["球芽甘蓝"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "球芽甘蓝", null], [null, null, null]],
+        ingredients: [["球芽甘蓝"]]
     },
     "切片的球芽甘蓝": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "球芽甘蓝", null], [null, null, null]],
-        "ingredients": [["球芽甘蓝"]]
+        type: "切片",
+        map: [[null, null, null], [null, "球芽甘蓝", null], [null, null, null]],
+        ingredients: [["球芽甘蓝"]]
     },
     "剁碎的球芽甘蓝": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "球芽甘蓝", null], [null, null, null]],
-        "ingredients": [["球芽甘蓝"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "球芽甘蓝", null], [null, null, null]],
+        ingredients: [["球芽甘蓝"]]
     },
     "搅拌的球芽甘蓝": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "球芽甘蓝", null], [null, null, null]],
-        "ingredients": [["球芽甘蓝"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "球芽甘蓝", null], [null, null, null]],
+        ingredients: [["球芽甘蓝"]]
     },
     "煮熟的球芽甘蓝": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "球芽甘蓝", null], [null, null, null]],
-        "ingredients": [["球芽甘蓝"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "球芽甘蓝", null], [null, null, null]],
+        ingredients: [["球芽甘蓝"]]
     },
     "油炸的球芽甘蓝": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "球芽甘蓝", null], [null, null, null]],
-        "ingredients": [["球芽甘蓝"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "球芽甘蓝", null], [null, null, null]],
+        ingredients: [["球芽甘蓝"]]
     },
     "烤制的球芽甘蓝": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "球芽甘蓝", null], [null, null, null]],
-        "ingredients": [["球芽甘蓝"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "球芽甘蓝", null], [null, null, null]],
+        ingredients: [["球芽甘蓝"]]
     },
     "切碎的卷心菜": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "卷心菜", null], [null, null, null]],
-        "ingredients": [["卷心菜"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "卷心菜", null], [null, null, null]],
+        ingredients: [["卷心菜"]]
     },
     "捣碎的卷心菜": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "卷心菜", null], [null, null, null]],
-        "ingredients": [["卷心菜"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "卷心菜", null], [null, null, null]],
+        ingredients: [["卷心菜"]]
     },
     "切片的卷心菜": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "卷心菜", null], [null, null, null]],
-        "ingredients": [["卷心菜"]]
+        type: "切片",
+        map: [[null, null, null], [null, "卷心菜", null], [null, null, null]],
+        ingredients: [["卷心菜"]]
     },
     "剁碎的卷心菜": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "卷心菜", null], [null, null, null]],
-        "ingredients": [["卷心菜"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "卷心菜", null], [null, null, null]],
+        ingredients: [["卷心菜"]]
     },
     "搅拌的卷心菜": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "卷心菜", null], [null, null, null]],
-        "ingredients": [["卷心菜"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "卷心菜", null], [null, null, null]],
+        ingredients: [["卷心菜"]]
     },
     "煮熟的卷心菜": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "卷心菜", null], [null, null, null]],
-        "ingredients": [["卷心菜"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "卷心菜", null], [null, null, null]],
+        ingredients: [["卷心菜"]]
     },
     "油炸的卷心菜": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "卷心菜", null], [null, null, null]],
-        "ingredients": [["卷心菜"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "卷心菜", null], [null, null, null]],
+        ingredients: [["卷心菜"]]
     },
     "烤制的卷心菜": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "卷心菜", null], [null, null, null]],
-        "ingredients": [["卷心菜"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "卷心菜", null], [null, null, null]],
+        ingredients: [["卷心菜"]]
     },
     "切碎的花椰菜": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "花椰菜", null], [null, null, null]],
-        "ingredients": [["花椰菜"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "花椰菜", null], [null, null, null]],
+        ingredients: [["花椰菜"]]
     },
     "捣碎的花椰菜": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "花椰菜", null], [null, null, null]],
-        "ingredients": [["花椰菜"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "花椰菜", null], [null, null, null]],
+        ingredients: [["花椰菜"]]
     },
     "切片的花椰菜": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "花椰菜", null], [null, null, null]],
-        "ingredients": [["花椰菜"]]
+        type: "切片",
+        map: [[null, null, null], [null, "花椰菜", null], [null, null, null]],
+        ingredients: [["花椰菜"]]
     },
     "剁碎的花椰菜": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "花椰菜", null], [null, null, null]],
-        "ingredients": [["花椰菜"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "花椰菜", null], [null, null, null]],
+        ingredients: [["花椰菜"]]
     },
     "搅拌的花椰菜": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "花椰菜", null], [null, null, null]],
-        "ingredients": [["花椰菜"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "花椰菜", null], [null, null, null]],
+        ingredients: [["花椰菜"]]
     },
     "煮熟的花椰菜": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "花椰菜", null], [null, null, null]],
-        "ingredients": [["花椰菜"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "花椰菜", null], [null, null, null]],
+        ingredients: [["花椰菜"]]
     },
     "油炸的花椰菜": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "花椰菜", null], [null, null, null]],
-        "ingredients": [["花椰菜"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "花椰菜", null], [null, null, null]],
+        ingredients: [["花椰菜"]]
     },
     "烤制的花椰菜": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "花椰菜", null], [null, null, null]],
-        "ingredients": [["花椰菜"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "花椰菜", null], [null, null, null]],
+        ingredients: [["花椰菜"]]
     },
     "切碎的芹菜": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "芹菜", null], [null, null, null]],
-        "ingredients": [["芹菜"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "芹菜", null], [null, null, null]],
+        ingredients: [["芹菜"]]
     },
     "捣碎的芹菜": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "芹菜", null], [null, null, null]],
-        "ingredients": [["芹菜"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "芹菜", null], [null, null, null]],
+        ingredients: [["芹菜"]]
     },
     "切片的芹菜": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "芹菜", null], [null, null, null]],
-        "ingredients": [["芹菜"]]
+        type: "切片",
+        map: [[null, null, null], [null, "芹菜", null], [null, null, null]],
+        ingredients: [["芹菜"]]
     },
     "剁碎的芹菜": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "芹菜", null], [null, null, null]],
-        "ingredients": [["芹菜"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "芹菜", null], [null, null, null]],
+        ingredients: [["芹菜"]]
     },
     "搅拌的芹菜": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "芹菜", null], [null, null, null]],
-        "ingredients": [["芹菜"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "芹菜", null], [null, null, null]],
+        ingredients: [["芹菜"]]
     },
     "煮熟的芹菜": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "芹菜", null], [null, null, null]],
-        "ingredients": [["芹菜"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "芹菜", null], [null, null, null]],
+        ingredients: [["芹菜"]]
     },
     "油炸的芹菜": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "芹菜", null], [null, null, null]],
-        "ingredients": [["芹菜"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "芹菜", null], [null, null, null]],
+        ingredients: [["芹菜"]]
     },
     "烤制的芹菜": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "芹菜", null], [null, null, null]],
-        "ingredients": [["芹菜"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "芹菜", null], [null, null, null]],
+        ingredients: [["芹菜"]]
     },
     "切碎的羽衣甘蓝": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "羽衣甘蓝", null], [null, null, null]],
-        "ingredients": [["羽衣甘蓝"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "羽衣甘蓝", null], [null, null, null]],
+        ingredients: [["羽衣甘蓝"]]
     },
     "捣碎的羽衣甘蓝": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "羽衣甘蓝", null], [null, null, null]],
-        "ingredients": [["羽衣甘蓝"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "羽衣甘蓝", null], [null, null, null]],
+        ingredients: [["羽衣甘蓝"]]
     },
     "切片的羽衣甘蓝": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "羽衣甘蓝", null], [null, null, null]],
-        "ingredients": [["羽衣甘蓝"]]
+        type: "切片",
+        map: [[null, null, null], [null, "羽衣甘蓝", null], [null, null, null]],
+        ingredients: [["羽衣甘蓝"]]
     },
     "剁碎的羽衣甘蓝": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "羽衣甘蓝", null], [null, null, null]],
-        "ingredients": [["羽衣甘蓝"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "羽衣甘蓝", null], [null, null, null]],
+        ingredients: [["羽衣甘蓝"]]
     },
     "搅拌的羽衣甘蓝": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "羽衣甘蓝", null], [null, null, null]],
-        "ingredients": [["羽衣甘蓝"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "羽衣甘蓝", null], [null, null, null]],
+        ingredients: [["羽衣甘蓝"]]
     },
     "煮熟的羽衣甘蓝": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "羽衣甘蓝", null], [null, null, null]],
-        "ingredients": [["羽衣甘蓝"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "羽衣甘蓝", null], [null, null, null]],
+        ingredients: [["羽衣甘蓝"]]
     },
     "油炸的羽衣甘蓝": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "羽衣甘蓝", null], [null, null, null]],
-        "ingredients": [["羽衣甘蓝"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "羽衣甘蓝", null], [null, null, null]],
+        ingredients: [["羽衣甘蓝"]]
     },
     "烤制的羽衣甘蓝": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "羽衣甘蓝", null], [null, null, null]],
-        "ingredients": [["羽衣甘蓝"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "羽衣甘蓝", null], [null, null, null]],
+        ingredients: [["羽衣甘蓝"]]
     },
     "切碎的菠菜": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "菠菜", null], [null, null, null]],
-        "ingredients": [["菠菜"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "菠菜", null], [null, null, null]],
+        ingredients: [["菠菜"]]
     },
     "捣碎的菠菜": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "菠菜", null], [null, null, null]],
-        "ingredients": [["菠菜"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "菠菜", null], [null, null, null]],
+        ingredients: [["菠菜"]]
     },
     "切片的菠菜": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "菠菜", null], [null, null, null]],
-        "ingredients": [["菠菜"]]
+        type: "切片",
+        map: [[null, null, null], [null, "菠菜", null], [null, null, null]],
+        ingredients: [["菠菜"]]
     },
     "剁碎的菠菜": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "菠菜", null], [null, null, null]],
-        "ingredients": [["菠菜"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "菠菜", null], [null, null, null]],
+        ingredients: [["菠菜"]]
     },
     "搅拌的菠菜": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "菠菜", null], [null, null, null]],
-        "ingredients": [["菠菜"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "菠菜", null], [null, null, null]],
+        ingredients: [["菠菜"]]
     },
     "煮熟的菠菜": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "菠菜", null], [null, null, null]],
-        "ingredients": [["菠菜"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "菠菜", null], [null, null, null]],
+        ingredients: [["菠菜"]]
     },
     "油炸的菠菜": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "菠菜", null], [null, null, null]],
-        "ingredients": [["菠菜"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "菠菜", null], [null, null, null]],
+        ingredients: [["菠菜"]]
     },
     "烤制的菠菜": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "菠菜", null], [null, null, null]],
-        "ingredients": [["菠菜"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "菠菜", null], [null, null, null]],
+        ingredients: [["菠菜"]]
     },
     "切碎的黑豆": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "黑豆", null], [null, null, null]],
-        "ingredients": [["黑豆"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "黑豆", null], [null, null, null]],
+        ingredients: [["黑豆"]]
     },
     "捣碎的黑豆": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "黑豆", null], [null, null, null]],
-        "ingredients": [["黑豆"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "黑豆", null], [null, null, null]],
+        ingredients: [["黑豆"]]
     },
     "切片的黑豆": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "黑豆", null], [null, null, null]],
-        "ingredients": [["黑豆"]]
+        type: "切片",
+        map: [[null, null, null], [null, "黑豆", null], [null, null, null]],
+        ingredients: [["黑豆"]]
     },
     "剁碎的黑豆": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "黑豆", null], [null, null, null]],
-        "ingredients": [["黑豆"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "黑豆", null], [null, null, null]],
+        ingredients: [["黑豆"]]
     },
     "搅拌的黑豆": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "黑豆", null], [null, null, null]],
-        "ingredients": [["黑豆"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "黑豆", null], [null, null, null]],
+        ingredients: [["黑豆"]]
     },
     "煮熟的黑豆": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "黑豆", null], [null, null, null]],
-        "ingredients": [["黑豆"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "黑豆", null], [null, null, null]],
+        ingredients: [["黑豆"]]
     },
     "油炸的黑豆": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "黑豆", null], [null, null, null]],
-        "ingredients": [["黑豆"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "黑豆", null], [null, null, null]],
+        ingredients: [["黑豆"]]
     },
     "烤制的黑豆": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "黑豆", null], [null, null, null]],
-        "ingredients": [["黑豆"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "黑豆", null], [null, null, null]],
+        ingredients: [["黑豆"]]
     },
     "切碎的四季豆": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "四季豆", null], [null, null, null]],
-        "ingredients": [["四季豆"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "四季豆", null], [null, null, null]],
+        ingredients: [["四季豆"]]
     },
     "捣碎的四季豆": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "四季豆", null], [null, null, null]],
-        "ingredients": [["四季豆"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "四季豆", null], [null, null, null]],
+        ingredients: [["四季豆"]]
     },
     "切片的四季豆": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "四季豆", null], [null, null, null]],
-        "ingredients": [["四季豆"]]
+        type: "切片",
+        map: [[null, null, null], [null, "四季豆", null], [null, null, null]],
+        ingredients: [["四季豆"]]
     },
     "剁碎的四季豆": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "四季豆", null], [null, null, null]],
-        "ingredients": [["四季豆"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "四季豆", null], [null, null, null]],
+        ingredients: [["四季豆"]]
     },
     "搅拌的四季豆": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "四季豆", null], [null, null, null]],
-        "ingredients": [["四季豆"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "四季豆", null], [null, null, null]],
+        ingredients: [["四季豆"]]
     },
     "煮熟的四季豆": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "四季豆", null], [null, null, null]],
-        "ingredients": [["四季豆"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "四季豆", null], [null, null, null]],
+        ingredients: [["四季豆"]]
     },
     "油炸的四季豆": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "四季豆", null], [null, null, null]],
-        "ingredients": [["四季豆"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "四季豆", null], [null, null, null]],
+        ingredients: [["四季豆"]]
     },
     "烤制的四季豆": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "四季豆", null], [null, null, null]],
-        "ingredients": [["四季豆"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "四季豆", null], [null, null, null]],
+        ingredients: [["四季豆"]]
     },
     "切碎的鹰嘴豆": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "鹰嘴豆", null], [null, null, null]],
-        "ingredients": [["鹰嘴豆"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "鹰嘴豆", null], [null, null, null]],
+        ingredients: [["鹰嘴豆"]]
     },
     "捣碎的鹰嘴豆": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "鹰嘴豆", null], [null, null, null]],
-        "ingredients": [["鹰嘴豆"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "鹰嘴豆", null], [null, null, null]],
+        ingredients: [["鹰嘴豆"]]
     },
     "切片的鹰嘴豆": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "鹰嘴豆", null], [null, null, null]],
-        "ingredients": [["鹰嘴豆"]]
+        type: "切片",
+        map: [[null, null, null], [null, "鹰嘴豆", null], [null, null, null]],
+        ingredients: [["鹰嘴豆"]]
     },
     "剁碎的鹰嘴豆": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "鹰嘴豆", null], [null, null, null]],
-        "ingredients": [["鹰嘴豆"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "鹰嘴豆", null], [null, null, null]],
+        ingredients: [["鹰嘴豆"]]
     },
     "搅拌的鹰嘴豆": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "鹰嘴豆", null], [null, null, null]],
-        "ingredients": [["鹰嘴豆"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "鹰嘴豆", null], [null, null, null]],
+        ingredients: [["鹰嘴豆"]]
     },
     "煮熟的鹰嘴豆": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "鹰嘴豆", null], [null, null, null]],
-        "ingredients": [["鹰嘴豆"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "鹰嘴豆", null], [null, null, null]],
+        ingredients: [["鹰嘴豆"]]
     },
     "油炸的鹰嘴豆": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "鹰嘴豆", null], [null, null, null]],
-        "ingredients": [["鹰嘴豆"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "鹰嘴豆", null], [null, null, null]],
+        ingredients: [["鹰嘴豆"]]
     },
     "烤制的鹰嘴豆": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "鹰嘴豆", null], [null, null, null]],
-        "ingredients": [["鹰嘴豆"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "鹰嘴豆", null], [null, null, null]],
+        ingredients: [["鹰嘴豆"]]
     },
     "切碎的大豆": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "大豆", null], [null, null, null]],
-        "ingredients": [["大豆"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "大豆", null], [null, null, null]],
+        ingredients: [["大豆"]]
     },
     "捣碎的大豆": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "大豆", null], [null, null, null]],
-        "ingredients": [["大豆"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "大豆", null], [null, null, null]],
+        ingredients: [["大豆"]]
     },
     "切片的大豆": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "大豆", null], [null, null, null]],
-        "ingredients": [["大豆"]]
+        type: "切片",
+        map: [[null, null, null], [null, "大豆", null], [null, null, null]],
+        ingredients: [["大豆"]]
     },
     "剁碎的大豆": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "大豆", null], [null, null, null]],
-        "ingredients": [["大豆"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "大豆", null], [null, null, null]],
+        ingredients: [["大豆"]]
     },
     "搅拌的大豆": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "大豆", null], [null, null, null]],
-        "ingredients": [["大豆"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "大豆", null], [null, null, null]],
+        ingredients: [["大豆"]]
     },
     "煮熟的大豆": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "大豆", null], [null, null, null]],
-        "ingredients": [["大豆"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "大豆", null], [null, null, null]],
+        ingredients: [["大豆"]]
     },
     "油炸的大豆": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "大豆", null], [null, null, null]],
-        "ingredients": [["大豆"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "大豆", null], [null, null, null]],
+        ingredients: [["大豆"]]
     },
     "烤制的大豆": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "大豆", null], [null, null, null]],
-        "ingredients": [["大豆"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "大豆", null], [null, null, null]],
+        ingredients: [["大豆"]]
     },
     "切碎的斑豆": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "斑豆", null], [null, null, null]],
-        "ingredients": [["斑豆"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "斑豆", null], [null, null, null]],
+        ingredients: [["斑豆"]]
     },
     "捣碎的斑豆": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "斑豆", null], [null, null, null]],
-        "ingredients": [["斑豆"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "斑豆", null], [null, null, null]],
+        ingredients: [["斑豆"]]
     },
     "切片的斑豆": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "斑豆", null], [null, null, null]],
-        "ingredients": [["斑豆"]]
+        type: "切片",
+        map: [[null, null, null], [null, "斑豆", null], [null, null, null]],
+        ingredients: [["斑豆"]]
     },
     "剁碎的斑豆": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "斑豆", null], [null, null, null]],
-        "ingredients": [["斑豆"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "斑豆", null], [null, null, null]],
+        ingredients: [["斑豆"]]
     },
     "搅拌的斑豆": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "斑豆", null], [null, null, null]],
-        "ingredients": [["斑豆"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "斑豆", null], [null, null, null]],
+        ingredients: [["斑豆"]]
     },
     "煮熟的斑豆": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "斑豆", null], [null, null, null]],
-        "ingredients": [["斑豆"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "斑豆", null], [null, null, null]],
+        ingredients: [["斑豆"]]
     },
     "油炸的斑豆": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "斑豆", null], [null, null, null]],
-        "ingredients": [["斑豆"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "斑豆", null], [null, null, null]],
+        ingredients: [["斑豆"]]
     },
     "烤制的斑豆": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "斑豆", null], [null, null, null]],
-        "ingredients": [["斑豆"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "斑豆", null], [null, null, null]],
+        ingredients: [["斑豆"]]
     },
     "切碎的红花菜豆": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "红花菜豆", null], [null, null, null]],
-        "ingredients": [["红花菜豆"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "红花菜豆", null], [null, null, null]],
+        ingredients: [["红花菜豆"]]
     },
     "捣碎的红花菜豆": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "红花菜豆", null], [null, null, null]],
-        "ingredients": [["红花菜豆"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "红花菜豆", null], [null, null, null]],
+        ingredients: [["红花菜豆"]]
     },
     "切片的红花菜豆": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "红花菜豆", null], [null, null, null]],
-        "ingredients": [["红花菜豆"]]
+        type: "切片",
+        map: [[null, null, null], [null, "红花菜豆", null], [null, null, null]],
+        ingredients: [["红花菜豆"]]
     },
     "剁碎的红花菜豆": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "红花菜豆", null], [null, null, null]],
-        "ingredients": [["红花菜豆"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "红花菜豆", null], [null, null, null]],
+        ingredients: [["红花菜豆"]]
     },
     "搅拌的红花菜豆": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "红花菜豆", null], [null, null, null]],
-        "ingredients": [["红花菜豆"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "红花菜豆", null], [null, null, null]],
+        ingredients: [["红花菜豆"]]
     },
     "煮熟的红花菜豆": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "红花菜豆", null], [null, null, null]],
-        "ingredients": [["红花菜豆"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "红花菜豆", null], [null, null, null]],
+        ingredients: [["红花菜豆"]]
     },
     "油炸的红花菜豆": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "红花菜豆", null], [null, null, null]],
-        "ingredients": [["红花菜豆"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "红花菜豆", null], [null, null, null]],
+        ingredients: [["红花菜豆"]]
     },
     "烤制的红花菜豆": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "红花菜豆", null], [null, null, null]],
-        "ingredients": [["红花菜豆"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "红花菜豆", null], [null, null, null]],
+        ingredients: [["红花菜豆"]]
     },
     "切碎的荨麻": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "荨麻", null], [null, null, null]],
-        "ingredients": [["荨麻"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "荨麻", null], [null, null, null]],
+        ingredients: [["荨麻"]]
     },
     "捣碎的荨麻": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "荨麻", null], [null, null, null]],
-        "ingredients": [["荨麻"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "荨麻", null], [null, null, null]],
+        ingredients: [["荨麻"]]
     },
     "切片的荨麻": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "荨麻", null], [null, null, null]],
-        "ingredients": [["荨麻"]]
+        type: "切片",
+        map: [[null, null, null], [null, "荨麻", null], [null, null, null]],
+        ingredients: [["荨麻"]]
     },
     "剁碎的荨麻": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "荨麻", null], [null, null, null]],
-        "ingredients": [["荨麻"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "荨麻", null], [null, null, null]],
+        ingredients: [["荨麻"]]
     },
     "搅拌的荨麻": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "荨麻", null], [null, null, null]],
-        "ingredients": [["荨麻"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "荨麻", null], [null, null, null]],
+        ingredients: [["荨麻"]]
     },
     "煮熟的荨麻": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "荨麻", null], [null, null, null]],
-        "ingredients": [["荨麻"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "荨麻", null], [null, null, null]],
+        ingredients: [["荨麻"]]
     },
     "油炸的荨麻": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "荨麻", null], [null, null, null]],
-        "ingredients": [["荨麻"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "荨麻", null], [null, null, null]],
+        ingredients: [["荨麻"]]
     },
     "烤制的荨麻": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "荨麻", null], [null, null, null]],
-        "ingredients": [["荨麻"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "荨麻", null], [null, null, null]],
+        ingredients: [["荨麻"]]
     },
     "切碎的秋葵": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "秋葵", null], [null, null, null]],
-        "ingredients": [["秋葵"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "秋葵", null], [null, null, null]],
+        ingredients: [["秋葵"]]
     },
     "捣碎的秋葵": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "秋葵", null], [null, null, null]],
-        "ingredients": [["秋葵"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "秋葵", null], [null, null, null]],
+        ingredients: [["秋葵"]]
     },
     "切片的秋葵": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "秋葵", null], [null, null, null]],
-        "ingredients": [["秋葵"]]
+        type: "切片",
+        map: [[null, null, null], [null, "秋葵", null], [null, null, null]],
+        ingredients: [["秋葵"]]
     },
     "剁碎的秋葵": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "秋葵", null], [null, null, null]],
-        "ingredients": [["秋葵"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "秋葵", null], [null, null, null]],
+        ingredients: [["秋葵"]]
     },
     "搅拌的秋葵": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "秋葵", null], [null, null, null]],
-        "ingredients": [["秋葵"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "秋葵", null], [null, null, null]],
+        ingredients: [["秋葵"]]
     },
     "煮熟的秋葵": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "秋葵", null], [null, null, null]],
-        "ingredients": [["秋葵"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "秋葵", null], [null, null, null]],
+        ingredients: [["秋葵"]]
     },
     "油炸的秋葵": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "秋葵", null], [null, null, null]],
-        "ingredients": [["秋葵"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "秋葵", null], [null, null, null]],
+        ingredients: [["秋葵"]]
     },
     "烤制的秋葵": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "秋葵", null], [null, null, null]],
-        "ingredients": [["秋葵"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "秋葵", null], [null, null, null]],
+        ingredients: [["秋葵"]]
     },
     "切碎的韭葱": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "韭葱", null], [null, null, null]],
-        "ingredients": [["韭葱"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "韭葱", null], [null, null, null]],
+        ingredients: [["韭葱"]]
     },
     "捣碎的韭葱": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "韭葱", null], [null, null, null]],
-        "ingredients": [["韭葱"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "韭葱", null], [null, null, null]],
+        ingredients: [["韭葱"]]
     },
     "切片的韭葱": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "韭葱", null], [null, null, null]],
-        "ingredients": [["韭葱"]]
+        type: "切片",
+        map: [[null, null, null], [null, "韭葱", null], [null, null, null]],
+        ingredients: [["韭葱"]]
     },
     "剁碎的韭葱": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "韭葱", null], [null, null, null]],
-        "ingredients": [["韭葱"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "韭葱", null], [null, null, null]],
+        ingredients: [["韭葱"]]
     },
     "搅拌的韭葱": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "韭葱", null], [null, null, null]],
-        "ingredients": [["韭葱"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "韭葱", null], [null, null, null]],
+        ingredients: [["韭葱"]]
     },
     "煮熟的韭葱": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "韭葱", null], [null, null, null]],
-        "ingredients": [["韭葱"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "韭葱", null], [null, null, null]],
+        ingredients: [["韭葱"]]
     },
     "油炸的韭葱": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "韭葱", null], [null, null, null]],
-        "ingredients": [["韭葱"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "韭葱", null], [null, null, null]],
+        ingredients: [["韭葱"]]
     },
     "烤制的韭葱": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "韭葱", null], [null, null, null]],
-        "ingredients": [["韭葱"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "韭葱", null], [null, null, null]],
+        ingredients: [["韭葱"]]
     },
     "切碎的青葱": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "青葱", null], [null, null, null]],
-        "ingredients": [["青葱"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "青葱", null], [null, null, null]],
+        ingredients: [["青葱"]]
     },
     "捣碎的青葱": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "青葱", null], [null, null, null]],
-        "ingredients": [["青葱"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "青葱", null], [null, null, null]],
+        ingredients: [["青葱"]]
     },
     "切片的青葱": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "青葱", null], [null, null, null]],
-        "ingredients": [["青葱"]]
+        type: "切片",
+        map: [[null, null, null], [null, "青葱", null], [null, null, null]],
+        ingredients: [["青葱"]]
     },
     "剁碎的青葱": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "青葱", null], [null, null, null]],
-        "ingredients": [["青葱"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "青葱", null], [null, null, null]],
+        ingredients: [["青葱"]]
     },
     "搅拌的青葱": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "青葱", null], [null, null, null]],
-        "ingredients": [["青葱"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "青葱", null], [null, null, null]],
+        ingredients: [["青葱"]]
     },
     "煮熟的青葱": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "青葱", null], [null, null, null]],
-        "ingredients": [["青葱"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "青葱", null], [null, null, null]],
+        ingredients: [["青葱"]]
     },
     "油炸的青葱": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "青葱", null], [null, null, null]],
-        "ingredients": [["青葱"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "青葱", null], [null, null, null]],
+        ingredients: [["青葱"]]
     },
     "烤制的青葱": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "青葱", null], [null, null, null]],
-        "ingredients": [["青葱"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "青葱", null], [null, null, null]],
+        ingredients: [["青葱"]]
     },
     "切碎的墨西哥胡椒": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "墨西哥胡椒", null], [null, null, null]],
-        "ingredients": [["墨西哥胡椒"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "墨西哥胡椒", null], [null, null, null]],
+        ingredients: [["墨西哥胡椒"]]
     },
     "捣碎的墨西哥胡椒": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "墨西哥胡椒", null], [null, null, null]],
-        "ingredients": [["墨西哥胡椒"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "墨西哥胡椒", null], [null, null, null]],
+        ingredients: [["墨西哥胡椒"]]
     },
     "切片的墨西哥胡椒": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "墨西哥胡椒", null], [null, null, null]],
-        "ingredients": [["墨西哥胡椒"]]
+        type: "切片",
+        map: [[null, null, null], [null, "墨西哥胡椒", null], [null, null, null]],
+        ingredients: [["墨西哥胡椒"]]
     },
     "剁碎的墨西哥胡椒": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "墨西哥胡椒", null], [null, null, null]],
-        "ingredients": [["墨西哥胡椒"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "墨西哥胡椒", null], [null, null, null]],
+        ingredients: [["墨西哥胡椒"]]
     },
     "搅拌的墨西哥胡椒": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "墨西哥胡椒", null], [null, null, null]],
-        "ingredients": [["墨西哥胡椒"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "墨西哥胡椒", null], [null, null, null]],
+        ingredients: [["墨西哥胡椒"]]
     },
     "煮熟的墨西哥胡椒": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "墨西哥胡椒", null], [null, null, null]],
-        "ingredients": [["墨西哥胡椒"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "墨西哥胡椒", null], [null, null, null]],
+        ingredients: [["墨西哥胡椒"]]
     },
     "油炸的墨西哥胡椒": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "墨西哥胡椒", null], [null, null, null]],
-        "ingredients": [["墨西哥胡椒"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "墨西哥胡椒", null], [null, null, null]],
+        ingredients: [["墨西哥胡椒"]]
     },
     "烤制的墨西哥胡椒": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "墨西哥胡椒", null], [null, null, null]],
-        "ingredients": [["墨西哥胡椒"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "墨西哥胡椒", null], [null, null, null]],
+        ingredients: [["墨西哥胡椒"]]
     },
     "切碎的大黄": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "大黄", null], [null, null, null]],
-        "ingredients": [["大黄"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "大黄", null], [null, null, null]],
+        ingredients: [["大黄"]]
     },
     "捣碎的大黄": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "大黄", null], [null, null, null]],
-        "ingredients": [["大黄"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "大黄", null], [null, null, null]],
+        ingredients: [["大黄"]]
     },
     "切片的大黄": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "大黄", null], [null, null, null]],
-        "ingredients": [["大黄"]]
+        type: "切片",
+        map: [[null, null, null], [null, "大黄", null], [null, null, null]],
+        ingredients: [["大黄"]]
     },
     "剁碎的大黄": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "大黄", null], [null, null, null]],
-        "ingredients": [["大黄"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "大黄", null], [null, null, null]],
+        ingredients: [["大黄"]]
     },
     "搅拌的大黄": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "大黄", null], [null, null, null]],
-        "ingredients": [["大黄"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "大黄", null], [null, null, null]],
+        ingredients: [["大黄"]]
     },
     "煮熟的大黄": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "大黄", null], [null, null, null]],
-        "ingredients": [["大黄"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "大黄", null], [null, null, null]],
+        ingredients: [["大黄"]]
     },
     "油炸的大黄": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "大黄", null], [null, null, null]],
-        "ingredients": [["大黄"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "大黄", null], [null, null, null]],
+        ingredients: [["大黄"]]
     },
     "烤制的大黄": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "大黄", null], [null, null, null]],
-        "ingredients": [["大黄"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "大黄", null], [null, null, null]],
+        ingredients: [["大黄"]]
     },
     "切碎的块根芹": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "块根芹", null], [null, null, null]],
-        "ingredients": [["块根芹"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "块根芹", null], [null, null, null]],
+        ingredients: [["块根芹"]]
     },
     "捣碎的块根芹": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "块根芹", null], [null, null, null]],
-        "ingredients": [["块根芹"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "块根芹", null], [null, null, null]],
+        ingredients: [["块根芹"]]
     },
     "切片的块根芹": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "块根芹", null], [null, null, null]],
-        "ingredients": [["块根芹"]]
+        type: "切片",
+        map: [[null, null, null], [null, "块根芹", null], [null, null, null]],
+        ingredients: [["块根芹"]]
     },
     "剁碎的块根芹": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "块根芹", null], [null, null, null]],
-        "ingredients": [["块根芹"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "块根芹", null], [null, null, null]],
+        ingredients: [["块根芹"]]
     },
     "搅拌的块根芹": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "块根芹", null], [null, null, null]],
-        "ingredients": [["块根芹"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "块根芹", null], [null, null, null]],
+        ingredients: [["块根芹"]]
     },
     "煮熟的块根芹": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "块根芹", null], [null, null, null]],
-        "ingredients": [["块根芹"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "块根芹", null], [null, null, null]],
+        ingredients: [["块根芹"]]
     },
     "油炸的块根芹": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "块根芹", null], [null, null, null]],
-        "ingredients": [["块根芹"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "块根芹", null], [null, null, null]],
+        ingredients: [["块根芹"]]
     },
     "烤制的块根芹": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "块根芹", null], [null, null, null]],
-        "ingredients": [["块根芹"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "块根芹", null], [null, null, null]],
+        ingredients: [["块根芹"]]
     },
     "切碎的欧洲防风草": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "欧洲防风草", null], [null, null, null]],
-        "ingredients": [["欧洲防风草"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "欧洲防风草", null], [null, null, null]],
+        ingredients: [["欧洲防风草"]]
     },
     "捣碎的欧洲防风草": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "欧洲防风草", null], [null, null, null]],
-        "ingredients": [["欧洲防风草"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "欧洲防风草", null], [null, null, null]],
+        ingredients: [["欧洲防风草"]]
     },
     "切片的欧洲防风草": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "欧洲防风草", null], [null, null, null]],
-        "ingredients": [["欧洲防风草"]]
+        type: "切片",
+        map: [[null, null, null], [null, "欧洲防风草", null], [null, null, null]],
+        ingredients: [["欧洲防风草"]]
     },
     "剁碎的欧洲防风草": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "欧洲防风草", null], [null, null, null]],
-        "ingredients": [["欧洲防风草"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "欧洲防风草", null], [null, null, null]],
+        ingredients: [["欧洲防风草"]]
     },
     "搅拌的欧洲防风草": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "欧洲防风草", null], [null, null, null]],
-        "ingredients": [["欧洲防风草"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "欧洲防风草", null], [null, null, null]],
+        ingredients: [["欧洲防风草"]]
     },
     "煮熟的欧洲防风草": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "欧洲防风草", null], [null, null, null]],
-        "ingredients": [["欧洲防风草"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "欧洲防风草", null], [null, null, null]],
+        ingredients: [["欧洲防风草"]]
     },
     "油炸的欧洲防风草": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "欧洲防风草", null], [null, null, null]],
-        "ingredients": [["欧洲防风草"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "欧洲防风草", null], [null, null, null]],
+        ingredients: [["欧洲防风草"]]
     },
     "烤制的欧洲防风草": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "欧洲防风草", null], [null, null, null]],
-        "ingredients": [["欧洲防风草"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "欧洲防风草", null], [null, null, null]],
+        ingredients: [["欧洲防风草"]]
     },
     "切碎的芜菁甘蓝": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "芜菁甘蓝", null], [null, null, null]],
-        "ingredients": [["芜菁甘蓝"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "芜菁甘蓝", null], [null, null, null]],
+        ingredients: [["芜菁甘蓝"]]
     },
     "捣碎的芜菁甘蓝": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "芜菁甘蓝", null], [null, null, null]],
-        "ingredients": [["芜菁甘蓝"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "芜菁甘蓝", null], [null, null, null]],
+        ingredients: [["芜菁甘蓝"]]
     },
     "切片的芜菁甘蓝": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "芜菁甘蓝", null], [null, null, null]],
-        "ingredients": [["芜菁甘蓝"]]
+        type: "切片",
+        map: [[null, null, null], [null, "芜菁甘蓝", null], [null, null, null]],
+        ingredients: [["芜菁甘蓝"]]
     },
     "剁碎的芜菁甘蓝": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "芜菁甘蓝", null], [null, null, null]],
-        "ingredients": [["芜菁甘蓝"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "芜菁甘蓝", null], [null, null, null]],
+        ingredients: [["芜菁甘蓝"]]
     },
     "搅拌的芜菁甘蓝": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "芜菁甘蓝", null], [null, null, null]],
-        "ingredients": [["芜菁甘蓝"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "芜菁甘蓝", null], [null, null, null]],
+        ingredients: [["芜菁甘蓝"]]
     },
     "煮熟的芜菁甘蓝": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "芜菁甘蓝", null], [null, null, null]],
-        "ingredients": [["芜菁甘蓝"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "芜菁甘蓝", null], [null, null, null]],
+        ingredients: [["芜菁甘蓝"]]
     },
     "油炸的芜菁甘蓝": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "芜菁甘蓝", null], [null, null, null]],
-        "ingredients": [["芜菁甘蓝"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "芜菁甘蓝", null], [null, null, null]],
+        ingredients: [["芜菁甘蓝"]]
     },
     "烤制的芜菁甘蓝": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "芜菁甘蓝", null], [null, null, null]],
-        "ingredients": [["芜菁甘蓝"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "芜菁甘蓝", null], [null, null, null]],
+        ingredients: [["芜菁甘蓝"]]
     },
     "切碎的小红萝卜": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "小红萝卜", null], [null, null, null]],
-        "ingredients": [["小红萝卜"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "小红萝卜", null], [null, null, null]],
+        ingredients: [["小红萝卜"]]
     },
     "捣碎的小红萝卜": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "小红萝卜", null], [null, null, null]],
-        "ingredients": [["小红萝卜"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "小红萝卜", null], [null, null, null]],
+        ingredients: [["小红萝卜"]]
     },
     "切片的小红萝卜": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "小红萝卜", null], [null, null, null]],
-        "ingredients": [["小红萝卜"]]
+        type: "切片",
+        map: [[null, null, null], [null, "小红萝卜", null], [null, null, null]],
+        ingredients: [["小红萝卜"]]
     },
     "剁碎的小红萝卜": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "小红萝卜", null], [null, null, null]],
-        "ingredients": [["小红萝卜"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "小红萝卜", null], [null, null, null]],
+        ingredients: [["小红萝卜"]]
     },
     "搅拌的小红萝卜": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "小红萝卜", null], [null, null, null]],
-        "ingredients": [["小红萝卜"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "小红萝卜", null], [null, null, null]],
+        ingredients: [["小红萝卜"]]
     },
     "煮熟的小红萝卜": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "小红萝卜", null], [null, null, null]],
-        "ingredients": [["小红萝卜"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "小红萝卜", null], [null, null, null]],
+        ingredients: [["小红萝卜"]]
     },
     "油炸的小红萝卜": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "小红萝卜", null], [null, null, null]],
-        "ingredients": [["小红萝卜"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "小红萝卜", null], [null, null, null]],
+        ingredients: [["小红萝卜"]]
     },
     "烤制的小红萝卜": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "小红萝卜", null], [null, null, null]],
-        "ingredients": [["小红萝卜"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "小红萝卜", null], [null, null, null]],
+        ingredients: [["小红萝卜"]]
     },
     "切碎的甘薯": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "甘薯", null], [null, null, null]],
-        "ingredients": [["甘薯"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "甘薯", null], [null, null, null]],
+        ingredients: [["甘薯"]]
     },
     "捣碎的甘薯": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "甘薯", null], [null, null, null]],
-        "ingredients": [["甘薯"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "甘薯", null], [null, null, null]],
+        ingredients: [["甘薯"]]
     },
     "切片的甘薯": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "甘薯", null], [null, null, null]],
-        "ingredients": [["甘薯"]]
+        type: "切片",
+        map: [[null, null, null], [null, "甘薯", null], [null, null, null]],
+        ingredients: [["甘薯"]]
     },
     "剁碎的甘薯": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "甘薯", null], [null, null, null]],
-        "ingredients": [["甘薯"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "甘薯", null], [null, null, null]],
+        ingredients: [["甘薯"]]
     },
     "搅拌的甘薯": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "甘薯", null], [null, null, null]],
-        "ingredients": [["甘薯"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "甘薯", null], [null, null, null]],
+        ingredients: [["甘薯"]]
     },
     "煮熟的甘薯": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "甘薯", null], [null, null, null]],
-        "ingredients": [["甘薯"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "甘薯", null], [null, null, null]],
+        ingredients: [["甘薯"]]
     },
     "油炸的甘薯": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "甘薯", null], [null, null, null]],
-        "ingredients": [["甘薯"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "甘薯", null], [null, null, null]],
+        ingredients: [["甘薯"]]
     },
     "烤制的甘薯": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "甘薯", null], [null, null, null]],
-        "ingredients": [["甘薯"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "甘薯", null], [null, null, null]],
+        ingredients: [["甘薯"]]
     },
     "切碎的大头菜": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "大头菜", null], [null, null, null]],
-        "ingredients": [["大头菜"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "大头菜", null], [null, null, null]],
+        ingredients: [["大头菜"]]
     },
     "捣碎的大头菜": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "大头菜", null], [null, null, null]],
-        "ingredients": [["大头菜"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "大头菜", null], [null, null, null]],
+        ingredients: [["大头菜"]]
     },
     "切片的大头菜": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "大头菜", null], [null, null, null]],
-        "ingredients": [["大头菜"]]
+        type: "切片",
+        map: [[null, null, null], [null, "大头菜", null], [null, null, null]],
+        ingredients: [["大头菜"]]
     },
     "剁碎的大头菜": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "大头菜", null], [null, null, null]],
-        "ingredients": [["大头菜"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "大头菜", null], [null, null, null]],
+        ingredients: [["大头菜"]]
     },
     "搅拌的大头菜": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "大头菜", null], [null, null, null]],
-        "ingredients": [["大头菜"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "大头菜", null], [null, null, null]],
+        ingredients: [["大头菜"]]
     },
     "煮熟的大头菜": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "大头菜", null], [null, null, null]],
-        "ingredients": [["大头菜"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "大头菜", null], [null, null, null]],
+        ingredients: [["大头菜"]]
     },
     "油炸的大头菜": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "大头菜", null], [null, null, null]],
-        "ingredients": [["大头菜"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "大头菜", null], [null, null, null]],
+        ingredients: [["大头菜"]]
     },
     "烤制的大头菜": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "大头菜", null], [null, null, null]],
-        "ingredients": [["大头菜"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "大头菜", null], [null, null, null]],
+        ingredients: [["大头菜"]]
     },
     "切碎的甜玉米": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "甜玉米", null], [null, null, null]],
-        "ingredients": [["甜玉米"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "甜玉米", null], [null, null, null]],
+        ingredients: [["甜玉米"]]
     },
     "捣碎的甜玉米": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "甜玉米", null], [null, null, null]],
-        "ingredients": [["甜玉米"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "甜玉米", null], [null, null, null]],
+        ingredients: [["甜玉米"]]
     },
     "切片的甜玉米": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "甜玉米", null], [null, null, null]],
-        "ingredients": [["甜玉米"]]
+        type: "切片",
+        map: [[null, null, null], [null, "甜玉米", null], [null, null, null]],
+        ingredients: [["甜玉米"]]
     },
     "剁碎的甜玉米": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "甜玉米", null], [null, null, null]],
-        "ingredients": [["甜玉米"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "甜玉米", null], [null, null, null]],
+        ingredients: [["甜玉米"]]
     },
     "搅拌的甜玉米": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "甜玉米", null], [null, null, null]],
-        "ingredients": [["甜玉米"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "甜玉米", null], [null, null, null]],
+        ingredients: [["甜玉米"]]
     },
     "煮熟的甜玉米": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "甜玉米", null], [null, null, null]],
-        "ingredients": [["甜玉米"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "甜玉米", null], [null, null, null]],
+        ingredients: [["甜玉米"]]
     },
     "油炸的甜玉米": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "甜玉米", null], [null, null, null]],
-        "ingredients": [["甜玉米"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "甜玉米", null], [null, null, null]],
+        ingredients: [["甜玉米"]]
     },
     "烤制的甜玉米": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "甜玉米", null], [null, null, null]],
-        "ingredients": [["甜玉米"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "甜玉米", null], [null, null, null]],
+        ingredients: [["甜玉米"]]
     },
     "切碎的西葫芦": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "西葫芦", null], [null, null, null]],
-        "ingredients": [["西葫芦"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "西葫芦", null], [null, null, null]],
+        ingredients: [["西葫芦"]]
     },
     "捣碎的西葫芦": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "西葫芦", null], [null, null, null]],
-        "ingredients": [["西葫芦"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "西葫芦", null], [null, null, null]],
+        ingredients: [["西葫芦"]]
     },
     "切片的西葫芦": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "西葫芦", null], [null, null, null]],
-        "ingredients": [["西葫芦"]]
+        type: "切片",
+        map: [[null, null, null], [null, "西葫芦", null], [null, null, null]],
+        ingredients: [["西葫芦"]]
     },
     "剁碎的西葫芦": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "西葫芦", null], [null, null, null]],
-        "ingredients": [["西葫芦"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "西葫芦", null], [null, null, null]],
+        ingredients: [["西葫芦"]]
     },
     "搅拌的西葫芦": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "西葫芦", null], [null, null, null]],
-        "ingredients": [["西葫芦"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "西葫芦", null], [null, null, null]],
+        ingredients: [["西葫芦"]]
     },
     "煮熟的西葫芦": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "西葫芦", null], [null, null, null]],
-        "ingredients": [["西葫芦"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "西葫芦", null], [null, null, null]],
+        ingredients: [["西葫芦"]]
     },
     "油炸的西葫芦": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "西葫芦", null], [null, null, null]],
-        "ingredients": [["西葫芦"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "西葫芦", null], [null, null, null]],
+        ingredients: [["西葫芦"]]
     },
     "烤制的西葫芦": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "西葫芦", null], [null, null, null]],
-        "ingredients": [["西葫芦"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "西葫芦", null], [null, null, null]],
+        ingredients: [["西葫芦"]]
     },
     "切碎的黄瓜": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "黄瓜", null], [null, null, null]],
-        "ingredients": [["黄瓜"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "黄瓜", null], [null, null, null]],
+        ingredients: [["黄瓜"]]
     },
     "捣碎的黄瓜": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "黄瓜", null], [null, null, null]],
-        "ingredients": [["黄瓜"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "黄瓜", null], [null, null, null]],
+        ingredients: [["黄瓜"]]
     },
     "切片的黄瓜": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "黄瓜", null], [null, null, null]],
-        "ingredients": [["黄瓜"]]
+        type: "切片",
+        map: [[null, null, null], [null, "黄瓜", null], [null, null, null]],
+        ingredients: [["黄瓜"]]
     },
     "剁碎的黄瓜": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "黄瓜", null], [null, null, null]],
-        "ingredients": [["黄瓜"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "黄瓜", null], [null, null, null]],
+        ingredients: [["黄瓜"]]
     },
     "搅拌的黄瓜": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "黄瓜", null], [null, null, null]],
-        "ingredients": [["黄瓜"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "黄瓜", null], [null, null, null]],
+        ingredients: [["黄瓜"]]
     },
     "煮熟的黄瓜": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "黄瓜", null], [null, null, null]],
-        "ingredients": [["黄瓜"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "黄瓜", null], [null, null, null]],
+        ingredients: [["黄瓜"]]
     },
     "油炸的黄瓜": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "黄瓜", null], [null, null, null]],
-        "ingredients": [["黄瓜"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "黄瓜", null], [null, null, null]],
+        ingredients: [["黄瓜"]]
     },
     "烤制的黄瓜": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "黄瓜", null], [null, null, null]],
-        "ingredients": [["黄瓜"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "黄瓜", null], [null, null, null]],
+        ingredients: [["黄瓜"]]
     },
     "切碎的嫩葫芦": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "嫩葫芦", null], [null, null, null]],
-        "ingredients": [["嫩葫芦"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "嫩葫芦", null], [null, null, null]],
+        ingredients: [["嫩葫芦"]]
     },
     "捣碎的嫩葫芦": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "嫩葫芦", null], [null, null, null]],
-        "ingredients": [["嫩葫芦"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "嫩葫芦", null], [null, null, null]],
+        ingredients: [["嫩葫芦"]]
     },
     "切片的嫩葫芦": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "嫩葫芦", null], [null, null, null]],
-        "ingredients": [["嫩葫芦"]]
+        type: "切片",
+        map: [[null, null, null], [null, "嫩葫芦", null], [null, null, null]],
+        ingredients: [["嫩葫芦"]]
     },
     "剁碎的嫩葫芦": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "嫩葫芦", null], [null, null, null]],
-        "ingredients": [["嫩葫芦"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "嫩葫芦", null], [null, null, null]],
+        ingredients: [["嫩葫芦"]]
     },
     "搅拌的嫩葫芦": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "嫩葫芦", null], [null, null, null]],
-        "ingredients": [["嫩葫芦"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "嫩葫芦", null], [null, null, null]],
+        ingredients: [["嫩葫芦"]]
     },
     "煮熟的嫩葫芦": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "嫩葫芦", null], [null, null, null]],
-        "ingredients": [["嫩葫芦"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "嫩葫芦", null], [null, null, null]],
+        ingredients: [["嫩葫芦"]]
     },
     "油炸的嫩葫芦": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "嫩葫芦", null], [null, null, null]],
-        "ingredients": [["嫩葫芦"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "嫩葫芦", null], [null, null, null]],
+        ingredients: [["嫩葫芦"]]
     },
     "烤制的嫩葫芦": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "嫩葫芦", null], [null, null, null]],
-        "ingredients": [["嫩葫芦"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "嫩葫芦", null], [null, null, null]],
+        ingredients: [["嫩葫芦"]]
     },
     "切碎的鳄梨": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "鳄梨", null], [null, null, null]],
-        "ingredients": [["鳄梨"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "鳄梨", null], [null, null, null]],
+        ingredients: [["鳄梨"]]
     },
     "捣碎的鳄梨": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "鳄梨", null], [null, null, null]],
-        "ingredients": [["鳄梨"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "鳄梨", null], [null, null, null]],
+        ingredients: [["鳄梨"]]
     },
     "切片的鳄梨": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "鳄梨", null], [null, null, null]],
-        "ingredients": [["鳄梨"]]
+        type: "切片",
+        map: [[null, null, null], [null, "鳄梨", null], [null, null, null]],
+        ingredients: [["鳄梨"]]
     },
     "剁碎的鳄梨": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "鳄梨", null], [null, null, null]],
-        "ingredients": [["鳄梨"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "鳄梨", null], [null, null, null]],
+        ingredients: [["鳄梨"]]
     },
     "搅拌的鳄梨": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "鳄梨", null], [null, null, null]],
-        "ingredients": [["鳄梨"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "鳄梨", null], [null, null, null]],
+        ingredients: [["鳄梨"]]
     },
     "煮熟的鳄梨": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "鳄梨", null], [null, null, null]],
-        "ingredients": [["鳄梨"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "鳄梨", null], [null, null, null]],
+        ingredients: [["鳄梨"]]
     },
     "油炸的鳄梨": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "鳄梨", null], [null, null, null]],
-        "ingredients": [["鳄梨"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "鳄梨", null], [null, null, null]],
+        ingredients: [["鳄梨"]]
     },
     "烤制的鳄梨": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "鳄梨", null], [null, null, null]],
-        "ingredients": [["鳄梨"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "鳄梨", null], [null, null, null]],
+        ingredients: [["鳄梨"]]
     },
     "切碎的嫩葱": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "嫩葱", null], [null, null, null]],
-        "ingredients": [["嫩葱"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "嫩葱", null], [null, null, null]],
+        ingredients: [["嫩葱"]]
     },
     "捣碎的嫩葱": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "嫩葱", null], [null, null, null]],
-        "ingredients": [["嫩葱"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "嫩葱", null], [null, null, null]],
+        ingredients: [["嫩葱"]]
     },
     "切片的嫩葱": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "嫩葱", null], [null, null, null]],
-        "ingredients": [["嫩葱"]]
+        type: "切片",
+        map: [[null, null, null], [null, "嫩葱", null], [null, null, null]],
+        ingredients: [["嫩葱"]]
     },
     "剁碎的嫩葱": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "嫩葱", null], [null, null, null]],
-        "ingredients": [["嫩葱"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "嫩葱", null], [null, null, null]],
+        ingredients: [["嫩葱"]]
     },
     "搅拌的嫩葱": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "嫩葱", null], [null, null, null]],
-        "ingredients": [["嫩葱"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "嫩葱", null], [null, null, null]],
+        ingredients: [["嫩葱"]]
     },
     "煮熟的嫩葱": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "嫩葱", null], [null, null, null]],
-        "ingredients": [["嫩葱"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "嫩葱", null], [null, null, null]],
+        ingredients: [["嫩葱"]]
     },
     "油炸的嫩葱": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "嫩葱", null], [null, null, null]],
-        "ingredients": [["嫩葱"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "嫩葱", null], [null, null, null]],
+        ingredients: [["嫩葱"]]
     },
     "烤制的嫩葱": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "嫩葱", null], [null, null, null]],
-        "ingredients": [["嫩葱"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "嫩葱", null], [null, null, null]],
+        ingredients: [["嫩葱"]]
     },
     "切碎的黑胡椒": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "黑胡椒", null], [null, null, null]],
-        "ingredients": [["黑胡椒"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "黑胡椒", null], [null, null, null]],
+        ingredients: [["黑胡椒"]]
     },
     "捣碎的黑胡椒": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "黑胡椒", null], [null, null, null]],
-        "ingredients": [["黑胡椒"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "黑胡椒", null], [null, null, null]],
+        ingredients: [["黑胡椒"]]
     },
     "切片的黑胡椒": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "黑胡椒", null], [null, null, null]],
-        "ingredients": [["黑胡椒"]]
+        type: "切片",
+        map: [[null, null, null], [null, "黑胡椒", null], [null, null, null]],
+        ingredients: [["黑胡椒"]]
     },
     "剁碎的黑胡椒": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "黑胡椒", null], [null, null, null]],
-        "ingredients": [["黑胡椒"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "黑胡椒", null], [null, null, null]],
+        ingredients: [["黑胡椒"]]
     },
     "搅拌的黑胡椒": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "黑胡椒", null], [null, null, null]],
-        "ingredients": [["黑胡椒"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "黑胡椒", null], [null, null, null]],
+        ingredients: [["黑胡椒"]]
     },
     "煮熟的黑胡椒": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "黑胡椒", null], [null, null, null]],
-        "ingredients": [["黑胡椒"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "黑胡椒", null], [null, null, null]],
+        ingredients: [["黑胡椒"]]
     },
     "油炸的黑胡椒": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "黑胡椒", null], [null, null, null]],
-        "ingredients": [["黑胡椒"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "黑胡椒", null], [null, null, null]],
+        ingredients: [["黑胡椒"]]
     },
     "烤制的黑胡椒": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "黑胡椒", null], [null, null, null]],
-        "ingredients": [["黑胡椒"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "黑胡椒", null], [null, null, null]],
+        ingredients: [["黑胡椒"]]
     },
     "切碎的生牛肉": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "生牛肉", null], [null, null, null]],
-        "ingredients": [["生牛肉"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "生牛肉", null], [null, null, null]],
+        ingredients: [["生牛肉"]]
     },
     "捣碎的生牛肉": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "生牛肉", null], [null, null, null]],
-        "ingredients": [["生牛肉"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "生牛肉", null], [null, null, null]],
+        ingredients: [["生牛肉"]]
     },
     "切片的生牛肉": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "生牛肉", null], [null, null, null]],
-        "ingredients": [["生牛肉"]]
+        type: "切片",
+        map: [[null, null, null], [null, "生牛肉", null], [null, null, null]],
+        ingredients: [["生牛肉"]]
     },
     "剁碎的生牛肉": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "生牛肉", null], [null, null, null]],
-        "ingredients": [["生牛肉"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "生牛肉", null], [null, null, null]],
+        ingredients: [["生牛肉"]]
     },
     "搅拌的生牛肉": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "生牛肉", null], [null, null, null]],
-        "ingredients": [["生牛肉"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "生牛肉", null], [null, null, null]],
+        ingredients: [["生牛肉"]]
     },
     "煮熟的生牛肉": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "生牛肉", null], [null, null, null]],
-        "ingredients": [["生牛肉"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "生牛肉", null], [null, null, null]],
+        ingredients: [["生牛肉"]]
     },
     "油炸的生牛肉": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "生牛肉", null], [null, null, null]],
-        "ingredients": [["生牛肉"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "生牛肉", null], [null, null, null]],
+        ingredients: [["生牛肉"]]
     },
     "烤制的生牛肉": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "生牛肉", null], [null, null, null]],
-        "ingredients": [["生牛肉"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "生牛肉", null], [null, null, null]],
+        ingredients: [["生牛肉"]]
     },
     "切碎的生鸡肉": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "生鸡肉", null], [null, null, null]],
-        "ingredients": [["生鸡肉"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "生鸡肉", null], [null, null, null]],
+        ingredients: [["生鸡肉"]]
     },
     "捣碎的生鸡肉": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "生鸡肉", null], [null, null, null]],
-        "ingredients": [["生鸡肉"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "生鸡肉", null], [null, null, null]],
+        ingredients: [["生鸡肉"]]
     },
     "切片的生鸡肉": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "生鸡肉", null], [null, null, null]],
-        "ingredients": [["生鸡肉"]]
+        type: "切片",
+        map: [[null, null, null], [null, "生鸡肉", null], [null, null, null]],
+        ingredients: [["生鸡肉"]]
     },
     "剁碎的生鸡肉": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "生鸡肉", null], [null, null, null]],
-        "ingredients": [["生鸡肉"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "生鸡肉", null], [null, null, null]],
+        ingredients: [["生鸡肉"]]
     },
     "搅拌的生鸡肉": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "生鸡肉", null], [null, null, null]],
-        "ingredients": [["生鸡肉"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "生鸡肉", null], [null, null, null]],
+        ingredients: [["生鸡肉"]]
     },
     "煮熟的生鸡肉": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "生鸡肉", null], [null, null, null]],
-        "ingredients": [["生鸡肉"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "生鸡肉", null], [null, null, null]],
+        ingredients: [["生鸡肉"]]
     },
     "油炸的生鸡肉": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "生鸡肉", null], [null, null, null]],
-        "ingredients": [["生鸡肉"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "生鸡肉", null], [null, null, null]],
+        ingredients: [["生鸡肉"]]
     },
     "烤制的生鸡肉": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "生鸡肉", null], [null, null, null]],
-        "ingredients": [["生鸡肉"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "生鸡肉", null], [null, null, null]],
+        ingredients: [["生鸡肉"]]
     },
     "切碎的生猪排": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "生猪排", null], [null, null, null]],
-        "ingredients": [["生猪排"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "生猪排", null], [null, null, null]],
+        ingredients: [["生猪排"]]
     },
     "捣碎的生猪排": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "生猪排", null], [null, null, null]],
-        "ingredients": [["生猪排"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "生猪排", null], [null, null, null]],
+        ingredients: [["生猪排"]]
     },
     "切片的生猪排": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "生猪排", null], [null, null, null]],
-        "ingredients": [["生猪排"]]
+        type: "切片",
+        map: [[null, null, null], [null, "生猪排", null], [null, null, null]],
+        ingredients: [["生猪排"]]
     },
     "剁碎的生猪排": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "生猪排", null], [null, null, null]],
-        "ingredients": [["生猪排"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "生猪排", null], [null, null, null]],
+        ingredients: [["生猪排"]]
     },
     "搅拌的生猪排": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "生猪排", null], [null, null, null]],
-        "ingredients": [["生猪排"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "生猪排", null], [null, null, null]],
+        ingredients: [["生猪排"]]
     },
     "煮熟的生猪排": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "生猪排", null], [null, null, null]],
-        "ingredients": [["生猪排"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "生猪排", null], [null, null, null]],
+        ingredients: [["生猪排"]]
     },
     "油炸的生猪排": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "生猪排", null], [null, null, null]],
-        "ingredients": [["生猪排"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "生猪排", null], [null, null, null]],
+        ingredients: [["生猪排"]]
     },
     "烤制的生猪排": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "生猪排", null], [null, null, null]],
-        "ingredients": [["生猪排"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "生猪排", null], [null, null, null]],
+        ingredients: [["生猪排"]]
     },
     "切碎的生羊肉": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "生羊肉", null], [null, null, null]],
-        "ingredients": [["生羊肉"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "生羊肉", null], [null, null, null]],
+        ingredients: [["生羊肉"]]
     },
     "捣碎的生羊肉": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "生羊肉", null], [null, null, null]],
-        "ingredients": [["生羊肉"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "生羊肉", null], [null, null, null]],
+        ingredients: [["生羊肉"]]
     },
     "切片的生羊肉": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "生羊肉", null], [null, null, null]],
-        "ingredients": [["生羊肉"]]
+        type: "切片",
+        map: [[null, null, null], [null, "生羊肉", null], [null, null, null]],
+        ingredients: [["生羊肉"]]
     },
     "剁碎的生羊肉": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "生羊肉", null], [null, null, null]],
-        "ingredients": [["生羊肉"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "生羊肉", null], [null, null, null]],
+        ingredients: [["生羊肉"]]
     },
     "搅拌的生羊肉": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "生羊肉", null], [null, null, null]],
-        "ingredients": [["生羊肉"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "生羊肉", null], [null, null, null]],
+        ingredients: [["生羊肉"]]
     },
     "煮熟的生羊肉": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "生羊肉", null], [null, null, null]],
-        "ingredients": [["生羊肉"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "生羊肉", null], [null, null, null]],
+        ingredients: [["生羊肉"]]
     },
     "油炸的生羊肉": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "生羊肉", null], [null, null, null]],
-        "ingredients": [["生羊肉"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "生羊肉", null], [null, null, null]],
+        ingredients: [["生羊肉"]]
     },
     "烤制的生羊肉": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "生羊肉", null], [null, null, null]],
-        "ingredients": [["生羊肉"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "生羊肉", null], [null, null, null]],
+        ingredients: [["生羊肉"]]
     },
     "切碎的生兔肉": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "生兔肉", null], [null, null, null]],
-        "ingredients": [["生兔肉"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "生兔肉", null], [null, null, null]],
+        ingredients: [["生兔肉"]]
     },
     "捣碎的生兔肉": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "生兔肉", null], [null, null, null]],
-        "ingredients": [["生兔肉"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "生兔肉", null], [null, null, null]],
+        ingredients: [["生兔肉"]]
     },
     "切片的生兔肉": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "生兔肉", null], [null, null, null]],
-        "ingredients": [["生兔肉"]]
+        type: "切片",
+        map: [[null, null, null], [null, "生兔肉", null], [null, null, null]],
+        ingredients: [["生兔肉"]]
     },
     "剁碎的生兔肉": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "生兔肉", null], [null, null, null]],
-        "ingredients": [["生兔肉"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "生兔肉", null], [null, null, null]],
+        ingredients: [["生兔肉"]]
     },
     "搅拌的生兔肉": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "生兔肉", null], [null, null, null]],
-        "ingredients": [["生兔肉"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "生兔肉", null], [null, null, null]],
+        ingredients: [["生兔肉"]]
     },
     "煮熟的生兔肉": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "生兔肉", null], [null, null, null]],
-        "ingredients": [["生兔肉"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "生兔肉", null], [null, null, null]],
+        ingredients: [["生兔肉"]]
     },
     "油炸的生兔肉": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "生兔肉", null], [null, null, null]],
-        "ingredients": [["生兔肉"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "生兔肉", null], [null, null, null]],
+        ingredients: [["生兔肉"]]
     },
     "烤制的生兔肉": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "生兔肉", null], [null, null, null]],
-        "ingredients": [["生兔肉"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "生兔肉", null], [null, null, null]],
+        ingredients: [["生兔肉"]]
     },
     "切碎的生鳕鱼": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "生鳕鱼", null], [null, null, null]],
-        "ingredients": [["生鳕鱼"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "生鳕鱼", null], [null, null, null]],
+        ingredients: [["生鳕鱼"]]
     },
     "捣碎的生鳕鱼": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "生鳕鱼", null], [null, null, null]],
-        "ingredients": [["生鳕鱼"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "生鳕鱼", null], [null, null, null]],
+        ingredients: [["生鳕鱼"]]
     },
     "切片的生鳕鱼": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "生鳕鱼", null], [null, null, null]],
-        "ingredients": [["生鳕鱼"]]
+        type: "切片",
+        map: [[null, null, null], [null, "生鳕鱼", null], [null, null, null]],
+        ingredients: [["生鳕鱼"]]
     },
     "剁碎的生鳕鱼": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "生鳕鱼", null], [null, null, null]],
-        "ingredients": [["生鳕鱼"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "生鳕鱼", null], [null, null, null]],
+        ingredients: [["生鳕鱼"]]
     },
     "搅拌的生鳕鱼": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "生鳕鱼", null], [null, null, null]],
-        "ingredients": [["生鳕鱼"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "生鳕鱼", null], [null, null, null]],
+        ingredients: [["生鳕鱼"]]
     },
     "煮熟的生鳕鱼": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "生鳕鱼", null], [null, null, null]],
-        "ingredients": [["生鳕鱼"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "生鳕鱼", null], [null, null, null]],
+        ingredients: [["生鳕鱼"]]
     },
     "油炸的生鳕鱼": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "生鳕鱼", null], [null, null, null]],
-        "ingredients": [["生鳕鱼"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "生鳕鱼", null], [null, null, null]],
+        ingredients: [["生鳕鱼"]]
     },
     "烤制的生鳕鱼": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "生鳕鱼", null], [null, null, null]],
-        "ingredients": [["生鳕鱼"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "生鳕鱼", null], [null, null, null]],
+        ingredients: [["生鳕鱼"]]
     },
     "切碎的生鲑鱼": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "生鲑鱼", null], [null, null, null]],
-        "ingredients": [["生鲑鱼"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "生鲑鱼", null], [null, null, null]],
+        ingredients: [["生鲑鱼"]]
     },
     "捣碎的生鲑鱼": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "生鲑鱼", null], [null, null, null]],
-        "ingredients": [["生鲑鱼"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "生鲑鱼", null], [null, null, null]],
+        ingredients: [["生鲑鱼"]]
     },
     "切片的生鲑鱼": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "生鲑鱼", null], [null, null, null]],
-        "ingredients": [["生鲑鱼"]]
+        type: "切片",
+        map: [[null, null, null], [null, "生鲑鱼", null], [null, null, null]],
+        ingredients: [["生鲑鱼"]]
     },
     "剁碎的生鲑鱼": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "生鲑鱼", null], [null, null, null]],
-        "ingredients": [["生鲑鱼"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "生鲑鱼", null], [null, null, null]],
+        ingredients: [["生鲑鱼"]]
     },
     "搅拌的生鲑鱼": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "生鲑鱼", null], [null, null, null]],
-        "ingredients": [["生鲑鱼"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "生鲑鱼", null], [null, null, null]],
+        ingredients: [["生鲑鱼"]]
     },
     "煮熟的生鲑鱼": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "生鲑鱼", null], [null, null, null]],
-        "ingredients": [["生鲑鱼"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "生鲑鱼", null], [null, null, null]],
+        ingredients: [["生鲑鱼"]]
     },
     "油炸的生鲑鱼": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "生鲑鱼", null], [null, null, null]],
-        "ingredients": [["生鲑鱼"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "生鲑鱼", null], [null, null, null]],
+        ingredients: [["生鲑鱼"]]
     },
     "烤制的生鲑鱼": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "生鲑鱼", null], [null, null, null]],
-        "ingredients": [["生鲑鱼"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "生鲑鱼", null], [null, null, null]],
+        ingredients: [["生鲑鱼"]]
     },
     "切碎的苹果": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "苹果", null], [null, null, null]],
-        "ingredients": [["苹果"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "苹果", null], [null, null, null]],
+        ingredients: [["苹果"]]
     },
     "捣碎的苹果": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "苹果", null], [null, null, null]],
-        "ingredients": [["苹果"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "苹果", null], [null, null, null]],
+        ingredients: [["苹果"]]
     },
     "切片的苹果": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "苹果", null], [null, null, null]],
-        "ingredients": [["苹果"]]
+        type: "切片",
+        map: [[null, null, null], [null, "苹果", null], [null, null, null]],
+        ingredients: [["苹果"]]
     },
     "剁碎的苹果": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "苹果", null], [null, null, null]],
-        "ingredients": [["苹果"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "苹果", null], [null, null, null]],
+        ingredients: [["苹果"]]
     },
     "搅拌的苹果": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "苹果", null], [null, null, null]],
-        "ingredients": [["苹果"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "苹果", null], [null, null, null]],
+        ingredients: [["苹果"]]
     },
     "煮熟的苹果": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "苹果", null], [null, null, null]],
-        "ingredients": [["苹果"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "苹果", null], [null, null, null]],
+        ingredients: [["苹果"]]
     },
     "油炸的苹果": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "苹果", null], [null, null, null]],
-        "ingredients": [["苹果"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "苹果", null], [null, null, null]],
+        ingredients: [["苹果"]]
     },
     "烤制的苹果": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "苹果", null], [null, null, null]],
-        "ingredients": [["苹果"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "苹果", null], [null, null, null]],
+        ingredients: [["苹果"]]
     },
     "切碎的甜浆果": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "甜浆果", null], [null, null, null]],
-        "ingredients": [["甜浆果"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "甜浆果", null], [null, null, null]],
+        ingredients: [["甜浆果"]]
     },
     "捣碎的甜浆果": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "甜浆果", null], [null, null, null]],
-        "ingredients": [["甜浆果"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "甜浆果", null], [null, null, null]],
+        ingredients: [["甜浆果"]]
     },
     "切片的甜浆果": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "甜浆果", null], [null, null, null]],
-        "ingredients": [["甜浆果"]]
+        type: "切片",
+        map: [[null, null, null], [null, "甜浆果", null], [null, null, null]],
+        ingredients: [["甜浆果"]]
     },
     "剁碎的甜浆果": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "甜浆果", null], [null, null, null]],
-        "ingredients": [["甜浆果"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "甜浆果", null], [null, null, null]],
+        ingredients: [["甜浆果"]]
     },
     "搅拌的甜浆果": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "甜浆果", null], [null, null, null]],
-        "ingredients": [["甜浆果"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "甜浆果", null], [null, null, null]],
+        ingredients: [["甜浆果"]]
     },
     "煮熟的甜浆果": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "甜浆果", null], [null, null, null]],
-        "ingredients": [["甜浆果"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "甜浆果", null], [null, null, null]],
+        ingredients: [["甜浆果"]]
     },
     "油炸的甜浆果": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "甜浆果", null], [null, null, null]],
-        "ingredients": [["甜浆果"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "甜浆果", null], [null, null, null]],
+        ingredients: [["甜浆果"]]
     },
     "烤制的甜浆果": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "甜浆果", null], [null, null, null]],
-        "ingredients": [["甜浆果"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "甜浆果", null], [null, null, null]],
+        ingredients: [["甜浆果"]]
     },
     "切碎的发光浆果": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "发光浆果", null], [null, null, null]],
-        "ingredients": [["发光浆果"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "发光浆果", null], [null, null, null]],
+        ingredients: [["发光浆果"]]
     },
     "捣碎的发光浆果": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "发光浆果", null], [null, null, null]],
-        "ingredients": [["发光浆果"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "发光浆果", null], [null, null, null]],
+        ingredients: [["发光浆果"]]
     },
     "切片的发光浆果": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "发光浆果", null], [null, null, null]],
-        "ingredients": [["发光浆果"]]
+        type: "切片",
+        map: [[null, null, null], [null, "发光浆果", null], [null, null, null]],
+        ingredients: [["发光浆果"]]
     },
     "剁碎的发光浆果": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "发光浆果", null], [null, null, null]],
-        "ingredients": [["发光浆果"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "发光浆果", null], [null, null, null]],
+        ingredients: [["发光浆果"]]
     },
     "搅拌的发光浆果": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "发光浆果", null], [null, null, null]],
-        "ingredients": [["发光浆果"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "发光浆果", null], [null, null, null]],
+        ingredients: [["发光浆果"]]
     },
     "煮熟的发光浆果": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "发光浆果", null], [null, null, null]],
-        "ingredients": [["发光浆果"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "发光浆果", null], [null, null, null]],
+        ingredients: [["发光浆果"]]
     },
     "油炸的发光浆果": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "发光浆果", null], [null, null, null]],
-        "ingredients": [["发光浆果"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "发光浆果", null], [null, null, null]],
+        ingredients: [["发光浆果"]]
     },
     "烤制的发光浆果": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "发光浆果", null], [null, null, null]],
-        "ingredients": [["发光浆果"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "发光浆果", null], [null, null, null]],
+        ingredients: [["发光浆果"]]
     },
     "切碎的甜菜根": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "甜菜根", null], [null, null, null]],
-        "ingredients": [["甜菜根"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "甜菜根", null], [null, null, null]],
+        ingredients: [["甜菜根"]]
     },
     "捣碎的甜菜根": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "甜菜根", null], [null, null, null]],
-        "ingredients": [["甜菜根"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "甜菜根", null], [null, null, null]],
+        ingredients: [["甜菜根"]]
     },
     "切片的甜菜根": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "甜菜根", null], [null, null, null]],
-        "ingredients": [["甜菜根"]]
+        type: "切片",
+        map: [[null, null, null], [null, "甜菜根", null], [null, null, null]],
+        ingredients: [["甜菜根"]]
     },
     "剁碎的甜菜根": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "甜菜根", null], [null, null, null]],
-        "ingredients": [["甜菜根"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "甜菜根", null], [null, null, null]],
+        ingredients: [["甜菜根"]]
     },
     "搅拌的甜菜根": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "甜菜根", null], [null, null, null]],
-        "ingredients": [["甜菜根"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "甜菜根", null], [null, null, null]],
+        ingredients: [["甜菜根"]]
     },
     "煮熟的甜菜根": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "甜菜根", null], [null, null, null]],
-        "ingredients": [["甜菜根"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "甜菜根", null], [null, null, null]],
+        ingredients: [["甜菜根"]]
     },
     "油炸的甜菜根": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "甜菜根", null], [null, null, null]],
-        "ingredients": [["甜菜根"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "甜菜根", null], [null, null, null]],
+        ingredients: [["甜菜根"]]
     },
     "烤制的甜菜根": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "甜菜根", null], [null, null, null]],
-        "ingredients": [["甜菜根"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "甜菜根", null], [null, null, null]],
+        ingredients: [["甜菜根"]]
     },
     "切碎的金苹果": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "金苹果", null], [null, null, null]],
-        "ingredients": [["金苹果"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "金苹果", null], [null, null, null]],
+        ingredients: [["金苹果"]]
     },
     "捣碎的金苹果": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "金苹果", null], [null, null, null]],
-        "ingredients": [["金苹果"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "金苹果", null], [null, null, null]],
+        ingredients: [["金苹果"]]
     },
     "切片的金苹果": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "金苹果", null], [null, null, null]],
-        "ingredients": [["金苹果"]]
+        type: "切片",
+        map: [[null, null, null], [null, "金苹果", null], [null, null, null]],
+        ingredients: [["金苹果"]]
     },
     "剁碎的金苹果": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "金苹果", null], [null, null, null]],
-        "ingredients": [["金苹果"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "金苹果", null], [null, null, null]],
+        ingredients: [["金苹果"]]
     },
     "搅拌的金苹果": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "金苹果", null], [null, null, null]],
-        "ingredients": [["金苹果"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "金苹果", null], [null, null, null]],
+        ingredients: [["金苹果"]]
     },
     "煮熟的金苹果": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "金苹果", null], [null, null, null]],
-        "ingredients": [["金苹果"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "金苹果", null], [null, null, null]],
+        ingredients: [["金苹果"]]
     },
     "油炸的金苹果": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "金苹果", null], [null, null, null]],
-        "ingredients": [["金苹果"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "金苹果", null], [null, null, null]],
+        ingredients: [["金苹果"]]
     },
     "烤制的金苹果": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "金苹果", null], [null, null, null]],
-        "ingredients": [["金苹果"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "金苹果", null], [null, null, null]],
+        ingredients: [["金苹果"]]
     },
     "切碎的附魔金苹果": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "附魔金苹果", null], [null, null, null]],
-        "ingredients": [["附魔金苹果"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "附魔金苹果", null], [null, null, null]],
+        ingredients: [["附魔金苹果"]]
     },
     "捣碎的附魔金苹果": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "附魔金苹果", null], [null, null, null]],
-        "ingredients": [["附魔金苹果"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "附魔金苹果", null], [null, null, null]],
+        ingredients: [["附魔金苹果"]]
     },
     "切片的附魔金苹果": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "附魔金苹果", null], [null, null, null]],
-        "ingredients": [["附魔金苹果"]]
+        type: "切片",
+        map: [[null, null, null], [null, "附魔金苹果", null], [null, null, null]],
+        ingredients: [["附魔金苹果"]]
     },
     "剁碎的附魔金苹果": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "附魔金苹果", null], [null, null, null]],
-        "ingredients": [["附魔金苹果"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "附魔金苹果", null], [null, null, null]],
+        ingredients: [["附魔金苹果"]]
     },
     "搅拌的附魔金苹果": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "附魔金苹果", null], [null, null, null]],
-        "ingredients": [["附魔金苹果"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "附魔金苹果", null], [null, null, null]],
+        ingredients: [["附魔金苹果"]]
     },
     "煮熟的附魔金苹果": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "附魔金苹果", null], [null, null, null]],
-        "ingredients": [["附魔金苹果"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "附魔金苹果", null], [null, null, null]],
+        ingredients: [["附魔金苹果"]]
     },
     "油炸的附魔金苹果": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "附魔金苹果", null], [null, null, null]],
-        "ingredients": [["附魔金苹果"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "附魔金苹果", null], [null, null, null]],
+        ingredients: [["附魔金苹果"]]
     },
     "烤制的附魔金苹果": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "附魔金苹果", null], [null, null, null]],
-        "ingredients": [["附魔金苹果"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "附魔金苹果", null], [null, null, null]],
+        ingredients: [["附魔金苹果"]]
     },
     "切碎的胡萝卜": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "胡萝卜", null], [null, null, null]],
-        "ingredients": [["胡萝卜"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "胡萝卜", null], [null, null, null]],
+        ingredients: [["胡萝卜"]]
     },
     "捣碎的胡萝卜": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "胡萝卜", null], [null, null, null]],
-        "ingredients": [["胡萝卜"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "胡萝卜", null], [null, null, null]],
+        ingredients: [["胡萝卜"]]
     },
     "切片的胡萝卜": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "胡萝卜", null], [null, null, null]],
-        "ingredients": [["胡萝卜"]]
+        type: "切片",
+        map: [[null, null, null], [null, "胡萝卜", null], [null, null, null]],
+        ingredients: [["胡萝卜"]]
     },
     "剁碎的胡萝卜": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "胡萝卜", null], [null, null, null]],
-        "ingredients": [["胡萝卜"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "胡萝卜", null], [null, null, null]],
+        ingredients: [["胡萝卜"]]
     },
     "搅拌的胡萝卜": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "胡萝卜", null], [null, null, null]],
-        "ingredients": [["胡萝卜"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "胡萝卜", null], [null, null, null]],
+        ingredients: [["胡萝卜"]]
     },
     "煮熟的胡萝卜": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "胡萝卜", null], [null, null, null]],
-        "ingredients": [["胡萝卜"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "胡萝卜", null], [null, null, null]],
+        ingredients: [["胡萝卜"]]
     },
     "油炸的胡萝卜": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "胡萝卜", null], [null, null, null]],
-        "ingredients": [["胡萝卜"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "胡萝卜", null], [null, null, null]],
+        ingredients: [["胡萝卜"]]
     },
     "烤制的胡萝卜": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "胡萝卜", null], [null, null, null]],
-        "ingredients": [["胡萝卜"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "胡萝卜", null], [null, null, null]],
+        ingredients: [["胡萝卜"]]
     },
     "切碎的金胡萝卜": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "金胡萝卜", null], [null, null, null]],
-        "ingredients": [["金胡萝卜"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "金胡萝卜", null], [null, null, null]],
+        ingredients: [["金胡萝卜"]]
     },
     "捣碎的金胡萝卜": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "金胡萝卜", null], [null, null, null]],
-        "ingredients": [["金胡萝卜"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "金胡萝卜", null], [null, null, null]],
+        ingredients: [["金胡萝卜"]]
     },
     "切片的金胡萝卜": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "金胡萝卜", null], [null, null, null]],
-        "ingredients": [["金胡萝卜"]]
+        type: "切片",
+        map: [[null, null, null], [null, "金胡萝卜", null], [null, null, null]],
+        ingredients: [["金胡萝卜"]]
     },
     "剁碎的金胡萝卜": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "金胡萝卜", null], [null, null, null]],
-        "ingredients": [["金胡萝卜"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "金胡萝卜", null], [null, null, null]],
+        ingredients: [["金胡萝卜"]]
     },
     "搅拌的金胡萝卜": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "金胡萝卜", null], [null, null, null]],
-        "ingredients": [["金胡萝卜"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "金胡萝卜", null], [null, null, null]],
+        ingredients: [["金胡萝卜"]]
     },
     "煮熟的金胡萝卜": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "金胡萝卜", null], [null, null, null]],
-        "ingredients": [["金胡萝卜"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "金胡萝卜", null], [null, null, null]],
+        ingredients: [["金胡萝卜"]]
     },
     "油炸的金胡萝卜": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "金胡萝卜", null], [null, null, null]],
-        "ingredients": [["金胡萝卜"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "金胡萝卜", null], [null, null, null]],
+        ingredients: [["金胡萝卜"]]
     },
     "烤制的金胡萝卜": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "金胡萝卜", null], [null, null, null]],
-        "ingredients": [["金胡萝卜"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "金胡萝卜", null], [null, null, null]],
+        ingredients: [["金胡萝卜"]]
     },
     "切碎的鸡蛋": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "鸡蛋", null], [null, null, null]],
-        "ingredients": [["鸡蛋"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "鸡蛋", null], [null, null, null]],
+        ingredients: [["鸡蛋"]]
     },
     "捣碎的鸡蛋": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "鸡蛋", null], [null, null, null]],
-        "ingredients": [["鸡蛋"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "鸡蛋", null], [null, null, null]],
+        ingredients: [["鸡蛋"]]
     },
     "切片的鸡蛋": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "鸡蛋", null], [null, null, null]],
-        "ingredients": [["鸡蛋"]]
+        type: "切片",
+        map: [[null, null, null], [null, "鸡蛋", null], [null, null, null]],
+        ingredients: [["鸡蛋"]]
     },
     "剁碎的鸡蛋": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "鸡蛋", null], [null, null, null]],
-        "ingredients": [["鸡蛋"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "鸡蛋", null], [null, null, null]],
+        ingredients: [["鸡蛋"]]
     },
     "搅拌的鸡蛋": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "鸡蛋", null], [null, null, null]],
-        "ingredients": [["鸡蛋"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "鸡蛋", null], [null, null, null]],
+        ingredients: [["鸡蛋"]]
     },
     "煮熟的鸡蛋": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "鸡蛋", null], [null, null, null]],
-        "ingredients": [["鸡蛋"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "鸡蛋", null], [null, null, null]],
+        ingredients: [["鸡蛋"]]
     },
     "油炸的鸡蛋": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "鸡蛋", null], [null, null, null]],
-        "ingredients": [["鸡蛋"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "鸡蛋", null], [null, null, null]],
+        ingredients: [["鸡蛋"]]
     },
     "烤制的鸡蛋": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "鸡蛋", null], [null, null, null]],
-        "ingredients": [["鸡蛋"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "鸡蛋", null], [null, null, null]],
+        ingredients: [["鸡蛋"]]
     },
     "切碎的马铃薯": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "马铃薯", null], [null, null, null]],
-        "ingredients": [["马铃薯"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "马铃薯", null], [null, null, null]],
+        ingredients: [["马铃薯"]]
     },
     "捣碎的马铃薯": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "马铃薯", null], [null, null, null]],
-        "ingredients": [["马铃薯"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "马铃薯", null], [null, null, null]],
+        ingredients: [["马铃薯"]]
     },
     "切片的马铃薯": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "马铃薯", null], [null, null, null]],
-        "ingredients": [["马铃薯"]]
+        type: "切片",
+        map: [[null, null, null], [null, "马铃薯", null], [null, null, null]],
+        ingredients: [["马铃薯"]]
     },
     "剁碎的马铃薯": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "马铃薯", null], [null, null, null]],
-        "ingredients": [["马铃薯"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "马铃薯", null], [null, null, null]],
+        ingredients: [["马铃薯"]]
     },
     "搅拌的马铃薯": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "马铃薯", null], [null, null, null]],
-        "ingredients": [["马铃薯"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "马铃薯", null], [null, null, null]],
+        ingredients: [["马铃薯"]]
     },
     "煮熟的马铃薯": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "马铃薯", null], [null, null, null]],
-        "ingredients": [["马铃薯"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "马铃薯", null], [null, null, null]],
+        ingredients: [["马铃薯"]]
     },
     "油炸的马铃薯": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "马铃薯", null], [null, null, null]],
-        "ingredients": [["马铃薯"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "马铃薯", null], [null, null, null]],
+        ingredients: [["马铃薯"]]
     },
     "烤制的马铃薯": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "马铃薯", null], [null, null, null]],
-        "ingredients": [["马铃薯"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "马铃薯", null], [null, null, null]],
+        ingredients: [["马铃薯"]]
     },
     "切碎的紫颂果": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "紫颂果", null], [null, null, null]],
-        "ingredients": [["紫颂果"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "紫颂果", null], [null, null, null]],
+        ingredients: [["紫颂果"]]
     },
     "捣碎的紫颂果": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "紫颂果", null], [null, null, null]],
-        "ingredients": [["紫颂果"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "紫颂果", null], [null, null, null]],
+        ingredients: [["紫颂果"]]
     },
     "切片的紫颂果": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "紫颂果", null], [null, null, null]],
-        "ingredients": [["紫颂果"]]
+        type: "切片",
+        map: [[null, null, null], [null, "紫颂果", null], [null, null, null]],
+        ingredients: [["紫颂果"]]
     },
     "剁碎的紫颂果": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "紫颂果", null], [null, null, null]],
-        "ingredients": [["紫颂果"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "紫颂果", null], [null, null, null]],
+        ingredients: [["紫颂果"]]
     },
     "搅拌的紫颂果": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "紫颂果", null], [null, null, null]],
-        "ingredients": [["紫颂果"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "紫颂果", null], [null, null, null]],
+        ingredients: [["紫颂果"]]
     },
     "煮熟的紫颂果": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "紫颂果", null], [null, null, null]],
-        "ingredients": [["紫颂果"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "紫颂果", null], [null, null, null]],
+        ingredients: [["紫颂果"]]
     },
     "油炸的紫颂果": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "紫颂果", null], [null, null, null]],
-        "ingredients": [["紫颂果"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "紫颂果", null], [null, null, null]],
+        ingredients: [["紫颂果"]]
     },
     "烤制的紫颂果": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "紫颂果", null], [null, null, null]],
-        "ingredients": [["紫颂果"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "紫颂果", null], [null, null, null]],
+        ingredients: [["紫颂果"]]
     },
     "切碎的西瓜": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "西瓜", null], [null, null, null]],
-        "ingredients": [["西瓜"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "西瓜", null], [null, null, null]],
+        ingredients: [["西瓜"]]
     },
     "捣碎的西瓜": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "西瓜", null], [null, null, null]],
-        "ingredients": [["西瓜"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "西瓜", null], [null, null, null]],
+        ingredients: [["西瓜"]]
     },
     "切片的西瓜": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "西瓜", null], [null, null, null]],
-        "ingredients": [["西瓜"]]
+        type: "切片",
+        map: [[null, null, null], [null, "西瓜", null], [null, null, null]],
+        ingredients: [["西瓜"]]
     },
     "剁碎的西瓜": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "西瓜", null], [null, null, null]],
-        "ingredients": [["西瓜"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "西瓜", null], [null, null, null]],
+        ingredients: [["西瓜"]]
     },
     "搅拌的西瓜": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "西瓜", null], [null, null, null]],
-        "ingredients": [["西瓜"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "西瓜", null], [null, null, null]],
+        ingredients: [["西瓜"]]
     },
     "煮熟的西瓜": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "西瓜", null], [null, null, null]],
-        "ingredients": [["西瓜"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "西瓜", null], [null, null, null]],
+        ingredients: [["西瓜"]]
     },
     "油炸的西瓜": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "西瓜", null], [null, null, null]],
-        "ingredients": [["西瓜"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "西瓜", null], [null, null, null]],
+        ingredients: [["西瓜"]]
     },
     "烤制的西瓜": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "西瓜", null], [null, null, null]],
-        "ingredients": [["西瓜"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "西瓜", null], [null, null, null]],
+        ingredients: [["西瓜"]]
     },
     "切碎的南瓜": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "南瓜", null], [null, null, null]],
-        "ingredients": [["南瓜"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "南瓜", null], [null, null, null]],
+        ingredients: [["南瓜"]]
     },
     "捣碎的南瓜": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "南瓜", null], [null, null, null]],
-        "ingredients": [["南瓜"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "南瓜", null], [null, null, null]],
+        ingredients: [["南瓜"]]
     },
     "切片的南瓜": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "南瓜", null], [null, null, null]],
-        "ingredients": [["南瓜"]]
+        type: "切片",
+        map: [[null, null, null], [null, "南瓜", null], [null, null, null]],
+        ingredients: [["南瓜"]]
     },
     "剁碎的南瓜": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "南瓜", null], [null, null, null]],
-        "ingredients": [["南瓜"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "南瓜", null], [null, null, null]],
+        ingredients: [["南瓜"]]
     },
     "搅拌的南瓜": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "南瓜", null], [null, null, null]],
-        "ingredients": [["南瓜"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "南瓜", null], [null, null, null]],
+        ingredients: [["南瓜"]]
     },
     "煮熟的南瓜": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "南瓜", null], [null, null, null]],
-        "ingredients": [["南瓜"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "南瓜", null], [null, null, null]],
+        ingredients: [["南瓜"]]
     },
     "油炸的南瓜": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "南瓜", null], [null, null, null]],
-        "ingredients": [["南瓜"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "南瓜", null], [null, null, null]],
+        ingredients: [["南瓜"]]
     },
     "烤制的南瓜": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "南瓜", null], [null, null, null]],
-        "ingredients": [["南瓜"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "南瓜", null], [null, null, null]],
+        ingredients: [["南瓜"]]
     },
     "切碎的腐肉": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "腐肉", null], [null, null, null]],
-        "ingredients": [["腐肉"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "腐肉", null], [null, null, null]],
+        ingredients: [["腐肉"]]
     },
     "捣碎的腐肉": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "腐肉", null], [null, null, null]],
-        "ingredients": [["腐肉"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "腐肉", null], [null, null, null]],
+        ingredients: [["腐肉"]]
     },
     "切片的腐肉": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "腐肉", null], [null, null, null]],
-        "ingredients": [["腐肉"]]
+        type: "切片",
+        map: [[null, null, null], [null, "腐肉", null], [null, null, null]],
+        ingredients: [["腐肉"]]
     },
     "剁碎的腐肉": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "腐肉", null], [null, null, null]],
-        "ingredients": [["腐肉"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "腐肉", null], [null, null, null]],
+        ingredients: [["腐肉"]]
     },
     "搅拌的腐肉": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "腐肉", null], [null, null, null]],
-        "ingredients": [["腐肉"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "腐肉", null], [null, null, null]],
+        ingredients: [["腐肉"]]
     },
     "煮熟的腐肉": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "腐肉", null], [null, null, null]],
-        "ingredients": [["腐肉"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "腐肉", null], [null, null, null]],
+        ingredients: [["腐肉"]]
     },
     "油炸的腐肉": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "腐肉", null], [null, null, null]],
-        "ingredients": [["腐肉"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "腐肉", null], [null, null, null]],
+        ingredients: [["腐肉"]]
     },
     "烤制的腐肉": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "腐肉", null], [null, null, null]],
-        "ingredients": [["腐肉"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "腐肉", null], [null, null, null]],
+        ingredients: [["腐肉"]]
     },
     "切碎的可可豆": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "可可豆", null], [null, null, null]],
-        "ingredients": [["可可豆"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "可可豆", null], [null, null, null]],
+        ingredients: [["可可豆"]]
     },
     "捣碎的可可豆": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "可可豆", null], [null, null, null]],
-        "ingredients": [["可可豆"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "可可豆", null], [null, null, null]],
+        ingredients: [["可可豆"]]
     },
     "切片的可可豆": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "可可豆", null], [null, null, null]],
-        "ingredients": [["可可豆"]]
+        type: "切片",
+        map: [[null, null, null], [null, "可可豆", null], [null, null, null]],
+        ingredients: [["可可豆"]]
     },
     "剁碎的可可豆": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "可可豆", null], [null, null, null]],
-        "ingredients": [["可可豆"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "可可豆", null], [null, null, null]],
+        ingredients: [["可可豆"]]
     },
     "搅拌的可可豆": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "可可豆", null], [null, null, null]],
-        "ingredients": [["可可豆"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "可可豆", null], [null, null, null]],
+        ingredients: [["可可豆"]]
     },
     "煮熟的可可豆": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "可可豆", null], [null, null, null]],
-        "ingredients": [["可可豆"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "可可豆", null], [null, null, null]],
+        ingredients: [["可可豆"]]
     },
     "油炸的可可豆": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "可可豆", null], [null, null, null]],
-        "ingredients": [["可可豆"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "可可豆", null], [null, null, null]],
+        ingredients: [["可可豆"]]
     },
     "烤制的可可豆": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "可可豆", null], [null, null, null]],
-        "ingredients": [["可可豆"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "可可豆", null], [null, null, null]],
+        ingredients: [["可可豆"]]
     },
     "切碎的棕色蘑菇": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "棕色蘑菇", null], [null, null, null]],
-        "ingredients": [["棕色蘑菇"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "棕色蘑菇", null], [null, null, null]],
+        ingredients: [["棕色蘑菇"]]
     },
     "捣碎的棕色蘑菇": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "棕色蘑菇", null], [null, null, null]],
-        "ingredients": [["棕色蘑菇"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "棕色蘑菇", null], [null, null, null]],
+        ingredients: [["棕色蘑菇"]]
     },
     "切片的棕色蘑菇": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "棕色蘑菇", null], [null, null, null]],
-        "ingredients": [["棕色蘑菇"]]
+        type: "切片",
+        map: [[null, null, null], [null, "棕色蘑菇", null], [null, null, null]],
+        ingredients: [["棕色蘑菇"]]
     },
     "剁碎的棕色蘑菇": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "棕色蘑菇", null], [null, null, null]],
-        "ingredients": [["棕色蘑菇"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "棕色蘑菇", null], [null, null, null]],
+        ingredients: [["棕色蘑菇"]]
     },
     "搅拌的棕色蘑菇": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "棕色蘑菇", null], [null, null, null]],
-        "ingredients": [["棕色蘑菇"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "棕色蘑菇", null], [null, null, null]],
+        ingredients: [["棕色蘑菇"]]
     },
     "煮熟的棕色蘑菇": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "棕色蘑菇", null], [null, null, null]],
-        "ingredients": [["棕色蘑菇"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "棕色蘑菇", null], [null, null, null]],
+        ingredients: [["棕色蘑菇"]]
     },
     "油炸的棕色蘑菇": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "棕色蘑菇", null], [null, null, null]],
-        "ingredients": [["棕色蘑菇"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "棕色蘑菇", null], [null, null, null]],
+        ingredients: [["棕色蘑菇"]]
     },
     "烤制的棕色蘑菇": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "棕色蘑菇", null], [null, null, null]],
-        "ingredients": [["棕色蘑菇"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "棕色蘑菇", null], [null, null, null]],
+        ingredients: [["棕色蘑菇"]]
     },
     "切碎的红色蘑菇": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "红色蘑菇", null], [null, null, null]],
-        "ingredients": [["红色蘑菇"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "红色蘑菇", null], [null, null, null]],
+        ingredients: [["红色蘑菇"]]
     },
     "捣碎的红色蘑菇": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "红色蘑菇", null], [null, null, null]],
-        "ingredients": [["红色蘑菇"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "红色蘑菇", null], [null, null, null]],
+        ingredients: [["红色蘑菇"]]
     },
     "切片的红色蘑菇": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "红色蘑菇", null], [null, null, null]],
-        "ingredients": [["红色蘑菇"]]
+        type: "切片",
+        map: [[null, null, null], [null, "红色蘑菇", null], [null, null, null]],
+        ingredients: [["红色蘑菇"]]
     },
     "剁碎的红色蘑菇": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "红色蘑菇", null], [null, null, null]],
-        "ingredients": [["红色蘑菇"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "红色蘑菇", null], [null, null, null]],
+        ingredients: [["红色蘑菇"]]
     },
     "搅拌的红色蘑菇": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "红色蘑菇", null], [null, null, null]],
-        "ingredients": [["红色蘑菇"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "红色蘑菇", null], [null, null, null]],
+        ingredients: [["红色蘑菇"]]
     },
     "煮熟的红色蘑菇": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "红色蘑菇", null], [null, null, null]],
-        "ingredients": [["红色蘑菇"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "红色蘑菇", null], [null, null, null]],
+        ingredients: [["红色蘑菇"]]
     },
     "油炸的红色蘑菇": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "红色蘑菇", null], [null, null, null]],
-        "ingredients": [["红色蘑菇"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "红色蘑菇", null], [null, null, null]],
+        ingredients: [["红色蘑菇"]]
     },
     "烤制的红色蘑菇": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "红色蘑菇", null], [null, null, null]],
-        "ingredients": [["红色蘑菇"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "红色蘑菇", null], [null, null, null]],
+        ingredients: [["红色蘑菇"]]
     },
     "切碎的小麦": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "小麦", null], [null, null, null]],
-        "ingredients": [["小麦"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "小麦", null], [null, null, null]],
+        ingredients: [["小麦"]]
     },
     "捣碎的小麦": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "小麦", null], [null, null, null]],
-        "ingredients": [["小麦"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "小麦", null], [null, null, null]],
+        ingredients: [["小麦"]]
     },
     "切片的小麦": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "小麦", null], [null, null, null]],
-        "ingredients": [["小麦"]]
+        type: "切片",
+        map: [[null, null, null], [null, "小麦", null], [null, null, null]],
+        ingredients: [["小麦"]]
     },
     "剁碎的小麦": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "小麦", null], [null, null, null]],
-        "ingredients": [["小麦"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "小麦", null], [null, null, null]],
+        ingredients: [["小麦"]]
     },
     "搅拌的小麦": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "小麦", null], [null, null, null]],
-        "ingredients": [["小麦"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "小麦", null], [null, null, null]],
+        ingredients: [["小麦"]]
     },
     "煮熟的小麦": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "小麦", null], [null, null, null]],
-        "ingredients": [["小麦"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "小麦", null], [null, null, null]],
+        ingredients: [["小麦"]]
     },
     "油炸的小麦": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "小麦", null], [null, null, null]],
-        "ingredients": [["小麦"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "小麦", null], [null, null, null]],
+        ingredients: [["小麦"]]
     },
     "烤制的小麦": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "小麦", null], [null, null, null]],
-        "ingredients": [["小麦"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "小麦", null], [null, null, null]],
+        ingredients: [["小麦"]]
     },
     "切碎的河豚": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "河豚", null], [null, null, null]],
-        "ingredients": [["河豚"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "河豚", null], [null, null, null]],
+        ingredients: [["河豚"]]
     },
     "捣碎的河豚": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "河豚", null], [null, null, null]],
-        "ingredients": [["河豚"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "河豚", null], [null, null, null]],
+        ingredients: [["河豚"]]
     },
     "切片的河豚": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "河豚", null], [null, null, null]],
-        "ingredients": [["河豚"]]
+        type: "切片",
+        map: [[null, null, null], [null, "河豚", null], [null, null, null]],
+        ingredients: [["河豚"]]
     },
     "剁碎的河豚": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "河豚", null], [null, null, null]],
-        "ingredients": [["河豚"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "河豚", null], [null, null, null]],
+        ingredients: [["河豚"]]
     },
     "搅拌的河豚": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "河豚", null], [null, null, null]],
-        "ingredients": [["河豚"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "河豚", null], [null, null, null]],
+        ingredients: [["河豚"]]
     },
     "煮熟的河豚": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "河豚", null], [null, null, null]],
-        "ingredients": [["河豚"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "河豚", null], [null, null, null]],
+        ingredients: [["河豚"]]
     },
     "油炸的河豚": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "河豚", null], [null, null, null]],
-        "ingredients": [["河豚"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "河豚", null], [null, null, null]],
+        ingredients: [["河豚"]]
     },
     "烤制的河豚": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "河豚", null], [null, null, null]],
-        "ingredients": [["河豚"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "河豚", null], [null, null, null]],
+        ingredients: [["河豚"]]
     },
     "切碎的面包": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "面包", null], [null, null, null]],
-        "ingredients": [["面包"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "面包", null], [null, null, null]],
+        ingredients: [["面包"]]
     },
     "捣碎的面包": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "面包", null], [null, null, null]],
-        "ingredients": [["面包"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "面包", null], [null, null, null]],
+        ingredients: [["面包"]]
     },
     "切片的面包": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "面包", null], [null, null, null]],
-        "ingredients": [["面包"]]
+        type: "切片",
+        map: [[null, null, null], [null, "面包", null], [null, null, null]],
+        ingredients: [["面包"]]
     },
     "剁碎的面包": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "面包", null], [null, null, null]],
-        "ingredients": [["面包"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "面包", null], [null, null, null]],
+        ingredients: [["面包"]]
     },
     "搅拌的面包": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "面包", null], [null, null, null]],
-        "ingredients": [["面包"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "面包", null], [null, null, null]],
+        ingredients: [["面包"]]
     },
     "煮熟的面包": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "面包", null], [null, null, null]],
-        "ingredients": [["面包"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "面包", null], [null, null, null]],
+        ingredients: [["面包"]]
     },
     "油炸的面包": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "面包", null], [null, null, null]],
-        "ingredients": [["面包"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "面包", null], [null, null, null]],
+        ingredients: [["面包"]]
     },
     "烤制的面包": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "面包", null], [null, null, null]],
-        "ingredients": [["面包"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "面包", null], [null, null, null]],
+        ingredients: [["面包"]]
     },
     "切碎的糖": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "糖", null], [null, null, null]],
-        "ingredients": [["糖"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "糖", null], [null, null, null]],
+        ingredients: [["糖"]]
     },
     "捣碎的糖": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "糖", null], [null, null, null]],
-        "ingredients": [["糖"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "糖", null], [null, null, null]],
+        ingredients: [["糖"]]
     },
     "切片的糖": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "糖", null], [null, null, null]],
-        "ingredients": [["糖"]]
+        type: "切片",
+        map: [[null, null, null], [null, "糖", null], [null, null, null]],
+        ingredients: [["糖"]]
     },
     "剁碎的糖": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "糖", null], [null, null, null]],
-        "ingredients": [["糖"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "糖", null], [null, null, null]],
+        ingredients: [["糖"]]
     },
     "搅拌的糖": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "糖", null], [null, null, null]],
-        "ingredients": [["糖"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "糖", null], [null, null, null]],
+        ingredients: [["糖"]]
     },
     "煮熟的糖": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "糖", null], [null, null, null]],
-        "ingredients": [["糖"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "糖", null], [null, null, null]],
+        ingredients: [["糖"]]
     },
     "油炸的糖": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "糖", null], [null, null, null]],
-        "ingredients": [["糖"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "糖", null], [null, null, null]],
+        ingredients: [["糖"]]
     },
     "烤制的糖": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "糖", null], [null, null, null]],
-        "ingredients": [["糖"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "糖", null], [null, null, null]],
+        ingredients: [["糖"]]
     },
     "切碎的海带": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "海带", null], [null, null, null]],
-        "ingredients": [["海带"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "海带", null], [null, null, null]],
+        ingredients: [["海带"]]
     },
     "捣碎的海带": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "海带", null], [null, null, null]],
-        "ingredients": [["海带"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "海带", null], [null, null, null]],
+        ingredients: [["海带"]]
     },
     "切片的海带": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "海带", null], [null, null, null]],
-        "ingredients": [["海带"]]
+        type: "切片",
+        map: [[null, null, null], [null, "海带", null], [null, null, null]],
+        ingredients: [["海带"]]
     },
     "剁碎的海带": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "海带", null], [null, null, null]],
-        "ingredients": [["海带"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "海带", null], [null, null, null]],
+        ingredients: [["海带"]]
     },
     "搅拌的海带": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "海带", null], [null, null, null]],
-        "ingredients": [["海带"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "海带", null], [null, null, null]],
+        ingredients: [["海带"]]
     },
     "煮熟的海带": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "海带", null], [null, null, null]],
-        "ingredients": [["海带"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "海带", null], [null, null, null]],
+        ingredients: [["海带"]]
     },
     "油炸的海带": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "海带", null], [null, null, null]],
-        "ingredients": [["海带"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "海带", null], [null, null, null]],
+        ingredients: [["海带"]]
     },
     "烤制的海带": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "海带", null], [null, null, null]],
-        "ingredients": [["海带"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "海带", null], [null, null, null]],
+        ingredients: [["海带"]]
     },
     "花生酱": {
-        "type": "上菜",
-        "map": [["搅拌的花生", "糖", "黄油"], [null, null, null], [null, null, null]],
-        "ingredients": [["搅拌的花生"], ["糖"], ["黄油"]]
+        type: "上菜",
+        map: [["搅拌的花生", "糖", "黄油"], [null, null, null], [null, null, null]],
+        ingredients: [["搅拌的花生"], ["糖"], ["黄油"]]
     },
     "葡萄酱": {
-        "type": "上菜",
-        "map": [["搅拌的葡萄", "糖", null], [null, null, null], [null, null, null]],
-        "ingredients": [["搅拌的葡萄"], ["糖"]]
+        type: "上菜",
+        map: [["搅拌的葡萄", "糖", null], [null, null, null], [null, null, null]],
+        ingredients: [["搅拌的葡萄"], ["糖"]]
     },
     "草莓酱": {
-        "type": "上菜",
-        "map": [["搅拌的草莓", "糖", null], [null, null, null], [null, null, null]],
-        "ingredients": [["搅拌的草莓"], ["糖"]]
+        type: "上菜",
+        map: [["搅拌的草莓", "糖", null], [null, null, null], [null, null, null]],
+        ingredients: [["搅拌的草莓"], ["糖"]]
     },
     "蛋黄酱": {
-        "type": "上菜",
-        "map": [["剁碎的油菜", "鸡蛋", null], [null, null, null], [null, null, null]],
-        "ingredients": [["剁碎的油菜"], ["鸡蛋"]]
+        type: "上菜",
+        map: [["剁碎的油菜", "鸡蛋", null], [null, null, null], [null, null, null]],
+        ingredients: [["剁碎的油菜"], ["鸡蛋"]]
     },
     "鸡蛋沙拉": {
-        "type": "上菜",
-        "map": [["煮熟的鸡蛋", "蛋黄酱", null], [null, null, null], [null, null, null]],
-        "ingredients": [["煮熟的鸡蛋"], ["蛋黄酱"]]
+        type: "上菜",
+        map: [["煮熟的鸡蛋", "蛋黄酱", null], [null, null, null], [null, null, null]],
+        ingredients: [["煮熟的鸡蛋"], ["蛋黄酱"]]
     },
     "馅饼皮": {
-        "type": "上菜",
-        "map": [["奶桶", "搅拌的鸡蛋", "小麦粉"], [null, null, null], [null, null, null]],
-        "ingredients": [["奶桶"], ["搅拌的鸡蛋"], ["小麦粉"]]
+        type: "上菜",
+        map: [["奶桶", "搅拌的鸡蛋", "小麦粉"], [null, null, null], [null, null, null]],
+        ingredients: [["奶桶"], ["搅拌的鸡蛋"], ["小麦粉"]]
     },
     "意大利通心粉": {
-        "type": "上菜",
-        "map": [["小麦粉", "搅拌的鸡蛋", null], [null, null, null], [null, null, null]],
-        "ingredients": [["小麦粉"], ["搅拌的鸡蛋"]]
+        type: "上菜",
+        map: [["小麦粉", "搅拌的鸡蛋", null], [null, null, null], [null, null, null]],
+        ingredients: [["小麦粉"], ["搅拌的鸡蛋"]]
     },
     "饼干面团": {
-        "type": "上菜",
-        "map": [["小麦粉", "糖", "黄油"], ["奶桶", null, null], [null, null, null]],
-        "ingredients": [["小麦粉"], ["糖"], ["黄油"], ["奶桶"]]
+        type: "上菜",
+        map: [["小麦粉", "糖", "黄油"], ["奶桶", null, null], [null, null, null]],
+        ingredients: [["小麦粉"], ["糖"], ["黄油"], ["奶桶"]]
     },
     "定型的饼干": {
-        "type": "上菜",
-        "map": [["饼干面团", "饼干面团", "饼干面团"], [null, null, null], [null, null, null]],
-        "ingredients": [["饼干面团", 3]]
+        type: "上菜",
+        map: [["饼干面团", "饼干面团", "饼干面团"], [null, null, null], [null, null, null]],
+        ingredients: [["饼干面团", 3]]
     },
     "肉球": {
-        "type": "上菜",
-        "map": [["剁碎的生牛肉", "搅拌的鸡蛋", null], ["小麦粉", "盐", null], [null, null, null]],
-        "ingredients": [["剁碎的生牛肉"], ["搅拌的鸡蛋"], ["小麦粉"], ["盐"]]
+        type: "上菜",
+        map: [["剁碎的生牛肉", "搅拌的鸡蛋", null], ["小麦粉", "盐", null], [null, null, null]],
+        ingredients: [["剁碎的生牛肉"], ["搅拌的鸡蛋"], ["小麦粉"], ["盐"]]
     },
     "切碎的意大利香肠": {
-        "type": "切碎",
-        "map": [[null, null, null], [null, "意大利香肠", null], [null, null, null]],
-        "ingredients": [["意大利香肠"]]
+        type: "切碎",
+        map: [[null, null, null], [null, "意大利香肠", null], [null, null, null]],
+        ingredients: [["意大利香肠"]]
     },
     "捣碎的意大利香肠": {
-        "type": "捣碎",
-        "map": [[null, null, null], [null, "意大利香肠", null], [null, null, null]],
-        "ingredients": [["意大利香肠"]]
+        type: "捣碎",
+        map: [[null, null, null], [null, "意大利香肠", null], [null, null, null]],
+        ingredients: [["意大利香肠"]]
     },
     "切片的意大利香肠": {
-        "type": "切片",
-        "map": [[null, null, null], [null, "意大利香肠", null], [null, null, null]],
-        "ingredients": [["意大利香肠"]]
+        type: "切片",
+        map: [[null, null, null], [null, "意大利香肠", null], [null, null, null]],
+        ingredients: [["意大利香肠"]]
     },
     "剁碎的意大利香肠": {
-        "type": "剁碎",
-        "map": [[null, null, null], [null, "意大利香肠", null], [null, null, null]],
-        "ingredients": [["意大利香肠"]]
+        type: "剁碎",
+        map: [[null, null, null], [null, "意大利香肠", null], [null, null, null]],
+        ingredients: [["意大利香肠"]]
     },
     "搅拌的意大利香肠": {
-        "type": "搅拌",
-        "map": [[null, null, null], [null, "意大利香肠", null], [null, null, null]],
-        "ingredients": [["意大利香肠"]]
+        type: "搅拌",
+        map: [[null, null, null], [null, "意大利香肠", null], [null, null, null]],
+        ingredients: [["意大利香肠"]]
     },
     "煮熟的意大利香肠": {
-        "type": "煮熟",
-        "map": [[null, null, null], [null, "意大利香肠", null], [null, null, null]],
-        "ingredients": [["意大利香肠"]]
+        type: "煮熟",
+        map: [[null, null, null], [null, "意大利香肠", null], [null, null, null]],
+        ingredients: [["意大利香肠"]]
     },
     "油炸的意大利香肠": {
-        "type": "油炸",
-        "map": [[null, null, null], [null, "意大利香肠", null], [null, null, null]],
-        "ingredients": [["意大利香肠"]]
+        type: "油炸",
+        map: [[null, null, null], [null, "意大利香肠", null], [null, null, null]],
+        ingredients: [["意大利香肠"]]
     },
     "烤制的意大利香肠": {
-        "type": "烤制",
-        "map": [[null, null, null], [null, "意大利香肠", null], [null, null, null]],
-        "ingredients": [["意大利香肠"]]
+        type: "烤制",
+        map: [[null, null, null], [null, "意大利香肠", null], [null, null, null]],
+        ingredients: [["意大利香肠"]]
     },
     "意大利香肠": {
-        "type": "上菜",
-        "map": [["剁碎的生猪排", "剁碎的大蒜", "剁碎的卡宴辣椒"], ["剁碎的芥菜种子", "盐", null], [null, null, null]],
-        "ingredients": [["剁碎的生猪排"], ["剁碎的大蒜"], ["剁碎的卡宴辣椒"], ["剁碎的芥菜种子"], ["盐"]]
+        type: "上菜",
+        map: [["剁碎的生猪排", "剁碎的大蒜", "剁碎的卡宴辣椒"], ["剁碎的芥菜种子", "盐", null], [null, null, null]],
+        ingredients: [["剁碎的生猪排"], ["剁碎的大蒜"], ["剁碎的卡宴辣椒"], ["剁碎的芥菜种子"], ["盐"]]
     },
     "面团": {
-        "type": "上菜",
-        "map": [["小麦粉", "小麦粉", "鸡蛋"], ["水桶", "盐", null], [null, null, null]],
-        "ingredients": [["小麦粉", 2], ["鸡蛋"], ["水桶"], ["盐"]]
+        type: "上菜",
+        map: [["小麦粉", "小麦粉", "鸡蛋"], ["水桶", "盐", null], [null, null, null]],
+        ingredients: [["小麦粉", 2], ["鸡蛋"], ["水桶"], ["盐"]]
     },
     "奶油芝士": {
-        "type": "上菜",
-        "map": [["奶桶", "盐", "搅拌的柠檬"], [null, null, null], [null, null, null]],
-        "ingredients": [["奶桶"], ["盐"], ["搅拌的柠檬"]]
+        type: "上菜",
+        map: [["奶桶", "盐", "搅拌的柠檬"], [null, null, null], [null, null, null]],
+        ingredients: [["奶桶"], ["盐"], ["搅拌的柠檬"]]
     },
     "蕃茄酱": {
-        "type": "上菜",
-        "map": [["搅拌的番茄", "糖", null], [null, null, null], [null, null, null]],
-        "ingredients": [["搅拌的番茄"], ["糖"]]
+        type: "上菜",
+        map: [["搅拌的番茄", "糖", null], [null, null, null], [null, null, null]],
+        ingredients: [["搅拌的番茄"], ["糖"]]
     },
     "芥末": {
-        "type": "上菜",
-        "map": [["搅拌的芥菜种子", "水桶", "盐"], ["切碎的百里香", "切碎的姜黄", "糖"], [null, null, null]],
-        "ingredients": [["搅拌的芥菜种子"], ["水桶"], ["盐"], ["切碎的百里香"], ["切碎的姜黄"], ["糖"]]
+        type: "上菜",
+        map: [["搅拌的芥菜种子", "水桶", "盐"], ["切碎的百里香", "切碎的姜黄", "糖"], [null, null, null]],
+        ingredients: [["搅拌的芥菜种子"], ["水桶"], ["盐"], ["切碎的百里香"], ["切碎的姜黄"], ["糖"]]
     },
     "玉米粉圆饼": {
-        "type": "上菜",
-        "map": [["剁碎的甜玉米", "剁碎的甜玉米", "剁碎的甜玉米"], [null, null, null], [null, null, null]],
-        "ingredients": [["剁碎的甜玉米", 3]]
+        type: "上菜",
+        map: [["剁碎的甜玉米", "剁碎的甜玉米", "剁碎的甜玉米"], [null, null, null], [null, null, null]],
+        ingredients: [["剁碎的甜玉米", 3]]
     },
     "墨西哥莎莎酱": {
-        "type": "上菜",
-        "map": [["切碎的番茄", "切碎的辣椒", "切碎的洋葱"], ["搅拌的酸橙", "切碎的香菜", null], [null, null, null]],
-        "ingredients": [["切碎的番茄"], ["切碎的辣椒"], ["切碎的洋葱"], ["搅拌的酸橙"], ["切碎的香菜"]]
+        type: "上菜",
+        map: [["切碎的番茄", "切碎的辣椒", "切碎的洋葱"], ["搅拌的酸橙", "切碎的香菜", null], [null, null, null]],
+        ingredients: [["切碎的番茄"], ["切碎的辣椒"], ["切碎的洋葱"], ["搅拌的酸橙"], ["切碎的香菜"]]
     },
     "熟汉堡肉饼": {
-        "type": "烘焙",
-        "map": [["剁碎的生牛肉", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["剁碎的生牛肉"]]
+        type: "烘焙",
+        map: [["剁碎的生牛肉", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["剁碎的生牛肉"]]
     },
     "柠檬糖": {
-        "type": "上菜",
-        "map": [["煮熟的柠檬", "煮熟的糖", null], [null, null, null], [null, null, null]],
-        "ingredients": [["煮熟的柠檬"], ["煮熟的糖"]]
+        type: "上菜",
+        map: [["煮熟的柠檬", "煮熟的糖", null], [null, null, null], [null, null, null]],
+        ingredients: [["煮熟的柠檬"], ["煮熟的糖"]]
     },
     "花生酱果冻三明治": {
-        "type": "上菜",
-        "map": [[null, "切片的面包", null], ["葡萄酱", "花生酱", "草莓酱"], [null, "切片的面包", null]],
-        "ingredients": [["切片的面包", 2], ["葡萄酱"], ["花生酱"], ["草莓酱"]]
+        type: "上菜",
+        map: [[null, "切片的面包", null], ["葡萄酱", "花生酱", "草莓酱"], [null, "切片的面包", null]],
+        ingredients: [["切片的面包", 2], ["葡萄酱"], ["花生酱"], ["草莓酱"]]
     },
     "培根三明治": {
-        "type": "上菜",
-        "map": [[null, "切片的面包", null], [null, "油炸的生猪排", null], [null, "切片的面包", null]],
-        "ingredients": [["切片的面包", 2], ["油炸的生猪排"]]
+        type: "上菜",
+        map: [[null, "切片的面包", null], [null, "油炸的生猪排", null], [null, "切片的面包", null]],
+        ingredients: [["切片的面包", 2], ["油炸的生猪排"]]
     },
     "三文鱼寿司": {
-        "type": "上菜",
-        "map": [[null, "切片的生鲑鱼", null], [null, "煮熟的大米", null], [null, null, null]],
-        "ingredients": [["切片的生鲑鱼"], ["煮熟的大米"]]
+        type: "上菜",
+        map: [[null, "切片的生鲑鱼", null], [null, "煮熟的大米", null], [null, null, null]],
+        ingredients: [["切片的生鲑鱼"], ["煮熟的大米"]]
     },
     "卡津大蒜黄油鳕鱼": {
-        "type": "烘焙",
-        "map": [["油炸的生鳕鱼", "黄油", null], ["切碎的大蒜", "剁碎的卡宴辣椒", null], [null, null, null]],
-        "ingredients": [["油炸的生鳕鱼"], ["黄油"], ["切碎的大蒜"], ["剁碎的卡宴辣椒"]]
+        type: "烘焙",
+        map: [["油炸的生鳕鱼", "黄油", null], ["切碎的大蒜", "剁碎的卡宴辣椒", null], [null, null, null]],
+        ingredients: [["油炸的生鳕鱼"], ["黄油"], ["切碎的大蒜"], ["剁碎的卡宴辣椒"]]
     },
     "沙卡蔬卡": {
-        "type": "烘焙",
-        "map": [["鸡蛋", "切碎的洋葱", "甜椒"], ["切碎的大蒜", "剁碎的甜椒", "番茄"], [null, null, null]],
-        "ingredients": [["鸡蛋"], ["切碎的洋葱"], ["甜椒"], ["切碎的大蒜"], ["剁碎的甜椒"], ["番茄"]]
+        type: "烘焙",
+        map: [["鸡蛋", "切碎的洋葱", "甜椒"], ["切碎的大蒜", "剁碎的甜椒", "番茄"], [null, null, null]],
+        ingredients: [["鸡蛋"], ["切碎的洋葱"], ["甜椒"], ["切碎的大蒜"], ["剁碎的甜椒"], ["番茄"]]
     },
     "河豚": {
-        "type": "上菜",
-        "map": [[null, "切片的河豚", null], [null, "煮熟的大米", null], [null, null, null]],
-        "ingredients": [["切片的河豚"], ["煮熟的大米"]]
+        type: "上菜",
+        map: [[null, "切片的河豚", null], [null, "煮熟的大米", null], [null, null, null]],
+        ingredients: [["切片的河豚"], ["煮熟的大米"]]
     },
     "牧羊人派": {
-        "type": "烘焙",
-        "map": [["奶酪", "捣碎的马铃薯", "奶酪"], ["切碎的胡萝卜", "豌豆", "油炸的洋葱"], ["剁碎的生牛肉", "剁碎的生牛肉", "剁碎的生牛肉"]],
-        "ingredients": [["奶酪", 2], ["捣碎的马铃薯"], ["切碎的胡萝卜"], ["豌豆"], ["油炸的洋葱"], ["剁碎的生牛肉", 3]]
+        type: "烘焙",
+        map: [["奶酪", "捣碎的马铃薯", "奶酪"], ["切碎的胡萝卜", "豌豆", "油炸的洋葱"], ["剁碎的生牛肉", "剁碎的生牛肉", "剁碎的生牛肉"]],
+        ingredients: [["奶酪", 2], ["捣碎的马铃薯"], ["切碎的胡萝卜"], ["豌豆"], ["油炸的洋葱"], ["剁碎的生牛肉", 3]]
     },
     "鸡蛋沙拉三明治": {
-        "type": "上菜",
-        "map": [[null, "切片的面包", null], ["切碎的生菜", "鸡蛋沙拉", "切片的番茄"], [null, "切片的面包", null]],
-        "ingredients": [["切片的面包", 2], ["切碎的生菜"], ["鸡蛋沙拉"], ["切片的番茄"]]
+        type: "上菜",
+        map: [[null, "切片的面包", null], ["切碎的生菜", "鸡蛋沙拉", "切片的番茄"], [null, "切片的面包", null]],
+        ingredients: [["切片的面包", 2], ["切碎的生菜"], ["鸡蛋沙拉"], ["切片的番茄"]]
     },
     "鸡肉馅饼": {
-        "type": "烘焙",
-        "map": [[null, "馅饼皮", null], ["切碎的胡萝卜", "切碎的生鸡肉", "切碎的洋葱"], ["黄油", "奶桶", "剁碎的芥菜种子"]],
-        "ingredients": [["馅饼皮"], ["切碎的胡萝卜"], ["切碎的生鸡肉"], ["切碎的洋葱"], ["黄油"], ["奶桶"], ["剁碎的芥菜种子"]]
+        type: "烘焙",
+        map: [[null, "馅饼皮", null], ["切碎的胡萝卜", "切碎的生鸡肉", "切碎的洋葱"], ["黄油", "奶桶", "剁碎的芥菜种子"]],
+        ingredients: [["馅饼皮"], ["切碎的胡萝卜"], ["切碎的生鸡肉"], ["切碎的洋葱"], ["黄油"], ["奶桶"], ["剁碎的芥菜种子"]]
     },
     "烤鸡意大利面": {
-        "type": "烘焙",
-        "map": [["奶酪", "奶酪", "奶酪"], ["意大利通心粉", "意大利通心粉", "意大利通心粉"], ["剁碎的大蒜", "奶桶", "剁碎的芥菜种子"]],
-        "ingredients": [["奶酪", 3], ["意大利通心粉", 3], ["剁碎的大蒜"], ["奶桶"], ["剁碎的芥菜种子"]]
+        type: "烘焙",
+        map: [["奶酪", "奶酪", "奶酪"], ["意大利通心粉", "意大利通心粉", "意大利通心粉"], ["剁碎的大蒜", "奶桶", "剁碎的芥菜种子"]],
+        ingredients: [["奶酪", 3], ["意大利通心粉", 3], ["剁碎的大蒜"], ["奶桶"], ["剁碎的芥菜种子"]]
     },
     "鸡肉白酱通心粉": {
-        "type": "烘焙",
-        "map": [["奶酪", "切碎的西兰花", "奶酪"], ["意大利通心粉", "切片的生鸡肉", "意大利通心粉"], ["剁碎的大蒜", "浓奶油", "切碎的洋葱"]],
-        "ingredients": [["奶酪", 2], ["切碎的西兰花"], ["意大利通心粉", 2], ["切片的生鸡肉"], ["剁碎的大蒜"], ["浓奶油"], ["切碎的洋葱"]]
+        type: "烘焙",
+        map: [["奶酪", "切碎的西兰花", "奶酪"], ["意大利通心粉", "切片的生鸡肉", "意大利通心粉"], ["剁碎的大蒜", "浓奶油", "切碎的洋葱"]],
+        ingredients: [["奶酪", 2], ["切碎的西兰花"], ["意大利通心粉", 2], ["切片的生鸡肉"], ["剁碎的大蒜"], ["浓奶油"], ["切碎的洋葱"]]
     },
     "加糖的骷髅头": {
-        "type": "烘焙",
-        "map": [["剁碎的糖", "剁碎的糖", "剁碎的糖"], [null, "骷髅头颅", null], [null, null, null]],
-        "ingredients": [["剁碎的糖", 3], ["骷髅头颅"]]
+        type: "烘焙",
+        map: [["剁碎的糖", "剁碎的糖", "剁碎的糖"], [null, "骷髅头颅", null], [null, null, null]],
+        ingredients: [["剁碎的糖", 3], ["骷髅头颅"]]
     },
     "青柠派": {
-        "type": "烘焙",
-        "map": [["搅拌的酸橙", "浓奶油", "剁碎的酸橙"], ["糖", "鸡蛋", "黄油"], ["定型的饼干", "定型的饼干", "定型的饼干"]],
-        "ingredients": [["搅拌的酸橙"], ["浓奶油"], ["剁碎的酸橙"], ["糖"], ["鸡蛋"], ["黄油"], ["定型的饼干", 3]]
+        type: "烘焙",
+        map: [["搅拌的酸橙", "浓奶油", "剁碎的酸橙"], ["糖", "鸡蛋", "黄油"], ["定型的饼干", "定型的饼干", "定型的饼干"]],
+        ingredients: [["搅拌的酸橙"], ["浓奶油"], ["剁碎的酸橙"], ["糖"], ["鸡蛋"], ["黄油"], ["定型的饼干", 3]]
     },
     "塔基托": {
-        "type": "烘焙",
-        "map": [["奶酪", "切碎的生鸡肉", "墨西哥莎莎酱"], ["剁碎的孜然", "切碎的辣椒", "剁碎的黑胡椒"], ["玉米粉圆饼", "玉米粉圆饼", "玉米粉圆饼"]],
-        "ingredients": [["奶酪"], ["切碎的生鸡肉"], ["墨西哥莎莎酱"], ["剁碎的孜然"], ["切碎的辣椒"], ["剁碎的黑胡椒"], ["玉米粉圆饼", 3]]
+        type: "烘焙",
+        map: [["奶酪", "切碎的生鸡肉", "墨西哥莎莎酱"], ["剁碎的孜然", "切碎的辣椒", "剁碎的黑胡椒"], ["玉米粉圆饼", "玉米粉圆饼", "玉米粉圆饼"]],
+        ingredients: [["奶酪"], ["切碎的生鸡肉"], ["墨西哥莎莎酱"], ["剁碎的孜然"], ["切碎的辣椒"], ["剁碎的黑胡椒"], ["玉米粉圆饼", 3]]
     },
     "水果沙拉": {
-        "type": "上菜",
-        "map": [["切碎的苹果", "切碎的梨", "切碎的橘子"], ["切碎的奇异果", "切碎的杏子", "切碎的香蕉"], [null, null, null]],
-        "ingredients": [["切碎的苹果"], ["切碎的梨"], ["切碎的橘子"], ["切碎的奇异果"], ["切碎的杏子"], ["切碎的香蕉"]]
+        type: "上菜",
+        map: [["切碎的苹果", "切碎的梨", "切碎的橘子"], ["切碎的奇异果", "切碎的杏子", "切碎的香蕉"], [null, null, null]],
+        ingredients: [["切碎的苹果"], ["切碎的梨"], ["切碎的橘子"], ["切碎的奇异果"], ["切碎的杏子"], ["切碎的香蕉"]]
     },
     "凯撒沙拉": {
-        "type": "上菜",
-        "map": [["切碎的番茄", "切碎的生菜", "烤制的生鸡肉"], ["剁碎的油菜", "切片的甜椒", "搅拌的芥菜种子"], [null, null, null]],
-        "ingredients": [["切碎的番茄"], ["切碎的生菜"], ["烤制的生鸡肉"], ["剁碎的油菜"], ["切片的甜椒"], ["搅拌的芥菜种子"]]
+        type: "上菜",
+        map: [["切碎的番茄", "切碎的生菜", "烤制的生鸡肉"], ["剁碎的油菜", "切片的甜椒", "搅拌的芥菜种子"], [null, null, null]],
+        ingredients: [["切碎的番茄"], ["切碎的生菜"], ["烤制的生鸡肉"], ["剁碎的油菜"], ["切片的甜椒"], ["搅拌的芥菜种子"]]
     },
     "一碗…史蒂夫？": {
-        "type": "上菜",
-        "map": [[null, "玩家的头", null], ["切片的番茄", "切片的甜椒", "切片的黄瓜"], ["切碎的生菜", "切碎的生菜", "切碎的生菜"]],
-        "ingredients": [["玩家的头"], ["切片的番茄"], ["切片的甜椒"], ["切片的黄瓜"], ["切碎的生菜", 3]]
+        type: "上菜",
+        map: [[null, "玩家的头", null], ["切片的番茄", "切片的甜椒", "切片的黄瓜"], ["切碎的生菜", "切碎的生菜", "切碎的生菜"]],
+        ingredients: [["玩家的头"], ["切片的番茄"], ["切片的甜椒"], ["切片的黄瓜"], ["切碎的生菜", 3]]
     },
     "饼干": {
-        "type": "烘焙",
-        "map": [["饼干面团", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["饼干面团"]]
+        type: "烘焙",
+        map: [["饼干面团", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["饼干面团"]]
     },
     "压缩饼干": {
-        "type": "上菜",
-        "map": [["饼干", "饼干", "饼干"], ["饼干", "饼干", "饼干"], ["饼干", "饼干", "饼干"]],
-        "ingredients": [["饼干", 9]]
+        type: "上菜",
+        map: [["饼干", "饼干", "饼干"], ["饼干", "饼干", "饼干"], ["饼干", "饼干", "饼干"]],
+        ingredients: [["饼干", 9]]
     },
     "烤三文鱼沙拉": {
-        "type": "上菜",
-        "map": [[null, "烤制的生鲑鱼", null], ["切片的生菜", "切片的生菜", "切片的生菜"], ["切片的番茄", "剁碎的油菜", "切片的红色蘑菇"]],
-        "ingredients": [["烤制的生鲑鱼"], ["切片的生菜", 3], ["切片的番茄"], ["剁碎的油菜"], ["切片的红色蘑菇"]]
+        type: "上菜",
+        map: [[null, "烤制的生鲑鱼", null], ["切片的生菜", "切片的生菜", "切片的生菜"], ["切片的番茄", "剁碎的油菜", "切片的红色蘑菇"]],
+        ingredients: [["烤制的生鲑鱼"], ["切片的生菜", 3], ["切片的番茄"], ["剁碎的油菜"], ["切片的红色蘑菇"]]
     },
     "凋灵玫瑰沙拉": {
-        "type": "上菜",
-        "map": [[null, "凋灵玫瑰", null], ["切片的生菜", "切片的生菜", "切片的生菜"], ["切片的番茄", "剁碎的油菜", "切片的红色蘑菇"]],
-        "ingredients": [["凋灵玫瑰"], ["切片的生菜", 3], ["切片的番茄"], ["剁碎的油菜"], ["切片的红色蘑菇"]]
+        type: "上菜",
+        map: [[null, "凋灵玫瑰", null], ["切片的生菜", "切片的生菜", "切片的生菜"], ["切片的番茄", "剁碎的油菜", "切片的红色蘑菇"]],
+        ingredients: [["凋灵玫瑰"], ["切片的生菜", 3], ["切片的番茄"], ["剁碎的油菜"], ["切片的红色蘑菇"]]
     },
     "橙汁": {
-        "type": "上菜",
-        "map": [["搅拌的橘子", "玻璃", null], [null, null, null], [null, null, null]],
-        "ingredients": [["搅拌的橘子"], ["玻璃"]]
+        type: "上菜",
+        map: [["搅拌的橘子", "玻璃", null], [null, null, null], [null, null, null]],
+        ingredients: [["搅拌的橘子"], ["玻璃"]]
     },
     "宽面": {
-        "type": "烘焙",
-        "map": [["意大利通心粉", "奶酪", "切碎的番茄"], ["浓奶油", "意大利通心粉", "奶酪"], ["切碎的番茄", "奶酪", "意大利通心粉"]],
-        "ingredients": [["意大利通心粉", 3], ["奶酪", 3], ["切碎的番茄", 2], ["浓奶油"]]
+        type: "烘焙",
+        map: [["意大利通心粉", "奶酪", "切碎的番茄"], ["浓奶油", "意大利通心粉", "奶酪"], ["切碎的番茄", "奶酪", "意大利通心粉"]],
+        ingredients: [["意大利通心粉", 3], ["奶酪", 3], ["切碎的番茄", 2], ["浓奶油"]]
     },
     "意大利面": {
-        "type": "上菜",
-        "map": [["意大利通心粉", null, null], [null, "意大利通心粉", null], [null, null, "意大利通心粉"]],
-        "ingredients": [["意大利通心粉", 3]]
+        type: "上菜",
+        map: [["意大利通心粉", null, null], [null, "意大利通心粉", null], [null, null, "意大利通心粉"]],
+        ingredients: [["意大利通心粉", 3]]
     },
     "肉球意大利面": {
-        "type": "烘焙",
-        "map": [[null, "肉球", null], [null, "意大利面", null], [null, null, null]],
-        "ingredients": [["肉球"], ["意大利面"]]
+        type: "烘焙",
+        map: [[null, "肉球", null], [null, "意大利面", null], [null, null, null]],
+        ingredients: [["肉球"], ["意大利面"]]
     },
     "汉堡": {
-        "type": "上菜",
-        "map": [[null, "面包", null], ["奶酪", "熟汉堡肉饼", "切片的番茄"], [null, "面包", null]],
-        "ingredients": [["面包", 2], ["奶酪"], ["熟汉堡肉饼"], ["切片的番茄"]]
+        type: "上菜",
+        map: [[null, "面包", null], ["奶酪", "熟汉堡肉饼", "切片的番茄"], [null, "面包", null]],
+        ingredients: [["面包", 2], ["奶酪"], ["熟汉堡肉饼"], ["切片的番茄"]]
     },
     "芝士披萨": {
-        "type": "烘焙",
-        "map": [["奶酪", "奶酪", "奶酪"], ["搅拌的番茄", "搅拌的番茄", "搅拌的番茄"], ["面团", "面团", "面团"]],
-        "ingredients": [["奶酪", 3], ["搅拌的番茄", 3], ["面团", 3]]
+        type: "烘焙",
+        map: [["奶酪", "奶酪", "奶酪"], ["搅拌的番茄", "搅拌的番茄", "搅拌的番茄"], ["面团", "面团", "面团"]],
+        ingredients: [["奶酪", 3], ["搅拌的番茄", 3], ["面团", 3]]
     },
     "蘑菇披萨": {
-        "type": "烘焙",
-        "map": [["奶酪", "切片的红色蘑菇", "奶酪"], ["搅拌的番茄", "搅拌的番茄", "搅拌的番茄"], ["面团", "面团", "面团"]],
-        "ingredients": [["奶酪", 2], ["切片的红色蘑菇"], ["搅拌的番茄", 3], ["面团", 3]]
+        type: "烘焙",
+        map: [["奶酪", "切片的红色蘑菇", "奶酪"], ["搅拌的番茄", "搅拌的番茄", "搅拌的番茄"], ["面团", "面团", "面团"]],
+        ingredients: [["奶酪", 2], ["切片的红色蘑菇"], ["搅拌的番茄", 3], ["面团", 3]]
     },
     "意大利香肠披萨": {
-        "type": "烘焙",
-        "map": [["奶酪", "切片的意大利香肠", "奶酪"], ["搅拌的番茄", "搅拌的番茄", "搅拌的番茄"], ["面团", "面团", "面团"]],
-        "ingredients": [["奶酪", 2], ["切片的意大利香肠"], ["搅拌的番茄", 3], ["面团", 3]]
+        type: "烘焙",
+        map: [["奶酪", "切片的意大利香肠", "奶酪"], ["搅拌的番茄", "搅拌的番茄", "搅拌的番茄"], ["面团", "面团", "面团"]],
+        ingredients: [["奶酪", 2], ["切片的意大利香肠"], ["搅拌的番茄", 3], ["面团", 3]]
     },
     "芝士西葫芦": {
-        "type": "烘焙",
-        "map": [["奶酪", "切片的西葫芦", "奶酪"], ["切片的西葫芦", "奶桶", "切片的西葫芦"], ["切碎的百里香", "盐", "黄油"]],
-        "ingredients": [["奶酪", 2], ["切片的西葫芦", 3], ["奶桶"], ["切碎的百里香"], ["盐"], ["黄油"]]
+        type: "烘焙",
+        map: [["奶酪", "切片的西葫芦", "奶酪"], ["切片的西葫芦", "奶桶", "切片的西葫芦"], ["切碎的百里香", "盐", "黄油"]],
+        ingredients: [["奶酪", 2], ["切片的西葫芦", 3], ["奶桶"], ["切碎的百里香"], ["盐"], ["黄油"]]
     },
     "山核桃派": {
-        "type": "烘焙",
-        "map": [["切碎的山核桃", "切碎的山核桃", "切碎的山核桃"], ["鸡蛋", "糖", "浓奶油"], ["馅饼皮", "馅饼皮", "馅饼皮"]],
-        "ingredients": [["切碎的山核桃", 3], ["鸡蛋"], ["糖"], ["浓奶油"], ["馅饼皮", 3]]
+        type: "烘焙",
+        map: [["切碎的山核桃", "切碎的山核桃", "切碎的山核桃"], ["鸡蛋", "糖", "浓奶油"], ["馅饼皮", "馅饼皮", "馅饼皮"]],
+        ingredients: [["切碎的山核桃", 3], ["鸡蛋"], ["糖"], ["浓奶油"], ["馅饼皮", 3]]
     },
     "蒜蓉黄油蘑菇": {
-        "type": "烘焙",
-        "map": [["黄油", "黄油", "黄油"], ["切碎的百里香", "切碎的大蒜", "盐"], ["切片的棕色蘑菇", "切片的棕色蘑菇", "切片的棕色蘑菇"]],
-        "ingredients": [["黄油", 3], ["切碎的百里香"], ["切碎的大蒜"], ["盐"], ["切片的棕色蘑菇", 3]]
+        type: "烘焙",
+        map: [["黄油", "黄油", "黄油"], ["切碎的百里香", "切碎的大蒜", "盐"], ["切片的棕色蘑菇", "切片的棕色蘑菇", "切片的棕色蘑菇"]],
+        ingredients: [["黄油", 3], ["切碎的百里香"], ["切碎的大蒜"], ["盐"], ["切片的棕色蘑菇", 3]]
     },
     "蓝色糖果": {
-        "type": "上菜",
-        "map": [["煮熟的糖", "煮熟的糖", "煮熟的糖"], ["煮熟的糖", "蓝色染料", "煮熟的糖"], ["煮熟的糖", "煮熟的糖", "煮熟的糖"]],
-        "ingredients": [["煮熟的糖", 8], ["蓝色染料"]]
+        type: "上菜",
+        map: [["煮熟的糖", "煮熟的糖", "煮熟的糖"], ["煮熟的糖", "蓝色染料", "煮熟的糖"], ["煮熟的糖", "煮熟的糖", "煮熟的糖"]],
+        ingredients: [["煮熟的糖", 8], ["蓝色染料"]]
     },
     "水煮蛋": {
-        "type": "上菜",
-        "map": [[null, null, null], [null, "煮熟的鸡蛋", null], [null, null, null]],
-        "ingredients": [["煮熟的鸡蛋"]]
+        type: "上菜",
+        map: [[null, null, null], [null, "煮熟的鸡蛋", null], [null, null, null]],
+        ingredients: [["煮熟的鸡蛋"]]
     },
     "牛肉拉面": {
-        "type": "上菜",
-        "map": [[null, "煮熟的生牛肉", null], [null, "意大利通心粉", null], [null, null, null]],
-        "ingredients": [["煮熟的生牛肉"], ["意大利通心粉"]]
+        type: "上菜",
+        map: [[null, "煮熟的生牛肉", null], [null, "意大利通心粉", null], [null, null, null]],
+        ingredients: [["煮熟的生牛肉"], ["意大利通心粉"]]
     },
     "鸡肉拉面": {
-        "type": "上菜",
-        "map": [[null, "煮熟的生鸡肉", null], [null, "意大利通心粉", null], [null, null, null]],
-        "ingredients": [["煮熟的生鸡肉"], ["意大利通心粉"]]
+        type: "上菜",
+        map: [[null, "煮熟的生鸡肉", null], [null, "意大利通心粉", null], [null, null, null]],
+        ingredients: [["煮熟的生鸡肉"], ["意大利通心粉"]]
     },
     "海鲜拉面": {
-        "type": "上菜",
-        "map": [[null, "煮熟的生鳕鱼", null], [null, "意大利通心粉", null], [null, null, null]],
-        "ingredients": [["煮熟的生鳕鱼"], ["意大利通心粉"]]
+        type: "上菜",
+        map: [[null, "煮熟的生鳕鱼", null], [null, "意大利通心粉", null], [null, null, null]],
+        ingredients: [["煮熟的生鳕鱼"], ["意大利通心粉"]]
     },
     "丰盛的牛肉拉面": {
-        "type": "上菜",
-        "map": [["菠菜", "豌豆", "油炸的鸡蛋"], ["胡萝卜", "牛肉拉面", "油炸的甜椒"], ["切碎的姜", "切碎的欧芹", "切碎的大蒜"]],
-        "ingredients": [["菠菜"], ["豌豆"], ["油炸的鸡蛋"], ["胡萝卜"], ["牛肉拉面"], ["油炸的甜椒"], ["切碎的姜"], ["切碎的欧芹"], ["切碎的大蒜"]]
+        type: "上菜",
+        map: [["菠菜", "豌豆", "油炸的鸡蛋"], ["胡萝卜", "牛肉拉面", "油炸的甜椒"], ["切碎的姜", "切碎的欧芹", "切碎的大蒜"]],
+        ingredients: [["菠菜"], ["豌豆"], ["油炸的鸡蛋"], ["胡萝卜"], ["牛肉拉面"], ["油炸的甜椒"], ["切碎的姜"], ["切碎的欧芹"], ["切碎的大蒜"]]
     },
     "丰盛的鸡肉拉面": {
-        "type": "上菜",
-        "map": [["切碎的洋葱", "黄油", "切碎的红色蘑菇"], ["盐", "鸡肉拉面", "切片的辣椒"], ["切碎的姜", "切碎的欧芹", "切碎的大蒜"]],
-        "ingredients": [["切碎的洋葱"], ["黄油"], ["切碎的红色蘑菇"], ["盐"], ["鸡肉拉面"], ["切片的辣椒"], ["切碎的姜"], ["切碎的欧芹"], ["切碎的大蒜"]]
+        type: "上菜",
+        map: [["切碎的洋葱", "黄油", "切碎的红色蘑菇"], ["盐", "鸡肉拉面", "切片的辣椒"], ["切碎的姜", "切碎的欧芹", "切碎的大蒜"]],
+        ingredients: [["切碎的洋葱"], ["黄油"], ["切碎的红色蘑菇"], ["盐"], ["鸡肉拉面"], ["切片的辣椒"], ["切碎的姜"], ["切碎的欧芹"], ["切碎的大蒜"]]
     },
     "丰盛的海鲜拉面": {
-        "type": "上菜",
-        "map": [["煮熟的鸡蛋", "烤制的河豚", "咖喱叶"], ["切片的酸橙", "海鲜拉面", "烤制的生鲑鱼"], ["切碎的姜", "切碎的香菜", "切碎的大蒜"]],
-        "ingredients": [["煮熟的鸡蛋"], ["烤制的河豚"], ["咖喱叶"], ["切片的酸橙"], ["海鲜拉面"], ["烤制的生鲑鱼"], ["切碎的姜"], ["切碎的香菜"], ["切碎的大蒜"]]
+        type: "上菜",
+        map: [["煮熟的鸡蛋", "烤制的河豚", "咖喱叶"], ["切片的酸橙", "海鲜拉面", "烤制的生鲑鱼"], ["切碎的姜", "切碎的香菜", "切碎的大蒜"]],
+        ingredients: [["煮熟的鸡蛋"], ["烤制的河豚"], ["咖喱叶"], ["切片的酸橙"], ["海鲜拉面"], ["烤制的生鲑鱼"], ["切碎的姜"], ["切碎的香菜"], ["切碎的大蒜"]]
     },
     "贝果": {
-        "type": "烘焙",
-        "map": [[null, "盐", null], [null, "面团", null], [null, null, null]],
-        "ingredients": [["盐"], ["面团"]]
+        type: "烘焙",
+        map: [[null, "盐", null], [null, "面团", null], [null, null, null]],
+        ingredients: [["盐"], ["面团"]]
     },
     "贝果零食": {
-        "type": "上菜",
-        "map": [[null, "奶酪", null], [null, "搅拌的番茄", null], [null, "贝果", null]],
-        "ingredients": [["奶酪"], ["搅拌的番茄"], ["贝果"]]
+        type: "上菜",
+        map: [[null, "奶酪", null], [null, "搅拌的番茄", null], [null, "贝果", null]],
+        ingredients: [["奶酪"], ["搅拌的番茄"], ["贝果"]]
     },
     "奶油芝士贝果": {
-        "type": "上菜",
-        "map": [[null, "贝果", null], [null, "奶油芝士", null], [null, null, null]],
-        "ingredients": [["贝果"], ["奶油芝士"]]
+        type: "上菜",
+        map: [[null, "贝果", null], [null, "奶油芝士", null], [null, null, null]],
+        ingredients: [["贝果"], ["奶油芝士"]]
     },
     "肉饼": {
-        "type": "烘焙",
-        "map": [["蕃茄酱", "鸡蛋", "切碎的面包"], ["奶桶", "剁碎的生牛肉", "切碎的百里香"], ["盐", "切碎的洋葱", "芥末"]],
-        "ingredients": [["蕃茄酱"], ["鸡蛋"], ["切碎的面包"], ["奶桶"], ["剁碎的生牛肉"], ["切碎的百里香"], ["盐"], ["切碎的洋葱"], ["芥末"]]
+        type: "烘焙",
+        map: [["蕃茄酱", "鸡蛋", "切碎的面包"], ["奶桶", "剁碎的生牛肉", "切碎的百里香"], ["盐", "切碎的洋葱", "芥末"]],
+        ingredients: [["蕃茄酱"], ["鸡蛋"], ["切碎的面包"], ["奶桶"], ["剁碎的生牛肉"], ["切碎的百里香"], ["盐"], ["切碎的洋葱"], ["芥末"]]
     },
     "香肠": {
-        "type": "烤制",
-        "map": [["糖", "盐", "切碎的大蒜"], ["剁碎的生猪排", null, null], [null, null, null]],
-        "ingredients": [["糖"], ["盐"], ["切碎的大蒜"], ["剁碎的生猪排"]]
+        type: "烤制",
+        map: [["糖", "盐", "切碎的大蒜"], ["剁碎的生猪排", null, null], [null, null, null]],
+        ingredients: [["糖"], ["盐"], ["切碎的大蒜"], ["剁碎的生猪排"]]
     },
     "Soylent": {
-        "type": "上菜",
-        "map": [["搅拌的生牛肉", "搅拌的香蕉", "搅拌的可可豆"], ["搅拌的鳄梨", "水桶", "搅拌的香子兰"], ["搅拌的菠菜", "搅拌的大豆", "冰"]],
-        "ingredients": [["搅拌的生牛肉"], ["搅拌的香蕉"], ["搅拌的可可豆"], ["搅拌的鳄梨"], ["水桶"], ["搅拌的香子兰"], ["搅拌的菠菜"], ["搅拌的大豆"], ["冰"]]
+        type: "上菜",
+        map: [["搅拌的生牛肉", "搅拌的香蕉", "搅拌的可可豆"], ["搅拌的鳄梨", "水桶", "搅拌的香子兰"], ["搅拌的菠菜", "搅拌的大豆", "冰"]],
+        ingredients: [["搅拌的生牛肉"], ["搅拌的香蕉"], ["搅拌的可可豆"], ["搅拌的鳄梨"], ["水桶"], ["搅拌的香子兰"], ["搅拌的菠菜"], ["搅拌的大豆"], ["冰"]]
     },
     "土豆饼": {
-        "type": "上菜",
-        "map": [[null, "盐", null], [null, "油炸的马铃薯", null], [null, null, null]],
-        "ingredients": [["盐"], ["油炸的马铃薯"]]
+        type: "上菜",
+        map: [[null, "盐", null], [null, "油炸的马铃薯", null], [null, null, null]],
+        ingredients: [["盐"], ["油炸的马铃薯"]]
     },
     "甜蜂巢": {
-        "type": "上菜",
-        "map": [["蜜脾", "蜜脾", "蜜脾"], [null, "蜂箱", null], [null, null, null]],
-        "ingredients": [["蜜脾", 3], ["蜂箱"]]
+        type: "上菜",
+        map: [["蜜脾", "蜜脾", "蜜脾"], [null, "蜂箱", null], [null, null, null]],
+        ingredients: [["蜜脾", 3], ["蜂箱"]]
     },
     "肉桂卷": {
-        "type": "烘焙",
-        "map": [["面团", "面团", "糖"], ["面团", "剁碎的肉桂", "面团"], ["面团", "面团", "面团"]],
-        "ingredients": [["面团", 7], ["糖"], ["剁碎的肉桂"]]
+        type: "烘焙",
+        map: [["面团", "面团", "糖"], ["面团", "剁碎的肉桂", "面团"], ["面团", "面团", "面团"]],
+        ingredients: [["面团", 7], ["糖"], ["剁碎的肉桂"]]
     },
     "人造绿宝石碎片": {
-        "type": "增强型工作台",
-        "map": [["石块", "人造绿宝石", null], ["人造绿宝石", null, null], [null, null, null]],
-        "ingredients": [["石块"], ["人造绿宝石", 2]],
-        "count": 3
+        type: "增强型工作台",
+        map: [["石块", "人造绿宝石", null], ["人造绿宝石", null, null], [null, null, null]],
+        ingredients: [["石块"], ["人造绿宝石", 2]],
+        count: 3
     },
     "光学玻璃": {
-        "type": "增强型工作台",
-        "map": [["玻璃", "玻璃", "玻璃"], ["玻璃", "人造绿宝石碎片", "玻璃"], ["玻璃", "玻璃", "玻璃"]],
-        "ingredients": [["玻璃", 8], ["人造绿宝石碎片"]],
-        "count": 8
+        type: "增强型工作台",
+        map: [["玻璃", "玻璃", "玻璃"], ["玻璃", "人造绿宝石碎片", "玻璃"], ["玻璃", "玻璃", "玻璃"]],
+        ingredients: [["玻璃", 8], ["人造绿宝石碎片"]],
+        count: 8
     },
     "光缆": {
-        "type": "增强型工作台",
-        "map": [["光学玻璃", "光学玻璃", "光学玻璃"], ["铜线", "人造绿宝石碎片", "铜线"], ["光学玻璃", "光学玻璃", "光学玻璃"]],
-        "ingredients": [["光学玻璃", 6], ["铜线", 2], ["人造绿宝石碎片"]],
-        "count": 16
+        type: "增强型工作台",
+        map: [["光学玻璃", "光学玻璃", "光学玻璃"], ["铜线", "人造绿宝石碎片", "铜线"], ["光学玻璃", "光学玻璃", "光学玻璃"]],
+        ingredients: [["光学玻璃", 6], ["铜线", 2], ["人造绿宝石碎片"]],
+        count: 16
     },
     "光学之星": {
-        "type": "增强型工作台",
-        "map": [["光学玻璃", "光缆", "光学玻璃"], ["光缆", "下界之星", "光缆"], ["光学玻璃", "光缆", "光学玻璃"]],
-        "ingredients": [["光学玻璃", 4], ["光缆", 4], ["下界之星"]]
+        type: "增强型工作台",
+        map: [["光学玻璃", "光缆", "光学玻璃"], ["光缆", "下界之星", "光缆"], ["光学玻璃", "光缆", "光学玻璃"]],
+        ingredients: [["光学玻璃", 4], ["光缆", 4], ["下界之星"]]
     },
     "放射性光学之星": {
-        "type": "增强型工作台",
-        "map": [["起泡锭", "起泡锭", "起泡锭"], ["光缆", "光学之星", "光缆"], ["起泡锭", "起泡锭", "起泡锭"]],
-        "ingredients": [["起泡锭", 6], ["光缆", 2], ["光学之星"]]
+        type: "增强型工作台",
+        map: [["起泡锭", "起泡锭", "起泡锭"], ["光缆", "光学之星", "光缆"], ["起泡锭", "起泡锭", "起泡锭"]],
+        ingredients: [["起泡锭", 6], ["光缆", 2], ["光学之星"]]
     },
     "缩小底座": {
-        "type": "增强型工作台",
-        "map": [["科林斯青铜锭", "机器人交互接口(物品)", "科林斯青铜锭"], ["光缆", "放射性光学之星", "光缆"], ["科林斯青铜锭", "机器人内存核心", "科林斯青铜锭"]],
-        "ingredients": [["科林斯青铜锭", 4], ["机器人交互接口(物品)"], ["光缆", 2], ["放射性光学之星"], ["机器人内存核心"]]
+        type: "增强型工作台",
+        map: [["科林斯青铜锭", "机器人交互接口(物品)", "科林斯青铜锭"], ["光缆", "放射性光学之星", "光缆"], ["科林斯青铜锭", "机器人内存核心", "科林斯青铜锭"]],
+        ingredients: [["科林斯青铜锭", 4], ["机器人交互接口(物品)"], ["光缆", 2], ["放射性光学之星"], ["机器人内存核心"]]
     },
     "简易纳米机器人": {
-        "type": "增强型工作台",
-        "map": [["缩小底座", "可编程式机器人(普通)", null], [null, null, null], [null, null, null]],
-        "ingredients": [["缩小底座"], ["可编程式机器人(普通)"]],
-        "count": 4
+        type: "增强型工作台",
+        map: [["缩小底座", "可编程式机器人(普通)", null], [null, null, null], [null, null, null]],
+        ingredients: [["缩小底座"], ["可编程式机器人(普通)"]],
+        count: 4
     },
     "高级纳米机器人": {
-        "type": "增强型工作台",
-        "map": [["缩小底座", "可授权式可编程式机器人(普通)", null], [null, null, null], [null, null, null]],
-        "ingredients": [["缩小底座"], ["可授权式可编程式机器人(普通)"]],
-        "count": 4
+        type: "增强型工作台",
+        map: [["缩小底座", "可授权式可编程式机器人(普通)", null], [null, null, null], [null, null, null]],
+        ingredients: [["缩小底座"], ["可授权式可编程式机器人(普通)"]],
+        count: 4
     },
     "人工智能核心": {
-        "type": "增强型工作台",
-        "map": [["基础电路板", "机器人内存核心", "基础电路板"], ["基础电路板", "高级纳米机器人", "基础电路板"], ["基础电路板", "机器人内存核心", "基础电路板"]],
-        "ingredients": [["基础电路板", 6], ["机器人内存核心", 2], ["高级纳米机器人"]]
+        type: "增强型工作台",
+        map: [["基础电路板", "机器人内存核心", "基础电路板"], ["基础电路板", "高级纳米机器人", "基础电路板"], ["基础电路板", "机器人内存核心", "基础电路板"]],
+        ingredients: [["基础电路板", 6], ["机器人内存核心", 2], ["高级纳米机器人"]]
     },
     "充能人工智能核心": {
-        "type": "增强型工作台",
-        "map": [["高级电路板", "放射性光学之星", "高级电路板"], ["高级电路板", "人工智能核心", "高级电路板"], ["高级电路板", "放射性光学之星", "高级电路板"]],
-        "ingredients": [["高级电路板", 6], ["放射性光学之星", 2], ["人工智能核心"]]
+        type: "增强型工作台",
+        map: [["高级电路板", "放射性光学之星", "高级电路板"], ["高级电路板", "人工智能核心", "高级电路板"], ["高级电路板", "放射性光学之星", "高级电路板"]],
+        ingredients: [["高级电路板", 6], ["放射性光学之星", 2], ["人工智能核心"]]
     },
     "古代人工智能核心": {
-        "type": "增强型工作台",
-        "map": [["镎", "多功能工具-V", "镎"], ["镎", "充能人工智能核心", "镎"], ["镎", "电动坩埚-III", "镎"]],
-        "ingredients": [["镎", 6], ["多功能工具-V"], ["充能人工智能核心"], ["电动坩埚-III"]]
+        type: "增强型工作台",
+        map: [["镎", "多功能工具-V", "镎"], ["镎", "充能人工智能核心", "镎"], ["镎", "电动坩埚-III", "镎"]],
+        ingredients: [["镎", 6], ["多功能工具-V"], ["充能人工智能核心"], ["电动坩埚-III"]]
     },
     "跨跃维度的存在": {
-        "type": "增强型工作台",
-        "map": [["钚", "多功能工具-VI", "钚"], ["钚", "古代人工智能核心", "钚"], ["钚", "下界之星反应堆", "钚"]],
-        "ingredients": [["钚", 6], ["多功能工具-VI"], ["古代人工智能核心"], ["下界之星反应堆"]]
+        type: "增强型工作台",
+        map: [["钚", "多功能工具-VI", "钚"], ["钚", "古代人工智能核心", "钚"], ["钚", "下界之星反应堆", "钚"]],
+        ingredients: [["钚", 6], ["多功能工具-VI"], ["古代人工智能核心"], ["下界之星反应堆"]]
     },
     "网络控制器": {
-        "type": "增强型工作台",
-        "map": [["光学玻璃", "光缆", "光学玻璃"], ["光缆", "货运管理器", "光缆"], ["光学玻璃", "光缆", "光学玻璃"]],
-        "ingredients": [["光学玻璃", 4], ["光缆", 4], ["货运管理器"]]
+        type: "增强型工作台",
+        map: [["光学玻璃", "光缆", "光学玻璃"], ["光缆", "货运管理器", "光缆"], ["光学玻璃", "光缆", "光学玻璃"]],
+        ingredients: [["光学玻璃", 4], ["光缆", 4], ["货运管理器"]]
     },
     "网桥": {
-        "type": "增强型工作台",
-        "map": [["光学玻璃", "光缆", "光学玻璃"], ["光缆", "货运节点(连接器)", "光缆"], ["光学玻璃", "光缆", "光学玻璃"]],
-        "ingredients": [["光学玻璃", 4], ["光缆", 4], ["货运节点(连接器)"]]
+        type: "增强型工作台",
+        map: [["光学玻璃", "光缆", "光学玻璃"], ["光缆", "货运节点(连接器)", "光缆"], ["光学玻璃", "光缆", "光学玻璃"]],
+        ingredients: [["光学玻璃", 4], ["光缆", 4], ["货运节点(连接器)"]]
     },
     "网络监视器": {
-        "type": "增强型工作台",
-        "map": [["网桥", "光缆", "网桥"], ["光缆", "货运马达", "光缆"], ["网桥", "光缆", "网桥"]],
-        "ingredients": [["网桥", 4], ["光缆", 4], ["货运马达"]]
+        type: "增强型工作台",
+        map: [["网桥", "光缆", "网桥"], ["光缆", "货运马达", "光缆"], ["网桥", "光缆", "网桥"]],
+        ingredients: [["网桥", 4], ["光缆", 4], ["货运马达"]]
     },
     "网络入口": {
-        "type": "增强型工作台",
-        "map": [["网桥", "光缆", "网桥"], ["光缆", "货运节点(输入)", "光缆"], ["网桥", "光缆", "网桥"]],
-        "ingredients": [["网桥", 4], ["光缆", 4], ["货运节点(输入)"]]
+        type: "增强型工作台",
+        map: [["网桥", "光缆", "网桥"], ["光缆", "货运节点(输入)", "光缆"], ["网桥", "光缆", "网桥"]],
+        ingredients: [["网桥", 4], ["光缆", 4], ["货运节点(输入)"]]
     },
     "网络出口": {
-        "type": "增强型工作台",
-        "map": [["网桥", "光缆", "网桥"], ["光缆", "高级货运节点(输出)", "光缆"], ["网桥", "光缆", "网桥"]],
-        "ingredients": [["网桥", 4], ["光缆", 4], ["高级货运节点(输出)"]]
+        type: "增强型工作台",
+        map: [["网桥", "光缆", "网桥"], ["光缆", "高级货运节点(输出)", "光缆"], ["网桥", "光缆", "网桥"]],
+        ingredients: [["网桥", 4], ["光缆", 4], ["高级货运节点(输出)"]]
     },
     "网络抓取器": {
-        "type": "增强型工作台",
-        "map": [["光学玻璃", "光缆", "光学玻璃"], ["光缆", "网络入口", "光缆"], ["光学玻璃", "光缆", "光学玻璃"]],
-        "ingredients": [["光学玻璃", 4], ["光缆", 4], ["网络入口"]]
+        type: "增强型工作台",
+        map: [["光学玻璃", "光缆", "光学玻璃"], ["光缆", "网络入口", "光缆"], ["光学玻璃", "光缆", "光学玻璃"]],
+        ingredients: [["光学玻璃", 4], ["光缆", 4], ["网络入口"]]
     },
     "网络推送器": {
-        "type": "增强型工作台",
-        "map": [["光学玻璃", "光缆", "光学玻璃"], ["光缆", "网络出口", "光缆"], ["光学玻璃", "光缆", "光学玻璃"]],
-        "ingredients": [["光学玻璃", 4], ["光缆", 4], ["网络出口"]]
+        type: "增强型工作台",
+        map: [["光学玻璃", "光缆", "光学玻璃"], ["光缆", "网络出口", "光缆"], ["光学玻璃", "光缆", "光学玻璃"]],
+        ingredients: [["光学玻璃", 4], ["光缆", 4], ["网络出口"]]
     },
     "网络推送器V2": {
-        "type": "增强型工作台",
-        "map": [["网络推送器", "光缆", "网络推送器"], ["光缆", "网络推送器", "光缆"], ["光学玻璃", "光缆", "光学玻璃"]],
-        "ingredients": [["网络推送器", 3], ["光缆", 4], ["光学玻璃", 2]]
+        type: "增强型工作台",
+        map: [["网络推送器", "光缆", "网络推送器"], ["光缆", "网络推送器", "光缆"], ["光学玻璃", "光缆", "光学玻璃"]],
+        ingredients: [["网络推送器", 3], ["光缆", 4], ["光学玻璃", 2]]
     },
     "网络推送器V3": {
-        "type": "增强型工作台",
-        "map": [["网络推送器V2", "光缆", "网络推送器V2"], ["光缆", "网络推送器V2", "光缆"], ["光学玻璃", "光缆", "光学玻璃"]],
-        "ingredients": [["网络推送器V2", 3], ["光缆", 4], ["光学玻璃", 2]]
+        type: "增强型工作台",
+        map: [["网络推送器V2", "光缆", "网络推送器V2"], ["光缆", "网络推送器V2", "光缆"], ["光学玻璃", "光缆", "光学玻璃"]],
+        ingredients: [["网络推送器V2", 3], ["光缆", 4], ["光学玻璃", 2]]
     },
     "网络剪切器": {
-        "type": "增强型工作台",
-        "map": [["光学玻璃", "网络电表", "光学玻璃"], ["光缆", "网络抓取器", "光缆"], ["光学玻璃", "网络插口(1)", "光学玻璃"]],
-        "ingredients": [["光学玻璃", 4], ["网络电表"], ["光缆", 2], ["网络抓取器"], ["网络插口(1)"]]
+        type: "增强型工作台",
+        map: [["光学玻璃", "网络电表", "光学玻璃"], ["光缆", "网络抓取器", "光缆"], ["光学玻璃", "网络插口(1)", "光学玻璃"]],
+        ingredients: [["光学玻璃", 4], ["网络电表"], ["光缆", 2], ["网络抓取器"], ["网络插口(1)"]]
     },
     "网络粘贴器": {
-        "type": "增强型工作台",
-        "map": [["光学玻璃", "网络电表", "光学玻璃"], ["光缆", "网络推送器", "光缆"], ["光学玻璃", "网络插口(1)", "光学玻璃"]],
-        "ingredients": [["光学玻璃", 4], ["网络电表"], ["光缆", 2], ["网络推送器"], ["网络插口(1)"]]
+        type: "增强型工作台",
+        map: [["光学玻璃", "网络电表", "光学玻璃"], ["光缆", "网络推送器", "光缆"], ["光学玻璃", "网络插口(1)", "光学玻璃"]],
+        ingredients: [["光学玻璃", 4], ["网络电表"], ["光缆", 2], ["网络推送器"], ["网络插口(1)"]]
     },
     "网络吸尘器": {
-        "type": "增强型工作台",
-        "map": [["光学玻璃", "网络电表", "光学玻璃"], ["光缆", "网络入口", "光缆"], ["光学玻璃", "网络插口(1)", "光学玻璃"]],
-        "ingredients": [["光学玻璃", 4], ["网络电表"], ["光缆", 2], ["网络入口"], ["网络插口(1)"]]
+        type: "增强型工作台",
+        map: [["光学玻璃", "网络电表", "光学玻璃"], ["光缆", "网络入口", "光缆"], ["光学玻璃", "网络插口(1)", "光学玻璃"]],
+        ingredients: [["光学玻璃", 4], ["网络电表"], ["光缆", 2], ["网络入口"], ["网络插口(1)"]]
     },
     "网络原版容器抓取器": {
-        "type": "增强型工作台",
-        "map": [["光学玻璃", "光缆", "光学玻璃"], ["漏斗", "网络抓取器", "漏斗"], ["光学玻璃", "光缆", "光学玻璃"]],
-        "ingredients": [["光学玻璃", 4], ["光缆", 2], ["漏斗", 2], ["网络抓取器"]]
+        type: "增强型工作台",
+        map: [["光学玻璃", "光缆", "光学玻璃"], ["漏斗", "网络抓取器", "漏斗"], ["光学玻璃", "光缆", "光学玻璃"]],
+        ingredients: [["光学玻璃", 4], ["光缆", 2], ["漏斗", 2], ["网络抓取器"]]
     },
     "网络原版容器推送器": {
-        "type": "增强型工作台",
-        "map": [["光学玻璃", "漏斗", "光学玻璃"], ["光缆", "网络推送器", "光缆"], ["光学玻璃", "漏斗", "光学玻璃"]],
-        "ingredients": [["光学玻璃", 4], ["漏斗", 2], ["光缆", 2], ["网络推送器"]]
+        type: "增强型工作台",
+        map: [["光学玻璃", "漏斗", "光学玻璃"], ["光缆", "网络推送器", "光缆"], ["光学玻璃", "漏斗", "光学玻璃"]],
+        ingredients: [["光学玻璃", 4], ["漏斗", 2], ["光缆", 2], ["网络推送器"]]
     },
     "网络无线发射器": {
-        "type": "增强型工作台",
-        "map": [["光学玻璃", "高级纳米机器人", "光学玻璃"], ["光缆", "网络推送器", "光缆"], ["光学玻璃", "古代人工智能核心", "光学玻璃"]],
-        "ingredients": [["光学玻璃", 4], ["高级纳米机器人"], ["光缆", 2], ["网络推送器"], ["古代人工智能核心"]]
+        type: "增强型工作台",
+        map: [["光学玻璃", "高级纳米机器人", "光学玻璃"], ["光缆", "网络推送器", "光缆"], ["光学玻璃", "古代人工智能核心", "光学玻璃"]],
+        ingredients: [["光学玻璃", 4], ["高级纳米机器人"], ["光缆", 2], ["网络推送器"], ["古代人工智能核心"]]
     },
     "网络无线接收器": {
-        "type": "增强型工作台",
-        "map": [["光学玻璃", "简易纳米机器人", "光学玻璃"], ["光缆", "网络抓取器", "光缆"], ["光学玻璃", "人工智能核心", "光学玻璃"]],
-        "ingredients": [["光学玻璃", 4], ["简易纳米机器人"], ["光缆", 2], ["网络抓取器"], ["人工智能核心"]]
+        type: "增强型工作台",
+        map: [["光学玻璃", "简易纳米机器人", "光学玻璃"], ["光缆", "网络抓取器", "光缆"], ["光学玻璃", "人工智能核心", "光学玻璃"]],
+        ingredients: [["光学玻璃", 4], ["简易纳米机器人"], ["光缆", 2], ["网络抓取器"], ["人工智能核心"]]
     },
     "网络清除器": {
-        "type": "增强型工作台",
-        "map": [["光学玻璃", "光缆", "光学玻璃"], ["光缆", "垃圾箱", "光缆"], ["光学玻璃", "光缆", "光学玻璃"]],
-        "ingredients": [["光学玻璃", 4], ["光缆", 4], ["垃圾箱"]]
+        type: "增强型工作台",
+        map: [["光学玻璃", "光缆", "光学玻璃"], ["光缆", "垃圾箱", "光缆"], ["光学玻璃", "光缆", "光学玻璃"]],
+        ingredients: [["光学玻璃", 4], ["光缆", 4], ["垃圾箱"]]
     },
     "网格": {
-        "type": "增强型工作台",
-        "map": [["网桥", "光缆", "网桥"], ["光缆", "下界之星", "光缆"], ["网桥", "光缆", "网桥"]],
-        "ingredients": [["网桥", 4], ["光缆", 4], ["下界之星"]]
+        type: "增强型工作台",
+        map: [["网桥", "光缆", "网桥"], ["光缆", "下界之星", "光缆"], ["网桥", "光缆", "网桥"]],
+        ingredients: [["网桥", 4], ["光缆", 4], ["下界之星"]]
     },
     "网格(带合成)": {
-        "type": "增强型工作台",
-        "map": [["光学之星", "光学之星", "光学之星"], ["光学之星", "网格", "光学之星"], ["光学之星", "光学之星", "光学之星"]],
-        "ingredients": [["光学之星", 8], ["网格"]]
+        type: "增强型工作台",
+        map: [["光学之星", "光学之星", "光学之星"], ["光学之星", "网格", "光学之星"], ["光学之星", "光学之星", "光学之星"]],
+        ingredients: [["光学之星", 8], ["网格"]]
     },
     "网络单元": {
-        "type": "增强型工作台",
-        "map": [["网桥", "光缆", "网桥"], ["光缆", "箱子", "光缆"], ["网桥", "光缆", "网桥"]],
-        "ingredients": [["网桥", 4], ["光缆", 4], ["箱子"]]
+        type: "增强型工作台",
+        map: [["网桥", "光缆", "网桥"], ["光缆", "箱子", "光缆"], ["网桥", "光缆", "网桥"]],
+        ingredients: [["网桥", 4], ["光缆", 4], ["箱子"]]
     },
     "网络阻断器": {
-        "type": "增强型工作台",
-        "map": [["网桥", "光缆", "网桥"], ["光缆", "网络单元", "光缆"], ["网桥", "简易纳米机器人", "网桥"]],
-        "ingredients": [["网桥", 4], ["光缆", 3], ["网络单元"], ["简易纳米机器人"]]
+        type: "增强型工作台",
+        map: [["网桥", "光缆", "网桥"], ["光缆", "网络单元", "光缆"], ["网桥", "简易纳米机器人", "网桥"]],
+        ingredients: [["网桥", 4], ["光缆", 3], ["网络单元"], ["简易纳米机器人"]]
     },
     "网络量子工作台": {
-        "type": "增强型工作台",
-        "map": [["光学玻璃", "高级电路板", "光学玻璃"], ["光缆", "网桥", "光缆"], ["光学玻璃", "高级电路板", "光学玻璃"]],
-        "ingredients": [["光学玻璃", 4], ["高级电路板", 2], ["光缆", 2], ["网桥"]]
+        type: "增强型工作台",
+        map: [["光学玻璃", "高级电路板", "光学玻璃"], ["光缆", "网桥", "光缆"], ["光学玻璃", "高级电路板", "光学玻璃"]],
+        ingredients: [["光学玻璃", 4], ["高级电路板", 2], ["光缆", 2], ["网桥"]]
     },
     "网络量子存储(64)": {
-        "type": "网络量子工作台",
-        "map": [["橡木木板", "橡木木板", "橡木木板"], ["橡木木板", "箱子", "橡木木板"], ["橡木木板", "橡木木板", "橡木木板"]],
-        "ingredients": [["橡木木板", 8], ["箱子"]]
+        type: "网络量子工作台",
+        map: [["橡木木板", "橡木木板", "橡木木板"], ["橡木木板", "箱子", "橡木木板"], ["橡木木板", "橡木木板", "橡木木板"]],
+        ingredients: [["橡木木板", 8], ["箱子"]]
     },
     "网络量子存储(256)": {
-        "type": "网络量子工作台",
-        "map": [["玻璃", "玻璃", "玻璃"], ["玻璃", "网络量子存储(64)", "玻璃"], ["玻璃", "玻璃", "玻璃"]],
-        "ingredients": [["玻璃", 8], ["网络量子存储(64)"]]
+        type: "网络量子工作台",
+        map: [["玻璃", "玻璃", "玻璃"], ["玻璃", "网络量子存储(64)", "玻璃"], ["玻璃", "玻璃", "玻璃"]],
+        ingredients: [["玻璃", 8], ["网络量子存储(64)"]]
     },
     "网络量子存储(1024)": {
-        "type": "网络量子工作台",
-        "map": [["玻璃", "货运马达", "玻璃"], ["箱子", "网络量子存储(256)", "箱子"], ["玻璃", "箱子", "玻璃"]],
-        "ingredients": [["玻璃", 4], ["货运马达"], ["箱子", 3], ["网络量子存储(256)"]]
+        type: "网络量子工作台",
+        map: [["玻璃", "货运马达", "玻璃"], ["箱子", "网络量子存储(256)", "箱子"], ["玻璃", "箱子", "玻璃"]],
+        ingredients: [["玻璃", 4], ["货运马达"], ["箱子", 3], ["网络量子存储(256)"]]
     },
     "网络量子存储(4k)": {
-        "type": "网络量子工作台",
-        "map": [["光学玻璃", "光学玻璃", "光学玻璃"], ["光缆", "网络量子存储(1024)", "光缆"], ["光学玻璃", "光学玻璃", "光学玻璃"]],
-        "ingredients": [["光学玻璃", 6], ["光缆", 2], ["网络量子存储(1024)"]]
+        type: "网络量子工作台",
+        map: [["光学玻璃", "光学玻璃", "光学玻璃"], ["光缆", "网络量子存储(1024)", "光缆"], ["光学玻璃", "光学玻璃", "光学玻璃"]],
+        ingredients: [["光学玻璃", 6], ["光缆", 2], ["网络量子存储(1024)"]]
     },
     "网络量子存储(32K)": {
-        "type": "网络量子工作台",
-        "map": [["光学玻璃", "铝黄铜锭", "光学玻璃"], ["人造蓝宝石", "网络量子存储(4k)", "人造蓝宝石"], ["光学玻璃", "铝黄铜锭", "光学玻璃"]],
-        "ingredients": [["光学玻璃", 4], ["铝黄铜锭", 2], ["人造蓝宝石", 2], ["网络量子存储(4k)"]]
+        type: "网络量子工作台",
+        map: [["光学玻璃", "铝黄铜锭", "光学玻璃"], ["人造蓝宝石", "网络量子存储(4k)", "人造蓝宝石"], ["光学玻璃", "铝黄铜锭", "光学玻璃"]],
+        ingredients: [["光学玻璃", 4], ["铝黄铜锭", 2], ["人造蓝宝石", 2], ["网络量子存储(4k)"]]
     },
     "网络量子存储(262K)": {
-        "type": "网络量子工作台",
-        "map": [["光学玻璃", "科林斯青铜锭", "光学玻璃"], ["人造钻石", "网络量子存储(32K)", "人造钻石"], ["光学玻璃", "科林斯青铜锭", "光学玻璃"]],
-        "ingredients": [["光学玻璃", 4], ["科林斯青铜锭", 2], ["人造钻石", 2], ["网络量子存储(32K)"]]
+        type: "网络量子工作台",
+        map: [["光学玻璃", "科林斯青铜锭", "光学玻璃"], ["人造钻石", "网络量子存储(32K)", "人造钻石"], ["光学玻璃", "科林斯青铜锭", "光学玻璃"]],
+        ingredients: [["光学玻璃", 4], ["科林斯青铜锭", 2], ["人造钻石", 2], ["网络量子存储(32K)"]]
     },
     "网络量子存储(2M)": {
-        "type": "网络量子工作台",
-        "map": [["光学玻璃", "硬化金属", "光学玻璃"], ["人造绿宝石", "网络量子存储(262K)", "人造绿宝石"], ["光学玻璃", "硬化金属", "光学玻璃"]],
-        "ingredients": [["光学玻璃", 4], ["硬化金属", 2], ["人造绿宝石", 2], ["网络量子存储(262K)"]]
+        type: "网络量子工作台",
+        map: [["光学玻璃", "硬化金属", "光学玻璃"], ["人造绿宝石", "网络量子存储(262K)", "人造绿宝石"], ["光学玻璃", "硬化金属", "光学玻璃"]],
+        ingredients: [["光学玻璃", 4], ["硬化金属", 2], ["人造绿宝石", 2], ["网络量子存储(262K)"]]
     },
     "网络量子存储(16M)": {
-        "type": "网络量子工作台",
-        "map": [["光学玻璃", "强化合金锭", "光学玻璃"], ["能量水晶", "网络量子存储(2M)", "能量水晶"], ["光学玻璃", "强化合金锭", "光学玻璃"]],
-        "ingredients": [["光学玻璃", 4], ["强化合金锭", 2], ["能量水晶", 2], ["网络量子存储(2M)"]]
+        type: "网络量子工作台",
+        map: [["光学玻璃", "强化合金锭", "光学玻璃"], ["能量水晶", "网络量子存储(2M)", "能量水晶"], ["光学玻璃", "强化合金锭", "光学玻璃"]],
+        ingredients: [["光学玻璃", 4], ["强化合金锭", 2], ["能量水晶", 2], ["网络量子存储(2M)"]]
     },
     "网络量子存储(134M)": {
-        "type": "网络量子工作台",
-        "map": [["钢板", "起泡锭(33%)", "钢板"], ["货运马达", "网络量子存储(16M)", "货运马达"], ["钢板", "起泡锭(33%)", "钢板"]],
-        "ingredients": [["钢板", 4], ["起泡锭(33%)", 2], ["货运马达", 2], ["网络量子存储(16M)"]]
+        type: "网络量子工作台",
+        map: [["钢板", "起泡锭(33%)", "钢板"], ["货运马达", "网络量子存储(16M)", "货运马达"], ["钢板", "起泡锭(33%)", "钢板"]],
+        ingredients: [["钢板", 4], ["起泡锭(33%)", 2], ["货运马达", 2], ["网络量子存储(16M)"]]
     },
     "网络量子存储(1B)": {
-        "type": "网络量子工作台",
-        "map": [["钢筋板", "起泡锭(66%)", "钢筋板"], ["货运节点(连接器)", "网络量子存储(134M)", "货运节点(连接器)"], ["钢筋板", "起泡锭(66%)", "钢筋板"]],
-        "ingredients": [["钢筋板", 4], ["起泡锭(66%)", 2], ["货运节点(连接器)", 2], ["网络量子存储(134M)"]]
+        type: "网络量子工作台",
+        map: [["钢筋板", "起泡锭(66%)", "钢筋板"], ["货运节点(连接器)", "网络量子存储(134M)", "货运节点(连接器)"], ["钢筋板", "起泡锭(66%)", "钢筋板"]],
+        ingredients: [["钢筋板", 4], ["起泡锭(66%)", 2], ["货运节点(连接器)", 2], ["网络量子存储(134M)"]]
     },
     "网络量子存储(∞)": {
-        "type": "网络量子工作台",
-        "map": [["光学玻璃", "起泡锭", "光学玻璃"], ["货运管理器", "网络量子存储(1B)", "货运管理器"], ["光学玻璃", "起泡锭", "光学玻璃"]],
-        "ingredients": [["光学玻璃", 4], ["起泡锭", 2], ["货运管理器", 2], ["网络量子存储(1B)"]]
+        type: "网络量子工作台",
+        map: [["光学玻璃", "起泡锭", "光学玻璃"], ["货运管理器", "网络量子存储(1B)", "货运管理器"], ["光学玻璃", "起泡锭", "光学玻璃"]],
+        ingredients: [["光学玻璃", 4], ["起泡锭", 2], ["货运管理器", 2], ["网络量子存储(1B)"]]
     },
     "网络电容(1)": {
-        "type": "增强型工作台",
-        "map": [["光学玻璃", "光缆", "光学玻璃"], ["光缆", "中型储能电容", "光缆"], ["光学玻璃", "光缆", "光学玻璃"]],
-        "ingredients": [["光学玻璃", 4], ["光缆", 4], ["中型储能电容"]]
+        type: "增强型工作台",
+        map: [["光学玻璃", "光缆", "光学玻璃"], ["光缆", "中型储能电容", "光缆"], ["光学玻璃", "光缆", "光学玻璃"]],
+        ingredients: [["光学玻璃", 4], ["光缆", 4], ["中型储能电容"]]
     },
     "网络电容(2)": {
-        "type": "增强型工作台",
-        "map": [["网络电容(1)", "网络电容(1)", "网络电容(1)"], ["网络电容(1)", "大型储能电容", "网络电容(1)"], ["网络电容(1)", "网络电容(1)", "网络电容(1)"]],
-        "ingredients": [["网络电容(1)", 8], ["大型储能电容"]]
+        type: "增强型工作台",
+        map: [["网络电容(1)", "网络电容(1)", "网络电容(1)"], ["网络电容(1)", "大型储能电容", "网络电容(1)"], ["网络电容(1)", "网络电容(1)", "网络电容(1)"]],
+        ingredients: [["网络电容(1)", 8], ["大型储能电容"]]
     },
     "网络电容(3)": {
-        "type": "增强型工作台",
-        "map": [["网络电容(2)", "网络电容(2)", "网络电容(2)"], ["网络电容(2)", "巨型储能电容", "网络电容(2)"], ["网络电容(2)", "网络电容(2)", "网络电容(2)"]],
-        "ingredients": [["网络电容(2)", 8], ["巨型储能电容"]]
+        type: "增强型工作台",
+        map: [["网络电容(2)", "网络电容(2)", "网络电容(2)"], ["网络电容(2)", "巨型储能电容", "网络电容(2)"], ["网络电容(2)", "网络电容(2)", "网络电容(2)"]],
+        ingredients: [["网络电容(2)", 8], ["巨型储能电容"]]
     },
     "网络电容(4)": {
-        "type": "增强型工作台",
-        "map": [["网络电容(3)", "网络电容(3)", "网络电容(3)"], ["网络电容(3)", "黑金刚石镶边储能电容", "网络电容(3)"], ["网络电容(3)", "网络电容(3)", "网络电容(3)"]],
-        "ingredients": [["网络电容(3)", 8], ["黑金刚石镶边储能电容"]]
+        type: "增强型工作台",
+        map: [["网络电容(3)", "网络电容(3)", "网络电容(3)"], ["网络电容(3)", "黑金刚石镶边储能电容", "网络电容(3)"], ["网络电容(3)", "网络电容(3)", "网络电容(3)"]],
+        ingredients: [["网络电容(3)", 8], ["黑金刚石镶边储能电容"]]
     },
     "网络插口(1)": {
-        "type": "增强型工作台",
-        "map": [["光学玻璃", "光学玻璃", "光学玻璃"], ["光学玻璃", "能源连接器", "光学玻璃"], ["光学玻璃", "光学玻璃", "光学玻璃"]],
-        "ingredients": [["光学玻璃", 8], ["能源连接器"]]
+        type: "增强型工作台",
+        map: [["光学玻璃", "光学玻璃", "光学玻璃"], ["光学玻璃", "能源连接器", "光学玻璃"], ["光学玻璃", "光学玻璃", "光学玻璃"]],
+        ingredients: [["光学玻璃", 8], ["能源连接器"]]
     },
     "网络插口(2)": {
-        "type": "增强型工作台",
-        "map": [["网络插口(1)", "光学玻璃", "网络插口(1)"], ["光学玻璃", "能源连接器", "光学玻璃"], ["网络插口(1)", "光学玻璃", "网络插口(1)"]],
-        "ingredients": [["网络插口(1)", 4], ["光学玻璃", 4], ["能源连接器"]]
+        type: "增强型工作台",
+        map: [["网络插口(1)", "光学玻璃", "网络插口(1)"], ["光学玻璃", "能源连接器", "光学玻璃"], ["网络插口(1)", "光学玻璃", "网络插口(1)"]],
+        ingredients: [["网络插口(1)", 4], ["光学玻璃", 4], ["能源连接器"]]
     },
     "网络电表": {
-        "type": "增强型工作台",
-        "map": [["光学玻璃", "能源调节器", "光学玻璃"], ["光缆", "网络电容(1)", "光缆"], ["光学玻璃", "能源连接器", "光学玻璃"]],
-        "ingredients": [["光学玻璃", 4], ["能源调节器"], ["光缆", 2], ["网络电容(1)"], ["能源连接器"]]
+        type: "增强型工作台",
+        map: [["光学玻璃", "能源调节器", "光学玻璃"], ["光缆", "网络电容(1)", "光缆"], ["光学玻璃", "能源连接器", "光学玻璃"]],
+        ingredients: [["光学玻璃", 4], ["能源调节器"], ["光缆", 2], ["网络电容(1)"], ["能源连接器"]]
     },
     "网络配方编码器": {
-        "type": "增强型工作台",
-        "map": [["基础电路板", "机器人内存核心", "基础电路板"], ["基础电路板", "自动合成机(高级)", "基础电路板"], ["基础电路板", "货运马达", "基础电路板"]],
-        "ingredients": [["基础电路板", 6], ["机器人内存核心"], ["自动合成机(高级)"], ["货运马达"]]
+        type: "增强型工作台",
+        map: [["基础电路板", "机器人内存核心", "基础电路板"], ["基础电路板", "自动合成机(高级)", "基础电路板"], ["基础电路板", "货运马达", "基础电路板"]],
+        ingredients: [["基础电路板", 6], ["机器人内存核心"], ["自动合成机(高级)"], ["货运马达"]]
     },
     "网络自动合成机": {
-        "type": "增强型工作台",
-        "map": [["光学玻璃", "光缆", "光学玻璃"], ["光缆", "简易纳米机器人", "光缆"], ["光学玻璃", "自动合成机(高级)", "光学玻璃"]],
-        "ingredients": [["光学玻璃", 4], ["光缆", 3], ["简易纳米机器人"], ["自动合成机(高级)"]]
+        type: "增强型工作台",
+        map: [["光学玻璃", "光缆", "光学玻璃"], ["光缆", "简易纳米机器人", "光缆"], ["光学玻璃", "自动合成机(高级)", "光学玻璃"]],
+        ingredients: [["光学玻璃", 4], ["光缆", 3], ["简易纳米机器人"], ["自动合成机(高级)"]]
     },
     "网络自动合成机(预留版)": {
-        "type": "增强型工作台",
-        "map": [["光学玻璃", "光缆", "光学玻璃"], ["光缆", "高级纳米机器人", "光缆"], ["光学玻璃", "网络自动合成机", "光学玻璃"]],
-        "ingredients": [["光学玻璃", 4], ["光缆", 3], ["高级纳米机器人"], ["网络自动合成机"]]
+        type: "增强型工作台",
+        map: [["光学玻璃", "光缆", "光学玻璃"], ["光缆", "高级纳米机器人", "光缆"], ["光学玻璃", "网络自动合成机", "光学玻璃"]],
+        ingredients: [["光学玻璃", 4], ["光缆", 3], ["高级纳米机器人"], ["网络自动合成机"]]
     },
     "合成蓝图": {
-        "type": "增强型工作台",
-        "map": [["光缆", "光缆", "光缆"], ["光缆", "纸", "光缆"], ["光缆", "光缆", "光缆"]],
-        "ingredients": [["光缆", 8], ["纸"]]
+        type: "增强型工作台",
+        map: [["光缆", "光缆", "光缆"], ["光缆", "纸", "光缆"], ["光缆", "光缆", "光缆"]],
+        ingredients: [["光缆", 8], ["纸"]]
     },
     "网络探测器": {
-        "type": "增强型工作台",
-        "map": [[null, "硬铝锭", null], [null, "光缆", null], [null, "网桥", null]],
-        "ingredients": [["硬铝锭"], ["光缆"], ["网桥"]]
+        type: "增强型工作台",
+        map: [[null, "硬铝锭", null], [null, "光缆", null], [null, "网桥", null]],
+        ingredients: [["硬铝锭"], ["光缆"], ["网桥"]]
     },
     "网络远程访问器": {
-        "type": "增强型工作台",
-        "map": [[null, "网格", null], [null, "人工智能核心", null], [null, "光学之星", null]],
-        "ingredients": [["网格"], ["人工智能核心"], ["光学之星"]]
+        type: "增强型工作台",
+        map: [[null, "网格", null], [null, "人工智能核心", null], [null, "光学之星", null]],
+        ingredients: [["网格"], ["人工智能核心"], ["光学之星"]]
     },
     "充能网络远程访问器": {
-        "type": "增强型工作台",
-        "map": [[null, "网络远程访问器", null], [null, "充能人工智能核心", null], [null, "网络远程访问器", null]],
-        "ingredients": [["网络远程访问器", 2], ["充能人工智能核心"]]
+        type: "增强型工作台",
+        map: [[null, "网络远程访问器", null], [null, "充能人工智能核心", null], [null, "网络远程访问器", null]],
+        ingredients: [["网络远程访问器", 2], ["充能人工智能核心"]]
     },
     "古代网络远程访问器": {
-        "type": "增强型工作台",
-        "map": [[null, "充能网络远程访问器", null], [null, "古代人工智能核心", null], [null, "充能网络远程访问器", null]],
-        "ingredients": [["充能网络远程访问器", 2], ["古代人工智能核心"]]
+        type: "增强型工作台",
+        map: [[null, "充能网络远程访问器", null], [null, "古代人工智能核心", null], [null, "充能网络远程访问器", null]],
+        ingredients: [["充能网络远程访问器", 2], ["古代人工智能核心"]]
     },
     "终极网络远程访问器": {
-        "type": "增强型工作台",
-        "map": [[null, "古代网络远程访问器", null], [null, "跨跃维度的存在", null], [null, "古代网络远程访问器", null]],
-        "ingredients": [["古代网络远程访问器", 2], ["跨跃维度的存在"]]
+        type: "增强型工作台",
+        map: [[null, "古代网络远程访问器", null], [null, "跨跃维度的存在", null], [null, "古代网络远程访问器", null]],
+        ingredients: [["古代网络远程访问器", 2], ["跨跃维度的存在"]]
     },
     "网络绘制器": {
-        "type": "增强型工作台",
-        "map": [[null, "光缆", null], [null, "蜜脾", null], [null, "蜜脾", null]],
-        "ingredients": [["光缆"], ["蜜脾", 2]]
+        type: "增强型工作台",
+        map: [[null, "光缆", null], [null, "蜜脾", null], [null, "蜜脾", null]],
+        ingredients: [["光缆"], ["蜜脾", 2]]
     },
     "网络配置器": {
-        "type": "增强型工作台",
-        "map": [[null, "放射性光学之星", null], [null, "网络绘制器", null], [null, "人工智能核心", null]],
-        "ingredients": [["放射性光学之星"], ["网络绘制器"], ["人工智能核心"]]
+        type: "增强型工作台",
+        map: [[null, "放射性光学之星", null], [null, "网络绘制器", null], [null, "人工智能核心", null]],
+        ingredients: [["放射性光学之星"], ["网络绘制器"], ["人工智能核心"]]
     },
     "网络无线配置器": {
-        "type": "增强型工作台",
-        "map": [[null, "放射性光学之星", null], [null, "网络配置器", null], [null, "跨跃维度的存在", null]],
-        "ingredients": [["放射性光学之星"], ["网络配置器"], ["跨跃维度的存在"]]
+        type: "增强型工作台",
+        map: [[null, "放射性光学之星", null], [null, "网络配置器", null], [null, "跨跃维度的存在", null]],
+        ingredients: [["放射性光学之星"], ["网络配置器"], ["跨跃维度的存在"]]
     },
     "网络扳手(1)": {
-        "type": "增强型工作台",
-        "map": [[null, "放射性光学之星", null], [null, "钻石剑", null], [null, "人造绿宝石碎片", null]],
-        "ingredients": [["放射性光学之星"], ["钻石剑"], ["人造绿宝石碎片"]]
+        type: "增强型工作台",
+        map: [[null, "放射性光学之星", null], [null, "钻石剑", null], [null, "人造绿宝石碎片", null]],
+        ingredients: [["放射性光学之星"], ["钻石剑"], ["人造绿宝石碎片"]]
     },
     "网络扳手(2)": {
-        "type": "增强型工作台",
-        "map": [[null, "放射性光学之星", null], [null, "网络扳手(1)", null], [null, "人工智能核心", null]],
-        "ingredients": [["放射性光学之星"], ["网络扳手(1)"], ["人工智能核心"]]
+        type: "增强型工作台",
+        map: [[null, "放射性光学之星", null], [null, "网络扳手(1)", null], [null, "人工智能核心", null]],
+        ingredients: [["放射性光学之星"], ["网络扳手(1)"], ["人工智能核心"]]
     },
     "网络扳手(3)": {
-        "type": "增强型工作台",
-        "map": [[null, "放射性光学之星", null], [null, "网络扳手(2)", null], [null, "充能人工智能核心", null]],
-        "ingredients": [["放射性光学之星"], ["网络扳手(2)"], ["充能人工智能核心"]]
+        type: "增强型工作台",
+        map: [[null, "放射性光学之星", null], [null, "网络扳手(2)", null], [null, "充能人工智能核心", null]],
+        ingredients: [["放射性光学之星"], ["网络扳手(2)"], ["充能人工智能核心"]]
     },
     "货运节点快配工具": {
-        "type": "增强型工作台",
-        "map": [["皮革", "光伏电池", "皮革"], ["皮革", "机器人内存核心", "皮革"], ["高级电路板", "小型储能电容", "高级电路板"]],
-        "ingredients": [["皮革", 4], ["光伏电池"], ["机器人内存核心"], ["高级电路板", 2], ["小型储能电容"]]
+        type: "增强型工作台",
+        map: [["皮革", "光伏电池", "皮革"], ["皮革", "机器人内存核心", "皮革"], ["高级电路板", "小型储能电容", "高级电路板"]],
+        ingredients: [["皮革", 4], ["光伏电池"], ["机器人内存核心"], ["高级电路板", 2], ["小型储能电容"]]
     },
     "网络拓展工作台": {
-        "type": "增强型工作台",
-        "map": [["网桥", "高级电路板", "网桥"], ["光缆", "人工智能核心", "光缆"], ["网桥", "高级电路板", "网桥"]],
-        "ingredients": [["网桥", 4], ["高级电路板", 2], ["光缆", 2], ["人工智能核心"]]
+        type: "增强型工作台",
+        map: [["网桥", "高级电路板", "网桥"], ["光缆", "人工智能核心", "光缆"], ["网桥", "高级电路板", "网桥"]],
+        ingredients: [["网桥", 4], ["高级电路板", 2], ["光缆", 2], ["人工智能核心"]]
     },
     "红石块": {
-        "type": "工作台",
-        "map": [["红石粉", "红石粉", "红石粉"], ["红石粉", "红石粉", "红石粉"], ["红石粉", "红石粉", "红石粉"]],
-        "ingredients": [["红石粉", 9]]
+        type: "工作台",
+        map: [["红石粉", "红石粉", "红石粉"], ["红石粉", "红石粉", "红石粉"], ["红石粉", "红石粉", "红石粉"]],
+        ingredients: [["红石粉", 9]]
     },
     "钻石剑": {
-        "type": "工作台",
-        "map": [[null, "钻石", null], [null, "钻石", null], [null, "木棍", null]],
-        "ingredients": [["钻石", 2], ["木棍"]]
+        type: "工作台",
+        map: [[null, "钻石", null], [null, "钻石", null], [null, "木棍", null]],
+        ingredients: [["钻石", 2], ["木棍"]]
     },
     "钻石镐": {
-        "type": "工作台",
-        "map": [["钻石", "钻石", "钻石"], [null, "木棍", null], [null, "木棍", null]],
-        "ingredients": [["钻石", 3], ["木棍", 2]]
+        type: "工作台",
+        map: [["钻石", "钻石", "钻石"], [null, "木棍", null], [null, "木棍", null]],
+        ingredients: [["钻石", 3], ["木棍", 2]]
     },
     "钻石锄": {
-        "type": "工作台",
-        "map": [["钻石", "钻石", null], [null, "木棍", null], [null, "木棍", null]],
-        "ingredients": [["钻石", 2], ["木棍", 2]]
+        type: "工作台",
+        map: [["钻石", "钻石", null], [null, "木棍", null], [null, "木棍", null]],
+        ingredients: [["钻石", 2], ["木棍", 2]]
     },
     "钻石斧": {
-        "type": "工作台",
-        "map": [["钻石", "钻石", null], ["钻石", "木棍", null], [null, "木棍", null]],
-        "ingredients": [["钻石", 3], ["木棍", 2]]
+        type: "工作台",
+        map: [["钻石", "钻石", null], ["钻石", "木棍", null], [null, "木棍", null]],
+        ingredients: [["钻石", 3], ["木棍", 2]]
     },
     "钻石锹": {
-        "type": "工作台",
-        "map": [[null, "钻石", null], [null, "木棍", null], [null, "木棍", null]],
-        "ingredients": [["钻石"], ["木棍", 2]]
+        type: "工作台",
+        map: [[null, "钻石", null], [null, "木棍", null], [null, "木棍", null]],
+        ingredients: [["钻石"], ["木棍", 2]]
     },
     "石英块": {
-        "type": "工作台",
-        "map": [["石英", "石英", null], ["石英", "石英", null], [null, null, null]],
-        "ingredients": [["石英", 4]]
+        type: "工作台",
+        map: [["石英", "石英", null], ["石英", "石英", null], [null, null, null]],
+        ingredients: [["石英", 4]]
     },
     "碗": {
-        "type": "工作台",
-        "map": [["橡木木板", null, "橡木木板"], [null, "橡木木板", null], [null, null, null],],
-        "ingredients": [["橡木木板", 3]],
-        "count": 3,
+        type: "工作台",
+        map: [["橡木木板", null, "橡木木板"], [null, "橡木木板", null], [null, null, null],],
+        ingredients: [["橡木木板", 3]],
+        count: 3,
     },
     "木棍": {
-        "type": "工作台",
-        "map": [[null, "橡木木板", null], [null, "橡木木板", null], [null, null, null],],
-        "ingredients": [["橡木木板", 2]],
-        "count": 4,
+        type: "工作台",
+        map: [[null, "橡木木板", null], [null, "橡木木板", null], [null, null, null],],
+        ingredients: [["橡木木板", 2]],
+        count: 4,
     },
     "橡木木板": {
-        "type": "工作台",
-        "map": [["橡木原木", null, null], [null, null, null], [null, null, null],],
-        "ingredients": [["橡木原木"]],
-        "count": 4,
+        type: "工作台",
+        map: [["橡木原木", null, null], [null, null, null], [null, null, null],],
+        ingredients: [["橡木原木"]],
+        count: 4,
     },
     "石头": {
-        "type": "熔炉",
-        "map": [["圆石", null, null], [null, null, null], [null, null, null],],
-        "ingredients": [["圆石"]],
+        type: "熔炉",
+        map: [["圆石", null, null], [null, null, null], [null, null, null],],
+        ingredients: [["圆石"]],
     },
     "玻璃": {
-        "type": "熔炉",
-        "map": [["沙子", null, null], [null, null, null], [null, null, null]],
-        "ingredients": [["沙子"]],
+        type: "熔炉",
+        map: [["沙子", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["沙子"]],
     },
     "玻璃板": {
-        "type": "工作台",
-        "map": [["玻璃", "玻璃", "玻璃"], ["玻璃", "玻璃", "玻璃"], [null, null, null]],
-        "ingredients": [["玻璃", 6]],
-        "count": 16
+        type: "工作台",
+        map: [["玻璃", "玻璃", "玻璃"], ["玻璃", "玻璃", "玻璃"], [null, null, null]],
+        ingredients: [["玻璃", 6]],
+        count: 16
     },
     "白色染色玻璃": {
-        "type": "工作台",
-        "map": [["玻璃", "玻璃", "玻璃"], ["玻璃", "白色染料", "玻璃"], ["玻璃", "玻璃", "玻璃"]],
-        "ingredients": [["玻璃", 8], ["白色染料"]],
-        "count": 8
+        type: "工作台",
+        map: [["玻璃", "玻璃", "玻璃"], ["玻璃", "白色染料", "玻璃"], ["玻璃", "玻璃", "玻璃"]],
+        ingredients: [["玻璃", 8], ["白色染料"]],
+        count: 8
     },
     "淡灰色染色玻璃": {
-        "type": "工作台",
-        "map": [["玻璃", "玻璃", "玻璃"], ["玻璃", "淡灰色染料", "玻璃"], ["玻璃", "玻璃", "玻璃"]],
-        "ingredients": [["玻璃", 8], ["淡灰色染料"]],
-        "count": 8
+        type: "工作台",
+        map: [["玻璃", "玻璃", "玻璃"], ["玻璃", "淡灰色染料", "玻璃"], ["玻璃", "玻璃", "玻璃"]],
+        ingredients: [["玻璃", 8], ["淡灰色染料"]],
+        count: 8
     },
     "灰色染色玻璃": {
-        "type": "工作台",
-        "map": [["玻璃", "玻璃", "玻璃"], ["玻璃", "灰色染料", "玻璃"], ["玻璃", "玻璃", "玻璃"]],
-        "ingredients": [["玻璃", 8], ["灰色染料"]],
-        "count": 8
+        type: "工作台",
+        map: [["玻璃", "玻璃", "玻璃"], ["玻璃", "灰色染料", "玻璃"], ["玻璃", "玻璃", "玻璃"]],
+        ingredients: [["玻璃", 8], ["灰色染料"]],
+        count: 8
     },
     "黑色染色玻璃": {
-        "type": "工作台",
-        "map": [["玻璃", "玻璃", "玻璃"], ["玻璃", "黑色染料", "玻璃"], ["玻璃", "玻璃", "玻璃"]],
-        "ingredients": [["玻璃", 8], ["黑色染料"]],
-        "count": 8
+        type: "工作台",
+        map: [["玻璃", "玻璃", "玻璃"], ["玻璃", "黑色染料", "玻璃"], ["玻璃", "玻璃", "玻璃"]],
+        ingredients: [["玻璃", 8], ["黑色染料"]],
+        count: 8
     },
     "棕色染色玻璃": {
-        "type": "工作台",
-        "map": [["玻璃", "玻璃", "玻璃"], ["玻璃", "棕色染料", "玻璃"], ["玻璃", "玻璃", "玻璃"]],
-        "ingredients": [["玻璃", 8], ["棕色染料"]],
-        "count": 8
+        type: "工作台",
+        map: [["玻璃", "玻璃", "玻璃"], ["玻璃", "棕色染料", "玻璃"], ["玻璃", "玻璃", "玻璃"]],
+        ingredients: [["玻璃", 8], ["棕色染料"]],
+        count: 8
     },
     "红色染色玻璃": {
-        "type": "工作台",
-        "map": [["玻璃", "玻璃", "玻璃"], ["玻璃", "红色染料", "玻璃"], ["玻璃", "玻璃", "玻璃"]],
-        "ingredients": [["玻璃", 8], ["红色染料"]],
-        "count": 8
+        type: "工作台",
+        map: [["玻璃", "玻璃", "玻璃"], ["玻璃", "红色染料", "玻璃"], ["玻璃", "玻璃", "玻璃"]],
+        ingredients: [["玻璃", 8], ["红色染料"]],
+        count: 8
     },
     "橙色染色玻璃": {
-        "type": "工作台",
-        "map": [["玻璃", "玻璃", "玻璃"], ["玻璃", "橙色染料", "玻璃"], ["玻璃", "玻璃", "玻璃"]],
-        "ingredients": [["玻璃", 8], ["橙色染料"]],
-        "count": 8
+        type: "工作台",
+        map: [["玻璃", "玻璃", "玻璃"], ["玻璃", "橙色染料", "玻璃"], ["玻璃", "玻璃", "玻璃"]],
+        ingredients: [["玻璃", 8], ["橙色染料"]],
+        count: 8
     },
     "黄色染色玻璃": {
-        "type": "工作台",
-        "map": [["玻璃", "玻璃", "玻璃"], ["玻璃", "黄色染料", "玻璃"], ["玻璃", "玻璃", "玻璃"]],
-        "ingredients": [["玻璃", 8], ["黄色染料"]],
-        "count": 8
+        type: "工作台",
+        map: [["玻璃", "玻璃", "玻璃"], ["玻璃", "黄色染料", "玻璃"], ["玻璃", "玻璃", "玻璃"]],
+        ingredients: [["玻璃", 8], ["黄色染料"]],
+        count: 8
     },
     "黄绿色染色玻璃": {
-        "type": "工作台",
-        "map": [["玻璃", "玻璃", "玻璃"], ["玻璃", "黄绿色染料", "玻璃"], ["玻璃", "玻璃", "玻璃"]],
-        "ingredients": [["玻璃", 8], ["黄绿色染料"]],
-        "count": 8
+        type: "工作台",
+        map: [["玻璃", "玻璃", "玻璃"], ["玻璃", "黄绿色染料", "玻璃"], ["玻璃", "玻璃", "玻璃"]],
+        ingredients: [["玻璃", 8], ["黄绿色染料"]],
+        count: 8
     },
     "绿色染色玻璃": {
-        "type": "工作台",
-        "map": [["玻璃", "玻璃", "玻璃"], ["玻璃", "绿色染料", "玻璃"], ["玻璃", "玻璃", "玻璃"]],
-        "ingredients": [["玻璃", 8], ["绿色染料"]],
-        "count": 8
+        type: "工作台",
+        map: [["玻璃", "玻璃", "玻璃"], ["玻璃", "绿色染料", "玻璃"], ["玻璃", "玻璃", "玻璃"]],
+        ingredients: [["玻璃", 8], ["绿色染料"]],
+        count: 8
     },
     "青色染色玻璃": {
-        "type": "工作台",
-        "map": [["玻璃", "玻璃", "玻璃"], ["玻璃", "青色染料", "玻璃"], ["玻璃", "玻璃", "玻璃"]],
-        "ingredients": [["玻璃", 8], ["青色染料"]],
-        "count": 8
+        type: "工作台",
+        map: [["玻璃", "玻璃", "玻璃"], ["玻璃", "青色染料", "玻璃"], ["玻璃", "玻璃", "玻璃"]],
+        ingredients: [["玻璃", 8], ["青色染料"]],
+        count: 8
     },
     "淡蓝色染色玻璃": {
-        "type": "工作台",
-        "map": [["玻璃", "玻璃", "玻璃"], ["玻璃", "淡蓝色染料", "玻璃"], ["玻璃", "玻璃", "玻璃"]],
-        "ingredients": [["玻璃", 8], ["淡蓝色染料"]],
-        "count": 8
+        type: "工作台",
+        map: [["玻璃", "玻璃", "玻璃"], ["玻璃", "淡蓝色染料", "玻璃"], ["玻璃", "玻璃", "玻璃"]],
+        ingredients: [["玻璃", 8], ["淡蓝色染料"]],
+        count: 8
     },
     "蓝色染色玻璃": {
-        "type": "工作台",
-        "map": [["玻璃", "玻璃", "玻璃"], ["玻璃", "蓝色染料", "玻璃"], ["玻璃", "玻璃", "玻璃"]],
-        "ingredients": [["玻璃", 8], ["蓝色染料"]],
-        "count": 8
+        type: "工作台",
+        map: [["玻璃", "玻璃", "玻璃"], ["玻璃", "蓝色染料", "玻璃"], ["玻璃", "玻璃", "玻璃"]],
+        ingredients: [["玻璃", 8], ["蓝色染料"]],
+        count: 8
     },
     "紫色染色玻璃": {
-        "type": "工作台",
-        "map": [["玻璃", "玻璃", "玻璃"], ["玻璃", "紫色染料", "玻璃"], ["玻璃", "玻璃", "玻璃"]],
-        "ingredients": [["玻璃", 8], ["紫色染料"]],
-        "count": 8
+        type: "工作台",
+        map: [["玻璃", "玻璃", "玻璃"], ["玻璃", "紫色染料", "玻璃"], ["玻璃", "玻璃", "玻璃"]],
+        ingredients: [["玻璃", 8], ["紫色染料"]],
+        count: 8
     },
     "品红色染色玻璃": {
-        "type": "工作台",
-        "map": [["玻璃", "玻璃", "玻璃"], ["玻璃", "品红色染料", "玻璃"], ["玻璃", "玻璃", "玻璃"]],
-        "ingredients": [["玻璃", 8], ["品红色染料"]],
-        "count": 8
+        type: "工作台",
+        map: [["玻璃", "玻璃", "玻璃"], ["玻璃", "品红色染料", "玻璃"], ["玻璃", "玻璃", "玻璃"]],
+        ingredients: [["玻璃", 8], ["品红色染料"]],
+        count: 8
     },
     "粉红色染色玻璃": {
-        "type": "工作台",
-        "map": [["玻璃", "玻璃", "玻璃"], ["玻璃", "粉红色染料", "玻璃"], ["玻璃", "玻璃", "玻璃"]],
-        "ingredients": [["玻璃", 8], ["粉红色染料"]],
-        "count": 8
+        type: "工作台",
+        map: [["玻璃", "玻璃", "玻璃"], ["玻璃", "粉红色染料", "玻璃"], ["玻璃", "玻璃", "玻璃"]],
+        ingredients: [["玻璃", 8], ["粉红色染料"]],
+        count: 8
     },
     "白色染色玻璃板": {
-        "type": "工作台",
-        "map": [["白色染色玻璃", "白色染色玻璃", "白色染色玻璃"], ["白色染色玻璃", "白色染色玻璃", "白色染色玻璃"], [null, null, null]],
-        "ingredients": [["白色染色玻璃", 6]],
-        "count": 16
+        type: "工作台",
+        map: [["白色染色玻璃", "白色染色玻璃", "白色染色玻璃"], ["白色染色玻璃", "白色染色玻璃", "白色染色玻璃"], [null, null, null]],
+        ingredients: [["白色染色玻璃", 6]],
+        count: 16
     },
     "淡灰色染色玻璃板": {
-        "type": "工作台",
-        "map": [["淡灰色染色玻璃", "淡灰色染色玻璃", "淡灰色染色玻璃"], ["淡灰色染色玻璃", "淡灰色染色玻璃", "淡灰色染色玻璃"], [null, null, null]],
-        "ingredients": [["淡灰色染色玻璃", 6]],
-        "count": 16
+        type: "工作台",
+        map: [["淡灰色染色玻璃", "淡灰色染色玻璃", "淡灰色染色玻璃"], ["淡灰色染色玻璃", "淡灰色染色玻璃", "淡灰色染色玻璃"], [null, null, null]],
+        ingredients: [["淡灰色染色玻璃", 6]],
+        count: 16
     },
     "灰色染色玻璃板": {
-        "type": "工作台",
-        "map": [["灰色染色玻璃", "灰色染色玻璃", "灰色染色玻璃"], ["灰色染色玻璃", "灰色染色玻璃", "灰色染色玻璃"], [null, null, null]],
-        "ingredients": [["灰色染色玻璃", 6]],
-        "count": 16
+        type: "工作台",
+        map: [["灰色染色玻璃", "灰色染色玻璃", "灰色染色玻璃"], ["灰色染色玻璃", "灰色染色玻璃", "灰色染色玻璃"], [null, null, null]],
+        ingredients: [["灰色染色玻璃", 6]],
+        count: 16
     },
     "黑色染色玻璃板": {
-        "type": "工作台",
-        "map": [["黑色染色玻璃", "黑色染色玻璃", "黑色染色玻璃"], ["黑色染色玻璃", "黑色染色玻璃", "黑色染色玻璃"], [null, null, null]],
-        "ingredients": [["黑色染色玻璃", 6]],
-        "count": 16
+        type: "工作台",
+        map: [["黑色染色玻璃", "黑色染色玻璃", "黑色染色玻璃"], ["黑色染色玻璃", "黑色染色玻璃", "黑色染色玻璃"], [null, null, null]],
+        ingredients: [["黑色染色玻璃", 6]],
+        count: 16
     },
     "棕色染色玻璃板": {
-        "type": "工作台",
-        "map": [["棕色染色玻璃", "棕色染色玻璃", "棕色染色玻璃"], ["棕色染色玻璃", "棕色染色玻璃", "棕色染色玻璃"], [null, null, null]],
-        "ingredients": [["棕色染色玻璃", 6]],
-        "count": 16
+        type: "工作台",
+        map: [["棕色染色玻璃", "棕色染色玻璃", "棕色染色玻璃"], ["棕色染色玻璃", "棕色染色玻璃", "棕色染色玻璃"], [null, null, null]],
+        ingredients: [["棕色染色玻璃", 6]],
+        count: 16
     },
     "红色染色玻璃板": {
-        "type": "工作台",
-        "map": [["红色染色玻璃", "红色染色玻璃", "红色染色玻璃"], ["红色染色玻璃", "红色染色玻璃", "红色染色玻璃"], [null, null, null]],
-        "ingredients": [["红色染色玻璃", 6]],
-        "count": 16
+        type: "工作台",
+        map: [["红色染色玻璃", "红色染色玻璃", "红色染色玻璃"], ["红色染色玻璃", "红色染色玻璃", "红色染色玻璃"], [null, null, null]],
+        ingredients: [["红色染色玻璃", 6]],
+        count: 16
     },
     "橙色染色玻璃板": {
-        "type": "工作台",
-        "map": [["橙色染色玻璃", "橙色染色玻璃", "橙色染色玻璃"], ["橙色染色玻璃", "橙色染色玻璃", "橙色染色玻璃"], [null, null, null]],
-        "ingredients": [["橙色染色玻璃", 6]],
-        "count": 16
+        type: "工作台",
+        map: [["橙色染色玻璃", "橙色染色玻璃", "橙色染色玻璃"], ["橙色染色玻璃", "橙色染色玻璃", "橙色染色玻璃"], [null, null, null]],
+        ingredients: [["橙色染色玻璃", 6]],
+        count: 16
     },
     "黄色染色玻璃板": {
-        "type": "工作台",
-        "map": [["黄色染色玻璃", "黄色染色玻璃", "黄色染色玻璃"], ["黄色染色玻璃", "黄色染色玻璃", "黄色染色玻璃"], [null, null, null]],
-        "ingredients": [["黄色染色玻璃", 6]],
-        "count": 16
+        type: "工作台",
+        map: [["黄色染色玻璃", "黄色染色玻璃", "黄色染色玻璃"], ["黄色染色玻璃", "黄色染色玻璃", "黄色染色玻璃"], [null, null, null]],
+        ingredients: [["黄色染色玻璃", 6]],
+        count: 16
     },
     "黄绿色染色玻璃板": {
-        "type": "工作台",
-        "map": [["黄绿色染色玻璃", "黄绿色染色玻璃", "黄绿色染色玻璃"], ["黄绿色染色玻璃", "黄绿色染色玻璃", "黄绿色染色玻璃"], [null, null, null]],
-        "ingredients": [["黄绿色染色玻璃", 6]],
-        "count": 16
+        type: "工作台",
+        map: [["黄绿色染色玻璃", "黄绿色染色玻璃", "黄绿色染色玻璃"], ["黄绿色染色玻璃", "黄绿色染色玻璃", "黄绿色染色玻璃"], [null, null, null]],
+        ingredients: [["黄绿色染色玻璃", 6]],
+        count: 16
     },
     "绿色染色玻璃板": {
-        "type": "工作台",
-        "map": [["绿色染色玻璃", "绿色染色玻璃", "绿色染色玻璃"], ["绿色染色玻璃", "绿色染色玻璃", "绿色染色玻璃"], [null, null, null]],
-        "ingredients": [["绿色染色玻璃", 6]],
-        "count": 16
+        type: "工作台",
+        map: [["绿色染色玻璃", "绿色染色玻璃", "绿色染色玻璃"], ["绿色染色玻璃", "绿色染色玻璃", "绿色染色玻璃"], [null, null, null]],
+        ingredients: [["绿色染色玻璃", 6]],
+        count: 16
     },
     "青色染色玻璃板": {
-        "type": "工作台",
-        "map": [["青色染色玻璃", "青色染色玻璃", "青色染色玻璃"], ["青色染色玻璃", "青色染色玻璃", "青色染色玻璃"], [null, null, null]],
-        "ingredients": [["青色染色玻璃", 6]],
-        "count": 16
+        type: "工作台",
+        map: [["青色染色玻璃", "青色染色玻璃", "青色染色玻璃"], ["青色染色玻璃", "青色染色玻璃", "青色染色玻璃"], [null, null, null]],
+        ingredients: [["青色染色玻璃", 6]],
+        count: 16
     },
     "淡蓝色染色玻璃板": {
-        "type": "工作台",
-        "map": [["淡蓝色染色玻璃", "淡蓝色染色玻璃", "淡蓝色染色玻璃"], ["淡蓝色染色玻璃", "淡蓝色染色玻璃", "淡蓝色染色玻璃"], [null, null, null]],
-        "ingredients": [["淡蓝色染色玻璃", 6]],
-        "count": 16
+        type: "工作台",
+        map: [["淡蓝色染色玻璃", "淡蓝色染色玻璃", "淡蓝色染色玻璃"], ["淡蓝色染色玻璃", "淡蓝色染色玻璃", "淡蓝色染色玻璃"], [null, null, null]],
+        ingredients: [["淡蓝色染色玻璃", 6]],
+        count: 16
     },
     "蓝色染色玻璃板": {
-        "type": "工作台",
-        "map": [["蓝色染色玻璃", "蓝色染色玻璃", "蓝色染色玻璃"], ["蓝色染色玻璃", "蓝色染色玻璃", "蓝色染色玻璃"], [null, null, null]],
-        "ingredients": [["蓝色染色玻璃", 6]],
-        "count": 16
+        type: "工作台",
+        map: [["蓝色染色玻璃", "蓝色染色玻璃", "蓝色染色玻璃"], ["蓝色染色玻璃", "蓝色染色玻璃", "蓝色染色玻璃"], [null, null, null]],
+        ingredients: [["蓝色染色玻璃", 6]],
+        count: 16
     },
     "紫色染色玻璃板": {
-        "type": "工作台",
-        "map": [["紫色染色玻璃", "紫色染色玻璃", "紫色染色玻璃"], ["紫色染色玻璃", "紫色染色玻璃", "紫色染色玻璃"], [null, null, null]],
-        "ingredients": [["紫色染色玻璃", 6]],
-        "count": 16
+        type: "工作台",
+        map: [["紫色染色玻璃", "紫色染色玻璃", "紫色染色玻璃"], ["紫色染色玻璃", "紫色染色玻璃", "紫色染色玻璃"], [null, null, null]],
+        ingredients: [["紫色染色玻璃", 6]],
+        count: 16
     },
     "品红色染色玻璃板": {
-        "type": "工作台",
-        "map": [["品红色染色玻璃", "品红色染色玻璃", "品红色染色玻璃"], ["品红色染色玻璃", "品红色染色玻璃", "品红色染色玻璃"], [null, null, null]],
-        "ingredients": [["品红色染色玻璃", 6]],
-        "count": 16
+        type: "工作台",
+        map: [["品红色染色玻璃", "品红色染色玻璃", "品红色染色玻璃"], ["品红色染色玻璃", "品红色染色玻璃", "品红色染色玻璃"], [null, null, null]],
+        ingredients: [["品红色染色玻璃", 6]],
+        count: 16
     },
     "粉红色染色玻璃板": {
-        "type": "工作台",
-        "map": [["粉红色染色玻璃", "粉红色染色玻璃", "粉红色染色玻璃"], ["粉红色染色玻璃", "粉红色染色玻璃", "粉红色染色玻璃"], [null, null, null]],
-        "ingredients": [["粉红色染色玻璃", 6]],
-        "count": 16
+        type: "工作台",
+        map: [["粉红色染色玻璃", "粉红色染色玻璃", "粉红色染色玻璃"], ["粉红色染色玻璃", "粉红色染色玻璃", "粉红色染色玻璃"], [null, null, null]],
+        ingredients: [["粉红色染色玻璃", 6]],
+        count: 16
     },
     "附魔台": {
-        "type": "工作台",
-        "map": [[null, "书", null], ["钻石", "黑曜石", "钻石"], ["黑曜石", "黑曜石", "黑曜石"]],
-        "ingredients": [["黑曜石", 4], ["钻石", 2], ["书"]],
+        type: "工作台",
+        map: [[null, "书", null], ["钻石", "黑曜石", "钻石"], ["黑曜石", "黑曜石", "黑曜石"]],
+        ingredients: [["黑曜石", 4], ["钻石", 2], ["书"]],
     },
     "书": {
-        "type": "工作台",
-        "map": [["皮革", "纸", null], ["纸", "纸", null], [null, null, null]],
-        "ingredients": [["纸", 3], ["皮革"]],
+        type: "工作台",
+        map: [["皮革", "纸", null], ["纸", "纸", null], [null, null, null]],
+        ingredients: [["纸", 3], ["皮革"]],
     },
     "纸": {
-        "type": "工作台",
-        "map": [[null, null, null], ["甘蔗", "甘蔗", "甘蔗"], [null, null, null]],
-        "ingredients": [["甘蔗", 3]],
-        "count": 3
+        type: "工作台",
+        map: [[null, null, null], ["甘蔗", "甘蔗", "甘蔗"], [null, null, null]],
+        ingredients: [["甘蔗", 3]],
+        count: 3
     },
     "铁块": {
-        "type": "工作台",
-        "map": [["铁锭", "铁锭", "铁锭"], ["铁锭", "铁锭", "铁锭"], ["铁锭", "铁锭", "铁锭"]],
-        "ingredients": [["铁锭", 9]],
+        type: "工作台",
+        map: [["铁锭", "铁锭", "铁锭"], ["铁锭", "铁锭", "铁锭"], ["铁锭", "铁锭", "铁锭"]],
+        ingredients: [["铁锭", 9]],
     },
     "铁砧": {
-        "type": "工作台",
-        "map": [["铁块", "铁块", "铁块"], [null, "铁锭", null], ["铁锭", "铁锭", "铁锭"]],
-        "ingredients": [["铁块", 3], ["铁锭", 4]],
+        type: "工作台",
+        map: [["铁块", "铁块", "铁块"], [null, "铁锭", null], ["铁锭", "铁锭", "铁锭"]],
+        ingredients: [["铁块", 3], ["铁锭", 4]],
+    },
+    "熔炉": {
+        type: "工作台",
+        map: [["圆石", "圆石", "圆石"], ["圆石", null, "圆石"], ["圆石", "圆石", "圆石"]],
+        ingredients: [["圆石", 8]],
+    },
+    "漏斗": {
+        type: "工作台",
+        map: [["铁锭", null, "铁锭"], ["铁锭", "箱子", "铁锭"], [null, "铁锭", null]],
+        ingredients: [["铁锭", 5], ["箱子"]],
+    },
+    "箱子": {
+        type: "工作台",
+        map: [["橡木木板", "橡木木板", "橡木木板"], ["橡木木板", null, "橡木木板"], ["橡木木板", "橡木木板", "橡木木板"]],
+        ingredients: [["橡木木板", 8]],
+    },
+    "浮冰": {
+        type: "工作台",
+        map: [["冰", "冰", "冰"], ["冰", "冰", "冰"], ["冰", "冰", "冰"]],
+        ingredients: [["冰", 9]],
     }
 };

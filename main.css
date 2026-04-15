@@ -14,11 +14,11 @@
     width: max-content;
 }
 
-#inference-toggle,#introduction-toggle {
+.toggle-panel {
     cursor: pointer;
 }
 
-#inference-toggle:hover,#introduction-toggle:hover {
+.toggle-panel:hover {
     filter: brightness(90%);
 }
 
@@ -71,6 +71,7 @@
     user-select: none;
     text-shadow: 1px 1px 1px #000;
     font-weight: bold;
+    image-rendering: pixelated;
 }
 
 .item-icon-unknown-double {
@@ -187,4 +188,17 @@ input.has-warning:focus {
 
 #input-item-select {
     display: inline-block;
+}
+
+.item.highlight {
+    background-color: #90EE90;
+}
+
+.item.highlight.just-icon {
+    background-color: transparent;
+}
+
+.item.highlight.just-icon img, .item.highlight.just-icon .item-icon-unknown {
+    outline: 2px solid #228B22;
+    outline-offset: -2px;
 }

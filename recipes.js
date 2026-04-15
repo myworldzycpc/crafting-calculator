@@ -3,6 +3,7 @@
 let recipes = {
     "奶奶的拐杖": {
         type: "增强型工作台",
+        pinyin: ["nai", "nai", "de", "guai", "zhang"],
         map: [[null, "橡木原木", null], [null, "橡木原木", null], [null, "橡木原木", null]],
         ingredients: [["橡木原木", 3]]
     },
@@ -9122,5 +9123,16 @@ let recipes = {
         type: "工作台",
         map: [["冰", "冰", "冰"], ["冰", "冰", "冰"], ["冰", "冰", "冰"]],
         ingredients: [["冰", 9]],
+    },
+    "末影之眼": {
+        type: "工作台",
+        map: [[null, null, null], ["烈焰粉", "末影珍珠", null], [null, null, null]],
+        ingredients: [["烈焰粉"], ["末影珍珠"]]
+    },
+    "烈焰粉": {
+        type: "工作台",
+        map: [["烈焰棒", null, null], [null, null, null], [null, null, null]],
+        ingredients: [["烈焰棒"]],
+        count: 2
     }
 };

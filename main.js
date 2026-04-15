@@ -10,6 +10,159 @@ window.alreadyHave = {};
 window.inferences = [];
 window.currentShowing = [];
 window.multiItemMode = false;
+window.basicCountOrder = [];
+window.showedInference = true;
+
+const STORAGE_KEY = 'crafting-calculator-state';
+const SETTINGS_KEY = 'crafting-calculator-settings';
+window.autoCalculateTimer = null;
+
+function saveSettings() {
+    const settings = {
+        hoverHighlight: $("#setting-hover-highlight").is(":checked"),
+        autoCalculateDelay: $("#setting-auto-calculate").val()
+    };
+    try {
+        localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
+    } catch (e) {
+        console.error('保存设置失败:', e);
+    }
+}
+
+function loadSettings() {
+    try {
+        const saved = localStorage.getItem(SETTINGS_KEY);
+        if (!saved) return null;
+        return JSON.parse(saved);
+    } catch (e) {
+        console.error('加载设置失败:', e);
+        return null;
+    }
+}
+
+function applySettings(settings) {
+    if (!settings) return;
+    if (settings.hoverHighlight !== undefined) {
+        $("#setting-hover-highlight").prop("checked", settings.hoverHighlight);
+    }
+    if (settings.autoCalculateDelay !== undefined) {
+        $("#setting-auto-calculate").val(settings.autoCalculateDelay);
+    }
+}
+
+function saveState() {
+    const state = {
+        multiItemMode: window.multiItemMode,
+        singleItemInput: $("#input-item").val(),
+        multiItemList: [],
+        alreadyHaveList: []
+    };
+
+    $("#item-target-list").find("tr").each(function () {
+        const $tr = $(this);
+        const item = $tr.find('input[name=key]').val().replace(/\s+/g, '');
+        const count = $tr.find('input[name=count]').val().replace(/\s+/g, '');
+        if (item || count) {
+            state.multiItemList.push({key: item, count: count || '1'});
+        }
+    });
+
+    $("#item-already-have").find("tr").each(function () {
+        const $tr = $(this);
+        const item = $tr.find('input[name=key]').val().replace(/\s+/g, '');
+        const count = $tr.find('input[name=count]').val().replace(/\s+/g, '');
+        if (item || count) {
+            state.alreadyHaveList.push({key: item, count: count || '-1'});
+        }
+    });
+
+    try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    } catch (e) {
+        console.error('保存状态失败:', e);
+    }
+}
+
+function loadState() {
+    try {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (!saved) return null;
+        return JSON.parse(saved);
+    } catch (e) {
+        console.error('加载状态失败:', e);
+        return null;
+    }
+}
+
+function applyState(state) {
+    if (!state) return;
+
+    if (state.multiItemMode !== undefined) {
+        window.multiItemMode = state.multiItemMode;
+        $("#input-item-select").val(state.multiItemMode ? "multi" : "single").trigger('change');
+    }
+
+    if (state.singleItemInput) {
+        $("#input-item").val(state.singleItemInput);
+    }
+
+    if (state.multiItemList && state.multiItemList.length > 0) {
+        const $tbody = $("#item-target-list");
+        $tbody.empty();
+        for (const item of state.multiItemList) {
+            const key = item.key || '';
+            const count = item.count || '1';
+            const $tr = $(`
+                <tr>
+                    <td>${renderItem(key, -1)}</td>
+                    <td><input type="text" class="form-control in-computation-process" name="key" list="item-list" value="${key}"></td>
+                    <td><input type="text" class="form-control in-computation-process" name="count" oninput="checkNumber(this)" value="${count}"></td>
+                    <td><button class="btn btn-danger" data-action="delete">删除</button></td>
+                </tr>
+            `);
+            $tbody.append($tr);
+            if (key && recipes[key]) {
+                $tr.find('input[name=key]').removeClass('has-error');
+            }
+        }
+    }
+
+    if (state.alreadyHaveList && state.alreadyHaveList.length > 0) {
+        const $table = $("#item-already-have");
+        for (const item of state.alreadyHaveList) {
+            const key = item.key || '';
+            const count = item.count || '-1';
+            const $tr = $(`
+                <tr>
+                    <td>${renderItem(key, -1)}</td>
+                    <td><input type="text" class="form-control in-computation-process" name="key" list="item-list" value="${key}"></td>
+                    <td><input type="text" class="form-control in-computation-process" name="count" oninput="checkNumber(this)" value="${count === '-1' ? '' : count}"></td>
+                    <td><button class="btn btn-danger" data-action="delete">删除</button></td>
+                </tr>
+            `);
+            $table.append($tr);
+            if (key) {
+                if (recipes[key]) {
+                    $tr.find('input[name=key]').removeClass('has-error').removeClass('has-warning');
+                } else if (icons[key]) {
+                    $tr.find('input[name=key]').addClass('has-warning').removeClass('has-error');
+                } else {
+                    $tr.find('input[name=key]').addClass('has-error').removeClass('has-warning');
+                }
+            }
+        }
+    }
+}
+
+function debounce(func, wait) {
+    let timeout;
+    return function (...args) {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(this, args), wait);
+    };
+}
+
+const debouncedSaveState = debounce(saveState, 300);
 
 /**
  * 从recipes对象的键中搜索keyword并返回列表
@@ -244,6 +397,8 @@ function showRecipe() {
     window.count = {};
     window.basicCount = {};
     window.inferences = [];
+    window.showedInference = false;
+    $("#inference-panel,#adjust-order").empty();
     window.remainings = {};
     window.times = {};
     console.log(`合成 ${window.currentShowing.map(i => i[0] + 'x' + i[1]).join(' + ')}`);
@@ -252,13 +407,8 @@ function showRecipe() {
         const count = item[1];
         calculate(key, count, 0);
     }
-    showInference();
+    toShowInference();
     console.log(basicCount);
-    let basicCountHtml = '';
-    for (const item in basicCount) {
-        basicCountHtml += renderItem(item, basicCount[item]);
-    }
-    $("#item-needed").html(basicCountHtml);
     // 开始计时
     const startTime = new Date().getTime();
     // 检查不会出现在合成前使用的情况
@@ -326,8 +476,18 @@ function showRecipe() {
     } else {
         remainingHtml = '无';
     }
+    window.basicCountOrder = [];
+    for (const item of order) {
+        for (const ingredient of recipes[item].ingredients) {
+            if (!basicCountOrder.includes(ingredient[0])) {
+                basicCountOrder.push(ingredient[0]);
+            }
+        }
+    }
+    sortBasicCount();
     $("#item-remain").html(remainingHtml);
     $("#results").show();
+    $("#apply-remain-to-have").show();
 }
 
 function doSearch() {
@@ -355,22 +515,91 @@ function checkNumber(input) {
     }
 }
 
+function showDirtyWarning() {
+    $("#dirty-warning").show();
+    $("#calculate").addClass("btn-warning");
+    scheduleAutoCalculate();
+}
+
+function hideDirtyWarning() {
+    $("#dirty-warning").hide();
+    $("#calculate").removeClass("btn-warning");
+}
+
+function scheduleAutoCalculate() {
+    if (window.autoCalculateTimer) {
+        clearTimeout(window.autoCalculateTimer);
+        window.autoCalculateTimer = null;
+    }
+    const delayStr = $("#setting-auto-calculate").val();
+    if (delayStr === undefined || delayStr === null || delayStr === '') {
+        return;
+    }
+    const delay = parseInt(delayStr);
+    if (isNaN(delay) || delay < 0) {
+        return;
+    }
+    window.autoCalculateTimer = setTimeout(function () {
+        readItemList();
+        hideDirtyWarning();
+        if (window.currentShowing.length > 0) {
+            showRecipe();
+        }
+    }, delay);
+}
+
 function addAlreadyItem(key = "", count = -1, update = true) {
     const $table = $("#item-already-have");
     $table.append(`
         <tr>
             <td>${renderItem(key, -1)}</td>
-            <td><input type="text" class="form-control" name="key" value="${key}"></td>
-            <td><input type="text" class="form-control" name="count" oninput="checkNumber(this)" value="${count === -1 ? '' : count}"></td>
+            <td><input type="text" class="form-control in-computation-process" name="key" list="item-list" value="${key}"></td>
+            <td><input type="text" class="form-control in-computation-process" name="count" oninput="checkNumber(this)" value="${count === -1 ? '' : count}"></td>
             <td><button class="btn btn-danger" data-action="delete">删除</button></td>
         </tr>
     `);
     if (!key) {
         $table.find('input[name=key]').last().focus();
     }
+    showDirtyWarning();
     if (update && key) {
         showRecipe();
     }
+}
+
+function applyRemainToAlreadyHave() {
+    if ($.isEmptyObject(window.remainings)) {
+        return;
+    }
+
+    const $table = $("#item-already-have");
+    const existingRows = {};
+
+    $table.find('tr').each(function () {
+        const $tr = $(this);
+        if ($tr.is('#item-already-have-header') || $tr.is('#add-item-row')) {
+            return;
+        }
+        const key = $tr.find('input[name=key]').val().replace(/\s+/g, '');
+        const countInput = $tr.find('input[name=count]').val().replace(/\s+/g, '');
+        if (key) {
+            existingRows[key] = {$tr, count: countInput};
+        }
+    });
+
+    for (const key in window.remainings) {
+        const remainCount = window.remainings[key];
+        if (existingRows[key]) {
+            if (existingRows[key].count !== '' && parseInt(existingRows[key].count) !== -1) {
+                existingRows[key].$tr.find('input[name=count]').val(remainCount);
+            }
+        } else {
+            addAlreadyItem(key, remainCount, false);
+        }
+    }
+
+    $("#apply-remain-to-have").hide();
+    showDirtyWarning();
 }
 
 function readAlreadyHave() {
@@ -433,6 +662,7 @@ function renderItem(key, count = 0) {
 }
 
 function showInference() {
+    window.showedInference = true;
     const $inference = $('#inference-panel');
     $inference.empty();
     let currentDepth = 0;
@@ -462,11 +692,38 @@ function activateSearchItem(key) {
     const $result = $('#search-result');
     $result.hide();
     window.currentShowing = [[key, 1]];
+    hideDirtyWarning();
     showRecipe();
 }
 
 function getIconUrl(key) {
     return icons[key] ? `icons/${icons[key]}.png` : null;
+}
+
+function sortBasicCount() {
+    if ($.isEmptyObject(window.basicCount)) return;
+    let sortType = $("#item-needed-sort").val();
+    let sortedItems = Object.keys(basicCount);
+    if (sortType === 'order') {
+        sortedItems.sort((a, b) => window.basicCountOrder.indexOf(a) - window.basicCountOrder.indexOf(b));
+    } else if (sortType === 'name') {
+        sortedItems.sort((a, b) => a.localeCompare(b));
+    } else if (sortType === 'count') {
+        sortedItems.sort((a, b) => basicCount[b] - basicCount[a]);
+    }
+    let basicCountHtml = '';
+    for (const item of sortedItems) {
+        basicCountHtml += renderItem(item, basicCount[item]);
+    }
+    $("#item-needed").html(basicCountHtml);
+}
+
+function toShowInference() {
+    if ($("#inference-toggle").next().attr("aria-expanded") === "true") {
+        if (!window.showedInference) {
+            showInference();
+        }
+    }
 }
 
 $(function () {
@@ -509,14 +766,9 @@ $(function () {
     });
 
     $("#add-item-target").click(function () {
-        $("#item-target-list").append(`
-            <tr>
-                <td>${renderItem('', -1)}</td>
-                <td><input type="text" class="form-control" name="key"></td>
-                <td><input type="text" class="form-control" name="count" oninput="checkNumber(this)" value="1"></td>
-                <td><button class="btn btn-danger" data-action="delete">删除</button></td>
-            </tr>
-        `).find('input[name=key]').last().focus();
+        showDirtyWarning();
+        addTargetItemRow('', '1');
+        $itemTargetList.find('input[name=key]').last().focus();
     });
 
     $("#item-already-have,#item-target-list").on('click', '[data-action=delete]', function (event) {
@@ -572,8 +824,8 @@ $(function () {
             const itemHtml = `
                 <tr>
                     <td>${renderItem('', -1)}</td>
-                    <td><input type="text" class="form-control" name="key"></td>
-                    <td><input type="text" class="form-control" name="count" oninput="checkNumber(this)" value="${$(event.target).closest("tbody").is("#item-target-list") ? 1 : ''}"></td>
+                    <td><input type="text" class="form-control in-computation-process" name="key" list="item-list"></td>
+                    <td><input type="text" class="form-control in-computation-process" name="count" oninput="checkNumber(this)" value="${$(event.target).closest("tbody").is("#item-target-list") ? 1 : ''}"></td>
                     <td><button class="btn btn-danger" data-action="delete">删除</button></td>
                 </tr>
             `;
@@ -612,12 +864,19 @@ $(function () {
         }
     });
 
-    $("#inference-toggle,#introduction-toggle").click(function () {
+    $(".toggle-panel").click(function () {
         $(this).next().collapse('toggle');
+    });
+
+    // $("#introduction-toggle").next().collapse('toggle');
+
+    $("#inference-toggle").click(function () {
+        toShowInference();
     });
 
     $("#calculate").click(function () {
         readItemList();
+        hideDirtyWarning();
         if (window.currentShowing.length === 0) {
             alert('请先输入物品');
             return;
@@ -636,37 +895,54 @@ $(function () {
         showRecipe();
     });
 
-    $("body").on('click', '.item', function (event) {
-        if (!$(event.target).hasClass('item')) {
-            event.target = $(event.target).closest('.item')[0];
-        }
-        const key = $(event.target).data('key');
-        if (!key) {
-            return;
-        }
-        for (const item of window.currentShowing) {
-            if (item[0] === key) {
-                alert(`${key} 是目标物品`);
+    $("body")
+        .on('click', '.item', function (event) {
+            if (!$(event.target).hasClass('item')) {
+                event.target = $(event.target).closest('.item')[0];
+            }
+            const key = $(event.target).data('key');
+            if (!key) {
                 return;
             }
-        }
-        if (recipes[key]) {
-            readAlreadyHave();
-            if (window.alreadyHave[key] === undefined) {
-                addAlreadyItem(key);
+            for (const item of window.currentShowing) {
+                if (item[0] === key) {
+                    alert(`${key} 是目标物品`);
+                    return;
+                }
+            }
+            if (recipes[key]) {
+                readAlreadyHave();
+                if (window.alreadyHave[key] === undefined) {
+                    addAlreadyItem(key);
+                } else {
+                    const confirmed = confirm(`已经拥有 ${key}，是否仍要添加？`);
+                    if (confirmed) {
+                        addAlreadyItem(key);
+                    }
+                }
             } else {
-                const confirmed = confirm(`已经拥有 ${key}，是否仍要添加？`);
+                const confirmed = confirm(`${key} 是基础物品，是否仍要添加？`);
                 if (confirmed) {
                     addAlreadyItem(key);
                 }
             }
-        } else {
-            const confirmed = confirm(`${key} 是基础物品，是否仍要添加？`);
-            if (confirmed) {
-                addAlreadyItem(key);
-            }
-        }
-    });
+        })
+        .on('input', '.in-computation-process', function (event) {
+            showDirtyWarning();
+        })
+        .on('mouseenter', '.item', function (event) {
+            if (!$("#setting-hover-highlight").is(":checked")) return;
+            const $item = $(event.target).closest('.item');
+            const key = $item.data('key');
+            if (!key) return;
+            $(`.item[data-key="${key}"]`).addClass('highlight');
+        })
+        .on('mouseleave', '.item', function (event) {
+            const $item = $(event.target).closest('.item');
+            const key = $item.data('key');
+            if (!key) return;
+            $(`.item[data-key="${key}"]`).removeClass('highlight');
+        });
 
     // $("#add-dusts").click(function () {
     //     readAlreadyHave();
@@ -677,14 +953,12 @@ $(function () {
     //     }
     //     showRecipe();
     // });
-
-    $("#introduction-toggle").next().collapse('toggle');
-
-    $("#item-target-list").append(`
+    const $itemTargetList = $("#item-target-list");
+    $itemTargetList.append(`
         <tr>
             <td>${renderItem('', -1)}</td>
-            <td><input type="text" class="form-control" name="key"></td>
-            <td><input type="text" class="form-control" name="count" oninput="checkNumber(this)" value="1"></td>
+            <td><input type="text" class="form-control in-computation-process" name="key" list="item-list"></td>
+            <td><input type="text" class="form-control in-computation-process" name="count" oninput="checkNumber(this)" value="1"></td>
             <td><button class="btn btn-danger" data-action="delete">删除</button></td>
         </tr>
     `);
@@ -693,15 +967,200 @@ $(function () {
         const mode = $(this).val();
         if (mode === "single") {
             $("#single-item-input").show();
-            $("#multi-item-input").hide();
+            $("#multi-item-input,#edit-target-list").hide();
             window.multiItemMode = false;
         } else {
             $("#single-item-input").hide();
-            $("#multi-item-input").show();
+            $("#multi-item-input,#edit-target-list").show();
             window.multiItemMode = true;
         }
+        debouncedSaveState();
     });
 
     $("#loading").hide();
     $("#main").show();
+
+    const $itemList = $("#item-list");
+    for (const key in recipes) {
+        // const ingredients = recipes[key].ingredients;
+        // const ingredientStr = ingredients.map(([i, j]) => renderItem(i, j)).join(', ');
+        const ingredientStr = "";
+        $itemList.append(`<option value="${key}">${ingredientStr}</option>`);
+    }
+
+    const savedState = loadState();
+    if (savedState) {
+        applyState(savedState);
+    }
+
+    const $saveTriggers = $("#input-item, #item-target-list, #item-already-have, #input-item-select");
+    $saveTriggers.on('input change', debouncedSaveState);
+
+    $(window).on('beforeunload', saveState);
+
+    $("#apply-remain-to-have").click(applyRemainToAlreadyHave);
+
+    $("#item-needed-sort").change(function () {
+        sortBasicCount();
+    });
+
+    let currentEditList = null;
+
+    function openListEditModal(listType) {
+        currentEditList = listType;
+        const format = $('input[name="list-format"]:checked').val();
+        const separator = format === 'csv' ? ',' : '\t';
+
+        let content = '';
+        if (listType === 'target') {
+            const title = '编辑目标物品列表';
+            $("#modal-list-title").text(title);
+            $itemTargetList.find("tr").each(function () {
+                const $tr = $(this);
+                const item = $tr.find('input[name=key]').val().replace(/\s+/g, '');
+                const count = $tr.find('input[name=count]').val().replace(/\s+/g, '') || '1';
+                if (item || count !== '1') {
+                    content += `${item}${separator}${count}\n`;
+                }
+            });
+        } else if (listType === "alreadyHave") {
+            const title = '编辑已有物品列表';
+            $("#modal-list-title").text(title);
+            $("#item-already-have").find("tr").each(function () {
+                const $tr = $(this);
+                if ($tr.is('#item-already-have-header') || $tr.is('#add-item-row')) {
+                    return;
+                }
+                const item = $tr.find('input[name=key]').val().replace(/\s+/g, '');
+                let count = $tr.find('input[name=count]').val().replace(/\s+/g, '');
+                if (item && count === '') {
+                    content += `${item}\n`;
+                } else if (item && count !== '') {
+                    content += `${item}${separator}${count}\n`;
+                }
+            });
+        }
+
+        $("#list-edit-content").val(content.trim());
+        $("#list-edit-error").hide();
+        $("#list-edit-modal").modal('show');
+    }
+
+    function applyListEdit() {
+        const format = $('input[name="list-format"]:checked').val();
+        const separator = format === 'csv' ? ',' : '\t';
+        const lines = $("#list-edit-content").val().split('\n');
+        const items = [];
+        let errorMsg = null;
+
+        for (let i = 0; i < lines.length; i++) {
+            const line = lines[i].trimEnd();
+            if (!line) continue;
+            const parts = line.split(separator);
+            if (currentEditList === 'target') {
+                if (parts.length !== 2) {
+                    errorMsg = `第 ${i + 1} 行格式错误：需要两个值（物品名称和数量），当前有 ${parts.length} 个值`;
+                    break;
+                }
+            } else if (currentEditList === 'alreadyHave') {
+                if (parts.length !== 2 && parts.length !== 1) {
+                    errorMsg = `第 ${i + 1} 行格式错误：需要1或2个值（物品名称和数量），当前有 ${parts.length} 个值`;
+                    break;
+                }
+            }
+            const key = parts[0].trim();
+            const countStr = parts[1]?.trim() || '';
+            const count = parseInt(countStr);
+            if (countStr !== '' && (isNaN(count) || count < 0)) {
+                errorMsg = `第 ${i + 1} 行格式错误：数量 "${countStr}" 不是非负整数`;
+                break;
+            }
+            items.push({key, count: countStr});
+        }
+
+        if (errorMsg) {
+            $("#list-edit-error").text(errorMsg).show();
+            return;
+        }
+
+        if (currentEditList === 'target') {
+            $itemTargetList.empty();
+            for (const item of items) {
+                const key = item.key || '';
+                const count = item.count === -1 ? '1' : String(item.count);
+                addTargetItemRow(key, count);
+            }
+        } else {
+            const $table = $("#item-already-have");
+            $table.find('tr').each(function () {
+                const $tr = $(this);
+                if (!$tr.is('#item-already-have-header') && !$tr.is('#add-item-row')) {
+                    $tr.remove();
+                }
+            });
+            for (const item of items) {
+                const key = item.key || '';
+                const count = item.count;
+                addAlreadyItem(key, count, false);
+            }
+        }
+
+        showDirtyWarning();
+        $("#list-edit-modal").modal('hide');
+    }
+
+    function addTargetItemRow(key = '', count = '1') {
+        const $tbody = $itemTargetList;
+        const $tr = $(`
+            <tr>
+                <td>${renderItem(key, -1)}</td>
+                <td><input type="text" class="form-control in-computation-process" name="key" list="item-list" value="${key}"></td>
+                <td><input type="text" class="form-control in-computation-process" name="count" oninput="checkNumber(this)" value="${count}"></td>
+                <td><button class="btn btn-danger" data-action="delete">删除</button></td>
+            </tr>
+        `);
+        $tbody.append($tr);
+        if (key && recipes[key]) {
+            $tr.find('input[name=key]').removeClass('has-error');
+        }
+    }
+
+    $("#edit-target-list").click(function () {
+        openListEditModal('target');
+    });
+
+    $("#edit-already-have").click(function (event) {
+        openListEditModal('alreadyHave');
+        event.stopPropagation();
+    });
+
+    $("#list-edit-apply").click(applyListEdit);
+
+    $('input[name="list-format"]').change(function () {
+        const format = $(this).val();
+        const separator = format === 'csv' ? ',' : '\t';
+        const $listEditContent = $("#list-edit-content");
+        const content = $listEditContent.val();
+        if (content) {
+            const lines = content.split('\n');
+            const newLines = lines.map(line => {
+                const parts = line.split(/[,\t]/);
+                if (parts.length === 2) {
+                    return parts[0].trim() + separator + parts[1].trim();
+                }
+                return line;
+            });
+            $listEditContent.val(newLines.join('\n'));
+        }
+    });
+
+    const savedSettings = loadSettings();
+    if (savedSettings) {
+        applySettings(savedSettings);
+    }
+
+    $("#setting-hover-highlight, #setting-auto-calculate").change(function () {
+        saveSettings();
+    });
+
 });

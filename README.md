@@ -30,7 +30,7 @@
 
 ## 截图预览
 
-![合成计算器界面](screenshot.png)
+![合成计算器界面](static/img/screenshot.png)
 
 ## 使用方法
 

@@ -12,6 +12,7 @@ window.currentShowing = [];
 window.multiItemMode = false;
 window.basicCountOrder = [];
 window.showedInference = true;
+window.patchedRecipes = {};
 
 const STORAGE_KEY = 'crafting-calculator-state';
 const SETTINGS_KEY = 'crafting-calculator-settings';
@@ -20,7 +21,10 @@ window.autoCalculateTimer = null;
 function saveSettings() {
     const settings = {
         hoverHighlight: $("#setting-hover-highlight").is(":checked"),
-        autoCalculateDelay: $("#setting-auto-calculate").val()
+        autoCalculateDelay: $("#setting-auto-calculate").val(),
+        expandConfirm: $("#setting-expand-confirm").is(":checked"),
+        modalEsc: $("#setting-modal-esc").is(":checked"),
+        modalBackdrop: $("#setting-modal-backdrop").is(":checked"),
     };
     try {
         localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
@@ -48,6 +52,181 @@ function applySettings(settings) {
     if (settings.autoCalculateDelay !== undefined) {
         $("#setting-auto-calculate").val(settings.autoCalculateDelay);
     }
+    if (settings.expandConfirm !== undefined) {
+        $("#setting-expand-confirm").prop("checked", settings.expandConfirm);
+    }
+    if (settings.modalEsc !== undefined) {
+        $("#setting-modal-esc").prop("checked", settings.modalEsc);
+    }
+    if (settings.modalBackdrop !== undefined) {
+        $("#setting-modal-backdrop").prop("checked", settings.modalBackdrop);
+    }
+}
+
+const PATCHES_KEY = 'crafting-calculator-patches';
+window.recipePatches = [];
+window.dirtyRecipePatches = [];
+
+function savePatches() {
+    try {
+        localStorage.setItem(PATCHES_KEY, JSON.stringify(window.recipePatches));
+    } catch (e) {
+        console.error('保存补丁失败:', e);
+    }
+}
+
+function loadPatches() {
+    try {
+        const saved = localStorage.getItem(PATCHES_KEY);
+        if (!saved) return [];
+        return JSON.parse(saved);
+    } catch (e) {
+        console.error('加载补丁失败:', e);
+        return [];
+    }
+}
+
+function deepClone(obj) {
+    return JSON.parse(JSON.stringify(obj));
+}
+
+function getEffectiveRecipes(patches) {
+    const effectiveRecipes = deepClone(window.defaultRecipes);
+    for (const patch of patches) {
+        if (!patch.enabled) continue;
+        for (const key in patch.data) {
+            if (patch.data[key] === null) {
+                delete effectiveRecipes[key];
+            } else {
+                effectiveRecipes[key] = deepClone(patch.data[key]);
+            }
+        }
+    }
+    return effectiveRecipes;
+}
+
+function getPatchedRecipes(patches) {
+    const patchedRecipes = {};
+    for (const patch of patches) {
+        if (!patch.enabled) continue;
+        for (const key in patch.data) {
+            patchedRecipes[key] = patch.name;
+        }
+    }
+    return patchedRecipes;
+}
+
+function detectCycles(recipesData, patches) {
+    if (!patches) {
+        patches = window.dirtyRecipePatches;
+    }
+    const visited = {};
+    const recStack = {};
+    const cycleNodes = new Set();
+    const patchInfo = {};
+
+    for (const key in recipesData) {
+        patchInfo[key] = null;
+    }
+    for (let i = 0; i < patches.length; i++) {
+        const patch = patches[i];
+        if (!patch.enabled) continue;
+        for (const key in patch.data) {
+            if (patch.data[key] !== null) {
+                patchInfo[key] = patch.name;
+            }
+        }
+    }
+
+    function dfs(node) {
+        visited[node] = true;
+        recStack[node] = true;
+
+        const recipe = recipesData[node];
+        if (recipe && recipe.ingredients) {
+            for (const ingredient of recipe.ingredients) {
+                const ingredientKey = ingredient[0];
+                if (recipesData[ingredientKey]) {
+                    if (recStack[ingredientKey]) {
+                        cycleNodes.add(node);
+                        cycleNodes.add(ingredientKey);
+                    } else if (!visited[ingredientKey]) {
+                        dfs(ingredientKey);
+                    }
+                }
+            }
+        }
+
+        recStack[node] = false;
+    }
+
+    for (const key in recipesData) {
+        if (!visited[key]) {
+            dfs(key);
+        }
+    }
+
+    if (cycleNodes.size === 0) {
+        return {hasCycle: false, cycleNodes: [], patchInfo: {}};
+    }
+
+    const relevantCycles = new Set();
+
+    function findRelatedCycles(node) {
+        relevantCycles.add(node);
+        const recipe = recipesData[node];
+        if (recipe && recipe.ingredients) {
+            for (const ingredient of recipe.ingredients) {
+                const ingredientKey = ingredient[0];
+                if (cycleNodes.has(ingredientKey) && !relevantCycles.has(ingredientKey)) {
+                    findRelatedCycles(ingredientKey);
+                }
+            }
+        }
+        for (const otherKey in recipesData) {
+            const otherRecipe = recipesData[otherKey];
+            if (otherRecipe && otherRecipe.ingredients) {
+                for (const ingredient of otherRecipe.ingredients) {
+                    if (ingredient[0] === node && cycleNodes.has(otherKey) && !relevantCycles.has(otherKey)) {
+                        findRelatedCycles(otherKey);
+                    }
+                }
+            }
+        }
+    }
+
+    for (const node of cycleNodes) {
+        findRelatedCycles(node);
+    }
+
+    const cycleNodesArray = Array.from(relevantCycles).map(node => ({
+        key: node,
+        patch: patchInfo[node]
+    }));
+
+    return {hasCycle: true, cycleNodes: cycleNodesArray, patchInfo};
+}
+
+function applyPatchesWithValidation(patches) {
+    if (!patches) {
+        patches = dirtyRecipePatches;
+    }
+    const effectiveRecipes = getEffectiveRecipes(patches);
+    const cycleResult = detectCycles(effectiveRecipes, patches);
+
+    if (cycleResult.hasCycle) {
+        const cycleKeys = cycleResult.cycleNodes.map(n => n.key).join(', ');
+        const patchNames = [...new Set(cycleResult.cycleNodes.map(n => n.patch || '默认'))].join(', ');
+        return {
+            success: false,
+            error: `检测到循环依赖！涉及的配方：${cycleKeys}。这些配方由以下补丁修改：${patchNames}`
+        };
+    }
+
+    window.recipePatches = deepClone(patches);
+    window.patchedRecipes = getPatchedRecipes(patches);
+    recipes = effectiveRecipes;
+    return {success: true};
 }
 
 function saveState() {
@@ -462,7 +641,7 @@ function showRecipe() {
                 <td>${recipes[item].map ? renderMap(item) : ''}</td>
                 <td class="item-group">${recipes[item].ingredients.map(i => `${renderItem(i[0], i[1] ? i[1] * times[item] : times[item])}`).join('')}</td>
                 <td>${renderItem(recipes[item].type, 0)}</td>
-                <td>${renderItem(item, count[item])}</td>
+                <td>${renderItem(item, count[item])}${patchedRecipes[item] ? ` <span class="recipe-patched" title="已被 ${patchedRecipes[item]} 补丁修改">${patchedRecipes[item]}</span>` : ''}</td>
             </tr>
         `;
     }
@@ -701,7 +880,10 @@ function getIconUrl(key) {
 }
 
 function sortBasicCount() {
-    if ($.isEmptyObject(window.basicCount)) return;
+    if ($.isEmptyObject(window.basicCount)) {
+        $("#item-needed").text("无");
+        return;
+    }
     let sortType = $("#item-needed-sort").val();
     let sortedItems = Object.keys(basicCount);
     if (sortType === 'order') {
@@ -724,6 +906,18 @@ function toShowInference() {
             showInference();
         }
     }
+}
+
+function downloadFile(fileName, content, fileType) {
+    const blob = new Blob([content], {type: fileType});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = fileName;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
 }
 
 $(function () {
@@ -773,6 +967,7 @@ $(function () {
 
     $("#item-already-have,#item-target-list").on('click', '[data-action=delete]', function (event) {
         $(event.target).parent().parent().remove();
+        showDirtyWarning();
         showRecipe();
     }).on('focus', 'input', function (event) {
         event.target.select();
@@ -865,6 +1060,12 @@ $(function () {
     });
 
     $(".toggle-panel").click(function () {
+        if ($("#setting-expand-confirm").is(":checked") && inferences.length > 100) {
+            const result = confirm("当前页面显示的步骤较多，展开/折叠可能会造成卡顿，是否仍要继续？");
+            if (!result) {
+                return;
+            }
+        }
         $(this).next().collapse('toggle');
     });
 
@@ -942,6 +1143,21 @@ $(function () {
             const key = $item.data('key');
             if (!key) return;
             $(`.item[data-key="${key}"]`).removeClass('highlight');
+        })
+        .on('show.bs.modal', '.modal', function () {
+            const visibleModals = $('.modal:visible').length;
+            const newZIndex = 1055 + (10 * visibleModals); // 每打开一个，z-index +10
+            $(this).css('z-index', newZIndex);
+            // 调整当前模态框的backdrop层级
+            setTimeout(() => {
+                $('.modal-backdrop').last().css('z-index', newZIndex - 1);
+            });
+        })
+        .on('hidden.bs.modal', '.modal', function () {
+            const visibleModals = $('.modal:visible').length;
+            if (visibleModals !== 0) {
+                $("body").addClass("modal-open");
+            }
         });
 
     // $("#add-dusts").click(function () {
@@ -974,6 +1190,7 @@ $(function () {
             $("#multi-item-input,#edit-target-list").show();
             window.multiItemMode = true;
         }
+        showDirtyWarning();
         debouncedSaveState();
     });
 
@@ -1159,8 +1376,295 @@ $(function () {
         applySettings(savedSettings);
     }
 
-    $("#setting-hover-highlight, #setting-auto-calculate").change(function () {
+    $(".setting-input").change(function () {
         saveSettings();
     });
+
+    window.recipePatches = loadPatches();
+    window.defaultRecipes = deepClone(recipes);
+
+    function renderPatchList() {
+        const $tbody = $("#patch-list-table");
+        $tbody.empty();
+        for (let i = 0; i < window.dirtyRecipePatches.length; i++) {
+            const patch = window.dirtyRecipePatches[i];
+            const recipeCount = Object.keys(patch.data).filter(k => patch.data[k] !== null).length;
+            const $tr = $(`
+                <tr data-index="${i}">
+                    <td>${i + 1}</td>
+                    <td><input type="checkbox" class="patch-able"></td>
+                    <td>${patch.name}</td>
+                    <td>${recipeCount}</td>
+                    <td>
+                        <button class="btn btn-xs btn-default patch-move-up" ${i === 0 ? 'disabled' : ''}>上移</button>
+                        <button class="btn btn-xs btn-default patch-move-down" ${i === window.dirtyRecipePatches.length - 1 ? 'disabled' : ''}>下移</button>
+                        <button class="btn btn-xs btn-primary patch-edit">编辑</button>
+                        <button class="btn btn-xs btn-default patch-export-single">导出</button>
+                        <button class="btn btn-xs btn-danger patch-delete">删除</button>
+                    </td>
+                </tr>
+            `);
+            $tr.find('.patch-able').prop('checked', patch.enabled);
+            $tbody.append($tr);
+        }
+        if (window.dirtyRecipePatches.length === 0) {
+            $tbody.append('<tr><td colspan="5" class="text-center text-muted">暂无补丁</td></tr>');
+        }
+    }
+
+    let currentPatchIndex = -1;
+
+    function openPatchManageModal() {
+        window.dirtyRecipePatches = deepClone(window.recipePatches);
+        renderPatchList();
+        $("#patch-list-error").hide();
+        $("#patch-manage-modal").modal('show');
+    }
+
+    function openPatchEditModal(index) {
+        currentPatchIndex = index;
+        const patch = index >= 0 ? window.dirtyRecipePatches[index] : {name: '', data: {}, enabled: true};
+        $("#patch-edit-title").text(index >= 0 ? '编辑补丁' : '添加补丁');
+        $("#patch-name").val(patch.name);
+        $("#patch-data").val(JSON.stringify(patch.data, null, 2));
+        $("#patch-edit-error").hide();
+        $("#patch-edit-modal").modal('show');
+    }
+
+    function savePatchFromModal() {
+        const name = $("#patch-name").val().trim();
+        const dataStr = $("#patch-data").val();
+        let data;
+
+        if (!name) {
+            $("#patch-edit-error").text('请输入补丁名称').show();
+            return;
+        }
+
+        try {
+            data = JSON.parse(dataStr);
+        } catch (e) {
+            $("#patch-edit-error").text('JSON格式错误：' + e.message).show();
+            return;
+        }
+
+        if (typeof data !== 'object' || data === null || Array.isArray(data)) {
+            $("#patch-edit-error").text('补丁数据必须是JSON对象').show();
+            return;
+        }
+
+        for (const key in data) {
+            if (!(typeof data[key] === 'object')) {
+                $("#patch-edit-error").text(`补丁数据格式错误："${key}" 必须是对象`).show();
+                return;
+            }
+            if (!("ingredients" in data[key])) {
+                $("#patch-edit-error").text(`补丁数据格式错误：每个配方必须包含 ingredients 字段，而 "${key}" 没有该字段`).show();
+                return;
+            }
+            if (!("type" in data[key])) {
+                $("#patch-edit-error").text(`补丁数据格式错误：每个配方必须包含 type 字段，而 "${key}" 没有该字段`).show();
+                return;
+            }
+            for (const ingredient of data[key].ingredients) {
+                const ingredientStr = JSON.stringify(ingredient);
+                if (!Array.isArray(ingredient)) {
+                    $("#patch-edit-error").text(`补丁数据格式错误：ingredient "${ingredientStr}" 必须是数组，而 "${key}" 的 "${ingredientStr}" 不是数组`).show();
+                    return;
+                }
+                if (ingredient.length > 2 || ingredient.length < 1) {
+                    $("#patch-edit-error").text(`补丁数据格式错误： "${key}" 的 ingredient "${ingredientStr}" 长度必须在 1 到 2 之间（第一项是物品名称，第二项是数量，如果没有数量，则默认为 1）`).show();
+                    return;
+                }
+                if (typeof ingredient[0] !== 'string') {
+                    $("#patch-edit-error").text(`补丁数据格式错误：ingredient "${ingredientStr}" 中的 "${ingredient[0]}" 必须是字符串，而 "${key}" 的 "${ingredientStr}" 中的 "${ingredient[0]}" 不是字符串`).show();
+                    return;
+                }
+                if (ingredient[1] && (typeof ingredient[1] !== 'number' || isNaN(ingredient[1]) || ingredient[1] < 1)) {
+                    $("#patch-edit-error").text(`补丁数据格式错误： "${key}" 的 ingredient "${ingredientStr}" 中的 "${ingredient[0]}" 数量 "${ingredient[1]}" 不是正整数`).show();
+                    return;
+                }
+            }
+        }
+
+        if (currentPatchIndex >= 0) {
+            window.dirtyRecipePatches[currentPatchIndex] = {name, data, enabled: window.dirtyRecipePatches[currentPatchIndex]?.enabled ?? true};
+        } else {
+            window.dirtyRecipePatches.push({name, data, enabled: true});
+        }
+
+        renderPatchList();
+        $("#patch-edit-modal").modal('hide');
+    }
+
+    $("#manage-recipe-patches").click(openPatchManageModal);
+
+    $("#patch-add").click(function () {
+        openPatchEditModal(-1);
+    });
+
+    $("#patch-list-table")
+        .on('click', '.patch-edit', function () {
+            const index = parseInt($(this).closest('tr').data('index'));
+            openPatchEditModal(index);
+        })
+        .on('click', '.patch-delete', function () {
+            const index = parseInt($(this).closest('tr').data('index'));
+            if (confirm(`确定要删除补丁 "${window.dirtyRecipePatches[index].name}" 吗？`)) {
+                window.dirtyRecipePatches.splice(index, 1);
+                renderPatchList();
+            }
+        })
+        .on('click', '.patch-move-up', function () {
+            const index = parseInt($(this).closest('tr').data('index'));
+            if (index > 0) {
+                const temp = window.dirtyRecipePatches[index];
+                window.dirtyRecipePatches[index] = window.dirtyRecipePatches[index - 1];
+                window.dirtyRecipePatches[index - 1] = temp;
+                renderPatchList();
+            }
+        })
+        .on('click', '.patch-move-down', function () {
+            const index = parseInt($(this).closest('tr').data('index'));
+            if (index < window.dirtyRecipePatches.length - 1) {
+                const temp = window.dirtyRecipePatches[index];
+                window.dirtyRecipePatches[index] = window.dirtyRecipePatches[index + 1];
+                window.dirtyRecipePatches[index + 1] = temp;
+                renderPatchList();
+            }
+        })
+        .on('click', '.patch-export-single', function () {
+            const index = parseInt($(this).closest('tr').data('index'));
+            const patch = window.dirtyRecipePatches[index];
+            const exportData = JSON.stringify(patch, null, 2);
+            downloadFile(`${patch.name}.json`, exportData, 'application/json');
+        })
+        .on('change', '.patch-able', function () {
+            const index = parseInt($(this).closest('tr').data('index'));
+            window.dirtyRecipePatches[index].enabled = $(this).prop('checked');
+        });
+
+    $("#patch-edit-save").click(savePatchFromModal);
+
+    $("#patch-save").click(function () {
+        const result = applyPatchesWithValidation();
+        if (!result.success) {
+            $("#patch-list-error").html(result.error).show();
+            return;
+        }
+        savePatches();
+        showDirtyWarning();
+        $("#patch-manage-modal").modal('hide');
+    });
+
+    $("#patch-import").click(function () {
+        $("#patch-import-file").click();
+    });
+
+    $("#patch-import-file").change(function (event) {
+        const file = event.target.files[0];
+        if (!file) return;
+
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            try {
+                const imported = JSON.parse(e.target.result);
+                let patchesToImport = [];
+
+                if (Array.isArray(imported)) {
+                    patchesToImport = imported;
+                } else if (typeof imported === 'object' && imported !== null) {
+                    patchesToImport = [imported];
+                } else {
+                    alert('导入文件格式错误');
+                    return;
+                }
+
+                for (const patch of patchesToImport) {
+                    if (!patch.name || !patch.data || typeof patch.data !== 'object') {
+                        alert('导入数据格式错误：每个补丁必须包含 name 和 data 字段');
+                        return;
+                    }
+                    patch.enabled ??= true;
+                }
+
+                const conflictNames = [];
+                for (const patch of patchesToImport) {
+                    const existing = window.dirtyRecipePatches.find(p => p.name === patch.name);
+                    if (existing) {
+                        conflictNames.push(patch.name);
+                    }
+                }
+
+                if (conflictNames.length > 0) {
+                    if (!confirm(`以下补丁名称已存在：${conflictNames.join(', ')}。是否覆盖？`)) {
+                        return;
+                    }
+                    window.dirtyRecipePatches = window.dirtyRecipePatches.filter(p => !conflictNames.includes(p.name));
+                }
+
+                window.dirtyRecipePatches = window.dirtyRecipePatches.concat(patchesToImport);
+                renderPatchList();
+                alert(`成功导入 ${patchesToImport.length} 个补丁`);
+            } catch (e) {
+                alert('解析JSON文件失败：' + e.message);
+            }
+        };
+        reader.readAsText(file);
+        $(this).val('');
+    });
+
+    $("#patch-export").click(function () {
+        if (window.dirtyRecipePatches.length === 0) {
+            alert('暂无补丁可导出');
+            return;
+        }
+        downloadFile('recipe-patches.json', JSON.stringify(window.dirtyRecipePatches, null, 2), 'application/json');
+    });
+
+    $("#patch-export-enabled").click(function () {
+        const enabledPatches = window.dirtyRecipePatches.filter(p => p.enabled);
+        if (enabledPatches.length === 0) {
+            alert('暂无已启用补丁可导出');
+            return;
+        }
+        downloadFile('enabled-recipe-patches.json', JSON.stringify(enabledPatches, null, 2), 'application/json');
+    });
+
+    // $("#patch-edit-modal").on("hidden.bs.modal", function () {
+    //     $("#patch-manage-modal").modal('show');
+    // });
+
+    if (window.recipePatches.length > 0) {
+        const result = applyPatchesWithValidation(window.recipePatches);
+        if (!result.success) {
+            openPatchManageModal();
+            $("#patch-list-error").html(result.error).show();
+        }
+    }
+
+    $("#setting-modal-esc").change(function (event) {
+        const value = $(this).is(":checked");
+        if (value) {
+            $(".modal").attr("data-keyboard", "true");
+        } else {
+            $(".modal").attr("data-keyboard", "false");
+        }
+        if (event.isTrigger === undefined) {
+            $("#setting-alert").show();
+        }
+    }).change();
+
+    $("#setting-modal-backdrop").change(function (event) {
+        const value = $(this).is(":checked");
+        if (value) {
+            $(".modal").attr("data-backdrop", "true");
+        } else {
+            $(".modal").attr("data-backdrop", "static");
+        }
+        if (event.isTrigger === undefined) {
+            $("#setting-alert").show();
+        }
+    }).change();
 
 });

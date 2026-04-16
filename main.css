@@ -50,7 +50,7 @@
 
 .item-icon {
     height: 32px;
-    image-rendering:pixelated;
+    image-rendering: pixelated;
     margin-right: 5px;
 }
 
@@ -201,4 +201,11 @@ input.has-warning:focus {
 .item.highlight.just-icon img, .item.highlight.just-icon .item-icon-unknown {
     outline: 2px solid #228B22;
     outline-offset: -2px;
+}
+
+.recipe-patched {
+    font-size: 12px;
+    color: #808080;
+    font-style: italic;
+    user-select: none;
 }

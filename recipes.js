@@ -2621,7 +2621,7 @@ let recipes = {
     },
     "有机食物(小麦)": {
         type: "食品加工机",
-        map: [["锡罐", "海草", null], [null, null, null], [null, null, null]],
+        map: [["锡罐", "小麦", null], [null, null, null], [null, null, null]],
         ingredients: [["锡罐"], ["小麦"]],
         count: 2
     },
@@ -8247,7 +8247,7 @@ let recipes = {
         map: [["鸡蛋", "切碎的洋葱", "甜椒"], ["切碎的大蒜", "剁碎的甜椒", "番茄"], [null, null, null]],
         ingredients: [["鸡蛋"], ["切碎的洋葱"], ["甜椒"], ["切碎的大蒜"], ["剁碎的甜椒"], ["番茄"]]
     },
-    "河豚": {
+    "河豚(农耕工艺)": {
         type: "上菜",
         map: [[null, "切片的河豚", null], [null, "煮熟的大米", null], [null, null, null]],
         ingredients: [["切片的河豚"], ["煮熟的大米"]]
@@ -9134,5 +9134,15 @@ let recipes = {
         map: [["烈焰棒", null, null], [null, null, null], [null, null, null]],
         ingredients: [["烈焰棒"]],
         count: 2
+    },
+    "干草捆": {
+        type: "工作台",
+        map: [["小麦", "小麦", "小麦"], ["小麦", "小麦", "小麦"], ["小麦", "小麦", "小麦"]],
+        ingredients: [["小麦", 9]],
+    },
+    "铁桶": {
+        type: "工作台",
+        map: [["铁锭", null, "铁锭"], [null, "铁锭", null], [null, null, null]],
+        ingredients: [["铁锭", 3]]
     }
 };

@@ -22,7 +22,7 @@
     </div>
     <div class="panel panel-default">
         <div class="panel-heading toggle-panel" id="introduction-toggle">
-            <h3 class="panel-title">说明与设置（点击显示/隐藏）</h3>
+            <h3 class="panel-title">说明与设置（点击展开/折叠）</h3>
         </div>
         <div class="panel-collapse collapse in">
             <div class="panel-body">
@@ -33,21 +33,46 @@
                 <p><b>点击任意物品，即可添加到已有物品列表并重新计算合成过程。</b></p>
                 <p>
                     表格操作提示：输入框内按回车键在下方插入，Shift+回车键在上方插入，上下箭头在当前列不同行间跳转，Tab键切换到下一个输入框，Shift+Tab键切换到上一个输入框。</p>
-                <p>本项目在 <a href="https://github.com/myworldzycpc/crafting-calculator">GitHub</a>
+                <p>本项目在 <a href="https://github.com/myworldzycpc/crafting-calculator" target="_blank">GitHub</a>
                     上开源。欢迎提出建议、贡献代码、合成配方和物品图标等。</p>
-                <p class="no-margin">如果有想添加的附属，请提交 
-                    <a href="https://github.com/myworldzycpc/crafting-calculator/issues">Issue</a>
-                    或 <a href="https://github.com/myworldzycpc/crafting-calculator/pulls">Pull Request</a>。</p>
+                <p class="no-margin">
+                    如果有想添加的附属，请提交
+                    <a href="https://github.com/myworldzycpc/crafting-calculator/issues" target="_blank">Issue</a>
+                    或 <a href="https://github.com/myworldzycpc/crafting-calculator/pulls" target="_blank">Pull Request</a>。
+                </p>
                 <hr>
                 <h2>设置</h2>
                 <div class="form-group" style="margin-top: 15px;">
-                    <label for="setting-hover-highlight" style="margin-right: 10px;">悬停高亮（鼠标悬停在物品上时高亮相同物品）：</label>
-                    <input type="checkbox" id="setting-hover-highlight" checked>
+                    <label for="setting-hover-highlight">悬停高亮：</label>
+                    <input type="checkbox" id="setting-hover-highlight" class="setting-input" checked>
+                    <p><small>鼠标悬停在物品上时高亮相同物品</small></p>
                 </div>
-                <div class="form-group" style="display: flex; align-items: center; gap: 10px; margin-bottom: 0">
-                    <label for="setting-auto-calculate" style="margin-bottom: 0;">自动重算时间（毫秒，0立刻，留空永不）：</label>
-                    <input type="text" id="setting-auto-calculate" class="form-control" style="flex: 1; display: inline-block;" placeholder="永不">
+                <div class="form-group">
+                    <label for="setting-auto-calculate">自动重算时间：</label>
+                    <p><small>停止操作后多久自动重新计算（毫秒，0立刻，留空永不）</small></p>
+                    <input type="text" id="setting-auto-calculate" class="form-control setting-input" style="flex: 1; display: inline-block;" placeholder="永不">
                 </div>
+                <div class="form-group">
+                    <label for="setting-expand-confirm">步骤较多时展开/折叠确认：</label>
+                    <input type="checkbox" id="setting-expand-confirm" class="setting-input" checked>
+                    <p><small>步骤较多时，展开/折叠会造成卡顿，开启此选项可要求确认</small></p>
+                </div>
+                <div class="form-group">
+                    <label style="margin-right: 10px;">配方补丁：</label>
+                    <p><small>允许添加或覆盖预先定义的配方</small></p>
+                    <button class="btn btn-sm btn-default" id="manage-recipe-patches">管理补丁</button>
+                </div>
+                <div class="form-group">
+                    <label for="setting-modal-esc">允许Esc键关闭模态框：</label>
+                    <input type="checkbox" id="setting-modal-esc" class="setting-input" checked>
+                    <p><small>允许Esc键关闭模态框，如果你经常误操作关闭模态框，可以关闭此选项。<b>刷新页面后生效。</b></small></p>
+                </div>
+                <div class="form-group">
+                    <label for="setting-modal-backdrop">允许点击背景关闭模态框：</label>
+                    <input type="checkbox" id="setting-modal-backdrop" class="setting-input" checked>
+                    <p><small>允许点击背景关闭模态框，如果你经常误操作关闭模态框，可以关闭此选项。<b>刷新页面后生效。</b></small></p>
+                </div>
+                <div id="setting-alert" class="alert alert-warning" style="display: none; margin-bottom: 0">部分设置将在刷新页面后生效</div>
             </div>
         </div>
     </div>
@@ -92,7 +117,7 @@
         <div class="panel panel-default">
             <div class="panel-heading toggle-panel">
                 <div style="display: flex; align-items: center;">
-                    <label style="margin: 0;">已有物品：</label>
+                    <label style="margin: 0;">已有物品（点击展开/折叠）：</label>
                     <button class="btn btn-sm btn-default" id="edit-already-have" style="margin-left: auto;">编辑列表</button>
                 </div>
             </div>
@@ -123,12 +148,12 @@
     <div class="form-group">
         <button class="btn btn-primary btn-lg btn-block" id="calculate">计算</button>
     </div>
-    <div id="dirty-warning" class="alert alert-warning" style="display: none">修改物品后，记得点击计算按钮重新计算</div>
+    <div id="dirty-warning" class="alert alert-warning" style="display: none">修改任何输入后，记得点击计算按钮重新计算</div>
     <div id="results" style="display: none;">
         <div class="form-group">
             <label>推导过程：</label>
             <div class="panel panel-default">
-                <div class="panel-heading toggle-panel" id="inference-toggle">显示/隐藏推导过程</div>
+                <div class="panel-heading toggle-panel" id="inference-toggle">展开/折叠推导过程</div>
                 <div class="panel-collapse collapse">
                     <div class="panel-body">
                         <p id="inference-panel"></p>
@@ -196,8 +221,9 @@
                         </label>
                     </label>
                 </div>
+                <div class="alert alert-info">如果要进行较大更改，建议在外部编辑器中编辑后粘贴到此处。在此处的未保存的更改容易由于意外关闭模态框或页面等而丢失。</div>
                 <label for="list-edit-content" style="display: none"></label>
-                <textarea id="list-edit-content" class="form-control" rows="15" style="font-family: monospace; resize: vertical;"></textarea>
+                <textarea id="list-edit-content" class="form-control" rows="15" style="font-family: monospace; resize: vertical;" spellcheck="false"></textarea>
                 <div id="list-edit-error" class="text-danger" style="margin-top: 10px; display: none;"></div>
             </div>
             <div class="modal-footer">
@@ -207,5 +233,72 @@
         </div>
     </div>
 </div>
+
+<div class="modal fade" id="patch-manage-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">管理配方补丁</h4>
+            </div>
+            <div class="modal-body">
+                <div id="patch-list-error" class="alert alert-danger" style="display: none;"></div>
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th>序号</th>
+                        <th>已启用</th>
+                        <th>名称</th>
+                        <th>配方数量</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody id="patch-list-table"></tbody>
+                </table>
+                <div style="margin-top: 15px;">
+                    <button class="btn btn-success" id="patch-add">添加补丁</button>
+                    <button class="btn btn-info" id="patch-import">导入</button>
+                    <div style="float: right;">
+                        <button class="btn btn-default" id="patch-export-enabled">导出已启用</button>
+                        <button class="btn btn-default" id="patch-export">导出全部</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消（放弃所有更改）</button>
+                <button type="button" class="btn btn-primary" id="patch-save">保存</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="patch-edit-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="patch-edit-title">编辑补丁</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="patch-name">补丁名称：</label>
+                    <input type="text" id="patch-name" class="form-control" placeholder="输入补丁名称">
+                </div>
+                <div class="alert alert-info">如果要进行较大更改，建议在外部编辑器中编辑后粘贴到此处。这里不提供语法高亮，且在此处的未保存的更改容易由于意外关闭模态框或页面等而丢失。</div>
+                <div class="form-group">
+                    <label for="patch-data">补丁数据（JSON格式，null值会删除对应配方）：</label>
+                    <textarea id="patch-data" class="form-control" rows="20" style="font-family: monospace; resize: vertical;" spellcheck="false"></textarea>
+                </div>
+                <div id="patch-edit-error" class="alert alert-danger" style="display: none;"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary" id="patch-edit-save">保存</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<input type="file" id="patch-import-file" accept=".json" style="display: none;">
 </body>
 </html>

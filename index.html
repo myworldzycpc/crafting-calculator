@@ -55,11 +55,11 @@
                 <div class="form-group">
                     <label for="setting-expand-confirm">步骤较多时展开/折叠确认：</label>
                     <input type="checkbox" id="setting-expand-confirm" class="setting-input" checked>
-                    <p><small>步骤较多时，展开/折叠会造成卡顿，开启此选项可要求确认</small></p>
+                    <p><small>步骤较多时，展开/折叠可能会造成卡顿，开启此选项可要求确认</small></p>
                 </div>
                 <div class="form-group">
                     <label style="margin-right: 10px;">配方补丁：</label>
-                    <p><small>允许添加或覆盖预先定义的配方</small></p>
+                    <p><small>允许添加或覆盖预先定义的配方。已启用的补丁将按照顺序逐个合并到默认配方数据上。</small></p>
                     <button class="btn btn-sm btn-default" id="manage-recipe-patches">管理补丁</button>
                 </div>
                 <div class="form-group">
@@ -286,7 +286,10 @@
                 </div>
                 <div class="alert alert-info">如果要进行较大更改，建议在外部编辑器中编辑后粘贴到此处。这里不提供语法高亮，且在此处的未保存的更改容易由于意外关闭模态框或页面等而丢失。</div>
                 <div class="form-group">
-                    <label for="patch-data">补丁数据（JSON格式，null值会删除对应配方）：</label>
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                        <label for="patch-data" style="margin-bottom: 0;">补丁数据（JSON格式，null值会删除对应配方）：</label>
+                        <a href="https://github.com/myworldzycpc/crafting-calculator?tab=readme-ov-file#%E8%87%AA%E5%AE%9A%E4%B9%89%E9%85%8D%E6%96%B9" target="_blank" style="margin-left: auto; white-space: nowrap">查看格式参考</a>
+                    </div>
                     <textarea id="patch-data" class="form-control" rows="20" style="font-family: monospace; resize: vertical;" spellcheck="false"></textarea>
                 </div>
                 <div id="patch-edit-error" class="alert alert-danger" style="display: none;"></div>

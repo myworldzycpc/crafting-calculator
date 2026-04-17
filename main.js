@@ -134,8 +134,8 @@ function detectCycles(recipesData, patches) {
         patches = window.dirtyRecipePatches;
     }
     const visited = {};
-    const recStack = {};
-    const cycleNodes = new Set();
+    const recStack = [];
+    const cycleNodes = [];
     const patchInfo = {};
 
     for (const key in recipesData) {
@@ -153,66 +153,41 @@ function detectCycles(recipesData, patches) {
 
     function dfs(node) {
         visited[node] = true;
-        recStack[node] = true;
+        recStack.push(node);
 
         const recipe = recipesData[node];
         if (recipe && recipe.ingredients) {
             for (const ingredient of recipe.ingredients) {
                 const ingredientKey = ingredient[0];
                 if (recipesData[ingredientKey]) {
-                    if (recStack[ingredientKey]) {
-                        cycleNodes.add(node);
-                        cycleNodes.add(ingredientKey);
+                    const index = recStack.lastIndexOf(ingredientKey);
+                    if (index !== -1) {
+                        for (const key of recStack.slice(index)) {
+                            cycleNodes.push(key);
+                        }
+                        return true;
                     } else if (!visited[ingredientKey]) {
-                        dfs(ingredientKey);
+                        if (dfs(ingredientKey)) return true;
                     }
                 }
             }
         }
 
-        recStack[node] = false;
+        recStack.pop();
+        return false;
     }
 
     for (const key in recipesData) {
         if (!visited[key]) {
-            dfs(key);
+            if (dfs(key)) break;
         }
     }
 
-    if (cycleNodes.size === 0) {
+    if (cycleNodes.length === 0) {
         return {hasCycle: false, cycleNodes: [], patchInfo: {}};
     }
 
-    const relevantCycles = new Set();
-
-    function findRelatedCycles(node) {
-        relevantCycles.add(node);
-        const recipe = recipesData[node];
-        if (recipe && recipe.ingredients) {
-            for (const ingredient of recipe.ingredients) {
-                const ingredientKey = ingredient[0];
-                if (cycleNodes.has(ingredientKey) && !relevantCycles.has(ingredientKey)) {
-                    findRelatedCycles(ingredientKey);
-                }
-            }
-        }
-        for (const otherKey in recipesData) {
-            const otherRecipe = recipesData[otherKey];
-            if (otherRecipe && otherRecipe.ingredients) {
-                for (const ingredient of otherRecipe.ingredients) {
-                    if (ingredient[0] === node && cycleNodes.has(otherKey) && !relevantCycles.has(otherKey)) {
-                        findRelatedCycles(otherKey);
-                    }
-                }
-            }
-        }
-    }
-
-    for (const node of cycleNodes) {
-        findRelatedCycles(node);
-    }
-
-    const cycleNodesArray = Array.from(relevantCycles).map(node => ({
+    const cycleNodesArray = cycleNodes.map(node => ({
         key: node,
         patch: patchInfo[node]
     }));
@@ -1466,6 +1441,16 @@ $(function () {
             return;
         }
 
+        for (const [index, patch] of dirtyRecipePatches.entries()) {
+            if (patch.name === name) {
+                if (index === currentPatchIndex) {
+                    continue;
+                }
+                $("#patch-edit-error").text('补丁名称重复，请修改').show();
+                return;
+            }
+        }
+
         try {
             data = JSON.parse(dataStr);
         } catch (e) {
@@ -1479,16 +1464,19 @@ $(function () {
         }
 
         for (const key in data) {
+            if (data[key] === null) {
+                continue;
+            }
             if (!(typeof data[key] === 'object')) {
                 $("#patch-edit-error").text(`补丁数据格式错误："${key}" 必须是对象`).show();
                 return;
             }
-            if (!("ingredients" in data[key])) {
-                $("#patch-edit-error").text(`补丁数据格式错误：每个配方必须包含 ingredients 字段，而 "${key}" 没有该字段`).show();
-                return;
-            }
             if (!("type" in data[key])) {
                 $("#patch-edit-error").text(`补丁数据格式错误：每个配方必须包含 type 字段，而 "${key}" 没有该字段`).show();
+                return;
+            }
+            if (!("ingredients" in data[key])) {
+                $("#patch-edit-error").text(`补丁数据格式错误：每个配方必须包含 ingredients 字段，而 "${key}" 没有该字段`).show();
                 return;
             }
             for (const ingredient of data[key].ingredients) {
@@ -1507,6 +1495,42 @@ $(function () {
                 }
                 if (ingredient[1] && (typeof ingredient[1] !== 'number' || isNaN(ingredient[1]) || ingredient[1] < 1)) {
                     $("#patch-edit-error").text(`补丁数据格式错误： "${key}" 的 ingredient "${ingredientStr}" 中的 "${ingredient[0]}" 数量 "${ingredient[1]}" 不是正整数`).show();
+                    return;
+                }
+            }
+            if ("map" in data[key]) {
+                const mapStr = JSON.stringify(data[key].map);
+                if (!Array.isArray(data[key].map)) {
+                    $("#patch-edit-error").text(`补丁数据格式错误： "${key}" 的 map 字段必须是数组，而 "${key}" 的 "${mapStr}" 不是数组`).show();
+                    return;
+                }
+                if (data[key].map.length !== 3) {
+                    $("#patch-edit-error").text(`补丁数据格式错误： "${key}" 的 map 字段长度必须为 3，而 "${key}" 的 "${mapStr}" 长度为 ${data[key].map.length}。（目前仅支持 3x3 矩阵，该矩阵仅用于显示，不影响配方计算）`).show();
+                    return;
+                }
+                for (const row of data[key].map) {
+                    const rowStr = JSON.stringify(row);
+                    if (!Array.isArray(row)) {
+                        $("#patch-edit-error").text(`补丁数据格式错误： "${key}" 的 map 字段的每一项必须是数组，而 "${key}" 的 "${mapStr}" 的 "${rowStr}" 不是数组`).show();
+                        return;
+                    }
+                    if (row.length !== 3) {
+                        $("#patch-edit-error").text(`补丁数据格式错误： "${key}" 的 map 字段的每一项长度必须为 3，而 "${key}" 的 "${mapStr}" 的 "${rowStr}" 长度为 ${row.length}。（目前仅支持 3x3 矩阵，该矩阵仅用于显示，不影响配方计算）`).show();
+                        return;
+                    }
+                    for (const cell of row) {
+                        const cellStr = JSON.stringify(cell);
+                        if (typeof cell !== 'string' && cell !== null) {
+                            $("#patch-edit-error").text(`补丁数据格式错误： "${key}" 的 map 字段的每一项的每一项必须是字符串或 null，而 "${key}" 的 "${mapStr}" 的 "${rowStr}" 的 "${cellStr}" 不是字符串或 null`).show();
+                            return;
+                        }
+                    }
+                }
+            }
+            if ("count" in data[key]) {
+                const count = data[key].count;
+                if (typeof count !== 'number' || isNaN(count) || count <= 0) {
+                    $("#patch-edit-error").text(`补丁数据格式错误： "${key}" 的 count 字段必须是正数，而 "${key}" 的 "${count}" 不是正数`).show();
                     return;
                 }
             }

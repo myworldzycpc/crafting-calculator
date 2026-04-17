@@ -14,6 +14,19 @@ window.basicCountOrder = [];
 window.showedInference = true;
 window.patchedRecipes = {};
 
+function escapeHtml(str) {
+    return str.replace(/[&<>]/g, function (m) {
+        if (m === '&') return '&amp;';
+        if (m === '<') return '&lt;';
+        if (m === '>') return '&gt;';
+        return m;
+    }).replace(/["']/g, function (m) {
+        if (m === '"') return '&quot;';
+        if (m === "'") return '&#39;';
+        return m;
+    });
+}
+
 const STORAGE_KEY = 'crafting-calculator-state';
 const SETTINGS_KEY = 'crafting-calculator-settings';
 window.autoCalculateTimer = null;
@@ -215,7 +228,7 @@ function applyPatchesWithValidation(patches) {
     const cycleResult = detectCycles(effectiveRecipes, patches);
 
     if (cycleResult.hasCycle) {
-        const cycleKeys = cycleResult.cycleNodes.map(n => n.key).join(', ');
+        const cycleKeys = cycleResult.cycleNodes.map(n => n.key).concat([cycleResult.cycleNodes[0].key]).join(' → ');
         const patchNames = [...new Set(cycleResult.cycleNodes.map(n => n.patch || '默认'))].join(', ');
         return {
             success: false,
@@ -239,8 +252,8 @@ function saveState() {
 
     $("#item-target-list").find("tr").each(function () {
         const $tr = $(this);
-        const item = $tr.find('input[name=key]').val().replace(/\s+/g, '');
-        const count = $tr.find('input[name=count]').val().replace(/\s+/g, '');
+        const item = $tr.find('input[name=key]').val().trim();
+        const count = $tr.find('input[name=count]').val().trim();
         if (item || count) {
             state.multiItemList.push({key: item, count: count || '1'});
         }
@@ -248,8 +261,8 @@ function saveState() {
 
     $("#item-already-have").find("tr").each(function () {
         const $tr = $(this);
-        const item = $tr.find('input[name=key]').val().replace(/\s+/g, '');
-        const count = $tr.find('input[name=count]').val().replace(/\s+/g, '');
+        const item = $tr.find('input[name=key]').val().trim();
+        const count = $tr.find('input[name=count]').val().trim();
         if (item || count) {
             state.alreadyHaveList.push({key: item, count: count || '-1'});
         }
@@ -291,11 +304,13 @@ function applyState(state) {
         for (const item of state.multiItemList) {
             const key = item.key || '';
             const count = item.count || '1';
+            const escapedKey = escapeHtml(key);
+            const escapedCount = escapeHtml(count);
             const $tr = $(`
                 <tr>
                     <td>${renderItem(key, -1)}</td>
-                    <td><input type="text" class="form-control in-computation-process" name="key" list="item-list" value="${key}"></td>
-                    <td><input type="text" class="form-control in-computation-process" name="count" oninput="checkNumber(this)" value="${count}"></td>
+                    <td><input type="text" class="form-control in-computation-process" name="key" list="item-list" value="${escapedKey}"></td>
+                    <td><input type="text" class="form-control in-computation-process" name="count" oninput="checkNumber(this)" value="${escapedCount}"></td>
                     <td><button class="btn btn-danger" data-action="delete">删除</button></td>
                 </tr>
             `);
@@ -311,11 +326,13 @@ function applyState(state) {
         for (const item of state.alreadyHaveList) {
             const key = item.key || '';
             const count = item.count || '-1';
+            const escapedKey = escapeHtml(key);
+            const escapedCount = escapeHtml(count === '-1' ? '' : count);
             const $tr = $(`
                 <tr>
                     <td>${renderItem(key, -1)}</td>
-                    <td><input type="text" class="form-control in-computation-process" name="key" list="item-list" value="${key}"></td>
-                    <td><input type="text" class="form-control in-computation-process" name="count" oninput="checkNumber(this)" value="${count === '-1' ? '' : count}"></td>
+                    <td><input type="text" class="form-control in-computation-process" name="key" list="item-list" value="${escapedKey}"></td>
+                    <td><input type="text" class="form-control in-computation-process" name="count" oninput="checkNumber(this)" value="${escapedCount}"></td>
                     <td><button class="btn btn-danger" data-action="delete">删除</button></td>
                 </tr>
             `);
@@ -383,7 +400,9 @@ function showResult(result) {
     $results_table.empty();
     for (let i = 0; i < result.length; i++) {
         const key = result[i];
-        const $tr = $(`<tr class="search-result-item" data-key="${key}"><td>${renderItem(key, -1)}</td><td><div class="search-result-key">${key}</div></td></tr>`);
+        const escapedKey = escapeHtml(key);
+        const $tr = $(`<tr class="search-result-item"><td>${renderItem(key, -1)}</td><td><div class="search-result-key">${escapedKey}</div></td></tr>`);
+        $tr.data('key', key);
         $results_table.append($tr);
     }
     $result.show();
@@ -539,15 +558,15 @@ function renderMap(key) {
 function readItemList() {
     let itemList = [];
     if (!window.multiItemMode) {
-        const key = $("#input-item").val().replace(/\s+/g, '');
+        const key = $("#input-item").val().trim();
         if (key) {
             itemList = [[key, 1]];
         }
     } else {
         $("#item-target-list").find("tr").each(function () {
             const $tr = $(this);
-            const item = $tr.find('input[name=key]').val().replace(/\s+/g, '');
-            const count = $tr.find('input[name=count]').val().replace(/\s+/g, '');
+            const item = $tr.find('input[name=key]').val().trim();
+            const count = $tr.find('input[name=count]').val().trim();
             if (item && count && parseInt(count) > 0) {
                 itemList.push([item, parseInt(count)]);
             }
@@ -641,7 +660,7 @@ function showRecipe() {
                 <td>${recipes[item].map ? renderMap(item) : ''}</td>
                 <td class="item-group">${recipes[item].ingredients.map(i => `${renderItem(i[0], i[1] ? i[1] * times[item] : times[item])}`).join('')}</td>
                 <td>${renderItem(recipes[item].type, 0)}</td>
-                <td>${renderItem(item, count[item])}${patchedRecipes[item] ? ` <span class="recipe-patched" title="已被 ${patchedRecipes[item]} 补丁修改">${patchedRecipes[item]}</span>` : ''}</td>
+                <td>${renderItem(item, count[item])}${patchedRecipes[item] ? ` <span class="recipe-patched" title="已被 ${escapeHtml(patchedRecipes[item])} 补丁修改">${escapeHtml(patchedRecipes[item])}</span>` : ''}</td>
             </tr>
         `;
     }
@@ -670,7 +689,7 @@ function showRecipe() {
 }
 
 function doSearch() {
-    const keyword = $("#input-item").val().replace(/\s+/g, '');
+    const keyword = $("#input-item").val().trim();
 
     if (keyword.length > 0) {
         const result = searchItem(keyword);
@@ -729,11 +748,13 @@ function scheduleAutoCalculate() {
 
 function addAlreadyItem(key = "", count = -1, update = true) {
     const $table = $("#item-already-have");
+    const escapedKey = escapeHtml(key);
+    const escapedCount = escapeHtml(count === -1 ? '' : count);
     $table.append(`
         <tr>
             <td>${renderItem(key, -1)}</td>
-            <td><input type="text" class="form-control in-computation-process" name="key" list="item-list" value="${key}"></td>
-            <td><input type="text" class="form-control in-computation-process" name="count" oninput="checkNumber(this)" value="${count === -1 ? '' : count}"></td>
+            <td><input type="text" class="form-control in-computation-process" name="key" list="item-list" value="${escapedKey}"></td>
+            <td><input type="text" class="form-control in-computation-process" name="count" oninput="checkNumber(this)" value="${escapedCount}"></td>
             <td><button class="btn btn-danger" data-action="delete">删除</button></td>
         </tr>
     `);
@@ -759,8 +780,8 @@ function applyRemainToAlreadyHave() {
         if ($tr.is('#item-already-have-header') || $tr.is('#add-item-row')) {
             return;
         }
-        const key = $tr.find('input[name=key]').val().replace(/\s+/g, '');
-        const countInput = $tr.find('input[name=count]').val().replace(/\s+/g, '');
+        const key = $tr.find('input[name=key]').val().trim();
+        const countInput = $tr.find('input[name=count]').val().trim();
         if (key) {
             existingRows[key] = {$tr, count: countInput};
         }
@@ -790,8 +811,8 @@ function readAlreadyHave() {
         if ($tr.is('#item-already-have-header') || $tr.is('#add-item-row')) {
             return;
         }
-        const key = $tr.find('input[name=key]').val().replace(/\s+/g, '');
-        let count = $tr.find('input[name=count]').val().replace(/\s+/g, '');
+        const key = $tr.find('input[name=key]').val().trim();
+        let count = $tr.find('input[name=count]').val().trim();
         if (!count) {
             count = -1;
         }
@@ -811,18 +832,19 @@ function renderItem(key, count = 0) {
     if (key === null) {
         return `<span class="item-empty"></span>`;
     }
+    const escapedKey = escapeHtml(key);
     if (count === -1) {
         if (getIconUrl(key)) {
-            return `<span class="item just-icon" data-key="${key}"><img class="item-icon" data-key="${key}" src="${getIconUrl(key)}" alt="" title="${key}"></span>`;
+            return `<span class="item just-icon" data-key="${escapedKey}"><img class="item-icon" data-key="${escapedKey}" src="${getIconUrl(key)}" alt="" title="${escapedKey}"></span>`;
         } else {
             let reducedKey = key.replace(/[^A-Za-z0-9一-龟]+/g, '');
             if (reducedKey.length > 2) {
                 reducedKey = reducedKey.charAt(0) + reducedKey.slice(-1);
             }
-            return `<span class="item just-icon" data-key="${key}"><div class="item-icon-unknown ${key.length === 1 ? 'item-icon-unknown-single' : 'item-icon-unknown-double'}" title="${key}">${reducedKey}</div></span>`;
+            return `<span class="item just-icon" data-key="${escapedKey}"><div class="item-icon-unknown ${key.length === 1 ? 'item-icon-unknown-single' : 'item-icon-unknown-double'}" title="${escapedKey}">${escapeHtml(reducedKey)}</div></span>`;
         }
     } else if (count === 0) {
-        return `<span class="item" data-key="${key}">${getIconUrl(key) ? `<img class="item-icon" data-key="${key}" src="${getIconUrl(key)}" alt="">` : ''}${key}</span>`;
+        return `<span class="item" data-key="${escapedKey}">${getIconUrl(key) ? `<img class="item-icon" data-key="${escapedKey}" src="${getIconUrl(key)}" alt="">` : ''}${escapedKey}</span>`;
     } else {
         const quotient = Math.floor(count / 64);
         const remainder = count % 64;
@@ -836,7 +858,7 @@ function renderItem(key, count = 0) {
         } else {
             humanCount = `${remainder}`;
         }
-        return `<span class="item" data-key="${key}">${getIconUrl(key) ? `<img class="item-icon" data-key="${key}" src="${getIconUrl(key)}" alt="">` : ''}${key} <span class="count">${humanCount}</span></span>`;
+        return `<span class="item" data-key="${escapedKey}">${getIconUrl(key) ? `<img class="item-icon" data-key="${escapedKey}" src="${getIconUrl(key)}" alt="">` : ''}${escapedKey} <span class="count">${humanCount}</span></span>`;
     }
 }
 
@@ -972,7 +994,7 @@ $(function () {
     }).on('focus', 'input', function (event) {
         event.target.select();
     }).on('input', 'input[name=key]', function (event) {
-        const key = $(event.target).val().replace(/\s+/g, '');
+        const key = $(event.target).val().trim();
         const isItemTargetList = $(event.target).closest("tbody").is("#item-target-list");
         if (key.length > 0) {
             if (recipes[key]) {
@@ -1006,7 +1028,7 @@ $(function () {
         }
     }).on('input', 'input[name=count]', function (event) {
         if ($(event.target).closest("tbody").is("#item-target-list")) {
-            const count = $(event.target).val().replace(/\s+/g, '');
+            const count = $(event.target).val().trim();
             if (count === '' || parseInt(count) <= 0) {
                 $(event.target).addClass('has-error');
             } else {
@@ -1136,13 +1158,13 @@ $(function () {
             const $item = $(event.target).closest('.item');
             const key = $item.data('key');
             if (!key) return;
-            $(`.item[data-key="${key}"]`).addClass('highlight');
+            $(`.item[data-key="${CSS.escape(key)}"]`).addClass('highlight');
         })
         .on('mouseleave', '.item', function (event) {
             const $item = $(event.target).closest('.item');
             const key = $item.data('key');
             if (!key) return;
-            $(`.item[data-key="${key}"]`).removeClass('highlight');
+            $(`.item[data-key="${CSS.escape(key)}"]`).removeClass('highlight');
         })
         .on('show.bs.modal', '.modal', function () {
             const visibleModals = $('.modal:visible').length;
@@ -1234,8 +1256,8 @@ $(function () {
             $("#modal-list-title").text(title);
             $itemTargetList.find("tr").each(function () {
                 const $tr = $(this);
-                const item = $tr.find('input[name=key]').val().replace(/\s+/g, '');
-                const count = $tr.find('input[name=count]').val().replace(/\s+/g, '') || '1';
+                const item = $tr.find('input[name=key]').val().trim();
+                const count = $tr.find('input[name=count]').val().trim() || '1';
                 if (item || count !== '1') {
                     content += `${item}${separator}${count}\n`;
                 }
@@ -1248,8 +1270,8 @@ $(function () {
                 if ($tr.is('#item-already-have-header') || $tr.is('#add-item-row')) {
                     return;
                 }
-                const item = $tr.find('input[name=key]').val().replace(/\s+/g, '');
-                let count = $tr.find('input[name=count]').val().replace(/\s+/g, '');
+                const item = $tr.find('input[name=key]').val().trim();
+                let count = $tr.find('input[name=count]').val().trim();
                 if (item && count === '') {
                     content += `${item}\n`;
                 } else if (item && count !== '') {
@@ -1328,11 +1350,13 @@ $(function () {
 
     function addTargetItemRow(key = '', count = '1') {
         const $tbody = $itemTargetList;
+        const escapedKey = escapeHtml(key);
+        const escapedCount = escapeHtml(count);
         const $tr = $(`
             <tr>
                 <td>${renderItem(key, -1)}</td>
-                <td><input type="text" class="form-control in-computation-process" name="key" list="item-list" value="${key}"></td>
-                <td><input type="text" class="form-control in-computation-process" name="count" oninput="checkNumber(this)" value="${count}"></td>
+                <td><input type="text" class="form-control in-computation-process" name="key" list="item-list" value="${escapedKey}"></td>
+                <td><input type="text" class="form-control in-computation-process" name="count" oninput="checkNumber(this)" value="${escapedCount}"></td>
                 <td><button class="btn btn-danger" data-action="delete">删除</button></td>
             </tr>
         `);
@@ -1389,11 +1413,12 @@ $(function () {
         for (let i = 0; i < window.dirtyRecipePatches.length; i++) {
             const patch = window.dirtyRecipePatches[i];
             const recipeCount = Object.keys(patch.data).filter(k => patch.data[k] !== null).length;
+            const escapedName = escapeHtml(patch.name);
             const $tr = $(`
                 <tr data-index="${i}">
                     <td>${i + 1}</td>
                     <td><input type="checkbox" class="patch-able"></td>
-                    <td>${patch.name}</td>
+                    <td>${escapedName}</td>
                     <td>${recipeCount}</td>
                     <td>
                         <button class="btn btn-xs btn-default patch-move-up" ${i === 0 ? 'disabled' : ''}>上移</button>

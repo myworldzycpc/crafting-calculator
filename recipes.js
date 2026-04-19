@@ -8849,8 +8849,8 @@ let recipes = {
     },
     "石英块": {
         type: "工作台",
-        map: [["石英", "石英", null], ["石英", "石英", null], [null, null, null]],
-        ingredients: [["石英", 4]]
+        map: [["下界石英", "下界石英", null], ["下界石英", "下界石英", null], [null, null, null]],
+        ingredients: [["下界石英", 4]]
     },
     "碗": {
         type: "工作台",

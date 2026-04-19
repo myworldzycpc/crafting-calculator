@@ -9144,5 +9144,10 @@ let recipes = {
         type: "工作台",
         map: [["铁锭", null, "铁锭"], [null, "铁锭", null], [null, null, null]],
         ingredients: [["铁锭", 3]]
+    },
+    "书与笔": {
+        type: "工作台",
+        map: [["书", "墨囊"], [null, "羽毛", null], [null, null, null]],
+        ingredients: [["书"], ["墨囊"], ["羽毛"]],
     }
 };

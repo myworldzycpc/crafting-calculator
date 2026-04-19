@@ -215,3 +215,7 @@ input.has-warning:focus {
     text-overflow: ellipsis;
     vertical-align: middle;
 }
+
+.hide-detail-column .detail-column {
+    display: none;
+}

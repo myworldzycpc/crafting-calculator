@@ -13,6 +13,8 @@ window.multiItemMode = false;
 window.basicCountOrder = [];
 window.showedInference = true;
 window.patchedRecipes = {};
+window.persistentCurrentItems = [];
+window.currentShowingStep = null;
 
 function escapeHtml(str) {
     return str.replace(/[&<>]/g, function (m) {
@@ -38,6 +40,7 @@ function saveSettings() {
         expandConfirm: $("#setting-expand-confirm").is(":checked"),
         modalEsc: $("#setting-modal-esc").is(":checked"),
         modalBackdrop: $("#setting-modal-backdrop").is(":checked"),
+        showDetailColumn: $("#setting-show-detail-column").is(":checked"),
     };
     try {
         localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
@@ -73,6 +76,9 @@ function applySettings(settings) {
     }
     if (settings.modalBackdrop !== undefined) {
         $("#setting-modal-backdrop").prop("checked", settings.modalBackdrop);
+    }
+    if (settings.showDetailColumn !== undefined) {
+        $("#setting-show-detail-column").prop("checked", settings.showDetailColumn);
     }
 }
 
@@ -551,6 +557,9 @@ function readItemList() {
 }
 
 function showRecipe() {
+    const $calculationAlert = $("#calculation-alert");
+    $calculationAlert.hide();
+    $("#step-detail-modal").modal("hide");
     if (window.currentShowing.length === 0) {
         return;
     }
@@ -558,11 +567,11 @@ function showRecipe() {
     for (const item of window.currentShowing) {
         const key = item[0];
         if (!recipes[key]) {
-            console.error(`找不到配方 ${key}`);
+            $calculationAlert.text(`找不到配方 ${key}`).show();
             return;
         }
         if (window.alreadyHave[key]) {
-            alert(`已经拥有 ${key}`);
+            $calculationAlert.text(`已经拥有 ${key}`).show();
             return;
         }
     }
@@ -591,7 +600,7 @@ function showRecipe() {
         continueFlag = false;
         // 超时退出
         if (new Date().getTime() - startTime > 3000) {
-            alert('计算超时，请检查输入');
+            $calculationAlert.text('计算超时，请检查输入').show();
             return;
         }
         const currentItems = {...basicCount};
@@ -603,7 +612,7 @@ function showRecipe() {
                     // 把order中的key放到item前面
                     const index = order.indexOf(key);
                     if (index < 0) {
-                        console.error(`找不到 ${key} 在order中的位置`);
+                        $calculationAlert.text(`找不到 ${key} 在order中的位置`).show();
                         return;
                     }
                     order.splice(index, 1);
@@ -628,14 +637,28 @@ function showRecipe() {
     adjustOrderHtml += '</ul>';
     $("#adjust-order").html(adjustOrderHtml);
     let orderHtml = '';
-    for (const item of order) {
+    window.persistentCurrentItems = [];
+    const currentItems = deepClone(basicCount);
+    for (const [i, item] of order.entries()) {
+        for (const ingredient of recipes[item].ingredients) {
+            const key = ingredient[0];
+            const realCount = ingredient[1] ? ingredient[1] * times[item] : times[item];
+            currentItems[key] -= realCount;
+        }
+        if (currentItems[item]) {
+            currentItems[item] += count[item];
+        } else {
+            currentItems[item] = count[item];
+        }
+        window.persistentCurrentItems.push(deepClone(currentItems));
         // console.log(`${recipes[item].type}: ${recipes[item].ingredients.map(i => `${i[0]} x ${i[1] ? i[1] * times[item] : times[item]}`).join(' + ')} => ${item} x ${count[item]}`);
         orderHtml += `
-            <tr>
-                <td>${recipes[item].map ? renderMap(item) : ''}</td>
+            <tr data-index="${i}">
+                <td>${recipes[item].map ? isBigMap(recipes[item].map) ? '<button class="btn btn-default detail">详情</button>' :  renderMap(item) : ''}</td>
                 <td class="item-group">${recipes[item].ingredients.map(i => `${renderItem(i[0], i[1] ? i[1] * times[item] : times[item])}`).join('')}</td>
                 <td>${renderItem(recipes[item].type, 0)}</td>
                 <td>${renderItem(item, count[item])}${patchedRecipes[item] ? ` <span class="recipe-patched" title="已被 ${escapeHtml(patchedRecipes[item])} 补丁修改">${escapeHtml(patchedRecipes[item])}</span>` : ''}</td>
+                <td class="detail-column"><button class="btn btn-default detail">详情</button></td>
             </tr>
         `;
     }
@@ -713,11 +736,7 @@ function scheduleAutoCalculate() {
         return;
     }
     window.autoCalculateTimer = setTimeout(function () {
-        readItemList();
-        hideDirtyWarning();
-        if (window.currentShowing.length > 0) {
-            showRecipe();
-        }
+        $("#calculate").click();
     }, delay);
 }
 
@@ -917,6 +936,36 @@ function downloadFile(fileName, content, fileType) {
     URL.revokeObjectURL(url);
 }
 
+function showStepRemain() {
+    if (window.currentShowingStep === null) {
+        return;
+    }
+    debugger
+    let sortType = $("#step-remain-sort").val();
+    const currentShowingStepItems = persistentCurrentItems[currentShowingStep];
+    const entries = Object.keys(currentShowingStepItems);
+    if (sortType === 'order') {
+        entries.sort((a, b) => window.basicCountOrder.indexOf(a) - window.basicCountOrder.indexOf(b));
+    } else if (sortType === 'name') {
+        entries.sort((a, b) => a.localeCompare(b));
+    } else if (sortType === 'count') {
+        entries.sort((a, b) => currentShowingStepItems[b] - currentShowingStepItems[a]);
+    }
+    $("#step-remain").html(entries.map(item => currentShowingStepItems[item] > 0 ? `${renderItem(item, currentShowingStepItems[item])}` : '').join(''));
+}
+
+function isBigMap(map) {
+    if (map.length > 3) {
+        return true;
+    }
+    for (const row of map) {
+        if (row.length > 3) {
+            return true;
+        }
+    }
+    return false;
+}
+
 $(function () {
     const $result = $('#search-result');
     $result.hide();
@@ -1073,10 +1122,11 @@ $(function () {
     });
 
     $("#calculate").click(function () {
+        const $calculationAlert = $("#calculation-alert");
         readItemList();
         hideDirtyWarning();
         if (window.currentShowing.length === 0) {
-            alert('请先输入物品');
+            $calculationAlert.text('请先输入物品').show();
             return;
         }
         const cantFind = [];
@@ -1087,7 +1137,7 @@ $(function () {
             }
         }
         if (cantFind.length > 0) {
-            alert(`找不到配方 ${cantFind.join(', ')}`);
+            $calculationAlert.text(`找不到配方 ${cantFind.join(', ')}`).show();
             return;
         }
         showRecipe();
@@ -1216,6 +1266,10 @@ $(function () {
 
     $("#item-needed-sort").change(function () {
         sortBasicCount();
+    });
+
+    $("#step-remain-sort").change(function () {
+        showStepRemain();
     });
 
     let currentEditList = null;
@@ -1504,18 +1558,10 @@ $(function () {
                     $("#patch-edit-error").text(`补丁数据格式错误： "${key}" 的 map 字段必须是数组，而 "${key}" 的 "${mapStr}" 不是数组`).show();
                     return;
                 }
-                if (data[key].map.length !== 3) {
-                    $("#patch-edit-error").text(`补丁数据格式错误： "${key}" 的 map 字段长度必须为 3，而 "${key}" 的 "${mapStr}" 长度为 ${data[key].map.length}。（目前仅支持 3x3 矩阵，该矩阵仅用于显示，不影响配方计算）`).show();
-                    return;
-                }
                 for (const row of data[key].map) {
                     const rowStr = JSON.stringify(row);
                     if (!Array.isArray(row)) {
                         $("#patch-edit-error").text(`补丁数据格式错误： "${key}" 的 map 字段的每一项必须是数组，而 "${key}" 的 "${mapStr}" 的 "${rowStr}" 不是数组`).show();
-                        return;
-                    }
-                    if (row.length !== 3) {
-                        $("#patch-edit-error").text(`补丁数据格式错误： "${key}" 的 map 字段的每一项长度必须为 3，而 "${key}" 的 "${mapStr}" 的 "${rowStr}" 长度为 ${row.length}。（目前仅支持 3x3 矩阵，该矩阵仅用于显示，不影响配方计算）`).show();
                         return;
                     }
                     for (const cell of row) {
@@ -1715,5 +1761,28 @@ $(function () {
             $("#setting-alert").show();
         }
     }).change();
+
+    $("#setting-show-detail-column").change(function (event) {
+        const value = $(this).is(":checked");
+        if (value) {
+            $("body").removeClass("hide-detail-column");
+        } else {
+            $("body").addClass("hide-detail-column");
+        }
+    })
+
+    $("#recipe-table").on("click", ".detail", function () {
+        const index = $(this).closest("tr").data("index");
+        const item = order[index];
+        window.currentShowingStep = index;
+        $("#step-item-matrix").html(recipes[item].map ? renderMap(item) : '');
+        $("#step-target-item").html(renderItem(item, recipes[item].count ?? 1));
+        $("#step-result-count").text((recipes[item].count ?? 1) * times[item]);
+        $("#step-raw-product").html(recipes[item].ingredients.map(i => `${renderItem(i[0], i[1] ? i[1] : 1)}`).join(''));
+        $("#step-times").text(times[item]);
+        $("#step-product").html(recipes[item].ingredients.map(i => `${renderItem(i[0], i[1] ? i[1] * times[item] : times[item])}`).join(''));
+        showStepRemain();
+        $("#step-detail-modal").modal("show");
+    });
 
 });

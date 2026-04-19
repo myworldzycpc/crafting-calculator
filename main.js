@@ -654,7 +654,7 @@ function showRecipe() {
         // console.log(`${recipes[item].type}: ${recipes[item].ingredients.map(i => `${i[0]} x ${i[1] ? i[1] * times[item] : times[item]}`).join(' + ')} => ${item} x ${count[item]}`);
         orderHtml += `
             <tr data-index="${i}">
-                <td>${recipes[item].map ? isBigMap(recipes[item].map) ? '<button class="btn btn-default detail">详情</button>' :  renderMap(item) : ''}</td>
+                <td>${recipes[item].map ? isBigMap(recipes[item].map) ? '<button class="btn btn-default detail">详情</button>' : renderMap(item) : ''}</td>
                 <td class="item-group">${recipes[item].ingredients.map(i => `${renderItem(i[0], i[1] ? i[1] * times[item] : times[item])}`).join('')}</td>
                 <td>${renderItem(recipes[item].type, 0)}</td>
                 <td>${renderItem(item, count[item])}${patchedRecipes[item] ? ` <span class="recipe-patched" title="已被 ${escapeHtml(patchedRecipes[item])} 补丁修改">${escapeHtml(patchedRecipes[item])}</span>` : ''}</td>
@@ -940,7 +940,6 @@ function showStepRemain() {
     if (window.currentShowingStep === null) {
         return;
     }
-    debugger
     let sortType = $("#step-remain-sort").val();
     const currentShowingStepItems = persistentCurrentItems[currentShowingStep];
     const entries = Object.keys(currentShowingStepItems);
@@ -1533,6 +1532,10 @@ $(function () {
                 $("#patch-edit-error").text(`补丁数据格式错误：每个配方必须包含 ingredients 字段，而 "${key}" 没有该字段`).show();
                 return;
             }
+            if (!Array.isArray(data[key].ingredients)) {
+                $("#patch-edit-error").text(`补丁数据格式错误： "${key}" 的 ingredients 字段必须是数组，而 "${key}" 的 "${JSON.stringify(data[key].ingredients)}" 不是数组`).show();
+                return;
+            }
             for (const ingredient of data[key].ingredients) {
                 const ingredientStr = JSON.stringify(ingredient);
                 if (!Array.isArray(ingredient)) {
@@ -1769,7 +1772,7 @@ $(function () {
         } else {
             $("body").addClass("hide-detail-column");
         }
-    })
+    });
 
     $("#recipe-table").on("click", ".detail", function () {
         const index = $(this).closest("tr").data("index");

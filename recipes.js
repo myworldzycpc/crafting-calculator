@@ -9698,10 +9698,30 @@ let recipes = {
         type: "奇点构造机",
         ingredients: [["无尽锭", 100]],
     },
+    "下界合金剑": {
+        type: "锻造台",
+        map: [["钻石剑", "下界合金锭", null], [null, null, null], [null, null, null]],
+        ingredients: [["钻石剑"], ["下界合金锭"]]
+    },
     "下界合金镐": {
         type: "锻造台",
         map: [["钻石镐", "下界合金锭", null], [null, null, null], [null, null, null]],
         ingredients: [["钻石镐"], ["下界合金锭"]]
+    },
+    "下界合金锄": {
+        type: "锻造台",
+        map: [["钻石锄", "下界合金锭", null], [null, null, null], [null, null, null]],
+        ingredients: [["钻石锄"], ["下界合金锭"]]
+    },
+    "下界合金锹": {
+        type: "锻造台",
+        map: [["钻石锹", "下界合金锭", null], [null, null, null], [null, null, null]],
+        ingredients: [["钻石锹"], ["下界合金锭"]]
+    },
+    "下界合金斧": {
+        type: "锻造台",
+        map: [["钻石斧", "下界合金锭", null], [null, null, null], [null, null, null]],
+        ingredients: [["钻石斧"], ["下界合金锭"]]
     },
     "铁剑": {
         type: "工作台",
@@ -9737,5 +9757,10 @@ let recipes = {
         type: "熔炉",
         map: [["远古残骸"]],
         ingredients: [["远古残骸"]]
+    },
+    "虚空电容": {
+        type: "增强型工作台",
+        map: [["虚空锭", "红石奇点", "虚空锭"], ["虚空锭", "终极储能电容", "虚空锭"], ["虚空锭", "红石奇点", "虚空锭"]],
+        ingredients: [["虚空锭", 6], ["红石奇点", 2], ["终极储能电容"]],
     }
 };

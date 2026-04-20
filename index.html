@@ -72,12 +72,17 @@
                     <input type="checkbox" id="setting-modal-backdrop" class="setting-input" checked>
                     <p><small>允许点击背景关闭模态框，如果你经常误操作关闭模态框，可以关闭此选项。<b>刷新页面后生效。</b></small></p>
                 </div>
-                <div id="setting-alert" class="alert alert-warning" style="display: none; margin-bottom: 0">部分设置将在刷新页面后生效</div>
                 <div class="form-group">
                     <label for="setting-show-detail-column">显示详情列：</label>
                     <input type="checkbox" id="setting-show-detail-column" class="setting-input" checked>
                     <p><small>显示步骤详情列，包括余量、原始原料、合成次数等信息。</small></p>
                 </div>
+                <div class="form-group">
+                    <label for="setting-show-generated-map">显示自动生成的矩阵：</label>
+                    <input type="checkbox" id="setting-show-generated-map" class="setting-input" checked>
+                    <p><small>显示根据原料自动生成的，配方中未明确指定的物品矩阵。</small></p>
+                </div>
+                <div id="setting-alert" class="alert alert-warning" style="display: none; margin-bottom: 0">部分设置将在刷新页面后生效</div>
             </div>
         </div>
     </div>
@@ -317,7 +322,7 @@
                 <h4 class="modal-title">步骤详情</h4>
             </div>
             <div class="modal-body">
-                <div class="form-group" style="float: right; margin-left: 10px; padding: 10px; background-color: #f5f5f5; border-radius: 5px;">
+                <div class="form-group" id="step-item-matrix-group" style="float: right; margin-left: 10px; padding: 10px; background-color: #f5f5f5; border-radius: 5px;">
                     <label>物品矩阵：</label>
                     <div id="step-item-matrix"></div>
                 </div>

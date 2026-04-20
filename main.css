@@ -219,3 +219,7 @@ input.has-warning:focus {
 .hide-detail-column .detail-column {
     display: none;
 }
+
+.hide-generated-map .generated-map .item-matrix {
+    display: none;
+}

@@ -17,7 +17,7 @@ window.persistentCurrentItems = [];
 window.currentShowingStep = null;
 
 function escapeHtml(str) {
-    return str.replace(/[&<>]/g, function (m) {
+    return String(str).replace(/[&<>]/g, function (m) {
         if (m === '&') return '&amp;';
         if (m === '<') return '&lt;';
         if (m === '>') return '&gt;';
@@ -41,6 +41,7 @@ function saveSettings() {
         modalEsc: $("#setting-modal-esc").is(":checked"),
         modalBackdrop: $("#setting-modal-backdrop").is(":checked"),
         showDetailColumn: $("#setting-show-detail-column").is(":checked"),
+        showGeneratedMap: $("#setting-show-generated-map").is(":checked"),
     };
     try {
         localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
@@ -79,6 +80,9 @@ function applySettings(settings) {
     }
     if (settings.showDetailColumn !== undefined) {
         $("#setting-show-detail-column").prop("checked", settings.showDetailColumn);
+    }
+    if (settings.showGeneratedMap !== undefined) {
+        $("#setting-show-generated-map").prop("checked", settings.showGeneratedMap);
     }
 }
 
@@ -201,6 +205,34 @@ function detectCycles(recipesData, patches) {
     return {hasCycle: true, cycleNodes: cycleNodesArray, patchInfo};
 }
 
+function setRecipes(recipesData) {
+    recipes = recipesData;
+    for (const key in recipes) {
+        const value = recipes[key];
+        if (!("map" in value)) {
+            let columns;
+            if (value.ingredients.length <= 9) {
+                columns = 3;
+            } else {
+                columns = Math.ceil(Math.sqrt(value.ingredients.length));
+            }
+            // 每columns个ingredient一组，转换成map
+            const map = [];
+            for (let i = 0; i < value.ingredients.length; i += columns) {
+                const group = value.ingredients.slice(i, i + columns);
+                const row = [];
+                for (let j = 0; j < group.length; j++) {
+                    const item = group[j][0];
+                    row.push(item);
+                }
+                map.push(row);
+            }
+            value.map = map;
+            value.isGeneratedMap = true;
+        }
+    }
+}
+
 function applyPatchesWithValidation(patches) {
     if (!patches) {
         patches = dirtyRecipePatches;
@@ -219,7 +251,7 @@ function applyPatchesWithValidation(patches) {
 
     window.recipePatches = deepClone(patches);
     window.patchedRecipes = getPatchedRecipes(patches);
-    recipes = effectiveRecipes;
+    setRecipes(effectiveRecipes);
     return {success: true};
 }
 
@@ -654,7 +686,7 @@ function showRecipe() {
         // console.log(`${recipes[item].type}: ${recipes[item].ingredients.map(i => `${i[0]} x ${i[1] ? i[1] * times[item] : times[item]}`).join(' + ')} => ${item} x ${count[item]}`);
         orderHtml += `
             <tr data-index="${i}">
-                <td>${recipes[item].map ? isBigMap(recipes[item].map) ? '<button class="btn btn-default detail">详情</button>' : renderMap(item) : ''}</td>
+                <td${recipes[item].isGeneratedMap ? ' class="generated-map"' : ''}>${recipes[item].map ? isBigMap(recipes[item].map) ? '<button class="btn btn-default detail">详情</button>' : renderMap(item) : ''}</td>
                 <td class="item-group">${recipes[item].ingredients.map(i => `${renderItem(i[0], i[1] ? i[1] * times[item] : times[item])}`).join('')}</td>
                 <td>${renderItem(recipes[item].type, 0)}</td>
                 <td>${renderItem(item, count[item])}${patchedRecipes[item] ? ` <span class="recipe-patched" title="已被 ${escapeHtml(patchedRecipes[item])} 补丁修改">${escapeHtml(patchedRecipes[item])}</span>` : ''}</td>
@@ -1772,13 +1804,29 @@ $(function () {
         } else {
             $("body").addClass("hide-detail-column");
         }
-    });
+    }).change();
+
+    $("#setting-show-generated-map").change(function (event) {
+        const value = $(this).is(":checked");
+        if (value) {
+            $("body").removeClass("hide-generated-map");
+        } else {
+            $("body").addClass("hide-generated-map");
+        }
+    }).change();
 
     $("#recipe-table").on("click", ".detail", function () {
         const index = $(this).closest("tr").data("index");
         const item = order[index];
         window.currentShowingStep = index;
         $("#step-item-matrix").html(recipes[item].map ? renderMap(item) : '');
+        if (!$("#setting-show-generated-map").is(":checked") && recipes[item].isGeneratedMap) {
+            $("#step-item-matrix-group").hide();
+        } else if (recipes[item].map?.length > 0) {
+            $("#step-item-matrix-group").show();
+        } else {
+            $("#step-item-matrix-group").hide();
+        }
         $("#step-target-item").html(renderItem(item, recipes[item].count ?? 1));
         $("#step-result-count").text((recipes[item].count ?? 1) * times[item]);
         $("#step-raw-product").html(recipes[item].ingredients.map(i => `${renderItem(i[0], i[1] ? i[1] : 1)}`).join(''));

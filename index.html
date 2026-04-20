@@ -82,6 +82,16 @@
                     <input type="checkbox" id="setting-show-generated-map" class="setting-input" checked>
                     <p><small>显示根据原料自动生成的，配方中未明确指定的物品矩阵。</small></p>
                 </div>
+                <div class="form-group">
+                    <label for="setting-missingno">使用missingno作为未知物品图标：</label>
+                    <input type="checkbox" id="setting-missingno" class="setting-input">
+                    <p><small>使用Minecraft纹理缺失的紫黑棋盘格作为未知物品图标。</small></p>
+                </div>
+                <div class="form-group">
+                    <label style="margin-right: 10px;">随机物品：</label>
+                    <p><small>随机计算一个物品。</small></p>
+                    <button class="btn btn-sm btn-default" id="random-item">随机物品</button>
+                </div>
                 <div id="setting-alert" class="alert alert-warning" style="display: none; margin-bottom: 0">部分设置将在刷新页面后生效</div>
             </div>
         </div>

@@ -74,6 +74,14 @@
     image-rendering: pixelated;
 }
 
+.missingno .item-icon-unknown {
+    background-color: purple;
+    background-image: linear-gradient(black, black), linear-gradient(black, black);
+    background-size: 50% 50%, 50% 50%;
+    background-position: left top, right bottom;
+    background-repeat: no-repeat, no-repeat;
+}
+
 .item-icon-unknown-double {
     font-size: 12px;
 }

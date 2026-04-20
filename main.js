@@ -42,6 +42,7 @@ function saveSettings() {
         modalBackdrop: $("#setting-modal-backdrop").is(":checked"),
         showDetailColumn: $("#setting-show-detail-column").is(":checked"),
         showGeneratedMap: $("#setting-show-generated-map").is(":checked"),
+        missingno: $("#setting-missingno").is(":checked"),
     };
     try {
         localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
@@ -83,6 +84,9 @@ function applySettings(settings) {
     }
     if (settings.showGeneratedMap !== undefined) {
         $("#setting-show-generated-map").prop("checked", settings.showGeneratedMap);
+    }
+    if (settings.missingno !== undefined) {
+        $("#setting-missingno").prop("checked", settings.missingno);
     }
 }
 
@@ -650,6 +654,7 @@ function showRecipe() {
                     order.splice(index, 1);
                     order.splice(order.indexOf(item), 0, key);
                     console.log(`调整顺序: ${key} => ${item}`);
+                    debugger;  // 目前不知道什么情况会触发调整顺序，先留着以便发现
                     adjustOrderHtml += `<li>调整顺序: ${renderItem(key, count[key])}<span class="arrow">→</span>${renderItem(item, count[item])}</li>`;
                     continueFlag = true;
                     break;
@@ -1815,6 +1820,15 @@ $(function () {
         }
     }).change();
 
+    $("#setting-missingno").change(function (event) {
+        const value = $(this).is(":checked");
+        if (value) {
+            $("body").addClass("missingno");
+        } else {
+            $("body").removeClass("missingno");
+        }
+    }).change();
+
     $("#recipe-table").on("click", ".detail", function () {
         const index = $(this).closest("tr").data("index");
         const item = order[index];
@@ -1834,6 +1848,24 @@ $(function () {
         $("#step-product").html(recipes[item].ingredients.map(i => `${renderItem(i[0], i[1] ? i[1] * times[item] : times[item])}`).join(''));
         showStepRemain();
         $("#step-detail-modal").modal("show");
+    });
+
+    function getRandomKey(obj) {
+        const keys = Object.keys(obj);
+        if (keys.length === 0) return undefined; // 空对象没有键
+        const randomIndex = Math.floor(Math.random() * keys.length);
+        return keys[randomIndex];
+    }
+
+    $("#random-item").click(function () {
+        const item = getRandomKey(recipes);
+        if (item === undefined) {
+            alert("没有可用的配方");
+            return;
+        }
+        $("#input-item-select").val("single").change();
+        $("#input-item").val(item);
+        $("#calculate").click();
     });
 
 });

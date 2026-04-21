@@ -654,7 +654,6 @@ function showRecipe() {
                     order.splice(index, 1);
                     order.splice(order.indexOf(item), 0, key);
                     console.log(`调整顺序: ${key} => ${item}`);
-                    debugger;  // 目前不知道什么情况会触发调整顺序，先留着以便发现
                     adjustOrderHtml += `<li>调整顺序: ${renderItem(key, count[key])}<span class="arrow">→</span>${renderItem(item, count[item])}</li>`;
                     continueFlag = true;
                     break;
@@ -1770,12 +1769,10 @@ $(function () {
     //     $("#patch-manage-modal").modal('show');
     // });
 
-    if (window.recipePatches.length > 0) {
-        const result = applyPatchesWithValidation(window.recipePatches);
-        if (!result.success) {
-            openPatchManageModal();
-            $("#patch-list-error").html(result.error).show();
-        }
+    const result = applyPatchesWithValidation(window.recipePatches);
+    if (!result.success) {
+        openPatchManageModal();
+        $("#patch-list-error").html(result.error).show();
     }
 
     $("#setting-modal-esc").change(function (event) {

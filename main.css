@@ -75,7 +75,7 @@
 }
 
 .missingno .item-icon-unknown {
-    background-color: purple;
+    background-color: #F800F8;
     background-image: linear-gradient(black, black), linear-gradient(black, black);
     background-size: 50% 50%, 50% 50%;
     background-position: left top, right bottom;

@@ -472,7 +472,7 @@ li::marker {
 }
 
 .item-matrix tr {
-    border: none;
+    border: none !important;
 }
 
 #patch-list-table td {

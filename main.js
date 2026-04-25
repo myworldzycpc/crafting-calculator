@@ -15,6 +15,7 @@ window.showedInference = true;
 window.patchedRecipes = {};
 window.persistentCurrentItems = [];
 window.currentShowingStep = null;
+window.longTransitionTimeout = null;
 
 function escapeHtml(str) {
     return String(str).replace(/[&<>]/g, function (m) {
@@ -43,6 +44,7 @@ function saveSettings() {
         showDetailColumn: $("#setting-show-detail-column").is(":checked"),
         showGeneratedMap: $("#setting-show-generated-map").is(":checked"),
         missingno: $("#setting-missingno").is(":checked"),
+        minecraftUi: $("#setting-minecraft-ui").is(":checked"),
     };
     try {
         localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
@@ -87,6 +89,9 @@ function applySettings(settings) {
     }
     if (settings.missingno !== undefined) {
         $("#setting-missingno").prop("checked", settings.missingno);
+    }
+    if (settings.minecraftUi !== undefined) {
+        $("#setting-minecraft-ui").prop("checked", settings.minecraftUi);
     }
 }
 
@@ -1826,6 +1831,47 @@ $(function () {
         }
     }).change();
 
+    $("#setting-minecraft-ui").change(function (event) {
+        const value = $(this).is(":checked");
+        if (event.isTrigger) {
+            // console.log("isTrigger");
+            if (value) {
+                $("#minecraft-ui-style").prop("disabled", false);
+            } else {
+                $("#minecraft-ui-style").prop("disabled", true);
+            }
+        } else {
+            // console.log("!isTrigger");
+            if (value) {
+                $("#long-transition").prop("disabled", false);
+                // console.log("enable long transition");
+                $("#minecraft-ui-style").prop("disabled", false);
+                // console.log("enable style");
+                if (window.longTransitionTimeout) {
+                    window.clearTimeout(longTransitionTimeout);
+                    window.longTransitionTimeout = null;
+                }
+                window.longTransitionTimeout = setTimeout(() => {
+                    $("#long-transition").prop("disabled", true);
+                    // console.log("disable long transition");
+                }, 500);
+            } else {
+                $("#long-transition").prop("disabled", false);
+                // console.log("enable long transition");
+                $("#minecraft-ui-style").prop("disabled", true);
+                // console.log("disable style");
+                if (window.longTransitionTimeout) {
+                    window.clearTimeout(longTransitionTimeout);
+                    window.longTransitionTimeout = null;
+                }
+                window.longTransitionTimeout = setTimeout(() => {
+                    $("#long-transition").prop("disabled", true);
+                    // console.log("disable long transition");
+                }, 500);
+            }
+        }
+    }).change();
+
     $("#recipe-table").on("click", ".detail", function () {
         const index = $(this).closest("tr").data("index");
         const item = order[index];
@@ -1864,5 +1910,7 @@ $(function () {
         $("#input-item").val(item);
         $("#calculate").click();
     });
+
+    $("#long-transition").prop("disabled", true);
 
 });

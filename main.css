@@ -231,3 +231,7 @@ input.has-warning:focus {
 .hide-generated-map .generated-map .item-matrix {
     display: none;
 }
+
+.dialog-warning {
+    display: none;
+}

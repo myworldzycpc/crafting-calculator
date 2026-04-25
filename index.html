@@ -4,6 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="static/css/bootstrap.min.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" id="minecraft-ui-style" href="styles/minecraft.css" disabled>
+    <style id="long-transition">
+        * {
+            transition: 0.5s cubic-bezier(0.33, 1, 0.68, 1) !important;
+        }
+    </style>
     <script src="static/js/jquery.min.js"></script>
     <script src="static/js/bootstrap.min.js"></script>
     <script src="recipes.js"></script>
@@ -18,7 +24,10 @@
 <div id="main" class="container" style="display: none;">
     <br>
     <div class="jumbotron">
-        <h1>合成计算器</h1>
+        <h1>
+            合成计算器
+            <button class="btn btn-default dialog-warning"></button>
+        </h1>
     </div>
     <div class="panel panel-default">
         <div class="panel-heading toggle-panel" id="introduction-toggle">
@@ -43,8 +52,7 @@
                 <hr>
                 <h2>设置</h2>
                 <div class="form-group" style="margin-top: 15px;">
-                    <label for="setting-hover-highlight">悬停高亮：</label>
-                    <input type="checkbox" id="setting-hover-highlight" class="setting-input" checked>
+                    <label for="setting-hover-highlight">悬停高亮：<input type="checkbox" id="setting-hover-highlight" class="setting-input" checked></label>
                     <p><small>鼠标悬停在物品上时高亮相同物品</small></p>
                 </div>
                 <div class="form-group">
@@ -53,8 +61,7 @@
                     <input type="text" id="setting-auto-calculate" class="form-control setting-input" style="flex: 1; display: inline-block;" placeholder="永不">
                 </div>
                 <div class="form-group">
-                    <label for="setting-expand-confirm">步骤较多时展开/折叠确认：</label>
-                    <input type="checkbox" id="setting-expand-confirm" class="setting-input" checked>
+                    <label for="setting-expand-confirm">步骤较多时展开/折叠确认：<input type="checkbox" id="setting-expand-confirm" class="setting-input" checked></label>
                     <p><small>步骤较多时，展开/折叠可能会造成卡顿，开启此选项可要求确认</small></p>
                 </div>
                 <div class="form-group">
@@ -63,34 +70,33 @@
                     <button class="btn btn-sm btn-default" id="manage-recipe-patches">管理补丁</button>
                 </div>
                 <div class="form-group">
-                    <label for="setting-modal-esc">允许Esc键关闭模态框：</label>
-                    <input type="checkbox" id="setting-modal-esc" class="setting-input" checked>
+                    <label for="setting-modal-esc">允许Esc键关闭模态框：<input type="checkbox" id="setting-modal-esc" class="setting-input" checked></label>
                     <p><small>允许Esc键关闭模态框，如果你经常误操作关闭模态框，可以关闭此选项。<b>刷新页面后生效。</b></small></p>
                 </div>
                 <div class="form-group">
-                    <label for="setting-modal-backdrop">允许点击背景关闭模态框：</label>
-                    <input type="checkbox" id="setting-modal-backdrop" class="setting-input" checked>
+                    <label for="setting-modal-backdrop">允许点击背景关闭模态框：<input type="checkbox" id="setting-modal-backdrop" class="setting-input" checked></label>
                     <p><small>允许点击背景关闭模态框，如果你经常误操作关闭模态框，可以关闭此选项。<b>刷新页面后生效。</b></small></p>
                 </div>
                 <div class="form-group">
-                    <label for="setting-show-detail-column">显示详情列：</label>
-                    <input type="checkbox" id="setting-show-detail-column" class="setting-input" checked>
+                    <label for="setting-show-detail-column">显示详情列：<input type="checkbox" id="setting-show-detail-column" class="setting-input" checked></label>
                     <p><small>显示步骤详情列，包括余量、原始原料、合成次数等信息。</small></p>
                 </div>
                 <div class="form-group">
-                    <label for="setting-show-generated-map">显示自动生成的矩阵：</label>
-                    <input type="checkbox" id="setting-show-generated-map" class="setting-input" checked>
+                    <label for="setting-show-generated-map">显示自动生成的矩阵：<input type="checkbox" id="setting-show-generated-map" class="setting-input" checked></label>
                     <p><small>显示根据原料自动生成的，配方中未明确指定的物品矩阵。</small></p>
                 </div>
                 <div class="form-group">
-                    <label for="setting-missingno">使用missingno作为未知物品图标：</label>
-                    <input type="checkbox" id="setting-missingno" class="setting-input">
+                    <label for="setting-missingno">使用missingno作为未知物品图标：<input type="checkbox" id="setting-missingno" class="setting-input"></label>
                     <p><small>使用Minecraft纹理缺失的紫黑棋盘格作为未知物品图标。</small></p>
                 </div>
                 <div class="form-group">
                     <label style="margin-right: 10px;">随机物品：</label>
                     <p><small>随机计算一个物品。</small></p>
                     <button class="btn btn-sm btn-default" id="random-item">随机物品</button>
+                </div>
+                <div class="form-group">
+                    <label for="setting-minecraft-ui">启用实验性Minecraft风格UI：<input type="checkbox" id="setting-minecraft-ui" class="setting-input"></label>
+                    <p><small>启用实验性Minecraft风格UI（小提示：焦点落在上面的复选框时，可以滚动到页面任意位置按回车切换选中状态，从而感受界面各处变化）。</small></p>
                 </div>
                 <div id="setting-alert" class="alert alert-warning" style="display: none; margin-bottom: 0">部分设置将在刷新页面后生效</div>
             </div>
@@ -106,7 +112,7 @@
             <button class="btn btn-sm btn-default" id="edit-target-list" style="margin-left: 10px; display: none;">编辑列表</button>
         </label>
         <div id="single-item-input">
-            <input type="text" id="input-item" class="form-control in-computation-process">
+            <input type="text" id="input-item" class="form-control in-computation-process" autocomplete="off">
             <div id="search-result" class="panel panel-default">
                 <!-- 搜索结果列表 -->
                 <table class="table"></table>
@@ -137,7 +143,7 @@
         <div class="panel panel-default">
             <div class="panel-heading toggle-panel">
                 <div style="display: flex; align-items: center;">
-                    <label style="margin: 0;">已有物品（点击展开/折叠）：</label>
+                    已有物品（点击展开/折叠）：
                     <button class="btn btn-sm btn-default" id="edit-already-have" style="margin-left: auto;">编辑列表</button>
                 </div>
             </div>
@@ -236,16 +242,16 @@
                     <label style="font-weight: normal;">
                         格式：
                         <label class="radio-inline">
-                            <input type="radio" name="list-format" id="format-tsv" value="tsv" checked> TSV
+                            <input type="radio" name="list-format" id="format-tsv" value="tsv" checked><span>TSV</span>
                         </label>
                         <label class="radio-inline">
-                            <input type="radio" name="list-format" id="format-csv" value="csv"> CSV
+                            <input type="radio" name="list-format" id="format-csv" value="csv"><span>CSV</span>
                         </label>
                     </label>
                 </div>
                 <div class="alert alert-info">如果要进行较大更改，建议在外部编辑器中编辑后粘贴到此处。在此处的未保存的更改容易由于意外关闭模态框或页面等而丢失。</div>
                 <label for="list-edit-content" style="display: none"></label>
-                <textarea id="list-edit-content" class="form-control" rows="15" style="font-family: monospace; resize: vertical;" spellcheck="false"></textarea>
+                <textarea id="list-edit-content" class="form-control" rows="15" style="resize: vertical;" spellcheck="false"></textarea>
                 <div id="list-edit-error" class="text-danger" style="margin-top: 10px; display: none;"></div>
             </div>
             <div class="modal-footer">
@@ -312,7 +318,7 @@
                         <label for="patch-data" style="margin-bottom: 0;">补丁数据（JSON格式，null值会删除对应配方）：</label>
                         <a href="https://github.com/myworldzycpc/crafting-calculator?tab=readme-ov-file#%E8%87%AA%E5%AE%9A%E4%B9%89%E9%85%8D%E6%96%B9" target="_blank" style="margin-left: auto; white-space: nowrap">查看格式参考</a>
                     </div>
-                    <textarea id="patch-data" class="form-control" rows="20" style="font-family: monospace; resize: vertical;" spellcheck="false"></textarea>
+                    <textarea id="patch-data" class="form-control" rows="20" style="resize: vertical;" spellcheck="false"></textarea>
                 </div>
                 <div id="patch-edit-error" class="alert alert-danger" style="display: none;"></div>
             </div>

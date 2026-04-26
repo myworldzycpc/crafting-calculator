@@ -8856,7 +8856,7 @@ let recipes = {
         type: "工作台",
         map: [["橡木木板", null, "橡木木板"], [null, "橡木木板", null], [null, null, null],],
         ingredients: [["橡木木板", 3]],
-        count: 3,
+        count: 4,
     },
     "木棍": {
         type: "工作台",

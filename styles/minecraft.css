@@ -325,6 +325,13 @@ h2::after {
     box-shadow: -2px -2px 0 #373737, 0 -2px 0 #373737, -2px 0 0 #373737, 2px 2px 0 #FFFFFF, 2px 0 0 #FFFFFF, 0 2px 0 #FFFFFF, -2px 2px 0 #808080, 2px -2px 0 #808080;
 }
 
+.item-icon-unknown {
+    box-shadow: -2px -2px 0 #373737, 0 -2px 0 #373737, -2px 0 0 #373737, 2px 2px 0 #FFFFFF, 2px 0 0 #FFFFFF, 0 2px 0 #FFFFFF, -2px 2px 0 #808080, 2px -2px 0 #808080;
+    text-shadow: 1px 1px 0 #00000080;
+    font-weight: normal;
+    font-size: 16px;
+}
+
 .item img {
     background-color: #8B8B8B;
 }
@@ -335,6 +342,7 @@ h2::after {
     background-color: #C6C6C6;
     box-shadow: 2px 2px 0 #FFFFFF80 inset, -2px -2px 0 #00000050 inset;
     padding: 0 6px;
+    font-size: 16px;
 }
 
 .item.just-icon {
@@ -353,6 +361,20 @@ h2::after {
 
 .item:active {
     box-shadow: 2px 4px 0 #00000050 inset, -2px -2px 0 #FFFFFF80 inset;
+}
+
+.count {
+    font-size: 16px;
+    font-weight: normal;
+
+    .group-sep {
+        font-size: 8px;
+        font-weight: normal;
+    }
+
+    .plus {
+        color: #808080;
+    }
 }
 
 .table {

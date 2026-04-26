@@ -235,3 +235,11 @@ input.has-warning:focus {
 .dialog-warning {
     display: none;
 }
+
+#step-item-matrix-group {
+    float: right;
+    margin-left: 10px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}

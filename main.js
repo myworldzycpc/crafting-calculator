@@ -1900,7 +1900,7 @@ $(function () {
         return keys[randomIndex];
     }
 
-    $("#random-item").click(function () {
+    $(".random-item").click(function () {
         const item = getRandomKey(recipes);
         if (item === undefined) {
             alert("没有可用的配方");
@@ -1908,6 +1908,7 @@ $(function () {
         }
         $("#input-item-select").val("single").change();
         $("#input-item").val(item);
+        $('#search-result').hide();
         $("#calculate").click();
     });
 

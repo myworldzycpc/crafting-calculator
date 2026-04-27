@@ -70,10 +70,10 @@ const recipes = {
 2. 在 `items.js` 中添加映射关系：
 
 ```javascript
-const icons = {
-    "物品名称": "图标文件名（不含扩展名）",
-    // ...
-};
+const items = {
+    "物品名称": {icon: "图标文件名（不含扩展名）"},
+   // ...
+}
 ```
 
 ## 安装与运行
@@ -108,7 +108,7 @@ crafting-calculator/
 ├── index.html
 ├── main.js
 ├── recipes.js      # 配方数据
-├── items.js        # 图标映射
+├── items.js        # 物品数据（图标、最大堆叠数）
 ├── main.css        # 样式文件
 ├── LICENSE
 ├── README.md

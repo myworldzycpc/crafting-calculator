@@ -67,7 +67,7 @@ const recipes = {
 ## 添加图标
 
 1. 将图标文件放入 `icons` 目录
-2. 在 `icons.js` 中添加映射关系：
+2. 在 `items.js` 中添加映射关系：
 
 ```javascript
 const icons = {
@@ -108,7 +108,7 @@ crafting-calculator/
 ├── index.html
 ├── main.js
 ├── recipes.js      # 配方数据
-├── icons.js        # 图标映射
+├── items.js        # 图标映射
 ├── main.css        # 样式文件
 ├── LICENSE
 ├── README.md

@@ -362,7 +362,7 @@ function applyState(state) {
             if (key) {
                 if (recipes[key]) {
                     $tr.find('input[name=key]').removeClass('has-error').removeClass('has-warning');
-                } else if (icons[key]) {
+                } else if (items[key]?.icon) {
                     $tr.find('input[name=key]').addClass('has-warning').removeClass('has-error');
                 } else {
                     $tr.find('input[name=key]').addClass('has-error').removeClass('has-warning');
@@ -881,17 +881,26 @@ function renderItem(key, count = 0) {
     } else if (count === 0) {
         return `<span class="item" data-key="${escapedKey}">${getIconUrl(key) ? `<img class="item-icon" data-key="${escapedKey}" src="${getIconUrl(key)}" alt="">` : ''}${escapedKey}</span>`;
     } else {
-        const quotient = Math.floor(count / 64);
-        const remainder = count % 64;
+        let maxStackSize = items[key]?.maxStackSize ?? 64;
+        if (maxStackSize === 0) {
+            console.error(`${key} 的 maxStackSize 为 0`);
+            maxStackSize = 1;
+        }
         let humanCount;
-        if (quotient > 0) {
-            if (remainder > 0) {
-                humanCount = `<span class="group-count">${quotient}</span><span class="group-sep">×64</span><span class="plus">+</span>${remainder}`;
-            } else {
-                humanCount = `<span class="group-count">${quotient}</span><span class="group-sep">×64</span>`;
-            }
+        if (maxStackSize === 1) {
+            humanCount = `${count}`;
         } else {
-            humanCount = `${remainder}`;
+            const quotient = Math.floor(count / maxStackSize);
+            const remainder = count % maxStackSize;
+            if (quotient > 0) {
+                if (remainder > 0) {
+                    humanCount = `<span class="group-count">${escapeHtml(quotient)}</span><span class="group-sep">×${escapeHtml(maxStackSize)}</span><span class="plus">+</span>${escapeHtml(remainder)}`;
+                } else {
+                    humanCount = `<span class="group-count">${escapeHtml(quotient)}</span><span class="group-sep">×${escapeHtml(maxStackSize)}</span>`;
+                }
+            } else {
+                humanCount = `${remainder}`;
+            }
         }
         return `<span class="item" data-key="${escapedKey}">${getIconUrl(key) ? `<img class="item-icon" data-key="${escapedKey}" src="${getIconUrl(key)}" alt="">` : ''}${escapedKey} <span class="count">${humanCount}</span></span>`;
     }
@@ -933,7 +942,7 @@ function activateSearchItem(key) {
 }
 
 function getIconUrl(key) {
-    return icons[key] ? `icons/${icons[key]}.png` : null;
+    return items[key]?.icon ? `icons/${items[key]?.icon}.png` : null;
 }
 
 function sortBasicCount() {
@@ -1067,7 +1076,7 @@ $(function () {
                 $(event.target).removeClass('has-warning');
             } else {
                 if (isItemTargetList) {
-                    if (icons[key]) {
+                    if (items[key]?.icon) {
                         $(event.target).parent().prev().html(renderItem(key, -1));
                     } else {
                         $(event.target).parent().prev().html(renderItem('', -1));
@@ -1075,7 +1084,7 @@ $(function () {
                     $(event.target).addClass('has-error');
                     $(event.target).removeClass('has-warning');
                 } else {
-                    if (icons[key]) {
+                    if (items[key]?.icon) {
                         $(event.target).parent().prev().html(renderItem(key, -1));
                         $(event.target).addClass('has-warning');
                         $(event.target).removeClass('has-error');

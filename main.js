@@ -45,6 +45,7 @@ function saveSettings() {
         showGeneratedMap: $("#setting-show-generated-map").is(":checked"),
         missingno: $("#setting-missingno").is(":checked"),
         minecraftUi: $("#setting-minecraft-ui").is(":checked"),
+        itemGroupDisplay: $("#setting-item-group-display").val(),
     };
     try {
         localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
@@ -92,6 +93,9 @@ function applySettings(settings) {
     }
     if (settings.minecraftUi !== undefined) {
         $("#setting-minecraft-ui").prop("checked", settings.minecraftUi);
+    }
+    if (settings.itemGroupDisplay !== undefined) {
+        $("#setting-item-group-display").val(settings.itemGroupDisplay);
     }
 }
 
@@ -562,19 +566,23 @@ function updateInput() {
 /**
  * 渲染物品矩阵
  */
-function renderMap(key) {
-    const map = recipes[key].map;
+function renderMatrix(matrix) {
     return `
     <table class="item-matrix">
-        ${map.map(row => `
+        ${matrix.map(row => `
             <tr>
                 ${row.map(item => `
-                    <td>${renderItem(item, -1)}</td>
+                    <td>${Array.isArray(item) ? renderItem(item[0], item[1] ?? -1, true) : renderItem(item, -1)}</td>
                 `).join('')}
             </tr>
         `).join('')}
     </table>
     `;
+}
+
+function renderMap(key) {
+    const map = recipes[key].map;
+    return renderMatrix(map);
 }
 
 function readItemList() {
@@ -677,7 +685,8 @@ function showRecipe() {
     }
     adjustOrderHtml += '</ul>';
     $("#adjust-order").html(adjustOrderHtml);
-    let orderHtml = '';
+    const $recipeTable = $("#recipe-table");
+    $recipeTable.empty();
     window.persistentCurrentItems = [];
     const currentItems = deepClone(basicCount);
     for (const [i, item] of order.entries()) {
@@ -693,26 +702,19 @@ function showRecipe() {
         }
         window.persistentCurrentItems.push(deepClone(currentItems));
         // console.log(`${recipes[item].type}: ${recipes[item].ingredients.map(i => `${i[0]} x ${i[1] ? i[1] * times[item] : times[item]}`).join(' + ')} => ${item} x ${count[item]}`);
-        orderHtml += `
+        const $step = $(`
             <tr data-index="${i}">
                 <td${recipes[item].isGeneratedMap ? ' class="generated-map"' : ''}>${recipes[item].map ? isBigMap(recipes[item].map) ? '<button class="btn btn-default detail">详情</button>' : renderMap(item) : ''}</td>
-                <td class="item-group">${recipes[item].ingredients.map(i => `${renderItem(i[0], i[1] ? i[1] * times[item] : times[item])}`).join('')}</td>
+                <td class="item-group"></td>
                 <td>${renderItem(recipes[item].type, 0)}</td>
                 <td>${renderItem(item, count[item])}${patchedRecipes[item] ? ` <span class="recipe-patched" title="已被 ${escapeHtml(patchedRecipes[item])} 补丁修改">${escapeHtml(patchedRecipes[item])}</span>` : ''}</td>
                 <td class="detail-column"><button class="btn btn-default detail">详情</button></td>
             </tr>
-        `;
+        `);
+        $recipeTable.append($step);
+        $step.find(".item-group").data("item-group", recipes[item].ingredients);
     }
-    $("#recipe-table").html(orderHtml);
     console.log(remainings);
-    let remainingHtml = '';
-    if (!$.isEmptyObject(remainings)) {
-        for (const item in remainings) {
-            remainingHtml += renderItem(item, remainings[item]);
-        }
-    } else {
-        remainingHtml = '无';
-    }
     window.basicCountOrder = [];
     for (const item of order) {
         for (const ingredient of recipes[item].ingredients) {
@@ -722,9 +724,10 @@ function showRecipe() {
         }
     }
     sortBasicCount();
-    $("#item-remain").html(remainingHtml);
+    $("#item-remain").data("item-group", Object.entries(remainings));
     $("#results").show();
     $("#apply-remain-to-have").show();
+    updateItemGroups();
 }
 
 function doSearch() {
@@ -863,20 +866,24 @@ function readAlreadyHave() {
     });
 }
 
-function renderItem(key, count = 0) {
+function renderItem(key, count = 0, forceIcon = false) {
     if (key === null) {
         return `<span class="item-empty"></span>`;
     }
     const escapedKey = escapeHtml(key);
-    if (count === -1) {
+    if (forceIcon || count === -1) {
+        let displayCount = '';
+        if (count > 1) {
+            displayCount = count;
+        }
         if (getIconUrl(key)) {
-            return `<span class="item just-icon" data-key="${escapedKey}"><img class="item-icon" data-key="${escapedKey}" src="${getIconUrl(key)}" alt="" title="${escapedKey}"></span>`;
+            return `<div class="item just-icon" data-key="${escapedKey}" title="${escapedKey}"><img class="item-icon" data-key="${escapedKey}" src="${getIconUrl(key)}" alt=""><span class="corner-count">${escapeHtml(displayCount)}</span></div>`;
         } else {
             let reducedKey = key.replace(/[^A-Za-z0-9一-龟]+/g, '');
             if (reducedKey.length > 2) {
                 reducedKey = reducedKey.charAt(0) + reducedKey.slice(-1);
             }
-            return `<span class="item just-icon" data-key="${escapedKey}"><div class="item-icon-unknown ${key.length === 1 ? 'item-icon-unknown-single' : 'item-icon-unknown-double'}" title="${escapedKey}">${escapeHtml(reducedKey)}</div></span>`;
+            return `<div class="item just-icon" data-key="${escapedKey}" title="${escapedKey}"><div class="item-icon-unknown ${key.length === 1 ? 'item-icon-unknown-single' : 'item-icon-unknown-double'}">${escapeHtml(reducedKey)}</div><span class="corner-count">${escapeHtml(displayCount)}</span></div>`;
         }
     } else if (count === 0) {
         return `<span class="item" data-key="${escapedKey}">${getIconUrl(key) ? `<img class="item-icon" data-key="${escapedKey}" src="${getIconUrl(key)}" alt="">` : ''}${escapedKey}</span>`;
@@ -945,9 +952,98 @@ function getIconUrl(key) {
     return items[key]?.icon ? `icons/${items[key]?.icon}.png` : null;
 }
 
+function renderFullChests(fullChests) {
+    if (fullChests.length === 0) {
+        return '';
+    }
+    const $table = $(`<table class="full-chests table"><thead><tr><th></th><th>物品</th><th>箱数</th></tr></thead><tbody></tbody></table>`);
+    const $tbody = $table.find('tbody');
+    for (const [key, count] of fullChests) {
+        $tbody.append(`<tr><td>${renderItem(key, -1)}</td><td>${escapeHtml(key)}</td><td>${escapeHtml(count)}</td></tr>`);
+    }
+    return $table[0].outerHTML;
+}
+
+function renderItemGroup(items) {
+    if (!items || items.length === 0) {
+        return '';
+    }
+    switch ($("#setting-item-group-display").val()) {
+        case "badge": {
+            let result = '';
+            for (const item of items) {
+                const key = item[0];
+                const count = item[1] ?? 1;
+                if (count > 0) {
+                    result += renderItem(key, count);
+                }
+            }
+            return result;
+        }
+        case "chest": {
+            let matrices = [];
+            let fullChests = [];
+
+            function addStack(key, count) {
+                let matrix = matrices.at(-1);
+                if (!matrix) {
+                    matrices.push([[[key, count]]]);
+                    return;
+                }
+                let row = matrix.at(-1);
+                if (row.length >= 9) {
+                    if (matrix.length >= 3) {
+                        matrix = [];
+                        matrices.push(matrix);
+                    }
+                    row = [];
+                    matrix.push(row);
+                }
+                row.push([key, count]);
+            }
+
+            for (const item of items) {
+                const key = item[0];
+                const count = item[1] ?? 1;
+                const maxStackSize = items[key]?.maxStackSize ?? 64;
+                if (count > 0) {
+                    const chestCount = Math.floor(count / (27 * maxStackSize));
+                    const chestRemainder = count % (27 * maxStackSize);
+                    if (chestCount > 0) {
+                        fullChests.push([key, chestCount]);
+                    }
+                    const groupCount = Math.floor(chestRemainder / maxStackSize);
+                    const groupRemainder = chestRemainder % maxStackSize;
+                    for (let i = 0; i < groupCount; i++) {
+                        addStack(key, maxStackSize);
+                    }
+                    if (groupRemainder > 0) {
+                        addStack(key, groupRemainder);
+                    }
+                }
+            }
+            return `<div class="item-group-chest-view"><div>${matrices.map(matrix => renderMatrix(matrix)).join('<div class="item-group-matrix-sep"></div>')}</div>${renderFullChests(fullChests)}</div>`;
+        }
+    }
+}
+
+function updateItemGroups($elements) {
+    if (!$elements) {
+        $elements = $(".item-group");
+    } else {
+        $elements = $elements.find(".item-group").addBack(".item-group");
+    }
+    $elements.each(function () {
+        const $group = $(this);
+        const items = $group.data('item-group');
+        $group.html(renderItemGroup(items));
+    });
+}
+
 function sortBasicCount() {
+    const $itemNeeded = $("#item-needed");
     if ($.isEmptyObject(window.basicCount)) {
-        $("#item-needed").text("无");
+        $itemNeeded.text("无");
         return;
     }
     let sortType = $("#item-needed-sort").val();
@@ -959,11 +1055,8 @@ function sortBasicCount() {
     } else if (sortType === 'count') {
         sortedItems.sort((a, b) => basicCount[b] - basicCount[a]);
     }
-    let basicCountHtml = '';
-    for (const item of sortedItems) {
-        basicCountHtml += renderItem(item, basicCount[item]);
-    }
-    $("#item-needed").html(basicCountHtml);
+    $itemNeeded.data("item-group", sortedItems.map(item => [item, basicCount[item]]));
+    updateItemGroups($itemNeeded);
 }
 
 function toShowInference() {
@@ -1000,7 +1093,9 @@ function showStepRemain() {
     } else if (sortType === 'count') {
         entries.sort((a, b) => currentShowingStepItems[b] - currentShowingStepItems[a]);
     }
-    $("#step-remain").html(entries.map(item => currentShowingStepItems[item] > 0 ? `${renderItem(item, currentShowingStepItems[item])}` : '').join(''));
+    const $stepRemain = $("#step-remain");
+    $stepRemain.data("item-group", entries.map(item => [item, currentShowingStepItems[item]]).filter(item => item[1] > 0));
+    updateItemGroups($stepRemain);
 }
 
 function isBigMap(map) {
@@ -1895,11 +1990,13 @@ $(function () {
         }
         $("#step-target-item").html(renderItem(item, recipes[item].count ?? 1));
         $("#step-result-count").text((recipes[item].count ?? 1) * times[item]);
-        $("#step-raw-product").html(recipes[item].ingredients.map(i => `${renderItem(i[0], i[1] ? i[1] : 1)}`).join(''));
+        $("#step-raw-product").data("item-group", recipes[item].ingredients);
         $("#step-times").text(times[item]);
-        $("#step-product").html(recipes[item].ingredients.map(i => `${renderItem(i[0], i[1] ? i[1] * times[item] : times[item])}`).join(''));
+        $("#step-product").data("item-group", recipes[item].ingredients.map(i => [i[0], i[1] ? i[1] * times[item] : times[item]]));
         showStepRemain();
-        $("#step-detail-modal").modal("show");
+        const $stepDetailModal = $("#step-detail-modal");
+        updateItemGroups($stepDetailModal);
+        $stepDetailModal.modal("show");
     });
 
     function getRandomKey(obj) {
@@ -1922,5 +2019,9 @@ $(function () {
     });
 
     $("#long-transition").prop("disabled", true);
+
+    $("#setting-item-group-display").change(function (event) {
+        updateItemGroups();
+    });
 
 });

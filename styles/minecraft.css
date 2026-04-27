@@ -559,3 +559,17 @@ input.has-warning, input.has-warning:focus {
     height: 2px;
     box-shadow: 2px 2px, 4px 4px, 6px 6px, 8px 8px, 10px 10px, 10px 2px, 8px 4px, 4px 8px, 2px 10px;
 }
+
+.item-group-matrix-sep {
+    border: none;
+    margin: 10px 0 0;
+}
+
+.corner-count {
+    right: -2px;
+    bottom: -2px;
+    color: #FCFCFC;
+    text-shadow: 2px 2px 0 #3E3E3E;
+    background: none;
+    padding: 0;
+}

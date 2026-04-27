@@ -98,6 +98,14 @@
                     <label for="setting-minecraft-ui">启用实验性Minecraft风格UI：<input type="checkbox" id="setting-minecraft-ui" class="setting-input"></label>
                     <p><small>启用实验性Minecraft风格UI（小提示：焦点落在上面的复选框时，可以滚动到页面任意位置按回车切换选中状态，从而感受界面各处变化）。</small></p>
                 </div>
+                <div class="form-group">
+                    <label for="setting-item-group-display">物品组显示方式：</label>
+                    <p><small>设置所需物品、余料等物品组的显示方式。当物品数量超过27组时，箱子视图下只会显示不足一整箱的剩余数量，同时额外显示完整箱子的数量。</small></p>
+                    <select id="setting-item-group-display" class="form-control setting-input">
+                        <option value="badge">徽章视图</option>
+                        <option value="chest">箱子视图</option>
+                    </select>
+                </div>
                 <div id="setting-alert" class="alert alert-warning" style="display: none; margin-bottom: 0">部分设置将在刷新页面后生效</div>
             </div>
         </div>
@@ -227,7 +235,7 @@
                 <button class="btn btn-sm btn-default" id="apply-remain-to-have" style="margin-left: 10px; margin-bottom: 5px">应用到已有物品
                 </button>
             </div>
-            <div id="item-remain">石头 x 1000 + 铁矿 x 500</div>
+            <div class="item-group" id="item-remain">石头 x 1000 + 铁矿 x 500</div>
         </div>
     </div>
 </div>

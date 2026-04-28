@@ -712,7 +712,7 @@ function showRecipe() {
             </tr>
         `);
         $recipeTable.append($step);
-        $step.find(".item-group").data("item-group", recipes[item].ingredients);
+        $step.find(".item-group").data("item-group", recipes[item].ingredients.map(i => [i[0], i[1] ? i[1] * times[item] : times[item]]));
     }
     console.log(remainings);
     window.basicCountOrder = [];

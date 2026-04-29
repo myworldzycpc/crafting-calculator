@@ -964,14 +964,14 @@ function renderFullChests(fullChests) {
     return $table[0].outerHTML;
 }
 
-function renderItemGroup(items) {
-    if (!items || items.length === 0) {
+function renderItemGroup(itemGroup) {
+    if (!itemGroup || itemGroup.length === 0) {
         return '';
     }
     switch ($("#setting-item-group-display").val()) {
         case "badge": {
             let result = '';
-            for (const item of items) {
+            for (const item of itemGroup) {
                 const key = item[0];
                 const count = item[1] ?? 1;
                 if (count > 0) {
@@ -1002,7 +1002,7 @@ function renderItemGroup(items) {
                 row.push([key, count]);
             }
 
-            for (const item of items) {
+            for (const item of itemGroup) {
                 const key = item[0];
                 const count = item[1] ?? 1;
                 const maxStackSize = items[key]?.maxStackSize ?? 64;
